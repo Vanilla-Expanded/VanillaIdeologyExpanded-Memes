@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Mild ideos -->
+	<IdeoPresetDef>
+		<defName>VME_Human_Hive</defName>
+		<label>human hive</label>
+		<description>Like clockwork, the lives of our fellow believers are ever intertwined. What causes one of us suffering causes all of us suffering and what brings us higher brings all of us higher. Together, we are one and we are strong.</description>
+		<categoryDef>Mild</categoryDef>
+		<memes>
+			<li>VME_Gestalt</li>
+			<li>HumanPrimacy</li>
+		</memes>
+	</IdeoPresetDef>
+	<IdeoPresetDef>
+		<defName>VME_Egalitarian_Republic</defName>
+		<label>egalitarian republic</label>
+		<description>Democracy, freedom, and equality. It’s nothing short of appalling that we should think any of these to be revocable privileges rather than basic rights. People's creeds, cultures, and character all deserve respect and representation.\n\n&lt;color=#E5E54C&gt;Recommended Structure:&lt;/color&gt;\n - Agnosticism.</description>
+		<categoryDef>Mild</categoryDef>
+		<memes>
+			<li>VME_Republic</li>
+			<li>VME_Egalitarian</li>
+		</memes>
+	</IdeoPresetDef>
+	<IdeoPresetDef>
+		<defName>VME_Exalted_Gerontocracy</defName>
+		<label>exalted gerontocracy</label>
+		<description>Our heavenly clergy will guide us well, age is more than just the gaining of wisdom or wrinkle. With each passing year our elders become closer to god.\n\n&lt;color=#E5E54C&gt;Recommended Structure:&lt;/color&gt;\n - Any monotheistic.</description>
+		<categoryDef>Mild</categoryDef>
+		<memes>
+			<li>VME_ExaltedPriesthood</li>
+			<li>VME_Elders</li>
+		</memes>
+	</IdeoPresetDef>
+	<IdeoPresetDef>
+		<defName>VME_Factory_Drones</defName>
+		<label>factory drones</label>
+		<description>Work and cooperation breeds strength. We’ll sweat and bleed alike together, as a community, to reach an agreeable standard of living for all of us.\n\n&lt;color=#E5E54C&gt;Recommended Structure:&lt;/color&gt;\n - Authoritarian.</description>
+		<categoryDef>Mild</categoryDef>
+		<memes>
+			<li>VME_Progressive</li>
+			<li>Collectivist</li>
+		</memes>
+	</IdeoPresetDef>
+	<!-- Strong ideos -->
+	<IdeoPresetDef>
+		<defName>VME_Corporate_Overlords</defName>
+		<label>corporate overlords</label>
+		<description>Whether we're led by a board of directors or our savvy CEO we face the reality that money makes the Rimworld go 'round. By automating as much as we can and keeping a lean staff we can maximize our return quadrum over quadrum.\n\n&lt;color=#E5E54C&gt;Recommended Structure:&lt;/color&gt;\n - Corporate.</description>
+		<categoryDef>Strong</categoryDef>
+		<memes>
+			<li>VME_Republic</li>
+			<li>VME_Trader</li>
+			<li>VME_HardcoreIndustrialism</li>
+			<li>VME_Progressive</li>
+		</memes>
+	</IdeoPresetDef>
+	<IdeoPresetDef>
+		<defName>VME_GodKing_Radicals</defName>
+		<label>god-king radicals</label>
+		<description>The steel fist of our King or Queen should never come into question, they shall want for nothing. If those who oppose us don't bend the knee we shall feed their legs to the hounds.\n\n&lt;color=#E5E54C&gt;Recommended Structure:&lt;/color&gt;\n - Cult of Personality.</description>
+		<categoryDef>Strong</categoryDef>
+		<memes>
+			<li>VME_ViolentConversion</li>
+			<li>VME_GodEmperor</li>
+			<li>Supremacist</li>
+		</memes>
+	</IdeoPresetDef>
+	<IdeoPresetDef>
+		<defName>VME_Cosmic_Cultists</defName>
+		<label>cosmic cultists</label>
+		<description>The stars above sing to us, and we respond in kind. May their everlasting glow illuminate the threads of our fate which rest so wearily upon a most capricious spindle. Bathe oneself in the hallowed moonlight and let astral workings of the architects of fate guide you.\n\n&lt;color=#E5E54C&gt;Recommended Structure:&lt;/color&gt;\n - Esotericism.</description>
+		<categoryDef>Strong</categoryDef>
+		<memes>
+			<li>VME_Astrology</li>
+			<li>Darkness</li>
+			<li>Nudism</li>
+		</memes>
+	</IdeoPresetDef>
+	<IdeoPresetDef>
+		<defName>VME_Flame_Seers</defName>
+		<label>flame seers</label>
+		<description>In the beginning - There was flame, and from flame, came warmth, and from warmth, came life. Blessed are we to be enraptured in the gross incandescence of the sun above.\n\n&lt;color=#E5E54C&gt;Recommended Structure:&lt;/color&gt;\n - Any.</description>
+		<categoryDef>Strong</categoryDef>
+		<memes>
+			<li>VME_Light</li>
+			<li>VME_FireWorship</li>
+			<li>Proselytizer</li>
+		</memes>
+	</IdeoPresetDef>
+	<IdeoPresetDef>
+		<defName>VME_Dwarven_Artificers</defName>
+		<label>dwarven artificers</label>
+		<description>No day is better spent than a day in a hot forge. With our hammers we will echo the roar of flame and the ringing of steel through our mountain halls. Should we put in ample work, our Forgefathers will reward us with a supper fungus in excess so that we may fuel our bodies, just as we fuel our kilns.\n\n&lt;color=#E5E54C&gt;Recommended Structure:&lt;/color&gt;\n - Ideological.</description>
+		<categoryDef>Strong</categoryDef>
+		<memes>
+			<li>Tunneler</li>
+			<li>VME_CraftCulture</li>
+		</memes>
+	</IdeoPresetDef>
+	<IdeoPresetDef>
+		<defName>VME_Nordic_Matriarchy</defName>
+		<label>nordic matriarchy</label>
+		<description>It is by the flurry of snow and crashing of waves we lead our people to the afterlife. Die an honorable death or answer to our shield-maiden.\n\n&lt;color=#E5E54C&gt;Recommended Structure:&lt;/color&gt;\n - Pantheism.</description>
+		<categoryDef>Strong</categoryDef>
+		<memes>
+			<li>Raider</li>
+			<li>PainIsVirtue</li>
+			<li>FemaleSupremacy</li>
+		</memes>
+	</IdeoPresetDef>
+	<IdeoPresetDef>
+		<defName>VME_Steamworld_Neerdowells</defName>
+		<label>steamworld ne'er-do-wells</label>
+		<description>From saloon to stable we're honest muffalopokes and live by one simple rule. ‘You don't get to live a bad life and have good things happen to you’. ‘Course, not all of us seem too convinced... Just don’t let the long arm of the law catch up y’all, ya’ hear?\n\n&lt;color=#E5E54C&gt;Recommended Structure:&lt;/color&gt;\n - Christian Origin.</description>
+		<categoryDef>Strong</categoryDef>
+		<memes>
+			<li>Rancher</li>
+			<li>VME_CityBuilders</li>
+			<li>HumanPrimacy</li>
+		</memes>
+	</IdeoPresetDef>
+	<IdeoPresetDef>
+		<defName>VME_Medieval_Monarchists</defName>
+		<label>medieval monarchists</label>
+		<description>Our sires and grandsires all followed the foresight and guidance of our King, long may he reign, and we shall do no different. Should another kingdom find it preferable to resort to bow and blade, we have no hesitation in making them our serfs.\n\n&lt;color=#E5E54C&gt;Recommended Structure:&lt;/color&gt;\n - Cult of Personality.</description>
+		<categoryDef>Strong</categoryDef>
+		<memes>
+			<li>Supremacist</li>
+			<li>MaleSupremacy</li>
+			<li>VME_Aristocratic</li>
+		</memes>
+	</IdeoPresetDef>
+	
+	<!-- Intense ideos -->
+	
+	<IdeoPresetDef>
+		<defName>VME_Pleasure_Extremists</defName>
+		<label>pleasure extremists</label>
+		<description>Never shall our muscles ache with pain nor shall our hearts swell with sadness. We should embrace all pleasures, even forbidden carnal desires such as luxurious meat or risqué lusting should all be explored.\n\n&lt;color=#E5E54C&gt;Recommended Structure:&lt;/color&gt;\n - Hedonism.</description>
+		<categoryDef>Intense</categoryDef>
+		<memes>
+			<li>Cannibal</li>
+			<li>HighLife</li>
+			<li>VME_PartyLife</li>
+		</memes>
+	</IdeoPresetDef>
+	<IdeoPresetDef>
+		<defName>VME_Eastern_Revivalists</defName>
+		<label>eastern revivalists</label>
+		<description>We are born without sin and should do our best to remain upon the path of many virtues. Respect the wisdom of the wind and those who have lived many summers to feel it caress their faces. Beyond all else, keep your blade near and combat prowess honed should those you once called brothers turn against you.\n\n&lt;color=#E5E54C&gt;Recommended Structure:&lt;/color&gt;\n - Shintao.</description>
+		<categoryDef>Intense</categoryDef>
+		<memes>
+			<li>VME_Bushido</li>
+			<li>VME_BloodCourt</li>
+			<li>VME_Elders</li>
+			<li>NaturePrimacy</li>
+		</memes>
+	</IdeoPresetDef>
+	<IdeoPresetDef>
+		<defName>VME_Primitivistic_Nomads</defName>
+		<label>primitivistic nomads</label>
+		<description>For eons have our people wandered this world with little more than steed and saddle, traveling the roads less traveled with only the stars to guide them. From the frigid winter mutes to the teeming jungle canopies, we seek the same answers our ancestors once did.\n\n&lt;color=#E5E54C&gt;Recommended Structure:&lt;/color&gt;\n - Animism.</description>
+		<categoryDef>Intense</categoryDef>
+		<memes>
+			<li>VME_Astrology</li>
+			<li>VME_Nomad</li>
+			<li>VME_Pacifist</li>
+		</memes>
+	</IdeoPresetDef>
+	<IdeoPresetDef>
+		<defName>VME_Pestilent_Doomsayers</defName>
+		<label>pestilent doomsayers</label>
+		<description>The body is a vessel for experimentation and mutation alike. Should one deligitantly push their flesh to its limits they shall be rewarded by the plague god with a most joyous farewell from this doomed world.\n\n&lt;color=#E5E54C&gt;Recommended Structure:&lt;/color&gt;\n - Eschatologism.</description>
+		<categoryDef>Intense</categoryDef>
+		<memes>
+			<li>VME_Fleshcrafters</li>
+			<li>VME_HolyDiseases</li>
+			<li>PainIsVirtue</li>
+		</memes>
+	</IdeoPresetDef>
+	<IdeoPresetDef>
+		<defName>VME_Insectoid_Psykers</defName>
+		<label>insectoid psykers</label>
+		<description>Insects, while seen by most as vermin, are truthfully the most synchronized and organized society found in all of nature; only the truly blind would view them as below us. We can’t begin to unravel the boundless goals of the Insectoid Queen and her hives. We should seek to mimic them, so that we can further understand their ways.\n\n&lt;color=#E5E54C&gt;Recommended Structure:&lt;/color&gt;\n - Serketism.</description>
+		<categoryDef>Intense</categoryDef>
+		<memes>
+			<li>VME_InsectoidSupremacy</li>
+			<li>Tunneler</li>
+			<li>Darkness</li>
+			<li Name="VME_ModifyIfRoyalty">VME_Gestalt</li>
+		</memes>
+	</IdeoPresetDef>
+	<IdeoPresetDef>
+		<defName>VME_Mechanoid_Technocrat</defName>
+		<label>mechanoid technocrat</label>
+		<description>To think a creature capable of infinite stamina and free from the burdens of free thought is meant to serve mankind is beyond foolish. We can’t begin to unravel the boundless goals of the machine consciousness. We should seek to mimic them so that we can further placate their hostility.\n\n&lt;color=#E5E54C&gt;Recommended Structure:&lt;/color&gt;\n - Omnism.</description>
+		<categoryDef>Intense</categoryDef>
+		<memes>
+			<li>VME_MechanoidSupremacy</li>
+			<li>VME_Scrapper</li>
+			<li>Transhumanist</li>
+			<li>VME_Gestalt</li>
+		</memes>
+	</IdeoPresetDef>
+	<IdeoPresetDef>
+		<defName>VME_Ecological_Fascists</defName>
+		<label>ecological fascists</label>
+		<description>Spare absolutely no one who dares to pollute or otherwise taint mother nature's soil with their pathetic existence. May our frail bodies give way to nourish the trees that loom over us. Respect the planet we walk or perish at the behest of our Seedseer.\n\n&lt;color=#E5E54C&gt;Recommended Structure:&lt;/color&gt;\n - Authoritarian.</description>
+		<categoryDef>Intense</categoryDef>
+		<memes>
+			<li>VME_Vegan</li>
+			<li>VME_ViolentConversion</li>
+			<li>TreeConnection</li>
+			<li>VME_ExaltedPriesthood</li>
+		</memes>
+	</IdeoPresetDef>
+</Defs>

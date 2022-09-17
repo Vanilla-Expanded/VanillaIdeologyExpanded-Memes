@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<MemeDef>
+		<defName>VME_Angler</defName>
+		<label>fishing culture</label>
+		
+		<description>Serene and therapeutic, placid lakes and lapping shores are criminally underappreciated. With a little time or simple engineering rivers and oceans alike can leave our bellies full of tasty fish.</description>
+		<iconPath>UI/Memes/FishCulture</iconPath>
+		<groupDef>Misc</groupDef>
+		<impact>2</impact>
+		<exclusionTags>
+			<li>VME_FishingVsFurries</li>
+			<li>VME_VeganVsFishing</li>
+			<li>VME_FishingVsNature</li>
+		</exclusionTags>
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->piscatorial</li>
+				<li>memeAdjective->coastal</li>
+				<li>memeAdjective->seafaring</li>
+				<li>memeAdjective->angling</li>
+				<li>memeHyphenPrefix->fish</li>
+				<li>memeHyphenPrefix->river</li>
+				<li>memeHyphenPrefix->sea</li>
+				<li>memeConcept->fishing</li>
+				
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<rules>
+				<rulesStrings>
+					<!-- theist myth -->
+					<li>creation(tag=meme_Anglers)        ->[deity0_name] spoke to all [deity0_possessive] followers and told them: "Again, the kingdom of heaven is like a dragnet cast into the sea, and gathering fish of every kind."</li>
+					<li>episode(uses=1,tag=meme_Anglers)  ->[deity0_name] said to all the [memberNamePlural], "Follow Me, and I will make you fishers of men."</li>
+					<!-- theist founder -->
+					<li>intro(tag=meme_Anglers)           ->[memberNamePlural] built a great [altarName] on the [place_summary] [place_name], and great angling competitions took place there every year.</li>
+					<li>conflict(tag=meme_Anglers)        ->An envious [foeLeader], seeking to deny the will of [deity0_name], told [foeLeader_possessive] [foeSoldiers] to poison the lakes and seas surrounding the [altarName].</li>
+					<li>founderJoin(tag=meme_Anglers)     ->[deity0_name] blessed a [place_job] named [founderName] with [deity0_possessive] divine intelligence and [founder_pronoun] built a great water purifier, and the waters once again teamed with thousands of fish.</li>
+					<li>victory(tag=meme_Anglers)         ->The [foeSoldiers] and the [foeLeader] were humiliated and thwarted, and they had to leave the [memberNamePlural] alone.</li>
+					<!-- ideological founder -->
+					<li>setup(tag=meme_Anglers)           ->Our founder [founderName] was the greatest angler to have lived. No fish was big enough for [founderName_objective].</li>
+					<li>story(uses=1,tag=meme_Anglers)    ->[founderName] taught us that fishing is a state of mind. [founderName_pronoun] always said that the charm of fishing is that it is the pursuit of what is elusive but attainable, a perpetual series of occasions for hope.</li>
+					<!-- ideological lesson -->
+					<li>lessonIntro(tag=meme_Anglers)         ->I've spent as much of my life fishing as decency allowed, and sometimes I don't let even that get in my way. I have learned that</li>
+					<li>lesson(tag=meme_Anglers)              ->fishing is a hard job. Fishing at night. Rain. Day, night. You have to be wise and smart. And quick.</li>
+					<li>lessonReinforcement(tag=meme_Anglers) ->After a day's fishing, I'll know the solution to something or have good ideas that were not accessible before.</li>
+					<!-- archist -->
+					<li>archistBasis(tag=meme_Anglers)    ->The archotechs filled the oceans and the rivers with wondrous plenty, accessible to anyone with the knowledge to take advantage of it.</li>
+					<li>archistFact(tag=meme_Anglers)     ->Archotechs value resourcefulness above other things, and we must accept the bounty of the waters as their gift.</li>
+					<li>archistProphecy(tag=meme_Anglers) ->[inTheEnd], the archotechs will be the greatest anglers, and their catch will be the ones worthy of transcendence.</li>
+					<!-- animist -->
+					<li>animistFact(tag=meme_Anglers)     ->The spirits of fish provide us with the greatest bounty: the teeming life present in rivers and oceans.</li>
+					<!-- serketist -->
+					<li>serketistProphecy(tag=meme_Anglers)->[itIsSaid] we will learn the ways of insects to find food whenever it's needed, by exploiting the greatest bounty: the teeming life present in rivers and oceans.</li>
+					<!-- eldritch / chthonian -->
+					<li>chthonianProphecy(tag=meme_Anglers)->Ph'nglui mglw'nafh [deity0_name] [place_name] wgah'nagl fhtagn.</li>
+					<!-- esoteric -->
+					<li>esotericismProphecy(tag=meme_Anglers)->We will discern what is hidden behind these secrets, perhaps by divining the entrails of dead fish.</li>
+					<!-- eschatologism -->
+					<li>eschatologismFact(tag=meme_Anglers)->Like the slippery fish that hide beyond the abyssal depths, we will strike from the darkness and we will be unstoppable.</li>
+					<!-- corporate -->
+					<li>introMemo(tag=meme_Anglers)->Good news! In this year's company-wide raffle we are again including as a prize a two weeks, all expenses paid fishing trip! I know you are as excited as I am, so get those tickets as soon as possible!</li>
+				</rulesStrings>
+			</rules>
+		</descriptionMaker>
+		
+		<symbolPacks>
+			<li>
+				<ideoName>Angler</ideoName>
+				<theme>fishing</theme>
+				<adjective>angling</adjective>
+				<member>angler</member>
+			</li>
+			
+		</symbolPacks>
+		<requireOne>
+			<li>
+				<li>VME_Recreation_Fishing</li>
+			</li>
+			<li>
+				<li>VME_Fishing_Adept</li>
+			</li>
+			<li>
+				<li>VME_Ranching_Discouraged</li>
+			</li>
+		</requireOne>
+		<addDesignators>
+			<li>VME_SmallFishingTrap</li>
+			<li>VME_MediumFishingTrap</li>
+			<li>VME_LargeFishingTrap</li>
+		</addDesignators>
+	</MemeDef>
+
+</Defs>

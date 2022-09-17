@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ <ThingDef ParentName="ApparelBase">
+    <defName>VME_TackleBox</defName>
+    <label>tackle box</label>
+    <description>A small metal box filled with different hooks, bobbers and baits meant to entice fish big and small to latch on before being reeled in via line and rod.</description>
+    <techLevel>Industrial</techLevel>
+    
+    <graphicData>
+      <texPath>Things/Item/Apparel/TackleBox/TackleBox</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <WorkToMake>3000</WorkToMake>
+      <Mass>1.5</Mass>
+      <Flammability>0.4</Flammability>
+      <EquipDelay>1.5</EquipDelay>
+      
+    </statBases>
+    <thingCategories>
+      <li>ApparelUtility</li>
+    </thingCategories>
+    <generateAllowChance>0</generateAllowChance>
+    <apparel>
+	  <wornGraphicPath>Things/Item/Apparel/TackleBox/TackleBox</wornGraphicPath>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+      <careIfDamaged>false</careIfDamaged>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <bodyPartGroups>
+        <li>Waist</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Belt</li>
+      </layers>
+      <tags>
+		<li>VAEA_Utility_Industrial</li>
+      </tags>
+      <wornGraphicData>
+        <renderUtilityAsPack>true</renderUtilityAsPack>
+        <north>
+          <male>  <offset>(-0.3, -0.25)</offset> </male>
+          <female><offset>(-0.3,-0.3)</offset> </female>
+          <thin>  <offset>(-0.2,-0.25)</offset> </thin>
+          <hulk>  <offset>(-0.33,-0.4)</offset> </hulk>
+          <fat>   <offset>(-0.5,-0.25)</offset> </fat>
+        </north>
+        <south>
+          <male>  <offset>(0.3, -0.25)</offset> </male>
+          <female><offset>(0.3,-0.3)</offset> </female>
+          <thin>  <offset>(0.2,-0.25)</offset> </thin>
+          <hulk>  <offset>(0.33,-0.4)</offset> </hulk>
+          <fat>   <offset>(0.5,-0.25)</offset> </fat>
+        </south>
+        <east>
+          <offset>(-0.1,-0.25)</offset>
+		  <hulk><offset>(-0.15,-0.0)</offset></hulk>
+		  <fat><offset>(-0.10,-0.0)</offset></fat>
+		  <thin><offset>(0.05,-0.0)</offset></thin>
+        </east>
+        <west>
+          <offset>(-0.1,-0.15)</offset>
+		  <hulk><offset>(0.15,-0.0)</offset></hulk>
+		  <fat><offset>(0.10,-0.0)</offset></fat>
+		  <thin><offset>(-0.05,-0.0)</offset></thin>
+        </west>
+        <male> <scale>(0.55,0.55)</scale></male>
+        <female><scale>(0.55,0.55)</scale></female>
+        <thin><scale>(0.5,0.5)</scale></thin>
+        <hulk><scale>(0.7,0.7)</scale></hulk>
+        <fat> <scale>(0.7,0.7)</scale></fat>
+      </wornGraphicData>
+    </apparel>
+  </ThingDef>
+  
+  
+</Defs>

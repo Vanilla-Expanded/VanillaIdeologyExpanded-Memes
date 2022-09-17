@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Issues -->
+
+ 
+  <IssueDef>
+    <defName>VME_Immunity</defName>
+    <label>immunity</label>
+    <iconPath>UI/Issues/Immunity</iconPath>
+  </IssueDef>
+
+  <!-- Precepts -->
+
+ 
+
+  <PreceptDef>
+    <defName>VME_Immunity_Enhanced</defName>
+    <issue>VME_Immunity</issue>
+    <label>enhanced</label>
+    <description>Plague, suffering, pain, these are all but temporary visitors through which my body acts as a divine conduit. Brief will be their respite in my being, for they will bestow themselves to fellow plague children before long.</description>
+    <impact>Medium</impact>
+    <associatedMemes>
+      <li>VME_HolyDiseases</li>
+	
+    </associatedMemes>
+	<statOffsets>
+      <ImmunityGainSpeed>0.5</ImmunityGainSpeed>
+	  
+    </statOffsets>
+ 
+   
+  </PreceptDef>
+  
+  
+
+ 
+
+</Defs>

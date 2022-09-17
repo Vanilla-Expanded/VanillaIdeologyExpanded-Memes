@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<IssueDef>
+		<defName>VME_LeatherApparel</defName>
+		<label>leather apparel</label>
+		<iconPath>UI/Issues/LeatherApparel</iconPath>
+	</IssueDef>
+	<!-- Precepts -->
+	
+	<PreceptDef>
+		<defName>VME_LeatherApparel_Abhorrent</defName>
+		<issue>VME_LeatherApparel</issue>
+		<label>abhorrent</label>
+		<description>Slaughtering an animal to use its skin as apparel is cruel and inhumane.</description>
+		<impact>Medium</impact>
+		<displayOrderInIssue>30</displayOrderInIssue>	
+		<selectionWeight>1</selectionWeight>
+		<comps>
+			
+			<li Class="PreceptComp_SituationalThought">
+				<thought>VME_LeatherApparel_Abhorrent</thought>
+			</li>
+			
+		</comps>		
+	</PreceptDef>
+	<PreceptDef>
+		<defName>VME_LeatherApparel_Disliked</defName>
+		<issue>VME_LeatherApparel</issue>
+		<label>disliked</label>
+		<description>Using animal leathers is something that should be avoided.</description>
+		<impact>Medium</impact>
+		<selectionWeight>0</selectionWeight>
+		<displayOrderInIssue>20</displayOrderInIssue>	
+		<comps>
+			
+			<li Class="PreceptComp_SituationalThought">
+				<thought>VME_LeatherApparel_Disliked</thought>
+			</li>
+			
+		</comps>		
+	</PreceptDef>
+	<ThoughtDef>
+		<defName>VME_LeatherApparel_Abhorrent</defName>
+		<workerClass>VanillaMemesExpanded.ThoughtWorker_Precept_Leather_Abhorrent</workerClass>
+		<stages>
+			
+			<li>
+				<label>wearing leather clothing</label>
+				<description>I'm wearing clothing made with animal leather. Slaughtering an animal to use its skin as apparel is cruel and inhumane.</description>
+				<baseMoodEffect>-15</baseMoodEffect>
+			</li>
+		</stages>
+
+	</ThoughtDef>
+	<ThoughtDef>
+		<defName>VME_LeatherApparel_Disliked</defName>
+		<workerClass>VanillaMemesExpanded.ThoughtWorker_Precept_Leather_Abhorrent</workerClass>
+		<stages>
+			
+			<li>
+				<label>wearing leather clothing</label>
+				<description>I'm wearing clothing made with animal leather. Slaughtering an animal to use its skin should be avoided.</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+		</stages>
+
+	</ThoughtDef>
+</Defs>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ 
+
+
+  
+    <ThingSetMakerDef>
+		<defName>VME_StartingItemsSweetTeeth</defName>
+		<root Class="VanillaMemesExpanded.ThingSetMaker_StartingItemsSweetTeeth" />
+	</ThingSetMakerDef>
+
+ 
+  
+</Defs>

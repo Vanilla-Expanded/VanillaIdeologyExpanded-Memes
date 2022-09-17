@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Issues -->
+	<IssueDef>
+		<defName>VME_AutomationEfficiency</defName>
+		<label>automation efficiency</label>
+		<iconPath>UI/Issues/AutomationEfficiency</iconPath>
+	</IssueDef>
+	<!-- Precepts -->
+	<PreceptDef>
+		<defName>VME_AutomationEfficiency_Increased</defName>
+		<issue>VME_AutomationEfficiency</issue>
+		<label>increased</label>
+		<description>From the woodwork of a simple bow to grand factoriums, a craftmaster knows how to craft with efficiency.\n\n&lt;color=#E5E54C&gt;Stats:&lt;/color&gt;\n - Electric work table speed: +50%.\n - Vanilla Factions Expanded - Mechanoids factories speed: +25%.</description>
+		<impact>Medium</impact>
+		<associatedMemes>
+			<li>VME_Progressive</li>
+		</associatedMemes>
+	</PreceptDef>
+	<PreceptDef>
+		<defName>VME_AutomationEfficiency_Decreased</defName>
+		<issue>VME_AutomationEfficiency</issue>
+		<label>decreased</label>
+		<description>Advanced machines and automated factories are to be shunned, for they detract from the exquisiteness of artisanal work.\n\n&lt;color=#E5E54C&gt;Stats:&lt;/color&gt;\n - Electric work table speed: -50%.\n - Vanilla Factions Expanded - Mechanoids factories speed: -25%.</description>
+		<impact>Medium</impact>
+	</PreceptDef>
+</Defs>

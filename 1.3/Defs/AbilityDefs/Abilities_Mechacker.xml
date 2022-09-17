@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<AbilityGroupDef>
+		<defName>VME_Mechacker</defName>
+		<cooldownTicks>60000</cooldownTicks>
+	</AbilityGroupDef>
+	<AbilityDef>
+		<defName>VME_EnableSelfDestruct</defName>
+		<label>enable self-destruct</label>
+		<jobDef>CastAbilityOnThing</jobDef>
+		<groupDef>VME_Mechacker</groupDef>
+		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>True</disableGizmoWhileUndrafted>
+		<description>An ability to command a turret or mechanoid to self-destruct. The mechacker can target any turret, even enemy ones, as well as any mechanoid.</description>
+		<targetRequired>True</targetRequired>
+		<gizmoClass>Command_Ability</gizmoClass>
+		<iconPath>UI/Abilities/EnableSelfDestruct</iconPath>
+		<uiOrder>1</uiOrder>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<warmupTime>5</warmupTime>
+			<range>15</range>
+			<targetParams>
+				<canTargetPawns>true</canTargetPawns>
+				
+				<canTargetSelf>false</canTargetSelf>
+				<canTargetBuildings>true</canTargetBuildings>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="VanillaMemesExpanded.CompProperties_AbilityEnableSelfDestruct">
+				
+			</li>
+		</comps>
+		<requiredMemes>
+			<li>VME_MechanoidSupremacy</li>
+		</requiredMemes>
+	</AbilityDef>
+	
+</Defs>

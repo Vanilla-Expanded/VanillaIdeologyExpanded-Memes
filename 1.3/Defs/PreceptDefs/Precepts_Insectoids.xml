@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<IssueDef>
+		<defName>VME_Insectoids</defName>
+		<label>insectoids</label>
+		<iconPath>UI/Issues/Insectoids</iconPath>
+	</IssueDef>
+	
+	<HistoryEventDef>
+		<defName>VME_InsectoidKilled</defName>
+		<label>insectoid killed</label>
+	</HistoryEventDef>
+	
+	<!-- Precepts -->
+	<PreceptDef>
+		<defName>VME_Insectoids_Exalted</defName>
+		<issue>VME_Insectoids</issue>
+		<label>exalted</label>
+		<description>Insects are not our enemies, only misunderstood and they certainly don’t deserve our aggression.</description>
+		<impact>High</impact>
+		<displayOrderInIssue>50</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<associatedMemes>
+			<li>VME_InsectoidSupremacy</li>
+		</associatedMemes>
+		<requiredMemes>
+			<li>VME_InsectoidSupremacy</li>
+		</requiredMemes>
+		<comps>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<eventDef>VME_InsectoidKilled</eventDef>
+				<thought>VME_Insectoids_Exalted</thought>
+			</li>
+			
+		</comps>
+		
+		
+	</PreceptDef>
+	
+	<ThoughtDef>
+		<defName>VME_Insectoids_Exalted</defName>
+		
+		<durationDays>6</durationDays>
+		<stackLimit>1</stackLimit>
+		<stages>
+			
+			<li>
+				<label>insectoid slain</label>
+				<description>I have killed an insectoid being, this is a stain on my soul.</description>
+				<baseMoodEffect>-10</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<PreceptDef>
+		<defName>VME_Insectoids_Despised</defName>
+		<issue>VME_Insectoids</issue>
+		<label>despised</label>
+		<description>Insects are our enemies, a plague that deserves to be exterminated.</description>
+		<impact>Medium</impact>
+		<displayOrderInIssue>40</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		
+		<comps>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<eventDef>VME_InsectoidKilled</eventDef>
+				<thought>VME_Insectoids_Despised</thought>
+			</li>
+			
+		</comps>
+		
+		
+	</PreceptDef>
+	
+	<ThoughtDef>
+		<defName>VME_Insectoids_Despised</defName>
+		
+		<durationDays>1</durationDays>
+		<stackLimit>1</stackLimit>
+		<stages>
+			
+			<li>
+				<label>insectoid slain</label>
+				<description>I have killed an insectoid being, this is a victory!</description>
+				<baseMoodEffect>4</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+</Defs>

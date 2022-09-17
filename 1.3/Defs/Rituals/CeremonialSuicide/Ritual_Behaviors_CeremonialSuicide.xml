@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  
+
+  <RitualBehaviorDef>
+    <defName>VME_CeremonialSuicideRitualBehaviour</defName>
+    <durationTicks>6250</durationTicks>
+	<workerClass>RitualBehaviorWorker_Funeral</workerClass>
+    <roles>
+      <li Class="VanillaMemesExpanded.RitualRole_Suicidal">
+        <label>suicidal colonist</label>
+        <id>suicide</id>
+        <required>True</required>
+        <substitutable>false</substitutable>
+        <maxCount>1</maxCount>
+		<ignoreBleeding>true</ignoreBleeding>
+		
+        <countsAsParticipant>true</countsAsParticipant>
+      </li>
+    </roles>
+    <spectatorsLabel>Participants</spectatorsLabel>
+    <spectatorGerund>participate</spectatorGerund>
+    <stages>
+      <li>
+        <defaultDuty>Spectate</defaultDuty>
+		<essential>True</essential>
+        <allowedSpectateSidesOverride>Vertical</allowedSpectateSidesOverride>
+        <spectateDistanceOverride>1</spectateDistanceOverride>
+        <spectatorsRequired>true</spectatorsRequired>
+        <endTriggers>
+          <li Class="StageEndTrigger_DurationPercentage">
+            <percentage>1</percentage>
+          </li>
+        </endTriggers>
+        <roleBehaviors>
+          <li>
+            <roleId>suicide</roleId>
+            <dutyDef>SpeakOnCell_Leader</dutyDef>
+            <speakerInteraction>Speech_Leader</speakerInteraction>
+            <customPositions>
+              <li Class="RitualPosition_BesideThing" />
+            </customPositions>
+          </li>
+        </roleBehaviors>
+		
+      </li>
+    </stages>
+  </RitualBehaviorDef>
+  
+  
+  
+ 
+
+</Defs>

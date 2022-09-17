@@ -1,0 +1,1390 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "AncientShoppingCart"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientShoppingCart"]</xpath>
+			<value>
+				<comps>
+					<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+						<defToPopUpMinified>VME_AncientShoppingCart</defToPopUpMinified>
+					</li>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientShoppingCart"]/comps</xpath>
+			<value>
+				<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+					<defToPopUpMinified>VME_AncientShoppingCart</defToPopUpMinified>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "AncientPostbox"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientPostbox"]</xpath>
+			<value>
+				<comps>
+					<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+						<defToPopUpMinified>VME_AncientPostbox</defToPopUpMinified>
+					</li>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientPostbox"]/comps</xpath>
+			<value>
+				<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+					<defToPopUpMinified>VME_AncientPostbox</defToPopUpMinified>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "AncientVendingMachine"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientVendingMachine"]</xpath>
+			<value>
+				<comps>
+					<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+						<defToPopUpMinified>VME_AncientVendingMachine</defToPopUpMinified>
+					</li>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientVendingMachine"]/comps</xpath>
+			<value>
+				<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+					<defToPopUpMinified>VME_AncientVendingMachine</defToPopUpMinified>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "AncientAirConditioner"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientAirConditioner"]</xpath>
+			<value>
+				<comps>
+					<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+						<defToPopUpMinified>VME_AncientAirConditioner</defToPopUpMinified>
+					</li>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientAirConditioner"]/comps</xpath>
+			<value>
+				<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+					<defToPopUpMinified>VME_AncientAirConditioner</defToPopUpMinified>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "AncientKitchenSink"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientKitchenSink"]</xpath>
+			<value>
+				<comps>
+					<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+						<defToPopUpMinified>VME_AncientKitchenSink</defToPopUpMinified>
+					</li>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientKitchenSink"]/comps</xpath>
+			<value>
+				<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+					<defToPopUpMinified>VME_AncientKitchenSink</defToPopUpMinified>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "AncientStove"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientStove"]</xpath>
+			<value>
+				<comps>
+					<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+						<defToPopUpMinified>VME_AncientStove</defToPopUpMinified>
+					</li>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientStove"]/comps</xpath>
+			<value>
+				<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+					<defToPopUpMinified>VME_AncientStove</defToPopUpMinified>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "AncientOven"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientOven"]</xpath>
+			<value>
+				<comps>
+					<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+						<defToPopUpMinified>VME_AncientOven</defToPopUpMinified>
+					</li>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientOven"]/comps</xpath>
+			<value>
+				<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+					<defToPopUpMinified>VME_AncientOven</defToPopUpMinified>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "AncientATM"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientATM"]</xpath>
+			<value>
+				<comps>
+					<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+						<defToPopUpMinified>VME_AncientATM</defToPopUpMinified>
+					</li>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientATM"]/comps</xpath>
+			<value>
+				<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+					<defToPopUpMinified>VME_AncientATM</defToPopUpMinified>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "AncientWashingMachine"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientWashingMachine"]</xpath>
+			<value>
+				<comps>
+					<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+						<defToPopUpMinified>VME_AncientWashingMachine</defToPopUpMinified>
+					</li>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientWashingMachine"]/comps</xpath>
+			<value>
+				<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+					<defToPopUpMinified>VME_AncientWashingMachine</defToPopUpMinified>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "AncientHydrant"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientHydrant"]</xpath>
+			<value>
+				<comps>
+					<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+						<defToPopUpMinified>VME_AncientHydrant</defToPopUpMinified>
+					</li>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientHydrant"]/comps</xpath>
+			<value>
+				<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+					<defToPopUpMinified>VME_AncientHydrant</defToPopUpMinified>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "AncientMicrowave"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientMicrowave"]</xpath>
+			<value>
+				<comps>
+					<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+						<defToPopUpMinified>VME_AncientMicrowave</defToPopUpMinified>
+					</li>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientMicrowave"]/comps</xpath>
+			<value>
+				<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+					<defToPopUpMinified>VME_AncientMicrowave</defToPopUpMinified>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "AncientToilet"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientToilet"]</xpath>
+			<value>
+				<comps>
+					<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+						<defToPopUpMinified>VME_AncientToilet</defToPopUpMinified>
+					</li>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientToilet"]/comps</xpath>
+			<value>
+				<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+					<defToPopUpMinified>VME_AncientToilet</defToPopUpMinified>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "AncientRefrigerator"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientRefrigerator"]</xpath>
+			<value>
+				<comps>
+					<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+						<defToPopUpMinified>VME_AncientRefrigerator</defToPopUpMinified>
+					</li>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientRefrigerator"]/comps</xpath>
+			<value>
+				<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+					<defToPopUpMinified>VME_AncientRefrigerator</defToPopUpMinified>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "AncientSmallCrate"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientSmallCrate"]</xpath>
+			<value>
+				<comps>
+					<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+						<defToPopUpMinified>VME_AncientSmallCrate</defToPopUpMinified>
+					</li>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientSmallCrate"]/comps</xpath>
+			<value>
+				<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+					<defToPopUpMinified>VME_AncientSmallCrate</defToPopUpMinified>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "AncientLongCrate"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientLongCrate"]</xpath>
+			<value>
+				<comps>
+					<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+						<defToPopUpMinified>VME_AncientLongCrate</defToPopUpMinified>
+					</li>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientLongCrate"]/comps</xpath>
+			<value>
+				<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+					<defToPopUpMinified>VME_AncientLongCrate</defToPopUpMinified>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "AncientLargeCrate"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientLargeCrate"]</xpath>
+			<value>
+				<comps>
+					<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+						<defToPopUpMinified>VME_AncientLargeCrate</defToPopUpMinified>
+					</li>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientLargeCrate"]/comps</xpath>
+			<value>
+				<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+					<defToPopUpMinified>VME_AncientLargeCrate</defToPopUpMinified>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "AncientWheel"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientWheel"]</xpath>
+			<value>
+				<comps>
+					<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+						<defToPopUpMinified>VME_AncientWheel</defToPopUpMinified>
+					</li>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientWheel"]/comps</xpath>
+			<value>
+				<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+					<defToPopUpMinified>VME_AncientWheel</defToPopUpMinified>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "AncientGiantWheel"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientGiantWheel"]</xpath>
+			<value>
+				<comps>
+					<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+						<defToPopUpMinified>VME_AncientGiantWheel</defToPopUpMinified>
+					</li>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientGiantWheel"]/comps</xpath>
+			<value>
+				<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+					<defToPopUpMinified>VME_AncientGiantWheel</defToPopUpMinified>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "AncientRustedCar"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientRustedCar"]</xpath>
+			<value>
+				<comps>
+					<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+						<defToPopUpMinified>VME_AncientRustedCar</defToPopUpMinified>
+					</li>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientRustedCar"]/comps</xpath>
+			<value>
+				<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+					<defToPopUpMinified>VME_AncientRustedCar</defToPopUpMinified>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "AncientRustedTruck"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientRustedTruck"]</xpath>
+			<value>
+				<comps>
+					<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+						<defToPopUpMinified>VME_AncientRustedTruck</defToPopUpMinified>
+					</li>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientRustedTruck"]/comps</xpath>
+			<value>
+				<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+					<defToPopUpMinified>VME_AncientRustedTruck</defToPopUpMinified>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "AncientRustedJeep"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientRustedJeep"]</xpath>
+			<value>
+				<comps>
+					<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+						<defToPopUpMinified>VME_AncientRustedJeep</defToPopUpMinified>
+					</li>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientRustedJeep"]/comps</xpath>
+			<value>
+				<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+					<defToPopUpMinified>VME_AncientRustedJeep</defToPopUpMinified>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "AncientRustedCarFrame"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientRustedCarFrame"]</xpath>
+			<value>
+				<comps>
+					<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+						<defToPopUpMinified>VME_AncientRustedCarFrame</defToPopUpMinified>
+					</li>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientRustedCarFrame"]/comps</xpath>
+			<value>
+				<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+					<defToPopUpMinified>VME_AncientRustedCarFrame</defToPopUpMinified>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "AncientWarwalkerTorso"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientWarwalkerTorso"]</xpath>
+			<value>
+				<comps>
+					<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+						<defToPopUpMinified>VME_AncientWarwalkerTorso</defToPopUpMinified>
+					</li>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientWarwalkerTorso"]/comps</xpath>
+			<value>
+				<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+					<defToPopUpMinified>VME_AncientWarwalkerTorso</defToPopUpMinified>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "AncientRustedDropship"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientRustedDropship"]</xpath>
+			<value>
+				<comps>
+					<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+						<defToPopUpMinified>VME_AncientRustedDropship</defToPopUpMinified>
+					</li>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientRustedDropship"]/comps</xpath>
+			<value>
+				<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+					<defToPopUpMinified>VME_AncientRustedDropship</defToPopUpMinified>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "AncientWarwalkerClaw"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientWarwalkerClaw"]</xpath>
+			<value>
+				<comps>
+					<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+						<defToPopUpMinified>VME_AncientWarwalkerClaw</defToPopUpMinified>
+					</li>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientWarwalkerClaw"]/comps</xpath>
+			<value>
+				<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+					<defToPopUpMinified>VME_AncientWarwalkerClaw</defToPopUpMinified>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "AncientWarwalkerLeg"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientWarwalkerLeg"]</xpath>
+			<value>
+				<comps>
+					<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+						<defToPopUpMinified>VME_AncientWarwalkerLeg</defToPopUpMinified>
+					</li>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientWarwalkerLeg"]/comps</xpath>
+			<value>
+				<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+					<defToPopUpMinified>VME_AncientWarwalkerLeg</defToPopUpMinified>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "AncientMiniWarwalkerRemains"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientMiniWarwalkerRemains"]</xpath>
+			<value>
+				<comps>
+					<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+						<defToPopUpMinified>VME_AncientMiniWarwalkerRemains</defToPopUpMinified>
+					</li>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientMiniWarwalkerRemains"]/comps</xpath>
+			<value>
+				<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+					<defToPopUpMinified>VME_AncientMiniWarwalkerRemains</defToPopUpMinified>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "AncientWarspiderRemains"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientWarspiderRemains"]</xpath>
+			<value>
+				<comps>
+					<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+						<defToPopUpMinified>VME_AncientWarspiderRemains</defToPopUpMinified>
+					</li>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientWarspiderRemains"]/comps</xpath>
+			<value>
+				<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+					<defToPopUpMinified>VME_AncientWarspiderRemains</defToPopUpMinified>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "AncientPipelineSection"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientPipelineSection"]</xpath>
+			<value>
+				<comps>
+					<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+						<defToPopUpMinified>VME_AncientPipelineSection</defToPopUpMinified>
+					</li>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientPipelineSection"]/comps</xpath>
+			<value>
+				<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+					<defToPopUpMinified>VME_AncientPipelineSection</defToPopUpMinified>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "AncientWarwalkerFoot"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientWarwalkerFoot"]</xpath>
+			<value>
+				<comps>
+					<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+						<defToPopUpMinified>VME_AncientWarwalkerFoot</defToPopUpMinified>
+					</li>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientWarwalkerFoot"]/comps</xpath>
+			<value>
+				<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+					<defToPopUpMinified>VME_AncientWarwalkerFoot</defToPopUpMinified>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "AncientTank"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientTank"]</xpath>
+			<value>
+				<comps>
+					<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+						<defToPopUpMinified>VME_AncientTank</defToPopUpMinified>
+					</li>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientTank"]/comps</xpath>
+			<value>
+				<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+					<defToPopUpMinified>VME_AncientTank</defToPopUpMinified>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "AncientAPC"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientAPC"]</xpath>
+			<value>
+				<comps>
+					<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+						<defToPopUpMinified>VME_AncientAPC</defToPopUpMinified>
+					</li>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientAPC"]/comps</xpath>
+			<value>
+				<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+					<defToPopUpMinified>VME_AncientAPC</defToPopUpMinified>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "AncientWarwalkerShell"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientWarwalkerShell"]</xpath>
+			<value>
+				<comps>
+					<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+						<defToPopUpMinified>VME_AncientWarwalkerShell</defToPopUpMinified>
+					</li>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientWarwalkerShell"]/comps</xpath>
+			<value>
+				<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+					<defToPopUpMinified>VME_AncientWarwalkerShell</defToPopUpMinified>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "AncientJetEngine"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientJetEngine"]</xpath>
+			<value>
+				<comps>
+					<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+						<defToPopUpMinified>VME_AncientJetEngine</defToPopUpMinified>
+					</li>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientJetEngine"]/comps</xpath>
+			<value>
+				<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+					<defToPopUpMinified>VME_AncientJetEngine</defToPopUpMinified>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "AncientDropshipEngine"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientDropshipEngine"]</xpath>
+			<value>
+				<comps>
+					<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+						<defToPopUpMinified>VME_AncientDropshipEngine</defToPopUpMinified>
+					</li>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientDropshipEngine"]/comps</xpath>
+			<value>
+				<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+					<defToPopUpMinified>VME_AncientDropshipEngine</defToPopUpMinified>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "AncientPodCar"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientPodCar"]</xpath>
+			<value>
+				<comps>
+					<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+						<defToPopUpMinified>VME_AncientPodCar</defToPopUpMinified>
+					</li>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientPodCar"]/comps</xpath>
+			<value>
+				<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+					<defToPopUpMinified>VME_AncientPodCar</defToPopUpMinified>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "AncientTankTrap"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientTankTrap"]</xpath>
+			<value>
+				<comps>
+					<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+						<defToPopUpMinified>VME_AncientTankTrap</defToPopUpMinified>
+					</li>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientTankTrap"]/comps</xpath>
+			<value>
+				<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+					<defToPopUpMinified>VME_AncientTankTrap</defToPopUpMinified>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "AncientLargeRustedEngineBlock"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientLargeRustedEngineBlock"]</xpath>
+			<value>
+				<comps>
+					<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+						<defToPopUpMinified>VME_AncientLargeRustedEngineBlock</defToPopUpMinified>
+					</li>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientLargeRustedEngineBlock"]/comps</xpath>
+			<value>
+				<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+					<defToPopUpMinified>VME_AncientLargeRustedEngineBlock</defToPopUpMinified>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "AncientRazorWire"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientRazorWire"]</xpath>
+			<value>
+				<comps>
+					<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+						<defToPopUpMinified>VME_AncientRazorWire</defToPopUpMinified>
+					</li>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientRazorWire"]/comps</xpath>
+			<value>
+				<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+					<defToPopUpMinified>VME_AncientRazorWire</defToPopUpMinified>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "AncientPipes"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientPipes"]</xpath>
+			<value>
+				<comps>
+					<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+						<defToPopUpMinified>VME_AncientPipes</defToPopUpMinified>
+					</li>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientPipes"]/comps</xpath>
+			<value>
+				<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+					<defToPopUpMinified>VME_AncientPipes</defToPopUpMinified>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "AncientMegaCannonTripod"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientMegaCannonTripod"]</xpath>
+			<value>
+				<comps>
+					<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+						<defToPopUpMinified>VME_AncientMegaCannonTripod</defToPopUpMinified>
+					</li>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientMegaCannonTripod"]/comps</xpath>
+			<value>
+				<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+					<defToPopUpMinified>VME_AncientMegaCannonTripod</defToPopUpMinified>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "AncientMegaCannonBarrel"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientMegaCannonBarrel"]</xpath>
+			<value>
+				<comps>
+					<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+						<defToPopUpMinified>VME_AncientMegaCannonBarrel</defToPopUpMinified>
+					</li>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientMegaCannonBarrel"]/comps</xpath>
+			<value>
+				<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+					<defToPopUpMinified>VME_AncientMegaCannonBarrel</defToPopUpMinified>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "AncientContainer"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientContainer"]</xpath>
+			<value>
+				<comps>
+					<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+						<defToPopUpMinified>VME_AncientContainer</defToPopUpMinified>
+					</li>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientContainer"]/comps</xpath>
+			<value>
+				<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+					<defToPopUpMinified>VME_AncientContainer</defToPopUpMinified>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "AncientMechanoidShell"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientMechanoidShell"]</xpath>
+			<value>
+				<comps>
+					<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+						<defToPopUpMinified>VME_AncientMechanoidShell</defToPopUpMinified>
+					</li>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientMechanoidShell"]/comps</xpath>
+			<value>
+				<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+					<defToPopUpMinified>VME_AncientMechanoidShell</defToPopUpMinified>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "AncientCentipedeShell"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientCentipedeShell"]</xpath>
+			<value>
+				<comps>
+					<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+						<defToPopUpMinified>VME_AncientCentipedeShell</defToPopUpMinified>
+					</li>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientCentipedeShell"]/comps</xpath>
+			<value>
+				<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+					<defToPopUpMinified>VME_AncientCentipedeShell</defToPopUpMinified>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "AncientMechDropBeacon"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientMechDropBeacon"]</xpath>
+			<value>
+				<comps>
+					<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+						<defToPopUpMinified>VME_AncientMechDropBeacon</defToPopUpMinified>
+					</li>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientMechDropBeacon"]/comps</xpath>
+			<value>
+				<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+					<defToPopUpMinified>VME_AncientMechDropBeacon</defToPopUpMinified>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "AncientSecurityTurret"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientSecurityTurret"]</xpath>
+			<value>
+				<comps>
+					<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+						<defToPopUpMinified>VME_AncientSecurityTurret</defToPopUpMinified>
+					</li>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientSecurityTurret"]/comps</xpath>
+			<value>
+				<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+					<defToPopUpMinified>VME_AncientSecurityTurret</defToPopUpMinified>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "AncientRustedEngineBlock"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientRustedEngineBlock"]</xpath>
+			<value>
+				<comps>
+					<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+						<defToPopUpMinified>VME_AncientRustedEngineBlock</defToPopUpMinified>
+					</li>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientRustedEngineBlock"]/comps</xpath>
+			<value>
+				<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+					<defToPopUpMinified>VME_AncientRustedEngineBlock</defToPopUpMinified>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "AncientShipBeacon"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientShipBeacon"]</xpath>
+			<value>
+				<comps>
+					<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+						<defToPopUpMinified>VME_AncientShipBeacon</defToPopUpMinified>
+					</li>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientShipBeacon"]/comps</xpath>
+			<value>
+				<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+					<defToPopUpMinified>VME_AncientShipBeacon</defToPopUpMinified>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "AncientSystemRack"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientSystemRack"]</xpath>
+			<value>
+				<comps>
+					<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+						<defToPopUpMinified>VME_AncientSystemRack</defToPopUpMinified>
+					</li>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientSystemRack"]/comps</xpath>
+			<value>
+				<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+					<defToPopUpMinified>VME_AncientSystemRack</defToPopUpMinified>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "AncientEquipmentBlocks"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientEquipmentBlocks"]</xpath>
+			<value>
+				<comps>
+					<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+						<defToPopUpMinified>VME_AncientEquipmentBlocks</defToPopUpMinified>
+					</li>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientEquipmentBlocks"]/comps</xpath>
+			<value>
+				<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+					<defToPopUpMinified>VME_AncientEquipmentBlocks</defToPopUpMinified>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "AncientMachine"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientMachine"]</xpath>
+			<value>
+				<comps>
+					<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+						<defToPopUpMinified>VME_AncientMachine</defToPopUpMinified>
+					</li>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientMachine"]/comps</xpath>
+			<value>
+				<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+					<defToPopUpMinified>VME_AncientMachine</defToPopUpMinified>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "AncientStorageCylinder"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientStorageCylinder"]</xpath>
+			<value>
+				<comps>
+					<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+						<defToPopUpMinified>VME_AncientStorageCylinder</defToPopUpMinified>
+					</li>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientStorageCylinder"]/comps</xpath>
+			<value>
+				<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+					<defToPopUpMinified>VME_AncientStorageCylinder</defToPopUpMinified>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "AncientLamp"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientLamp"]</xpath>
+			<value>
+				<comps>
+					<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+						<defToPopUpMinified>VME_AncientLamp</defToPopUpMinified>
+					</li>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientLamp"]/comps</xpath>
+			<value>
+				<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+					<defToPopUpMinified>VME_AncientLamp</defToPopUpMinified>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "AncientBed"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientBed"]</xpath>
+			<value>
+				<comps>
+					<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+						<defToPopUpMinified>VME_AncientBed</defToPopUpMinified>
+					</li>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientBed"]/comps</xpath>
+			<value>
+				<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+					<defToPopUpMinified>VME_AncientBed</defToPopUpMinified>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "AncientDisplayBank"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientDisplayBank"]</xpath>
+			<value>
+				<comps>
+					<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+						<defToPopUpMinified>VME_AncientDisplayBank</defToPopUpMinified>
+					</li>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientDisplayBank"]/comps</xpath>
+			<value>
+				<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+					<defToPopUpMinified>VME_AncientDisplayBank</defToPopUpMinified>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "AncientLockerBank"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientLockerBank"]</xpath>
+			<value>
+				<comps>
+					<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+						<defToPopUpMinified>VME_AncientLockerBank</defToPopUpMinified>
+					</li>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientLockerBank"]/comps</xpath>
+			<value>
+				<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+					<defToPopUpMinified>VME_AncientLockerBank</defToPopUpMinified>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "AncientCrate"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientCrate"]</xpath>
+			<value>
+				<comps>
+					<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+						<defToPopUpMinified>VME_AncientCrate</defToPopUpMinified>
+					</li>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientCrate"]/comps</xpath>
+			<value>
+				<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+					<defToPopUpMinified>VME_AncientCrate</defToPopUpMinified>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "AncientMilitaryCrate"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientMilitaryCrate"]</xpath>
+			<value>
+				<comps>
+					<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+						<defToPopUpMinified>VME_AncientMilitaryCrate</defToPopUpMinified>
+					</li>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientMilitaryCrate"]/comps</xpath>
+			<value>
+				<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+					<defToPopUpMinified>VME_AncientMilitaryCrate</defToPopUpMinified>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "AncientSpacerCrate"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientSpacerCrate"]</xpath>
+			<value>
+				<comps>
+					<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+						<defToPopUpMinified>VME_AncientSpacerCrate</defToPopUpMinified>
+					</li>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientSpacerCrate"]/comps</xpath>
+			<value>
+				<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+					<defToPopUpMinified>VME_AncientSpacerCrate</defToPopUpMinified>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "AncientBarrel"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientBarrel"]</xpath>
+			<value>
+				<comps>
+					<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+						<defToPopUpMinified>VME_AncientBarrel</defToPopUpMinified>
+					</li>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientBarrel"]/comps</xpath>
+			<value>
+				<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+					<defToPopUpMinified>VME_AncientBarrel</defToPopUpMinified>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "AncientGenerator"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientGenerator"]</xpath>
+			<value>
+				<comps>
+					<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+						<defToPopUpMinified>VME_AncientGenerator</defToPopUpMinified>
+					</li>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientGenerator"]/comps</xpath>
+			<value>
+				<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+					<defToPopUpMinified>VME_AncientGenerator</defToPopUpMinified>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "AncientOperatingTable"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientOperatingTable"]</xpath>
+			<value>
+				<comps>
+					<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+						<defToPopUpMinified>VME_AncientOperatingTable</defToPopUpMinified>
+					</li>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AncientOperatingTable"]/comps</xpath>
+			<value>
+				<li Class="VanillaMemesExpanded.CompProperties_DeconstructJunk">
+					<defToPopUpMinified>VME_AncientOperatingTable</defToPopUpMinified>
+				</li>
+			</value>
+		</match>
+	</Operation>
+</Patch>

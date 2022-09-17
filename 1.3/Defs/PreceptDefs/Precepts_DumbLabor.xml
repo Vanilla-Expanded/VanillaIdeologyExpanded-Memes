@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<IssueDef>
+		<defName>VME_DumbLabor</defName>
+		<label>dumb labor</label>
+		<iconPath>UI/Issues/DumbLabor</iconPath>
+	</IssueDef>
+	<HistoryEventDef>
+		<defName>VME_DumbLabor</defName>
+		<label>dumb labor</label>
+	</HistoryEventDef>
+	<!-- Precepts -->
+	<PreceptDef>
+		<defName>VME_DumbLabor_Exalted</defName>
+		<issue>VME_DumbLabor</issue>
+		<label>exalted</label>
+		<description>An aching body is to be revered. Nearly nothing is found more rewarding than a day of hard work.</description>
+		<impact>High</impact>
+		<displayOrderInIssue>10</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<associatedMemes>
+			<li>VME_HardcoreIndustrialism</li>
+		</associatedMemes>
+		<comps>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<eventDef>VME_DumbLabor</eventDef>
+				<thought>VME_DumbLabor_Exalted</thought>
+			</li>
+		</comps>
+	</PreceptDef>
+	<ThoughtDef>
+		<defName>VME_DumbLabor_Exalted</defName>
+		<durationDays>1</durationDays>
+		<stackLimit>1</stackLimit>
+		<stages>
+			<li>
+				<label>did dumb labor</label>
+				<description>I had to do dumb labor. I am an excellent example of the working class.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<PreceptDef>
+		<defName>VME_DumbLabor_Liked</defName>
+		<issue>VME_DumbLabor</issue>
+		<label>liked</label>
+		<description>Hard work is good for your body and for your mind.</description>
+		<impact>Medium</impact>
+		<displayOrderInIssue>20</displayOrderInIssue>
+		<displayOrderInImpact>20</displayOrderInImpact>
+		<comps>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<eventDef>VME_DumbLabor</eventDef>
+				<thought>VME_DumbLabor_Liked</thought>
+			</li>
+		</comps>
+	</PreceptDef>
+	<ThoughtDef>
+		<defName>VME_DumbLabor_Liked</defName>
+		<durationDays>1</durationDays>
+		<stackLimit>1</stackLimit>
+		<stages>
+			<li>
+				<label>did dumb labor</label>
+				<description>I had to do dumb labor. Broke a sweat but it was some honest work.</description>
+				<baseMoodEffect>2</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<PreceptDef>
+		<defName>VME_DumbLabor_Indifferent</defName>
+		<issue>VME_DumbLabor</issue>
+		<label>indifferent</label>
+		<description>Dumb tasks are necessary. That's all there is to it.</description>
+		<impact>Low</impact>
+		<displayOrderInIssue>30</displayOrderInIssue>
+		<defaultSelectionWeight>1</defaultSelectionWeight>
+	</PreceptDef>
+	<PreceptDef>
+		<defName>VME_DumbLabor_Disliked</defName>
+		<issue>VME_DumbLabor</issue>
+		<label>disliked</label>
+		<description>We'd rather not do cleaning and hauling tasks, as they are incredibly exhausting, but they are necessary.</description>
+		<impact>Medium</impact>
+		<displayOrderInIssue>40</displayOrderInIssue>
+		<displayOrderInImpact>20</displayOrderInImpact>
+		<comps>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<eventDef>VME_DumbLabor</eventDef>
+				<thought>VME_DumbLabor_Disliked</thought>
+			</li>
+		</comps>
+	</PreceptDef>
+	<ThoughtDef>
+		<defName>VME_DumbLabor_Disliked</defName>
+		<durationDays>1</durationDays>
+		<stackLimit>1</stackLimit>
+		<stages>
+			<li>
+				<label>did dumb labor</label>
+				<description>I had to do dumb labor. So exhausting!</description>
+				<baseMoodEffect>-2</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<PreceptDef>
+		<defName>VME_DumbLabor_Horrible</defName>
+		<issue>VME_DumbLabor</issue>
+		<label>horrible</label>
+		<description>We should not suffer the laborious degradation of our bodies, nor the degradation of sweat forming on our brow.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Leader and Moralist roles will be incapable of Dumb Labor.</description>
+		<impact>High</impact>
+		<displayOrderInIssue>50</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<associatedMemes>
+			<li>VME_Aristocratic</li>
+		</associatedMemes>
+		<comps>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<eventDef>VME_DumbLabor</eventDef>
+				<thought>VME_DumbLabor_Horrible</thought>
+			</li>
+		</comps>
+	</PreceptDef>
+	<ThoughtDef>
+		<defName>VME_DumbLabor_Horrible</defName>
+		<durationDays>1</durationDays>
+		<stackLimit>1</stackLimit>
+		<stages>
+			<li>
+				<label>did dumb labor</label>
+				<description>I had to do dumb labor. It’s horrible. I don’t want it.</description>
+				<baseMoodEffect>-10</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+</Defs>

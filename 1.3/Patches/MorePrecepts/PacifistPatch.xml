@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>More Precepts</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+
+
+				<li Class="PatchOperationReplace"> 
+					<xpath>/Defs/MemeDef[defName="VME_Pacifist"]/label</xpath>
+					<value>
+						<label>nonaggression</label>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace"> 
+					<xpath>/Defs/IssueDef[defName="VME_Violence"]/label</xpath>
+					<value>
+						<label>aggression</label>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace"> 
+					<xpath>/Defs/PreceptDef[defName="VME_Violence_Acceptable"]/description</xpath>
+					<value>
+						<description>Aggression is just a fact of life.</description>
+					</value>
+				</li>
+
+
+
+
+
+
+
+
+			</operations>
+		</match>
+	</Operation>
+
+
+</Patch>
+

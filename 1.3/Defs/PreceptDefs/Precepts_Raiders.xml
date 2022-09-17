@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ 
+ 
+
+  <PreceptDef ParentName="RaidingBase">
+    <defName>VME_Raiding_Honorable</defName>
+    <issue>Raiding</issue>
+    <label>honorable</label>
+    <description>We display our strength and perseverance through conquest, and in doing so we bring honor to our colony.</description>
+    <impact>Low</impact>
+    <displayOrderInIssue>20</displayOrderInIssue>
+    <displayOrderInImpact>1000</displayOrderInImpact>
+    <statOffsets>
+      <WorkSpeedGlobal>-0.04</WorkSpeedGlobal>
+    </statOffsets>
+    <comps>
+      <li Class="PreceptComp_SituationalThought">
+        <thought>VME_RecentConquest_Honorable</thought>
+        <thoughtStageDescriptions>
+          <li>Less than {DAYSSINCELASTRAIDTHRESHOLD} days since our last raid</li>
+          <li>More than {DAYSSINCELASTRAIDTHRESHOLD} days since our last raid</li>
+        </thoughtStageDescriptions>
+      </li>
+      <li Class="PreceptComp_SelfTookMemoryThought">
+        <thought>VME_ParticipatedInRaid_Honorable</thought>
+        <eventDef>Raided</eventDef>
+      </li>
+    </comps>
+  </PreceptDef>
+  
+  <ThoughtDef>
+    <defName>VME_ParticipatedInRaid_Honorable</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>5</durationDays>
+    <stackedEffectMultiplier>1</stackedEffectMultiplier>
+    <stackLimit>300</stackLimit>
+    <stages>
+      <li>
+        <label>participated in raid</label>
+        <description>I participated in a raid. Through conquest, we bring honor to our colony.</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <ThoughtDef>
+    <defName>VME_RecentConquest_Honorable</defName>
+    <workerClass>ThoughtWorker_Precept_RecentConquest</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+	<minExpectation>Moderate</minExpectation>
+    <stages>
+      <li>
+        <label>recent conquest</label>
+        <description>We recently raided another faction. Through conquest, we bring honor to our colony.</description>
+        <baseMoodEffect>4</baseMoodEffect>
+      </li>
+      <li>
+        <label>no recent conquest</label>
+        <description>It's been far too long since we raided anyone. Through conquest, we bring honor to our colony.</description>
+        <baseMoodEffect>-4</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <PreceptDef ParentName="RaidingBase">
+    <defName>VME_Raiding_Abhorrent</defName>
+    <issue>Raiding</issue>
+    <label>abhorrent</label>
+    <description>We worked hard for what we have, we cannot take from the weak as we too were once weak. Doing so is a tremendous shame.</description>
+    <impact>High</impact>
+    <displayOrderInIssue>40</displayOrderInIssue>
+    <displayOrderInImpact>1000</displayOrderInImpact>
+    <statOffsets>
+      <WorkSpeedGlobal>0.1</WorkSpeedGlobal>
+    </statOffsets>
+    <comps>
+      <li Class="PreceptComp_SituationalThought">
+        <thought>VME_RecentConquest_Abhorrent</thought>
+        <thoughtStageDescriptions>
+          <li>Less than {DAYSSINCELASTRAIDTHRESHOLD} days since our last raid</li>
+          <li>More than {DAYSSINCELASTRAIDTHRESHOLD} days since our last raid</li>
+        </thoughtStageDescriptions>
+      </li>
+      <li Class="PreceptComp_SelfTookMemoryThought">
+        <thought>VME_ParticipatedInRaid_Abhorrent</thought>
+        <eventDef>Raided</eventDef>
+      </li>
+    </comps>
+  </PreceptDef>
+  
+   <ThoughtDef>
+    <defName>VME_ParticipatedInRaid_Abhorrent</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>5</durationDays>
+    <stackedEffectMultiplier>1</stackedEffectMultiplier>
+    <stackLimit>300</stackLimit>
+    <stages>
+      <li>
+        <label>participated in raid</label>
+        <description>I participated in a raid. How could we do that? It's horribly shameful!</description>
+        <baseMoodEffect>-30</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <ThoughtDef>
+    <defName>VME_RecentConquest_Abhorrent</defName>
+    <workerClass>ThoughtWorker_Precept_RecentConquest</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>recent conquest</label>
+        <description>We recently raided another faction. This is horrible and brings shame to our colony.</description>
+        <baseMoodEffect>-6</baseMoodEffect>
+      </li>
+      <li>
+        <label>no recent conquest</label>
+        <description>It's been a long since we raided anyone. This is as it should be, we are not bullies.</description>
+        <baseMoodEffect>6</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+ 
+
+</Defs>

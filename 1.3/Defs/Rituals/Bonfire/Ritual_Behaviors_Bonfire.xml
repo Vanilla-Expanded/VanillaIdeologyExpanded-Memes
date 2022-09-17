@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  
+<RitualBehaviorDef>
+    <defName>VME_BonfireBehaviour</defName>
+    <durationTicks>6250</durationTicks>
+    <roles>
+      <li Class="RitualRoleTag">
+        <label>fireKeeper</label>
+        <tag>FireKeeper</tag>
+        <id>fireKeeper</id>
+        <precept>VME_IdeoRole_FireKeeper</precept>
+        <required>True</required>
+        <substitutable>True</substitutable>
+        <maxCount>1</maxCount>
+        <countsAsParticipant>False</countsAsParticipant>
+      </li>
+    </roles>
+    <spectatorsLabel>Participants</spectatorsLabel>
+    <spectatorGerund>participate</spectatorGerund>
+    <stages>
+      <li>
+        <defaultDuty>Spectate</defaultDuty>
+		<spectateDistanceOverride>3~5</spectateDistanceOverride>
+        <essential>True</essential>
+        <endTriggers>
+          <li Class="StageEndTrigger_DurationPercentage">
+            <percentage>1</percentage>
+          </li>
+        </endTriggers>
+       
+        <roleBehaviors>
+          <li>
+            <roleId>fireKeeper</roleId>
+            <dutyDef>SpeakOnCellFacingSpectators</dutyDef>
+            <speakerInteraction>Speech_DateRitual</speakerInteraction>
+            <customPositions>
+             
+              <li Class="RitualPosition_BesideThing" />
+            </customPositions>
+          </li>
+        </roleBehaviors>
+      </li>
+      
+    </stages>
+  </RitualBehaviorDef>
+ 
+
+</Defs>

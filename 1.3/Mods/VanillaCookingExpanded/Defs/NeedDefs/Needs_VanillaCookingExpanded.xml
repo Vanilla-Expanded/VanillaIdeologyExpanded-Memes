@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+  <NeedDef>
+    <defName>VME_Desserts</defName>
+    <needClass>VanillaMemesExpanded.Need_Desserts</needClass>
+    <label>desserts</label>
+    <description>Dessert need represents the desire to engorge yourself with lusciously sinful confectionery creations.</description>
+    <minIntelligence>Humanlike</minIntelligence>
+    <colonistAndPrisonersOnly>true</colonistAndPrisonersOnly>
+    <seekerRisePerHour>0.60</seekerRisePerHour>
+    <seekerFallPerHour>0.02</seekerFallPerHour>
+    <listPriority>90</listPriority>
+   
+  </NeedDef>
+
+  
+</Defs>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+	<Operation Class="PatchOperationAdd"> 
+	<success>Always</success>
+		<xpath>/Defs/PreceptDef[defName="Slavery_Abhorrent"]/associatedMemes</xpath>
+		<value>
+			<li>VME_Egalitarian</li>
+			<li>VME_Pacifist</li>
+		</value>
+	</Operation>
+	
+	
+
+
+
+</Patch>

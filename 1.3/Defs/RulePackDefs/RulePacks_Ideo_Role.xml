@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <RulePackDef>
+    <defName>VME_NamerSecondTriumvir</defName>
+    <rulePack>
+      <rulesStrings>
+       
+        <li>r_roleName->second triumvir</li>
+       
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>VME_NamerThirdTriumvir</defName>
+    <rulePack>
+      <rulesStrings>
+       
+        <li>r_roleName->third triumvir</li>
+       
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>VME_RoleFireKeeper</defName>
+    
+    <rulePack>
+      <rulesStrings>
+	    <li>r_roleName(p=7)->[firstPart][secondPart]</li>
+        <li>r_roleName->firekeeper</li>
+        <li>r_roleName->flamekeeper</li>
+        <li>firstPart->flame</li>
+        <li>firstPart->ash</li>
+        <li>firstPart->fire</li>
+        <li>firstPart->warmth</li>
+        <li>firstPart->bright</li>
+        <li>firstPart->light</li>
+        <li>firstPart->kiln</li>
+        <li>firstPart->forge</li>
+        <li>secondPart(p=4)->touched</li>
+        <li>secondPart(p=4)->warden</li>
+        <li>secondPart(p=4)->herald</li>
+        <li>secondPart(p=4)->protector</li>
+        <li>secondPart(p=4)->defender</li>
+        <li>secondPart(p=4)->seeker</li>
+        <li>secondPart(p=4)->whisperer</li>
+        <li>secondPart(p=4)->keeper</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+<RulePackDef>
+    <defName>VME_Mechacker</defName>
+
+    <rulePack>
+      <rulesStrings>
+        <li>r_roleName(p=7)->[firstPart][secondPart]</li>
+        <li>r_roleName->Mechacker</li>
+        <li>firstPart->Engine </li>
+        <li>firstPart->Mechanoid </li>
+        <li>firstPart->Bionic </li>
+        <li>firstPart->Technological </li>
+        <li>firstPart->Electronic </li>
+        <li>firstPart->Artificial </li>
+        <li>firstPart->Scientific </li>
+        <li>firstPart->Brilliant </li>
+        <li>secondPart(p=4)->Engineseer</li>
+        <li>secondPart(p=4)->Artificer</li>
+        <li>secondPart(p=4)->Machinist</li>
+        <li>secondPart(p=4)->Soothesayer</li>
+        <li>secondPart(p=4)->Designer</li>
+        <li>secondPart(p=4)->Hackmaster</li>
+        <li>secondPart(p=4)->Mastermind</li>
+        <li>secondPart(p=4)->Inventor</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>VME_PartyHost</defName>
+   
+    <rulePack>
+      <rulesStrings>
+	   <li>r_roleName(p=7)->[firstPart][secondPart]</li>
+        <li>r_roleName->party host</li>
+        <li>r_roleName->party animal</li>
+        <li>firstPart->exciting </li>
+        <li>firstPart->comedic </li>
+        <li>firstPart->esteemed </li>
+        <li>firstPart->hilarious </li>
+        <li>firstPart->crazed </li>
+        <li>firstPart->wild </li>
+        <li>firstPart->jubilant </li>
+        <li>firstPart->joyous </li>
+        <li>secondPart(p=4)->genius</li>
+        <li>secondPart(p=4)->entertainer</li>
+        <li>secondPart(p=4)->host</li>
+        <li>secondPart(p=4)->jester</li>
+        <li>secondPart(p=4)->joker</li>
+        <li>secondPart(p=4)->animal</li>
+        <li>secondPart(p=4)->performer</li>
+        <li>secondPart(p=4)->comedian</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>VME_InsectoidHerder</defName>
+
+    <rulePack>
+      <rulesStrings>
+        <li>r_roleName(p=7)->[firstPart][secondPart]</li>
+        <li>r_roleName->Insectoid Herder</li>
+        <li>firstPart->Spider </li>
+        <li>firstPart->Maggot </li>
+        <li>firstPart->Scarab </li>
+        <li>firstPart->Cricket </li>
+        <li>firstPart->Tick </li>
+        <li>firstPart->Larva </li>
+        <li>firstPart->Beetle </li>
+        <li>firstPart->Locust </li>
+        <li>secondPart(p=4)->Harvester</li>
+        <li>secondPart(p=4)->Handler</li>
+        <li>secondPart(p=4)->Brood-sibling</li>
+        <li>secondPart(p=4)->Devotee</li>
+        <li>secondPart(p=4)->Hive-Psyker</li>
+        <li>secondPart(p=4)->Hive-Commander</li>
+        <li>secondPart(p=4)->Hive-brood</li>
+        <li>secondPart(p=4)->Hive-slave</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  
+   <RulePackDef>
+    <defName>VME_Trader</defName>
+
+    <rulePack>
+      <rulesStrings>
+        <li>r_roleName(p=7)->[firstPart][secondPart]</li>
+        <li>r_roleName->Trader</li>
+        <li>firstPart->Bountiful </li>
+        <li>firstPart->Itinerant </li>
+        <li>firstPart->Unscrupulous </li>
+        <li>firstPart->Respectable </li>
+        <li>firstPart->Affluent </li>
+        <li>firstPart->Prosperous </li>
+        <li>firstPart->Opulent </li>
+        <li>firstPart->Rich </li>
+        <li>secondPart(p=4)->Merchant</li>
+        <li>secondPart(p=4)->Operator</li>
+        <li>secondPart(p=4)->Seller</li>
+        <li>secondPart(p=4)->Shopkeeper</li>
+        <li>secondPart(p=4)->Vendor</li>
+        <li>secondPart(p=4)->Broker</li>
+        <li>secondPart(p=4)->Wholesaler</li>
+        <li>secondPart(p=4)->Salesperson</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  
+ <RulePackDef>
+    <defName>VME_Patissier</defName>
+
+    <rulePack>
+      <rulesStrings>
+        <li>r_roleName(p=7)->[firstPart][secondPart]</li>
+        <li>r_roleName->Patissier</li>
+        <li>firstPart->Deft-handed </li>
+        <li>firstPart->Accomplished </li>
+        <li>firstPart->Talented </li>
+        <li>firstPart->Exquisite </li>
+        <li>firstPart->Seasoned </li>
+        <li>firstPart->Masterful </li>
+        <li>secondPart(p=4)->Culinarian</li>
+        <li>secondPart(p=4)->Epicurian</li>
+        <li>secondPart(p=4)->Baker</li>
+        <li>secondPart(p=4)->Patissier</li>
+        <li>secondPart(p=4)->Banqueter</li>
+        <li>secondPart(p=4)->Glacier</li>
+        <li>secondPart(p=4)->Confectioner</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+ 
+ <RulePackDef>
+    <defName>VME_Commissar</defName>
+
+    <rulePack>
+      <rulesStrings>
+       
+        <li>r_roleName->Commissar</li>
+        
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>VME_Fleshcrafter</defName>
+
+    <rulePack>
+      <rulesStrings>
+       
+        <li>r_roleName->Fleshcrafter</li>
+        
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>VME_Nurse</defName>
+
+    <rulePack>
+      <rulesStrings>
+       
+        <li>r_roleName->Nurse</li>
+        
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>

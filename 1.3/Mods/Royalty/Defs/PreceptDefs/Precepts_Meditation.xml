@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Issues -->
+
+
+	<IssueDef>
+		<defName>VME_Meditation</defName>
+		<label>meditation</label>
+		<iconPath>UI/Issues/Meditation</iconPath>
+	</IssueDef>
+
+	<!-- Precepts -->
+
+
+
+	<PreceptDef>
+		<defName>VME_Meditation_Exquisite</defName>
+		<issue>VME_Meditation</issue>
+		<label>exquisite</label>
+		<description>Hear, feel, think… Beyond meditation, enter trance and surrender yourself to your own soul and those souls around it.</description>
+		<impact>Medium</impact>
+		<associatedMemes>
+			<li>VME_PsychicFocus</li>
+		</associatedMemes>
+		<statOffsets>
+			<MeditationFocusStrength>0.2</MeditationFocusStrength>
+			
+		</statOffsets>
+	</PreceptDef> 
+	
+
+
+</Defs>

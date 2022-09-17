@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<AbilityGroupDef>
+		<defName>VME_Patissier</defName>
+		<cooldownTicks>120000</cooldownTicks>
+	</AbilityGroupDef>
+	
+	<AbilityDef>
+		<defName>VME_MakeADessert</defName>
+		<label>make a dessert</label>
+		<jobDef>CastAbilityOnThing</jobDef>
+		<groupDef>VME_Patissier</groupDef>
+		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+		<description>Targets a meal to turn it into a dessert.</description>
+		<targetRequired>True</targetRequired>
+		<gizmoClass>Command_Ability</gizmoClass>
+		<iconPath>UI/Abilities/MakeADessert</iconPath>
+		<uiOrder>1</uiOrder>
+		
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<warmupTime>5</warmupTime>
+			<range>10</range>
+			<targetParams>
+			
+				   <canTargetLocations>True</canTargetLocations>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class = "VanillaMemesExpanded.CompProperties_AbilityMakeADessert">
+				<simpleDessertDef>VCE_SimpleDessert</simpleDessertDef>
+				<fineDessertDef>VCE_FineDessert</fineDessertDef>
+				<lavishDessertDef>VCE_LavishDessert</lavishDessertDef>
+				<gourmetDessertDef>VCE_GourmetDessert</gourmetDessertDef>
+			</li>
+			
+		</comps>
+		<requiredMemes>
+			<li>VME_SweetTeeth</li>
+		</requiredMemes>
+	</AbilityDef>
+	
+	
+  
+ 
+		
+		
+		
+</Defs>

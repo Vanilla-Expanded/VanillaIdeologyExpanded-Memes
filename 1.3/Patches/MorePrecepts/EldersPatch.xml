@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>More Precepts</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/PreceptDef[defName="VME_Elders_Respected"]</xpath>
+					<value>
+						<visible>false</visible>
+					</value>
+				</li>
+
+				<li Class="PatchOperationRemove"> 
+					<xpath>/Defs/PreceptDef[defName="VME_Elders_Respected"]/associatedMemes</xpath>
+
+				</li>
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/PreceptDef[defName="VME_Elders_Holy"]</xpath>
+					<value>
+						<visible>false</visible>
+					</value>
+				</li>
+
+				<li Class="PatchOperationRemove"> 
+					<xpath>/Defs/PreceptDef[defName="VME_Elders_Holy"]/associatedMemes</xpath>
+
+				</li>
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/PreceptDef[defName="VME_Elders_Despised"]</xpath>
+					<value>
+						<visible>false</visible>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace"> 
+					<xpath>/Defs/MemeDef[defName="VME_Elders"]/requireOne</xpath>
+					<value>
+						<requireOne>
+							<li>
+								<li>Elderly_Revered</li>
+								<li>Elderly_Respected</li>
+							</li>
+						</requireOne>
+					</value>
+				</li>
+
+
+
+
+
+
+
+
+			</operations>
+		</match>
+	</Operation>
+
+
+</Patch>
+

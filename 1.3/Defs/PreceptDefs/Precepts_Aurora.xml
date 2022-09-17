@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<IssueDef>
+		<defName>VME_Aurora</defName>
+		<label>aurora</label>
+		<iconPath>UI/Issues/Aurora</iconPath>
+	</IssueDef>
+	<!-- Precepts -->
+	<PreceptDef>
+		<defName>VME_Aurora_Amazing</defName>
+		<issue>VME_Aurora</issue>
+		<label>amazing</label>
+		<description>Auroras are a beautiful respite from the absolute darkness.</description>
+		<impact>Low</impact>
+		<requiredMemes>
+			<li>VME_Light</li>
+		</requiredMemes>
+		<associatedMemes>
+			<li>VME_Light</li>
+		</associatedMemes>
+		<conflictingMemes>
+			<li>Darkness</li>
+			<li>Blindsight</li>
+		</conflictingMemes>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>VME_Aurora_Amazing</thought>
+			</li>
+		</comps>
+	</PreceptDef>
+	<ThoughtDef>
+		<defName>VME_Aurora_Amazing</defName>
+		<thoughtClass>Thought_Situational</thoughtClass>
+		<workerClass>VanillaMemesExpanded.ThoughtWorker_Precept_Aurora</workerClass>
+		<stages>
+			<li>
+				<label>amazing aurora</label>
+				<description>I have a moment's respite from the darkness of the night.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<PreceptDef>
+		<defName>VME_Aurora_Despised</defName>
+		<issue>VME_Aurora</issue>
+		<label>despised</label>
+		<description>The blinding lights in the heavens give us a nasty headache.</description>
+		<impact>Low</impact>
+		<requiredMemes>
+			<li>Darkness</li>
+		</requiredMemes>
+		<associatedMemes>
+			<li>Darkness</li>
+		</associatedMemes>
+		<conflictingMemes>
+			<li>VME_Light</li>
+			<li>Blindsight</li>
+		</conflictingMemes>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>VME_Aurora_Despised</thought>
+			</li>
+		</comps>
+	</PreceptDef>
+	<ThoughtDef>
+		<defName>VME_Aurora_Despised</defName>
+		<thoughtClass>Thought_Situational</thoughtClass>
+		<workerClass>VanillaMemesExpanded.ThoughtWorker_Precept_Aurora</workerClass>
+		<stages>
+			<li>
+				<label>disgusting aurora</label>
+				<description>The blinding lights in the heavens give me a headache.</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+</Defs>

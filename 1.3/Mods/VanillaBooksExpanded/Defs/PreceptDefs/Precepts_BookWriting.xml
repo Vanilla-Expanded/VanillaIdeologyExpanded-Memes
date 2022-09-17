@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Issues -->
+
+
+	<IssueDef>
+		<defName>VME_BookWriting</defName>
+		<label>book writing</label>
+		<iconPath>UI/Issues/BookWriting</iconPath>
+	</IssueDef>
+
+	<HistoryEventDef>
+		<defName>VME_WroteBook</defName>
+		<label>wrote book</label>
+	</HistoryEventDef>
+
+
+	<!-- Precepts -->
+
+
+
+	<PreceptDef>
+		<defName>VME_BookWriting_Exalted</defName>
+		<issue>VME_BookWriting</issue>
+		<label>exalted</label>
+		<description>Passing on one's knowledge is a purely respectful act. The authors of this world and their heirs shall be the ones to inherit it and all of it’s fruits.</description>
+		<impact>Low</impact>
+		<associatedMemes>
+			<li>VME_Cultured</li>
+		</associatedMemes>
+		<comps>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<eventDef>VME_WroteBook</eventDef>
+				<thought>VME_BookWriting_Exalted</thought>
+			</li>
+			<li Class="PreceptComp_KnowsMemoryThought">
+				<eventDef>VME_WroteBook</eventDef>
+				<thought>VME_BookWriting_Exalted_Know</thought>
+				<description>Wrote an amazing new book</description>
+			</li>
+
+		</comps>
+	</PreceptDef>
+
+	<ThoughtDef>		
+		<defName>VME_BookWriting_Exalted</defName>
+		<durationDays>3</durationDays>		
+		<stages>
+			<li>
+				<label>wrote a book</label>
+				<description>I did it! I am now a distinguished author.</description>
+				<baseMoodEffect>10</baseMoodEffect>
+			</li>
+		</stages>		
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>VME_BookWriting_Exalted_Know</defName>
+		<thoughtClass>Thought_MemorySocial</thoughtClass>
+		<durationDays>3</durationDays>
+		<stackLimit>3</stackLimit>
+		<stackLimitForSameOtherPawn>3</stackLimitForSameOtherPawn>
+		
+		<stages>
+			<li>
+				<label>distinguished author</label>
+				<baseOpinionOffset>20</baseOpinionOffset>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+<PreceptDef>
+		<defName>VME_BookWriting_Disliked</defName>
+		<issue>VME_BookWriting</issue>
+		<label>disliked</label>
+		<description>Why write down what can be taught much quicker semantically or through trial and error? What an absolute waste of time.</description>
+		<impact>Low</impact>
+		
+		<comps>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<eventDef>VME_WroteBook</eventDef>
+				<thought>VME_BookWriting_Disliked</thought>
+			</li>
+			<li Class="PreceptComp_KnowsMemoryThought">
+				<eventDef>VME_WroteBook</eventDef>
+				<thought>VME_BookWriting_Disliked_Know</thought>
+				<description>Put sinful words into paper</description>
+			</li>
+
+		</comps>
+	</PreceptDef>
+
+	<ThoughtDef>		
+		<defName>VME_BookWriting_Disliked</defName>
+		<durationDays>3</durationDays>		
+		<stages>
+			<li>
+				<label>wrote a book</label>
+				<description>I had to write a book. Putting your thoughts to paper is sinful and disgusting.</description>
+				<baseMoodEffect>-10</baseMoodEffect>
+			</li>
+		</stages>		
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>VME_BookWriting_Disliked_Know</defName>
+		<thoughtClass>Thought_MemorySocial</thoughtClass>
+		<durationDays>3</durationDays>
+		<stackLimit>3</stackLimit>
+		<stackLimitForSameOtherPawn>3</stackLimitForSameOtherPawn>
+		
+		<stages>
+			<li>
+				<label>writer of thoughts</label>
+				<baseOpinionOffset>-20</baseOpinionOffset>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+
+
+
+
+
+
+
+
+
+
+</Defs>

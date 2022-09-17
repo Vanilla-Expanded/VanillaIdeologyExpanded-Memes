@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ModMetaData>
+	<name>Vanilla Ideology Expanded - Memes and Structures</name>
+	<author>Oskar Potocki, Sarg Bjornson, Chowder</author>
+	<url/>
+	<supportedVersions>
+
+		<li>1.3</li>
+	</supportedVersions>
+	<modDependencies>
+		<li>
+			<packageId>brrainz.harmony</packageId>
+			<displayName>Harmony</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+			<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+		</li>
+		<li>
+			<packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
+			<displayName>Vanilla Expanded Framework</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2023507013</steamWorkshopUrl>
+			<downloadUrl>https://github.com/AndroidQuazar/VanillaExpandedFramework</downloadUrl>
+		</li>
+		<li>
+			<packageId>Ludeon.RimWorld.Ideology</packageId>
+			<displayName>Ideology</displayName>
+			
+		</li>
+	</modDependencies>
+	<loadAfter>
+		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+		<li>Ludeon.RimWorld.Ideology</li>
+		<li>VanillaExpanded.VCookE</li>
+		<li>VanillaExpanded.VCEF</li>
+		<li>sarg.alphaanimals</li>
+		<li>VanillaExpanded.VBooksE</li>
+	</loadAfter>
+	<packageId>VanillaExpanded.VMemesE</packageId>
+	<description>Vanilla Ideology Expanded is a mini-series of mods aimed at expanding the content in ideology - be it memes, relics and symbols or icons alike.
+	
+The goal of the Memes and Structures mod is to add unique memes, and… well, structures to your game. For some reason certain obvious choices like Shinto, Taoism and Eldritch were missing from the base DLC, and this mod is here to introduce them to the ideology creation.
+With unique memes, players will be able to diversify their playthrough every time they play. This should increase longevity of the game and also make it way more unique and personalised.
+
+This mod adds 36 new memes, alongside many new structures, rituals, precepts, specialist roles, items, objects and mechanics. It should greatly expand what Ideology has to offer, and meshes nicely with the rest of the DLC. With Vanilla Ideology Expanded - Memes and Structures you will be able to create powerful psykers that simply love chocolate, a corporate scrap trading business, a fishing republic, a bunch of god-king radicals, mechanoid technocratic union and much, much more. 
+	</description>
+</ModMetaData>

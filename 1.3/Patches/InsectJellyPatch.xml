@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Improved Insectoids</li>
+		</mods>
+
+		<nomatch Class="PatchOperationSequence">
+			<operations>
+
+
+
+				<li Class="PatchOperationConditional">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef[defName = "InsectJelly"]/ingestible</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ThingDef[defName = "InsectJelly"]</xpath>
+						<value>
+							<ingestible>
+								<ateEvent>VME_AteInsectJelly</ateEvent>
+							</ingestible>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ThingDef[defName = "InsectJelly"]/ingestible</xpath>
+						<value>
+							<ateEvent>VME_AteInsectJelly</ateEvent>
+						</value>
+					</match>
+				</li>
+
+
+
+
+
+			</operations>
+		</nomatch>
+	</Operation>
+
+
+
+
+
+
+
+
+
+
+</Patch>

@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+	<!-- Corporate -->
+
+	<DesignatorDropdownGroupDef>
+		<defName>VME_Floor_CorporateFineStoneTiles</defName>
+		<label>corporate fine stone tiles</label>
+	</DesignatorDropdownGroupDef>
+
+
+
+	<TerrainDef ParentName="IdeoStoneTileBase" Name="VME_CorporateFineStoneTiles" Abstract="True">
+		<renderPrecedence>220</renderPrecedence>
+		<description>Fine stone tiles in a corporate style for expressing economic status. Slow to construct.</description>
+		<statBases>
+			<WorkToBuild>5000</WorkToBuild>
+			<Beauty>3</Beauty>
+		</statBases>
+		<researchPrerequisites>
+			<li>Stonecutting</li>
+
+		</researchPrerequisites>
+		<tags>
+			<li>FineFloor</li>
+		</tags>
+		<texturePath>Terrain/Surfaces/VME_CorporateFineStoneTiles</texturePath>
+		<designatorDropdown>VME_Floor_CorporateFineStoneTiles</designatorDropdown>
+		<dominantStyleCategory>VME_Corporate</dominantStyleCategory>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+	</TerrainDef>
+
+
+	<TerrainDef ParentName="VME_CorporateFineStoneTiles">
+		<defName>VME_CorporateFineTileSandstone</defName>
+		<label>corporate fine sandstone tile</label>
+		<color>(147,127,118)</color>
+		<costList>
+			<BlocksSandstone>20</BlocksSandstone>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="VME_CorporateFineStoneTiles">
+		<defName>VME_CorporateFineTileGranite</defName>
+		<label>corporate fine granite tile</label>
+		<color>(105,95,97)</color>
+		<costList>
+			<BlocksGranite>20</BlocksGranite>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="VME_CorporateFineStoneTiles">
+		<defName>VME_CorporateFineTileLimestone</defName>
+		<label>corporate fine limestone tile</label>
+		<color>(158,153,135)</color>
+		<costList>
+			<BlocksLimestone>20</BlocksLimestone>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="VME_CorporateFineStoneTiles">
+		<defName>VME_CorporateFineTileSlate</defName>
+		<label>corporate fine slate tile</label>
+		<color>(70,70,70)</color>
+		<costList>
+			<BlocksSlate>20</BlocksSlate>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="VME_CorporateFineStoneTiles">
+		<defName>VME_CorporateFineTileMarble</defName>
+		<label>corporate fine marble tile</label>
+		<color>(180,180,180)</color>
+		<costList>
+			<BlocksMarble>20</BlocksMarble>
+		</costList>
+	</TerrainDef>
+
+	<!-- Shintao -->
+
+	<DesignatorDropdownGroupDef>
+		<defName>VME_Floor_ShintaoFineStoneTiles</defName>
+		<label>shintao fine stone tiles</label>
+	</DesignatorDropdownGroupDef>
+
+
+
+	<TerrainDef ParentName="IdeoStoneTileBase" Name="VME_ShintaoFineStoneTiles" Abstract="True">
+		<renderPrecedence>220</renderPrecedence>
+		<description>Fine stone tiles in a shintao style for expressing economic status. Slow to construct.</description>
+		<statBases>
+			<WorkToBuild>5000</WorkToBuild>
+			<Beauty>3</Beauty>
+		</statBases>
+		<researchPrerequisites>
+			<li>Stonecutting</li>
+
+		</researchPrerequisites>
+		<tags>
+			<li>FineFloor</li>
+		</tags>
+		<texturePath>Terrain/Surfaces/VME_TaoistFineTile</texturePath>
+		<designatorDropdown>VME_Floor_ShintaoFineStoneTiles</designatorDropdown>
+		<dominantStyleCategory>VME_Shintaoism</dominantStyleCategory>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+	</TerrainDef>
+
+
+	<TerrainDef ParentName="VME_ShintaoFineStoneTiles">
+		<defName>VME_ShintaoFineTileSandstone</defName>
+		<label>shintao fine sandstone tile</label>
+		<color>(147,127,118)</color>
+		<costList>
+			<BlocksSandstone>20</BlocksSandstone>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="VME_ShintaoFineStoneTiles">
+		<defName>VME_ShintaoFineTileGranite</defName>
+		<label>shintao fine granite tile</label>
+		<color>(105,95,97)</color>
+		<costList>
+			<BlocksGranite>20</BlocksGranite>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="VME_ShintaoFineStoneTiles">
+		<defName>VME_ShintaoFineTileLimestone</defName>
+		<label>shintao fine limestone tile</label>
+		<color>(158,153,135)</color>
+		<costList>
+			<BlocksLimestone>20</BlocksLimestone>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="VME_ShintaoFineStoneTiles">
+		<defName>VME_ShintaoFineTileSlate</defName>
+		<label>shintao fine slate tile</label>
+		<color>(70,70,70)</color>
+		<costList>
+			<BlocksSlate>20</BlocksSlate>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="VME_ShintaoFineStoneTiles">
+		<defName>VME_ShintaoFineTileMarble</defName>
+		<label>shintao fine marble tile</label>
+		<color>(180,180,180)</color>
+		<costList>
+			<BlocksMarble>20</BlocksMarble>
+		</costList>
+	</TerrainDef>
+
+	<DesignatorDropdownGroupDef>
+		<defName>VME_Floor_ShintaoCarpet</defName>
+		<label>shintao carpets</label>
+	</DesignatorDropdownGroupDef>
+	
+	<TerrainDef Name="VME_ShintaoCarpetBase" ParentName="FloorBase" Abstract="True">
+		<texturePath>Terrain/Surfaces/VME_TaoistCarpet</texturePath>
+		<researchPrerequisites>
+			<li>CarpetMaking</li>
+		</researchPrerequisites>
+		 <canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+		<burnedDef>BurnedCarpet</burnedDef>
+		<costList>
+			<Cloth>7</Cloth>
+		</costList>
+		<designatorDropdown>VME_Floor_ShintaoCarpet</designatorDropdown>
+		<statBases>
+			<Beauty>2</Beauty>
+			<Flammability>0.32</Flammability>
+			<WorkToBuild>800</WorkToBuild>
+		</statBases>
+	</TerrainDef>
+
+	<TerrainDef ParentName="VME_ShintaoCarpetBase">
+		<defName>VME_ShintaoCarpetRed</defName>
+		<label>shintao red carpet</label>
+		<renderPrecedence>200</renderPrecedence>
+		<description>Plush carpet in a lovely rose hue.</description>
+		<color>(118,49,57)</color>
+		<designationHotKey>Misc8</designationHotKey>
+	</TerrainDef>
+
+	<TerrainDef ParentName="VME_ShintaoCarpetBase">
+		<defName>VME_ShintaoCarpetGreen</defName>
+		<label>shintao green carpet</label>
+		<renderPrecedence>199</renderPrecedence>
+		<description>Naturalistic-feeling green carpet. Earth tones, dude.</description>
+		<color>(89,105,62)</color>
+		<designationHotKey>Misc9</designationHotKey>
+	</TerrainDef>
+
+	<TerrainDef ParentName="VME_ShintaoCarpetBase">
+		<defName>VME_ShintaoCarpetBlue</defName>
+		<label>shintao blue carpet</label>
+		<renderPrecedence>198</renderPrecedence>
+		<description>Toe-hugging plush carpet in a cool blue color.</description>
+		<color>(24,65,121)</color>
+		<designationHotKey>Misc10</designationHotKey>
+	</TerrainDef>
+
+	<TerrainDef ParentName="VME_ShintaoCarpetBase">
+		<defName>VME_ShintaoCarpetCream</defName>
+		<label>shintao cream carpet</label>
+		<renderPrecedence>197</renderPrecedence>
+		<description>Inviting cream-colored carpet.</description>
+		<color>(195,192,176)</color>
+		<designationHotKey>Misc11</designationHotKey>
+	</TerrainDef>
+
+	<TerrainDef ParentName="VME_ShintaoCarpetBase">
+		<defName>VME_ShintaoCarpetDark</defName>
+		<label>shintao dark carpet</label>
+		<renderPrecedence>196</renderPrecedence>
+		<description>Professional-looking dark gray carpet.</description>
+		<color>(81,81,81)</color>
+		<designationHotKey>Misc12</designationHotKey>
+	</TerrainDef>
+	
+	<DesignatorDropdownGroupDef>
+		<defName>VME_Floor_ShintaoCarpetFine</defName>
+		<label>shintao fine carpets</label>
+	</DesignatorDropdownGroupDef>
+	
+	<TerrainDef Name="VME_ShintaoCarpetFineBase" ParentName="FloorBase" Abstract="True">
+    <texturePath>Terrain/Surfaces/VME_TaoistFineCarpet</texturePath>
+    <researchPrerequisites><li>CarpetMaking</li></researchPrerequisites>
+    <burnedDef>BurnedCarpet</burnedDef>
+    <costList>
+      <Cloth>35</Cloth>
+    </costList>
+	 <canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+    <designatorDropdown>VME_Floor_ShintaoCarpetFine</designatorDropdown>
+    <statBases>
+      <Beauty>4</Beauty>
+      <Flammability>0.32</Flammability>
+      <WorkToBuild>4000</WorkToBuild>
+    </statBases>
+    <tags>
+      <li>FineFloor</li>
+    </tags>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+  </TerrainDef>
+
+  <TerrainDef ParentName="VME_ShintaoCarpetFineBase">
+    <defName>VME_ShintaoCarpetFineBurgundy</defName>
+    <label>fine shintao burgundy carpet</label>
+    <renderPrecedence>200</renderPrecedence>
+    <description>Classic burgundy carpet for that classic rich look.</description>
+    <color>(91,41,45)</color>
+    <designationHotKey>Misc8</designationHotKey>
+  </TerrainDef>
+
+  <TerrainDef ParentName="VME_ShintaoCarpetFineBase">
+    <defName>VME_ShintaoCarpetFineIndigo</defName>
+    <label>fine shintao indigo carpet</label>
+    <renderPrecedence>199</renderPrecedence>
+    <description>Soft and silky indigo carpet, for that extra sense of pomp.</description>
+    <color>(125,73,125)</color>
+    <designationHotKey>Misc9</designationHotKey>
+  </TerrainDef>
+
+  <TerrainDef ParentName="VME_ShintaoCarpetFineBase">
+    <defName>VME_ShintaoCarpetFineWhite</defName>
+    <label>fine shintao white carpet</label>
+    <renderPrecedence>198</renderPrecedence>
+    <description>Sublime white carpet, glimmering with subtle patterns.</description>
+    <color>(0.65,0.65,0.65)</color>
+    <designationHotKey>Misc10</designationHotKey>
+  </TerrainDef>
+
+
+</Defs>

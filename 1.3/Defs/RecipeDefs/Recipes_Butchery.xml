@@ -1,0 +1,618 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Fleshcrafted organs:
+
+Arm
+Leg
+Heart
+Lung
+Kidney
+Liver
+Eye
+Ear
+Nose
+Jaw
+Stomach
+Tongue
+Spine
+
+-->
+
+
+<!--	<RecipeDef>
+		<defName>VME_ButcherHumanoidForArm</defName>
+		<label>butcher humanoid corpse for arm</label>
+		<description>Butcher a humanoid to obtain a useable arm.</description>
+		<jobString>Fleshcrafting.</jobString>
+		<workAmount>450</workAmount>
+		<workSpeedStat>ButcheryFleshSpeed</workSpeedStat>
+		<workSkill>Medicine</workSkill>
+		<efficiencyStat>ButcheryFleshEfficiency</efficiencyStat>
+		<effectWorking>ButcherFlesh</effectWorking>
+		<soundWorking>Recipe_ButcherCorpseFlesh</soundWorking>
+		<interruptIfIngredientIsRotting>true</interruptIfIngredientIsRotting>
+		<recipeUsers>
+			<li>TableButcher</li>	  
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>CorpsesHumanlike</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+
+		<fixedIngredientFilter>
+			<categories>
+				<li>CorpsesHumanlike</li>
+			</categories>
+
+			
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>CorpsesHumanlike</li>
+			</categories>
+		</defaultIngredientFilter>
+		<products>
+			<VME_FleshcraftedArm>1</VME_FleshcraftedArm>
+		</products>
+		<memePrerequisitesAny>
+			<li>VME_Fleshcrafters</li>
+		</memePrerequisitesAny>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>VME_ButcherHumanoidForLeg</defName>
+		<label>butcher humanoid corpse for leg</label>
+		<description>Butcher a humanoid to obtain a useable leg.</description>
+		<jobString>Fleshcrafting.</jobString>
+		<workAmount>450</workAmount>
+		<workSpeedStat>ButcheryFleshSpeed</workSpeedStat>
+		<workSkill>Medicine</workSkill>
+		<efficiencyStat>ButcheryFleshEfficiency</efficiencyStat>
+		<effectWorking>ButcherFlesh</effectWorking>
+		<soundWorking>Recipe_ButcherCorpseFlesh</soundWorking>
+		<interruptIfIngredientIsRotting>true</interruptIfIngredientIsRotting>
+		<recipeUsers>
+			<li>TableButcher</li>	  
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>CorpsesHumanlike</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+
+		<fixedIngredientFilter>
+			<categories>
+				<li>CorpsesHumanlike</li>
+			</categories>
+
+			
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>CorpsesHumanlike</li>
+			</categories>
+		</defaultIngredientFilter>
+		<products>
+			<VME_FleshcraftedLeg>1</VME_FleshcraftedLeg>
+		</products>
+		<memePrerequisitesAny>
+			<li>VME_Fleshcrafters</li>
+		</memePrerequisitesAny>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>VME_ButcherHumanoidForHeart</defName>
+		<label>butcher humanoid corpse for heart</label>
+		<description>Butcher a humanoid to obtain a useable heart.</description>
+		<jobString>Fleshcrafting.</jobString>
+		<workAmount>450</workAmount>
+		<workSpeedStat>ButcheryFleshSpeed</workSpeedStat>
+		<workSkill>Medicine</workSkill>
+		<efficiencyStat>ButcheryFleshEfficiency</efficiencyStat>
+		<effectWorking>ButcherFlesh</effectWorking>
+		<soundWorking>Recipe_ButcherCorpseFlesh</soundWorking>
+		<interruptIfIngredientIsRotting>true</interruptIfIngredientIsRotting>
+		<recipeUsers>
+			<li>TableButcher</li>	  
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>CorpsesHumanlike</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+
+		<fixedIngredientFilter>
+			<categories>
+				<li>CorpsesHumanlike</li>
+			</categories>
+
+			
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>CorpsesHumanlike</li>
+			</categories>
+		</defaultIngredientFilter>
+		<products>
+			<VME_FleshcraftedHeart>1</VME_FleshcraftedHeart>
+		</products>
+		<memePrerequisitesAny>
+			<li>VME_Fleshcrafters</li>
+		</memePrerequisitesAny>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>VME_ButcherHumanoidForLung</defName>
+		<label>butcher humanoid corpse for lung</label>
+		<description>Butcher a humanoid to obtain a useable lung.</description>
+		<jobString>Fleshcrafting.</jobString>
+		<workAmount>450</workAmount>
+		<workSpeedStat>ButcheryFleshSpeed</workSpeedStat>
+		<workSkill>Medicine</workSkill>
+		<efficiencyStat>ButcheryFleshEfficiency</efficiencyStat>
+		<effectWorking>ButcherFlesh</effectWorking>
+		<soundWorking>Recipe_ButcherCorpseFlesh</soundWorking>
+		<interruptIfIngredientIsRotting>true</interruptIfIngredientIsRotting>
+		<recipeUsers>
+			<li>TableButcher</li>	  
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>CorpsesHumanlike</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+
+		<fixedIngredientFilter>
+			<categories>
+				<li>CorpsesHumanlike</li>
+			</categories>
+
+			
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>CorpsesHumanlike</li>
+			</categories>
+		</defaultIngredientFilter>
+		<products>
+			<VME_FleshcraftedLung>1</VME_FleshcraftedLung>
+		</products>
+		<memePrerequisitesAny>
+			<li>VME_Fleshcrafters</li>
+		</memePrerequisitesAny>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>VME_ButcherHumanoidForKidney</defName>
+		<label>butcher humanoid corpse for kidney</label>
+		<description>Butcher a humanoid to obtain a useable kidney.</description>
+		<jobString>Fleshcrafting.</jobString>
+		<workAmount>450</workAmount>
+		<workSpeedStat>ButcheryFleshSpeed</workSpeedStat>
+		<workSkill>Medicine</workSkill>
+		<efficiencyStat>ButcheryFleshEfficiency</efficiencyStat>
+		<effectWorking>ButcherFlesh</effectWorking>
+		<soundWorking>Recipe_ButcherCorpseFlesh</soundWorking>
+		<interruptIfIngredientIsRotting>true</interruptIfIngredientIsRotting>
+		<recipeUsers>
+			<li>TableButcher</li>	  
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>CorpsesHumanlike</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+
+		<fixedIngredientFilter>
+			<categories>
+				<li>CorpsesHumanlike</li>
+			</categories>
+
+			
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>CorpsesHumanlike</li>
+			</categories>
+		</defaultIngredientFilter>
+		<products>
+			<VME_FleshcraftedKidney>1</VME_FleshcraftedKidney>
+		</products>
+		<memePrerequisitesAny>
+			<li>VME_Fleshcrafters</li>
+		</memePrerequisitesAny>
+	</RecipeDef>
+	<RecipeDef>
+		<defName>VME_ButcherHumanoidForLiver</defName>
+		<label>butcher humanoid corpse for liver</label>
+		<description>Butcher a humanoid to obtain a useable liver.</description>
+		<jobString>Fleshcrafting.</jobString>
+		<workAmount>450</workAmount>
+		<workSpeedStat>ButcheryFleshSpeed</workSpeedStat>
+		<workSkill>Medicine</workSkill>
+		<efficiencyStat>ButcheryFleshEfficiency</efficiencyStat>
+		<effectWorking>ButcherFlesh</effectWorking>
+		<soundWorking>Recipe_ButcherCorpseFlesh</soundWorking>
+		<interruptIfIngredientIsRotting>true</interruptIfIngredientIsRotting>
+		<recipeUsers>
+			<li>TableButcher</li>	  
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>CorpsesHumanlike</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+
+		<fixedIngredientFilter>
+			<categories>
+				<li>CorpsesHumanlike</li>
+			</categories>
+
+			
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>CorpsesHumanlike</li>
+			</categories>
+		</defaultIngredientFilter>
+		<products>
+			<VME_FleshcraftedLiver>1</VME_FleshcraftedLiver>
+		</products>
+		<memePrerequisitesAny>
+			<li>VME_Fleshcrafters</li>
+		</memePrerequisitesAny>
+	</RecipeDef>
+	<RecipeDef>
+		<defName>VME_ButcherHumanoidForEye</defName>
+		<label>butcher humanoid corpse for eye</label>
+		<description>Butcher a humanoid to obtain a useable eye.</description>
+		<jobString>Fleshcrafting.</jobString>
+		<workAmount>450</workAmount>
+		<workSpeedStat>ButcheryFleshSpeed</workSpeedStat>
+		<workSkill>Medicine</workSkill>
+		<efficiencyStat>ButcheryFleshEfficiency</efficiencyStat>
+		<effectWorking>ButcherFlesh</effectWorking>
+		<soundWorking>Recipe_ButcherCorpseFlesh</soundWorking>
+		<interruptIfIngredientIsRotting>true</interruptIfIngredientIsRotting>
+		<recipeUsers>
+			<li>TableButcher</li>	  
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>CorpsesHumanlike</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+
+		<fixedIngredientFilter>
+			<categories>
+				<li>CorpsesHumanlike</li>
+			</categories>
+
+			
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>CorpsesHumanlike</li>
+			</categories>
+		</defaultIngredientFilter>
+		<products>
+			<VME_FleshcraftedEye>1</VME_FleshcraftedEye>
+		</products>
+		<memePrerequisitesAny>
+			<li>VME_Fleshcrafters</li>
+		</memePrerequisitesAny>
+	</RecipeDef>
+	<RecipeDef>
+		<defName>VME_ButcherHumanoidForEar</defName>
+		<label>butcher humanoid corpse for ear</label>
+		<description>Butcher a humanoid to obtain a useable ear.</description>
+		<jobString>Fleshcrafting.</jobString>
+		<workAmount>450</workAmount>
+		<workSpeedStat>ButcheryFleshSpeed</workSpeedStat>
+		<workSkill>Medicine</workSkill>
+		<efficiencyStat>ButcheryFleshEfficiency</efficiencyStat>
+		<effectWorking>ButcherFlesh</effectWorking>
+		<soundWorking>Recipe_ButcherCorpseFlesh</soundWorking>
+		<interruptIfIngredientIsRotting>true</interruptIfIngredientIsRotting>
+		<recipeUsers>
+			<li>TableButcher</li>	  
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>CorpsesHumanlike</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+
+		<fixedIngredientFilter>
+			<categories>
+				<li>CorpsesHumanlike</li>
+			</categories>
+
+			
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>CorpsesHumanlike</li>
+			</categories>
+		</defaultIngredientFilter>
+		<products>
+			<VME_FleshcraftedEar>1</VME_FleshcraftedEar>
+		</products>
+		<memePrerequisitesAny>
+			<li>VME_Fleshcrafters</li>
+		</memePrerequisitesAny>
+	</RecipeDef>
+	<RecipeDef>
+		<defName>VME_ButcherHumanoidForNose</defName>
+		<label>butcher humanoid corpse for nose</label>
+		<description>Butcher a humanoid to obtain a useable nose.</description>
+		<jobString>Fleshcrafting.</jobString>
+		<workAmount>450</workAmount>
+		<workSpeedStat>ButcheryFleshSpeed</workSpeedStat>
+		<workSkill>Medicine</workSkill>
+		<efficiencyStat>ButcheryFleshEfficiency</efficiencyStat>
+		<effectWorking>ButcherFlesh</effectWorking>
+		<soundWorking>Recipe_ButcherCorpseFlesh</soundWorking>
+		<interruptIfIngredientIsRotting>true</interruptIfIngredientIsRotting>
+		<recipeUsers>
+			<li>TableButcher</li>	  
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>CorpsesHumanlike</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+
+		<fixedIngredientFilter>
+			<categories>
+				<li>CorpsesHumanlike</li>
+			</categories>
+
+			
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>CorpsesHumanlike</li>
+			</categories>
+		</defaultIngredientFilter>
+		<products>
+			<VME_FleshcraftedNose>1</VME_FleshcraftedNose>
+		</products>
+		<memePrerequisitesAny>
+			<li>VME_Fleshcrafters</li>
+		</memePrerequisitesAny>
+	</RecipeDef>
+	<RecipeDef>
+		<defName>VME_ButcherHumanoidForJaw</defName>
+		<label>butcher humanoid corpse for jaw</label>
+		<description>Butcher a humanoid to obtain a useable jaw.</description>
+		<jobString>Fleshcrafting.</jobString>
+		<workAmount>450</workAmount>
+		<workSpeedStat>ButcheryFleshSpeed</workSpeedStat>
+		<workSkill>Medicine</workSkill>
+		<efficiencyStat>ButcheryFleshEfficiency</efficiencyStat>
+		<effectWorking>ButcherFlesh</effectWorking>
+		<soundWorking>Recipe_ButcherCorpseFlesh</soundWorking>
+		<interruptIfIngredientIsRotting>true</interruptIfIngredientIsRotting>
+		<recipeUsers>
+			<li>TableButcher</li>	  
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>CorpsesHumanlike</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+
+		<fixedIngredientFilter>
+			<categories>
+				<li>CorpsesHumanlike</li>
+			</categories>
+
+			
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>CorpsesHumanlike</li>
+			</categories>
+		</defaultIngredientFilter>
+		<products>
+			<VME_FleshcraftedJaw>1</VME_FleshcraftedJaw>
+		</products>
+		<memePrerequisitesAny>
+			<li>VME_Fleshcrafters</li>
+		</memePrerequisitesAny>
+	</RecipeDef>
+	<RecipeDef>
+		<defName>VME_ButcherHumanoidForStomach</defName>
+		<label>butcher humanoid corpse for stomach</label>
+		<description>Butcher a humanoid to obtain a useable stomach.</description>
+		<jobString>Fleshcrafting.</jobString>
+		<workAmount>450</workAmount>
+		<workSpeedStat>ButcheryFleshSpeed</workSpeedStat>
+		<workSkill>Medicine</workSkill>
+		<efficiencyStat>ButcheryFleshEfficiency</efficiencyStat>
+		<effectWorking>ButcherFlesh</effectWorking>
+		<soundWorking>Recipe_ButcherCorpseFlesh</soundWorking>
+		<interruptIfIngredientIsRotting>true</interruptIfIngredientIsRotting>
+		<recipeUsers>
+			<li>TableButcher</li>	  
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>CorpsesHumanlike</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+
+		<fixedIngredientFilter>
+			<categories>
+				<li>CorpsesHumanlike</li>
+			</categories>
+
+			
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>CorpsesHumanlike</li>
+			</categories>
+		</defaultIngredientFilter>
+		<products>
+			<VME_FleshcraftedStomach>1</VME_FleshcraftedStomach>
+		</products>
+		<memePrerequisitesAny>
+			<li>VME_Fleshcrafters</li>
+		</memePrerequisitesAny>
+	</RecipeDef>
+	<RecipeDef>
+		<defName>VME_ButcherHumanoidForTongue</defName>
+		<label>butcher humanoid corpse for tongue</label>
+		<description>Butcher a humanoid to obtain a useable tongue.</description>
+		<jobString>Fleshcrafting.</jobString>
+		<workAmount>450</workAmount>
+		<workSpeedStat>ButcheryFleshSpeed</workSpeedStat>
+		<workSkill>Medicine</workSkill>
+		<efficiencyStat>ButcheryFleshEfficiency</efficiencyStat>
+		<effectWorking>ButcherFlesh</effectWorking>
+		<soundWorking>Recipe_ButcherCorpseFlesh</soundWorking>
+		<interruptIfIngredientIsRotting>true</interruptIfIngredientIsRotting>
+		<recipeUsers>
+			<li>TableButcher</li>	  
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>CorpsesHumanlike</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+
+		<fixedIngredientFilter>
+			<categories>
+				<li>CorpsesHumanlike</li>
+			</categories>
+
+			
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>CorpsesHumanlike</li>
+			</categories>
+		</defaultIngredientFilter>
+		<products>
+			<VME_FleshcraftedTongue>1</VME_FleshcraftedTongue>
+		</products>
+		<memePrerequisitesAny>
+			<li>VME_Fleshcrafters</li>
+		</memePrerequisitesAny>
+	</RecipeDef>
+	<RecipeDef>
+		<defName>VME_ButcherHumanoidForSpine</defName>
+		<label>butcher humanoid corpse for spine</label>
+		<description>Butcher a humanoid to obtain a useable spine.</description>
+		<jobString>Fleshcrafting.</jobString>
+		<workAmount>450</workAmount>
+		<workSpeedStat>ButcheryFleshSpeed</workSpeedStat>
+		<workSkill>Medicine</workSkill>
+		<efficiencyStat>ButcheryFleshEfficiency</efficiencyStat>
+		<effectWorking>ButcherFlesh</effectWorking>
+		<soundWorking>Recipe_ButcherCorpseFlesh</soundWorking>
+		<interruptIfIngredientIsRotting>true</interruptIfIngredientIsRotting>
+		<recipeUsers>
+			<li>TableButcher</li>	  
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>CorpsesHumanlike</li>
+						<li>VME_CorpsesHumanlike</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+
+		<fixedIngredientFilter>
+			<categories>
+				<li>CorpsesHumanlike</li>
+				<li>VME_CorpsesHumanlike</li>
+			</categories>
+
+			<specialFiltersToDisallow>
+				<li>AllowRotten</li>
+			</specialFiltersToDisallow>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>CorpsesHumanlike</li>
+				<li>VME_CorpsesHumanlike</li>
+			</categories>
+		</defaultIngredientFilter>
+		<products>
+			<VME_FleshcraftedSpine>1</VME_FleshcraftedSpine>
+		</products>
+		<memePrerequisitesAny>
+			<li>VME_Fleshcrafters</li>
+		</memePrerequisitesAny>
+	</RecipeDef>
+-->
+</Defs>

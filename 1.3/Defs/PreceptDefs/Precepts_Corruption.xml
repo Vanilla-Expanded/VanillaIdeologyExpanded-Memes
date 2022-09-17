@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<IssueDef>
+		<defName>VME_Corruption</defName>
+		<label>corruption</label>
+		<iconPath>UI/Issues/Corruption</iconPath>
+	</IssueDef>
+	
+	<!-- Precepts -->
+	<PreceptDef>
+		<defName>VME_Corruption_Essential</defName>
+		<issue>VME_Corruption</issue>
+		<label>essential</label>
+		<description>It is by the hand of an omniscient and all-powerful ancient god that we are threatened. Let us partake in an ever-obscuring, ritualistic way of life, that it may shield us from such baneful judgements.</description>
+		<impact>High</impact>
+		<displayOrderInIssue>50</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<associatedMemes>
+			<li>VME_Structure_ChthonianCult</li>
+		</associatedMemes>
+		<requiredMemes>
+			<li>VME_Structure_ChthonianCult</li>
+		</requiredMemes>
+		
+	</PreceptDef>
+	
+	
+</Defs>

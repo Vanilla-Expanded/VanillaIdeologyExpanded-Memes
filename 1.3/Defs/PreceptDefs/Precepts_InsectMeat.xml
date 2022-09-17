@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Precepts -->
+
+  <PreceptDef>
+    <defName>VME_InsectMeatEating_Sacrilegious</defName>
+    <issue>InsectMeat</issue>
+    <label>abhorrent</label>
+    <description>Eating the flesh of divine insects is vile and disgusting, even the idea of putting it near your mouth should be met with embarrassment.</description>
+    <impact>Medium</impact>
+    <displayOrderInIssue>50</displayOrderInIssue>
+    <displayOrderInImpact>100</displayOrderInImpact>
+	<selectionWeight>1</selectionWeight>
+    <associatedMemes>
+      <li>VME_Structure_Serketist</li>
+	  <li>VME_InsectoidSupremacy</li>
+    </associatedMemes>
+    <exclusionTags>
+      <li>VME_InsectMeatEatingSacrilegious</li>
+    </exclusionTags>
+    <comps>
+      <li Class="PreceptComp_SelfTookMemoryThought">
+        <eventDef>AteInsectMeatDirect</eventDef>
+        <thought>VME_AteInsectMeat_Sacrilegious</thought>
+      </li>
+      <li Class="PreceptComp_SelfTookMemoryThought">
+        <eventDef>AteInsectMeatAsIngredient</eventDef>
+        <thought>VME_AteInsectMeatAsIngredient_Sacrilegious</thought>
+      </li>
+    </comps>
+  </PreceptDef>
+  
+  <PreceptDef>
+    <defName>VME_InsectMeatEating_DontCare</defName>
+    <issue>InsectMeat</issue>
+    <label>don't care</label>
+    <description>Insect meat is just another type of meat. There are innumerable cultures in human history with a rich entomophagy tradition.</description>
+    <impact>Medium</impact>
+   
+    <displayOrderInIssue>0</displayOrderInIssue>
+   <displayOrderInImpact>100</displayOrderInImpact>
+   
+  </PreceptDef>
+
+  <!-- Thoughts -->
+
+  <ThoughtDef>
+    <defName>VME_AteInsectMeat_Sacrilegious</defName>
+    <showBubble>true</showBubble>
+    <icon>Things/Mote/ThoughtSymbol/Food</icon>
+    <durationDays>1</durationDays>
+    <stages>
+      <li>
+        <label>ate insect meat</label>
+        <description>I ate some insect meat. This is an act of sacrilege, how could I do this?</description>
+        <baseMoodEffect>-30</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>VME_AteInsectMeatAsIngredient_Sacrilegious</defName>
+    <showBubble>true</showBubble>
+    <icon>Things/Mote/ThoughtSymbol/Food</icon>
+    <durationDays>1</durationDays>
+    <stages>
+      <li>
+        <label>ate cooked insect meat</label>
+        <description>I ate a meal that contained insect meat. This is an act of sacrilege, how could I do this?</description>
+        <baseMoodEffect>-30</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>

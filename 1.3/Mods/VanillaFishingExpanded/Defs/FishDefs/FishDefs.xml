@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- All vanilla biomes for copy pasting
+
+			<li>BorealForest</li>
+			<li>Tundra</li>
+			<li>ColdBog</li>
+			<li>IceSheet</li>
+			<li>SeaIce</li>
+			<li>TemperateForest</li>
+			<li>TemperateSwamp</li>
+			<li>TropicalRainforest</li>
+			<li>TropicalSwamp</li>
+			<li>AridShrubland</li>
+			<li>Desert</li>
+			<li>ExtremeDesert</li>
+-->
+
+	<!--  Small, marine and freshwater -->
+
+
+
+	<!--  Small, freshwater  -->
+
+	<VCE_Fishing.FishDef>
+		<defName>VCEF_Crayfish</defName>
+		<thingDef>VCEF_CrayfishItem</thingDef>    
+		<fishSizeCategory>Small</fishSizeCategory>
+		<canBeFreshwater>true</canBeFreshwater>
+		<canBeSaltwater>false</canBeSaltwater>
+		<allowedBiomes>
+			<li>Warm</li>	
+			<li>Cold</li>
+			<li>Hot</li>	
+			<li>AlienCold</li>
+			<li>AlienJungly</li>
+			<li>AlienHot</li>				
+		</allowedBiomes>  	
+		<baseFishingYield>20</baseFishingYield>		
+		<preceptsRequired>
+			<li>VME_Fishing_Adept</li>
+		</preceptsRequired>
+	</VCE_Fishing.FishDef>	
+	
+	<!--  Small, saltwater  -->
+
+	<VCE_Fishing.FishDef>
+		<defName>VCEF_ButterFish</defName>
+		<thingDef>VCEF_ButterFishItem</thingDef>    
+		<fishSizeCategory>Small</fishSizeCategory>
+		<canBeFreshwater>false</canBeFreshwater>
+		<canBeSaltwater>true</canBeSaltwater>
+		<allowedBiomes>
+			<li>Warm</li>	
+			<li>Cold</li>
+			<li>Hot</li>	
+			<li>AlienCold</li>
+			<li>AlienJungly</li>
+			<li>AlienHot</li>				
+		</allowedBiomes>  	
+		<baseFishingYield>20</baseFishingYield>		
+		<preceptsRequired>
+			<li>VME_Fishing_Adept</li>
+		</preceptsRequired>
+	</VCE_Fishing.FishDef>	
+	
+	<!--  Medium, freshwater  -->
+	
+	<VCE_Fishing.FishDef>
+		<defName>VCEF_FreshwaterStingray</defName>
+		<thingDef>VCEF_FreshwaterStingrayItem</thingDef>    
+		<fishSizeCategory>Medium</fishSizeCategory>
+		<canBeFreshwater>true</canBeFreshwater>
+		<canBeSaltwater>false</canBeSaltwater>
+		<allowedBiomes>
+			<li>Warm</li>	
+			<li>Cold</li>
+			<li>Hot</li>	
+			<li>AlienCold</li>
+			<li>AlienJungly</li>
+			<li>AlienHot</li>		
+		</allowedBiomes>  		
+		<baseFishingYield>16</baseFishingYield>
+		<preceptsRequired>
+			<li>VME_Fishing_Adept</li>
+		</preceptsRequired>
+	</VCE_Fishing.FishDef>
+	
+	<!--  Medium, saltwater  -->
+	
+	<VCE_Fishing.FishDef>
+		<defName>VCEF_FlyingFish</defName>
+		<thingDef>VCEF_FlyingFishItem</thingDef>    
+		<fishSizeCategory>Medium</fishSizeCategory>
+		<canBeFreshwater>false</canBeFreshwater>
+		<canBeSaltwater>true</canBeSaltwater>
+		<allowedBiomes>
+			<li>Warm</li>	
+			<li>Cold</li>
+			<li>Hot</li>	
+			<li>AlienCold</li>
+			<li>AlienJungly</li>
+			<li>AlienHot</li>		
+		</allowedBiomes>  		
+		<baseFishingYield>16</baseFishingYield>
+		<preceptsRequired>
+			<li>VME_Fishing_Adept</li>
+		</preceptsRequired>
+	</VCE_Fishing.FishDef>
+	
+	
+	<!--  Large, freshwater  -->
+
+	<VCE_Fishing.FishDef>
+		<defName>VCEF_Arapaima</defName>
+		<thingDef>VCEF_ArapaimaItem</thingDef>    
+		<fishSizeCategory>Large</fishSizeCategory>
+		<canBeFreshwater>true</canBeFreshwater>
+		<canBeSaltwater>false</canBeSaltwater>
+		<allowedBiomes>
+			<li>Warm</li>	
+			<li>Cold</li>
+			<li>Hot</li>	
+			<li>AlienCold</li>
+			<li>AlienJungly</li>
+			<li>AlienHot</li>	
+					
+		</allowedBiomes>  	
+		<baseFishingYield>8</baseFishingYield>	
+		<preceptsRequired>
+			<li>VME_Fishing_Adept</li>
+		</preceptsRequired>		
+		
+	</VCE_Fishing.FishDef>	
+	
+	<!--  Large, saltwater  -->
+
+	<VCE_Fishing.FishDef>
+		<defName>VCEF_ShortfinMakoShark</defName>
+		<thingDef>VCEF_ShortfinMakoSharkItem</thingDef>    
+		<fishSizeCategory>Large</fishSizeCategory>
+		<canBeFreshwater>false</canBeFreshwater>
+		<canBeSaltwater>true</canBeSaltwater>
+		<allowedBiomes>
+			<li>Warm</li>	
+			<li>Cold</li>
+			<li>Hot</li>	
+			<li>AlienCold</li>
+			<li>AlienJungly</li>
+			<li>AlienHot</li>	
+					
+		</allowedBiomes>  	
+		<baseFishingYield>8</baseFishingYield>		
+		<preceptsRequired>
+			<li>VME_Fishing_Adept</li>
+		</preceptsRequired>
+	</VCE_Fishing.FishDef>	
+
+
+</Defs>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+
+	
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/MemeDef[defName = "Proselytizer"]/exclusionTags</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/MemeDef[defName = "Proselytizer"]</xpath>
+			<value>
+				<exclusionTags>
+					<li>VME_Proselytism</li>
+				</exclusionTags>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+		<xpath>/Defs/MemeDef[defName = "Proselytizer"]/exclusionTags</xpath>
+			<value>
+				<li>VME_Proselytism</li>
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/MemeDef[defName = "Proselytizer"]/groupDef</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/MemeDef[defName = "Proselytizer"]</xpath>
+			<value>
+				<groupDef>VME_Proselytism</groupDef>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+		<xpath>/Defs/MemeDef[defName = "Proselytizer"]/groupDef</xpath>
+			<value>
+				<groupDef>VME_Proselytism</groupDef>
+			</value>
+		</match>
+	</Operation>
+	
+	
+
+
+
+</Patch>

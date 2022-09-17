@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<AbilityGroupDef>
+		<defName>VME_PartyHost</defName>
+		<cooldownTicks>60000</cooldownTicks>
+	</AbilityGroupDef>
+	<AbilityDef>
+		<defName>VME_ThrowParty</defName>
+		<label>throw party</label>
+		<jobDef>CastAbilityOnThing</jobDef>
+		<groupDef>VME_PartyHost</groupDef>
+		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+		<description>Throws a party.</description>
+		<targetRequired>True</targetRequired>
+		<gizmoClass>Command_Ability</gizmoClass>
+		<iconPath>UI/Abilities/ThrowAParty</iconPath>
+		<uiOrder>1</uiOrder>
+		
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<warmupTime>3</warmupTime>
+			<range>15</range>
+			<targetParams>
+				
+				<canTargetPawns>true</canTargetPawns>
+				<canTargetBuildings>false</canTargetBuildings>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class = "VanillaMemesExpanded.CompProperties_AbilityThrowParty">
+				
+			</li>
+			
+		</comps>
+		<requiredMemes>
+			<li>VME_PartyLife</li>
+		</requiredMemes>
+	</AbilityDef>
+  
+ 
+		
+		
+		
+</Defs>
