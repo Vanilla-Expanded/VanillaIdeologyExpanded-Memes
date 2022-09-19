@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "DnVBkki4Q/wLLqGa+7xsl0Bz8xWSVqe69JM9jP+qHd6pwUl3+204vQtQmI+r7D2Q1tGcEidc33Ny8L9+dnAgyQ==",
+  "success": true,
+  "projectFilePath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaIdeologyExpanded-Memes\\1.4\\Source\\VanillaMemesExpanded\\VanillaMemesExpanded\\VanillaMemesExpanded.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Sarg\\.nuget\\packages\\lib.harmony\\2.2.2\\lib.harmony.2.2.2.nupkg.sha512"
+  ],
+  "logs": []
+}

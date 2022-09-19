@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+
+
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/MemeDef[defName = "VME_Vegan"]/requireOne</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/MemeDef[defName = "VME_Vegan"]</xpath>
+			<value>
+				<requireOne>
+					<li>
+						<li>VME_Fishing_Forbidden</li>
+					</li>
+				</requireOne>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/MemeDef[defName = "VME_Vegan"]/requireOne</xpath>
+			<value>
+				<li>
+					<li>VME_Fishing_Forbidden</li>
+				</li>
+			</value>
+		</match>
+	</Operation>
+
+
+
+
+
+
+
+</Patch>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<IssueDef>
+		<defName>VME_PermanentBases</defName>
+		<label>permanent bases</label>
+		<iconPath>UI/Issues/PermanentBases</iconPath>
+	</IssueDef>
+	<!-- Precepts -->
+	<PreceptDef>
+		<defName>VME_PermanentBases_Despised</defName>
+		<issue>VME_PermanentBases</issue>
+		<label>despised</label>
+		<description>Our colony is only temporary, should we stay it will only be a matter of time before we are unable to defend it, it is better to never gain such comfort.\n\n&lt;color=#E5E54C&gt;Stats:&lt;/color&gt;\n - Farming yield: -10%.\n - Gathering yield: +40%.</description>
+		<impact>High</impact>
+		<displayOrderInImpact>80</displayOrderInImpact>
+		<associatedMemes>
+			<li>VME_Nomad</li>
+		</associatedMemes>
+		<enabledForNPCFactions>false</enabledForNPCFactions>
+		<requiredMemes>
+			<li>VME_Nomad</li>
+		</requiredMemes>
+		<comps>			
+			<li Class="PreceptComp_SituationalThought">
+				<thought>VME_PermanentBases_Despised</thought>
+				<thoughtStageDescriptions>
+					<li>Wanderlust (15 days)</li>
+					<li>Wanderlust (16 days)</li>
+					<li>Wanderlust (17 days)</li>
+					<li>Wanderlust (20 days)</li>
+					<li>Wanderlust (30 days)</li>
+					<li>Wanderlust (40 days)</li>
+					<li>Wanderlust (50 days)</li>
+					<li>Wanderlust (60 days)</li>
+					
+				</thoughtStageDescriptions>
+			</li>
+		</comps>
+		
+	</PreceptDef>
+	
+	
+	
+	<ThoughtDef>
+		<defName>VME_PermanentBases_Despised</defName>
+		<validWhileDespawned>true</validWhileDespawned>
+		<workerClass>VanillaMemesExpanded.Thought_StageByTime</workerClass>
+		<stages>
+			<li>
+				<label>wanderlust (initial - stayed 15 days)</label>
+				<description>We have been here for too long. Perhaps it is time to leave.</description>
+				<baseMoodEffect>-1</baseMoodEffect>
+			</li>
+			<li>
+				<label>wanderlust (initial - stayed 16 days)</label>
+				<description>We have been here for too long. Perhaps it is time to leave.</description>
+				<baseMoodEffect>-2</baseMoodEffect>
+			</li>
+			<li>
+				<label>wanderlust (initial - stayed 17 days)</label>
+				<description>We have been here for too long. Perhaps it is time to leave.</description>
+				<baseMoodEffect>-3</baseMoodEffect>
+			</li>
+			<li>
+				<label>wanderlust (normal - stayed 20 days)</label>
+				<description>This colony is trite. We should we wandering, not staying on the same place.</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+			<li>
+				<label>wanderlust (normal - stayed 30 days)</label>
+				<description>This colony is trite. We should we wandering, not staying on the same place.</description>
+				<baseMoodEffect>-20</baseMoodEffect>
+			</li>
+			<li>
+				<label>wanderlust (serious - stayed 40 days)</label>
+				<description>Enough already! It is time to pack our things and hit the road.</description>
+				<baseMoodEffect>-30</baseMoodEffect>
+			</li>
+			<li>
+				<label>wanderlust (serious - stayed 50 days)</label>
+				<description>Enough already! It is time to pack our things and hit the road.</description>
+				<baseMoodEffect>-40</baseMoodEffect>
+			</li>
+			<li>
+				<label>wanderlust (extreme - stayed 60 days)</label>
+				<description>Agh! I can't stand being here anymore!</description>
+				<baseMoodEffect>-50</baseMoodEffect>
+			</li>
+			
+			
+			
+			
+		</stages>
+	</ThoughtDef>
+	
+	<PreceptDef>
+		<defName>VME_PermanentBases_Desired</defName>
+		<issue>VME_PermanentBases</issue>
+		<label>desired</label>
+		<description>Our colony should become our forever home, the more buildings, paths, and lights we can erect the better off we’ll all be.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Colonists gets mood penalties / bonuses depending on amount of buildings on the map. "Building" is a completely enclosed structure with at least 25 tiles size.</description>
+		<impact>Medium</impact>
+		<displayOrderInImpact>70</displayOrderInImpact>
+		<enabledForNPCFactions>false</enabledForNPCFactions>
+		<associatedMemes>
+			<li>VME_CityBuilders</li>
+		</associatedMemes>
+		<conflictingMemes>
+			<li>VME_Nomad</li>
+		</conflictingMemes>
+		<comps>			
+			<li Class="PreceptComp_SituationalThought">
+				<thought>VME_PermanentBases_Desired</thought>
+				<thoughtStageDescriptions>
+					<li>Magnificent city (more than 20 buildings)</li>
+					<li>Lots of beautiful buildings (less than 20 buildings)</li>
+					<li>Many beautiful buildings (less than 15 buildings)</li>
+					<li>Burgeoning city (less than 10 buildings)</li>
+					<li>Not enough buildings (less than 5 buildings)</li>
+					
+					
+				</thoughtStageDescriptions>
+			</li>
+		</comps>
+		
+	</PreceptDef>
+	
+	<ThoughtDef>
+		<defName>VME_PermanentBases_Desired</defName>
+		<validWhileDespawned>true</validWhileDespawned>
+		<workerClass>VanillaMemesExpanded.Thought_MoodByRooms</workerClass>
+		<stages>
+		<li>
+				<label>magnificent city</label>
+				<description>Our city is magnificent, a fine example of what humanity can achieve.</description>
+				<baseMoodEffect>20</baseMoodEffect>
+			</li>
+			<li>
+				<label>lots of beautiful buildings</label>
+				<description>We have so many beautiful buildings!</description>
+				<baseMoodEffect>15</baseMoodEffect>
+			</li>
+			<li>
+				<label>many beautiful buildings</label>
+				<description>We have so many beautiful buildings!</description>
+				<baseMoodEffect>10</baseMoodEffect>
+			</li>
+			<li>
+				<label>burgeoning city</label>
+				<description>Our city is growing!</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+			
+			<li>
+				<label>not enough buildings</label>
+				<description>There are not enough buildings nearby. I feel unprotected.</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+			
+			
+			
+			
+			
+		</stages>
+	</ThoughtDef>
+</Defs>

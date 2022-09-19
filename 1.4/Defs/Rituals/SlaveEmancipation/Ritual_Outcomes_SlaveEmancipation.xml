@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+	<RitualOutcomeEffectDef>
+    <defName>VME_SlaveEmancipationOutcome</defName>
+    <description>Depending on ritual quality, participants will get between {MINMOOD} and {MAXMOOD} mood for {MOODDAYS} days.</description>
+    <workerClass>VanillaMemesExpanded.RitualOutcomeEffectWorker_SlaveEmancipation</workerClass>
+    <comps>
+      <li Class="RitualOutcomeComp_RoomStat">
+        <label>room impressiveness</label>
+        <statDef>Impressiveness</statDef>
+        <curve>
+          <points>
+            <li>0,  0</li>
+            <li>50,  0.1</li>
+            <li>120, 0.2</li>
+          </points>
+        </curve>
+      </li>
+      <li Class="RitualOutcomeComp_ParticipantCount">
+        <label>participant count</label>
+        <curve>
+          <points>
+            <li>(1,  0.0)</li>
+            <li>(5,  0.3)</li>
+            <li>(10, 0.4)</li>
+          </points>
+        </curve>
+      </li>
+      <li Class="RitualOutcomeComp_PawnStatScaled">
+        <label>{PAWN_labelShort}'s social impact</label>
+        <labelAbstract>speaker's social impact</labelAbstract>
+        <roleId>leader</roleId>
+        <statDef>SocialImpact</statDef>
+        <curve>
+          <points>
+            <li>(0.2,  0.0)</li>
+            <li>(0.6,  0.18)</li>
+            <li>(1.0, 0.25)</li>
+            <li>(1.5, 0.3)</li>
+          </points>
+        </curve>
+      </li>
+     
+    </comps>
+    <outcomeChances>
+      <li>
+        <label>Demagogic</label>
+        <chance>0.10</chance>
+        <memory>VME_DemagogicSlaveEmancipation</memory>
+        <description>The {0} was horribly demagogic! We ended up looking as the evil guys here... With such a display, it's unlikely anyone will freely want to join the colony.</description>
+        <positivityIndex>-1</positivityIndex>
+      </li>
+      <li>
+        <label>Freethinking</label>
+        <chance>0.15</chance>
+        <memory>VME_FreethinkingSlaveEmancipation</memory>
+        <description>The {0} was a nice display of freethinking. Our leader's speech was clear and succint, explaining all the evils of slavery in a concise way. Participating slaves have a 25% chance of joining the colony.</description>
+        <positivityIndex>1</positivityIndex>
+      </li>
+      <li>
+        <label>Unshackling</label>
+        <chance>0.5</chance>
+        <memory>VME_UnshacklingSlaveEmancipation</memory>
+       
+        <description>The {0} was unshackling. Our leader's speech was very inspiring, detailing all the evils caused by slavery and the immense advantages of a free society. Participating slaves have a 50% chance of joining the colony.</description>
+        <positivityIndex>2</positivityIndex>
+      </li>
+      <li>
+        <label>Liberating</label>
+        <chance>0.15</chance>
+        <memory>VME_LiberatingSlaveEmancipation</memory>
+      
+        <description>The {0} was liberating! Our leader's speech was a masterclass in extolling the virtues of a free society, liberated for the shackles of slavery. Participating slaves have a 75% chance of joining the colony.</description>
+        <positivityIndex>3</positivityIndex>
+      </li>
+	  <li>
+        <label>Amazing</label>
+        <chance>0.1</chance>
+        <memory>VME_AmazingSlaveEmancipation</memory>
+      
+        <description>The {0} was amazing! Legends will be told about our leader's speech, and how those words will resonate in the future, elevating the cause of emancipation. Participating slaves have a 100% chance of joining the colony.</description>
+        <positivityIndex>4</positivityIndex>
+      </li>
+    </outcomeChances>
+  </RitualOutcomeEffectDef>
+
+</Defs>

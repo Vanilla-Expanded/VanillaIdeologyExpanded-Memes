@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<AbilityGroupDef>
+		<defName>VME_Nurse</defName>
+		<cooldownTicks>180000</cooldownTicks>
+	</AbilityGroupDef>
+	<AbilityDef>
+		<defName>VME_MedicalEmergency</defName>
+		<label>medical emergency</label>
+		<jobDef>CastAbilityOnThing</jobDef>
+		<groupDef>VME_Nurse</groupDef>
+		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+		<description>Stops the Nurse’s Rest, Recreation and Hunger from dropping for 12 hours. During this time, Nurse can only do Doctoring jobs properly.</description>
+		<targetRequired>false</targetRequired>
+		<gizmoClass>Command_Ability</gizmoClass>
+		<iconPath>UI/Abilities/MedicalEmergency</iconPath>
+		<uiOrder>1</uiOrder>
+		
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<warmupTime>3</warmupTime>
+			<range>1</range>
+			<targetParams>
+				
+				<canTargetSelf>true</canTargetSelf>
+				
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class = "VanillaMemesExpanded.CompProperties_AbilityMedicalEmergency">
+				
+			</li>
+			
+		</comps>
+		<requiredMemes>
+			<li>VME_Healthcare</li>
+		</requiredMemes>
+	</AbilityDef>
+  
+ 
+		
+		
+		
+</Defs>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ 
+  
+  <RitualPatternDef>
+    <defName>VME_PlagueFestivalRitual</defName>
+	<ritualOnlyForIdeoMembers>true</ritualOnlyForIdeoMembers>
+    <ritualBehavior>VME_PlagueFestivalRitualBehaviour</ritualBehavior>
+    <ritualObligationTargetFilter>AnyIdeoBuildingOrRitualSpot</ritualObligationTargetFilter>
+    <ritualTargetFilter>IdeoBuildingOrRitualSpot</ritualTargetFilter>
+    <alwaysStartAnytime>true</alwaysStartAnytime>
+	<ritualOutcomeEffect>VME_PlagueFestivalRitualOutcome</ritualOutcomeEffect>
+  </RitualPatternDef>
+
+
+
+ 
+
+</Defs>

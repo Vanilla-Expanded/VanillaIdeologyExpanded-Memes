@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ 
+ 
+ <RitualOutcomeEffectDef>
+    <defName>VME_PlagueFestivalRitualOutcome</defName>
+    <description>Depending on ritual quality, participants will get between {MINMOOD} and {MAXMOOD} mood for {MOODDAYS} days. If the ritual is boring or better, it will reward all participants with the Plague.</description>
+    <workerClass>VanillaMemesExpanded.RitualOutcomeEffectWorker_PlagueFestival</workerClass>
+    
+    <comps>
+      <li Class="RitualOutcomeComp_BuildingOfDefUsed">
+        <def>Lectern</def>
+        <qualityOffset>0.15</qualityOffset>
+        <maxHorDistFromTarget>5</maxHorDistFromTarget>
+      </li>
+      <li Class="RitualOutcomeComp_RitualSeatPresent">
+        <qualityOffset>0.15</qualityOffset>
+      </li>
+      <li Class="RitualOutcomeComp_RolePresentNotSubstituted">
+        <roleId>moralist</roleId>
+        <label>moral guide present</label>
+        <qualityOffset>0.25</qualityOffset>
+      </li>
+      <li Class="RitualOutcomeComp_ParticipantCount">
+        <label>participant count</label>
+        <curve>
+          <points>
+            <li>(1,  0.0)</li>
+            <li>(5,  0.18)</li>
+            <li>(10, 0.25)</li>
+          </points>
+        </curve>
+      </li>
+      <li Class="RitualOutcomeComp_RitualTargetDefs">
+        <allowAltars>true</allowAltars>
+        <label>started at altar</label>
+        <qualityOffset>0.2</qualityOffset>
+        <expectedThingLabelTip>an altar</expectedThingLabelTip>
+      </li>
+    </comps>
+    <outcomeChances>
+      <li>
+        <label>Terrible</label>
+        <chance>0.05</chance>
+        <memory>VME_TerriblePlagueFestival</memory>
+        <description>The {0} was terrible! The speech was stuttering and incoherent, and the killing technique was botched. The corpse laid there, inert, and no holy miasma was liberated from it. What a waste of time!</description>
+		
+        <positivityIndex>-1</positivityIndex>
+      </li>
+      <li>
+        <label>Boring</label>
+        <chance>0.15</chance>
+        <memory>VME_BoringPlagueFestival</memory>
+        <description>The {0} was boring. The speech was repetitive and the killing technique was noticeably flawed. However the blessed plague is now among us.</description>
+        <positivityIndex>1</positivityIndex>
+      </li>
+      <li>
+        <label>Satisfying</label>
+        <chance>0.6</chance>
+        <memory>VME_SatisfyingPlagueFestival</memory>
+        <description>The {0} was satisfying. The speech felt meaningful, and a holy miasma was liberated from the corpse, bathing us all in a sacred plague wind.</description>
+      
+        <positivityIndex>2</positivityIndex>
+      </li>
+      <li>
+        <label>Spectacular</label>
+        <chance>0.2</chance>
+        <memory>VME_SpectacularPlagueFestival</memory>
+        <description>The {0} was spectacular! The speech brought everyone to the edge of a frenzy and a sacred plague wind wafted from the animal's corpse, blessing us.</description>
+        
+        <positivityIndex>3</positivityIndex>
+      </li>
+    </outcomeChances>
+  </RitualOutcomeEffectDef>
+ 
+  
+  
+</Defs>

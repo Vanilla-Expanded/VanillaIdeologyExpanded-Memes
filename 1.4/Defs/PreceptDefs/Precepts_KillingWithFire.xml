@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<IssueDef>
+		<defName>VME_KillingWithFire</defName>
+		<label>killing with fire</label>
+		<iconPath>UI/Issues/KillingWithFire</iconPath>
+	</IssueDef>
+	<HistoryEventDef>
+		<defName>VME_KillingWithFire</defName>
+		<label>killing with fire</label>
+	</HistoryEventDef>
+	
+	<!-- Precepts -->
+	<PreceptDef>
+		<defName>VME_KillingWithFire_Preferred</defName>
+		<issue>VME_KillingWithFire</issue>
+		<label>preferred</label>
+		<description>To watch my enemies be burnt in sacred fire elates our kind like nothing else can.</description>
+		<impact>Low</impact>
+		<displayOrderInIssue>50</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<associatedMemes>
+			<li>VME_FireWorship</li>
+		</associatedMemes>
+		<requiredMemes>
+			<li>VME_FireWorship</li>
+		</requiredMemes>
+		
+		<comps>
+			<li Class="PreceptComp_KnowsMemoryThought">
+				<eventDef>VME_KillingWithFire</eventDef>
+				<thought>VME_KillingWithFire_Preferred</thought>
+			</li>
+			
+		</comps>
+	</PreceptDef>
+	<ThoughtDef>
+		<defName>VME_KillingWithFire_Preferred</defName>
+		
+		<durationDays>6</durationDays>
+		<stackLimit>1</stackLimit>
+		<stages>
+			
+			<li>
+				<label>enemies burnt</label>
+				<description>Our enemies burnt in the holy flames.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<PreceptDef>
+		<defName>VME_KillingWithFire_Abhorrent</defName>
+		<issue>VME_KillingWithFire</issue>
+		<label>abhorrent</label>
+		<description>Watching a person burn to dead without trying to help is horrible, and should be avoided at all costs.</description>
+		<impact>Low</impact>
+		<displayOrderInIssue>40</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		
+		
+		<comps>
+			<li Class="PreceptComp_KnowsMemoryThought">
+				<eventDef>VME_KillingWithFire</eventDef>
+				<thought>VME_KillingWithFire_Abhorrent</thought>
+			</li>
+			
+		</comps>
+	</PreceptDef>
+	<ThoughtDef>
+		<defName>VME_KillingWithFire_Abhorrent</defName>
+		
+		<durationDays>6</durationDays>
+		<stackLimit>1</stackLimit>
+		<stages>
+			
+			<li>
+				<label>enemies burnt</label>
+				<description>Our enemies burnt to death and we were unable to avoid their gruesome deaths.</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	
+</Defs>

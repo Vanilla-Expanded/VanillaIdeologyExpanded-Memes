@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ 
+  
+  <RitualPatternDef>
+    <defName>VME_TradingFairRitual</defName>
+	<ritualOnlyForIdeoMembers>true</ritualOnlyForIdeoMembers>
+    <ritualBehavior>VME_TradingFairRitualBehaviour</ritualBehavior>
+    <ritualObligationTargetFilter>AnyIdeoBuildingOrRitualSpot</ritualObligationTargetFilter>
+    <ritualTargetFilter>IdeoBuildingOrRitualSpot</ritualTargetFilter>
+    <alwaysStartAnytime>true</alwaysStartAnytime>
+	<ritualOutcomeEffect>VME_TradingFairRitualOutcome</ritualOutcomeEffect>
+	<playsIdeoMusic>true</playsIdeoMusic>
+  </RitualPatternDef>
+
+
+
+ 
+
+</Defs>

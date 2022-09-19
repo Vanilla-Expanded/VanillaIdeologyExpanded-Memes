@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Issues -->
+
+
+	<IssueDef>
+		<defName>VME_Trading</defName>
+		<label>trading</label>
+		<iconPath>UI/Issues/Trading</iconPath>
+	</IssueDef>
+
+	<!-- Precepts -->
+
+
+
+	<PreceptDef>
+		<defName>VME_Trading_Required</defName>
+		<issue>VME_Trading</issue>
+		<label>required</label>
+		<description>Our colony, like it or not, is a business. Going too long without a sale is stressful, but making a hefty profit is veritably euphoric.</description>
+		<impact>Medium</impact>
+		<associatedMemes>
+			<li>VME_Trader</li>
+		</associatedMemes>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>VME_Trading_Required</thought>
+				<thoughtStageDescriptions>
+					<li>Recently traded</li>
+					<li>No recent trades</li>
+				
+				</thoughtStageDescriptions>
+			</li>
+		</comps>
+	</PreceptDef>
+	<ThoughtDef>
+		<defName>VME_Trading_Required</defName>
+		<workerClass>VanillaMemesExpanded.ThoughtWorker_Precept_Trading</workerClass>
+		<stages>
+			<li>
+				<label>recently traded</label>
+				<description>As usual, our products are flying off the shelves.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+			<li>
+				<label>no recent trades</label>
+				<description>No one wants to buy our product. I hope these quiet times will pass.</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+		</stages>
+
+	</ThoughtDef>
+
+
+
+
+</Defs>

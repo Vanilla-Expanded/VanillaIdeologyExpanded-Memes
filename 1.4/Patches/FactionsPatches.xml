@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/FactionDef[@Name="OutlanderFactionBase"]/structureMemeWeights</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/FactionDef[@Name="OutlanderFactionBase"]</xpath>
+			<value>
+				<structureMemeWeights>
+					<VME_Structure_Serketist MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_Serketist>
+					<VME_Structure_Esotericism MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_Esotericism>
+					<VME_Structure_Bacchanalianism MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_Bacchanalianism>
+					<VME_Structure_ChthonianCult MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_ChthonianCult>
+					<VME_Structure_Eschatologism MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_Eschatologism>
+					<VME_Structure_Authoritarianism MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_Authoritarianism>
+					<VME_Structure_CultOfPersonality MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_CultOfPersonality>
+					<VME_Structure_Pantheism MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_Pantheism>
+					<VME_Structure_Omnism MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_Omnism>
+					<VME_Structure_Agnosticism MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_Agnosticism>
+					<VME_Structure_SecularSpirituality MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_SecularSpirituality>
+					<VME_Structure_Shintaoism MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_Shintaoism>
+					<VME_Structure_Corporate MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_Corporate>
+				</structureMemeWeights>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/FactionDef[@Name="OutlanderFactionBase"]/structureMemeWeights</xpath>
+			<value>
+				<VME_Structure_Serketist MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_Serketist>
+				<VME_Structure_Esotericism MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_Esotericism>
+				<VME_Structure_Bacchanalianism MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_Bacchanalianism>
+				<VME_Structure_ChthonianCult MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_ChthonianCult>
+				<VME_Structure_Eschatologism MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_Eschatologism>
+				<VME_Structure_Authoritarianism MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_Authoritarianism>
+				<VME_Structure_CultOfPersonality MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_CultOfPersonality>
+				<VME_Structure_Pantheism MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_Pantheism>
+				<VME_Structure_Omnism MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_Omnism>
+				<VME_Structure_Agnosticism MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_Agnosticism>
+				<VME_Structure_SecularSpirituality MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_SecularSpirituality>
+				<VME_Structure_Shintaoism MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_Shintaoism>
+				<VME_Structure_Corporate MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_Corporate>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/FactionDef[@Name="OutlanderFactionBase"]/disallowedMemes</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/FactionDef[@Name="OutlanderFactionBase"]</xpath>
+			<value>
+				<disallowedMemes>
+					<li MayRequire="Ludeon.RimWorld.Ideology">VME_Nomad</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">VME_Vegan</li>
+				</disallowedMemes>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/FactionDef[@Name="OutlanderFactionBase"]/disallowedMemes</xpath>
+			<value>
+				<li MayRequire="Ludeon.RimWorld.Ideology">VME_Nomad</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">VME_Vegan</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/FactionDef[@Name="TribeBase"]/structureMemeWeights</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/FactionDef[@Name="TribeBase"]</xpath>
+			<value>
+				<structureMemeWeights>
+					<VME_Structure_Serketist MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_Serketist>
+					<VME_Structure_Esotericism MayRequire="Ludeon.RimWorld.Ideology">2</VME_Structure_Esotericism>
+					<VME_Structure_Bacchanalianism MayRequire="Ludeon.RimWorld.Ideology">2</VME_Structure_Bacchanalianism>
+					<VME_Structure_ChthonianCult MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_ChthonianCult>
+					<VME_Structure_Eschatologism MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_Eschatologism>
+					<VME_Structure_Authoritarianism MayRequire="Ludeon.RimWorld.Ideology">2</VME_Structure_Authoritarianism>
+					<VME_Structure_CultOfPersonality MayRequire="Ludeon.RimWorld.Ideology">2</VME_Structure_CultOfPersonality>
+					<VME_Structure_Pantheism MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_Pantheism>
+					<VME_Structure_Omnism MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_Omnism>
+					<VME_Structure_Agnosticism MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_Agnosticism>
+					<VME_Structure_SecularSpirituality MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_SecularSpirituality>
+					<VME_Structure_Shintaoism MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_Shintaoism>
+				</structureMemeWeights>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/FactionDef[@Name="TribeBase"]/structureMemeWeights</xpath>
+			<value>
+				<VME_Structure_Serketist MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_Serketist>
+				<VME_Structure_Esotericism MayRequire="Ludeon.RimWorld.Ideology">2</VME_Structure_Esotericism>
+				<VME_Structure_Bacchanalianism MayRequire="Ludeon.RimWorld.Ideology">2</VME_Structure_Bacchanalianism>
+				<VME_Structure_ChthonianCult MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_ChthonianCult>
+				<VME_Structure_Eschatologism MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_Eschatologism>
+				<VME_Structure_Authoritarianism MayRequire="Ludeon.RimWorld.Ideology">2</VME_Structure_Authoritarianism>
+				<VME_Structure_CultOfPersonality MayRequire="Ludeon.RimWorld.Ideology">2</VME_Structure_CultOfPersonality>
+				<VME_Structure_Pantheism MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_Pantheism>
+				<VME_Structure_Omnism MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_Omnism>
+				<VME_Structure_Agnosticism MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_Agnosticism>
+				<VME_Structure_SecularSpirituality MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_SecularSpirituality>
+				<VME_Structure_Shintaoism MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_Shintaoism>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/FactionDef[@Name="TribeBase"]/disallowedMemes</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/FactionDef[@Name="TribeBase"]</xpath>
+			<value>
+				<disallowedMemes>
+					<li MayRequire="Ludeon.RimWorld.Ideology">VME_Structure_Corporate</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">VME_Progressive</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">VME_Republic</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">VME_CityBuilders</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">VME_HardcoreIndustrialism</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">VME_Fleshcrafters</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">VME_Aristocratic</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">VME_MechanoidSupremacy</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">VME_Nationalist</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">VME_Vegan</li>
+				</disallowedMemes>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/FactionDef[@Name="TribeBase"]/disallowedMemes</xpath>
+			<value>
+				<li MayRequire="Ludeon.RimWorld.Ideology">VME_Structure_Corporate</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">VME_Progressive</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">VME_Republic</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">VME_CityBuilders</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">VME_HardcoreIndustrialism</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">VME_Fleshcrafters</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">VME_Aristocratic</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">VME_MechanoidSupremacy</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">VME_Nationalist</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">VME_Vegan</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/FactionDef[defName="TribeCivil"]/disallowedMemes</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/FactionDef[defName="TribeCivil"]</xpath>
+			<value>
+				<disallowedMemes>
+					<li MayRequire="Ludeon.RimWorld.Ideology">VME_Bushido</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">VME_BloodCourt</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">VME_Vegan</li>
+				</disallowedMemes>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/FactionDef[defName="TribeCivil"]/disallowedMemes</xpath>
+			<value>
+				<li MayRequire="Ludeon.RimWorld.Ideology">VME_Bushido</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">VME_BloodCourt</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">VME_Vegan</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/FactionDef[defName="TribeRough"]/disallowedMemes</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/FactionDef[defName="TribeRough"]</xpath>
+			<value>
+				<disallowedMemes>
+					<li MayRequire="Ludeon.RimWorld.Ideology">VME_Pacifist</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">VME_Emancipation</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">VME_Vegan</li>
+				</disallowedMemes>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/FactionDef[defName="TribeRough"]/disallowedMemes</xpath>
+			<value>
+				<li MayRequire="Ludeon.RimWorld.Ideology">VME_Pacifist</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">VME_Emancipation</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">VME_Vegan</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/FactionDef[defName="TribeSavage"]/disallowedMemes</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/FactionDef[defName="TribeSavage"]</xpath>
+			<value>
+				<disallowedMemes>
+					<li MayRequire="Ludeon.RimWorld.Ideology">VME_Pacifist</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">VME_Egalitarian</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">VME_Trader</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">VME_Emancipation</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">VME_Vegan</li>
+				</disallowedMemes>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/FactionDef[defName="TribeSavage"]/disallowedMemes</xpath>
+			<value>
+				<li MayRequire="Ludeon.RimWorld.Ideology">VME_Pacifist</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">VME_Egalitarian</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">VME_Trader</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">VME_Emancipation</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">VME_Vegan</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/FactionDef[defName="TribeCannibal"]/disallowedMemes</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/FactionDef[defName="TribeCannibal"]</xpath>
+			<value>
+				<disallowedMemes>
+					<li MayRequire="Ludeon.RimWorld.Ideology">VME_Pacifist</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">VME_Egalitarian</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">VME_Trader</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">VME_Emancipation</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">VME_Vegan</li>
+				</disallowedMemes>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/FactionDef[defName="TribeCannibal"]/disallowedMemes</xpath>
+			<value>
+				<li MayRequire="Ludeon.RimWorld.Ideology">VME_Pacifist</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">VME_Egalitarian</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">VME_Trader</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">VME_Emancipation</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">VME_Vegan</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/FactionDef[@Name="PirateBandBase"]/structureMemeWeights</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/FactionDef[@Name="PirateBandBase"]</xpath>
+			<value>
+				<structureMemeWeights>
+					<VME_Structure_Eschatologism MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_Eschatologism>
+					<VME_Structure_Authoritarianism MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_Authoritarianism>
+					<VME_Structure_CultOfPersonality MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_CultOfPersonality>
+					<VME_Structure_Agnosticism MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_Agnosticism>
+				</structureMemeWeights>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/FactionDef[@Name="PirateBandBase"]/structureMemeWeights</xpath>
+			<value>
+				<VME_Structure_Eschatologism MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_Eschatologism>
+				<VME_Structure_Authoritarianism MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_Authoritarianism>
+				<VME_Structure_CultOfPersonality MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_CultOfPersonality>
+				<VME_Structure_Agnosticism MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_Agnosticism>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/FactionDef[@Name="PirateBandBase"]/allowedMemes</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/FactionDef[@Name="PirateBandBase"]</xpath>
+			<value>
+				<allowedMemes>
+					<li MayRequire="Ludeon.RimWorld.Ideology">VME_Bushido</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">VME_BloodCourt</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">VME_GodEmperor</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">VME_FireWorship</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">VME_HolyDiseases</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">VME_Nomad</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">VME_Scrapper</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">VME_Nationalist</li>
+				</allowedMemes>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/FactionDef[@Name="PirateBandBase"]/allowedMemes</xpath>
+			<value>
+				<li MayRequire="Ludeon.RimWorld.Ideology">VME_Bushido</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">VME_BloodCourt</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">VME_GodEmperor</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">VME_FireWorship</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">VME_HolyDiseases</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">VME_Nomad</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">VME_Scrapper</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">VME_Nationalist</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Royalty</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<success>Always</success>
+					<xpath>/Defs/FactionDef[defName="Empire"]/structureMemeWeights</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/FactionDef[defName="Empire"]</xpath>
+						<value>
+							<structureMemeWeights>
+								<VME_Structure_Authoritarianism MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_Authoritarianism>
+								<VME_Structure_Agnosticism MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_Agnosticism>
+								<VME_Structure_SecularSpirituality MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_SecularSpirituality>
+							</structureMemeWeights>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/FactionDef[defName="Empire"]/structureMemeWeights</xpath>
+						<value>
+							<VME_Structure_Authoritarianism MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_Authoritarianism>
+							<VME_Structure_Agnosticism MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_Agnosticism>
+							<VME_Structure_SecularSpirituality MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_SecularSpirituality>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<success>Always</success>
+					<xpath>/Defs/FactionDef[defName="Empire"]/allowedMemes</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/FactionDef[defName="Empire"]</xpath>
+						<value>
+							<allowedMemes>
+								<li MayRequire="Ludeon.RimWorld.Ideology">VME_Aristocratic</li>
+								<li MayRequire="Ludeon.RimWorld.Ideology">VME_Light</li>
+								<li MayRequire="Ludeon.RimWorld.Ideology">VME_CityBuilders</li>
+								<li MayRequire="Ludeon.RimWorld.Ideology">VME_PsychicFocus</li>
+								<li MayRequire="Ludeon.RimWorld.Ideology">VME_Anonymity</li>
+							</allowedMemes>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/FactionDef[defName="Empire"]/allowedMemes</xpath>
+						<value>
+							<li MayRequire="Ludeon.RimWorld.Ideology">VME_Aristocratic</li>
+							<li MayRequire="Ludeon.RimWorld.Ideology">VME_Light</li>
+							<li MayRequire="Ludeon.RimWorld.Ideology">VME_CityBuilders</li>
+							<li MayRequire="Ludeon.RimWorld.Ideology">VME_PsychicFocus</li>
+							<li MayRequire="Ludeon.RimWorld.Ideology">VME_Anonymity</li>
+						</value>
+					</match>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

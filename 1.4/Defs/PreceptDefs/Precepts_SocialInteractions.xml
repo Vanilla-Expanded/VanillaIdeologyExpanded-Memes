@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<IssueDef>
+		<defName>VME_SocialInteractions</defName>
+		<label>social interactions</label>
+		<iconPath>UI/Issues/SocialInteractions</iconPath>
+	</IssueDef>
+	
+	<!-- Precepts -->
+	<PreceptDef>
+		<defName>VME_SocialInteractions_Disallowed</defName>
+		<issue>VME_SocialInteractions</issue>
+		<label>disallowed</label>
+		<description>Chatter between those of our creed is forbidden. We seek to achieve a greater understanding through a venere of silence and secrecy, an oath few outsiders can comprehend.</description>
+		<impact>High</impact>
+		<displayOrderInIssue>50</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<associatedMemes>
+			<li>VME_Anonymity</li>
+		</associatedMemes>
+		
+		
+	</PreceptDef>
+	
+	
+</Defs>

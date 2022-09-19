@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<IssueDef>
+		<defName>VME_Leader</defName>
+		<label>leader</label>
+		<iconPath>UI/Issues/Leader</iconPath>
+	</IssueDef>
+
+	<!-- Precepts -->
+	<PreceptDef>
+		<defName>VME_Leader_Godlike</defName>
+		<issue>VME_Leader</issue>
+		<label>godlike</label>
+		<description>Our leader should be exalted as a god, to treat them as any less assures our demise.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Opinion of the leader depends on a person's certainty in its ideoligion.</description>
+		<impact>High</impact>
+		<displayOrderInIssue>50</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<associatedMemes>
+			<li>VME_GodEmperor</li>
+		</associatedMemes>
+		<requiredMemes>
+			<li>VME_GodEmperor</li>
+		</requiredMemes>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+
+				<thought>VME_Leader_Godlike</thought>
+				<thoughtStageDescriptions>
+					<li>Supreme god emperor (certainty above 75%)</li>
+					<li>God emperor (certainty above 50%)</li>
+					<li>Dubious divinity (certainty above 25%)</li>
+					<li>False god (certainty below 25%)</li>
+					
+				</thoughtStageDescriptions>
+			</li>
+		</comps>
+	</PreceptDef>
+
+	<ThoughtDef>
+		<defName>VME_Leader_Godlike</defName>
+		<thoughtClass>Thought_SituationalSocial</thoughtClass>
+		<workerClass>VanillaMemesExpanded.Thought_StageByWill</workerClass>
+		<stages>
+			<li>
+				<label>supreme god emperor</label>
+				<baseOpinionOffset>100</baseOpinionOffset>
+			</li>
+			<li>
+				<label>god emperor</label>
+				<baseOpinionOffset>50</baseOpinionOffset>
+			</li>
+			<li>
+				<label>dubious divinity</label>
+				<baseOpinionOffset>-50</baseOpinionOffset>
+			</li>
+			<li>
+				<label>false god</label>
+				<baseOpinionOffset>-125</baseOpinionOffset>
+			</li>
+			
+			
+			
+		</stages>
+	</ThoughtDef>
+	
+	<PreceptDef>
+		<defName>VME_Leader_BestCrafter</defName>
+		<issue>VME_Leader</issue>
+		<label>best crafter</label>
+		<description>Our most skilled artisan is our leader, through their keen eye and delicate touch our workshops will sing the song of creation.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - The leader role will periodically be forced upon the highest level crafter in the colony (this will only work if the ideology is the primary one).</description>
+		<impact>Medium</impact>
+		<displayOrderInIssue>40</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<associatedMemes>
+			<li>VME_CraftCulture</li>
+		</associatedMemes>
+		<requiredMemes>
+			<li>VME_CraftCulture</li>
+		</requiredMemes>
+		
+	</PreceptDef>
+	
+	<PreceptDef>
+		<defName>VME_Leader_BestFighter</defName>
+		<issue>VME_Leader</issue>
+		<label>best fighter</label>
+		<description>Martial expertise, be it with a blade or spear is a show of strength and courage. Our most talented fighter will be our leader, no questions asked (this will only work if the ideology is the primary one).</description>
+		<impact>High</impact>
+		<displayOrderInIssue>35</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<associatedMemes>
+			<li>VME_BloodCourt</li>
+		</associatedMemes>
+		<requiredMemes>
+			<li>VME_BloodCourt</li>
+		</requiredMemes>
+		
+	</PreceptDef>
+	
+	<PreceptDef>
+		<defName>VME_Leader_Three</defName>
+		<issue>VME_Leader</issue>
+		<label>three</label>
+		<description>It’s vital that we put our trust in the hands of few rather than the hand of one.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Up to three people can be designated as leader.</description>
+		<impact>High</impact>
+		<displayOrderInIssue>30</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<associatedMemes>
+			<li>VME_Republic</li>
+		</associatedMemes>
+		<requiredMemes>
+			<li>VME_Republic</li>
+		</requiredMemes>
+		
+	</PreceptDef>
+	
+	<PreceptDef>
+		<defName>VME_Leader_Moralist</defName>
+		<issue>VME_Leader</issue>
+		<label>moralist</label>
+		<description>Our leader is a morale bastion, and through them and their divinity we shall flourish.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - The colony's leader can use moralist abilities too.</description>
+		<impact>Medium</impact>
+		<displayOrderInIssue>25</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<associatedMemes>
+			<li>VME_ExaltedPriesthood</li>
+		</associatedMemes>
+		<requiredMemes>
+			<li>VME_ExaltedPriesthood</li>
+		</requiredMemes>
+		
+	</PreceptDef>
+
+</Defs>

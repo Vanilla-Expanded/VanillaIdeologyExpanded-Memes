@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ <AbilityGroupDef>
+    <defName>VME_FlameKeeper</defName>
+    <cooldownTicks>7500</cooldownTicks>
+  </AbilityGroupDef>
+
+ 
+<AbilityDef>
+		<defName>VME_StrengthenFlame</defName>
+		<label>strengthen flame</label>
+		<jobDef>CastAbilityOnThing</jobDef>
+		<groupDef>VME_FlameKeeper</groupDef>
+		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>True</disableGizmoWhileUndrafted>
+		<description>An ability to ignite flame sources and cause an explosion. Only works on wild fires, not on man-made fire structures.</description>
+		<targetRequired>True</targetRequired>
+		<gizmoClass>Command_Ability</gizmoClass>
+		<iconPath>UI/Abilities/StrengthenFlame</iconPath>
+		<uiOrder>1</uiOrder>
+		<statBases>
+			<Ability_EffectRadius>3.9</Ability_EffectRadius>
+		</statBases>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<warmupTime>5</warmupTime>
+			<range>15</range>
+			<targetParams>
+				<canTargetFires>true</canTargetFires>
+				<canTargetPawns>false</canTargetPawns>
+				<canTargetBuildings>false</canTargetBuildings>
+			
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class = "VanillaMemesExpanded.CompProperties_AbilityStrengthenFlame">
+				
+			</li>
+			
+		</comps>
+		<requiredMemes>
+			<li>VME_FireWorship</li>
+		</requiredMemes>
+	</AbilityDef>
+  
+ 
+
+ 
+
+</Defs>

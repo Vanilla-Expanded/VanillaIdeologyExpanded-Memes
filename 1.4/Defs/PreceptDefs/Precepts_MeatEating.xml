@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ 
+
+  <HistoryEventDef>
+    <defName>VME_AteAnimalProducts</defName>
+    <label>ate animal products</label>
+  </HistoryEventDef>
+
+ 
+
+  <!-- Precepts -->
+
+  <PreceptDef>
+    <defName>VME_MeatEating_Abhorrent_Strict</defName>
+    <issue>MeatEating</issue>
+    <label>abhorrent (strict)</label>
+    <description>Eating meat of any kind is deeply evil. Consuming any animal product is immoral.</description>
+    <impact>High</impact>
+    <displayOrderInIssue>30</displayOrderInIssue>
+    <displayOrderInImpact>1000</displayOrderInImpact>
+    <exclusionTags>
+      <li>MeatEatingBadCannibalGood</li>
+      <li>InsectMeatEatingLoved</li>
+    </exclusionTags>
+    <conflictingMemes>
+      <li>HumanPrimacy</li>
+    </conflictingMemes>
+    <associatedMemes>
+      <li>VME_Vegan</li>
+  
+    </associatedMemes>
+	<enabledForNPCFactions>false</enabledForNPCFactions>
+    <disallowHuntingCamps>true</disallowHuntingCamps>
+    <comps>
+      <li Class="PreceptComp_SelfTookMemoryThought">
+        <eventDef>AteMeat</eventDef>
+        <thought>AteMeat_Abhorrent</thought>
+      </li>
+      <li Class="PreceptComp_KnowsMemoryThought">
+        <eventDef>AteMeat</eventDef>
+        <thought>AteMeat_Know_Abhorrent</thought>
+      </li>
+	  <li Class="PreceptComp_SelfTookMemoryThought">
+        <eventDef>VME_AteAnimalProducts</eventDef>
+        <thought>VME_AteAnimalProducts_Abhorrent</thought>
+      </li>
+      <li Class="PreceptComp_KnowsMemoryThought">
+        <eventDef>VME_AteAnimalProducts</eventDef>
+        <thought>VME_AteAnimalProducts_Know_Abhorrent</thought>
+      </li>
+    </comps>
+  </PreceptDef>
+
+ 
+
+  <!-- Thoughts: Ate meat -->
+
+  <ThoughtDef>
+    <defName>VME_AteAnimalProducts_Abhorrent</defName>
+    <durationDays>1</durationDays>
+    <nullifyingTraits>
+      <li>Cannibal</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>ate animal products</label>
+        <description>I had to eat animal products. It is wrong and immoral to imprison an animal and use it as a factory.</description>
+        <baseMoodEffect>-6</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>VME_AteAnimalProducts_Know_Abhorrent</defName>
+    <thoughtClass>Thought_MemorySocial</thoughtClass>
+    <durationDays>3</durationDays>
+    <stackLimit>100</stackLimit>
+    <stackLimitForSameOtherPawn>3</stackLimitForSameOtherPawn>
+    <nullifyingTraits>
+      <li>Cannibal</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>ate animal products</label>
+        <baseOpinionOffset>-5</baseOpinionOffset>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+ 
+
+</Defs>

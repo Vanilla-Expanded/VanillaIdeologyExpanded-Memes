@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<IssueDef>
+		<defName>VME_SlaveTrading</defName>
+		<label>slave trading</label>
+		<iconPath>UI/Issues/SlaveTrading</iconPath>
+	</IssueDef>
+
+	<HistoryEventDef>
+		<defName>VME_BoughtSlave</defName>
+		<label>bought slave</label>
+	</HistoryEventDef>
+
+	<!-- Precepts -->
+
+	<PreceptDef>
+		<defName>VME_SlaveTrading_OnlyBuying</defName>
+		<issue>VME_SlaveTrading</issue>
+		<label>only buying</label>
+		<description>Only buying slaves is justifiable, after which we should provide them amicable amounts of lodging and consideration within our colony. By selling a slave one leaves their fate up to the good faith of their buyer, a very unwise decision.</description>
+		<impact>Medium</impact>
+		<displayOrderInIssue>50</displayOrderInIssue>
+		<displayOrderInImpact>1000</displayOrderInImpact>   
+		<requiredMemes>
+			<li>VME_Emancipation</li>
+		</requiredMemes>
+		<associatedMemes>
+			<li>VME_Emancipation</li>    
+		</associatedMemes>
+		<comps>
+			
+			<li Class="PreceptComp_UnwillingToDo">
+				<eventDef>SoldSlave</eventDef>
+			</li>
+			
+			<li Class="PreceptComp_KnowsMemoryThought">
+				<eventDef>SoldSlave</eventDef>
+				<thought>VME_SoldSlave_Know_Forbidden</thought>
+			</li>
+			<li Class="PreceptComp_KnowsMemoryThought">
+				<eventDef>VME_BoughtSlave</eventDef>
+				<thought>VME_BoughtSlave_Know_Forbidden_Mood</thought>
+				<description>Someone bought a slave</description>
+			</li>
+			
+			<li Class="PreceptComp_KnowsMemoryThought">
+				<eventDef>SoldSlave</eventDef>
+				<thought>VME_SoldSlave_Know_Forbidden_Mood</thought>
+				<description>Someone sold a slave</description>
+			</li>
+			
+		</comps>
+	</PreceptDef>
+
+
+
+	<!-- Thoughts -->
+
+
+	<ThoughtDef>
+		<defName>VME_SoldSlave_Know_Forbidden</defName>
+		<thoughtClass>Thought_MemorySocial</thoughtClass>
+		<durationDays>15</durationDays>
+		<stackLimit>100</stackLimit>
+		<stackLimitForSameOtherPawn>3</stackLimitForSameOtherPawn>
+		<stages>
+			<li>
+				<label>sold slave</label>
+				<baseOpinionOffset>-50</baseOpinionOffset>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>VME_SoldSlave_Know_Forbidden_Mood</defName>
+		<thoughtClass>Thought_Memory</thoughtClass>
+		<durationDays>6</durationDays>
+		<stackLimit>5</stackLimit>
+		<stackedEffectMultiplier>0.75</stackedEffectMultiplier>
+		<doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
+		<stages>
+			<li>
+				<label>we sold a slave!</label>
+				<description>We took part in the horrible act of slave trading. What a disgrace.</description>
+				<baseMoodEffect>-20</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>VME_BoughtSlave_Know_Forbidden_Mood</defName>
+		<thoughtClass>Thought_Memory</thoughtClass>
+		<durationDays>6</durationDays>
+
+		<stages>
+			<li>
+				<label>bought a slave!</label>
+				<description>We have bought a slave from evil slave traders!</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	
+
+
+
+
+</Defs>

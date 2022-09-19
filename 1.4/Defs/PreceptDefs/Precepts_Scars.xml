@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<IssueDef>
+		<defName>VME_Scars</defName>
+		<label>scars</label>
+		<iconPath>UI/Issues/Scars</iconPath>
+	</IssueDef>
+	
+	<!-- Precepts -->
+	<PreceptDef>
+		<defName>VME_Scars_Honorable</defName>
+		<issue>VME_Scars</issue>
+		<label>honorable</label>
+		<description>Scars are marks of honor and strength, to be scarred and continue on is nothing short of an incredible act.</description>
+		<impact>Low</impact>
+		<displayOrderInIssue>50</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<associatedMemes>
+			<li>VME_BloodCourt</li>
+		</associatedMemes>
+		
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+
+				<thought>VME_Scars_Honorable</thought>
+				<thoughtStageDescriptions>
+					<li>Faintly scarred</li>
+					<li>Scarred</li>
+					<li>Heavily scarred</li>
+					<li>Extremely scarred</li>
+					<li>Innumerable battlefield scars</li>
+				</thoughtStageDescriptions>
+			</li>
+		</comps>
+	</PreceptDef>
+	<ThoughtDef>
+		<defName>VME_Scars_Honorable</defName>
+		<thoughtClass>Thought_SituationalSocial</thoughtClass>
+		<workerClass>VanillaMemesExpanded.Thought_Scars_Honorable</workerClass>
+		<stages>
+			<li>
+				<label>faintly scarred</label>
+				<baseOpinionOffset>5</baseOpinionOffset>
+			</li>
+			<li>
+				<label>scarred</label>
+				<baseOpinionOffset>10</baseOpinionOffset>
+			</li>
+			<li>
+				<label>heavily scarred</label>
+				<baseOpinionOffset>15</baseOpinionOffset>
+			</li>
+			<li>
+				<label>extremely scarred</label>
+				<baseOpinionOffset>20</baseOpinionOffset>
+			</li>
+			<li>
+				<label>innumerable battlefield scars</label>
+				<baseOpinionOffset>30</baseOpinionOffset>
+			</li>
+				
+			
+			
+		</stages>
+	</ThoughtDef>
+	
+	<PreceptDef>
+		<defName>VME_Scars_Disgusting</defName>
+		<issue>VME_Scars</issue>
+		<label>disgusting</label>
+		<description>A body marked with scars is disgusting.</description>
+		<impact>Low</impact>
+		<displayOrderInIssue>40</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+
+				<thought>VME_Scars_Disgusting</thought>
+				<thoughtStageDescriptions>
+					<li>Faintly scarred</li>
+					<li>Scarred</li>
+					<li>Heavily scarred</li>
+					<li>Extremely scarred</li>
+					<li>Innumerable battlefield scars</li>
+				</thoughtStageDescriptions>
+			</li>
+		</comps>
+	</PreceptDef>
+	<ThoughtDef>
+		<defName>VME_Scars_Disgusting</defName>
+		<thoughtClass>Thought_SituationalSocial</thoughtClass>
+		<workerClass>VanillaMemesExpanded.Thought_Scars_Honorable</workerClass>
+		<stages>
+			<li>
+				<label>faintly scarred</label>
+				<baseOpinionOffset>-2</baseOpinionOffset>
+			</li>
+			<li>
+				<label>scarred</label>
+				<baseOpinionOffset>-5</baseOpinionOffset>
+			</li>
+			<li>
+				<label>heavily scarred</label>
+				<baseOpinionOffset>-10</baseOpinionOffset>
+			</li>
+			<li>
+				<label>extremely scarred</label>
+				<baseOpinionOffset>-15</baseOpinionOffset>
+			</li>
+			<li>
+				<label>innumerable battlefield scars</label>
+				<baseOpinionOffset>-20</baseOpinionOffset>
+			</li>
+				
+			
+			
+		</stages>
+	</ThoughtDef>
+	
+	
+</Defs>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ 
+  
+   <RitualOutcomeEffectDef>
+    <defName>VME_BonfireOutcome</defName>
+    <description>Depending on ritual quality, participants will receive a recreation boost that last between 4 hours and 3 days that will raise their recreation bar. They'll also get between {MINMOOD} and {MAXMOOD} mood for {MOODDAYS} days.\n\nThe ritual bonfire will stay lit for at least two quadrums, providing a beauty bonus nearby and counting towards the number of fires around for the Fire: Desired precept.</description>
+    <workerClass>VanillaMemesExpanded.RitualOutcomeEffectWorker_Bonfire</workerClass>
+    <comps>
+	 <li Class="RitualOutcomeComp_PawnStatScaled">
+        <label>{PAWN_labelShort}'s social impact</label>
+        <labelAbstract>speaker's social impact</labelAbstract>
+        <roleId>fireKeeper</roleId>
+        <statDef>SocialImpact</statDef>
+        <curve>
+          <points>
+            <li>(0.2, 0.0)</li>
+            <li>(0.6, 0.2)</li>
+            <li>(1.0, 0.3)</li>
+            <li>(1.5, 0.4)</li>
+          </points>
+        </curve>
+      </li>
+      <li Class="RitualOutcomeComp_ParticipantCount">
+        <label>participant count</label>
+        <curve>
+          <points>
+            <li>(1, 0.18)</li>
+            <li>(4, 0.4)</li>
+            <li>(7, 0.65)</li>
+            <li>(10, 0.8)</li>
+          </points>
+        </curve>
+      </li>
+      
+    </comps>
+    <outcomeChances>
+      <li>
+        <label>Terrible</label>
+        <chance>0.05</chance>
+        <memory>VME_TerribleBonfire</memory>
+        <description>The {0} was terrible! Some pathetic little flames drifted around, and they went away too soon (no recreation effect applied).</description>
+        <positivityIndex>-2</positivityIndex>
+      </li>
+      <li>
+        <label>Lackluster</label>
+        <chance>0.45</chance>
+        <memory>VME_LacklusterBonfire</memory>
+        <description>The {0} was lackluster. We were expecting a wondrous conflagration, and instead we got an oversized campfire. At least it was kinda entertaining.\n\nRecreation of all participants will be raised for 4 hours.</description>
+        <positivityIndex>1</positivityIndex>
+      </li>
+      <li>
+        <label>Good</label>
+        <chance>0.4</chance>
+        <memory>VME_GoodBonfire</memory>
+        <description>The {0} was good. The flames rose and crackled majestically over the settlement, and it lifted all our spirits considerably.\n\nRecreation of all participants will be raised for 1 day.</description>
+        <positivityIndex>2</positivityIndex>
+      </li>
+      <li>
+        <label>Glorious</label>
+        <chance>0.1</chance>
+        <memory>VME_GloriousBonfire</memory>
+        <description>The {0} was glorious! It was super fun and we really connected with each other with the shared experience.\n\nRecreation of all participants will be raised for 3 days.</description>
+        <positivityIndex>3</positivityIndex>
+      </li>
+    </outcomeChances>
+  </RitualOutcomeEffectDef>
+  
+</Defs>

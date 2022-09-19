@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+	<!-- Precepts -->
+
+	<PreceptDef>
+		<defName>VME_Slavery_Forbidden</defName>
+		<issue>Slavery</issue>
+		<label>forbidden</label>
+		<description>Participating in slave trade is an absolutely vile idea. The only reason to purchase a slave is with intent to immediately free them. Moreso, those who struggled through enslavement deserve our compassion and respect.</description>
+		<impact>High</impact>
+		<displayOrderInIssue>50</displayOrderInIssue>
+		<displayOrderInImpact>1000</displayOrderInImpact>   
+		<requiredMemes>
+			<li>VME_Emancipation</li>
+		</requiredMemes>
+		<associatedMemes>
+			<li>VME_Emancipation</li>    
+		</associatedMemes>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>VME_Slavery_Forbidden_SlavesInColony</thought>
+				<description>Any slave in colony (until emancipated)</description>
+			</li>
+			
+			<li Class="PreceptComp_UnwillingToDo">
+				<eventDef>EnslavedPrisoner</eventDef>
+			</li>
+			
+			<li Class="PreceptComp_KnowsMemoryThought">
+				<eventDef>EnslavedPrisoner</eventDef>
+				<thought>EnslavedPrisoner_Know_Abhorrent</thought>
+			</li>
+			
+			<li Class="PreceptComp_SituationalThought">
+				<thought>VME_Slavery_Forbidden_HasBeenASlave</thought>
+
+			</li>
+		</comps>
+	</PreceptDef>
+
+
+
+	<!-- Thoughts -->
+
+	<ThoughtDef>
+		<defName>VME_Slavery_Forbidden_SlavesInColony</defName>
+
+		<workerClass>VanillaMemesExpanded.ThoughtWorker_Precept_SlavesInColony</workerClass>
+
+		<stages>
+			<li>
+				<label>unemancipated slaves in colony</label>
+				<description>There are slaves in the colony. We should emancipate them as soon as possible.</description>
+				<baseMoodEffect>-20</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	
+	
+	<ThoughtDef>
+		<defName>VME_Slavery_Forbidden_HasBeenASlave</defName>
+		<thoughtClass>Thought_SituationalSocial</thoughtClass>
+		<workerClass>VanillaMemesExpanded.ThoughtWorker_Precept_HasBeenASlave</workerClass>
+		<stages>
+			<li>
+				<label>suffered slavery</label>
+				<baseOpinionOffset>10</baseOpinionOffset>
+			</li>
+			
+		</stages>
+	</ThoughtDef>
+
+
+
+
+</Defs>

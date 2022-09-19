@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+	<Operation Class="PatchOperationAdd"> 
+	<success>Always</success>
+		<xpath>/Defs/PreceptDef[defName="MiningYield_High"]/associatedMemes</xpath>
+		<value>
+			<li>VME_HardcoreIndustrialism</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd"> 
+	<success>Always</success>
+		<xpath>/Defs/PreceptDef[defName="MiningYield_High"]/requiredMemes</xpath>
+		<value>
+			<li>VME_HardcoreIndustrialism</li>
+		</value>
+	</Operation>
+	
+	
+
+
+</Patch>

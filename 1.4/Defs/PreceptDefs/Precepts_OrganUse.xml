@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Issue -->
+
+ 
+
+  <PreceptDef>
+    <defName>VME_OrganUse_PostMortem</defName>
+    <issue>OrganUse</issue>
+    <label>post mortem</label>
+    <description>The organs of one’s being should never go to waste, so long as their vessel is no longer required.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Through the fleshcrafter role can butcher fresh humanoid bodies to acquire fleshcrafted organs.</description>
+    <impact>High</impact>
+    <displayOrderInIssue>40</displayOrderInIssue>
+    <displayOrderInImpact>1000</displayOrderInImpact>
+    <associatedMemes>
+      <li>VME_Fleshcrafters</li>
+    </associatedMemes>
+	<requiredMemes>
+      <li>VME_Fleshcrafters</li>
+    </requiredMemes>
+	<conflictingMemes>
+      <li>Transhumanist</li>
+    </conflictingMemes>
+    
+  </PreceptDef>
+
+
+</Defs>

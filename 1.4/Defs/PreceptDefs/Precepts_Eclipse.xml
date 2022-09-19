@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<PreceptDef>
+		<defName>VME_Eclipse_Despised</defName>
+		<issue>Eclipse</issue>
+		<label>despised</label>
+		<description>Eclipses are scary, a preternatural darkness bloating the light of the sun.</description>
+		<impact>Low</impact>
+		<requiredMemes>
+			<li>VME_Light</li>
+		</requiredMemes>
+		<associatedMemes>
+			<li>VME_Light</li>
+		</associatedMemes>
+		<conflictingMemes>
+			<li>Blindsight</li>
+			<li>Darkness</li>
+		</conflictingMemes>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>VME_Eclipse_Despised</thought>
+			</li>
+		</comps>
+	</PreceptDef>
+	<ThoughtDef>
+		<defName>VME_Eclipse_Despised</defName>
+		<thoughtClass>Thought_Situational</thoughtClass>
+		<workerClass>ThoughtWorker_Precept_Eclipse</workerClass>
+		<stages>
+			<li>
+				<label>disgusting eclipse</label>
+				<description>Eclipses are so scary! Where did the light go?</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+</Defs>

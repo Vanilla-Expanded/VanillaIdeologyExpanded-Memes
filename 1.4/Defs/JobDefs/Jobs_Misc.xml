@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<JobDef>
+		<defName>VME_DeconstructBuilding</defName>
+		<driverClass>VanillaMemesExpanded.JobDriver_DeconstructBuilding</driverClass>
+		<reportString>uninstalling ancient junk building.</reportString>
+	</JobDef>
+	
+	<JobDef>
+		<defName>VME_MaintainInsectNest</defName>
+		<driverClass>VanillaMemesExpanded.JobDriver_MaintainInsectNest</driverClass>
+		<reportString>maintaining insect nest.</reportString>
+	</JobDef>
+	
+	<JobDef>
+		<defName>VME_DanceWithLove</defName>
+		<driverClass>VanillaMemesExpanded.JobDriver_DanceWithLove</driverClass>
+		<reportString>participating in orgy.</reportString>
+	</JobDef>
+
+</Defs>

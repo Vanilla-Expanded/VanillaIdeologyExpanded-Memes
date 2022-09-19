@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+
+	<VanillaMemesExpanded.StartingItemsByIdeologyDef>
+		<defName>VME_StartingItemsSweetTeeth</defName>
+		<associatedMeme>VME_SweetTeeth</associatedMeme>	
+		<thingSetMaker>VME_StartingItemsSweetTeeth</thingSetMaker>		
+	</VanillaMemesExpanded.StartingItemsByIdeologyDef>
+
+
+
+
+
+
+</Defs>

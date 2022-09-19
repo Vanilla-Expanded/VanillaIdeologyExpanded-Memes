@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+	<RitualOutcomeEffectDef>
+    <defName>VME_IncantationOutcome</defName>
+    <description>If the incantation ritual goes well (positive outcome) it will increase the corruption need of all participants by 10%, as well as provide a mood bonus.</description>
+    <workerClass>VanillaMemesExpanded.RitualOutcomeEffectWorker_Incantation</workerClass>
+    <comps>
+      <li Class="RitualOutcomeComp_RoomStat">
+        <label>room impressiveness</label>
+        <statDef>Impressiveness</statDef>
+        <curve>
+          <points>
+            <li>0,  0</li>
+            <li>50,  0.1</li>
+            <li>120, 0.2</li>
+          </points>
+        </curve>
+      </li>
+      <li Class="RitualOutcomeComp_ParticipantCount">
+        <label>participant count</label>
+        <curve>
+          <points>
+            <li>(1,  0.0)</li>
+            <li>(5,  0.3)</li>
+            <li>(10, 0.4)</li>
+          </points>
+        </curve>
+      </li>
+      <li Class="RitualOutcomeComp_PawnStatScaled">
+        <label>{PAWN_labelShort}'s social impact</label>
+        <labelAbstract>speaker's social impact</labelAbstract>
+        <roleId>leader</roleId>
+        <statDef>SocialImpact</statDef>
+        <curve>
+          <points>
+            <li>(0.2,  0.0)</li>
+            <li>(0.6,  0.18)</li>
+            <li>(1.0, 0.25)</li>
+            <li>(1.5, 0.3)</li>
+          </points>
+        </curve>
+      </li>
+     
+    </comps>
+    <outcomeChances>
+      <li>
+        <label>Squamous</label>
+        <chance>0.05</chance>
+        <memory>VME_SquamousIncantation</memory>
+        <description>The {0} was abnormal! An indescribably hideous gibbering! We'd even describe it as squamous, but we don't even know what that is! An unutterable word!</description>
+        <positivityIndex>-1</positivityIndex>
+      </li>
+      <li>
+        <label>Accursed</label>
+        <chance>0.15</chance>
+        <memory>VME_AccursedIncantation</memory>
+        <description>The {0} was suitably accursed. A litany of dark morbidities expressed in crime, perversion, and insanity.</description>
+        <positivityIndex>1</positivityIndex>
+      </li>
+      <li>
+        <label>Blasphemous</label>
+        <chance>0.6</chance>
+        <memory>VME_BlasphemousIncantation</memory>
+       
+        <description>The {0} was blasphemous. A promise of hidden and fathomless worlds of strange life which pulsate in the gulfs beyond the stars and press hideously upon our own globe in unholy dimensions which only the dead and the moonstruck can glimpse.</description>
+        <positivityIndex>2</positivityIndex>
+      </li>
+      <li>
+        <label>Loathsome</label>
+        <chance>0.2</chance>
+        <memory>VME_LoathsomeIncantation</memory>
+      
+        <description>The {0} was loathsome! We live on a placid island of ignorance in the midst of black seas of infinity, and it was not meant that we should voyage far.</description>
+        <positivityIndex>3</positivityIndex>
+      </li>
+    </outcomeChances>
+  </RitualOutcomeEffectDef>
+
+</Defs>

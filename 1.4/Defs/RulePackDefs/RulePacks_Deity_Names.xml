@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RulePackDef>
+		<defName>VME_NamerDeityEldritch</defName>
+		<include>
+			<li>GlobalUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_deityName->[start][middle][end]</li>
+				<li>start->cn</li>
+				<li>start->kt</li>
+				<li>start->c't</li>
+				<li>start->kh</li>
+				<li>start->yir</li>
+				<li>start->yor</li>
+				<li>start->yok</li>
+				<li>start->igh</li>
+				<li>start->vhal</li>
+				<li>start->gher</li>
+				<li>start->mh'ur</li>
+				<li>start->vh'or</li>
+				<li>start->og</li>
+				<li>start->ak</li>
+				<li>start->kol</li>
+				<li>start->okt</li>
+				<li>start->yom-</li>
+				<li>start->sub-</li>
+				<li>start->ed</li>
+				<li>start->ith</li>
+				<!-- Middle is always surrounded by vowels -->
+				<li>middle->all'ra</li>
+				<li>middle->hele</li>
+				<li>middle->ujhu</li>
+				<li>middle->aand'xu</li>
+				<li>middle->'og'vhe</li>
+				<li>middle->aathe</li>
+				<li>middle->omliggda</li>
+				<li>middle->ethla</li>
+				<li>middle->ouvha</li>
+				<li>middle->omlao</li>
+				<!-- Ends never begin with vowels -->
+				<li>end(p=4)-></li>
+				<li>end->tl</li>
+				<li>end->ss</li>
+				<li>end->xr</li>
+				<li>end->rc</li>
+				<li>end->sh</li>
+				<li>end->l</li>
+				<li>end->va</li>
+				<li>end->rrath</li>
+				<li>end->th</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<RulePackDef>
+		<defName>VME_DietyTypeMakerEldritch</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_deityType->Progenitor of [concept]</li>
+				<li>r_deityType->Corruptor of [concept]</li>
+				<li>r_deityType->Bane of [concept]</li>
+				<li>r_deityType->Enemy of [concept]</li>
+				<li>r_deityType->Devourer of [concept]</li>
+				<li>r_deityType->Scourge of [concept]</li>
+				<li>r_deityType->The incomprehensible [concept]</li>
+				<li>r_deityType->The noise at the center of [concept]</li>
+				<li>r_deityType->The [concept2] out of [concept3]</li>
+				<li>concept->everything</li>
+				<li>concept->all</li>
+				<li>concept->the universe</li>
+				<li>concept->stars</li>
+				<li>concept->souls</li>
+				<li>concept->humanity</li>
+				<li>concept->space</li>
+				<li>concept->our dreams</li>
+				<li>concept->our deepest fears</li>
+				<li>concept2->colour</li>
+				<li>concept2->thousand goats</li>
+				<li>concept2->hunger</li>
+				<li>concept2->scintillation</li>
+				<li>concept2->inkbloat</li>
+				<li>concept2->madness</li>
+				<li>concept2->insanity</li>
+				<li>concept3->space</li>
+				<li>concept3->the depths</li>
+				<li>concept3->the chthonian abyss</li>
+				<li>concept3->hades</li>
+				<li>concept3->our nightmares</li>
+				<li>concept3->our dreams</li>
+				<li>concept3->our deepest fears</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<RulePackDef>
+		<defName>VME_NamerCultofPersonality</defName>
+		<include>
+			<li>GlobalUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_deityName->Our Supreme Leader</li>
+				<li>r_deityName->Supreme Leader</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<RulePackDef>
+		<defName>VME_DietyTypeMakerCultofPersonality</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_deityType->[name1] of [name2]</li>
+				<li>name1->Admiral</li>
+				<li>name1->Pontifex</li>
+				<li>name1->Palatine</li>
+				<li>name1->Emperor</li>
+				<li>name1->Delegate</li>
+				<li>name1->Overlord</li>
+				<li>name1->Chairman</li>
+				<li>name1->Guardian</li>
+				<li>name1->Exarch</li>
+				<li>name2->Truth</li>
+				<li>name2->Justice</li>
+				<li>name2->the People</li>
+				<li>name2->the Rivers</li>
+				<li>name2->Dreams</li>
+				<li>name2->Eternity</li>
+				<li>name2->Worship</li>
+				<li>name2->Mercy</li>
+				<li>name2->Unity</li>
+				<li>name2->the New Kingdom</li>
+				<li>name2->the Realm</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>VME_NamerPantheism</defName>
+		<include>
+			<li>GlobalUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_deityName->The Universe</li>
+				<li>r_deityName->The Cosmos</li>
+				<li>r_deityName->Existence</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<RulePackDef>
+		<defName>VME_DietyTypeMakerPantheism</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_deityType->[name1] [name2]</li>
+				<li>name1->All-Encompassing </li>
+				<li>name1->Omnipresent</li>
+				<li>name1->Ubiquitous</li>
+				<li>name1->Universal</li>
+				<li>name1->All-Present</li>
+				<li>name1->All-Pervasive</li>
+				<li>name1->Boundless</li>
+
+				<li>name2->Creation</li>
+				<li>name2->Space</li>
+				<li>name2->Vaccuum</li>				
+				<li>name2->Totality</li>
+				<li>name2->Infinity</li>
+				<li>name2->Spheres</li>
+
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>VME_NamerCorporate</defName>
+		<include>
+			<li>GlobalUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_deityName->The Company</li>
+				<li>r_deityName->The Business</li>
+				<li>r_deityName->The Corporation</li>
+				<li>r_deityName->The Organization</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<RulePackDef>
+		<defName>VME_DietyTypeMakerCorporate</defName>
+		<rulePack>
+			
+
+			<rulesStrings>
+				<li>r_deityType(p=4)->[businessname] [businesstype]</li>
+				<li>r_deityType->[NamePerson] [businesstype]</li>
+				<li>r_deityType->[maybe_adjective] [Animal] [businesstype]</li>
+				<li>r_deityType->[Letter][Letter] [businesstype]</li>
+				<li>r_deityType(p=0.5)->[PersonAlly] [businesstype]</li>
+				<li>r_deityType(p=0.5)->[AdjectiveFriendly] [businesstype]</li>
+				<li>r_deityType(p=0.5)->[AdjectiveBadass] [businesstype]</li>
+				<li>r_deityType(p=0.3)->[PersonFamily] [businesstype]</li>
+				<li>r_deityType(p=0.3)->[maybe_adjective] [NaturalObject] [businesstype]</li>
+				<li>r_deityType(p=0.2)->[maybe_adjective] [TreeType] [businesstype]</li>
+				<li>r_deityType(p=0.2)->[maybe_adjective] [Vegetable] [businesstype]</li>
+				<li>r_deityType(p=0.2)->[Direction] [businesstype]</li>
+
+				<li>maybe_adjective-></li>
+				<li>maybe_adjective->[Color]</li>
+				<li>maybe_adjective->[AdjectiveFriendly]</li>
+				<li>maybe_adjective->[AdjectiveBadass]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>businessname->Names/Business</li>
+				<li>businesstype->Words/Nouns/BusinessTypes</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+
+
+
+</Defs>

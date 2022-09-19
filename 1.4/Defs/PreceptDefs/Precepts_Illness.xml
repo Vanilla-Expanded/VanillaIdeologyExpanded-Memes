@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Issue -->
+	<IssueDef>
+		<defName>VME_Illness</defName>
+		<label>illness</label>
+		<iconPath>UI/Issues/Illness</iconPath>
+	</IssueDef>
+	<!-- Precepts -->
+	<PreceptDef>
+		<defName>VME_Illness_Exalted</defName>
+		<issue>VME_Illness</issue>
+		<label>exalted</label>
+		<description>To be infected is to be blessed, and to go long without blessing is regrettable.</description>
+		<impact>Medium</impact>
+		<displayOrderInIssue>50</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<requiredMemes>
+			<li>VME_HolyDiseases</li>
+		</requiredMemes>
+		<associatedMemes>
+			<li>VME_HolyDiseases</li>
+		</associatedMemes>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>VME_Illness_Exalted</thought>
+			</li>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>VME_Illness_Exalted_TooHealthy</thought>
+			</li>
+		</comps>
+	</PreceptDef>
+	<ThoughtDef>
+    <defName>VME_Illness_Exalted</defName>
+    <workerClass>VanillaMemesExpanded.Thought_Illness_Exalted</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+   
+    <stages>
+      <li>
+        <label>sick</label>
+        <description>A holy virus and the godlike bacteria shall breed in my veins.</description>
+        <baseMoodEffect>20</baseMoodEffect>
+      </li>
+     
+    </stages>
+  </ThoughtDef>
+  
+  <ThoughtDef>
+    <defName>VME_Illness_Exalted_TooHealthy</defName>
+	
+    <workerClass>VanillaMemesExpanded.Thought_Illness_Exalted_TooHealthy</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+   
+    <stages>
+      <li>
+        <label>wants to be sick</label>
+        <description>What I would give for the illness to bind me in pain once more.</description>
+        <baseMoodEffect>-2</baseMoodEffect>
+      </li>
+     
+    </stages>
+  </ThoughtDef>
+	
+	
+	
+	<PreceptDef>
+		<defName>VME_Illness_Preferred</defName>
+		<issue>VME_Illness</issue>
+		<label>preferred</label>
+		<description>Being sick gives you an excuse to lie down and work less. It's worth it!</description>
+		<impact>Low</impact>
+		<displayOrderInIssue>40</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>VME_Illness_Preferred</thought>
+			</li>
+		</comps>
+	</PreceptDef>
+	
+	<ThoughtDef>
+		<defName>VME_Illness_Preferred</defName>
+		<workerClass>VanillaMemesExpanded.Thought_Illness_Preferred</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>sick</label>
+				<description>I am sick. A perfect excuse to lie down.</description>
+				<baseMoodEffect>4</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<PreceptDef>
+		<defName>VME_Illness_Indifferent</defName>
+		<issue>VME_Illness</issue>
+		<label>indifferent</label>
+		<description>Illness is just another fact of life.</description>
+		<impact>Low</impact>
+		<displayOrderInIssue>30</displayOrderInIssue>
+		<defaultSelectionWeight>1</defaultSelectionWeight>
+	</PreceptDef>
+	
+	
+</Defs>

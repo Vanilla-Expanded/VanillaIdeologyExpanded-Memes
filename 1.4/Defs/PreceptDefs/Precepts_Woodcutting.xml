@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Issues -->
+
+ 
+  <IssueDef>
+    <defName>VME_WoodcuttingYield</defName>
+    <label>woodcutting yield</label>
+    <iconPath>UI/Issues/WoocuttingYield</iconPath>
+  </IssueDef>
+
+  <!-- Precepts -->
+
+ 
+
+  <PreceptDef>
+    <defName>VME_WoodcuttingYield_High</defName>
+    <issue>VME_WoodcuttingYield</issue>
+    <label>high</label>
+    <description>Lumber is infinitely useful, not even stumps go to waste when our kind is in charge.\n\n&lt;color=#E5E54C&gt;Stats:&lt;/color&gt;\n - Woodcutting yield: +10%.</description>
+    <impact>Medium</impact>
+    <associatedMemes>
+      <li>VME_HardcoreIndustrialism</li>
+    </associatedMemes>
+ 
+   
+  </PreceptDef>
+
+ 
+
+</Defs>

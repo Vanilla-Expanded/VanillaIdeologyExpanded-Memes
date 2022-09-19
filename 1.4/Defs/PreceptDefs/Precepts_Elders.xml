@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<IssueDef>
+		<defName>VME_Elders</defName>
+		<label>elders</label>
+		<iconPath>UI/Issues/Elders</iconPath>
+	</IssueDef>
+	<!-- Precepts -->
+	<PreceptDef>
+		<defName>VME_Elders_Despised</defName>
+		<issue>VME_Elders</issue>
+		<label>despised</label>
+		<description>What is this, a retirement home? Get out of my way, fossil!</description>
+		<impact>Medium</impact>
+		<displayOrderInIssue>30</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>VME_Elders_Despised</thought>
+				<thoughtStageDescriptions>
+					<li>Elder (more than 65 years)</li>
+					<li>Youth (less than 25 years)</li>
+					
+				</thoughtStageDescriptions>
+			</li>
+		</comps>
+	</PreceptDef>
+	<ThoughtDef>
+		<defName>VME_Elders_Despised</defName>
+		<thoughtClass>Thought_SituationalSocial</thoughtClass>
+		<workerClass>VanillaMemesExpanded.Thought_Elders_Despised</workerClass>
+		<stages>
+			<li>
+				<label>elder</label>
+				<baseOpinionOffset>-40</baseOpinionOffset>
+			</li>
+			<li>
+				<label>youth</label>
+				<baseOpinionOffset>20</baseOpinionOffset>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<PreceptDef>
+		<defName>VME_Elders_Respected</defName>
+		<issue>VME_Elders</issue>
+		<label>respected</label>
+		<description>True wisdom comes only with age, and those who have seen many seasons are to be venerated.</description>
+		<impact>Medium</impact>
+		<displayOrderInIssue>40</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<selectionWeight>0</selectionWeight>
+		<associatedMemes>
+			<li>VME_Elders</li>
+		</associatedMemes>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>VME_Elders_Respected</thought>
+				<thoughtStageDescriptions>
+					<li>Elder (more than 65 years)</li>
+				
+				</thoughtStageDescriptions>
+			</li>
+		</comps>
+	</PreceptDef>
+	<ThoughtDef>
+		<defName>VME_Elders_Respected</defName>
+		<thoughtClass>Thought_SituationalSocial</thoughtClass>
+		<workerClass>VanillaMemesExpanded.Thought_Elders_Respected</workerClass>
+		<stages>
+			<li>
+				<label>elder</label>
+				<baseOpinionOffset>40</baseOpinionOffset>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<PreceptDef>
+		<defName>VME_Elders_Holy</defName>
+		<issue>VME_Elders</issue>
+		<label>holy</label>
+		<description>Our elders are to be respected and revered, and never shall we expect them to do hard work.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Colonists older than 65 will not do dumb labor.</description>
+		<impact>High</impact>
+		<displayOrderInIssue>50</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<selectionWeight>1</selectionWeight>
+		<associatedMemes>
+			<li>VME_Elders</li>
+		</associatedMemes>
+		<exclusionTags>
+			<li>VME_AgeReversal</li>
+		</exclusionTags>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>VME_Elders_Holy</thought>
+				<thoughtStageDescriptions>
+					<li>Elder (more than 65 years)</li>
+				
+				</thoughtStageDescriptions>
+			</li>
+		</comps>
+	</PreceptDef>
+	<ThoughtDef>
+		<defName>VME_Elders_Holy</defName>
+		<thoughtClass>Thought_SituationalSocial</thoughtClass>
+		<workerClass>VanillaMemesExpanded.Thought_Elders_Respected</workerClass>
+		<stages>
+			<li>
+				<label>elder</label>
+				<baseOpinionOffset>100</baseOpinionOffset>
+			</li>
+		</stages>
+	</ThoughtDef>
+</Defs>

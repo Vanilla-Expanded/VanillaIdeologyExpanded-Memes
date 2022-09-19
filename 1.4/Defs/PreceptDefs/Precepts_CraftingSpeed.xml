@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Issues -->
+
+ 
+  <IssueDef>
+    <defName>VME_CraftingSpeed</defName>
+    <label>crafting speed</label>
+    <iconPath>UI/Issues/CraftingSpeed</iconPath>
+  </IssueDef>
+
+  <!-- Precepts -->
+
+ 
+
+  <PreceptDef>
+    <defName>VME_CraftingSpeed_Slower</defName>
+    <issue>VME_CraftingSpeed</issue>
+    <label>slower</label>
+    <description>A craftmaster must never rush, lest the quality of the product suffer.</description>
+    <impact>Medium</impact>
+    <associatedMemes>
+      <li>VME_CraftCulture</li>
+	
+    </associatedMemes>
+	<statOffsets>
+      <GeneralLaborSpeed>-0.25</GeneralLaborSpeed>
+	  <SmeltingSpeed>-0.25</SmeltingSpeed>
+    </statOffsets>
+ 
+   
+  </PreceptDef>
+  
+  <PreceptDef>
+    <defName>VME_CraftingSpeed_SlowerForManual</defName>
+    <issue>VME_CraftingSpeed</issue>
+    <label>slower for manual</label>
+    <description>Manual processes are unefficient. We can't waste our precious lives toiling away in mindless manual labour.\n\n&lt;color=#E5E54C&gt;Stats:&lt;/color&gt;\n - Non-electric work table speed: -25%.</description>
+    <impact>Medium</impact>
+    <associatedMemes>
+     
+	  <li>VME_Progressive</li>
+    </associatedMemes>
+	
+ 
+   
+  </PreceptDef>
+
+ 
+
+</Defs>

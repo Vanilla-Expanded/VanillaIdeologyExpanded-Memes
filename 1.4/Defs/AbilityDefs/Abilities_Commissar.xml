@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ <AbilityGroupDef>
+    <defName>VME_Commissar</defName>
+    <cooldownTicks>60000</cooldownTicks>
+  </AbilityGroupDef>
+
+ 
+<AbilityDef>
+		<defName>VME_EnforceCompliance</defName>
+		<label>enforce compliance</label>
+		<jobDef>CastAbilityOnThing</jobDef>
+		<groupDef>VME_Commissar</groupDef>
+		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>True</disableGizmoWhileUndrafted>
+		<description>Executes a colonist. Every colonist sharing the Commissar's ideoligion receives a positive mood bonus.</description>
+		<targetRequired>True</targetRequired>
+		<gizmoClass>Command_Ability</gizmoClass>
+		<iconPath>UI/Abilities/EnforceCompliance</iconPath>
+		<uiOrder>1</uiOrder>
+		
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<warmupTime>1</warmupTime>
+			<range>3</range>
+			<targetParams>
+				<canTargetSelf>false</canTargetSelf>
+				<onlyTargetColonists>true</onlyTargetColonists>
+				<neverTargetIncapacitated>True</neverTargetIncapacitated>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class = "VanillaMemesExpanded.CompProperties_AbilityEnforceCompliance">
+				
+			</li>
+			
+		</comps>
+		<requiredMemes>
+			<li>VME_Nationalist</li>
+		</requiredMemes>
+	</AbilityDef>
+  
+ 
+
+ 
+
+</Defs>

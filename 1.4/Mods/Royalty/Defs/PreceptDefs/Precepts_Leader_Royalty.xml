@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+
+	<!-- Precepts -->
+	
+	
+	<PreceptDef>
+		<defName>VME_Leader_BestPsycaster</defName>
+		<issue>VME_Leader</issue>
+		<label>best psycaster</label>
+		<description>We will only be led by one who’s proven themselves to be our most powerful psyker among us.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - The leader role will periodically be forced upon the highest level psycaster in the colony (this will only work if the ideology is the primary one). Leader role will be assigned to the last pawn who achieved highest psylink level in your colony. Even if the current leader has the same level.</description>
+		<impact>Medium</impact>
+		<displayOrderInIssue>10</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<associatedMemes>
+			<li>VME_PsychicFocus</li>
+		</associatedMemes>
+		<requiredMemes>
+			<li>VME_PsychicFocus</li>
+		</requiredMemes>
+		
+	</PreceptDef>
+	
+	
+
+</Defs>

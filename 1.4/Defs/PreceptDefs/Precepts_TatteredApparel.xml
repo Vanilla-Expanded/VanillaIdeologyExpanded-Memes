@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<IssueDef>
+		<defName>VME_TatteredApparel</defName>
+		<label>tattered apparel</label>
+		<iconPath>UI/Issues/TatteredApparel</iconPath>
+	</IssueDef>
+	<!-- Precepts -->
+	<PreceptDef>
+		<defName>VME_TatteredApparel_DontCare</defName>
+		<issue>VME_TatteredApparel</issue>
+		<label>don't care</label>
+		<description>We have bigger concerns to address than holes in our clothes, let's not waste our valuable time fretting or lamenting about such trivialities.</description>
+		<impact>Medium</impact>
+		<displayOrderInIssue>50</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<associatedMemes>
+			<li>VME_Scrapper</li>
+		</associatedMemes>
+	</PreceptDef>
+	<PreceptDef>
+		<defName>VME_TatteredApparel_Disapproved</defName>
+		<issue>VME_TatteredApparel</issue>
+		<label>disapproved</label>
+		<description>Wearing ratty clothes is uncomfortable and should be avoided.</description>
+		<impact>Low</impact>
+		<defaultSelectionWeight>1</defaultSelectionWeight>
+		<displayOrderInIssue>40</displayOrderInIssue>		
+	</PreceptDef>
+	<PreceptDef>
+		<defName>VME_TatteredApparel_Abhorrent</defName>
+		<issue>VME_TatteredApparel</issue>
+		<label>abhorrent</label>
+		<description>Ratty clothes are disgusting and should be discarded as soon as possible.</description>
+		<impact>Medium</impact>
+		<displayOrderInIssue>30</displayOrderInIssue>	
+		<comps>
+			
+			<li Class="PreceptComp_SituationalThought">
+				<thought>VME_TatteredApparel_Abhorrent</thought>
+			</li>
+			
+		</comps>		
+	</PreceptDef>
+	<ThoughtDef>
+		<defName>VME_TatteredApparel_Abhorrent</defName>
+		<workerClass>VanillaMemesExpanded.ThoughtWorker_Precept_TatteredApparel_Abhorrent</workerClass>
+		<stages>
+			
+			<li>
+				<label>wearing ratty clothes</label>
+				<description>I'm wearing clothing that is tattered, and this is incredibly disgusting. Only the finest threads are worthy of my body.</description>
+				<baseMoodEffect>-10</baseMoodEffect>
+			</li>
+		</stages>
+
+	</ThoughtDef>
+</Defs>

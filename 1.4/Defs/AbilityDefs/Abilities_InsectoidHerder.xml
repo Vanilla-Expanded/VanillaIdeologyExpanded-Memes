@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<AbilityGroupDef>
+		<defName>VME_InsectoidHerder</defName>
+		<cooldownTicks>60000</cooldownTicks>
+	</AbilityGroupDef>
+	<AbilityGroupDef>
+		<defName>VME_InsectoidHerderNest</defName>
+		<cooldownTicks>7200000</cooldownTicks>
+	</AbilityGroupDef>
+	<AbilityDef>
+		<defName>VME_TameInsectoid</defName>
+		<label>tame insectoid</label>
+		<jobDef>CastAbilityOnThing</jobDef>
+		<groupDef>VME_InsectoidHerder</groupDef>
+		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+		<description>Targets an insectoid creature and tames it instantly.</description>
+		<targetRequired>True</targetRequired>
+		<gizmoClass>Command_Ability</gizmoClass>
+		<iconPath>UI/Abilities/TameInsectoid</iconPath>
+		<uiOrder>1</uiOrder>
+		
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<warmupTime>5</warmupTime>
+			<range>15</range>
+			<targetParams>
+			
+				<canTargetPawns>true</canTargetPawns>
+				<canTargetBuildings>false</canTargetBuildings>
+			
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class = "VanillaMemesExpanded.CompProperties_AbilityTameInsectoid">
+				
+			</li>
+			
+		</comps>
+		<requiredMemes>
+			<li>VME_InsectoidSupremacy</li>
+		</requiredMemes>
+	</AbilityDef>
+	
+	<AbilityDef>
+		<defName>VME_ConstructANest</defName>
+		<label>construct a nest</label>
+		<jobDef>CastAbilityOnThing</jobDef>
+		<groupDef>VME_InsectoidHerderNest</groupDef>
+		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+		<description>Constructs an insectoid nest that produces insect jelly. A sucessful insectoid hymn ritual must be conducted to reduce the cooldown of this ability.</description>
+		<targetRequired>True</targetRequired>
+		<gizmoClass>Command_Ability</gizmoClass>
+		<iconPath>UI/Abilities/ConstructNest</iconPath>
+		<uiOrder>1</uiOrder>
+		
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<warmupTime>5</warmupTime>
+			<range>15</range>
+			<targetParams>
+			
+				<canTargetPawns>false</canTargetPawns>
+				<canTargetBuildings>false</canTargetBuildings>
+			<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class = "VanillaMemesExpanded.CompProperties_AbilityConstructANest">
+				
+			</li>
+			
+		</comps>
+		<requiredMemes>
+			<li>VME_InsectoidSupremacy</li>
+		</requiredMemes>
+	</AbilityDef>
+  
+ 
+		
+		
+		
+</Defs>

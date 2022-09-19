@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Issues -->
+
+ 
+  <IssueDef>
+    <defName>VME_CraftingQuality</defName>
+    <label>crafting quality</label>
+    <iconPath>UI/Issues/CraftingQuality</iconPath>
+  </IssueDef>
+
+  <!-- Precepts -->
+
+ 
+
+  <PreceptDef>
+    <defName>VME_CraftingQuality_Increased</defName>
+    <issue>VME_CraftingQuality</issue>
+    <label>increased</label>
+    <description>We pride ourselves in our work, and take no shortcuts in achieving perfection.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Increases quality of items created on a worktable by 1, up to Legendary.</description>
+    <impact>Medium</impact>
+    <associatedMemes>
+      <li>VME_CraftCulture</li>
+    </associatedMemes>
+ 
+   
+  </PreceptDef>
+  
+  <PreceptDef>
+    <defName>VME_CraftingQuality_Decreased</defName>
+    <issue>VME_CraftingQuality</issue>
+    <label>decreased</label>
+    <description>We don't care about artisanal work. Why create something when you can buy it or steal it from others?\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Decreases quality of items created on a worktable by 1, down to Awful.</description>
+    <impact>Medium</impact>
+    
+   
+  </PreceptDef>
+
+ 
+
+</Defs>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+
+	<VanillaMemesExpanded.SupportedDrinksForPreceptDefs>
+		<defName>VME_SupportedDrinksForPreceptDef</defName>
+		<supportedDrinksForPrecept>							
+			<li>Beer</li>						
+			
+					<li>RB_Mead</li>
+					<li>cider</li>
+					<li>rum</li>
+					<li>Wine</li>
+					<li>strawberrywine</li>
+					<li>saki</li>
+					<li>vodka</li>
+					<li>tequila</li>
+					<li>whisky</li>
+					<li>BrownAle</li>
+					<li>Fruitshine</li>
+					<li>VBE_Gin</li>
+					<li>VBE_Tequila</li>
+					<li>VBE_Vodka</li>
+					<li>VBE_Whiskey</li>
+					<li>VBE_DoubleWhiskey</li>
+					<li>VBE_AmbrandyAwful</li>
+					<li>VBE_AmbrandyPoor</li>
+					<li>VBE_AmbrandyNormal</li>
+					<li>VBE_AmbrandyGood</li>
+					<li>VBE_AmbrandyExcellent</li>
+					<li>VBE_AmbrandyMasterwork</li>
+					<li>VBE_AmbrandyLegendary</li>
+					<li>VBE_SimpleCocktail</li>
+					<li>VBE_FineCocktail</li>
+					<li>VBE_LavishCocktail</li>
+					<li>VBE_GourmetCocktail</li>
+					<li>VFEV_Mead</li>
+					<li>VFEM_Wine</li>
+					<li>Chemshine</li>
+		
+		</supportedDrinksForPrecept>							
+	</VanillaMemesExpanded.SupportedDrinksForPreceptDefs>
+
+
+
+
+
+
+
+</Defs>

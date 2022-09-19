@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Precepts and Memes</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+
+
+				<li Class="PatchOperationReplace"> 
+					<xpath>/Defs/MemeDef[defName="VME_Trader"]/label</xpath>
+					<value>
+						<label>wealthy</label>
+					</value>
+				</li>
+
+				<li Class="PatchOperationRemove"> 
+					<xpath>/Defs/MemeDef[defName="VME_Trader"]/requireOne/li[@name="tradingrequired"]</xpath>
+
+				</li>
+				
+				<li Class="PatchOperationRemove"> 
+					<xpath>/Defs/PreceptDef[defName="VME_Trading_Required"]/associatedMemes</xpath>
+
+				</li>
+				
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/PreceptDef[defName="VME_Trading_Required"]</xpath>
+					<value>
+						<visible>false</visible>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAddModExtension"> 
+					<xpath>/Defs/MemeDef[defName="VME_Trader"]</xpath>
+					<value>
+						<li Class="VanillaMemesExpanded.ExtendedMemeProperties">
+							<requiredMemes>
+								<li>Trader</li>								
+							</requiredMemes>
+						</li>
+					</value>
+				</li>
+
+
+
+
+
+
+
+
+
+			</operations>
+		</match>
+	</Operation>
+
+
+</Patch>
+
