@@ -66,7 +66,7 @@ namespace VanillaMemesExpanded
 			if (!this.IsFrozen)
 			{
 
-                if (!PawnCollectionClass.colonist_obelisk_tracker.ContainsKey(this.pawn) || !PawnCollectionClass.colonist_obelisk_tracker[this.pawn])
+                if (PawnCollectionClass.colonist_obelisk_tracker?.ContainsKey(this.pawn)==false || !PawnCollectionClass.colonist_obelisk_tracker[this.pawn])
                 {
 					this.CurLevel -= this.CorruptionFallPerTick;
                 }
