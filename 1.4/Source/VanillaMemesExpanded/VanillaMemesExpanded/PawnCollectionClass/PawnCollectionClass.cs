@@ -60,7 +60,7 @@ namespace VanillaMemesExpanded
 
         public static void AddColonistToIllnessList(Pawn pawn, int ticks)
         {
-            if (pawn != null)
+            if (!colonist_illness_tracker.ContainsKey(pawn))
             {
                 colonist_illness_tracker[pawn] = ticks;
             }
@@ -83,7 +83,7 @@ namespace VanillaMemesExpanded
 
         public static void AddColonistToCaravanList(Pawn pawn, int ticks)
         {
-            if (pawn != null)
+            if (!colonist_caravan_tracker.ContainsKey(pawn))
             {
                 colonist_caravan_tracker[pawn] = ticks;
             }
@@ -138,8 +138,10 @@ namespace VanillaMemesExpanded
 
         public static void AddColonistToBoozeList(Pawn pawn, int ticks)
         {
-           
+            if (!colonist_booze_tracker.ContainsKey(pawn))
+            {
                 colonist_booze_tracker[pawn]= ticks;
+            }            
             
         }
 
