@@ -952,6 +952,208 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
+	<ThingStyleDef ParentName="VME_RotateWeapons">
+		<defName>VME_Authoritarian_Autopistol</defName>
+		<graphicData>
+			<texPath>Things/Weapons/AuthoritarianWeapons/VME_AuthoritarianAutopistol</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="VME_RotateWeapons">
+		<defName>VME_Authoritarian_PumpShotgun</defName>
+		<graphicData>
+			<texPath>Things/Weapons/AuthoritarianWeapons/VME_AuthoritarianShotgun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="VME_RotateWeapons">
+		<defName>VME_Authoritarian_Revolver</defName>
+		<graphicData>
+			<texPath>Things/Weapons/AuthoritarianWeapons/VME_AuthoritarianRevolver</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	
+	<ThingStyleDef ParentName="VME_RotateWeapons">
+		<defName>VME_Authoritarian_LMG</defName>
+		<graphicData>
+			<texPath>Things/Weapons/AuthoritarianWeapons/VME_AuthoritarianMachineGun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	
+	<ThingStyleDef ParentName="VME_RotateWeapons">
+		<defName>VME_Authoritarian_BoltActionRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/AuthoritarianWeapons/VME_AuthoritarianBoltRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="VME_RotateWeapons">
+		<defName>VME_Authoritarian_ChargeLance</defName>
+		<graphicData>
+			<texPath>Things/Weapons/AuthoritarianWeapons/VME_AuthoritarianChargeLance</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="VME_RotateWeapons">
+		<defName>VME_Authoritarian_Minigun</defName>
+		<graphicData>
+			<texPath>Things/Weapons/AuthoritarianWeapons/VME_AuthoritarianMinigun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	
+	<ThingStyleDef ParentName="VME_RotateWeapons">
+		<defName>VME_Authoritarian_ChargePistol</defName>
+		<graphicData>
+			<texPath>Things/Weapons/AuthoritarianWeapons/VME_AuthoritarianChargePistol</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="VME_RotateWeapons">
+		<defName>VME_Authoritarian_ChargeShotgun</defName>
+		<graphicData>
+			<texPath>Things/Weapons/AuthoritarianWeapons/VME_AuthoritarianChargeShotgun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="VME_RotateWeapons">
+		<defName>VME_Authoritarian_ChargeSMG</defName>
+		<graphicData>
+			<texPath>Things/Weapons/AuthoritarianWeapons/VME_AuthoritarianChargeSMG</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="VME_RotateWeapons">
+		<defName>VME_Authoritarian_ChargeLMG</defName>
+		<graphicData>
+			<texPath>Things/Weapons/AuthoritarianWeapons/VME_AuthoritarianChargeMachinegun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="VME_RotateWeapons">
+		<defName>VME_Authoritarian_ChargeSniperRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/AuthoritarianWeapons/VME_AuthoritarianChargeSniper</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="VME_RotateWeapons">
+		<defName>VME_Authoritarian_ChargeMinigun</defName>
+		<graphicData>
+			<texPath>Things/Weapons/AuthoritarianWeapons/VME_AuthoritarianChargeMinigun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="VME_RotateWeapons">
+		<defName>VME_Authoritarian_AntiMaterialRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/AuthoritarianWeapons/VME_AuthoritarianAntiMaterialRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	
+	<ThingStyleDef ParentName="VME_RotateWeapons">
+		<defName>VME_Authoritarian_HandCannon</defName>
+		<graphicData>
+			<texPath>Things/Weapons/AuthoritarianWeapons/VME_AuthoritarianHandCannon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="VME_RotateWeapons">
+		<defName>VME_Authoritarian_CombatHandgun</defName>
+		<graphicData>
+			<texPath>Things/Weapons/AuthoritarianWeapons/VME_AuthoritarianCombatHandgun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="VME_RotateWeapons">
+		<defName>VME_Authoritarian_Flamethrower</defName>
+		<graphicData>
+			<texPath>Things/Weapons/AuthoritarianWeapons/VME_AuthoritarianFlamethrower</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="VME_RotateWeapons">
+		<defName>VME_Authoritarian_BattleRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/AuthoritarianWeapons/VME_AuthoritarianBattleRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="VME_RotateWeapons">
+		<defName>VME_Authoritarian_Carbine</defName>
+		<graphicData>
+			<texPath>Things/Weapons/AuthoritarianWeapons/VME_AuthoritarianCarbine</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	
+	<ThingStyleDef ParentName="VME_RotateWeapons">
+		<defName>VME_Authoritarian_Flintlock</defName>
+		<graphicData>
+			<texPath>Things/Weapons/AuthoritarianWeapons/VME_AuthoritarianFlintlock</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="VME_RotateWeapons">
+		<defName>VME_Authoritarian_HMG</defName>
+		<graphicData>
+			<texPath>Things/Weapons/AuthoritarianWeapons/VME_AuthoritarianHMG</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="VME_RotateWeapons">
+		<defName>VME_Authoritarian_SawedOffShotgun</defName>
+		<graphicData>
+			<texPath>Things/Weapons/AuthoritarianWeapons/VME_AuthoritarianSawedOffShotgun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="VME_RotateWeapons">
+		<defName>VME_Authoritarian_SemiAutomaticRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/AuthoritarianWeapons/VME_AuthoritarianSemiautomaticRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="VME_RotateWeapons">
+		<defName>VME_Authoritarian_LeverActionRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/AuthoritarianWeapons/VME_AuthoritarianLeverActionRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="VME_RotateWeapons">
+		<defName>VME_Authoritarian_LightSMG</defName>
+		<graphicData>
+			<texPath>Things/Weapons/AuthoritarianWeapons/VME_AuthoritarianLightSMG</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="VME_RotateWeapons">
+		<defName>VME_Authoritarian_SMG</defName>
+		<graphicData>
+			<texPath>Things/Weapons/AuthoritarianWeapons/VME_AuthoritarianSMG</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="VME_RotateWeapons">
+		<defName>VME_Authoritarian_ServiceRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/AuthoritarianWeapons/VME_AuthoritarianServiceRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="VME_RotateWeapons">
+		<defName>VME_Authoritarian_MarksmanRifle</defName>
+		<graphicData>
+			<texPath>Things/Weapons/AuthoritarianWeapons/VME_AuthoritarianMarksmanRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	
 
 	<!-- ====== Shintao ======== -->
 

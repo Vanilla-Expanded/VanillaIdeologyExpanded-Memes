@@ -390,6 +390,38 @@
 				<thingDef>Gun_MachinePistol</thingDef>
 				<styleDef>VME_Authoritarian_MachinePistol</styleDef>
 			</li>
+			<li>
+				<thingDef>Gun_Autopistol</thingDef>
+				<styleDef>VME_Authoritarian_Autopistol</styleDef>
+			</li>
+			
+			<li>
+				<thingDef>Gun_Revolver</thingDef>
+				<styleDef>VME_Authoritarian_Revolver</styleDef>
+			</li>
+			
+			<li>
+				<thingDef>Gun_LMG</thingDef>
+				<styleDef>VME_Authoritarian_LMG</styleDef>
+			</li>
+			
+			<li>
+				<thingDef>Gun_PumpShotgun</thingDef>
+				<styleDef>VME_Authoritarian_PumpShotgun</styleDef>
+			</li>
+			<li>
+				<thingDef>Gun_BoltActionRifle</thingDef>
+				<styleDef>VME_Authoritarian_BoltActionRifle</styleDef>
+			</li>
+			
+			<li>
+				<thingDef>Gun_ChargeLance</thingDef>
+				<styleDef>VME_Authoritarian_ChargeLance</styleDef>
+			</li>
+			<li>
+				<thingDef>Gun_Minigun</thingDef>
+				<styleDef>VME_Authoritarian_Minigun</styleDef>
+			</li>
 
 
 		</thingDefStyles>
