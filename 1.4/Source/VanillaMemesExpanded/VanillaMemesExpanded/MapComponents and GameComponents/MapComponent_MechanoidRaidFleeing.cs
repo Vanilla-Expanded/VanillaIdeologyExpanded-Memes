@@ -51,7 +51,7 @@ namespace VanillaMemesExpanded
                     if (numberOfEffigies >= PawnsFinder.AllMapsCaravansAndTravelingTransportPods_Alive_Colonists.Count*2)
                     {
                       
-                        foreach (Lord lord in Find.CurrentMap.lordManager.lords)
+                        foreach (Lord lord in map.lordManager.lords)
                         {
                             
                             if (lord.faction == Faction.OfMechanoids)

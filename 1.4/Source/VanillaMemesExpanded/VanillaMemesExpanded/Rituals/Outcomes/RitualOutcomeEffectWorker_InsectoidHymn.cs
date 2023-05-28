@@ -60,7 +60,7 @@ namespace VanillaMemesExpanded
 
             if (outcome.positivityIndex == 2)
             {
-				foreach (Lord lord in Find.CurrentMap.lordManager.lords)
+				foreach (Lord lord in jobRitual.Map.lordManager.lords)
 				{
 
 					if (lord.faction == Faction.OfInsects)

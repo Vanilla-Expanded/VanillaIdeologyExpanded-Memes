@@ -30,7 +30,7 @@ namespace VanillaMemesExpanded
 						ThingDef buildingToPopUp = comp.Props.defToPopUpMinified;
 						Thing thing = ThingMaker.MakeThing(buildingToPopUp, null);
 						thing = MinifyUtility.MakeMinified(thing);
-						GenPlace.TryPlaceThing(thing, building.Position, Find.CurrentMap, ThingPlaceMode.Direct, null, null, default(Rot4));
+						GenPlace.TryPlaceThing(thing, building.Position, building.Map, ThingPlaceMode.Direct, null, null, default(Rot4));
 
 					}
 					building.Destroy(DestroyMode.Vanish);
