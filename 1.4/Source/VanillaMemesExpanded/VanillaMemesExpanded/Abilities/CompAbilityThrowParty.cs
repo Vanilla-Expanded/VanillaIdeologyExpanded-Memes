@@ -17,7 +17,7 @@ namespace VanillaMemesExpanded
 		public override void Apply(LocalTargetInfo target, LocalTargetInfo dest)
 		{
 			
-			if (!Find.CurrentMap.lordsStarter.TryStartRandomGathering(true))
+			if (!parent.pawn.Map.lordsStarter.TryStartRandomGathering(true))
 			{
 				Messages.Message("VME_NoValidPartySpot".Translate(), MessageTypeDefOf.RejectInput, false);
 			}
