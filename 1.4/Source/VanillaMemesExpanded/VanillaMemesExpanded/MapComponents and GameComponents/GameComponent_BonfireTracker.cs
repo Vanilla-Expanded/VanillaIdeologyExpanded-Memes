@@ -49,13 +49,13 @@ namespace VanillaMemesExpanded
             tickCounter++;
             if ((tickCounter > tickInterval))
             {
-                if(Current.Game.World.factionManager.OfPlayer.ideos.HasAnyIdeoWithMeme(InternalDefOf.VME_FireWorship))
+                if(Current.Game?.World?.factionManager?.OfPlayer?.ideos?.HasAnyIdeoWithMeme(InternalDefOf.VME_FireWorship)==true)
                 {
                     foreach (Pawn pawn in PawnsFinder.AllMapsCaravansAndTravelingTransportPods_Alive_Colonists)
                     {
                         if (colonist_bonfire_tracker.ContainsKey(pawn))
                         {
-                            pawn.needs.joy.GainJoy(0.5f,JoyKindDefOf.Social);
+                            pawn.needs?.joy?.GainJoy(0.5f,JoyKindDefOf.Social);
                             colonist_bonfire_tracker[pawn] = colonist_bonfire_tracker[pawn] - tickInterval;
                             if (colonist_bonfire_tracker[pawn] < 0)
                             {
