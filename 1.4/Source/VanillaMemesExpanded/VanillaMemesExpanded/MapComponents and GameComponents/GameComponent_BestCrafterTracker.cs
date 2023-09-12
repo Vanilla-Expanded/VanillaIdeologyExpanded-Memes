@@ -38,7 +38,7 @@ namespace VanillaMemesExpanded
             if ((tickCounter > tickInterval))
             {
                 Ideo ideo = Current.Game.World.factionManager.OfPlayer.ideos.PrimaryIdeo;
-                if (ideo.HasPrecept(InternalDefOf.VME_Leader_BestCrafter))
+                if (ideo?.HasPrecept(InternalDefOf.VME_Leader_BestCrafter) == true)
                 {
                     Pawn mostSkilledPawn = null;
                     int highestSkillLevel = 0;

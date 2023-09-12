@@ -52,7 +52,7 @@ namespace VanillaMemesExpanded
             if ((tickCounter > tickInterval))
             {
                 Ideo ideo = Current.Game.World.factionManager.OfPlayer.ideos.PrimaryIdeo;
-                if (ideo.HasPrecept(InternalDefOf.VME_Leader_BestFighter))
+                if (ideo?.HasPrecept(InternalDefOf.VME_Leader_BestFighter)==true)
                 {
                     pawnThatIsTheLeaderNow = PawnCollectionClass.pawnThatIsTheLeaderNow;
                     mostSkilledPawn = PawnCollectionClass.mostSkilledPawn;
