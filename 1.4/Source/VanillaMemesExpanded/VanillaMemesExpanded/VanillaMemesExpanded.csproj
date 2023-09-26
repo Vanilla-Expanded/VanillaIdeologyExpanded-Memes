@@ -357,7 +357,7 @@
     <Compile Include="Harmony\InteractionUtility_CanReceiveInteraction.cs" />
     <Compile Include="Harmony\LordJob_Joinable_Party_AttendeeThought.cs" />
     <Compile Include="Harmony\LordToil_PanicFlee_Init.cs" />
-    <Compile Include="Harmony\PlantUtility_CanSowOnGrower.cs" />
+    <Compile Include="Harmony\Command_SetPlantToGrow_IsPlantAvailable.cs" />
     <Compile Include="Harmony\Need_Joy_FallPerInterval.cs" />
     <Compile Include="Harmony\RitualObligationTargetWorker_IdeoBuildingOrRitualSpot_CanUseTargetInternal.cs" />
     <Compile Include="Harmony\SlaveRebellionUtility_InitiateSlaveRebellionMtbDays.cs" />
@@ -420,7 +420,7 @@
     <Compile Include="Rituals\Outcomes\RitualOutcomeEffectWorker_Orgy.cs" />
     <Compile Include="Rituals\Outcomes\RitualOutcomeEffectWorker_SlaveEmancipation.cs" />
     <Compile Include="Rituals\Outcomes\RitualOutcomeEffectWorker_TradingFair.cs" />
-    <Compile Include="StatPartDefs\RitualObligationTargetWorker_DivineStars.cs" />
+    <Compile Include="RitualObligationTargetWorkers\RitualObligationTargetWorker_DivineStars.cs" />
     <Compile Include="RitualObligationTriggers\RitualObligationTriggerProperties_StrongerLeader.cs" />
     <Compile Include="RitualObligationTriggers\RitualObligationTriggerProperties_SecondDefeat.cs" />
     <Compile Include="RitualObligationTriggers\RitualObligationTrigger_SecondDefeat.cs" />

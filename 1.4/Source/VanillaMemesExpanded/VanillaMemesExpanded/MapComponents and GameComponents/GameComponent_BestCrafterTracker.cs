@@ -32,8 +32,8 @@ namespace VanillaMemesExpanded
 
         public override void GameComponentTick()
         {
+            if (Find.IdeoManager.classicMode) return;
 
-          
             tickCounter++;
             if ((tickCounter > tickInterval))
             {

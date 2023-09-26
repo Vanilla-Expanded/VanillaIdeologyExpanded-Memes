@@ -26,6 +26,7 @@ namespace VanillaMemesExpanded
 
         protected override bool CanFireNowSub(IncidentParms parms)
         {
+            if (Find.IdeoManager.classicMode) return false;
             if (!base.CanFireNowSub(parms))
             {
                 return false;

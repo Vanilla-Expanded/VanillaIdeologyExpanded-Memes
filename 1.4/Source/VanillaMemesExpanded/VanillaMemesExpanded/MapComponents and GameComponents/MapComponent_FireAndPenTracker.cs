@@ -56,7 +56,7 @@ namespace VanillaMemesExpanded
         }
         public override void MapComponentTick()
         {
-
+            if (Find.IdeoManager.classicMode) return;
 
             tickCounter++;
             if ((tickCounter > tickInterval))

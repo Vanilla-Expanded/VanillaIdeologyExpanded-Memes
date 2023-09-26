@@ -33,7 +33,8 @@ namespace VanillaMemesExpanded
 
 		public static bool Applies(Thing th)
 		{
-			Pawn pawn = th as Pawn;
+            if (Find.IdeoManager.classicMode) return false;
+            Pawn pawn = th as Pawn;
 			Precept_Role precept_role;
 			if (pawn != null && pawn.Ideo?.HasPrecept(DefDatabase<PreceptDef>.GetNamedSilentFail("VME_IdeoRole_Patissier")) == true)
 			{

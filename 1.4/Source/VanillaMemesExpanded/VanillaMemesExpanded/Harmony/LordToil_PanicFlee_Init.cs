@@ -20,7 +20,7 @@ namespace VanillaMemesExpanded
         [HarmonyPostfix]
         static void UndraftWhenEnemyFlees(Lord ___lord)
         {
-
+            if (Find.IdeoManager.classicMode) return;
             if (Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.VME_Violence_Abhorrent) != null)
             {
                 // Create a new list as otherwise we'll be met with `Collection was modified; enumeration operation may not execute.`

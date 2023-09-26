@@ -33,9 +33,9 @@ namespace VanillaMemesExpanded
 
 		public static bool Applies(Thing th)
 		{
-
-			CompPowerTrader compPowerTrader = th.TryGetComp<CompPowerTrader>();
-			return compPowerTrader != null && Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.VME_AutomationEfficiency_Decreased)!=null;
+            if (Find.IdeoManager.classicMode) return false;
+            CompPowerTrader compPowerTrader = th.TryGetComp<CompPowerTrader>();
+			return compPowerTrader != null && Current.Game.World.factionManager.OfPlayer.ideos.PrimaryIdeo.GetPrecept(InternalDefOf.VME_AutomationEfficiency_Decreased)!=null;
 		}
 	}
 }

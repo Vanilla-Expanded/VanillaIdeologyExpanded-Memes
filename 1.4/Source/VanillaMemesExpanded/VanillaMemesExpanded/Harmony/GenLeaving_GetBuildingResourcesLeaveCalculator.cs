@@ -21,6 +21,7 @@ namespace VanillaMemesExpanded
         [HarmonyPostfix]
         static void SetYieldTo100(ref Func<int, int> __result, Thing destroyedThing, DestroyMode mode)
         {
+            if (Find.IdeoManager.classicMode) return;
             if (Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.VME_JunkDeconstructionYield_High) != null)
             {
                 switch (mode)

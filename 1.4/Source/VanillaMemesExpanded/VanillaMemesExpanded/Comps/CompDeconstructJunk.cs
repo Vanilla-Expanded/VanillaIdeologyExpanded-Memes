@@ -52,8 +52,10 @@ namespace VanillaMemesExpanded
 
 		public override IEnumerable<Gizmo> CompGetGizmosExtra()
         {
-			if (Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.VME_Junk_Beautiful) != null|| Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.VME_Junk_Preferred) != null)
+            if (Find.IdeoManager.classicMode) yield break;
+            if (Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.VME_Junk_Beautiful) != null|| Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.VME_Junk_Preferred) != null)
             {
+
 				bool flag = this.itemNeedsDeconstruction;
 				if (flag)
 				{

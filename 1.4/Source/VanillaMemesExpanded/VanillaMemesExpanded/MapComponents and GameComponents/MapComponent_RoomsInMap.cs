@@ -49,11 +49,12 @@ namespace VanillaMemesExpanded
         }
         public override void MapComponentTick()
         {
-
+            if (Find.IdeoManager.classicMode) return;
 
             tickCounter++;
             if ((tickCounter > tickInterval))
             {
+               
                 if (map.IsPlayerHome && Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.VME_PermanentBases_Desired) != null) {
                     roomsInMap_backup = PawnCollectionClass.roomsInMap;
 

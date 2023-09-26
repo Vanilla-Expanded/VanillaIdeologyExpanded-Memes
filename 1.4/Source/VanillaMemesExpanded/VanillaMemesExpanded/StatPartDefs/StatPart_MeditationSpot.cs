@@ -29,8 +29,8 @@ namespace VanillaMemesExpanded
 		public static bool Applies(Thing th)
 		{
 
-			
-			return Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(DefDatabase<PreceptDef>.GetNamedSilentFail("VME_Meditation_Exquisite")) != null;
+            if (Find.IdeoManager.classicMode) return false;
+            return Current.Game.World.factionManager.OfPlayer.ideos.PrimaryIdeo.GetPrecept(DefDatabase<PreceptDef>.GetNamedSilentFail("VME_Meditation_Exquisite")) != null;
 		}
 	}
 }

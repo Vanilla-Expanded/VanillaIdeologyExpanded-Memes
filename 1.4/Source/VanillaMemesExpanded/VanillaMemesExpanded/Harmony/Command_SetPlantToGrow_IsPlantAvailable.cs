@@ -20,7 +20,8 @@ namespace VanillaMemesExpanded
         [HarmonyPostfix]
         public static void MakeCocoaBushNotSowable(ref bool __result, ThingDef plantDef)
         {
-           if (plantDef.plant.sowTags.Contains("VCE_ChocolateBushSowableDetection"))
+            if (Find.IdeoManager.classicMode) return;
+            if (plantDef.plant.sowTags.Contains("VCE_ChocolateBushSowableDetection"))
             {
                 if (Current.Game.World.factionManager.OfPlayer.ideos.HasAnyIdeoWithMeme(DefDatabase<MemeDef>.GetNamedSilentFail("VME_SweetTeeth"))) {
 

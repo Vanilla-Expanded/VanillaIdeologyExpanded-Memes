@@ -36,13 +36,13 @@ namespace VanillaMemesExpanded
         }
         public override void MapComponentTick()
         {
-
+            if (Find.IdeoManager.classicMode) return;
             if (signaledCaravanArriving)
             {
                 tickCounter++;
                 if ((tickCounter > tickInterval))
                 {
-
+                    
                     IncidentDef IncidentDef = IncidentDefOf.TraderCaravanArrival;
                     IncidentParms parms = StorytellerUtility.DefaultParmsNow(IncidentDef.category, map);
                     IncidentDef.Worker.TryExecute(parms);

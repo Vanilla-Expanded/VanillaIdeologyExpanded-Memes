@@ -33,9 +33,9 @@ namespace VanillaMemesExpanded
 
 		public static bool Applies(Thing th)
 		{
-			
-			
-			return Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.VME_Recreation_Loved)!=null;
+            if (Find.IdeoManager.classicMode) return false;
+
+            return Current.Game.World.factionManager.OfPlayer.ideos.PrimaryIdeo.GetPrecept(InternalDefOf.VME_Recreation_Loved)!=null;
 		}
 	}
 }

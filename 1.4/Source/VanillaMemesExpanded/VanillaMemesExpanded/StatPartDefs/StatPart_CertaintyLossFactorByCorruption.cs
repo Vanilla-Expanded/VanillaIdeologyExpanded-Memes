@@ -53,7 +53,8 @@ namespace VanillaMemesExpanded
 
 		public bool Applies(Thing th)
 		{
-			Pawn pawn = th as Pawn;
+            if (Find.IdeoManager.classicMode) return false;
+            Pawn pawn = th as Pawn;
             if (pawn != null && pawn.Ideo?.HasMeme(InternalDefOf.VME_Structure_ChthonianCult)==true)
             {
 				if (pawn.needs != null)

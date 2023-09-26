@@ -20,6 +20,8 @@ namespace VanillaMemesExpanded
         [HarmonyPostfix]
         static void IncreaseTreeCuttingYield(Plant __instance,ref int __result)
         {
+            if (Find.IdeoManager.classicMode) return;
+
             if ((__instance?.def?.plant?.IsTree==true && Current.Game.World.factionManager.OfPlayer.ideos?.GetPrecept(InternalDefOf.VME_WoodcuttingYield_High)!=null)||
                 (__instance?.IsCrop ==true && Current.Game.World.factionManager.OfPlayer.ideos?.GetPrecept(InternalDefOf.VME_FarmingYield_High) != null))
             {
