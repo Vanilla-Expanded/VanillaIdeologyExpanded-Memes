@@ -12,6 +12,10 @@ namespace VanillaMemesExpanded
     public static class PawnCollectionClass
     {
 
+      
+
+
+
         //This static class stores lists of animals and pawns for different things.
 
 
@@ -36,7 +40,6 @@ namespace VanillaMemesExpanded
         public static Pawn pawnThatIsTheLeaderNow;
 
         public static Pawn mostSkilledPawn;
-
 
         public static float averageColonyMood = 0;
 

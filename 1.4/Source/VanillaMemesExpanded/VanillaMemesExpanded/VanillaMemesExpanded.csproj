@@ -459,6 +459,7 @@
     <Compile Include="Thoughts\ThoughtWorker_Precept_Hospital.cs" />
     <Compile Include="Thoughts\ThoughtWorker_Precept_Leather_Abhorrent.cs" />
     <Compile Include="Thoughts\ThoughtWorker_Precept_Ranching_Disliked.cs" />
+    <Compile Include="Thoughts\ThoughtWorker_Precept_Royalty_AnyTitle.cs" />
     <Compile Include="Thoughts\ThoughtWorker_Precept_SharedMood.cs" />
     <Compile Include="Thoughts\ThoughtWorker_Precept_TaintedApparel_Abhorrent.cs" />
     <Compile Include="Thoughts\ThoughtWorker_Precept_TatteredApparel_Abhorrent.cs" />
@@ -467,6 +468,7 @@
     <Compile Include="Thoughts\ThoughtWorker_Precept_Trading.cs" />
     <Compile Include="Thoughts\ThoughtWorker_Precept_Alcohol.cs" />
     <Compile Include="Thoughts\ThoughtWorker_Precept_Travel.cs" />
+    <Compile Include="Thoughts\ThoughtWorker_Precept_Royalty.cs" />
     <Compile Include="Thoughts\Thought_DisableFirstDefeatThought.cs" />
     <Compile Include="Thoughts\Thought_Elders_Despised.cs" />
     <Compile Include="Thoughts\Thought_Elders_Respected.cs" />
