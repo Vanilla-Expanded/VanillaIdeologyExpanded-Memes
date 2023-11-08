@@ -360,6 +360,7 @@
     <Compile Include="Harmony\Command_SetPlantToGrow_IsPlantAvailable.cs" />
     <Compile Include="Harmony\Need_Joy_FallPerInterval.cs" />
     <Compile Include="Harmony\Pawn_RoyaltyTracker_GetHeir.cs" />
+    <Compile Include="Harmony\Pawn_RoyaltyTracker_OnPostTitleChanged.cs" />
     <Compile Include="Harmony\Pawn_RoyaltyTracker_TryRemoveFavor.cs" />
     <Compile Include="Harmony\RitualObligationTargetWorker_IdeoBuildingOrRitualSpot_CanUseTargetInternal.cs" />
     <Compile Include="Harmony\RoyalTitlePermitDef_CooldownTicks.cs" />
@@ -441,6 +442,7 @@
     <Compile Include="Rituals\Outcomes\RitualOutcomeEffectWorker_ViolentConversion.cs" />
     <Compile Include="Rituals\Outcomes\RitualOutcomeEffectWorker_WickerManBurning.cs" />
     <Compile Include="RoleRequirements\RoleRequirement_BestCrafter.cs" />
+    <Compile Include="RoleRequirements\RoleRequirement_NoTitles.cs" />
     <Compile Include="RoleRequirements\RoleRequirement_BestFighter.cs" />
     <Compile Include="StageEndTriggers\StageEndTrigger_DeadDuelEnded.cs" />
     <Compile Include="StatPartDefs\StatPart_CertaintyLossFactorByCorruption.cs" />

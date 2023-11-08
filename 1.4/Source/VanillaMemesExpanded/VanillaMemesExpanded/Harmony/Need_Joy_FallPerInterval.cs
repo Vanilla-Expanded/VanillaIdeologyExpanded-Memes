@@ -44,6 +44,12 @@ namespace VanillaMemesExpanded
 
             }
 
+            if (___pawn.health.hediffSet.GetFirstHediffOfDef(InternalDefOf.VME_WorkCommandBuff) != null) { 
+                   
+                    __result *= 2;
+               
+            }
+
 
 
 

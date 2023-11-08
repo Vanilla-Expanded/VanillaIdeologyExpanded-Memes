@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<AbilityGroupDef>
+		<defName>VME_Majordomo</defName>
+		<cooldownTicks>60000</cooldownTicks>
+	</AbilityGroupDef>
+	<AbilityDef>
+		<defName>VME_WorkCommand</defName>
+		<label>work command</label>
+		<jobDef>CastAbilityOnThing</jobDef>
+		<groupDef>VME_Majordomo</groupDef>
+		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+		<description>Instruct everyone around to work harder and be more diligent, boosting global work speed and the cost of depleting recreation. The effect remains attached to the caster for 24 hours.</description>
+		<targetRequired>false</targetRequired>
+		<canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+		<stunTargetWhileCasting>True</stunTargetWhileCasting>
+		<showPsycastEffects>False</showPsycastEffects>
+		<gizmoClass>Command_Ability</gizmoClass>
+		<iconPath>UI/Abilities/WorkCommand</iconPath>
+		<statBases>
+			<Ability_Duration>1000</Ability_Duration>
+			<Ability_EffectRadius>9.9</Ability_EffectRadius>
+		</statBases>
+		<uiOrder>1</uiOrder>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<warmupTime>0.5</warmupTime>
+			<range>9.9</range>
+			<drawAimPie>False</drawAimPie>
+			<requireLineOfSight>False</requireLineOfSight>
+			<targetParams>
+				<canTargetSelf>true</canTargetSelf>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>VME_WorkCommand</hediffDef>
+				<onlyBrain>True</onlyBrain>
+				<onlyApplyToSelf>True</onlyApplyToSelf>
+				<replaceExisting>true</replaceExisting>
+			</li>
+		</comps>
+		<requiredMemes>
+			<li>VME_Royal</li>
+		</requiredMemes>
+	</AbilityDef>
+</Defs>

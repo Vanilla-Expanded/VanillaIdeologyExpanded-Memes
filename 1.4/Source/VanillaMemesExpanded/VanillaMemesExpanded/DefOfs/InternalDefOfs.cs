@@ -123,6 +123,12 @@ namespace VanillaMemesExpanded
         [MayRequireRoyalty]
         public static PreceptDef VME_TitleInheritance_Inherited;
 
+        [MayRequireRoyalty]
+        public static PreceptDef VME_IdeoRole_Majordomo;
+
+        [MayRequireRoyalty]
+        public static MemeDef VME_Royal;
+
         public static MemeDef VME_FireWorship;
 
 		public static MemeDef VME_Astrology;
@@ -188,9 +194,12 @@ namespace VanillaMemesExpanded
 		public static JobDef VME_DeconstructBuilding;
 		public static JobDef VME_MaintainInsectNest;
 		public static JobDef VME_DanceWithLove;
+
 		public static HediffDef VME_MedicalEmergencyHediff;
+        [MayRequireRoyalty]
+        public static HediffDef VME_WorkCommandBuff;
 
 
 
-	}
+    }
 }

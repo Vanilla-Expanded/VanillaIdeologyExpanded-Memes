@@ -18,8 +18,16 @@ namespace VanillaMemesExpanded
     public static class VanillaMemesExpanded_JobDriver_Notify_Starting_Patch
     {
         [HarmonyPostfix]
-        static void IfDumbSendHistoryEvent(JobDriver __instance)
+        static void ModifyOnWork(JobDriver __instance)
         {
+
+            if ((__instance.pawn?.Ideo?.HasMeme(InternalDefOf.VME_Royal) == true) && ((Precept_RoleSingle)__instance.pawn?.Ideo?.GetPrecept(InternalDefOf.VME_IdeoRole_Majordomo)).ChosenPawnSingle() == __instance.pawn &&
+                __instance.job?.workGiverDef?.workType?.workTags.HasFlag(WorkTags.AllWork) == true)
+            {
+                __instance.pawn?.needs?.joy?.GainJoy(0.1f, JoyKindDefOf.Meditative);
+
+            }
+
 
 
             if (__instance.job?.workGiverDef?.workType?.workTags.HasFlag(WorkTags.ManualDumb) == true)
