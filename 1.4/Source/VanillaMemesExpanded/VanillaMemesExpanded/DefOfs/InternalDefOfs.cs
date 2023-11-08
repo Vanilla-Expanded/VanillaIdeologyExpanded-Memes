@@ -114,6 +114,15 @@ namespace VanillaMemesExpanded
         [MayRequireRoyalty]
         public static PreceptDef VME_PermitHonorCost_Doubled;
 
+        [MayRequireRoyalty]
+        public static PreceptDef VME_PermitCooldown_Lowered;
+
+        [MayRequireRoyalty]
+        public static PreceptDef VME_PermitCooldown_Increased;
+
+        [MayRequireRoyalty]
+        public static PreceptDef VME_TitleInheritance_Inherited;
+
         public static MemeDef VME_FireWorship;
 
 		public static MemeDef VME_Astrology;

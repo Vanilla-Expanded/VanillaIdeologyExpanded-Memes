@@ -359,8 +359,10 @@
     <Compile Include="Harmony\LordToil_PanicFlee_Init.cs" />
     <Compile Include="Harmony\Command_SetPlantToGrow_IsPlantAvailable.cs" />
     <Compile Include="Harmony\Need_Joy_FallPerInterval.cs" />
-    <Compile Include="Harmony\Pawn_RoyaltyTracker_SetFavor.cs" />
+    <Compile Include="Harmony\Pawn_RoyaltyTracker_GetHeir.cs" />
+    <Compile Include="Harmony\Pawn_RoyaltyTracker_TryRemoveFavor.cs" />
     <Compile Include="Harmony\RitualObligationTargetWorker_IdeoBuildingOrRitualSpot_CanUseTargetInternal.cs" />
+    <Compile Include="Harmony\RoyalTitlePermitDef_CooldownTicks.cs" />
     <Compile Include="Harmony\SlaveRebellionUtility_InitiateSlaveRebellionMtbDays.cs" />
     <Compile Include="Harmony\TaleUtility_Notify_PawnDied.cs" />
     <Compile Include="Harmony\DamageWorker_Apply.cs" />

@@ -169,6 +169,18 @@
 				<li>VME_Royalty_Exalted</li>
 				<li>VME_Royalty_Respected</li>
 			</li>
+			<li>
+				<li>VME_TitleInheritance_Inherited</li>
+			
+			</li>
+			<li>
+				<li>VME_PermitCooldown_Lowered</li>
+				
+			</li>
+			<li>
+				<li>VME_PermitHonorCost_Halved</li>
+				
+			</li>
 			
 		</requireOne>
 		<symbolPacks>
