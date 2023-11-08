@@ -10,7 +10,7 @@
           }
         },
         "runtime": {
-          "lib/net472/_._": {
+          "lib/net472/0Harmony.dll": {
             "related": ".xml"
           }
         }
@@ -25,7 +25,22 @@
           }
         },
         "runtime": {
-          "lib/net472/_._": {
+          "lib/net472/0Harmony.dll": {
+            "related": ".xml"
+          }
+        }
+      }
+    },
+    ".NETFramework,Version=v4.7.2/win-arm64": {
+      "Lib.Harmony/2.2.2": {
+        "type": "package",
+        "compile": {
+          "lib/net472/0Harmony.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net472/0Harmony.dll": {
             "related": ".xml"
           }
         }
@@ -40,7 +55,7 @@
           }
         },
         "runtime": {
-          "lib/net472/_._": {
+          "lib/net472/0Harmony.dll": {
             "related": ".xml"
           }
         }
@@ -55,7 +70,7 @@
           }
         },
         "runtime": {
-          "lib/net472/_._": {
+          "lib/net472/0Harmony.dll": {
             "related": ".xml"
           }
         }
@@ -99,7 +114,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Sarg\\.nuget\\packages\\": {}
+    "C:\\Users\\Administrator\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -107,12 +122,12 @@
       "projectUniqueName": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaIdeologyExpanded-Memes\\1.4\\Source\\VanillaMemesExpanded\\VanillaMemesExpanded\\VanillaMemesExpanded.csproj",
       "projectName": "VanillaMemesExpanded",
       "projectPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaIdeologyExpanded-Memes\\1.4\\Source\\VanillaMemesExpanded\\VanillaMemesExpanded\\VanillaMemesExpanded.csproj",
-      "packagesPath": "C:\\Users\\Sarg\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
       "outputPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaIdeologyExpanded-Memes\\1.4\\Source\\VanillaMemesExpanded\\VanillaMemesExpanded\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "C:\\Users\\Sarg\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -132,7 +147,6 @@
       "net472": {
         "dependencies": {
           "Lib.Harmony": {
-            "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "target": "Package",
             "version": "[2.2.2, )"
           }
@@ -141,6 +155,9 @@
     },
     "runtimes": {
       "win": {
+        "#import": []
+      },
+      "win-arm64": {
         "#import": []
       },
       "win-x64": {

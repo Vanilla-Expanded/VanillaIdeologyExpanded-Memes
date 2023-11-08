@@ -359,6 +359,7 @@
     <Compile Include="Harmony\LordToil_PanicFlee_Init.cs" />
     <Compile Include="Harmony\Command_SetPlantToGrow_IsPlantAvailable.cs" />
     <Compile Include="Harmony\Need_Joy_FallPerInterval.cs" />
+    <Compile Include="Harmony\Pawn_RoyaltyTracker_SetFavor.cs" />
     <Compile Include="Harmony\RitualObligationTargetWorker_IdeoBuildingOrRitualSpot_CanUseTargetInternal.cs" />
     <Compile Include="Harmony\SlaveRebellionUtility_InitiateSlaveRebellionMtbDays.cs" />
     <Compile Include="Harmony\TaleUtility_Notify_PawnDied.cs" />
@@ -494,8 +495,6 @@
   <ItemGroup>
     <PackageReference Include="Lib.Harmony">
       <Version>2.2.2</Version>
-      <ExcludeAssets>runtime</ExcludeAssets>
-      <IncludeAssets>compile; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

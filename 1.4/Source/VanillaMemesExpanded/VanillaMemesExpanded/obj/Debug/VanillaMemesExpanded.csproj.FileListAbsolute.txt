@@ -6,3 +6,4 @@ C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\VanillaIdeologyExpan
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\VanillaIdeologyExpanded-Memes\1.4\Source\VanillaMemesExpanded\VanillaMemesExpanded\obj\Debug\VanillaMemesExpanded.dll
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\VanillaIdeologyExpanded-Memes\1.4\Assemblies\VanillaMemesExpanded.dll
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\VanillaIdeologyExpanded-Memes\1.4\Source\VanillaMemesExpanded\VanillaMemesExpanded\obj\Debug\VanillaMemesExpanded.csproj.AssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\VanillaIdeologyExpanded-Memes\1.4\Source\VanillaMemesExpanded\VanillaMemesExpanded\obj\Debug\VanillaMemesExpanded.csproj.CopyComplete

@@ -108,7 +108,13 @@ namespace VanillaMemesExpanded
 		public static PreceptDef VME_Expectations_High;
 		public static PreceptDef VME_Expectations_Low;
 
-		public static MemeDef VME_FireWorship;
+        [MayRequireRoyalty]
+        public static PreceptDef VME_PermitHonorCost_Halved;
+
+        [MayRequireRoyalty]
+        public static PreceptDef VME_PermitHonorCost_Doubled;
+
+        public static MemeDef VME_FireWorship;
 
 		public static MemeDef VME_Astrology;
 
