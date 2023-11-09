@@ -7,9 +7,9 @@ namespace VanillaMemesExpanded
     [HarmonyPatch(typeof(Pawn), "WorkTagIsDisabled")]
     public static class Pawn_WorkTagIsDisabled_Patch
     {
-        public static bool Prefix(Pawn __instance, ref bool __result)
+        public static bool Prefix(Pawn __instance, ref bool __result, WorkTags w)
         {
-            if (((Precept_RoleSingle)__instance.Ideo?.GetPrecept(InternalDefOf.VME_IdeoRole_Majordomo))?.ChosenPawnSingle() == __instance)
+            if (w != WorkTags.Violent && ((Precept_RoleSingle)__instance.Ideo?.GetPrecept(InternalDefOf.VME_IdeoRole_Majordomo))?.ChosenPawnSingle() == __instance)
             {
                 __result = false;
                 return false;
