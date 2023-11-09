@@ -361,13 +361,10 @@
     <Compile Include="Harmony\Need_Joy_FallPerInterval.cs" />
     <Compile Include="Harmony\Pawn_RoyaltyTracker_OnPostTitleChanged.cs" />
     <Compile Include="Harmony\Pawn_RoyaltyTracker_TryRemoveFavor.cs" />
-    <Compile Include="Harmony\Pawn_WorkTagIsDisabled_Patch.cs" />
-    <Compile Include="Harmony\Pawn_WorkTypeIsDisabled_Patch.cs" />
     <Compile Include="Harmony\RitualObligationTargetWorker_IdeoBuildingOrRitualSpot_CanUseTargetInternal.cs" />
     <Compile Include="Harmony\RoyalTitlePermitDef_CooldownTicks.cs" />
     <Compile Include="Harmony\RoyalTitlePermitWorker_FillAidOption_Patch.cs" />
     <Compile Include="Harmony\SlaveRebellionUtility_InitiateSlaveRebellionMtbDays.cs" />
-    <Compile Include="Harmony\StatWorker_IsDisabledFor.cs" />
     <Compile Include="Harmony\TaleUtility_Notify_PawnDied.cs" />
     <Compile Include="Harmony\DamageWorker_Apply.cs" />
     <Compile Include="Harmony\GenRecipe_PostProcessProduct.cs" />
