@@ -362,8 +362,11 @@
     <Compile Include="Harmony\Pawn_RoyaltyTracker_GetHeir.cs" />
     <Compile Include="Harmony\Pawn_RoyaltyTracker_OnPostTitleChanged.cs" />
     <Compile Include="Harmony\Pawn_RoyaltyTracker_TryRemoveFavor.cs" />
+    <Compile Include="Harmony\Pawn_WorkTagIsDisabled_Patch.cs" />
+    <Compile Include="Harmony\Pawn_WorkTypeIsDisabled_Patch.cs" />
     <Compile Include="Harmony\RitualObligationTargetWorker_IdeoBuildingOrRitualSpot_CanUseTargetInternal.cs" />
     <Compile Include="Harmony\RoyalTitlePermitDef_CooldownTicks.cs" />
+    <Compile Include="Harmony\RoyalTitlePermitWorker_FillAidOption_Patch.cs" />
     <Compile Include="Harmony\SlaveRebellionUtility_InitiateSlaveRebellionMtbDays.cs" />
     <Compile Include="Harmony\TaleUtility_Notify_PawnDied.cs" />
     <Compile Include="Harmony\DamageWorker_Apply.cs" />
@@ -499,6 +502,8 @@
   <ItemGroup>
     <PackageReference Include="Lib.Harmony">
       <Version>2.2.2</Version>
+      <ExcludeAssets>runtime</ExcludeAssets>
+      <IncludeAssets>compile; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
