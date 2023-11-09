@@ -9,7 +9,7 @@ namespace VanillaMemesExpanded
     {
         public static bool Prefix(Pawn __instance, ref bool __result)
         {
-            if (((Precept_RoleSingle)__instance.Ideo?.GetPrecept(InternalDefOf.VME_IdeoRole_Majordomo)).ChosenPawnSingle() == __instance)
+            if (((Precept_RoleSingle)__instance.Ideo?.GetPrecept(InternalDefOf.VME_IdeoRole_Majordomo))?.ChosenPawnSingle() == __instance)
             {
                 __result = false;
                 return false;
