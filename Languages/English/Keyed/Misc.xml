@@ -60,6 +60,8 @@
 	<VME_MessageJunkChunkDrop>Chunks of ancient space junk have impacted nearby. You can uninstall and move them to build your junkyard.\n\nThis event happens if you have any colonists with an ideo using the Scrapper meme.</VME_MessageJunkChunkDrop>
 	<VME_MessageRitualRoleMustBeCapableOfSocial>Colonist must be capable of Talking</VME_MessageRitualRoleMustBeCapableOfSocial>
 	<VME_NeedsExaltedPriesthood>Ritual needs the Exalted Priesthood meme</VME_NeedsExaltedPriesthood>
+	<VME_HeirChange>Heir changed</VME_HeirChange>
+	<VME_HeirChangeDesc>Due to royal inheritance, {1} has been automatically designated as the heir of {0}</VME_HeirChangeDesc>
 	
 	
 	<!-- Mod options -->

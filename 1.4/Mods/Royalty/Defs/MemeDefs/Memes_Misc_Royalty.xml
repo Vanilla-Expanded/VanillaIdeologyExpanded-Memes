@@ -137,7 +137,7 @@
 					<li>founderJoin(tag=meme_Royal)     ->[deity0_name] instructed [founderName] to put the peasants in their place, for they were theatening the lives of their betters.</li>
 					<li>victory(tag=meme_Royal)         ->[founderName] crushed the peasant revolts, and his royal bloodline has been blessed ever since.</li>
 					<!-- ideological founder -->
-					<li>setup(tag=meme_Royal)           ->Our founder [founderName] was a great sociologist, who saw the weak democratic systems in [founder_possessive] native world and found them incredibly inadequate. [founder_pronoun} chartered a private spaceship and left with hundreds of [founder_possessive] followers to create the ideal feudal society.</li>
+					<li>setup(tag=meme_Royal)           ->Our founder [founderName] was a great sociologist, who saw the weak democratic systems in [founder_possessive] native world and found them incredibly inadequate. [founder_pronoun] chartered a private spaceship and left with hundreds of [founder_possessive] followers to create the ideal feudal society.</li>
 					<li>story(uses=1,tag=meme_Royal)    ->[founderName]'s followers studied [founder_possessive] writings and created a social structure that has been stable for more than two hundred years.</li>
 					<!-- ideological lesson -->
 					<li>lessonIntro(tag=meme_Royal)         ->In all my years ruling over the masses, I learned one lesson that stands over all:</li>
