@@ -3,7 +3,7 @@
 	<PreceptDef ParentName="PreceptRoleSingleBase">
 		<defName>VME_IdeoRole_Majordomo</defName>
 		<label>majordomo</label>
-		<description>A management specialist, Majordomo is the steward of nobility and overseer of estates. They wield authority to organize, manage, and ensure the seamless operation of every aspect of aristocratic life, but are unable to hold titles themselves. They possess an ability to inspire everyone around them to go an extra mile, at the cost of greatly lowering their recreation.</description>
+		<description>A management specialist, Majordomo is the steward of nobility and overseer of estates. They wield authority to organize, manage, and ensure the seamless operation of every aspect of aristocratic life, but are unable to hold titles themselves. They possess an ability to inspire everyone around them to go an extra mile, at the cost of greatly lowering their recreation.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Gains recreation from any work.</description>
 		<iconPath>UI/Roles/Majordomo</iconPath>
 		<nameMaker>VME_Majordomo</nameMaker>
 		<roleTags>

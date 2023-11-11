@@ -32,7 +32,7 @@
 		</mote>
 		<graphicData>
 			<shaderType>MoteGlow</shaderType>
-			<texPath>Things/Mote/CombatCommandLinkLine</texPath>
+			<texPath>Things/Mote/VME_CombatCommandLinkLine</texPath>
 		</graphicData>
 	</ThingDef>
 
