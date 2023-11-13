@@ -12,7 +12,7 @@
 		<issue>VME_Royalty</issue>
 		<label>exalted</label>
 		<description>Those who drape themselves in the vestments of royalty ascend beyond mere mortals. Each step up the ladder of nobility brings greater veneration from the common folk, from a respectful nod for a Yeoman to awestruck reverence for a High Stellarch.</description>
-		<impact>Low</impact>
+		<impact>Medium</impact>
 		<associatedMemes>
 			<li>VME_Royal</li>
 		</associatedMemes>
@@ -57,7 +57,7 @@
 		<issue>VME_Royalty</issue>
 		<label>hated</label>
 		<description>Royal titles are chains that bind freedom, and each title is a shackle more cursed than the last. From Yeoman to High Stellarch, the disdain grows with the weight of the crown, heavy is the head that wears it.</description>
-		<impact>Low</impact>
+		<impact>Medium</impact>
 		<displayOrderInIssue>20</displayOrderInIssue>
 		<comps>
 			<li Class="PreceptComp_SituationalThought">

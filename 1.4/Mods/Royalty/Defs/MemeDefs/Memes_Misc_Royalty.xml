@@ -181,6 +181,11 @@
 				<li>VME_PermitHonorCost_Halved</li>
 				
 			</li>
+			<li>
+				<li>VME_Leader_HighestTitle</li>
+				
+			</li>
+			
 			
 		</requireOne>
 		<symbolPacks>

@@ -7,7 +7,7 @@ using System.Collections.Generic;
 
 namespace VanillaMemesExpanded
 {
-    public class GameComponent_BestPsycasterTracker : GameComponent
+    public class GameComponent_BestPsycasterAndTitleTracker : GameComponent
     {
 
        
@@ -16,7 +16,7 @@ namespace VanillaMemesExpanded
         public int tickInterval = 4000;
 
 
-        public GameComponent_BestPsycasterTracker(Game game) : base()
+        public GameComponent_BestPsycasterAndTitleTracker(Game game) : base()
         {
 
         }
@@ -67,6 +67,35 @@ namespace VanillaMemesExpanded
                         }
 
                     }
+
+                    if (ideo?.HasPrecept(InternalDefOf.VME_Leader_HighestTitle) == true)
+                    {
+                        Pawn highestTitlePawn = null;
+                        int highestTitle = 0;
+
+                        foreach (Pawn pawn in PawnsFinder.AllMapsCaravansAndTravelingTransportPods_Alive_Colonists)
+                        {
+                            if (pawn.royalty?.MainTitle()?.seniority > highestTitle && pawn.ideo?.Ideo == ideo && !pawn.IsSlave)
+                            {
+                                highestTitle = pawn.royalty.MainTitle().seniority;
+                                highestTitlePawn = pawn;
+                            }
+                        }
+
+                        Precept_Role precept_role = highestTitlePawn?.Ideo?.GetPrecept(PreceptDefOf.IdeoRole_Leader) as Precept_Role;
+
+                        if (precept_role?.ChosenPawnSingle() != highestTitlePawn)
+                        {
+                            if (precept_role.RequirementsMet(highestTitlePawn))
+                            {
+                                precept_role.Unassign(precept_role.ChosenPawnSingle(), false);
+                                precept_role.Assign(highestTitlePawn, true);
+                            }
+
+                        }
+
+                    }
+
                 }
 
                 tickCounter = 0;

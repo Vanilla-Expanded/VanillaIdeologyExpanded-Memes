@@ -386,7 +386,7 @@
     <Compile Include="Hediffs\HediffCompProperties_Infections.cs" />
     <Compile Include="Hediffs\HediffComp_Infections.cs" />
     <Compile Include="Incidents\IncidentWorker_JunkChunkDrop.cs" />
-    <Compile Include="MapComponents and GameComponents\GameComponent_BestPsycasterTracker.cs" />
+    <Compile Include="MapComponents and GameComponents\GameComponent_BestPsycasterAndTitleTracker.cs" />
     <Compile Include="MapComponents and GameComponents\GameComponent_BestMeleeLeaderTracker.cs" />
     <Compile Include="MapComponents and GameComponents\GameComponent_AlcoholScarsAndSlaveryTracker.cs" />
     <Compile Include="MapComponents and GameComponents\GameComponent_BonfireTracker.cs" />

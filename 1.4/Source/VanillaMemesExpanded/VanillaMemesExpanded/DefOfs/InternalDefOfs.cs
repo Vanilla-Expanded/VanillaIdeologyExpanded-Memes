@@ -127,7 +127,11 @@ namespace VanillaMemesExpanded
         public static PreceptDef VME_IdeoRole_Majordomo;
 
         [MayRequireRoyalty]
+        public static PreceptDef VME_Leader_HighestTitle;
+
+        [MayRequireRoyalty]
         public static MemeDef VME_Royal;
+
 
         public static MemeDef VME_FireWorship;
 

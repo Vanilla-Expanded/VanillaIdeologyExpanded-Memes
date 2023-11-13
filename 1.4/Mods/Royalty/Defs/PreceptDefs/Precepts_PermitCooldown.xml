@@ -12,7 +12,7 @@
 		<issue>VME_PermitCooldown</issue>
 		<label>lowered</label>
 		<description>Royalty demands swift action; thus, the cooldown of permits is lessened, allowing for a more rapid response to the ever-changing whims of noble desire.</description>
-		<impact>Low</impact>
+		<impact>Medium</impact>
 		<associatedMemes>
 			<li>VME_Royal</li>
 		</associatedMemes>
@@ -24,7 +24,7 @@
 		<issue>VME_PermitCooldown</issue>
 		<label>increased</label>
 		<description>Patience is a virtue, and now a necessity, as the cooldown of permits is doubled. Time crawls as the court awaits the next invocation of royal privilege.</description>
-		<impact>Low</impact>
+		<impact>Medium</impact>
 		<displayOrderInIssue>40</displayOrderInIssue>
 		
 		

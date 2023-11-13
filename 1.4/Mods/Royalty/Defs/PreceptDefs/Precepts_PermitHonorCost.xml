@@ -12,7 +12,7 @@
 		<issue>VME_PermitHonorCost</issue>
 		<label>halved</label>
 		<description>The honored have the privilege of calling upon their allies more frequently, their requests for aid met with a nod and a half a cost, easing the burden of leadership.</description>
-		<impact>Low</impact>
+		<impact>Medium</impact>
 		<associatedMemes>
 			<li>VME_Royal</li>
 		</associatedMemes>
@@ -24,7 +24,7 @@
 		<issue>VME_PermitHonorCost</issue>
 		<label>doubled</label>
 		<description>Every call for aid is a heavy toll, a demand of honor twice the usual rate. Such is the price of urgency, a cost only to be borne when the need is direst.</description>
-		<impact>Low</impact>
+		<impact>Medium</impact>
 		<displayOrderInIssue>40</displayOrderInIssue>
 		
 		

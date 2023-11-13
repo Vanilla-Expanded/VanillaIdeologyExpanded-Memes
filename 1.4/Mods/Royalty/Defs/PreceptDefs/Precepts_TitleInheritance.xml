@@ -12,7 +12,7 @@
 		<issue>VME_TitleInheritance</issue>
 		<label>inherited</label>
 		<description>Nobility flows through blood, as titles pass from the fallen to their kin. A parent's demise elevates the firstborn, inheriting the mantle of leadership.</description>
-		<impact>Medium</impact>
+		<impact>Low</impact>
 		<associatedMemes>
 			<li>VME_Royal</li>
 		</associatedMemes>
