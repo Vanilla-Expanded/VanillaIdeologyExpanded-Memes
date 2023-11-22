@@ -37,9 +37,10 @@ namespace VanillaMemesExpanded
             List<Pawn> children = pawn.relations.Children.ToList();
             if (children.Count > 0)
             {
-                Pawn heir = (from x in children
+                Pawn heir = (from x in children where !x.Dead
                              orderby x.ageTracker.AgeBiologicalTicks
                              select x).Last();
+                
                 return heir;
             }
 

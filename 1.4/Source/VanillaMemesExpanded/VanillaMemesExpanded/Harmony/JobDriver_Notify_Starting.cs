@@ -21,10 +21,10 @@ namespace VanillaMemesExpanded
         static void ModifyOnWork(JobDriver __instance)
         {
 
-            if ((__instance.pawn?.Ideo?.HasMeme(InternalDefOf.VME_Royal) == true) && ((Precept_RoleSingle)__instance.pawn?.Ideo?.GetPrecept(InternalDefOf.VME_IdeoRole_Majordomo)).ChosenPawnSingle() == __instance.pawn &&
-                __instance.job?.workGiverDef?.workType?.workTags.HasFlag(WorkTags.AllWork) == true)
+            if ((__instance?.pawn?.Ideo?.HasMeme(InternalDefOf.VME_Royal) == true) && ((Precept_RoleSingle)__instance?.pawn?.Ideo?.GetPrecept(InternalDefOf.VME_IdeoRole_Majordomo))?.ChosenPawnSingle() == __instance?.pawn &&
+                __instance?.job?.workGiverDef?.workType?.workTags.HasFlag(WorkTags.AllWork) == true)
             {
-                __instance.pawn?.needs?.joy?.GainJoy(0.1f, JoyKindDefOf.Meditative);
+                __instance?.pawn?.needs?.joy?.GainJoy(0.1f, JoyKindDefOf.Meditative);
 
             }
 
