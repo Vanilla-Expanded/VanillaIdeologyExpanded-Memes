@@ -47,6 +47,9 @@
 			</li>
 			
 		</comps>
+		<opposedWorkTypes>
+			<li>VCEF_Fishing</li>
+		</opposedWorkTypes>
 		
 	</PreceptDef>
 	
