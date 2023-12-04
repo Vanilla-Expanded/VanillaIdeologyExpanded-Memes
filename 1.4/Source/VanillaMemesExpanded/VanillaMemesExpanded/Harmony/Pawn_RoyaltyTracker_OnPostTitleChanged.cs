@@ -21,7 +21,7 @@ namespace VanillaMemesExpanded
         public static void RemoveMajordomoRole(Pawn_RoyaltyTracker __instance)
         {
 
-            if ((__instance.pawn?.Ideo?.HasMeme(InternalDefOf.VME_Royal) == true) && ((Precept_RoleSingle)__instance.pawn?.Ideo?.GetPrecept(InternalDefOf.VME_IdeoRole_Majordomo)).ChosenPawnSingle() == __instance.pawn)
+            if ((__instance?.pawn?.Ideo?.HasMeme(InternalDefOf.VME_Royal) == true) && ((Precept_RoleSingle)__instance?.pawn?.Ideo?.GetPrecept(InternalDefOf.VME_IdeoRole_Majordomo))?.ChosenPawnSingle() == __instance.pawn)
             {
                 Precept_RoleSingle precept_role = __instance.pawn?.Ideo?.GetPrecept(InternalDefOf.VME_IdeoRole_Majordomo) as Precept_RoleSingle;
                 precept_role.Unassign(__instance.pawn, false);

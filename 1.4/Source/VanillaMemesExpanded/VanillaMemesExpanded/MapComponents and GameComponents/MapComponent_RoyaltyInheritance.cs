@@ -67,7 +67,7 @@ namespace VanillaMemesExpanded
                             if (pawn.Ideo?.GetPrecept(InternalDefOf.VME_TitleInheritance_Inherited) != null)
                             {
                                 Pawn heir = CheckFirstBorn(pawn);
-                                Log.Message(heir.ToStringSafe());
+                                //Log.Message(heir.ToStringSafe());
                                 if(heir != null)
                                 {
                                     foreach (RoyalTitle title in pawn.royalty.AllTitlesForReading)
