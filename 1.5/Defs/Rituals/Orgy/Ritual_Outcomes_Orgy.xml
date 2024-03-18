@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ 
+ 
+ <RitualOutcomeEffectDef>
+    <defName>VME_OrgyRitualOutcome</defName>
+    <description>Every participant will get a "got some lovin'" memory, but the negative effects of a bad quality orgy will be much more severe than usual. Depending on ritual quality, participants will get between {MINMOOD} and {MAXMOOD} mood for {MOODDAYS} days.\nNote that all participants must be consenting adults. If the moral guide is not an adult the ritual will appear as blocked.</description>
+    <workerClass>VanillaMemesExpanded.RitualOutcomeEffectWorker_Orgy</workerClass>
+    
+    <comps>
+      
+      <li Class="RitualOutcomeComp_RolePresentNotSubstituted">
+        <roleId>moralist</roleId>
+        <label>orgy organizer present</label>
+        <qualityOffset>0.25</qualityOffset>
+      </li>
+	  <li Class="RitualOutcomeComp_RoomStat">
+        <label>room impressiveness</label>
+        <statDef>Impressiveness</statDef>
+        <curve>
+          <points>
+            <li>0,  0</li>
+            <li>50,  0.1</li>
+            <li>120, 0.2</li>
+          </points>
+        </curve>
+      </li>
+	   <li Class="RitualOutcomeComp_PawnStatScaled">
+        <label>{PAWN_labelShort}'s social impact</label>
+        <labelAbstract>organizer's social impact</labelAbstract>
+        <roleId>moralist</roleId>
+        <statDef>SocialImpact</statDef>
+        <curve>
+          <points>
+            <li>(0.2,  0.0)</li>
+            <li>(0.6,  0.18)</li>
+            <li>(1.0, 0.25)</li>
+            <li>(1.5, 0.3)</li>
+          </points>
+        </curve>
+      </li>
+      <li Class="RitualOutcomeComp_ParticipantCount">
+        <label>participant count</label>
+        <curve>
+          <points>
+            <li>(1,  0.0)</li>
+            <li>(5,  0.18)</li>
+            <li>(10, 0.25)</li>
+          </points>
+        </curve>
+      </li>
+      
+    </comps>
+    <outcomeChances>
+      <li>
+        <label>Grotesque</label>
+        <chance>0.05</chance>
+        <memory>VME_GrotesqueOrgy</memory>
+        <description>The {0} was grotesque! When you think of an orgy, you tend to imagine attractive people. This was... the entire opposite. The mental images will take a while to go away.</description>
+		
+        <positivityIndex>-2</positivityIndex>
+      </li>
+      <li>
+        <label>Awkward</label>
+        <chance>0.15</chance>
+        <memory>VME_AwkwardOrgy</memory>
+        <description>The {0} was awkward. Everyone sat around not knowing exactly what to do, naked bodies laying everywhere. Quite disappointing.</description>
+        <positivityIndex>-1</positivityIndex>
+      </li>
+      <li>
+        <label>Sexy</label>
+        <chance>0.6</chance>
+        <memory>VME_SexyOrgy</memory>
+        <description>The {0} was very sexy. We gave ourselves to each other in a communal expression of our deepest passions.</description>
+      
+        <positivityIndex>1</positivityIndex>
+      </li>
+      <li>
+        <label>Exhilarating</label>
+        <chance>0.2</chance>
+        <memory>VME_ExhilaratingOrgy</memory>
+        <description>The {0} was exhilarating! We all donned our high-society masquerade masks and uncovered our bodies. A barrage of ecstasy unlike no other made our bodies tremble with barely concealed excitement.</description>
+        
+        <positivityIndex>2</positivityIndex>
+      </li>
+    </outcomeChances>
+  </RitualOutcomeEffectDef>
+ 
+  
+  
+</Defs>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<HistoryEventDef>
+		<defName>VME_InstalledNonNaturalProsthetic</defName>
+		<label>installed non-natural prosthetic</label>
+	</HistoryEventDef>
+
+	<!-- Precepts -->
+
+	<PreceptDef>
+		<defName>VME_BodyMod_OnlyBiological</defName>
+		<issue>BodyModification</issue>
+		<label>only biological</label>
+		<description>Flesh only should be replaced by flesh, to replace a body with a machine is forbidden.</description>
+		<impact>Medium</impact>
+		<displayOrderInIssue>20</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<conflictingMemes>
+			<li>Transhumanist</li>
+		</conflictingMemes>
+		<associatedMemes>
+			<li>VME_Fleshcrafters</li>
+		</associatedMemes>
+		<requiredMemes>
+			<li>VME_Fleshcrafters</li>
+		</requiredMemes>
+		<comps>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<eventDef>VME_InstalledNonNaturalProsthetic</eventDef>
+				<thought>VME_InstalledProsthetic_OnlyBiological</thought>
+			</li>
+			<li Class="PreceptComp_KnowsMemoryThought">
+				<eventDef>VME_InstalledNonNaturalProsthetic</eventDef>
+				<thought>VME_InstalledProsthetic_Know_OnlyBiological</thought>
+			</li>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>VME_HasProsthetic_OnlyBiological</thought>
+			</li>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>VME_HasProsthetic_OnlyBiological_Social</thought>
+			</li>
+		</comps>
+	</PreceptDef>
+
+
+	<ThoughtDef>
+		<defName>VME_InstalledProsthetic_OnlyBiological</defName>
+		<durationDays>6</durationDays>
+		<stages>
+			<li>
+				<label>installed non-natural prosthetic</label>
+				<description>I had to install a non-natural prosthetic. Flesh only should be replaced by flesh.</description>
+				<baseMoodEffect>-30</baseMoodEffect>
+			</li>
+		</stages>
+
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>VME_InstalledProsthetic_Know_OnlyBiological</defName>
+		<thoughtClass>Thought_MemorySocial</thoughtClass>
+		<durationDays>20</durationDays>
+		<stackLimit>100</stackLimit>
+		<stackLimitForSameOtherPawn>3</stackLimitForSameOtherPawn>
+		<stages>
+			<li>
+				<label>installed non-natural prosthetic</label>
+				<baseOpinionOffset>-80</baseOpinionOffset>
+			</li>
+		</stages>
+
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>VME_HasProsthetic_OnlyBiological</defName>
+		<workerClass>VanillaMemesExpanded.ThoughtWorker_Precept_HasNonNaturalProsthetic</workerClass>
+		<stages>
+			<li>
+				<label>non-natural part</label>
+				<description>I have a non-natural body part in me. Flesh only should be replaced by flesh!</description>
+				<baseMoodEffect>-18</baseMoodEffect>
+			</li>
+		</stages>
+
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>VME_HasProsthetic_OnlyBiological_Social</defName>
+		<thoughtClass>Thought_SituationalSocial</thoughtClass>
+		<workerClass>VanillaMemesExpanded.ThoughtWorker_Precept_HasNonNaturalProsthetic_Social</workerClass>
+		<stages>
+			<li>
+				<label>non-natural part</label>
+				<baseOpinionOffset>-10</baseOpinionOffset>
+			</li>
+		</stages>
+		
+	</ThoughtDef>
+
+
+
+
+
+</Defs>

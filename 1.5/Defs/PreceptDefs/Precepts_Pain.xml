@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ 
+
+  <!-- Precepts -->
+
+  <PreceptDef>
+    <defName>VME_Pain_DontCare</defName>
+    <issue>Pain</issue>
+    <label>don't care</label>
+    <description>Pain is only in your mind, so long as your spirit remains whole, you are in control of it.</description>
+    <impact>Medium</impact>
+    <displayOrderInImpact>80</displayOrderInImpact>
+    <associatedMemes>
+      <li>VME_Bushido</li>
+      
+    </associatedMemes>
+   <statOffsets>
+      <PainShockThreshold>1</PainShockThreshold>
+	 
+    </statOffsets>
+  </PreceptDef>
+
+ 
+
+</Defs>

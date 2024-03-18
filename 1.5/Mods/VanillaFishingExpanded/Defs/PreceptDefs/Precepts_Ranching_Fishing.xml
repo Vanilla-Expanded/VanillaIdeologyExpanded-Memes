@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <!-- Precepts -->
+
+  <PreceptDef>
+    <defName>VME_Ranching_Discouraged</defName>
+    <issue>Ranching</issue>
+    <label>discouraged</label>
+    <description>Why would we raise land animals or hunt, waste our time training and butchering them when we can get all the meat we need from the sea?</description>
+    <impact>Medium</impact>
+	<displayOrderInIssue>10</displayOrderInIssue>
+    <displayOrderInImpact>1000</displayOrderInImpact>
+    <requiredMemes>
+      <li>VME_Angler</li>
+    </requiredMemes>
+    
+    <statFactors>
+     
+      <TameAnimalChance>0.75</TameAnimalChance>
+	  <TrainAnimalChance>0.75</TrainAnimalChance>
+      <AnimalGatherYield>0.75</AnimalGatherYield>
+      <ButcheryFleshEfficiency>0.75</ButcheryFleshEfficiency>
+      
+    </statFactors>
+    
+  </PreceptDef>
+
+ 
+
+  
+
+</Defs>

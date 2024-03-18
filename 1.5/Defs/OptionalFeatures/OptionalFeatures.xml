@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <VFECore.OptionalFeatures.ModDef>
+        <defName>VME_MenuFeatures</defName>
+        <label>Vanilla Memes Expanded</label>
+        <description>VE Framework new Ideo menu options for Vanilla Memes Expanded</description>
+        <Activate>
+            <li>IdeoFloatMenuPlus</li>
+        </Activate>
+    </VFECore.OptionalFeatures.ModDef>
+</Defs>

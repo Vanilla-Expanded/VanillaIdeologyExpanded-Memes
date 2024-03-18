@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+
+	
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/MemeDef[defName = "AnimalPersonhood"]/exclusionTags</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/MemeDef[defName = "AnimalPersonhood"]</xpath>
+			<value>
+				<exclusionTags>
+					<li>VME_FishingVsFurries</li>
+				</exclusionTags>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+		<xpath>/Defs/MemeDef[defName = "AnimalPersonhood"]/exclusionTags</xpath>
+			<value>
+				<li>VME_FishingVsFurries</li>
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/MemeDef[defName = "AnimalPersonhood"]/requireOne</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/MemeDef[defName = "AnimalPersonhood"]</xpath>
+			<value>
+				<requireOne>
+					<li>
+						<li>VME_Fishing_Forbidden</li>
+					</li>
+				</requireOne>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/MemeDef[defName = "AnimalPersonhood"]/requireOne</xpath>
+			<value>
+				<li>
+					<li>VME_Fishing_Forbidden</li>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	
+	
+	
+	
+
+
+
+</Patch>

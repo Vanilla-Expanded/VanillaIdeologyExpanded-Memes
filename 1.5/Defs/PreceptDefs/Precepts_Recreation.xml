@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Issues -->
+
+ 
+  <IssueDef>
+    <defName>VME_Recreation</defName>
+    <label>recreation</label>
+    <iconPath>UI/Issues/Recreation</iconPath>
+  </IssueDef>
+
+	<HistoryEventDef>
+		<defName>VME_HavingFun</defName>
+		<label>having fun</label>
+	</HistoryEventDef>
+  <!-- Precepts -->
+
+ 
+
+  <PreceptDef>
+    <defName>VME_Recreation_Loved</defName>
+    <issue>VME_Recreation</issue>
+    <label>loved</label>
+    <description>Fun and games aren’t optional - Enjoy every moment of recreation and make it the best you can for yourself and your friends.\n\n&lt;color=#E5E54C&gt;Stats:&lt;/color&gt;\n - Colonists gain recreation at 50% the speed when using any Joy buildings.\n - Increases by 50% the mood buff acquired by colonists after a party.</description>
+    <impact>Medium</impact>
+	<displayOrderInIssue>50</displayOrderInIssue>
+	<displayOrderInImpact>100</displayOrderInImpact>
+    <associatedMemes>
+      <li>VME_PartyLife</li>
+	
+    </associatedMemes>
+
+  </PreceptDef>
+  
+ 
+  
+  <PreceptDef>
+    <defName>VME_Recreation_Normal</defName>
+    <issue>VME_Recreation</issue>
+    <label>normal</label>
+    <description>Recreation is an important part of life.</description>
+    <impact>Low</impact>
+	<displayOrderInIssue>30</displayOrderInIssue>
+	<defaultSelectionWeight>1</defaultSelectionWeight>
+  </PreceptDef>
+  
+  <PreceptDef>
+    <defName>VME_Recreation_Disapproved</defName>
+    <issue>VME_Recreation</issue>
+    <label>disapproved</label>
+    <description>Recreation is a waste of time.\n\n&lt;color=#E5E54C&gt;Stats:&lt;/color&gt;\n - Colonists get -5 mood for half a day after doing a recreation job.</description>
+    <impact>Medium</impact>
+	<displayOrderInIssue>20</displayOrderInIssue>
+	<comps>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<eventDef>VME_HavingFun</eventDef>
+				<thought>VME_Recreation_Disapproved</thought>
+			</li>
+			
+		</comps>
+  </PreceptDef>
+  
+	<ThoughtDef>
+		<defName>VME_Recreation_Disapproved</defName>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>waste of time</label>
+				<description>Recreation is a waste of time.</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+		</stages>
+
+	</ThoughtDef>
+	
+	
+
+ 
+
+</Defs>

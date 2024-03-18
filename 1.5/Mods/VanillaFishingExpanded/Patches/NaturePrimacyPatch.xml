@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+
+	
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/MemeDef[defName = "NaturePrimacy"]/exclusionTags</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/MemeDef[defName = "NaturePrimacy"]</xpath>
+			<value>
+				<exclusionTags>
+					<li>VME_FishingVsNature</li>
+				</exclusionTags>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+		<xpath>/Defs/MemeDef[defName = "NaturePrimacy"]/exclusionTags</xpath>
+			<value>
+				<li>VME_FishingVsNature</li>
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/MemeDef[defName = "NaturePrimacy"]/requireOne</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/MemeDef[defName = "NaturePrimacy"]</xpath>
+			<value>
+				<requireOne>
+					<li>
+						<li>VME_Fishing_Forbidden</li>
+					</li>
+				</requireOne>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/MemeDef[defName = "NaturePrimacy"]/requireOne</xpath>
+			<value>
+				<li>
+					<li>VME_Fishing_Forbidden</li>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	
+	
+	
+
+
+
+</Patch>

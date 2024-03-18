@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Issues -->
+
+
+	<IssueDef>
+		<defName>VME_PsychicSensitivity</defName>
+		<label>psychic sensitivity</label>
+		<iconPath>UI/Issues/PsychicSensitivity</iconPath>
+	</IssueDef>
+
+	<!-- Precepts -->
+
+
+
+	<PreceptDef>
+		<defName>VME_PsychicSensitivity_Lowered</defName>
+		<issue>VME_PsychicSensitivity</issue>
+		<label>lowered</label>
+		<description>Barricade your mind to all thoughts that aren’t your own. Let your mind be a veritable fortress of unwavering mental constitution.</description>
+		<impact>Low</impact>
+		<associatedMemes>
+			<li>VME_PsychicFocus</li>
+		</associatedMemes>
+		<statOffsets>
+			<PsychicSensitivity>-0.2</PsychicSensitivity>
+			
+		</statOffsets>
+	</PreceptDef>
+	
+	<PreceptDef>
+		<defName>VME_PsychicSensitivity_Heightened</defName>
+		<issue>VME_PsychicSensitivity</issue>
+		<label>heightened</label>
+		<description>Reach with your mind to encompass the whole world. Let your mind be a swift weapon of psychic retribution.</description>
+		<impact>Low</impact>
+		<associatedMemes>
+			<li>VME_PsychicFocus</li>
+		</associatedMemes>
+		<statOffsets>
+			<PsychicSensitivity>+0.2</PsychicSensitivity>
+			
+		</statOffsets>
+	</PreceptDef>
+	
+
+
+</Defs>

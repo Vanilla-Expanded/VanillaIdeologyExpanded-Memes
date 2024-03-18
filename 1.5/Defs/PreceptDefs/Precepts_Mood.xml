@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<IssueDef>
+		<defName>VME_Mood</defName>
+		<label>mood</label>
+		<iconPath>UI/Issues/Mood</iconPath>
+	</IssueDef>
+	
+	<!-- Precepts -->
+	<PreceptDef>
+		<defName>VME_Mood_DictatedByStars</defName>
+		<issue>VME_Mood</issue>
+		<label>dictated by stars</label>
+		<description>The endless sea of stars in our skies will dictate my future, be it benevolent or otherwise.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - After every Divine the Stars ritual, a solar eclipse or an aurora, mood will randomly change between -30 and +30.</description>
+		<impact>High</impact>
+		<displayOrderInIssue>50</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<associatedMemes>
+			<li>VME_Astrology</li>
+		</associatedMemes>
+		<requiredMemes>
+			<li>VME_Astrology</li>
+		</requiredMemes>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				
+				<thought>VME_Mood_DictatedByStars</thought>
+				<thoughtStageDescriptions>
+					<li>Stars are aligned</li>
+					<li>Stars are perfect</li>
+					<li>Stars are excellent</li>
+					<li>Stars are good</li>
+					<li>Stars are indifferent</li>
+					<li>Stars are bad</li>
+					<li>Stars are not on my side</li>
+					<li>Stars are a bad omen</li>
+					<li>Stars are aligned… against me</li>
+					
+				</thoughtStageDescriptions>
+			</li>
+		</comps>
+	</PreceptDef>
+	<ThoughtDef>
+		<defName>VME_Mood_DictatedByStars</defName>
+		<workerClass>VanillaMemesExpanded.Thought_Precept_RandomStageMood</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>stars are aligned</label>
+				<description>The astral architects smile upon me, their benevolence is unmatched.</description>
+				<baseMoodEffect>30</baseMoodEffect>
+			</li>
+			<li>
+				<label>stars are perfect</label>
+				<description>The stellar bodies above tell a story of imminent fortunes and success.</description>
+				<baseMoodEffect>20</baseMoodEffect>
+			</li>
+			<li>
+				<label>stars are excellent</label>
+				<description>The stars whisper to me, and they tell me to breathe easy. My fate is comfortably in their hands.</description>
+				<baseMoodEffect>10</baseMoodEffect>
+			</li>
+			<li>
+				<label>stars are good</label>
+				<description>Though small, the constellations tell me all is well for the time being.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+			<li>
+				<label>stars are indifferent</label>
+				<description>The stars whisper nonsense and contradictions, our destiny is increasingly unclear.</description>
+				<baseMoodEffect>0</baseMoodEffect>
+			</li>
+			<li>
+				<label>stars are bad</label>
+				<description>The skies do not bode well, an ill omen is on the horizon.</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+			<li>
+				<label>stars are not on my side</label>
+				<description>The sea of stars is ever cloudy, they shroud themselves from me and refuse to tell me of my fate.</description>
+				<baseMoodEffect>-10</baseMoodEffect>
+			</li>
+			<li>
+				<label>stars are a bad omen</label>
+				<description>The stellar bodies far above have made themselves clear, I am no longer in their favor.</description>
+				<baseMoodEffect>-20</baseMoodEffect>
+			</li>
+			<li>
+				<label>stars are aligned… against me</label>
+				<description>The planets have aligned, a syzygy has made clear my approaching demise is inescapable. I will shortly be reduced to mere dust.</description>
+				<baseMoodEffect>-30</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<PreceptDef>
+		<defName>VME_Mood_Shared</defName>
+		<issue>VME_Mood</issue>
+		<label>shared</label>
+		<description>Empathy is a quality we must all strive to possess. We bear each other's burdens as well as each other's jubilations.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - If the average colony mood is happy, colonists receive a positive thought, and vice versa.</description>
+		<impact>High</impact>
+		
+		<displayOrderInIssue>40</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<associatedMemes>
+			<li>VME_Gestalt</li>
+		</associatedMemes>
+		<requiredMemes>
+			<li>VME_Gestalt</li>
+		</requiredMemes>
+		<comps>
+			
+			<li Class="PreceptComp_SituationalThought">
+				<thought>VME_Mood_Shared</thought>
+				<thoughtStageDescriptions>
+					<li>Average colony mood is positive</li>
+					<li>Average colony mood is negative</li>
+					
+					
+				</thoughtStageDescriptions>
+			</li>
+			
+		</comps>
+		
+	</PreceptDef>
+	
+	<ThoughtDef>
+		<defName>VME_Mood_Shared</defName>
+		<validWhileDespawned>true</validWhileDespawned>
+		<workerClass>VanillaMemesExpanded.ThoughtWorker_Precept_SharedMood</workerClass>
+		<stages>
+			<li>
+				<label>rejoice</label>
+				<description>Everyone is in good mood, as am I.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+			<li>
+				<label>grieve</label>
+				<description>Everyone is in bad mood, as am I.</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+		</stages>
+
+	</ThoughtDef>
+	
+	<PreceptDef>
+		<defName>VME_Mood_LowExpectations</defName>
+		<issue>VME_Mood</issue>
+		<label>low spirits</label>
+		<description>We are stranded on a lost, forgotten planet on the Rim. Things can hardly get worse.</description>
+		<impact>Low</impact>
+		<displayOrderInIssue>30</displayOrderInIssue>
+		
+		<comps>
+			
+			<li Class="PreceptComp_SituationalThought">
+				<thought>VME_Mood_LowExpectations</thought>
+			</li>
+			
+		</comps>
+		
+	</PreceptDef>
+	
+	<ThoughtDef>
+		<defName>VME_Mood_LowExpectations</defName>
+		<validWhileDespawned>true</validWhileDespawned>
+		<workerClass>VanillaMemesExpanded.ThoughtWorker_AlwaysOn</workerClass>
+		<stages>
+			
+			<li>
+				<label>bad mood</label>
+				<description>I'm just generally having a bad mood. The Rim is a hostile place.</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+		</stages>
+
+	</ThoughtDef>
+	
+	<PreceptDef>
+		<defName>VME_Mood_Normal</defName>
+		<issue>VME_Mood</issue>
+		<label>normal</label>
+		<description>I'm fine, thanks.</description>
+		<impact>Low</impact>
+		<displayOrderInIssue>20</displayOrderInIssue>
+		<defaultSelectionWeight>1</defaultSelectionWeight>
+	</PreceptDef>
+	
+	<PreceptDef>
+		<defName>VME_Mood_HighExpectations</defName>
+		<issue>VME_Mood</issue>
+		<label>high spirits</label>
+		<description>The whole world is ours to explore and enjoy.</description>
+		<impact>Low</impact>
+		<displayOrderInIssue>10</displayOrderInIssue>
+		
+		<comps>
+			
+			<li Class="PreceptComp_SituationalThought">
+				<thought>VME_Mood_HighExpectations</thought>
+			</li>
+			
+		</comps>
+		
+	</PreceptDef>
+	
+	<ThoughtDef>
+		<defName>VME_Mood_HighExpectations</defName>
+		<validWhileDespawned>true</validWhileDespawned>
+		<workerClass>VanillaMemesExpanded.ThoughtWorker_AlwaysOn</workerClass>
+		<stages>
+			
+			<li>
+				<label>good mood</label>
+				<description>I'm just generally having a good mood. The Rim is an amazing place.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+		</stages>
+
+	</ThoughtDef>
+</Defs>

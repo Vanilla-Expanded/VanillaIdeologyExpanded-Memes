@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RitualObligationTargetFilterDef>
+    <defName>VME_DivineStarsTarget</defName>
+    <workerClass>VanillaMemesExpanded.RitualObligationTargetWorker_DivineStars</workerClass>
+    <minUnroofedCells>25</minUnroofedCells>
+    <unroofedCellSearchRadius>12</unroofedCellSearchRadius>
+   
+  </RitualObligationTargetFilterDef>
+  
+
+
+ 
+
+</Defs>

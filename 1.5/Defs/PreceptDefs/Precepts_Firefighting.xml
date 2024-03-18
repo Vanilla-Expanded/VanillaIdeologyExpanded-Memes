@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<IssueDef>
+		<defName>VME_Firefighting</defName>
+		<label>firefighting</label>
+		<iconPath>UI/Issues/Firefighting</iconPath>
+	</IssueDef>
+	<HistoryEventDef>
+		<defName>VME_Firefighting</defName>
+		<label>firefighting</label>
+	</HistoryEventDef>
+	
+	<!-- Precepts -->
+	<PreceptDef>
+		<defName>VME_Firefighting_Abhorrent</defName>
+		<issue>VME_Firefighting</issue>
+		<label>abhorrent</label>
+		<description>To quash a sacred flame is to commit an unspeakable sin.</description>
+		<impact>High</impact>
+		<displayOrderInIssue>50</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<associatedMemes>
+			<li>VME_FireWorship</li>
+		</associatedMemes>
+		<requiredMemes>
+			<li>VME_FireWorship</li>
+		</requiredMemes>
+		
+		<comps>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<eventDef>VME_Firefighting</eventDef>
+				<thought>VME_Firefighting_Abhorrent</thought>
+			</li>
+			
+		</comps>
+	</PreceptDef>
+	<ThoughtDef>
+		<defName>VME_Firefighting_Abhorrent</defName>
+		
+		<durationDays>6</durationDays>
+		<stackLimit>1</stackLimit>
+		<stages>
+			
+			<li>
+				<label>extinguished fire</label>
+				<description>I had to extinguish fire. What a violation of the spirits.</description>
+				<baseMoodEffect>-20</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<PreceptDef>
+		<defName>VME_Firefighting_Preferred</defName>
+		<issue>VME_Firefighting</issue>
+		<label>preferred</label>
+		<description>There is nothing more exhilarating than extinguishing a dangerous fire.</description>
+		<impact>Low</impact>
+		<displayOrderInIssue>40</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		
+		
+		<comps>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<eventDef>VME_Firefighting</eventDef>
+				<thought>VME_Firefighting_Preferred</thought>
+			</li>
+			
+		</comps>
+	</PreceptDef>
+	<ThoughtDef>
+		<defName>VME_Firefighting_Preferred</defName>
+		
+		<durationDays>1</durationDays>
+		<stackLimit>1</stackLimit>
+		<stages>
+			
+			<li>
+				<label>extinguished fire</label>
+				<description>I extinguished a fire. What an exhilarating experience!</description>
+				<baseMoodEffect>4</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	
+</Defs>

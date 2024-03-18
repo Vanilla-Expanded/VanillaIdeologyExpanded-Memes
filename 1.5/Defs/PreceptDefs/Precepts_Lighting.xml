@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Precepts -->
+	<PreceptDef>
+		<defName>VME_Darklight_NormalPreferred</defName>
+		<issue>Lighting</issue>
+		<label>normal preferred</label>
+		<description>Darklight is an unnatural and cheap imitation of the miracle that is light, and should be avoided.</description>
+		<impact>Low</impact>
+		<displayOrderInIssue>-10</displayOrderInIssue>
+		<associatedMemes>
+			<li>VME_Light</li>
+		</associatedMemes>
+		<conflictingMemes>
+			<li>Darkness</li>
+			<li>Blindsight</li>
+		</conflictingMemes>
+		<prefersDarkness>true</prefersDarkness>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>VME_Darklight_NormalPreferred_Darklight</thought>
+			</li>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>VME_Darklight_DislikeDarkness</thought>
+			</li>
+		</comps>
+	</PreceptDef>
+	<PreceptDef>
+		<defName>VME_DarknessCombat_Despised</defName>
+		<issue>DarknessCombat</issue>
+		<label>despised</label>
+		<description>Beyond being difficult to fight in, bloodshed should never take place in darkness, lest the enemy be spared peering into your eyes before you end their lives.</description>
+		<impact>High</impact>
+		<displayOrderInIssue>10</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<associatedMemes>
+			<li>VME_Light</li>
+		</associatedMemes>
+		<conflictingMemes>
+			<li>Darkness</li>
+			<li>Blindsight</li>
+		</conflictingMemes>
+		<statOffsets>
+			<ShootingAccuracyOutdoorsDarkOffset>-0.25</ShootingAccuracyOutdoorsDarkOffset>
+			<ShootingAccuracyOutdoorsLitOffset>0.1</ShootingAccuracyOutdoorsLitOffset>
+			<ShootingAccuracyIndoorsDarkOffset>-0.25</ShootingAccuracyIndoorsDarkOffset>
+			<ShootingAccuracyIndoorsLitOffset>0.1</ShootingAccuracyIndoorsLitOffset>
+			<MeleeHitChanceOutdoorsDarkOffset>-0.1</MeleeHitChanceOutdoorsDarkOffset>
+			<MeleeHitChanceOutdoorsLitOffset>0.1</MeleeHitChanceOutdoorsLitOffset>
+			<MeleeHitChanceIndoorsDarkOffset>-0.1</MeleeHitChanceIndoorsDarkOffset>
+			<MeleeHitChanceIndoorsLitOffset>0.1</MeleeHitChanceIndoorsLitOffset>
+			<MeleeDodgeChanceOutdoorsDarkOffset>-0.1</MeleeDodgeChanceOutdoorsDarkOffset>
+			<MeleeDodgeChanceOutdoorsLitOffset>0.1</MeleeDodgeChanceOutdoorsLitOffset>
+			<MeleeDodgeChanceIndoorsDarkOffset>-0.1</MeleeDodgeChanceIndoorsDarkOffset>
+			<MeleeDodgeChanceIndoorsLitOffset>0.1</MeleeDodgeChanceIndoorsLitOffset>
+		</statOffsets>
+	</PreceptDef>
+	<!-- Thoughts -->
+	<ThoughtDef>
+		<defName>VME_Darklight_NormalPreferred_Darklight</defName>
+		<workerClass>ThoughtWorker_Precept_Darklight</workerClass>
+		<thoughtClass>Thought_Situational</thoughtClass>
+		<stages>
+			<li>
+				<label>darklight</label>
+				<description>Darklight is unnatural.</description>
+				<baseMoodEffect>-10</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<ThoughtDef>
+		<defName>VME_Darklight_DislikeDarkness</defName>
+		<workerClass>VanillaMemesExpanded.ThoughtWorker_Precept_TotalDarkness</workerClass>
+		<thoughtClass>Thought_Situational</thoughtClass>
+		<nullifyingTraits>
+			<li>NightOwl</li>
+			<li>Undergrounder</li>
+		</nullifyingTraits>
+		<stages>
+			<li>
+				<label>despised darkness</label>
+				<description>Darkness is unnatural and disgusting.</description>
+				<baseMoodEffect>-2</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+</Defs>

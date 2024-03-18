@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--=============== JunkChunkDrop =============-->
+  
+  <IncidentDef>
+    <defName>VME_JunkChunkDrop</defName>
+    <label>junk chunk drop</label>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>VanillaMemesExpanded.IncidentWorker_JunkChunkDrop</workerClass>
+    <category>ShipChunkDrop</category>
+    <baseChance>2</baseChance>
+  </IncidentDef>
+
+ 
+</Defs>

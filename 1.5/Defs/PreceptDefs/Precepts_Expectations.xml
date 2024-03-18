@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Issues -->
+
+
+	<IssueDef>
+		<defName>VME_Expectations</defName>
+		<label>expectations</label>
+		<iconPath>UI/Issues/Expectations</iconPath>
+	</IssueDef>
+
+	<!-- Precepts -->
+
+
+
+	<PreceptDef>
+		<defName>VME_Expectations_High</defName>
+		<issue>VME_Expectations</issue>
+		<label>high</label>
+		<description>Our people are creatures of comfort, even the commoners among us deserve to relax or be pampered from time to time.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Expectations increased by 1 for everyone in the colony, except elite and supreme, which are unaffected for balance reasons.</description>
+		<impact>Medium</impact>
+		<associatedMemes>
+			<li>VME_Trader</li>
+		</associatedMemes>
+		<displayOrderInIssue>20</displayOrderInIssue>
+		<expectationsOffset>1</expectationsOffset>
+	</PreceptDef>
+	
+	<PreceptDef>
+		<defName>VME_Expectations_Low</defName>
+		<issue>VME_Expectations</issue>
+		<label>low</label>
+		<description>The Rim is an inhospitable place. We shouldn't expect a comfy live.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Expectations lowered by 1 for everyone in the colony, except elite and supreme, which are unaffected for balance reasons.</description>
+		<impact>Medium</impact>
+		
+		<displayOrderInIssue>30</displayOrderInIssue>
+		<expectationsOffset>-1</expectationsOffset>
+	</PreceptDef>
+	
+	
+	
+
+
+</Defs>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Issues -->
+
+ 
+  <IssueDef>
+    <defName>VME_FarmingYield</defName>
+    <label>farming yield</label>
+    <iconPath>UI/Issues/FarmingYield</iconPath>
+  </IssueDef>
+
+  <!-- Precepts -->
+
+ 
+
+  <PreceptDef>
+    <defName>VME_FarmingYield_High</defName>
+    <issue>VME_FarmingYield</issue>
+    <label>high</label>
+    <description>Each vegetable or fruit harvested should be harvested down to the last stem, root, or leaf. Leave not a single bit of produce unharvested.\n\n&lt;color=#E5E54C&gt;Stats:&lt;/color&gt;\n - Farming yield: +10%.</description>
+    <impact>Medium</impact>
+    <associatedMemes>
+      <li>VME_HardcoreIndustrialism</li>
+	  <li>VME_Vegan</li>
+    </associatedMemes>
+ 
+   
+  </PreceptDef>
+  
+ 
+
+ 
+
+</Defs>

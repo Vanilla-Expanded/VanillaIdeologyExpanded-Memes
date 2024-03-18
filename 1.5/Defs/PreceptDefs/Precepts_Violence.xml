@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<IssueDef>
+		<defName>VME_Violence</defName>
+		<label>violence</label>
+		<iconPath>UI/Issues/VME_Violence</iconPath>
+	</IssueDef>
+	<HistoryEventDef>
+		<defName>VME_AttackedInnocent</defName>
+		<label>attacked innocent people</label>
+	</HistoryEventDef>
+
+	<!-- Precepts -->
+	<PreceptDef>
+		<defName>VME_Violence_Honorable</defName>
+		<issue>VME_Violence</issue>
+		<label>honorable</label>
+		<description>Harming innocents is an honorable necessity on the Rim, it proves our strength and our resolve.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Colonists will receive a positive mood if they are forced to attack non-hostile humanoid targets.</description>
+		<impact>Medium</impact>
+		<displayOrderInIssue>20</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		
+		
+		<comps>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<eventDef>VME_AttackedInnocent</eventDef>
+				<thought>VME_Violence_Honorable</thought>
+			</li>
+		</comps>
+	</PreceptDef>
+
+	<ThoughtDef>
+		<defName>VME_Violence_Honorable</defName>
+		<durationDays>5</durationDays>
+		<stages>
+			<li>
+				<label>attacked person</label>
+				<description>I have used deadly force on an adversary. This proves our strength and our resolve.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+		</stages>
+
+	</ThoughtDef>
+	<PreceptDef>
+		<defName>VME_Violence_Acceptable</defName>
+		<issue>VME_Violence</issue>
+		<label>acceptable</label>
+		<description>Violence is just a fact of life.</description>
+		<impact>Low</impact>
+		<displayOrderInIssue>30</displayOrderInIssue>
+		<defaultSelectionWeight>1</defaultSelectionWeight>
+	</PreceptDef>
+	<PreceptDef>
+		<defName>VME_Violence_Disapproved</defName>
+		<issue>VME_Violence</issue>
+		<label>disapproved</label>
+		<description>We should avoid harming innocents if possible. Attacking a harmless person is immoral. \n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Colonists will receive a negative mood if they are forced to attack non-hostile humanoid targets.</description>
+		<impact>Medium</impact>
+		<displayOrderInIssue>40</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		
+		
+		<comps>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<eventDef>VME_AttackedInnocent</eventDef>
+				<thought>VME_Violence_Disapproved</thought>
+			</li>
+		</comps>
+	</PreceptDef>
+
+	<ThoughtDef>
+		<defName>VME_Violence_Disapproved</defName>
+		<durationDays>5</durationDays>
+		<stages>
+			<li>
+				<label>attacked person</label>
+				<description>I have used deadly force on an adversary. This is wrong.</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+		</stages>
+
+	</ThoughtDef>
+	<PreceptDef>
+		<defName>VME_Violence_Abhorrent</defName>
+		<issue>VME_Violence</issue>
+		<label>abhorrent</label>
+		<description>To shed blood or break bone is barbaric and disgusting. \n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Colonists will receive a substantial negative mood if they are forced to attack non-hostile humanoid targets.\n - The only mental break allowed is psychotic wander.\n - All drafted colonists will undraft if an attacking enemy starts fleeing.</description>
+		<impact>High</impact>
+		<displayOrderInIssue>50</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<associatedMemes>
+			<li>VME_Pacifist</li>
+		</associatedMemes>
+		
+		<comps>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<eventDef>VME_AttackedInnocent</eventDef>
+				<thought>VME_Violence_Abhorrent</thought>
+			</li>
+		</comps>
+	</PreceptDef>
+
+	<ThoughtDef>
+		<defName>VME_Violence_Abhorrent</defName>
+		<durationDays>5</durationDays>
+		<stages>
+			<li>
+				<label>attacked person</label>
+				<description>I have used deadly force on an adversary. It brings great shame.</description>
+				<baseMoodEffect>-30</baseMoodEffect>
+			</li>
+		</stages>
+
+	</ThoughtDef>
+
+</Defs>

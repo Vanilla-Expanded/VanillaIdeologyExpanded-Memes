@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Issues -->
+	<IssueDef>
+		<defName>VME_Royalty</defName>
+		<label>royalty</label>
+		<iconPath>UI/Issues/RoyaltyPrecept</iconPath>
+	</IssueDef>
+	<!-- Precepts -->
+	<PreceptDef>
+		<defName>VME_Royalty_Exalted</defName>
+		<issue>VME_Royalty</issue>
+		<label>exalted</label>
+		<description>Those who drape themselves in the vestments of royalty ascend beyond mere mortals. Each step up the ladder of nobility brings greater veneration from the common folk, from a respectful nod for a Yeoman to awestruck reverence for a High Stellarch.</description>
+		<impact>Medium</impact>
+		<associatedMemes>
+			<li>VME_Royal</li>
+		</associatedMemes>
+		<displayOrderInIssue>50</displayOrderInIssue>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>VME_Royalty_Exalted</thought>
+			</li>
+		</comps>
+	</PreceptDef>
+	<PreceptDef>
+		<defName>VME_Royalty_Respected</defName>
+		<issue>VME_Royalty</issue>
+		<label>respected</label>
+		<description>Every crown and every title is a symbol of burdens shouldered for the good of all. Regardless of the rank, a title earns a uniform respect, an acknowledgment of the wearer's elevated place in our order.</description>
+		<impact>Low</impact>
+		<displayOrderInIssue>40</displayOrderInIssue>
+		<associatedMemes>
+			<li>VME_Royal</li>
+		</associatedMemes>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>VME_Royalty_Respected</thought>
+			</li>
+		</comps>
+	</PreceptDef>
+	<PreceptDef>
+		<defName>VME_Royalty_Disliked</defName>
+		<issue>VME_Royalty</issue>
+		<label>disliked</label>
+		<description>Titles and crowns, relics of a bygone era, draw ire more than admiration. Those who flaunt their noble status find themselves at the receiving end of equal disdain.</description>
+		<impact>Low</impact>
+		<displayOrderInIssue>30</displayOrderInIssue>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>VME_Royalty_Disliked</thought>
+			</li>
+		</comps>
+	</PreceptDef>
+	<PreceptDef>
+		<defName>VME_Royalty_Hated</defName>
+		<issue>VME_Royalty</issue>
+		<label>hated</label>
+		<description>Royal titles are chains that bind freedom, and each title is a shackle more cursed than the last. From Yeoman to High Stellarch, the disdain grows with the weight of the crown, heavy is the head that wears it.</description>
+		<impact>Medium</impact>
+		<displayOrderInIssue>20</displayOrderInIssue>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>VME_Royalty_Hated</thought>
+			</li>
+		</comps>
+	</PreceptDef>
+	<!-- Thoughts -->
+	<ThoughtDef>
+		<defName>VME_Royalty_Exalted</defName>
+		<thoughtClass>Thought_SituationalSocial</thoughtClass>
+		<workerClass>VanillaMemesExpanded.ThoughtWorker_Precept_Royalty</workerClass>
+		<stages>
+			<li>
+				<label>royalty: yeoman</label>
+				<baseOpinionOffset>5</baseOpinionOffset>
+			</li>
+			<li>
+				<label>royalty: acolyte</label>
+				<baseOpinionOffset>15</baseOpinionOffset>
+			</li>
+			<li>
+				<label>royalty: knight</label>
+				<baseOpinionOffset>20</baseOpinionOffset>
+			</li>
+			<li>
+				<label>royalty: praetor</label>
+				<baseOpinionOffset>25</baseOpinionOffset>
+			</li>
+			<li>
+				<label>royalty: baron</label>
+				<baseOpinionOffset>30</baseOpinionOffset>
+			</li>
+			<li>
+				<label>royalty: count</label>
+				<baseOpinionOffset>40</baseOpinionOffset>
+			</li>
+			<li>
+				<label>royalty: archcount</label>
+				<!-- VE Empire -->
+				<baseOpinionOffset>45</baseOpinionOffset>
+			</li>
+			<li>
+				<label>royalty: marquess</label>
+				<!-- VE Empire -->
+				<baseOpinionOffset>50</baseOpinionOffset>
+			</li>
+			<li>
+				<label>royalty: duke</label>
+				<baseOpinionOffset>55</baseOpinionOffset>
+			</li>
+			<li>
+				<label>royalty: archduke</label>
+				<!-- VE Empire -->
+				<baseOpinionOffset>65</baseOpinionOffset>
+			</li>
+			<li>
+				<label>royalty: consul</label>
+				<baseOpinionOffset>70</baseOpinionOffset>
+			</li>
+			<li>
+				<label>royalty: magister</label>
+				<!-- VE Empire -->
+				<baseOpinionOffset>75</baseOpinionOffset>
+			</li>
+			<li>
+				<label>royalty: despot</label>
+				<!-- VE Empire -->
+				<baseOpinionOffset>80</baseOpinionOffset>
+			</li>
+			<li>
+				<label>royalty: stellarch</label>
+				<baseOpinionOffset>90</baseOpinionOffset>
+			</li>
+			<li>
+				<label>royalty: high stellarch</label>
+				<!-- VE Empire -->
+				<baseOpinionOffset>100</baseOpinionOffset>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<ThoughtDef>
+		<defName>VME_Royalty_Respected</defName>
+		<thoughtClass>Thought_SituationalSocial</thoughtClass>
+		<workerClass>VanillaMemesExpanded.ThoughtWorker_Precept_Royalty_AnyTitle</workerClass>
+		<stages>
+			<li>
+				<label>royalty</label>
+				<baseOpinionOffset>25</baseOpinionOffset>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<ThoughtDef>
+		<defName>VME_Royalty_Disliked</defName>
+		<thoughtClass>Thought_SituationalSocial</thoughtClass>
+		<workerClass>VanillaMemesExpanded.ThoughtWorker_Precept_Royalty_AnyTitle</workerClass>
+		<stages>
+			<li>
+				<label>royalty</label>
+				<baseOpinionOffset>-25</baseOpinionOffset>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<ThoughtDef>
+		<defName>VME_Royalty_Hated</defName>
+		<thoughtClass>Thought_SituationalSocial</thoughtClass>
+		<workerClass>VanillaMemesExpanded.ThoughtWorker_Precept_Royalty</workerClass>
+		<stages>
+			<li>
+				<label>royalty: yeoman</label>
+				<baseOpinionOffset>-5</baseOpinionOffset>
+			</li>
+			<li>
+				<label>royalty: acolyte</label>
+				<baseOpinionOffset>-15</baseOpinionOffset>
+			</li>
+			<li>
+				<label>royalty: knight</label>
+				<baseOpinionOffset>-20</baseOpinionOffset>
+			</li>
+			<li>
+				<label>royalty: praetor</label>
+				<baseOpinionOffset>-25</baseOpinionOffset>
+			</li>
+			<li>
+				<label>royalty: baron</label>
+				<baseOpinionOffset>-30</baseOpinionOffset>
+			</li>
+			<li>
+				<label>royalty: count</label>
+				<baseOpinionOffset>-40</baseOpinionOffset>
+			</li>
+			<li>
+				<label>royalty: archcount</label>
+				<!-- VE Empire -->
+				<baseOpinionOffset>-45</baseOpinionOffset>
+			</li>
+			<li>
+				<label>royalty: marquess</label>
+				<!-- VE Empire -->
+				<baseOpinionOffset>-50</baseOpinionOffset>
+			</li>
+			<li>
+				<label>royalty: duke</label>
+				<baseOpinionOffset>-55</baseOpinionOffset>
+			</li>
+			<li>
+				<label>royalty: archduke</label>
+				<!-- VE Empire -->
+				<baseOpinionOffset>-65</baseOpinionOffset>
+			</li>
+			<li>
+				<label>royalty: consul</label>
+				<baseOpinionOffset>-70</baseOpinionOffset>
+			</li>
+			<li>
+				<label>royalty: magister</label>
+				<!-- VE Empire -->
+				<baseOpinionOffset>-75</baseOpinionOffset>
+			</li>
+			<li>
+				<label>royalty: despot</label>
+				<!-- VE Empire -->
+				<baseOpinionOffset>-80</baseOpinionOffset>
+			</li>
+			<li>
+				<label>royalty: stellarch</label>
+				<baseOpinionOffset>-90</baseOpinionOffset>
+			</li>
+			<li>
+				<label>royalty: high stellarch</label>
+				<!-- VE Empire -->
+				<baseOpinionOffset>-100</baseOpinionOffset>
+			</li>
+		</stages>
+	</ThoughtDef>
+</Defs>

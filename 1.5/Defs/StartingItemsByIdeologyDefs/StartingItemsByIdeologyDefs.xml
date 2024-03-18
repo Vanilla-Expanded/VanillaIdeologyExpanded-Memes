@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+
+	<VanillaMemesExpanded.StartingItemsByIdeologyDef>
+		<defName>VME_StartingItemsEldritchCult</defName>
+		<associatedMeme>VME_Structure_ChthonianCult</associatedMeme>	
+		<thingSetMaker>VME_StartingItemsEldritchCult</thingSetMaker>		
+	</VanillaMemesExpanded.StartingItemsByIdeologyDef>
+
+
+
+
+
+
+</Defs>

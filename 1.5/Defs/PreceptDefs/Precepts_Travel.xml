@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Issues -->
+
+
+	<IssueDef>
+		<defName>VME_Travel</defName>
+		<label>travel</label>
+		<iconPath>UI/Issues/Travel</iconPath>
+	</IssueDef>
+
+	<!-- Precepts -->
+
+
+
+	<PreceptDef>
+		<defName>VME_Travel_Desired</defName>
+		<issue>VME_Travel</issue>
+		<label>desired</label>
+		<description>It’s a simple-minded claim that this planet doesn’t have exotic and beautiful lands to appreciate and immerse oneself in. Traveling this world should be a priority.</description>
+		<impact>Medium</impact>
+		<associatedMemes>
+			<li>VME_Nomad</li>
+		</associatedMemes>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>VME_Travel_Desired</thought>
+				<thoughtStageDescriptions>
+					<li>Traveled (less than 5 days ago)</li>
+					<li>Traveled (less than 10 days ago)</li>
+					<li>Traveled (less than 15 days ago)</li>
+					<li>Traveled (less than 60 days ago)</li>
+				
+				</thoughtStageDescriptions>
+			</li>
+		</comps>
+		
+		
+	</PreceptDef>
+	<ThoughtDef>
+		<defName>VME_Travel_Desired</defName>
+		<validWhileDespawned>true</validWhileDespawned>
+		<workerClass>VanillaMemesExpanded.ThoughtWorker_Precept_Travel</workerClass>
+		<stages>
+			<li>
+				<label>traveled the world (less than 5 days ago)</label>
+				<description>There is nothing as exhilarating as seeing what the world has to offer.</description>
+				<baseMoodEffect>30</baseMoodEffect>
+			</li>
+			<li>
+				<label>traveled the world (less than 10 days ago)</label>
+				<description>Travelling is amazing. Seeing the sights, discovering new lands... The memories of my last travels are still fresh in my mind.</description>
+				<baseMoodEffect>10</baseMoodEffect>
+			</li>
+			<li>
+				<label>traveled the world (less than 15 days ago)</label>
+				<description>It's been a few days since I travelled. I loved it.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+			<li>
+				<label>traveled the world (less than 60 days ago)</label>
+				<description>I have a fond memory of my past travels.</description>
+				<baseMoodEffect>3</baseMoodEffect>
+			</li>
+		</stages>
+
+	</ThoughtDef>
+	<PreceptDef>
+		<defName>VME_Travel_Despised</defName>
+		<issue>VME_Travel</issue>
+		<label>despised</label>
+		<description>Every moment spent away from home is another moment running away from the inevitable. Time spent traveling can be spent more wisely at home building and defending it.</description>
+		<impact>Medium</impact>
+		<associatedMemes>
+			<li>VME_CityBuilders</li>
+		</associatedMemes>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>VME_Travel_Despised</thought>
+				<thoughtStageDescriptions>
+					<li>Traveled (less than 5 days ago)</li>
+					<li>Traveled (less than 10 days ago)</li>
+					<li>Traveled (less than 15 days ago)</li>
+					<li>Traveled (less than 60 days ago)</li>
+				
+				</thoughtStageDescriptions>
+			</li>
+		</comps>
+	</PreceptDef>
+	
+	<ThoughtDef>
+		<defName>VME_Travel_Despised</defName>
+		<validWhileDespawned>true</validWhileDespawned>
+		<workerClass>VanillaMemesExpanded.ThoughtWorker_Precept_Travel</workerClass>
+		<stages>
+			<li>
+				<label>had to leave the colony (less than 5 days ago)</label>
+				<description>I despise travelling. Leaving the security of our colony is terrible.</description>
+				<baseMoodEffect>-30</baseMoodEffect>
+			</li>
+			<li>
+				<label>had to leave the colony (less than 10 days ago)</label>
+				<description>The memories of my last travels are still fresh in my mind. I hated it.</description>
+				<baseMoodEffect>-10</baseMoodEffect>
+			</li>
+			<li>
+				<label>had to leave the colony (less than 15 days ago)</label>
+				<description>It's been a few days since I travelled. I hated it.</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+			<li>
+				<label>had to leave the colony (less than 60 days ago)</label>
+				<description>I have uncomfortable memories of my past travels.</description>
+				<baseMoodEffect>-3</baseMoodEffect>
+			</li>
+		</stages>
+
+	</ThoughtDef>
+
+
+
+
+</Defs>

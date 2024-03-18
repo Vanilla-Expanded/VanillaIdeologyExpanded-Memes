@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="PlantBase">
+    <defName>VCE_ChocolateBush</defName>
+	
+    <label>cocoa bush</label>
+    <description>A low-lying bush that produces chocolate, genetically engineered to sweeten its own product, and be plantable in almost any vessel.</description>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Beauty>1</Beauty>
+      <BeautyOutdoors>1</BeautyOutdoors>
+      <Nutrition>0.05</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Building/Misc/CocoaBush</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <altitudeLayer>Item</altitudeLayer>
+    <selectable>true</selectable>
+    <ingestible>
+      <canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+    </ingestible>
+    <plant>     
+      <sowTags>
+        <li>Ground</li>
+		<li>Hydroponic</li>
+        <li>Decorative</li>
+		<li>VCE_ChocolateBushSowableDetection</li>
+      </sowTags>
+      <growMinGlow>0.3</growMinGlow>
+      <topWindExposure>0.1</topWindExposure>
+      <growDays>8</growDays>    
+      <visualSizeRange>0.8~2.0</visualSizeRange>
+      <wildOrder>1</wildOrder>
+      <purpose>Beauty</purpose>	  	  
+      <sowMinSkill>6</sowMinSkill>     
+      <sowResearchPrerequisites Inherit="False">
+        <li>Cocoa</li>
+      </sowResearchPrerequisites>   
+      <mustBeWildToSow>false</mustBeWildToSow>    
+      <harvestWork>400</harvestWork>
+      <harvestTag>Standard</harvestTag>
+      <harvestYield>20</harvestYield>
+      <harvestedThingDef>Chocolate</harvestedThingDef>
+      <harvestFailable>true</harvestFailable>
+    </plant>
+  </ThingDef>
+
+ 
+
+</Defs>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Issues -->
+
+
+	<IssueDef>
+		<defName>VME_Sweets</defName>
+		<label>sweets</label>
+		<iconPath>UI/Issues/Sweets</iconPath>
+	</IssueDef>
+
+	<HistoryEventDef>
+		<defName>VME_AteSimpleDessert</defName>
+		<label>ate simple dessert</label>
+	</HistoryEventDef>
+	<HistoryEventDef>
+		<defName>VME_AteFineDessert</defName>
+		<label>ate fine dessert</label>
+	</HistoryEventDef>
+	<HistoryEventDef>
+		<defName>VME_AteLavishDessert</defName>
+		<label>ate lavish dessert</label>
+	</HistoryEventDef>
+	<HistoryEventDef>
+		<defName>VME_AteGourmetDessert</defName>
+		<label>ate gourmet dessert</label>
+	</HistoryEventDef>VME_AteChocolateSweetTeeth
+	<HistoryEventDef>
+		<defName>VME_AteChocolateSweetTeeth</defName>
+		<label>ate chocolate</label>
+	</HistoryEventDef>
+	
+	<!-- Precepts -->
+
+
+
+	<PreceptDef>
+		<defName>VME_Sweets_Craved</defName>
+		<issue>VME_Sweets</issue>
+		<label>craved</label>
+		<description>Desserts and treats shouldn’t be withheld, sugary confections should be eaten at least every couple days.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Bear in mind this precept has a minimum expectation required. Moderate expectations or higher are needed for the "Desserts" need to show up.\n\n - Desserts that increase the need: Chocolate (10%), Simple dessert (15%), Fine dessert (25%), Lavish dessert (35%), Gourmet dessert (50%)</description>
+		<impact>Medium</impact>
+		<associatedMemes>
+			<li>VME_SweetTeeth</li>
+		</associatedMemes>
+		<comps>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<eventDef>VME_AteSimpleDessert</eventDef>
+				<thought>VCE_AteSimpleDessert_Craved</thought>
+			</li>
+			<li Class="VanillaMemesExpanded.PreceptComp_AddDessertNeed">
+				<eventDef>VME_AteSimpleDessert</eventDef>
+				<needGain>0.15</needGain>
+			</li>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<eventDef>VME_AteFineDessert</eventDef>
+				<thought>VCE_AteFineDessert_Craved</thought>
+			</li>
+			<li Class="VanillaMemesExpanded.PreceptComp_AddDessertNeed">
+				<eventDef>VME_AteFineDessert</eventDef>
+				<needGain>0.25</needGain>
+			</li>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<eventDef>VME_AteLavishDessert</eventDef>
+				<thought>VCE_AteLavishDessert_Craved</thought>
+			</li>
+			<li Class="VanillaMemesExpanded.PreceptComp_AddDessertNeed">
+				<eventDef>VME_AteLavishDessert</eventDef>
+				<needGain>0.35</needGain>
+			</li>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<eventDef>VME_AteGourmetDessert</eventDef>
+				<thought>VCE_AteGourmetDessert_Craved</thought>
+			</li>
+			<li Class="VanillaMemesExpanded.PreceptComp_AddDessertNeed">
+				<eventDef>VME_AteGourmetDessert</eventDef>
+				<needGain>0.5</needGain>
+			</li>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<eventDef>VME_AteChocolateSweetTeeth</eventDef>
+				<thought>VCE_AteChocolate_Craved</thought>
+			</li>
+			<li Class="VanillaMemesExpanded.PreceptComp_AddDessertNeed">
+				<eventDef>VME_AteChocolateSweetTeeth</eventDef>
+				<needGain>0.1</needGain>
+			</li>
+
+		</comps>
+	</PreceptDef>
+	
+	<ThoughtDef>
+		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
+		<defName>VCE_AteSimpleDessert_Craved</defName>
+		<durationDays>1</durationDays>
+		<stackLimit>3</stackLimit>
+		<stages>
+			<li>
+				<label>ate simple dessert (craved)</label>
+				<description>That dessert was very simple, but certainly tasty.</description>
+				<baseMoodEffect>1</baseMoodEffect>
+			</li>
+		</stages>
+		
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
+		<defName>VCE_AteFineDessert_Craved</defName>
+		<durationDays>1</durationDays>
+		<stackLimit>3</stackLimit>
+		<stages>
+			<li>
+				<label>ate fine dessert (craved)</label>
+				<description>That dessert was really good! I want more!</description>
+				<baseMoodEffect>2</baseMoodEffect>
+			</li>
+		</stages>
+		
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
+		<defName>VCE_AteLavishDessert_Craved</defName>
+		<durationDays>1</durationDays>
+		<stackLimit>3</stackLimit>
+		<stages>
+			<li>
+				<label>ate lavish dessert (craved)</label>
+				<description>That dessert was unbelievably good, I'm so eager to eat more of it!</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+		</stages>
+		
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
+		<defName>VCE_AteGourmetDessert_Craved</defName>
+		<durationDays>1</durationDays>
+		<stackLimit>3</stackLimit>
+		<stages>
+			<li>
+				<label>ate gourmet dessert (craved)</label>
+				<description>Oh my God! My palate had never experienced such an explosion of orgasmic tastes. That was pure food porn. I need more!</description>
+				<baseMoodEffect>7</baseMoodEffect>
+			</li>
+		</stages>
+		
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
+		<defName>VCE_AteChocolate_Craved</defName>
+		<durationDays>1</durationDays>	
+		<stages>
+			<li>
+				<label>ate chocolate (craved)</label>
+				<description>Chocolate IS love.</description>
+				<baseMoodEffect>1</baseMoodEffect>
+			</li>
+		</stages>
+		<modExtensions>
+			<li Class="VanillaCookingExpanded.Thought_Hediff_Extension">
+				<increaseJoy>true</increaseJoy>
+				<extraJoy>0.10</extraJoy>
+				
+			</li>
+		</modExtensions>
+	</ThoughtDef>
+	
+	
+
+	<PreceptDef>
+		<defName>VME_Sweets_Impartial</defName>
+		<issue>VME_Sweets</issue>
+		<label>impartial</label>
+		<description>Sweets aren’t that great, they can easily be left behind.</description>
+		<impact>Low</impact>
+		<classic>true</classic>
+		
+		<defaultSelectionWeight>1</defaultSelectionWeight>
+		<comps>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<eventDef>VME_AteSimpleDessert</eventDef>
+				<thought>VCE_AteSimpleDessert</thought>
+			</li>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<eventDef>VME_AteFineDessert</eventDef>
+				<thought>VCE_AteFineDessert</thought>
+			</li>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<eventDef>VME_AteLavishDessert</eventDef>
+				<thought>VCE_AteLavishDessert</thought>
+			</li>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<eventDef>VME_AteGourmetDessert</eventDef>
+				<thought>VCE_AteGourmetDessert</thought>
+			</li>
+
+		</comps>
+	</PreceptDef>
+
+
+
+</Defs>

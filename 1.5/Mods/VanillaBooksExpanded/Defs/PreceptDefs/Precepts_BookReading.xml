@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Issues -->
+
+
+	<IssueDef>
+		<defName>VME_BookReading</defName>
+		<label>book reading</label>
+		<iconPath>UI/Issues/BookReading</iconPath>
+	</IssueDef>
+
+	<HistoryEventDef>
+		<defName>VME_ReadBook</defName>
+		<label>read book</label>
+	</HistoryEventDef>
+	
+	
+	<!-- Precepts -->
+
+
+
+	<PreceptDef>
+		<defName>VME_BookReading_Desired</defName>
+		<issue>VME_BookReading</issue>
+		<label>desired</label>
+		<description>It’s important to soak up every bit of information we can, how else are we supposed to learn? Most books are even quite entertaining to boot.</description>
+		<impact>Low</impact>
+		<associatedMemes>
+			<li>VME_Cultured</li>
+		</associatedMemes>
+		<comps>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<eventDef>VME_ReadBook</eventDef>
+				<thought>VME_BookReading_Desired</thought>
+			</li>
+			
+
+		</comps>
+	</PreceptDef>
+	
+	<ThoughtDef>
+		
+		<defName>VME_BookReading_Desired</defName>
+		<durationDays>1</durationDays>
+		
+		<stages>
+			<li>
+				<label>read a book</label>
+				<description>Reading a good book is like nourishing the mind.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+		</stages>
+		
+	</ThoughtDef>
+	
+	<PreceptDef>
+		<defName>VME_BookReading_Disliked</defName>
+		<issue>VME_BookReading</issue>
+		<label>disliked</label>
+		<description>Reading is just such a chore. We retain nothing from it.</description>
+		<impact>Low</impact>
+		
+		<comps>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<eventDef>VME_ReadBook</eventDef>
+				<thought>VME_BookReading_Disliked</thought>
+			</li>
+			
+
+		</comps>
+	</PreceptDef>
+	
+	<ThoughtDef>
+		
+		<defName>VME_BookReading_Disliked</defName>
+		<durationDays>1</durationDays>
+		
+		<stages>
+			<li>
+				<label>read a book</label>
+				<description>I hate reading. I was forced to read this book and hated every second of it.</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+		</stages>
+		
+	</ThoughtDef>
+	
+	
+	
+
+
+
+</Defs>

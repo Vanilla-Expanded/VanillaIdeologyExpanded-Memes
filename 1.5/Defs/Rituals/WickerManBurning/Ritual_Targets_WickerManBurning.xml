@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RitualObligationTargetFilterDef>
+    <defName>VME_WickerMan</defName>
+    <workerClass>RitualObligationTargetWorker_ConsumableBuilding</workerClass>
+    <thingDefs>
+      <li>VME_WickerMan</li>
+    </thingDefs>
+  </RitualObligationTargetFilterDef>
+
+ 
+
+</Defs>

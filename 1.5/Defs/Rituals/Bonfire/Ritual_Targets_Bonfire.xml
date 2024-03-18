@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RitualObligationTargetFilterDef>
+    <defName>VME_Bonfire</defName>
+    <workerClass>RitualObligationTargetWorker_ThingDef</workerClass>
+    <thingDefs>
+      <li>VME_Bonfire</li>
+    </thingDefs>
+  </RitualObligationTargetFilterDef>
+
+ 
+
+</Defs>

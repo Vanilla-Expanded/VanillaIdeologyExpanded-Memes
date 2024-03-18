@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Issues -->
+	<IssueDef>
+		<defName>VME_PermitHonorCost</defName>
+		<label>permit cost</label>
+		<iconPath>UI/Issues/PermitCost</iconPath>
+	</IssueDef>
+	<!-- Precepts -->
+	<PreceptDef>
+		<defName>VME_PermitHonorCost_Halved</defName>
+		<issue>VME_PermitHonorCost</issue>
+		<label>halved</label>
+		<description>The honored have the privilege of calling upon their allies more frequently, their requests for aid met with a nod and a half a cost, easing the burden of leadership.</description>
+		<impact>Medium</impact>
+		<associatedMemes>
+			<li>VME_Royal</li>
+		</associatedMemes>
+		<displayOrderInIssue>50</displayOrderInIssue>
+		
+	</PreceptDef>
+	<PreceptDef>
+		<defName>VME_PermitHonorCost_Doubled</defName>
+		<issue>VME_PermitHonorCost</issue>
+		<label>doubled</label>
+		<description>Every call for aid is a heavy toll, a demand of honor twice the usual rate. Such is the price of urgency, a cost only to be borne when the need is direst.</description>
+		<impact>Medium</impact>
+		<displayOrderInIssue>40</displayOrderInIssue>
+		
+		
+	</PreceptDef>
+	
+</Defs>

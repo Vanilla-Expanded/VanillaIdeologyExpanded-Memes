@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<IssueDef>
+		<defName>VME_Fire</defName>
+		<label>fire</label>
+		<iconPath>UI/Issues/Fire</iconPath>
+	</IssueDef>
+	
+	
+	<!-- Precepts -->
+	<PreceptDef>
+		<defName>VME_Fire_Desired</defName>
+		<issue>VME_Fire</issue>
+		<label>desired</label>
+		<description>The warmth of ash, the light of embers, scintillating flame is an awesome sight to behold.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Colonists get moods bonuses depending on the number of active fires on the map. Campfires, torches, Stone Campfires from Vanilla Furniture Expanded - Core and Hearths from Vanilla Factions Expanded - Vikings also count.</description>
+		<impact>High</impact>
+		<displayOrderInIssue>50</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<associatedMemes>
+			<li>VME_FireWorship</li>
+		</associatedMemes>
+		<requiredMemes>
+			<li>VME_FireWorship</li>
+		</requiredMemes>
+		
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+
+				<thought>VME_Fire_Desired</thought>
+				<thoughtStageDescriptions>
+					<li>No fires nearby</li>
+					<li>Very few fires</li>
+					<li>Small fires</li>
+					<li>Saw fires</li>
+					<li>Amazing fires</li>
+					<li>Beautiful fires</li>
+					
+				</thoughtStageDescriptions>
+			</li>
+		</comps>
+	</PreceptDef>
+	<ThoughtDef>
+		<defName>VME_Fire_Desired</defName>
+		
+		<workerClass>VanillaMemesExpanded.Thought_Fire_Desired</workerClass>
+		<stages>
+			<li>
+				<label>no fires nearby</label>
+				<description>It has been too long since I’ve seen a fire.</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+			<li>
+				<label>very few fires</label>
+				<description>I miss seeing the open flames.</description>
+				<baseMoodEffect>-2</baseMoodEffect>
+			</li>
+			<li>
+				<label>small fire</label>
+				<description>I recently saw a small fire.</description>
+				<baseMoodEffect>2</baseMoodEffect>
+			</li>
+			<li>
+				<label>saw fire</label>
+				<description>I recently saw a burning flame.</description>
+				<baseMoodEffect>4</baseMoodEffect>
+			</li>
+			<li>
+				<label>amazing fires</label>
+				<description>I am surrounded by fire.</description>
+				<baseMoodEffect>7</baseMoodEffect>
+			</li>
+			<li>
+				<label>beautiful fires</label>
+				<description>I am surrounded by many beautiful flames. This is fine.</description>
+				<baseMoodEffect>9</baseMoodEffect>
+			</li>
+				
+			
+			
+		</stages>
+	</ThoughtDef>
+	<PreceptDef>
+		<defName>VME_Fire_Despised</defName>
+		<issue>VME_Fire</issue>
+		<label>despised</label>
+		<description>There is nothing as disgusting as an out of control fire. The flames shall be avoided by any means necessary, for their destructive power is unmatched.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Colonists get negative moods depending on the number of active fires on the map. Campfires, torches, Stone Campfires from Vanilla Furniture Expanded - Core and Hearths from Vanilla Factions Expanded - Vikings also count.</description>
+		<impact>High</impact>
+		<displayOrderInIssue>40</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		
+		
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+
+				<thought>VME_Fire_Despised</thought>
+				<thoughtStageDescriptions>
+					<li>No fires nearby</li>
+					<li>Very few fires</li>
+					<li>Small fire</li>
+					<li>Saw fire</li>
+					<li>Blazing fires</li>
+					<li>Conflagration</li>
+					
+				</thoughtStageDescriptions>
+			</li>
+		</comps>
+	</PreceptDef>
+	<ThoughtDef>
+		<defName>VME_Fire_Despised</defName>
+		
+		<workerClass>VanillaMemesExpanded.Thought_Fire_Desired</workerClass>
+		<stages>
+			<li>
+				<label>no fires nearby</label>
+				<description>There are no fires nearby. That's good.</description>
+				<baseMoodEffect>3</baseMoodEffect>
+			</li>
+			<li>
+				<label>very few fires</label>
+				<description>Looking at those fires makes me uneasy.</description>
+				<baseMoodEffect>-2</baseMoodEffect>
+			</li>
+			<li>
+				<label>small fire</label>
+				<description>I recently saw a small fire. I'd rather see it extinguished.</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+			<li>
+				<label>saw fire</label>
+				<description>I recently saw a burning flame. It makes me very uncomfortable!</description>
+				<baseMoodEffect>-6</baseMoodEffect>
+			</li>
+			<li>
+				<label>blazing fires</label>
+				<description>I am surrounded by fire! This is horrible!</description>
+				<baseMoodEffect>-8</baseMoodEffect>
+			</li>
+			<li>
+				<label>conflagration</label>
+				<description>AHHHHHH! Everything is on fire!</description>
+				<baseMoodEffect>-15</baseMoodEffect>
+			</li>
+				
+			
+			
+		</stages>
+	</ThoughtDef>
+	
+</Defs>

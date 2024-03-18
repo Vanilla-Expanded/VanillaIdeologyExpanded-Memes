@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Issues -->
+
+ 
+  <IssueDef>
+    <defName>VME_TradingPrice</defName>
+    <label>trading price</label>
+    <iconPath>UI/Issues/SellingPrice</iconPath>
+  </IssueDef>
+
+  <!-- Precepts -->
+
+ 
+
+  <PreceptDef>
+    <defName>VME_TradingPrice_Improved</defName>
+    <issue>VME_TradingPrice</issue>
+    <label>improved</label>
+    <description>Everything has a price, and it just so happens our kind are particularly persuasive when it comes to proving that to others.</description>
+    <impact>Medium</impact>
+    <associatedMemes>
+      <li>VME_Trader</li>
+    </associatedMemes>
+	<statOffsets>
+      <TradePriceImprovement>0.1</TradePriceImprovement>
+	  
+    </statOffsets>
+   
+  </PreceptDef>
+  
+  
+
+ 
+
+</Defs>

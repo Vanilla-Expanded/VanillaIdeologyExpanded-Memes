@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<IssueDef>
+		<defName>VME_Junk</defName>
+		<label>junk</label>
+		<iconPath>UI/Issues/Junk</iconPath>
+	</IssueDef>
+	
+	<!-- Precepts -->
+	<PreceptDef>
+		<defName>VME_Junk_Beautiful</defName>
+		<issue>VME_Junk</issue>
+		<label>beautiful</label>
+		<description>The machinations of old are breath-taking, and their weathering should be viewed as art. It's wonderful to live surrounded by things discarded by others.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Ancient junk buildings can be uninstalled and placed again as needed.\n - Colonists get mood penalties / bonuses depending on amount of ancient junk buildings in a 20 tiles radius around them. Effect checks approximately once every 5 hours.</description>
+		<impact>High</impact>
+		<displayOrderInIssue>50</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<associatedMemes>
+			<li>VME_Scrapper</li>
+		</associatedMemes>
+		<selectionWeight>1</selectionWeight>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+
+				<thought>VME_Junk_Beautiful</thought>
+				<thoughtStageDescriptions>
+					<li>No junk</li>
+					<li>Few pieces of ancient junk (1 nearby)</li>
+					<li>Few pieces of ancient junk (2 nearby)</li>
+					<li>Few pieces of ancient junk (3 nearby)</li>
+					<li>Few pieces of ancient junk (4 nearby)</li>
+					<li>very little junk (5 nearby)</li>
+					<li>Small junk</li>
+					<li>Saw junk</li>
+					<li>Amazing junk</li>
+					<li>Beautiful junk</li>
+					
+				</thoughtStageDescriptions>
+			</li>
+		</comps>
+	</PreceptDef>
+	<ThoughtDef>
+		<defName>VME_Junk_Beautiful</defName>
+		<minExpectation>VeryLow</minExpectation>
+		<workerClass>VanillaMemesExpanded.Thought_Junk_Beautiful</workerClass>
+		<stages>
+			<li>
+				<label>no junk</label>
+				<description>It has been too long since I’ve seen junk.</description>
+				<baseMoodEffect>-15</baseMoodEffect>
+			</li>
+			<li>
+				<label>few pieces of ancient junk (1 nearby)</label>
+				<description>This area is way too sparse, I miss seeing the junk.</description>
+				<baseMoodEffect>-10</baseMoodEffect>
+			</li>
+			<li>
+				<label>few pieces of ancient junk (2 nearby)</label>
+				<description>This area has very few relics of ancient technology.</description>
+				<baseMoodEffect>-8</baseMoodEffect>
+			</li>
+			<li>
+				<label>few pieces of ancient junk (3 nearby)</label>
+				<description>We need to gather more pieces of ancient junk.</description>
+				<baseMoodEffect>-6</baseMoodEffect>
+			</li>
+			<li>
+				<label>few pieces of ancient junk (4 nearby)</label>
+				<description>We have too few pieces of ancient junk lying around.</description>
+				<baseMoodEffect>-1</baseMoodEffect>
+			</li>
+			<li>
+				<label>very little junk (5 nearby)</label>
+				<description>We should gather at least a few more pieces. Our junkyard is lacking.</description>
+				<baseMoodEffect>1</baseMoodEffect>
+			</li>
+			<li>
+				<label>small junk</label>
+				<description>I recently saw a small pile of junk.</description>
+				<baseMoodEffect>2</baseMoodEffect>
+			</li>
+			<li>
+				<label>saw junk</label>
+				<description>I recently saw junk.</description>
+				<baseMoodEffect>4</baseMoodEffect>
+			</li>
+			<li>
+				<label>amazing junk</label>
+				<description>I am surrounded by junk.</description>
+				<baseMoodEffect>7</baseMoodEffect>
+			</li>
+			<li>
+				<label>beautiful junk</label>
+				<description>I am surrounded by a junkyard and I love it.</description>
+				<baseMoodEffect>9</baseMoodEffect>
+			</li>
+				
+			
+			
+		</stages>
+	</ThoughtDef>
+	
+	<PreceptDef>
+		<defName>VME_Junk_Preferred</defName>
+		<issue>VME_Junk</issue>
+		<label>preferred</label>
+		<description>Ancient junk reminds us of the tribulations of our forefathers, subject to the eternal struggle of humanity among the stars. We can learn a great deal from studying this discarded tech.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Ancient junk buildings can be uninstalled and placed again as needed.\n - Colonists get moderate mood penalties / bonuses depending on amount of ancient junk buildings in a 20 tiles radius around them. Effect checks approximately once every 5 hours.</description>
+		<impact>Medium</impact>
+		<displayOrderInIssue>40</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<associatedMemes>
+			<li>VME_Scrapper</li>
+		</associatedMemes>
+		<selectionWeight>0</selectionWeight>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+
+				<thought>VME_Junk_Preferred</thought>
+				<thoughtStageDescriptions>
+					<li>No junk</li>
+					<li>Few pieces of ancient junk (1 nearby)</li>
+					<li>Few pieces of ancient junk (2 nearby)</li>
+					<li>Few pieces of ancient junk (3 nearby)</li>
+					<li>Few pieces of ancient junk (4 nearby)</li>
+					<li>very little junk (5 nearby)</li>
+					<li>Small junk</li>
+					<li>Saw junk</li>
+					<li>Plenty of junk</li>
+					<li>Lots of junk</li>
+					
+				</thoughtStageDescriptions>
+			</li>
+		</comps>
+	</PreceptDef>
+	<ThoughtDef>
+		<defName>VME_Junk_Preferred</defName>
+		<minExpectation>VeryLow</minExpectation>
+		<workerClass>VanillaMemesExpanded.Thought_Junk_Beautiful</workerClass>
+		<stages>
+			<li>
+				<label>no junk</label>
+				<description>I'd prefer if the colony had some examples of ancient junk.</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+			<li>
+				<label>few pieces of ancient junk (1 nearby)</label>
+				<description>This area is way too sparse, we could learn a lot from ancient technology.</description>
+				<baseMoodEffect>-3</baseMoodEffect>
+			</li>
+			<li>
+				<label>few pieces of ancient junk (2 nearby)</label>
+				<description>This area has very few relics of ancient technology.</description>
+				<baseMoodEffect>-2</baseMoodEffect>
+			</li>
+			<li>
+				<label>few pieces of ancient junk (3 nearby)</label>
+				<description>We need to gather more pieces of ancient junk.</description>
+				<baseMoodEffect>-1</baseMoodEffect>
+			</li>
+			<li>
+				<label>few pieces of ancient junk (4 nearby)</label>
+				<description>We have too few pieces of ancient junk lying around.</description>
+				<baseMoodEffect>0</baseMoodEffect>
+			</li>
+			<li>
+				<label>very little junk (5 nearby)</label>
+				<description>We should gather at least a few more pieces. We can learn a lot from ancient technology.</description>
+				<baseMoodEffect>1</baseMoodEffect>
+			</li>
+			<li>
+				<label>small junk</label>
+				<description>I recently saw a small pile of junk.</description>
+				<baseMoodEffect>2</baseMoodEffect>
+			</li>
+			<li>
+				<label>saw junk</label>
+				<description>I recently saw junk.</description>
+				<baseMoodEffect>3</baseMoodEffect>
+			</li>
+			<li>
+				<label>plenty of junk</label>
+				<description>I am surrounded by junk.</description>
+				<baseMoodEffect>4</baseMoodEffect>
+			</li>
+			<li>
+				<label>lots of junk</label>
+				<description>I am surrounded by a junkyard. I find these examples of ancient technology to be fascinating.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+				
+			
+			
+		</stages>
+	</ThoughtDef>
+	
+	
+</Defs>

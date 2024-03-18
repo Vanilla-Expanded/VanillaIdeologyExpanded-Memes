@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef Name="VME_WaterBuildingBase" Abstract="True">
+		<category>Building</category>
+		<thingClass>Building</thingClass>
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+		<selectable>true</selectable>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<repairEffect>Repair</repairEffect>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<filthLeaving>Filth_RubbleBuilding</filthLeaving>
+		<statBases>
+			<SellPriceFactor>0.70</SellPriceFactor>
+		</statBases>
+	</ThingDef>
+	<ThingDef ParentName="VME_WaterBuildingBase">
+		<defName>VME_SmallFishingTrap</defName>
+		<label>small fishing trap</label>
+		<description>A primitive, though quite ingenious barricade made of wooden stick and netting meant to entrap incoming fish and leave them with no way out. Fish traps are eventually destroyed by the currents and struggling fish, and will need replacing.\n\nThis is a small trap that will only catch small sized fish.</description>
+		<castEdgeShadows>false</castEdgeShadows>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<tickerType>Rare</tickerType>
+		<useHitPoints>true</useHitPoints>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<designationCategory>Production</designationCategory>
+		<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+		<uiIconScale>0.65</uiIconScale>
+		<thingCategories>
+			<li>BuildingsProduction</li>
+		</thingCategories>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Building/Misc/FishTraps/FishTrap1x1</texPath>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<fillPercent>0.5</fillPercent>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>7</Mass>
+			<Beauty>-5</Beauty>
+			<WorkToMake>1000</WorkToMake>
+			<StyleDominance>10</StyleDominance>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<costList>
+			<Cloth>10</Cloth>
+			<WoodLog>50</WoodLog>
+		</costList>
+		<placeWorkers>
+			<li>VanillaMemesExpanded.PlaceWorker_OnWater</li>
+		</placeWorkers>
+		<comps>
+			<li Class="VCE_Fishing.CompProperties_FishTrap">
+				<spawnIntervalRange>5000~6000</spawnIntervalRange>
+				<fishTrapDescriptionInspect>VME_SmallFishTrapDescriptionInspect</fishTrapDescriptionInspect>
+				<fishSpawnedIn>VME_SmallFishCaughtIn</fishSpawnedIn>
+				<fishSize>Small</fishSize>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="VME_WaterBuildingBase">
+		<defName>VME_MediumFishingTrap</defName>
+		<label>medium fishing trap</label>
+		<description>A primitive, though quite ingenious barricade made of wooden stick and netting meant to entrap incoming fish and leave them with no way out. Fish traps are eventually destroyed by the currents and struggling fish, and will need replacing.\n\nThis is a medium trap that will only catch medium sized fish.</description>
+		<castEdgeShadows>false</castEdgeShadows>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<tickerType>Rare</tickerType>
+		<useHitPoints>true</useHitPoints>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<designationCategory>Production</designationCategory>
+		<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+		<uiIconScale>0.65</uiIconScale>
+		 <size>(3,3)</size>
+		<thingCategories>
+			<li>BuildingsProduction</li>
+		</thingCategories>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Building/Misc/FishTraps/FishTrap3x3</texPath>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+		<fillPercent>0.5</fillPercent>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>7</Mass>
+			<Beauty>-5</Beauty>
+			<WorkToMake>1000</WorkToMake>
+			<StyleDominance>10</StyleDominance>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<costList>
+			<Cloth>20</Cloth>
+			<WoodLog>75</WoodLog>
+		</costList>
+		<placeWorkers>
+			<li>VanillaMemesExpanded.PlaceWorker_OnWater</li>
+		</placeWorkers>
+		<comps>
+			<li Class="VCE_Fishing.CompProperties_FishTrap">
+				<spawnIntervalRange>10000~11000</spawnIntervalRange>
+				<fishTrapDescriptionInspect>VME_MediumFishTrapDescriptionInspect</fishTrapDescriptionInspect>
+				<fishSpawnedIn>VME_MediumFishCaughtIn</fishSpawnedIn>
+				<fishSize>Medium</fishSize>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="VME_WaterBuildingBase">
+		<defName>VME_LargeFishingTrap</defName>
+		<label>large fishing trap</label>
+		<description>A primitive, though quite ingenious barricade made of wooden stick and netting meant to entrap incoming fish and leave them with no way out. Fish traps are eventually destroyed by the currents and struggling fish, and will need replacing.\n\nThis is a large trap that will only catch large sized fish.</description>
+		<castEdgeShadows>false</castEdgeShadows>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<tickerType>Rare</tickerType>
+		<useHitPoints>true</useHitPoints>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<designationCategory>Production</designationCategory>
+		<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+		<uiIconScale>0.65</uiIconScale>
+		 <size>(5,2)</size>
+		<thingCategories>
+			<li>BuildingsProduction</li>
+		</thingCategories>
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<texPath>Things/Building/Misc/FishTraps/FishTrap5x2</texPath>
+			<drawSize>(5,2)</drawSize>
+		</graphicData>
+		<fillPercent>0.5</fillPercent>
+		<rotatable>true</rotatable>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>7</Mass>
+			<Beauty>-5</Beauty>
+			<WorkToMake>1000</WorkToMake>
+			<StyleDominance>10</StyleDominance>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<costList>
+			<Cloth>30</Cloth>
+			<WoodLog>100</WoodLog>
+		</costList>
+		<placeWorkers>
+			<li>VanillaMemesExpanded.PlaceWorker_OnWater</li>
+		</placeWorkers>
+		<comps>
+			<li Class="VCE_Fishing.CompProperties_FishTrap">
+				<spawnIntervalRange>16000~17000</spawnIntervalRange>
+				<fishTrapDescriptionInspect>VME_LargeFishTrapDescriptionInspect</fishTrapDescriptionInspect>
+				<fishSpawnedIn>VME_LargeFishCaughtIn</fishSpawnedIn>
+				<fishSize>Large</fishSize>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

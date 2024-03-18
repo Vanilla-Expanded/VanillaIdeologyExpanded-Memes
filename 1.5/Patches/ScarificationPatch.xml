@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+
+	
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/PreceptDef[defName = "Scarification_Heavy"]/requiredMemes</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/PreceptDef[defName = "Scarification_Heavy"]</xpath>
+			<value>
+				<requiredMemes>
+					<li>VME_Fleshcrafters</li>
+				</requiredMemes>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+		<xpath>/Defs/PreceptDef[defName = "Scarification_Heavy"]/requiredMemes</xpath>
+			<value>
+				<li>VME_Fleshcrafters</li>
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/PreceptDef[defName = "ScarificationCeremony"]/associatedMemes</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/PreceptDef[defName = "ScarificationCeremony"]</xpath>
+			<value>
+				<associatedMemes>
+					<li>VME_Fleshcrafters</li>
+				</associatedMemes>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+		<xpath>/Defs/PreceptDef[defName = "ScarificationCeremony"]/associatedMemes</xpath>
+			<value>
+				<li>VME_Fleshcrafters</li>
+			</value>
+		</match>
+	</Operation>
+
+
+
+</Patch>

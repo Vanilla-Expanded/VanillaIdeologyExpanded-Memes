@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ 
+  
+  <RitualPatternDef>
+    <defName>VME_WickerManBurningRitual</defName>
+    <ritualBehavior>VME_WickerManBurningBehaviour</ritualBehavior>
+   
+    <ritualObligationTargetFilter>VME_WickerMan</ritualObligationTargetFilter>
+    <alwaysStartAnytime>true</alwaysStartAnytime>
+	<ritualOutcomeEffect>VME_WickerManBurningOutcome</ritualOutcomeEffect>
+  </RitualPatternDef>
+
+
+
+ 
+
+</Defs>

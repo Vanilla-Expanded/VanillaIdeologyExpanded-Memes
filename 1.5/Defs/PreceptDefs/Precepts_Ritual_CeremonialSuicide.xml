@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Precepts -->
+
+
+
+	<PreceptDef>
+		<defName>VME_CeremonialSuicidePrecept</defName>
+		<label>ceremonial suicide</label>
+		<description>A ceremonial suicide.</description>
+		<issue>Ritual</issue>
+		<preceptClass>Precept_Ritual</preceptClass>		
+		<countsTowardsPreceptLimit>false</countsTowardsPreceptLimit>
+		<selectionWeight>1.0</selectionWeight>
+		<ritualPatternBase>VME_CeremonialSuicideRitual</ritualPatternBase>
+		<iconPath>UI/Rituals/CelebrationCeremonialSuicide</iconPath>
+		<ignoreNameUniqueness>false</ignoreNameUniqueness>
+		<requiredMemes>
+			<li>VME_Bushido</li>
+		</requiredMemes>
+		<skipOpportunityLettersBeforeDay>0</skipOpportunityLettersBeforeDay>		
+		<canGenerateAsSpecialPrecept>false</canGenerateAsSpecialPrecept>
+		<visible>true</visible>
+		<listedForRoles>false</listedForRoles>
+	</PreceptDef>
+
+
+
+
+
+</Defs>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<AbilityGroupDef>
+		<defName>VME_Trader</defName>
+		<cooldownTicks>300000</cooldownTicks>
+	</AbilityGroupDef>
+	<AbilityDef>
+		<defName>VME_CallTradeCaravan</defName>
+		<label>call trade caravan</label>
+		<jobDef>CastAbilityOnThing</jobDef>
+		<groupDef>VME_Trader</groupDef>
+		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+		<description>Summon a trade caravan.</description>
+		<targetRequired>false</targetRequired>
+		<gizmoClass>Command_Ability</gizmoClass>
+		<iconPath>UI/Abilities/SummonTrader</iconPath>
+		<uiOrder>1</uiOrder>
+		
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<warmupTime>3</warmupTime>
+			<range>1</range>
+			 <drawAimPie>False</drawAimPie>
+			 <requireLineOfSight>False</requireLineOfSight>
+			<targetParams>
+				<canTargetSelf>true</canTargetSelf>
+        <canTargetPawns>false</canTargetPawns>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetAnimals>false</canTargetAnimals>
+        <canTargetHumans>false</canTargetHumans>
+        <canTargetMechs>false</canTargetMechs>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class = "VanillaMemesExpanded.CompProperties_AbilityCallTradeCaravan">
+				
+			</li>
+			
+		</comps>
+		<requiredMemes>
+			<li>VME_Trader</li>
+		</requiredMemes>
+	</AbilityDef>
+  
+ 
+		
+		
+		
+</Defs>

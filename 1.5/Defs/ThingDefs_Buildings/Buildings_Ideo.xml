@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="IdeoBurnableBase">
+		<defName>VME_WickerMan</defName>
+		<label>wicker man</label>
+		<description>A large humanoid figure made out of dry brush, thatch, and wood scraps. Prisoners have to be physically restrained to the figurine then burned alive as part of a trial or ritual.</description>
+		<ideoBuildingNamerBase>NamerBurnTarget</ideoBuildingNamerBase>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Building/Misc/Wickerman/Wickerman</texPath>
+			<drawSize>(6,6)</drawSize>
+			<shadowData>
+				<volume>(0.5, 0.3 ,0.5)</volume>
+			</shadowData>
+		</graphicData>
+		<size>(3,3)</size>
+		<costList>
+			<WoodLog>80</WoodLog>
+		</costList>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<WorkToBuild>3000</WorkToBuild>
+			<Mass>25</Mass>
+		</statBases>
+		<altitudeLayer>Blueprint</altitudeLayer>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<passability>PassThroughOnly</passability>
+		<comps>
+			<li Class="VanillaMemesExpanded.CompProperties_TimedFireOverlay">
+				<fireSize>3</fireSize>
+				<minRitualProgress>1</minRitualProgress>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>10</glowRadius>
+				<glowColor>(252,187,113,0)</glowColor>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="IdeoBurnableBase">
+		<defName>VME_Bonfire</defName>
+		<label>bonfire</label>
+		<description>An incredibly large and bright-burning bonfire made out of a carefully organized pile of logs on a stone base. Used heavily during flame-based rituals and can only be placed outdoors.</description>
+		<ideoBuildingNamerBase>NamerBurnTarget</ideoBuildingNamerBase>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Building/Misc/Bonfire/Bonfire</texPath>
+			<drawSize>(5,5)</drawSize>
+		</graphicData>
+		<size>(5,5)</size>
+		<costList>
+			<WoodLog>400</WoodLog>
+		</costList>
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<WorkToBuild>6000</WorkToBuild>
+			<Mass>400</Mass>
+		</statBases>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<passability>PassThroughOnly</passability>
+		<comps>
+			<li Class="VanillaMemesExpanded.CompProperties_TimedFireOverlay">
+				<fireSize>6</fireSize>
+				<minRitualProgress>0</minRitualProgress>
+				<upOffset>2</upOffset>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>20</glowRadius>
+				<glowColor>(252,187,113,0)</glowColor>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers>
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>VME_BonfireAfterRitual</defName>
+		<label>bonfire</label>
+		<description>An incredibly large and bright-burning bonfire made out of a carefully organized pile of logs on a stone base. Used heavily during flame-based rituals and can only be placed outdoors. Will last for at least two quadrums and provide beauty nearby, as well as count for the Fire: Desired precept.</description>
+		<castEdgeShadows>true</castEdgeShadows>
+		<altitudeLayer>Building</altitudeLayer>
+		<thingClass>VanillaMemesExpanded.Building_Bonfire</thingClass>
+		<passability>PassThroughOnly</passability>
+		<pathCost>500</pathCost>
+		<tickerType>Normal</tickerType>
+		<useHitPoints>true</useHitPoints>	
+		 <drawerType>RealtimeOnly</drawerType>
+		<size>(5,5)</size>
+		<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+		<uiIconScale>0.65</uiIconScale>		
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Building/Misc/Bonfire/Bonfire</texPath>
+			<drawSize>(5,5)</drawSize>
+		</graphicData>
+		<fillPercent>0.5</fillPercent>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>			
+			<Beauty>150</Beauty>
+			<WorkToMake>6000</WorkToMake>
+			
+			<Flammability>0</Flammability>
+			<MeditationFocusStrength>0.0</MeditationFocusStrength>
+		</statBases>
+		<comps>
+			<li Class="VanillaMemesExpanded.CompProperties_PermanentFireOverlay">
+				<fireSize>6</fireSize>				
+				<upOffset>2</upOffset>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>20</glowRadius>
+				<glowColor>(252,187,113,0)</glowColor>
+			</li>
+		</comps>
+		
+	</ThingDef>
+	<ThingDef ParentName="BuildingBase">
+		<defName>VME_MechanoidEffigy</defName>
+		<label>mechanoid effigy</label>
+		<description>A structure assembled from scrapped mechanoid parts. Emits an IFF programming signal capable of confusing ancient mechanoid receptors. Should two exist per colonist enough signal noise will soft reset ancient mechanoid programming, causing an immediate retreat.</description>
+		<castEdgeShadows>false</castEdgeShadows>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<tickerType>Normal</tickerType>
+		<useHitPoints>true</useHitPoints>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<designationCategory>Misc</designationCategory>
+		<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+		<uiIconScale>0.65</uiIconScale>
+		<thingCategories>
+			<li>BuildingsSecurity</li>
+		</thingCategories>
+		<graphicData>
+			<graphicClass>Graphic_Random</graphicClass>
+			<texPath>Things/Building/Misc/MechanoidEffigy</texPath>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+		<fillPercent>0.5</fillPercent>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>7</Mass>
+			<Beauty>-5</Beauty>
+			<WorkToMake>5000</WorkToMake>
+			<StyleDominance>10</StyleDominance>
+			<Flammability>1.0</Flammability>
+			<SellPriceFactor>1.10</SellPriceFactor>
+			<MeditationFocusStrength>0.0</MeditationFocusStrength>
+		</statBases>
+		<costList>
+			<Plasteel>50</Plasteel>
+			<Steel>5</Steel>
+		</costList>
+	</ThingDef>
+	<ThingDef ParentName="BuildingBase">
+		<defName>VME_Obelisk</defName>
+		<label>ominous obelisk</label>
+		<description>An ominous-looking obelisk of pure chiseled stone. It seems to radiate an aura of hopelessness and despair.\n\nThe Corruption need of any colonist in an obelisk's radius of effect won't decrease.</description>
+		<castEdgeShadows>true</castEdgeShadows>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<tickerType>Normal</tickerType>
+		<useHitPoints>true</useHitPoints>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<designationCategory>Misc</designationCategory>
+		<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+		<uiIconScale>0.65</uiIconScale>
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
+		<graphicData>
+			<graphicClass>Graphic_Random</graphicClass>
+			<texPath>Things/Building/BuildingStyles/Eldritch/Obelisk</texPath>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+		<fillPercent>0.5</fillPercent>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Mass>50</Mass>
+			<Beauty>-10</Beauty>
+			<WorkToMake>5000</WorkToMake>
+			<StyleDominance>30</StyleDominance>
+			<Flammability>0</Flammability>
+			<MeditationFocusStrength>0.0</MeditationFocusStrength>
+		</statBases>
+		<stuffCategories>
+			<li>Stony</li>
+		</stuffCategories>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<costStuffCount>100</costStuffCount>
+		<placeWorkers><li>VanillaMemesExpanded.PlaceWorker_ShowObeliskRadius</li></placeWorkers>
+	</ThingDef>
+	<ThingDef ParentName="BuildingNaturalBase">
+		<defName>VME_InsectNest</defName>
+		<label>insect nest</label>
+		<description>A large, swollen hive that seems to be seeping high amounts of bubbling insectoid jelly but not incubating any insectoids themselves.\n\nThe nest will need maintenance by a colonist with the insectoid herder role. If maintenance reaches 0%, the nest will be destroyed.</description>
+		<thingClass>VanillaMemesExpanded.Building_InsectNest</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Misc/InsectNest/VIE_InsectNest</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.6</drawSize>
+		</graphicData>
+		<uiIconScale>0.65</uiIconScale>
+		<altitudeLayer>Building</altitudeLayer>
+		<rotatable>false</rotatable>
+		<fillPercent>0.5</fillPercent>
+		<statBases>
+			<MaxHitPoints>130</MaxHitPoints>
+			<Flammability>1.5</Flammability>
+		</statBases>
+		<pathCost>42</pathCost>
+		<blockWind>true</blockWind>
+		<tickerType>Normal</tickerType>
+		<passability>PassThroughOnly</passability>
+		<killedLeavings>
+			<InsectJelly>30</InsectJelly>
+		</killedLeavings>
+		<comps>
+			<li Class="CompProperties_Spawner">
+				<thingToSpawn>InsectJelly</thingToSpawn>
+				<spawnCount>5</spawnCount>
+				<spawnIntervalRange>26000~30000</spawnIntervalRange>
+				<spawnMaxAdjacent>40</spawnMaxAdjacent>
+				<spawnForbidden>false</spawnForbidden>
+				<saveKeysPrefix>jelly</saveKeysPrefix>
+				<writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

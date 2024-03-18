@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ 
+
+  <!-- Precepts -->
+
+  <PreceptDef>
+    <defName>VME_Apostasy_Accepted</defName>
+    <issue>Apostasy</issue>
+    <label>accepted</label>
+    <description>We feel bound by authority alone to follow our current ideology, and will not think twice if an opportunity presents itself to change our ways.</description>
+    <impact>Medium</impact>
+    <displayOrderInIssue>-10</displayOrderInIssue>
+    
+    <associatedMemes>
+      <li>VME_HardcoreIndustrialism</li>
+  
+    </associatedMemes>
+    <statFactors>
+      <CertaintyLossFactor>3</CertaintyLossFactor>
+    </statFactors>
+   
+  </PreceptDef>
+  
+  <PreceptDef>
+    <defName>Apostasy_Despicable</defName>
+    <issue>Apostasy</issue>
+    <label>despicable</label>
+    <description>Being coerced or otherwise manipulated into following a different belief is a despicable act. If somebody seeks knowledge of another's faith, then let them ask for it naturally.</description>
+    <impact>Low</impact>
+    <displayOrderInIssue>19</displayOrderInIssue>
+    <conflictingMemes>
+      <li>Guilty</li>
+    </conflictingMemes>
+    <associatedMemes>
+      <li>VME_Egalitarian</li>
+     
+    </associatedMemes>
+    <statFactors>
+      <CertaintyLossFactor>0.2</CertaintyLossFactor>
+    </statFactors>
+    <comps>
+      <li Class="PreceptComp_KnowsMemoryThought">
+        <eventDef>ChangedIdeo</eventDef>
+        <thought>ChangedIdeo_Know_Abhorrent</thought>
+        <description>Changed ideoligion</description>
+        <doerMustBeMyIdeo>true</doerMustBeMyIdeo>
+      </li>
+      <li Class="PreceptComp_SituationalThought">
+        <thought>IsApostate_Abhorrent_Social</thought>
+      </li>
+    </comps>
+  </PreceptDef>
+
+ 
+
+</Defs>

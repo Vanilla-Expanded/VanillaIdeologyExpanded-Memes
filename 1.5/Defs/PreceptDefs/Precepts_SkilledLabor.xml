@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	 <!-- Issues -->
+
+ 
+  <IssueDef>
+    <defName>VME_SkilledLabor</defName>
+    <label>skilled labor</label>
+    <iconPath>UI/Issues/SkilledLabor</iconPath>
+  </IssueDef>
+
+  <!-- Precepts -->
+
+ 
+
+  <PreceptDef>
+    <defName>VME_SkilledLabor_Slow</defName>
+    <issue>VME_SkilledLabor</issue>
+    <label>slow</label>
+    <description>Pursuits of skilled labor are meticulous and time-consuming, it is better to focus our attention and efforts elsewhere.</description>
+    <impact>High</impact>
+    <associatedMemes>
+      <li>VME_CraftCulture</li>
+	  <li>VME_HardcoreIndustrialism</li>
+	
+    </associatedMemes>
+	<statOffsets>
+      <MedicalTendSpeed>-0.5</MedicalTendSpeed>
+	  <ConstructionSpeed>-0.5</ConstructionSpeed>
+	  <ResearchSpeed>-0.5</ResearchSpeed>
+    </statOffsets>
+ 
+   
+  </PreceptDef>
+  
+  <PreceptDef>
+    <defName>VME_SkilledLabor_Relaxed</defName>
+    <issue>VME_SkilledLabor</issue>
+    <label>relaxed</label>
+    <description>Skilled labour should be approached with care and time. Rushing things only leads to sloppy results and unfortunate accidents.</description>
+    <impact>Medium</impact>
+    <associatedMemes>
+      <li>VME_CraftCulture</li>
+	  <li>VME_HardcoreIndustrialism</li>
+	
+    </associatedMemes>
+	<statOffsets>
+      <MedicalTendSpeed>-0.15</MedicalTendSpeed>
+	  <ConstructionSpeed>-0.25</ConstructionSpeed>
+	  <ResearchSpeed>-0.25</ResearchSpeed>
+    </statOffsets>
+ 
+   
+  </PreceptDef>
+  
+ 
+
+</Defs>
