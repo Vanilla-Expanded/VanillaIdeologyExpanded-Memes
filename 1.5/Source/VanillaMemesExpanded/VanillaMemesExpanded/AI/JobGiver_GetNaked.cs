@@ -11,10 +11,9 @@ namespace VanillaMemesExpanded
 	{
 		protected override Job TryGiveJob(Pawn pawn)
 		{
-			pawn.apparel.Notify_ApparelChanged();
-		
-			//pawn.Drawer.renderer.graphics.apparelGraphics.Clear();
-			return null;
+            pawn.health.AddHediff(InternalDefOf.VME_Naked);
+            pawn.Drawer.renderer.SetAllGraphicsDirty();
+            return null;
 		}
 
 		

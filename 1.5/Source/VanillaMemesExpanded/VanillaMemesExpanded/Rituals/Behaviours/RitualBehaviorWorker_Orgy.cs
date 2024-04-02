@@ -24,9 +24,10 @@ namespace VanillaMemesExpanded
 		{
 			foreach(Pawn p in ritual.Map.mapPawns.FreeColonistsAndPrisonersSpawned)
             {
-				//p.Drawer.renderer.graphics.ResolveApparelGraphics();
-				//p.Drawer.renderer.graphics.SetApparelGraphicsDirty();
-				PortraitsCache.SetDirty(p);
+                Hediff hediff = p.health.hediffSet.GetFirstHediffOfDef(InternalDefOf.VME_Naked);
+                if (hediff != null) { p.health.RemoveHediff(hediff); }
+                p.Drawer.renderer.SetAllGraphicsDirty();
+                PortraitsCache.SetDirty(p);
 				GlobalTextureAtlasManager.TryMarkPawnFrameSetDirty(p);
 
 			}

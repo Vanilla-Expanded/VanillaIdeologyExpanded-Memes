@@ -359,6 +359,8 @@
     <Compile Include="Harmony\LordToil_PanicFlee_Init.cs" />
     <Compile Include="Harmony\Command_SetPlantToGrow_IsPlantAvailable.cs" />
     <Compile Include="Harmony\Need_Joy_FallPerInterval.cs" />
+    <Compile Include="Harmony\PawnRenderNodeWorker_Apparel_Body_CanDrawNow.cs" />
+    <Compile Include="Harmony\PawnRenderNodeWorker_Apparel_Head_HeadgearVisible.cs" />
     <Compile Include="Harmony\Pawn_RoyaltyTracker_OnPostTitleChanged.cs" />
     <Compile Include="Harmony\Pawn_RoyaltyTracker_TryRemoveFavor.cs" />
     <Compile Include="Harmony\RitualObligationTargetWorker_IdeoBuildingOrRitualSpot_CanUseTargetInternal.cs" />

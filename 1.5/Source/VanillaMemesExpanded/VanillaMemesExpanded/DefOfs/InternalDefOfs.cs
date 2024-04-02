@@ -200,7 +200,8 @@ namespace VanillaMemesExpanded
 		public static JobDef VME_MaintainInsectNest;
 		public static JobDef VME_DanceWithLove;
 
-		public static HediffDef VME_MedicalEmergencyHediff;
+        public static HediffDef VME_Naked;
+        public static HediffDef VME_MedicalEmergencyHediff;
         [MayRequireRoyalty]
         public static HediffDef VME_WorkCommandBuff;
 

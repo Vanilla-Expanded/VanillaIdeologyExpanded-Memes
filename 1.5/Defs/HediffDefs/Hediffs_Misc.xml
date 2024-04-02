@@ -26,4 +26,18 @@
 			</li>
 		</stages>
 	</HediffDef>
+	<HediffDef>
+		<defName>VME_Naked</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>naked</label>
+		<description>This person is naked.</description>
+		<defaultLabelColor>(.8,0,0)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<stages>
+			<li>
+
+			</li>
+		</stages>
+	</HediffDef>
 </Defs>
