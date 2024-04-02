@@ -7,7 +7,7 @@
 		<categoryDef>Mild</categoryDef>
 		<memes>
 			<li>VME_Astrology</li>
-			<li>AA_BiologicalCorruptors</li>
+			<li>AM_BiologicalCorruptors</li>
 		</memes>
 	</IdeoPresetDef>
 	<IdeoPresetDef>
@@ -16,7 +16,7 @@
 		<description>The dark confines of the Universe hid the existence of the Flesh that Hungers, a transdimensional conversion that reveals the true reality of life. We will forcefully bring its boon into the whole galaxy, erasing the obsolete examples of prior lifeforms, faulty and incomplete as they are.\n\n&lt;color=#E5E54C&gt;Recommended Structure:&lt;/color&gt;\n - Alienism.</description>
 		<categoryDef>Intense</categoryDef>
 		<memes>
-			<li>AA_BiologicalCorruptors</li>
+			<li>AM_BiologicalCorruptors</li>
 			<li>VME_ViolentConversion</li>
 			<li>VME_BloodCourt</li>
 			<li>VME_Fleshcrafters</li>

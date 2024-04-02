@@ -33,8 +33,7 @@
 		<li>/</li>
 		<li>1.5</li>
 		<li IfModActive="Ludeon.RimWorld.Royalty">1.5/Mods/Royalty</li>	
-		<li IfModActive="sarg.alphaanimals">1.5/Mods/AlphaAnimals</li>
-		<li IfModActive="sarg.alphaanimals_copy">1.5/Mods/AlphaAnimals</li>
+		<li IfModActive="Sarg.AlphaMemes">1.5/Mods/AlphaMemes</li>		
 		<li IfModActive="VanillaExpanded.VCookE">1.5/Mods/VanillaCookingExpanded</li>
 		<li IfModActive="VanillaExpanded.VCookE_copy">1.5/Mods/VanillaCookingExpanded</li>
 		<li IfModActive="VanillaExpanded.VCEF">1.5/Mods/VanillaFishingExpanded</li>
