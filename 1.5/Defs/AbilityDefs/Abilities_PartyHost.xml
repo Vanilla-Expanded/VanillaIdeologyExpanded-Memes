@@ -13,6 +13,7 @@
 		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
 		<description>Throws a party.</description>
 		<targetRequired>True</targetRequired>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
 		<gizmoClass>Command_Ability</gizmoClass>
 		<iconPath>UI/Abilities/ThrowAParty</iconPath>
 		<uiOrder>1</uiOrder>

@@ -17,6 +17,7 @@
 		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
 		<description>Targets an insectoid creature and tames it instantly.</description>
 		<targetRequired>True</targetRequired>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
 		<gizmoClass>Command_Ability</gizmoClass>
 		<iconPath>UI/Abilities/TameInsectoid</iconPath>
 		<uiOrder>1</uiOrder>
@@ -52,6 +53,7 @@
 		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
 		<description>Constructs an insectoid nest that produces insect jelly. A sucessful insectoid hymn ritual must be conducted to reduce the cooldown of this ability.</description>
 		<targetRequired>True</targetRequired>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
 		<gizmoClass>Command_Ability</gizmoClass>
 		<iconPath>UI/Abilities/ConstructNest</iconPath>
 		<uiOrder>1</uiOrder>

@@ -13,6 +13,7 @@
 		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
 		<description>Summon a trade caravan.</description>
 		<targetRequired>false</targetRequired>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
 		<gizmoClass>Command_Ability</gizmoClass>
 		<iconPath>UI/Abilities/SummonTrader</iconPath>
 		<uiOrder>1</uiOrder>

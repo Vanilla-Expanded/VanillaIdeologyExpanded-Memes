@@ -17,6 +17,7 @@
     <groupDef>VME_ExaltedLeader</groupDef>
     <overrideGroupCooldown>True</overrideGroupCooldown>
     <cooldownTicksRange>480000</cooldownTicksRange>
+	<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
     <targetRequired>True</targetRequired>
     <gizmoClass>Command_Ability</gizmoClass>
     <comps>
@@ -48,6 +49,7 @@
     <warmupMoteSocialSymbol>Things/Mote/SpeechSymbols/Convert</warmupMoteSocialSymbol>
     <warmupSound>MoralistAbility_Warmup</warmupSound>
     <hotKey>Misc12</hotKey>
+	<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
     <jobDef>CastAbilityOnThingMelee</jobDef>
     <stunTargetWhileCasting>True</stunTargetWhileCasting>
     <showPsycastEffects>False</showPsycastEffects>
@@ -97,6 +99,7 @@
     <showPsycastEffects>False</showPsycastEffects>
     <emittedFleck>PreachHealth</emittedFleck>
     <emissionInterval>60</emissionInterval>
+	<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
     <warmupMoteSocialSymbol>UI/Abilities/PreachHealth</warmupMoteSocialSymbol>
     <displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
     <disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
@@ -148,6 +151,7 @@
     <warmupMoteSocialSymbol>UI/Abilities/Reassure</warmupMoteSocialSymbol>
     <warmupSound>MoralistAbility_Warmup</warmupSound>
     <hotKey>Misc12</hotKey>
+	<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
     <jobDef>CastAbilityOnThingMelee</jobDef>
     <stunTargetWhileCasting>True</stunTargetWhileCasting>
     <showPsycastEffects>False</showPsycastEffects>
@@ -191,6 +195,7 @@
     <warmupMoteSocialSymbol>UI/Abilities/Counsel</warmupMoteSocialSymbol>
     <warmupSound>MoralistAbility_Warmup</warmupSound>
     <hotKey>Misc12</hotKey>
+	<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
     <jobDef>CastAbilityOnThingMelee</jobDef>
     <stunTargetWhileCasting>True</stunTargetWhileCasting>
     <showPsycastEffects>False</showPsycastEffects>
