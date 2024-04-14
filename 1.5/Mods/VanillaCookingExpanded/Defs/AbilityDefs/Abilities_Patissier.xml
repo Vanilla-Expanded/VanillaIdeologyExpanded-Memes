@@ -15,6 +15,7 @@
 		<description>Targets a meal to turn it into a dessert.</description>
 		<targetRequired>True</targetRequired>
 		<gizmoClass>Command_Ability</gizmoClass>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
 		<iconPath>UI/Abilities/MakeADessert</iconPath>
 		<uiOrder>1</uiOrder>
 		

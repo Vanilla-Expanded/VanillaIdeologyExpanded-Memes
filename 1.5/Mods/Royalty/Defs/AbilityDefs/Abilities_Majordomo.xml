@@ -12,6 +12,7 @@
 		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
 		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
 		<description>Instruct everyone around to work harder and be more diligent, boosting global work speed and the cost of depleting recreation. The effect remains attached to the caster for 24 hours.</description>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
 		<targetRequired>false</targetRequired>
 		<canUseAoeToGetTargets>False</canUseAoeToGetTargets>
 		<stunTargetWhileCasting>True</stunTargetWhileCasting>
