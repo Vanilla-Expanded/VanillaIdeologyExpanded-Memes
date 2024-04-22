@@ -25,7 +25,7 @@
 	<HistoryEventDef>
 		<defName>VME_AteGourmetDessert</defName>
 		<label>ate gourmet dessert</label>
-	</HistoryEventDef>VME_AteChocolateSweetTeeth
+	</HistoryEventDef>
 	<HistoryEventDef>
 		<defName>VME_AteChocolateSweetTeeth</defName>
 		<label>ate chocolate</label>
