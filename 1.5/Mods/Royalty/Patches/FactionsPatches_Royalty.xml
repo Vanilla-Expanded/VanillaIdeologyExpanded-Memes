@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/FactionDef[defName="Empire"]/allowedMemes</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/FactionDef[defName="Empire"]</xpath>
+			<value>
+				<allowedMemes>
+					<li MayRequire="Ludeon.RimWorld.Ideology">VME_Royal</li>
+					
+				</allowedMemes>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/FactionDef[defName="Empire"]/allowedMemes</xpath>
+			<value>
+				<li MayRequire="Ludeon.RimWorld.Ideology">VME_Royal</li>
+			</value>
+		</match>
+	</Operation>
+</Patch>
