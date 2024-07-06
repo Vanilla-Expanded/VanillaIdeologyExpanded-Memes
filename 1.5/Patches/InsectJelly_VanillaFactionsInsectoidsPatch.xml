@@ -10,7 +10,7 @@
 
 
 				<li Class="PatchOperationAdd"> 
-					<xpath>/Defs/ThingDef[defName="VFEI_RoyalInsectJelly"]/ingestible</xpath>
+					<xpath>/Defs/ThingDef[defName="VFEI2_RoyalInsectJelly"]/ingestible</xpath>
 					<value>
 						<ateEvent>VME_AteInsectJelly</ateEvent>
 					</value>
