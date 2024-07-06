@@ -21,7 +21,7 @@ namespace VanillaMemesExpanded
 
             if (pawnInsect != null && pawnInsect.RaceProps.Insect && pawnInsect.Faction != Faction.OfPlayer)
             {
-                if (pawnInsect.def.defName == "VFEI_Insectoid_Queen") {
+                if (pawnInsect.def.defName == "VFEI2_Queen") {
 
                     Messages.Message("VME_NotTheQueen".Translate(), MessageTypeDefOf.RejectInput, true);
                     this.parent.StartCooldown(30);
