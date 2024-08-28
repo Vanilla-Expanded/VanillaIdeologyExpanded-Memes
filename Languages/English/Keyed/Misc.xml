@@ -45,7 +45,7 @@
 	<VME_PawnMustBeAnAdult>Only adults can participate in this ritual</VME_PawnMustBeAnAdult>
 	<VME_Maintenance>Insect nest maintenance: {0}%</VME_Maintenance>
 	<VME_MaintenanceNeeded>Maintenance needed. If it reaches 0% the nest will be destroyed.</VME_MaintenanceNeeded>
-	<VME_NotTheQueen>The Queen snorts at you: "No, I don't think I will"</VME_NotTheQueen>
+	<VME_NotTheQueen>The gigantic insectoid snorts at you: "No, I don't think I will"</VME_NotTheQueen>
 	<VME_NoValidPartySpot>Could not find any valid party spot or organizer was unavailable.</VME_NoValidPartySpot>
 	<VME_CantStartRitualNoConvertee>You need a reasonably healthy prisoner to start the ritual</VME_CantStartRitualNoConvertee>
 	<VME_ViolentOutcome>Unfortunately, {0} refused to see our reasonable ways and was sacrificed.</VME_ViolentOutcome>

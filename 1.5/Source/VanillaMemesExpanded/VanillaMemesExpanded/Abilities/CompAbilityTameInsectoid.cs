@@ -1,11 +1,14 @@
 ﻿using System;
 using Verse;
 using RimWorld;
+using System.Collections.Generic;
 
 namespace VanillaMemesExpanded
 {
     public class CompAbilityTameInsectoid : CompAbilityEffect
     {
+        public static List<string> untameableInsects = new List<string>() { "VFEI2_Queen", "VFEI2_Empress", "VFEI2_Silverfish", "VFEI2_Teramantis", "VFEI2_Titantick", "VFEI2_Gigamite", "VFEI2_BlackEmpress" };
+
         public new CompProperties_AbilityTameInsectoid Props
         {
             get
@@ -21,7 +24,7 @@ namespace VanillaMemesExpanded
 
             if (pawnInsect != null && pawnInsect.RaceProps.Insect && pawnInsect.Faction != Faction.OfPlayer)
             {
-                if (pawnInsect.def.defName == "VFEI2_Queen") {
+                if (untameableInsects.Contains(pawnInsect.def.defName)) {
 
                     Messages.Message("VME_NotTheQueen".Translate(), MessageTypeDefOf.RejectInput, true);
                     this.parent.StartCooldown(30);

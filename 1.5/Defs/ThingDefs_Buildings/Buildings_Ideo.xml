@@ -197,7 +197,7 @@
 	<ThingDef ParentName="BuildingNaturalBase">
 		<defName>VME_InsectNest</defName>
 		<label>insect nest</label>
-		<description>A large, swollen hive that seems to be seeping high amounts of bubbling insectoid jelly but not incubating any insectoids themselves.\n\nThe nest will need maintenance by a colonist with the insectoid herder role. If maintenance reaches 0%, the nest will be destroyed.</description>
+		<description>A large, swollen hive that seems to be seeping high amounts of bubbling insectoid jelly but not incubating any insectoids themselves.\n\nThe nest will need maintenance by a colonist with the insectoid herder role. If maintenance reaches 0%, the nest will be destroyed.\n\nInsect nest maintenance is a Handling job that gets auto-queued if the hive's maintenance is lower than 50%..</description>
 		<thingClass>VanillaMemesExpanded.Building_InsectNest</thingClass>
 		<graphicData>
 			<texPath>Things/Building/Misc/InsectNest/VIE_InsectNest</texPath>

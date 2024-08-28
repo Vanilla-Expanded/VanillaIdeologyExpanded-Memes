@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
 	<!-- ====== Serketist ======== -->
-
 	<ThingStyleDef ParentName="IdeoTableStyleBase">
 		<defName>VME_Serketist_Table1x2c</defName>
 		<graphicData>
@@ -10,7 +8,6 @@
 			<drawSize>(3,4)</drawSize>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef ParentName="IdeoTableStyleBase">
 		<defName>VME_Serketist_Table2x2c</defName>
 		<graphicData>
@@ -18,7 +15,6 @@
 			<drawSize>(4,4)</drawSize>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef ParentName="IdeoTableStyleBase">
 		<defName>VME_Serketist_Table2x4c</defName>
 		<graphicData>
@@ -26,7 +22,6 @@
 			<drawSize>(4,6)</drawSize>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef ParentName="IdeoTableStyleBase">
 		<defName>VME_Serketist_Table3x3c</defName>
 		<graphicData>
@@ -34,7 +29,6 @@
 			<drawSize>(5,5)</drawSize>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef>
 		<defName>VME_Serketist_SculptureSmall</defName>
 		<graphicData>
@@ -42,7 +36,6 @@
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef>
 		<defName>VME_Serketist_SculptureLarge</defName>
 		<graphicData>
@@ -51,7 +44,6 @@
 			<drawSize>(3,3)</drawSize>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef>
 		<defName>VME_Serketist_SculptureGrand</defName>
 		<graphicData>
@@ -60,7 +52,6 @@
 			<drawSize>(4,4)</drawSize>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef>
 		<defName>VME_Serketist_AltarSmall</defName>
 		<graphicData>
@@ -71,7 +62,6 @@
 			</shadowData>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef>
 		<defName>VME_Serketist_AltarMedium</defName>
 		<graphicData>
@@ -83,7 +73,6 @@
 			</shadowData>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef>
 		<defName>VME_Serketist_AltarLarge</defName>
 		<graphicData>
@@ -95,7 +84,6 @@
 			</shadowData>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef>
 		<defName>VME_Serketist_AltarGrand</defName>
 		<graphicData>
@@ -107,7 +95,6 @@
 			</shadowData>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef>
 		<defName>VME_SerketistStool</defName>
 		<graphicData>
@@ -128,7 +115,6 @@
 			</shadowData>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef Name="VME_Serketist_StandingLampBase">
 		<defName>VME_Serketist_StandingLamp</defName>
 		<graphicData>
@@ -136,11 +122,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-
-	
-
-	
-
 	<ThingStyleDef>
 		<defName>VME_Serketist_TorchLamp</defName>
 		<graphicData>
@@ -149,7 +130,6 @@
 		</graphicData>
 		<uiIconPath>Things/Building/BuildingStyles/Serketist/VME_SerketistTorchLamp_MenuIcon</uiIconPath>
 	</ThingStyleDef>
-
 	<ThingStyleDef>
 		<defName>VME_Serketist_IdeogramA</defName>
 		<graphicData>
@@ -158,7 +138,6 @@
 			<drawSize>(3,3)</drawSize>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef>
 		<defName>VME_Serketist_IdeogramB</defName>
 		<graphicData>
@@ -167,18 +146,15 @@
 			<drawSize>(3,3)</drawSize>
 		</graphicData>
 	</ThingStyleDef>
-
-	<ThingStyleDef  ParentName="VME_RotateWeapons">
+	<ThingStyleDef ParentName="VME_RotateWeapons">
 		<defName>VME_Serketist_WarMask</defName>
 		<wornGraphicPath>Things/Pawn/Humanlike/Apparelstyles/VME_WarMaskSerketist/VME_WarMaskSerketist</wornGraphicPath>
 		<graphicData>
 			<texPath>Things/Pawn/Humanlike/Apparelstyles/Single/VME_WarMaskSerketist</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-
 		</graphicData>
 	</ThingStyleDef>
-	
-	<ThingStyleDef  ParentName="VME_RotateWeapons">
+	<ThingStyleDef ParentName="VME_RotateWeapons">
 		<defName>VME_Serketist_Apparel_PowerArmorHelmet</defName>
 		<wornGraphicPath>Things/Pawn/Humanlike/Apparelstyles/HelmetMarineSerketism/HelmetMarineSerketism</wornGraphicPath>
 		<graphicData>
@@ -186,9 +162,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-	
-	
-	<ThingStyleDef  ParentName="VME_RotateWeapons">
+	<ThingStyleDef ParentName="VME_RotateWeapons">
 		<defName>VME_Serketist_Apparel_ArmorHelmetRecon</defName>
 		<wornGraphicPath>Things/Pawn/Humanlike/Apparelstyles/HelmetReconSerketism/HelmetReconSerketism</wornGraphicPath>
 		<graphicData>
@@ -196,7 +170,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-	<ThingStyleDef  ParentName="VME_RotateWeapons">
+	<ThingStyleDef ParentName="VME_RotateWeapons">
 		<defName>VME_Serketist_Apparel_ArmorHelmetCataphract</defName>
 		<wornGraphicPath>Things/Pawn/Humanlike/Apparelstyles/HelmetCataphractSerketism/HelmetCataphractSerketism</wornGraphicPath>
 		<graphicData>
@@ -204,9 +178,177 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-
+	<ThingStyleDef ParentName="IdeoTableStyleBase">
+		<defName>VME_Serketist_Bed</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Serketist/Beds/VME_SerketistBed</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<uiIconPath>Things/Building/BuildingStyles/Serketist/Beds/VME_SerketistBed_south</uiIconPath>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="IdeoTableStyleBase">
+		<defName>VME_Serketist_DoubleBed</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Serketist/Beds/VME_DoubleSerketistBed</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2.05,2.05)</drawSize>
+		</graphicData>
+		<uiIconPath>Things/Building/BuildingStyles/Serketist/Beds/VME_DoubleSerketistBed_south</uiIconPath>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="IdeoTableStyleBase">
+		<defName>VME_Serketist_RoyalBed</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Serketist/Beds/VME_SerketistRoyalBed</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2.05,2.05)</drawSize>
+		</graphicData>
+		<uiIconPath>Things/Building/BuildingStyles/Serketist/Beds/VME_SerketistRoyalBed_south</uiIconPath>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="IdeoTableStyleBase">
+		<defName>VME_Serketist_HospitalBed</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Serketist/Beds/VME_SerketistHospitalBed</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<uiIconPath>Things/Building/BuildingStyles/Serketist/Beds/VME_SerketistHospitalBed_south</uiIconPath>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="IdeoTableStyleBase">
+		<defName>VME_Serketist_Crib</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Serketist/Crib/VME_SerketistCrib</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>2.2</drawSize>
+		</graphicData>
+		<uiIconPath>Things/Building/BuildingStyles/Serketist/Crib/VME_SerketistCrib_east</uiIconPath>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>VME_Serketist_HoldingPlatform</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Serketist/VME_SerketistHoldingPlatform</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3, 3)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="IdeoColumnStyleBase">
+		<defName>VME_Serketist_Column</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Serketist/VME_SerketistColumn</texPath>
+			<drawSize>(0.625,1.25)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>VME_SerketistShelf</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Serketist/Shelf/VME_SerketistShelf</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,2)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>VME_SerketistShelfSmall</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Serketist/ShelfSmall/VME_SerketistShelfSmall</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>VME_SerketistDresser</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Serketist/Dresser/VME_SerketistDresser</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,1)</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>VME_SerketistEndTable</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Serketist/EndTable/VME_SerketistEndTable</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>VME_SerketistChair</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Serketist/Chair/VME_SerketistChair</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1,1)</drawSize>
+			<damageData>
+				<rectN>(0.25,0.234375,0.5,0.28125)</rectN>
+				<rectS>(0.25,0.234375,0.5,0.28125)</rectS>
+				<rectE>(0.28125,0.25,0.453125,0.25)</rectE>
+				<rectW>(0.28125,0.25,0.453125,0.25)</rectW>
+			</damageData>
+			<shadowData>
+				<volume>(0.23, 0.26, 0.23)</volume>
+			</shadowData>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>VME_SerketistPlantPot</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Serketist/VME_SerketistPlantpot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shadowData>
+				<volume>(0.65, 0.35, 0.3)</volume>
+				<offset>(0, 0, -0.28)</offset>
+			</shadowData>
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>VME_SerketistPenMarker</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Serketist/VME_SerketistPenMarker</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="WallLampStyleBase">
+		<defName>VME_SerketistWallLamp</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Serketist/WallLamp/VME_SerketistWallLamp</texPath>
+		</graphicData>
+		<uiIconPath>Things/Building/BuildingStyles/Serketist/WallLamp/VME_SerketistWallLamp_Icon</uiIconPath>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="WallLampStyleBase">
+		<defName>VME_Serketist_TorchWallLamp</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Serketist/WallTorch/VME_SerketistWallTorch</texPath>
+		</graphicData>
+		<uiIconPath>Things/Building/BuildingStyles/Serketist/WallTorch/VME_SerketistWallTorch_MenuIcon</uiIconPath>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>VME_SerketistFloodLight</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Serketist/VME_SerketistFloodLight</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>2.5</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>VME_SerketistSunLamp</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Serketist/VME_SerketistSunLamp</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>VME_SerketistBonsaiTreePot</defName>
+		<graphicData>
+			<texPath>Things/Building/BuildingStyles/Serketist/VME_SerketistBonsaiTreePot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
 	<!-- ====== Corporate ======== -->
-
 	<ThingStyleDef ParentName="IdeoTableStyleBase">
 		<defName>VME_Corporate_Table1x2c</defName>
 		<graphicData>
@@ -214,7 +356,6 @@
 			<drawSize>(3,4)</drawSize>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef ParentName="IdeoTableStyleBase">
 		<defName>VME_Corporate_Table2x2c</defName>
 		<graphicData>
@@ -222,7 +363,6 @@
 			<drawSize>(4,4)</drawSize>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef ParentName="IdeoTableStyleBase">
 		<defName>VME_Corporate_Table2x4c</defName>
 		<graphicData>
@@ -230,7 +370,6 @@
 			<drawSize>(4,6)</drawSize>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef ParentName="IdeoTableStyleBase">
 		<defName>VME_Corporate_Table3x3c</defName>
 		<graphicData>
@@ -238,7 +377,6 @@
 			<drawSize>(5,5)</drawSize>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef>
 		<defName>VME_Corporate_SculptureSmall</defName>
 		<graphicData>
@@ -246,7 +384,6 @@
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef>
 		<defName>VME_Corporate_SculptureLarge</defName>
 		<graphicData>
@@ -255,7 +392,6 @@
 			<drawSize>(3,3)</drawSize>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef>
 		<defName>VME_Corporate_SculptureGrand</defName>
 		<graphicData>
@@ -264,7 +400,6 @@
 			<drawSize>(4,4)</drawSize>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef>
 		<defName>VME_Corporate_AltarSmall</defName>
 		<graphicData>
@@ -275,7 +410,6 @@
 			</shadowData>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef>
 		<defName>VME_Corporate_AltarMedium</defName>
 		<graphicData>
@@ -287,7 +421,6 @@
 			</shadowData>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef>
 		<defName>VME_Corporate_AltarLarge</defName>
 		<graphicData>
@@ -299,7 +432,6 @@
 			</shadowData>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef>
 		<defName>VME_Corporate_AltarGrand</defName>
 		<graphicData>
@@ -311,7 +443,6 @@
 			</shadowData>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef>
 		<defName>VME_CorporateStool</defName>
 		<graphicData>
@@ -332,7 +463,6 @@
 			</shadowData>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef>
 		<defName>VME_CorporateChair</defName>
 		<graphicData>
@@ -350,7 +480,6 @@
 			</shadowData>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef>
 		<defName>VME_CorporateArmchair</defName>
 		<graphicData>
@@ -367,16 +496,13 @@
 				<volume>(0.23, 0.26, 0.23)</volume>
 			</shadowData>
 		</graphicData>
-
 	</ThingStyleDef>
-
 	<ThingStyleDef ParentName="IdeoColumnStyleBase">
 		<defName>VME_Corporate_Column</defName>
 		<graphicData>
 			<texPath>Things/Building/BuildingStyles/Corporate/VME_CorporateColumn</texPath>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef Name="VME_Corporate_StandingLamp">
 		<defName>VME_Corporate_StandingLamp</defName>
 		<graphicData>
@@ -384,27 +510,22 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-
-	
-
 	<ThingStyleDef>
 		<defName>VME_Corporate_Apparel_CollarShirt</defName>
 		<wornGraphicPath>Things/Pawn/Humanlike/Apparelstyles/VME_CorporateShirt/VME_CorporateShirtButton</wornGraphicPath>
 		<graphicData>
 			<texPath>Things/Pawn/Humanlike/Apparelstyles/Single/VME_CorporateShirtButton</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-
 		</graphicData>
 	</ThingStyleDef>
-
-	<ThingStyleDef  ParentName="VME_RotateWeapons">
+	<ThingStyleDef ParentName="VME_RotateWeapons">
 		<defName>VME_Corporate_AssaultRifle</defName>
 		<graphicData>
 			<texPath>Things/Weapons/CorporateWeapons/VME_CorporateAssaultRifle</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-	<ThingStyleDef  ParentName="VME_RotateWeapons">
+	<ThingStyleDef ParentName="VME_RotateWeapons">
 		<defName>VME_Corporate_ChainShotgun</defName>
 		<graphicData>
 			<texPath>Things/Weapons/CorporateWeapons/VME_CorporateChainShotgun</texPath>
@@ -591,7 +712,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-	
 	<ThingStyleDef ParentName="VME_RotateWeapons">
 		<defName>VME_Corporate_ChargePistol</defName>
 		<graphicData>
@@ -767,12 +887,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-	
-
 	<!-- ====== Authoritarian ======== -->
-
-
-
 	<ThingStyleDef>
 		<defName>VME_Authoritarian_SculptureSmall</defName>
 		<graphicData>
@@ -780,7 +895,6 @@
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef>
 		<defName>VME_Authoritarian_SculptureLarge</defName>
 		<graphicData>
@@ -789,7 +903,6 @@
 			<drawSize>(3,3)</drawSize>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef>
 		<defName>VME_Authoritarian_SculptureGrand</defName>
 		<graphicData>
@@ -798,7 +911,6 @@
 			<drawSize>(4,4)</drawSize>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef>
 		<defName>VME_AuthoritarianPew</defName>
 		<graphicData>
@@ -810,7 +922,6 @@
 			</shadowData>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef>
 		<defName>VME_AuthoritarianDresser</defName>
 		<graphicData>
@@ -825,7 +936,6 @@
 			</damageData>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef>
 		<defName>VME_AuthoritarianEndTable</defName>
 		<graphicData>
@@ -836,7 +946,6 @@
 			</shadowData>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef>
 		<defName>VME_AuthoritarianShelf</defName>
 		<graphicData>
@@ -845,7 +954,6 @@
 			<drawSize>(3,2)</drawSize>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef>
 		<defName>VME_AuthoritarianPlantPot</defName>
 		<graphicData>
@@ -860,7 +968,6 @@
 			</damageData>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef>
 		<defName>VME_AuthoritarianChair</defName>
 		<graphicData>
@@ -878,7 +985,6 @@
 			</shadowData>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef>
 		<defName>VME_AuthoritarianArmchair</defName>
 		<graphicData>
@@ -895,21 +1001,15 @@
 				<volume>(0.23, 0.26, 0.23)</volume>
 			</shadowData>
 		</graphicData>
-
 	</ThingStyleDef>
-
-
-
 	<ThingStyleDef ParentName="VME_RotateWeapons">
 		<defName>VME_Authoritarian_Apparel_Tuque</defName>
 		<wornGraphicPath>Things/Pawn/Humanlike/Apparelstyles/VME_AuthoritarianTuque/VME_Authoritarian_Tuque</wornGraphicPath>
 		<graphicData>
 			<texPath>Things/Pawn/Humanlike/Apparelstyles/Single/VME_AuthoritarianTuque</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef ParentName="VME_RotateWeapons">
 		<defName>VME_Authoritarian_AssaultRifle</defName>
 		<graphicData>
@@ -973,7 +1073,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-	
 	<ThingStyleDef ParentName="VME_RotateWeapons">
 		<defName>VME_Authoritarian_LMG</defName>
 		<graphicData>
@@ -981,7 +1080,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-	
 	<ThingStyleDef ParentName="VME_RotateWeapons">
 		<defName>VME_Authoritarian_BoltActionRifle</defName>
 		<graphicData>
@@ -1003,7 +1101,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-	
 	<ThingStyleDef ParentName="VME_RotateWeapons">
 		<defName>VME_Authoritarian_ChargePistol</defName>
 		<graphicData>
@@ -1053,7 +1150,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-	
 	<ThingStyleDef ParentName="VME_RotateWeapons">
 		<defName>VME_Authoritarian_HandCannon</defName>
 		<graphicData>
@@ -1089,7 +1185,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-	
 	<ThingStyleDef ParentName="VME_RotateWeapons">
 		<defName>VME_Authoritarian_Flintlock</defName>
 		<graphicData>
@@ -1153,11 +1248,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-	
-
 	<!-- ====== Shintao ======== -->
-
-
 	<ThingStyleDef ParentName="IdeoTableStyleBase">
 		<defName>VME_Taoist_Table1x2c</defName>
 		<graphicData>
@@ -1165,7 +1256,6 @@
 			<drawSize>(3,4)</drawSize>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef ParentName="IdeoTableStyleBase">
 		<defName>VME_Taoist_Table2x2c</defName>
 		<graphicData>
@@ -1173,7 +1263,6 @@
 			<drawSize>(4,4)</drawSize>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef ParentName="IdeoTableStyleBase">
 		<defName>VME_Taoist_Table2x4c</defName>
 		<graphicData>
@@ -1181,7 +1270,6 @@
 			<drawSize>(4,6)</drawSize>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef ParentName="IdeoTableStyleBase">
 		<defName>VME_Taoist_Table3x3c</defName>
 		<graphicData>
@@ -1189,8 +1277,6 @@
 			<drawSize>(5,5)</drawSize>
 		</graphicData>
 	</ThingStyleDef>
-
-
 	<ThingStyleDef>
 		<defName>VME_Taoist_SculptureSmall</defName>
 		<graphicData>
@@ -1198,7 +1284,6 @@
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef>
 		<defName>VME_Taoist_SculptureLarge</defName>
 		<graphicData>
@@ -1207,7 +1292,6 @@
 			<drawSize>(3,3)</drawSize>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef>
 		<defName>VME_Taoist_SculptureGrand</defName>
 		<graphicData>
@@ -1216,7 +1300,6 @@
 			<drawSize>(4,4)</drawSize>
 		</graphicData>
 	</ThingStyleDef>
-	
 	<ThingStyleDef>
 		<defName>VME_Taoist_AltarSmall</defName>
 		<graphicData>
@@ -1227,7 +1310,6 @@
 			</shadowData>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef>
 		<defName>VME_Taoist_AltarMedium</defName>
 		<graphicData>
@@ -1239,7 +1321,6 @@
 			</shadowData>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef>
 		<defName>VME_Taoist_AltarLarge</defName>
 		<graphicData>
@@ -1251,7 +1332,6 @@
 			</shadowData>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef>
 		<defName>VME_Taoist_AltarGrand</defName>
 		<graphicData>
@@ -1263,7 +1343,6 @@
 			</shadowData>
 		</graphicData>
 	</ThingStyleDef>
-	
 	<ThingStyleDef Name="VME_Taoist_StandingLamp">
 		<defName>VME_Taoist_StandingLamp</defName>
 		<graphicData>
@@ -1271,9 +1350,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-
-	
-
 	<ThingStyleDef ParentName="VME_RotateWeapons">
 		<defName>VME_Taoist_Apparel_PowerArmorHelmet</defName>
 		<wornGraphicPath>Things/Pawn/Humanlike/Apparelstyles/VME_HelmetMarineTaoist/VME_HelmetMarineTaoist</wornGraphicPath>
@@ -1322,7 +1398,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-	
 	<ThingStyleDef ParentName="VME_RotateWeapons">
 		<defName>VME_Taoist_LongSword</defName>
 		<graphicData>
@@ -1330,13 +1405,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-	
 	<!-- ====== Esotericism ======== -->
-
-
-	
-
-
 	<ThingStyleDef>
 		<defName>VME_Esotericism_SculptureSmall</defName>
 		<graphicData>
@@ -1344,7 +1413,6 @@
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef>
 		<defName>VME_Esotericism_SculptureLarge</defName>
 		<graphicData>
@@ -1353,10 +1421,6 @@
 			<drawSize>(3,3)</drawSize>
 		</graphicData>
 	</ThingStyleDef>
-
-	
-
-
 	<ThingStyleDef ParentName="VME_RotateWeapons">
 		<defName>VME_Esotericism_Apparel_BowlerHat</defName>
 		<wornGraphicPath>Things/Pawn/Humanlike/Apparelstyles/VME_EsotericismBowlerHat/VME_EsotericismBowlerHat</wornGraphicPath>
@@ -1381,8 +1445,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-	
-	
 	<ThingStyleDef ParentName="VME_RotateWeapons">
 		<defName>VME_Esotericism_Gladius</defName>
 		<graphicData>
@@ -1390,12 +1452,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-
-
 	<!-- ====== Eldritch ======== -->
-
-
-
 	<ThingStyleDef>
 		<defName>VME_Eldritch_SculptureSmall</defName>
 		<graphicData>
@@ -1403,7 +1460,6 @@
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef>
 		<defName>VME_Eldritch_SculptureLarge</defName>
 		<graphicData>
@@ -1412,7 +1468,6 @@
 			<drawSize>(3,3)</drawSize>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef>
 		<defName>VME_Eldritch_SculptureGrand</defName>
 		<graphicData>
@@ -1421,7 +1476,6 @@
 			<drawSize>(4,4)</drawSize>
 		</graphicData>
 	</ThingStyleDef>
-	
 	<ThingStyleDef>
 		<defName>VME_Eldritch_AltarSmall</defName>
 		<graphicData>
@@ -1432,7 +1486,6 @@
 			</shadowData>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef>
 		<defName>VME_Eldritch_AltarMedium</defName>
 		<graphicData>
@@ -1444,7 +1497,6 @@
 			</shadowData>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef>
 		<defName>VME_Eldritch_AltarLarge</defName>
 		<graphicData>
@@ -1456,7 +1508,6 @@
 			</shadowData>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef>
 		<defName>VME_Eldritch_AltarGrand</defName>
 		<graphicData>
@@ -1468,7 +1519,6 @@
 			</shadowData>
 		</graphicData>
 	</ThingStyleDef>
-	
 	<ThingStyleDef Name="VME_Eldritch_StandingLampBase">
 		<defName>VME_Eldritch_StandingLamp</defName>
 		<graphicData>
@@ -1476,11 +1526,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-
-	
-	
-	
-	
 	<ThingStyleDef>
 		<defName>VME_Eldritch_TorchLamp</defName>
 		<graphicData>
@@ -1489,7 +1534,6 @@
 		</graphicData>
 		<uiIconPath>Things/Building/BuildingStyles/Eldritch/VME_EldritchTorchLamp_MenuIcon</uiIconPath>
 	</ThingStyleDef>
-
 	<ThingStyleDef ParentName="VME_RotateWeapons">
 		<defName>VME_Eldritch_Apparel_PowerArmorHelmet</defName>
 		<wornGraphicPath>Things/Pawn/Humanlike/Apparelstyles/VME_HelmetMarineEldritch/VME_HelmetMarineEldritch</wornGraphicPath>
@@ -1498,7 +1542,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-	
 	<ThingStyleDef ParentName="VME_RotateWeapons">
 		<defName>VME_Eldritch_Apparel_ArmorHelmetRecon</defName>
 		<wornGraphicPath>Things/Pawn/Humanlike/Apparelstyles/VME_HelmetReconEldritch/VME_HelmetReconEldritch</wornGraphicPath>
@@ -1515,7 +1558,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-	
 	<ThingStyleDef ParentName="VME_RotateWeapons">
 		<defName>VME_Eldritch_HeavySMG</defName>
 		<graphicData>
@@ -1544,12 +1586,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-	
-	
 	<!-- ====== Hedonist ======== -->
-
-
-
 	<ThingStyleDef>
 		<defName>VME_Hedonist_SculptureSmall</defName>
 		<graphicData>
@@ -1557,7 +1594,6 @@
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef>
 		<defName>VME_Hedonist_SculptureLarge</defName>
 		<graphicData>
@@ -1566,7 +1602,6 @@
 			<drawSize>(3,3)</drawSize>
 		</graphicData>
 	</ThingStyleDef>
-
 	<ThingStyleDef>
 		<defName>VME_Hedonist_SculptureGrand</defName>
 		<graphicData>
@@ -1575,14 +1610,12 @@
 			<drawSize>(4,4)</drawSize>
 		</graphicData>
 	</ThingStyleDef>
-	
 	<ThingStyleDef ParentName="IdeoColumnStyleBase">
 		<defName>VME_Hedonist_Column</defName>
 		<graphicData>
 			<texPath>Things/Building/BuildingStyles/Hedonist/HedonismColumn</texPath>
 		</graphicData>
 	</ThingStyleDef>
-	
 	<ThingStyleDef>
 		<defName>VME_HedonistPlantPot</defName>
 		<graphicData>
@@ -1597,15 +1630,12 @@
 			</damageData>
 		</graphicData>
 	</ThingStyleDef>
-	
 	<ThingStyleDef ParentName="VME_RotateWeapons">
 		<defName>VME_Hedonist_Apparel_BasicShirt</defName>
 		<wornGraphicPath>Things/Pawn/Humanlike/Apparelstyles/VME_HedonistShirtBasic/HedonistShirtBasic</wornGraphicPath>
 		<graphicData>
 			<texPath>Things/Pawn/Humanlike/Apparelstyles/Single/HedonistShirtBasic</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-
 		</graphicData>
 	</ThingStyleDef>
-	
 </Defs>

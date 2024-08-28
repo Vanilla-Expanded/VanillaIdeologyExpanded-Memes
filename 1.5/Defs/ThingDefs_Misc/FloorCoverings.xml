@@ -123,6 +123,44 @@
     </researchPrerequisites>
   </ThingDef>
 
- 
+     <ThingDef ParentName="BuildingFloorCoveringMediumBase">
+    <defName>VME_SerketistSlab_Medium</defName>
+    <label>serketist slab (medium)</label>
+    <description>A stone bas relief of serketist imagery for decorating a floor.</description>
+    <dominantStyleCategory>VME_Serketist</dominantStyleCategory>
+    <graphicData>
+      <graphicClass>Graphic_Random</graphicClass>
+      <texPath>Things/Building/BuildingStyles/Serketist/Slab/Medium</texPath>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <stuffCategories>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>100</costStuffCount>
+    <researchPrerequisites>
+      <li>Stonecutting</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingFloorCoveringBroadBase">
+    <defName>VME_SerketistSlab_Broad</defName>
+    <label>serketist slab (broad)</label>
+    <description>A stone bas relief of serketist imagery for decorating a floor.</description>
+    <dominantStyleCategory>VME_Serketist</dominantStyleCategory>
+    <graphicData>
+      <graphicClass>Graphic_Random</graphicClass>
+      <texPath>Things/Building/BuildingStyles/Serketist/Slab/Broad</texPath>
+      <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <stuffCategories>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>150</costStuffCount>
+    <researchPrerequisites>
+      <li>Stonecutting</li>
+    </researchPrerequisites>
+  </ThingDef>
 
 </Defs>
