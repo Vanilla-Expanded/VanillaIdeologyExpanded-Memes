@@ -7,7 +7,7 @@ namespace VanillaMemesExpanded
 {
     public class CompAbilityTameInsectoid : CompAbilityEffect
     {
-        public static List<string> untameableInsects = new List<string>() { "VFEI2_Queen", "VFEI2_Empress", "VFEI2_Silverfish", "VFEI2_Teramantis", "VFEI2_Titantick", "VFEI2_Gigamite", "VFEI2_BlackEmpress" };
+        public static List<string> untameableInsects = new List<string>() { "VFEI2_Queen", "VFEI2_Empress", "VFEI2_Silverfish", "VFEI2_Teramantis", "VFEI2_Titantick", "VFEI2_Gigamite", "VFEI2_BlackEmpress", "VFEI2_Patriarch" };
 
         public new CompProperties_AbilityTameInsectoid Props
         {
