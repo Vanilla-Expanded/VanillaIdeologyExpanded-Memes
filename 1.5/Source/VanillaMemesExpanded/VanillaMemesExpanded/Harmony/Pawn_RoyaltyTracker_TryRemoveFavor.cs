@@ -28,7 +28,11 @@ namespace VanillaMemesExpanded
 
             if (__instance.pawn.Ideo?.HasPrecept(InternalDefOf.VME_PermitHonorCost_Halved) == true)
             {
-                __instance.SetFavor(faction, num + (amount / 2) );
+                if(__instance.GetFavor(faction)> num)
+                {
+                    __instance.SetFavor(faction, num + (amount / 2));
+                }
+                
             }
 
 

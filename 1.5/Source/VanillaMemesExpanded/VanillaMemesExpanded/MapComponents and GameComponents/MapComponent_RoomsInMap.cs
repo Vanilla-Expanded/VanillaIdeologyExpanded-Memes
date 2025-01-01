@@ -12,11 +12,9 @@ namespace VanillaMemesExpanded
 
 
 
-        public int tickCounter = 0;
-        public int tickInterval = 6000;
-        public int roomsInMap_backup;
-        public int hospitalTilesInMap_backup;
-        public bool hospitalDirty_backup = false;
+        public int tickCounter = tickInterval;
+        public const int tickInterval = 2000;
+        public bool hospitalDirty = false;
 
 
         public MapComponent_RoomsInMap(Map map) : base(map)
@@ -24,26 +22,12 @@ namespace VanillaMemesExpanded
 
         }
 
-        public override void FinalizeInit()
-        {
-            if (map.IsPlayerHome)
-            {
-                PawnCollectionClass.roomsInMap = roomsInMap_backup;
-                PawnCollectionClass.hospitalTilesInMap = hospitalTilesInMap_backup;
-                PawnCollectionClass.hospitalDirty = hospitalDirty_backup;
-            }
-
-            base.FinalizeInit();
-
-        }
+     
 
         public override void ExposeData()
         {
             base.ExposeData();
 
-            Scribe_Values.Look<int>(ref this.roomsInMap_backup, "roomsInMap_backup", 0, true);
-            Scribe_Values.Look<int>(ref this.hospitalTilesInMap_backup, "hospitalTilesInMap_backup", 0, true);
-            Scribe_Values.Look<bool>(ref this.hospitalDirty_backup, "hospitalDirty_backup", false, true);
             Scribe_Values.Look<int>(ref this.tickCounter, "tickCounterRooms", 0, true);
 
         }
@@ -56,7 +40,7 @@ namespace VanillaMemesExpanded
             {
                
                 if (map.IsPlayerHome && Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.VME_PermanentBases_Desired) != null) {
-                    roomsInMap_backup = PawnCollectionClass.roomsInMap;
+                  
 
                     int totalRooms = 0;
 
@@ -68,13 +52,15 @@ namespace VanillaMemesExpanded
                             totalRooms++;
                         }
                     }
-                    roomsInMap_backup = totalRooms;
-                    PawnCollectionClass.roomsInMap = totalRooms;
+                   
+                    PawnCollectionClass.SetRoomInMap(map, totalRooms);
                 }
 
                 if (map.IsPlayerHome && Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.VME_Hospital_Required) != null)
                 {
-                    hospitalTilesInMap_backup = PawnCollectionClass.hospitalTilesInMap;
+                    bool hospitalDirty = false;
+
+                    bool hospitalImpressive = false;
 
                     int totalHospitalTiles = 0;
 
@@ -88,20 +74,23 @@ namespace VanillaMemesExpanded
 
                             if (cleanStageIndex < 3)
                             {
-                                hospitalDirty_backup = true;
-                            }else hospitalDirty_backup = false;
+                                hospitalDirty = true;
+                            }else hospitalDirty = false;
 
                             if (scoreStageIndex >= 3) { 
                                 totalHospitalTiles += room.CellCount;
+                                hospitalImpressive = true;
                             }
                         }
 
 
 
                     }
-                    hospitalTilesInMap_backup = totalHospitalTiles;
-                    PawnCollectionClass.hospitalTilesInMap = totalHospitalTiles;
-                    PawnCollectionClass.hospitalDirty = hospitalDirty_backup;
+
+                    PawnCollectionClass.SetHospitalTilesInMap(map, totalHospitalTiles);
+                    PawnCollectionClass.SetHospitalCleanlinessInMap(map, hospitalDirty);
+                    PawnCollectionClass.SetHospitalImpressiveInMap(map, hospitalImpressive);
+
                 }
 
 

@@ -109,7 +109,7 @@
 		<tradeability>Sellable</tradeability>
 		<statBases>
 			<Mass>0.25</Mass>
-			<Nutrition>0.2</Nutrition>
+			<Nutrition>0.4</Nutrition>
 			<MarketValue>4.4</MarketValue>
 		</statBases>
 		<ingestible>
@@ -131,7 +131,7 @@
 		<tradeability>Sellable</tradeability>
 		<statBases>
 			<Mass>0.25</Mass>
-			<Nutrition>0.2</Nutrition>
+			<Nutrition>0.4</Nutrition>
 			<MarketValue>4.4</MarketValue>
 		</statBases>
 		<ingestible>

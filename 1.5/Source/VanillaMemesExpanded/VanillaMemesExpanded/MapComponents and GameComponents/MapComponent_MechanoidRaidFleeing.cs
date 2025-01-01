@@ -59,10 +59,17 @@ namespace VanillaMemesExpanded
                                
                                 for (int i = 0; i < lord.ownedPawns.Count; i++)
                                 {
-                                    Pawn pawn = lord.ownedPawns[i];
-                                   
-                                    pawn.mindState.duty = new PawnDuty(DutyDefOf.ExitMapRandom);
                                     
+
+                                    Pawn pawn = lord.ownedPawns[i];
+
+                                    if (!pawn.kindDef.isBoss)
+                                    {
+                                        pawn.mindState.duty = new PawnDuty(DutyDefOf.ExitMapRandom);
+
+                                    }
+
+
                                 }
                             }
                         }

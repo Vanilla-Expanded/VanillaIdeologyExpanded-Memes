@@ -35,10 +35,9 @@
 		<defName>VME_Alcohol_Demanded</defName>
 		<validWhileDespawned>true</validWhileDespawned>
 		<minExpectation>Moderate</minExpectation>
+		<developmentalStageFilter>Adult</developmentalStageFilter>
 		<nullifyingTraitDegrees>
-			
-				<DrugDesire>-1</DrugDesire>
-			
+			<DrugDesire>-1</DrugDesire>
 		</nullifyingTraitDegrees>
 		<workerClass>VanillaMemesExpanded.ThoughtWorker_Precept_Alcohol</workerClass>
 		<stages>
@@ -69,7 +68,6 @@
 			</li>
 		</stages>
 	</ThoughtDef>
-
 	<PreceptDef>
 		<defName>VME_Alcohol_Desired</defName>
 		<issue>VME_Alcohol</issue>
@@ -77,6 +75,7 @@
 		<description>Drinking is just plain fun, though not in excess.</description>
 		<impact>Low</impact>
 		<displayOrderInIssue>10</displayOrderInIssue>
+		<developmentalStageFilter>Adult</developmentalStageFilter>
 		<selectionWeight>0</selectionWeight>
 		<comps>
 			<li Class="PreceptComp_SituationalThought">
@@ -84,7 +83,7 @@
 				<thoughtStageDescriptions>
 					<li>Missing alcohol (3 days)</li>
 					<li>Desiring a drink (5 days)</li>
-					<li>Wanting a drink (10 days or more)</li>					
+					<li>Wanting a drink (10 days or more)</li>
 				</thoughtStageDescriptions>
 			</li>
 		</comps>
@@ -93,11 +92,8 @@
 		<defName>VME_Alcohol_Desired</defName>
 		<validWhileDespawned>true</validWhileDespawned>
 		<minExpectation>Moderate</minExpectation>
-		
 		<nullifyingTraitDegrees>
-			
-				<DrugDesire>-1</DrugDesire>
-			
+			<DrugDesire>-1</DrugDesire>
 		</nullifyingTraitDegrees>
 		<workerClass>VanillaMemesExpanded.ThoughtWorker_Precept_Alcohol</workerClass>
 		<stages>
@@ -141,7 +137,6 @@
 				<thoughtStageDescriptions>
 					<li>Consumed alcohol</li>
 					<li>Abstained from alcohol</li>
-
 				</thoughtStageDescriptions>
 			</li>
 		</comps>
@@ -150,9 +145,7 @@
 		<defName>VME_Alcohol_MildAbstinence</defName>
 		<validWhileDespawned>true</validWhileDespawned>
 		<nullifyingTraitDegrees>
-			
-				<DrugDesire>-1</DrugDesire>
-			
+			<DrugDesire>-1</DrugDesire>
 		</nullifyingTraitDegrees>
 		<workerClass>VanillaMemesExpanded.ThoughtWorker_Precept_Alcohol_MildAbstinence</workerClass>
 		<stages>

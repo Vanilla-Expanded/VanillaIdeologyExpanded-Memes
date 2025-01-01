@@ -11,6 +11,7 @@
 		<defName>VME_LeatherApparel_Abhorrent</defName>
 		<issue>VME_LeatherApparel</issue>
 		<label>abhorrent</label>
+		<enabledForNPCFactions>false</enabledForNPCFactions>
 		<description>Slaughtering an animal to use its skin as apparel is cruel and inhumane.</description>
 		<impact>Medium</impact>
 		<displayOrderInIssue>30</displayOrderInIssue>	
@@ -28,6 +29,7 @@
 		<issue>VME_LeatherApparel</issue>
 		<label>disliked</label>
 		<description>Using animal leathers is something that should be avoided.</description>
+		<enabledForNPCFactions>false</enabledForNPCFactions>
 		<impact>Medium</impact>
 		<selectionWeight>0</selectionWeight>
 		<displayOrderInIssue>20</displayOrderInIssue>	

@@ -33,6 +33,16 @@ namespace VanillaMemesExpanded
 
         public static Dictionary<Pawn, int> colonist_and_random_mood = new Dictionary<Pawn, int>();
 
+        public static Dictionary<Map, int> hospitalTilesInMap = new Dictionary<Map, int>();
+
+        public static Dictionary<Map, bool> hospitalDirty = new Dictionary<Map, bool>();
+
+        public static Dictionary<Map, bool> hospitalImpressive = new Dictionary<Map, bool>();
+
+        public static Dictionary<Map, int> roomsInMap = new Dictionary<Map, int>();
+
+
+
         public static HashSet<Thing> objectsToDeconstruct_InMap = new HashSet<Thing>();
 
         public static List<Pawn> enslavedPawns = new List<Pawn>();
@@ -45,12 +55,6 @@ namespace VanillaMemesExpanded
 
 
         public static int ticksWithoutTrading = 0;
-
-        public static int roomsInMap = 0;
-
-        public static int hospitalTilesInMap = 0;
-
-        public static bool hospitalDirty = false;
 
         public static int ticksWithoutAbandoning = 0;
 
@@ -211,5 +215,21 @@ namespace VanillaMemesExpanded
             
         }
 
+        public static void SetHospitalTilesInMap(Map map, int tiles)
+        {
+            hospitalTilesInMap[map] = tiles;
+        }
+        public static void SetHospitalCleanlinessInMap(Map map, bool clean)
+        {
+            hospitalDirty[map] = clean;
+        }
+        public static void SetHospitalImpressiveInMap(Map map, bool impressive)
+        {
+            hospitalImpressive[map] = impressive;
+        }
+        public static void SetRoomInMap(Map map, int rooms)
+        {
+            roomsInMap[map] = rooms;
+        }
     }
 }

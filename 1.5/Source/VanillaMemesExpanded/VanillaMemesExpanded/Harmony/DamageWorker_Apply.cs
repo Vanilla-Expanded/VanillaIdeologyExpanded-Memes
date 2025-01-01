@@ -17,7 +17,7 @@ namespace VanillaMemesExpanded
     [HarmonyPatch("Apply")]
     public static class VanillaMemesExpanded_DamageWorker_AddInjury_Apply_Patch
     {
-        [HarmonyPostfix]
+        [HarmonyPrefix]
         static void DetectIfDamagedInnocent(DamageInfo dinfo, Thing thing)
         {
             Pawn instigatorPawn = dinfo.Instigator as Pawn;
@@ -28,13 +28,17 @@ namespace VanillaMemesExpanded
                 {
 
                     Pawn victimPawn = thing as Pawn;
-                    bool notAccident = instigatorPawn.Faction?.IsPlayer != true || instigatorPawn.drafter?.Drafted == true;
-                    if (victimPawn != null && !victimPawn.HostileTo(instigatorPawn) && victimPawn.RaceProps.Humanlike && notAccident)
+                    if (!victimPawn.IsEntity)
                     {
+                        bool notAccident = instigatorPawn.Faction?.IsPlayer != true || instigatorPawn.drafter?.Drafted == true;
+                        if (victimPawn != null && !victimPawn.HostileTo(instigatorPawn) && victimPawn.RaceProps.Humanlike && notAccident)
+                        {
 
-                        Find.HistoryEventsManager.RecordEvent(new HistoryEvent(InternalDefOf.VME_AttackedInnocent, dinfo.Instigator.Named(HistoryEventArgsNames.Doer)), true);
+                            Find.HistoryEventsManager.RecordEvent(new HistoryEvent(InternalDefOf.VME_AttackedInnocent, dinfo.Instigator.Named(HistoryEventArgsNames.Doer)), true);
 
+                        }
                     }
+                    
 
 
                 }

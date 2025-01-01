@@ -9,14 +9,14 @@ namespace VanillaMemesExpanded
         protected override ThoughtState ShouldHaveThought(Pawn p, Pawn otherPawn)
         {
 
-            if (otherPawn.royalty.AllTitlesForReading.Count == 0)
+            if (Faction.OfEmpire is null ||  otherPawn.royalty.AllTitlesForReading.Count == 0)
             {
                 return false;
             }
 
             else
             {
-                RoyalTitleDef title = otherPawn.royalty.GetCurrentTitleInFaction(Find.FactionManager.FirstFactionOfDef(FactionDefOf.Empire)).def;
+                RoyalTitleDef title = otherPawn.royalty.GetCurrentTitleInFaction(Faction.OfEmpire).def;
 
                 float seniority = title.seniority;
 

@@ -82,7 +82,7 @@ namespace VanillaMemesExpanded
                                         if (pawn.royalty.GetHeir(title.faction) != heir)
                                         {
                                             pawn.royalty.SetHeir(heir, title.faction);
-                                            Find.LetterStack.ReceiveLetter("VME_HeirChange".Translate(pawn.Name, heir.Name), "VME_HeirChangeDesc".Translate(pawn.Name, heir.Name), LetterDefOf.NeutralEvent, heir, null, null, null, null);
+                                            Find.LetterStack.ReceiveLetter("VME_HeirChange".Translate(pawn.NameFullColored, heir.NameFullColored), "VME_HeirChangeDesc".Translate(pawn.NameFullColored, heir.NameFullColored), LetterDefOf.NeutralEvent, heir, null, null, null, null);
 
                                         }
 

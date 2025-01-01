@@ -48,7 +48,7 @@ namespace VanillaMemesExpanded
 
                         foreach (Pawn pawn in PawnsFinder.AllMapsCaravansAndTravelingTransportPods_Alive_Colonists)
                         {
-                            if (PawnUtility.GetPsylinkLevel(pawn) > highestSkillLevel && pawn.ideo?.Ideo == ideo && !pawn.IsSlave)
+                            if (!pawn.IsGhoul&&PawnUtility.GetPsylinkLevel(pawn) > highestSkillLevel && pawn.ideo?.Ideo == ideo && !pawn.IsSlave)
                             {
                                 highestSkillLevel = PawnUtility.GetPsylinkLevel(pawn);
                                 mostSkilledPawn = pawn;

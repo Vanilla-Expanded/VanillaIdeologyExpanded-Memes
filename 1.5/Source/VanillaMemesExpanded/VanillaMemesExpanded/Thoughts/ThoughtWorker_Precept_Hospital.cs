@@ -10,30 +10,35 @@ namespace VanillaMemesExpanded
 
 		protected override ThoughtState ShouldHaveThought(Pawn p)
 		{
-			if (p.Map?.IsPlayerHome != true)
+			if (p.Map?.IsPlayerHome != true || !PawnCollectionClass.hospitalTilesInMap.ContainsKey(p.Map))
 			{
 				return false;
 			}
-			
-			if (PawnCollectionClass.hospitalTilesInMap ==0)
+            if (!PawnCollectionClass.hospitalImpressive[p.Map])
+            {
+                return ThoughtState.ActiveAtStage(1);
+            }
+            else
+            if (PawnCollectionClass.hospitalTilesInMap[p.Map] == 0)
 			{
 				return ThoughtState.ActiveAtStage(0);
-			}else if (PawnCollectionClass.hospitalDirty)
-			{
-				return ThoughtState.ActiveAtStage(1);
-			}
-			else if (PawnCollectionClass.hospitalTilesInMap < 25)
+
+			}else if (PawnCollectionClass.hospitalDirty[p.Map])
 			{
 				return ThoughtState.ActiveAtStage(2);
 			}
-			else if (PawnCollectionClass.hospitalTilesInMap < 50)
+			else if (PawnCollectionClass.hospitalTilesInMap[p.Map] < 25)
 			{
 				return ThoughtState.ActiveAtStage(3);
+			}
+			else if (PawnCollectionClass.hospitalTilesInMap[p.Map] < 50)
+			{
+				return ThoughtState.ActiveAtStage(4);
 			}
 			
 			else
 			{
-				return ThoughtState.ActiveAtStage(4);
+				return ThoughtState.ActiveAtStage(5);
 			}
 
 

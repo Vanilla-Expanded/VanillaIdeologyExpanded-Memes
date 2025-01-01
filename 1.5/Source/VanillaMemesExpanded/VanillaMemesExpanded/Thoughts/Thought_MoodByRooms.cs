@@ -10,23 +10,23 @@ namespace VanillaMemesExpanded
 	
 		protected override ThoughtState ShouldHaveThought(Pawn p)
 		{
-			if (p.Map?.IsPlayerHome!=true)
+			if (p.Map?.IsPlayerHome!=true || !PawnCollectionClass.roomsInMap.ContainsKey(p.Map))
 			{
 				return false;
 			}
 
-			if (PawnCollectionClass.roomsInMap < 5)
+			if (PawnCollectionClass.roomsInMap[p.Map] < 5)
             {
 				return ThoughtState.ActiveAtStage(4);
-			} else if (PawnCollectionClass.roomsInMap < 10)
+			} else if (PawnCollectionClass.roomsInMap[p.Map] < 10)
 			{
 				return ThoughtState.ActiveAtStage(3);
 			}
-			else if (PawnCollectionClass.roomsInMap < 15)
+			else if (PawnCollectionClass.roomsInMap[p.Map] < 15)
 			{
 				return ThoughtState.ActiveAtStage(2);
 			}
-			else if (PawnCollectionClass.roomsInMap < 20)
+			else if (PawnCollectionClass.roomsInMap[p.Map] < 20)
 			{
 				return ThoughtState.ActiveAtStage(1);
 			}

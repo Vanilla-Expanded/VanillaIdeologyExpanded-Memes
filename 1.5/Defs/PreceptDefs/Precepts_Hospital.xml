@@ -22,6 +22,7 @@
 				<thought>VME_Hospital_Required</thought>
 				<thoughtStageDescriptions>
 					<li>Need hospital</li>
+					<li>Unimpressive hospital (less than decent impressiveness)</li>
 					<li>Dirty hospital</li>
 					<li>Small hospital (less than 25 tiles)</li>
 					<li>Spacious hospital (less than 50 tiles)</li>
@@ -48,6 +49,11 @@
 			<li>
 				<label>need hospital</label>
 				<description>We lack a place to help people and should have a dedicated hospital.</description>
+				<baseMoodEffect>-10</baseMoodEffect>
+			</li>
+			<li>
+				<label>lame hospital</label>
+				<description>We have a hospital, but it needs to be "decent" at least!</description>
 				<baseMoodEffect>-10</baseMoodEffect>
 			</li>
 			<li>

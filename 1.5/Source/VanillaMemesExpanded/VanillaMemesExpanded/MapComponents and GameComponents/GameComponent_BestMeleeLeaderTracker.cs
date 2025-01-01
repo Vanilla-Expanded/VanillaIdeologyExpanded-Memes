@@ -61,7 +61,7 @@ namespace VanillaMemesExpanded
 
                     foreach (Pawn pawn in PawnsFinder.AllMapsCaravansAndTravelingTransportPods_Alive_Colonists)
                     {
-                        if (pawn.skills.GetSkill(SkillDefOf.Melee).Level > highestSkillLevel && pawn.ideo.Ideo == ideo && !pawn.IsSlave)
+                        if (!pawn.IsGhoul && pawn.skills.GetSkill(SkillDefOf.Melee).Level > highestSkillLevel && pawn.ideo.Ideo == ideo && !pawn.IsSlave)
                         {
                             highestSkillLevel = pawn.skills.GetSkill(SkillDefOf.Melee).Level;
                             mostSkilledPawn = pawn;

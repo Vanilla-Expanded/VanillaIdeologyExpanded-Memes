@@ -62,6 +62,7 @@
 	<VME_NeedsExaltedPriesthood>Ritual needs the Exalted Priesthood meme</VME_NeedsExaltedPriesthood>
 	<VME_HeirChange>Heir changed</VME_HeirChange>
 	<VME_HeirChangeDesc>Due to royal inheritance, {1} has been automatically designated as the heir of {0}</VME_HeirChangeDesc>
+	<VME_CheapTradingFair>200 silver needs to be found in stockpiles near a trading beacon for the fair to bot be considered "cheap"</VME_CheapTradingFair>
 	
 	
 	<!-- Mod options -->
