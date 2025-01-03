@@ -28,7 +28,7 @@ namespace VanillaMemesExpanded
                 {
 
                     Pawn victimPawn = thing as Pawn;
-                    if (!victimPawn.IsEntity)
+                    if (victimPawn?.IsEntity==false)
                     {
                         bool notAccident = instigatorPawn.Faction?.IsPlayer != true || instigatorPawn.drafter?.Drafted == true;
                         if (victimPawn != null && !victimPawn.HostileTo(instigatorPawn) && victimPawn.RaceProps.Humanlike && notAccident)
