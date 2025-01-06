@@ -80,6 +80,11 @@ namespace VanillaMemesExpanded
                             PawnCollectionClass.ticksWithoutAbandoning += tickInterval;
                         }
 
+                    } else {
+                        if (PawnCollectionClass.ticksWithoutAbandoning - tickInterval > 0)
+                        {
+                            PawnCollectionClass.ticksWithoutAbandoning -= tickInterval;
+                        } 
                     }
 
                 }
