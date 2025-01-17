@@ -7,24 +7,20 @@ using System.Collections.Generic;
 
 namespace VanillaMemesExpanded
 {
-    public class GameComponent_AlcoholScarsAndSlaveryTracker : GameComponent
+    public class WorldComponent_AlcoholScarsAndSlaveryTracker : WorldComponent
     {
 
 
 
-        public int tickCounter = 0;
-        public int tickInterval = 15000;
+        public int tickCounter = tickInterval;
+        public const int tickInterval = 15000;
         public int ticksWithoutADrink;
         public Dictionary<Pawn, int> colonist_booze_tracker_backup = new Dictionary<Pawn, int>();
         List<Pawn> list2;
         List<int> list3;
-        public Dictionary<Pawn, int> colonist_scar_counter_backup = new Dictionary<Pawn, int>();
-        List<Pawn> list4;
-        List<int> list5;
-        public List<Pawn> enslavedPawns_backup = new List<Pawn>();
+       
 
-
-        public GameComponent_AlcoholScarsAndSlaveryTracker(Game game) : base()
+        public WorldComponent_AlcoholScarsAndSlaveryTracker(World world) : base(world)
         {
 
         }
@@ -33,8 +29,7 @@ namespace VanillaMemesExpanded
         {
 
             PawnCollectionClass.colonist_booze_tracker = colonist_booze_tracker_backup;
-            PawnCollectionClass.colonist_scar_counter = colonist_scar_counter_backup;
-            PawnCollectionClass.enslavedPawns = enslavedPawns_backup;
+           
 
 
             base.FinalizeInit();
@@ -47,13 +42,11 @@ namespace VanillaMemesExpanded
 
             Scribe_Values.Look<int>(ref this.tickCounter, "tickCounterBoozeAndScars", 0, true);
             Scribe_Collections.Look(ref colonist_booze_tracker_backup, "colonist_booze_tracker_backup", LookMode.Reference, LookMode.Value, ref list2, ref list3);
-            Scribe_Collections.Look(ref colonist_scar_counter_backup, "colonist_scar_counter_backup", LookMode.Reference, LookMode.Value, ref list4, ref list5);
-            Scribe_Collections.Look(ref enslavedPawns_backup, "enslavedPawns_backup", LookMode.Reference);
 
         }
 
 
-        public override void GameComponentTick()
+        public override void WorldComponentTick()
         {
             if (Find.IdeoManager.classicMode) return;
 
@@ -61,9 +54,7 @@ namespace VanillaMemesExpanded
             if ((tickCounter > tickInterval))
             {
 
-                colonist_scar_counter_backup = PawnCollectionClass.colonist_scar_counter;
                 colonist_booze_tracker_backup = PawnCollectionClass.colonist_booze_tracker;
-                enslavedPawns_backup = PawnCollectionClass.enslavedPawns;
                 if (Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.VME_Alcohol_Demanded) != null||
                     Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.VME_Alcohol_MildAbstinence) != null)
                 {

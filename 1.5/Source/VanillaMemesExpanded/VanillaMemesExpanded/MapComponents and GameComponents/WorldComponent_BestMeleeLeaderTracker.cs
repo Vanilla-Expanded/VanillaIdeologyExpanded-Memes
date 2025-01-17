@@ -7,44 +7,35 @@ using System.Collections.Generic;
 
 namespace VanillaMemesExpanded
 {
-    public class GameComponent_BestMeleeLeaderTracker : GameComponent
+    public class WorldComponent_BestMeleeLeaderTracker : WorldComponent
     {
 
        
        
-        public int tickCounter = 0;
-        public int tickInterval = 3000;
+        public int tickCounter = tickInterval;
+        public const int tickInterval = 6000;
         public Pawn mostSkilledPawn;
-        public Pawn pawnThatIsTheLeaderNow;
+        public Pawn currentBestMeleeLeaderPawn;
 
-        public GameComponent_BestMeleeLeaderTracker(Game game) : base()
-        {
 
-        }
+        public static WorldComponent_BestMeleeLeaderTracker Instance;
 
-        public override void FinalizeInit()
-        {
-            PawnCollectionClass.pawnThatIsTheLeaderNow = pawnThatIsTheLeaderNow;
-            PawnCollectionClass.mostSkilledPawn = mostSkilledPawn;
+        public WorldComponent_BestMeleeLeaderTracker(World world) : base(world) => Instance = this;
 
-            base.FinalizeInit();
 
-        }
+       
 
         public override void ExposeData()
         {
             base.ExposeData();
 
             Scribe_References.Look<Pawn>(ref this.mostSkilledPawn, "mostSkilledPawn");
-            Scribe_References.Look<Pawn>(ref this.pawnThatIsTheLeaderNow, "pawnThatIsTheLeaderNow");
             Scribe_Values.Look<int>(ref this.tickCounter, "tickCounterMelee", 0, true);
-
-
+            Scribe_References.Look<Pawn>(ref this.currentBestMeleeLeaderPawn, "currentBestMeleeLeaderPawn");
 
         }
 
-
-        public override void GameComponentTick()
+        public override void WorldComponentTick()
         {
             if (Find.IdeoManager.classicMode) return;
 
@@ -54,8 +45,6 @@ namespace VanillaMemesExpanded
                 Ideo ideo = Current.Game.World.factionManager.OfPlayer.ideos.PrimaryIdeo;
                 if (ideo?.HasPrecept(InternalDefOf.VME_Leader_BestFighter)==true)
                 {
-                    pawnThatIsTheLeaderNow = PawnCollectionClass.pawnThatIsTheLeaderNow;
-                    mostSkilledPawn = PawnCollectionClass.mostSkilledPawn;
 
                     int highestSkillLevel = 0;
 
@@ -65,7 +54,6 @@ namespace VanillaMemesExpanded
                         {
                             highestSkillLevel = pawn.skills.GetSkill(SkillDefOf.Melee).Level;
                             mostSkilledPawn = pawn;
-                            PawnCollectionClass.mostSkilledPawn = pawn;
                         }
                     }
 
@@ -74,17 +62,18 @@ namespace VanillaMemesExpanded
 
                     if (leader == null)
                     {
-                        pawnThatIsTheLeaderNow = mostSkilledPawn;
-                        PawnCollectionClass.pawnThatIsTheLeaderNow = pawnThatIsTheLeaderNow;
+                        currentBestMeleeLeaderPawn = mostSkilledPawn;
                         if (precept_role.RequirementsMet(mostSkilledPawn))
                         { precept_role.Assign(mostSkilledPawn, true); }
-                            
+
 
                     }
 
-                }
-                
 
+                  
+
+                }
+            
 
                 tickCounter = 0;
             }

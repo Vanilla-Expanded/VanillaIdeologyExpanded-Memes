@@ -47,22 +47,11 @@ namespace VanillaMemesExpanded
 
 			if(winner!= leader)
             {
-				PawnCollectionClass.pawnThatIsTheLeaderNow = winner;
-				Current.Game.GetComponent<GameComponent_BestMeleeLeaderTracker>().pawnThatIsTheLeaderNow = winner;
-
+				
+				WorldComponent_BestMeleeLeaderTracker.Instance.currentBestMeleeLeaderPawn = winner;
 				precept_role.Assign(winner, true);
 				
 			}
-
-
-
-
-
-
-
-
-
-
 
 			LookTargets lookTargets = jobRitual.selectedTarget;
 

@@ -25,44 +25,25 @@
 			<li Class="PreceptComp_SituationalThought">
 				<thought>VME_Illness_Exalted</thought>
 			</li>
-			<li Class="PreceptComp_SituationalThought">
-				<thought>VME_Illness_Exalted_TooHealthy</thought>
-			</li>
 		</comps>
 	</PreceptDef>
 	<ThoughtDef>
-    <defName>VME_Illness_Exalted</defName>
-    <workerClass>VanillaMemesExpanded.Thought_Illness_Exalted</workerClass>
-    <validWhileDespawned>true</validWhileDespawned>
-   
-    <stages>
-      <li>
-        <label>sick</label>
-        <description>A holy virus and the godlike bacteria shall breed in my veins.</description>
-        <baseMoodEffect>20</baseMoodEffect>
-      </li>
-     
-    </stages>
-  </ThoughtDef>
-  
-  <ThoughtDef>
-    <defName>VME_Illness_Exalted_TooHealthy</defName>
-	
-    <workerClass>VanillaMemesExpanded.Thought_Illness_Exalted_TooHealthy</workerClass>
-    <validWhileDespawned>true</validWhileDespawned>
-   
-    <stages>
-      <li>
-        <label>wants to be sick</label>
-        <description>What I would give for the illness to bind me in pain once more.</description>
-        <baseMoodEffect>-2</baseMoodEffect>
-      </li>
-     
-    </stages>
-  </ThoughtDef>
-	
-	
-	
+		<defName>VME_Illness_Exalted</defName>
+		<workerClass>VanillaMemesExpanded.ThoughtWorker_Precept_Illness</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>sick</label>
+				<description>The holy virus and the godlike bacteria shall breed in my veins.</description>
+				<baseMoodEffect>20</baseMoodEffect>
+			</li>
+			<li>
+				<label>wants to be sick</label>
+				<description>What I would give for the illness to bind me in pain once more.</description>
+				<baseMoodEffect>-2</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
 	<PreceptDef>
 		<defName>VME_Illness_Preferred</defName>
 		<issue>VME_Illness</issue>
@@ -77,10 +58,9 @@
 			</li>
 		</comps>
 	</PreceptDef>
-	
 	<ThoughtDef>
 		<defName>VME_Illness_Preferred</defName>
-		<workerClass>VanillaMemesExpanded.Thought_Illness_Preferred</workerClass>
+		<workerClass>VanillaMemesExpanded.ThoughtWorker_Precept_Illness_Preferred</workerClass>
 		<validWhileDespawned>true</validWhileDespawned>
 		<stages>
 			<li>
@@ -90,7 +70,6 @@
 			</li>
 		</stages>
 	</ThoughtDef>
-	
 	<PreceptDef>
 		<defName>VME_Illness_Indifferent</defName>
 		<issue>VME_Illness</issue>
@@ -100,6 +79,4 @@
 		<displayOrderInIssue>30</displayOrderInIssue>
 		<defaultSelectionWeight>1</defaultSelectionWeight>
 	</PreceptDef>
-	
-	
 </Defs>

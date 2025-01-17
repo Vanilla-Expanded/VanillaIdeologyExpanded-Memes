@@ -3,24 +3,25 @@ using RimWorld;
 using Verse;
 using UnityEngine;
 using System.Collections.Generic;
+using RimWorld.Planet;
 
 
 namespace VanillaMemesExpanded
 {
-    public class GameComponent_AgeAndIllnessTracker : GameComponent
+    public class WorldComponent_AgeAndIllnessTracker : WorldComponent
     {
 
        
        
-        public int tickCounter = 0;
-        public int tickInterval = 3000;
+        public int tickCounter = tickInterval;
+        public const int tickInterval = 3000;
         public Dictionary<Pawn, int> colonist_illness_tracker_backup = new Dictionary<Pawn, int>();
         List<Pawn> list2;
         List<int> list3;
 
 
 
-        public GameComponent_AgeAndIllnessTracker(Game game) : base()
+        public WorldComponent_AgeAndIllnessTracker(World world) : base(world)
         {
 
         }
@@ -42,7 +43,7 @@ namespace VanillaMemesExpanded
 
 
 
-        public override void GameComponentTick()
+        public override void WorldComponentTick()
         {
             if (Find.IdeoManager.classicMode) return;
 
@@ -61,7 +62,7 @@ namespace VanillaMemesExpanded
 
                             if (p.health.hediffSet.AnyHediffMakesSickThought)
                             {
-                                PawnCollectionClass.ResetPawnIlnessTicks(p);
+                                PawnCollectionClass.ResetPawnIllnessTicks(p);
                             }
                             else { 
                                 if(PawnCollectionClass.colonist_illness_tracker[p]<int.MaxValue- tickInterval)

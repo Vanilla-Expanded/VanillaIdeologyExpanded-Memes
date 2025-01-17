@@ -388,9 +388,9 @@
     <Compile Include="Hediffs\HediffCompProperties_Infections.cs" />
     <Compile Include="Hediffs\HediffComp_Infections.cs" />
     <Compile Include="Incidents\IncidentWorker_JunkChunkDrop.cs" />
-    <Compile Include="MapComponents and GameComponents\GameComponent_BestPsycasterAndTitleTracker.cs" />
-    <Compile Include="MapComponents and GameComponents\GameComponent_BestMeleeLeaderTracker.cs" />
-    <Compile Include="MapComponents and GameComponents\GameComponent_AlcoholScarsAndSlaveryTracker.cs" />
+    <Compile Include="MapComponents and GameComponents\WorldComponent_BestPsycasterAndTitleTracker.cs" />
+    <Compile Include="MapComponents and GameComponents\WorldComponent_BestMeleeLeaderTracker.cs" />
+    <Compile Include="MapComponents and GameComponents\WorldComponent_AlcoholScarsAndSlaveryTracker.cs" />
     <Compile Include="MapComponents and GameComponents\GameComponent_BonfireTracker.cs" />
     <Compile Include="MapComponents and GameComponents\GameComponent_TravellingAndTradingTracker.cs" />
     <Compile Include="MapComponents and GameComponents\MapComponent_FireAndPenTracker.cs" />
@@ -402,8 +402,8 @@
     <Compile Include="MapComponents and GameComponents\MapComponent_JunkTracker.cs" />
     <Compile Include="MapComponents and GameComponents\GameComponent_MoodTracker.cs" />
     <Compile Include="MapComponents and GameComponents\MapComponent_PawnsInMapDesiringRitualSuicide.cs" />
-    <Compile Include="MapComponents and GameComponents\GameComponent_BestCrafterTracker.cs" />
-    <Compile Include="MapComponents and GameComponents\GameComponent_AgeAndIllnessTracker.cs" />
+    <Compile Include="MapComponents and GameComponents\WorldComponent_BestCrafterTracker.cs" />
+    <Compile Include="MapComponents and GameComponents\WorldComponent_AgeAndIllnessTracker.cs" />
     <Compile Include="MapComponents and GameComponents\GameComponent_FactoryModifier.cs" />
     <Compile Include="Needs\Need_Anonymity.cs" />
     <Compile Include="Needs\Need_Corruption.cs" />
@@ -445,6 +445,8 @@
     <Compile Include="Rituals\Outcomes\RitualOutcomeEffectWorker_ViolentConversion.cs" />
     <Compile Include="Rituals\Outcomes\RitualOutcomeEffectWorker_WickerManBurning.cs" />
     <Compile Include="RoleRequirements\RoleRequirement_BestCrafter.cs" />
+    <Compile Include="RoleRequirements\RoleRequirement_BestPsycaster.cs" />
+    <Compile Include="RoleRequirements\RoleRequirement_HighestTitle.cs" />
     <Compile Include="RoleRequirements\RoleRequirement_NoTitles.cs" />
     <Compile Include="RoleRequirements\RoleRequirement_BestFighter.cs" />
     <Compile Include="StageEndTriggers\StageEndTrigger_DeadDuelEnded.cs" />
@@ -481,9 +483,8 @@
     <Compile Include="Thoughts\Thought_Elders_Despised.cs" />
     <Compile Include="Thoughts\Thought_Elders_Respected.cs" />
     <Compile Include="Thoughts\Thought_IdeoRole_FireKeeper.cs" />
-    <Compile Include="Thoughts\Thought_Illness_Preferred.cs" />
-    <Compile Include="Thoughts\Thought_Illness_Exalted.cs" />
-    <Compile Include="Thoughts\Thought_Illness_Exalted_TooHealthy.cs" />
+    <Compile Include="Thoughts\ThoughtWorker_Precept_Illness_Preferred.cs" />
+    <Compile Include="Thoughts\ThoughtWorker_Precept_Illness.cs" />
     <Compile Include="Thoughts\Thought_Fire_Desired.cs" />
     <Compile Include="Thoughts\Thought_MoodByRooms.cs" />
     <Compile Include="Thoughts\Thought_Power_Desired.cs" />
@@ -492,7 +493,7 @@
     <Compile Include="Thoughts\ThoughtWorker_Precept_HasBeenASlave.cs" />
     <Compile Include="Thoughts\Thought_Precept_RandomStageMood.cs" />
     <Compile Include="Thoughts\Thought_Junk_Beautiful.cs" />
-    <Compile Include="Thoughts\Thought_Scars_Honorable.cs" />
+    <Compile Include="Thoughts\ThoughtWorker_Precept_Scars.cs" />
     <Compile Include="Thoughts\Thought_StageByTime.cs" />
     <Compile Include="Thoughts\Thought_StageByWill.cs" />
   </ItemGroup>

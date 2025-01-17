@@ -17,7 +17,7 @@ namespace VanillaMemesExpanded
             if (p.ideo?.Ideo?.HasPrecept(InternalDefOf.VME_Leader_BestFighter)==true)
             {
 
-                if (PawnCollectionClass.pawnThatIsTheLeaderNow == p) { return true; }else
+                if (WorldComponent_BestMeleeLeaderTracker.Instance.currentBestMeleeLeaderPawn == p) { return true; }else
                 return false;
 
 

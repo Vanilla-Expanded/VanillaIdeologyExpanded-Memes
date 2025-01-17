@@ -41,18 +41,11 @@ namespace VanillaMemesExpanded
 
         public static Dictionary<Map, int> roomsInMap = new Dictionary<Map, int>();
 
-
-
         public static HashSet<Thing> objectsToDeconstruct_InMap = new HashSet<Thing>();
 
         public static List<Pawn> enslavedPawns = new List<Pawn>();
 
-        public static Pawn pawnThatIsTheLeaderNow;
-
-        public static Pawn mostSkilledPawn;
-
         public static float averageColonyMood = 0;
-
 
         public static int ticksWithoutTrading = 0;
 
@@ -80,7 +73,7 @@ namespace VanillaMemesExpanded
                 colonist_illness_tracker[pawn] += ticks;
             }
         }
-        public static void ResetPawnIlnessTicks(Pawn pawn)
+        public static void ResetPawnIllnessTicks(Pawn pawn)
         {
             if (pawn != null)
             {

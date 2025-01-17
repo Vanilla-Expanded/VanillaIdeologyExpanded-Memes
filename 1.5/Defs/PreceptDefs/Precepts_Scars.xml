@@ -24,11 +24,11 @@
 
 				<thought>VME_Scars_Honorable</thought>
 				<thoughtStageDescriptions>
-					<li>Faintly scarred</li>
-					<li>Scarred</li>
-					<li>Heavily scarred</li>
-					<li>Extremely scarred</li>
-					<li>Innumerable battlefield scars</li>
+					<li>Faintly scarred (1 scarification scar)</li>
+					<li>Scarred (2 scarification scars)</li>
+					<li>Heavily scarred (3 scarification scars)</li>
+					<li>Extremely scarred (4 scarification scars)</li>
+					<li>Innumerable battlefield scars  (more than 4 scarification scars)</li>
 				</thoughtStageDescriptions>
 			</li>
 		</comps>
@@ -36,7 +36,7 @@
 	<ThoughtDef>
 		<defName>VME_Scars_Honorable</defName>
 		<thoughtClass>Thought_SituationalSocial</thoughtClass>
-		<workerClass>VanillaMemesExpanded.Thought_Scars_Honorable</workerClass>
+		<workerClass>VanillaMemesExpanded.ThoughtWorker_Precept_Scars</workerClass>
 		<stages>
 			<li>
 				<label>faintly scarred</label>
@@ -78,11 +78,11 @@
 
 				<thought>VME_Scars_Disgusting</thought>
 				<thoughtStageDescriptions>
-					<li>Faintly scarred</li>
-					<li>Scarred</li>
-					<li>Heavily scarred</li>
-					<li>Extremely scarred</li>
-					<li>Innumerable battlefield scars</li>
+					<li>Faintly scarred (1 scarification scar)</li>
+					<li>Scarred (2 scarification scars)</li>
+					<li>Heavily scarred (3 scarification scars)</li>
+					<li>Extremely scarred (4 scarification scars)</li>
+					<li>Innumerable battlefield scars  (more than 4 scarification scars)</li>
 				</thoughtStageDescriptions>
 			</li>
 		</comps>
@@ -90,7 +90,7 @@
 	<ThoughtDef>
 		<defName>VME_Scars_Disgusting</defName>
 		<thoughtClass>Thought_SituationalSocial</thoughtClass>
-		<workerClass>VanillaMemesExpanded.Thought_Scars_Honorable</workerClass>
+		<workerClass>VanillaMemesExpanded.ThoughtWorker_Precept_Scars</workerClass>
 		<stages>
 			<li>
 				<label>faintly scarred</label>

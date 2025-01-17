@@ -16,7 +16,7 @@ namespace VanillaMemesExpanded
 		{
 			reason = null;
 
-			Pawn mostSkilledPawn = PawnCollectionClass.mostSkilledPawn;
+			Pawn mostSkilledPawn = WorldComponent_BestMeleeLeaderTracker.Instance.mostSkilledPawn;
 			
 			if (p == mostSkilledPawn)
 			{

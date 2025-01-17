@@ -3,23 +3,24 @@ using RimWorld;
 using Verse;
 using UnityEngine;
 using System.Collections.Generic;
+using RimWorld.Planet;
+using System.Collections;
 
 
 namespace VanillaMemesExpanded
 {
-    public class GameComponent_BestCrafterTracker : GameComponent
+    public class WorldComponent_BestCrafterTracker : WorldComponent
     {
 
        
        
-        public int tickCounter = 0;
-        public int tickInterval = 30000;
+        public int tickCounter = tickInterval;
+        public const int tickInterval = 6000;
+        public Pawn currentBestLeaderPawn;
 
+        public static WorldComponent_BestCrafterTracker Instance;
 
-        public GameComponent_BestCrafterTracker(Game game) : base()
-        {
-
-        }
+        public WorldComponent_BestCrafterTracker(World world) : base(world) => Instance = this;
 
         public override void FinalizeInit()
         {
@@ -28,18 +29,24 @@ namespace VanillaMemesExpanded
 
         }
 
-      
+        public override void ExposeData()
+        {
+            base.ExposeData();
+            Scribe_References.Look<Pawn>(ref this.currentBestLeaderPawn, "currentBestLeaderPawn");
+        }
 
-        public override void GameComponentTick()
+        public override void WorldComponentTick()
         {
             if (Find.IdeoManager.classicMode) return;
 
             tickCounter++;
-            if ((tickCounter > tickInterval))
+            if (tickCounter > tickInterval)
             {
+               
                 Ideo ideo = Current.Game.World.factionManager.OfPlayer.ideos.PrimaryIdeo;
                 if (ideo?.HasPrecept(InternalDefOf.VME_Leader_BestCrafter) == true)
                 {
+                   
                     Pawn mostSkilledPawn = null;
                     int highestSkillLevel = 0;
 
@@ -53,9 +60,12 @@ namespace VanillaMemesExpanded
                     }
 
                     Precept_Role precept_role = mostSkilledPawn?.Ideo?.GetPrecept(PreceptDefOf.IdeoRole_Leader) as Precept_Role;
-
-                    if(precept_role?.ChosenPawnSingle() != mostSkilledPawn)
+                    Pawn currentPawn = precept_role?.ChosenPawnSingle();
+                
+                    if (currentPawn != mostSkilledPawn || currentPawn.skills.GetSkill(SkillDefOf.Crafting).Level< highestSkillLevel)
                     {
+                      
+                        currentBestLeaderPawn = mostSkilledPawn;
                         if (precept_role.RequirementsMet(mostSkilledPawn)) {
                             precept_role.Unassign(precept_role.ChosenPawnSingle(), false);
                             precept_role.Assign(mostSkilledPawn, true);

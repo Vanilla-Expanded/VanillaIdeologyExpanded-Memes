@@ -16,28 +16,18 @@ namespace VanillaMemesExpanded
 
             if (p.ideo?.Ideo?.HasPrecept(InternalDefOf.VME_Leader_BestCrafter)==true)
             {
-
-				Pawn mostSkilledPawn = null;
-				int highestSkillLevel=0;
-
-				foreach (Pawn pawn in PawnsFinder.AllMapsCaravansAndTravelingTransportPods_Alive_Colonists)
-				{
-					if (pawn.skills.GetSkill(SkillDefOf.Crafting).Level > highestSkillLevel)
-					{
-						highestSkillLevel = pawn.skills.GetSkill(SkillDefOf.Crafting).Level;
-						mostSkilledPawn = pawn;
-					}
-				}
-				if (mostSkilledPawn == p)
-                {
+				
+				if (WorldComponent_BestCrafterTracker.Instance.currentBestLeaderPawn == p)
+				{					
 					return true;
-				}else return false;
+				}
+				else
+				{                   
+                    return false;
+				}
 
 
 			} else return true;
-
-
-
 			
 		}
 	}

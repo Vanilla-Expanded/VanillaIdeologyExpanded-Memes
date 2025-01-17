@@ -3,34 +3,35 @@ using RimWorld;
 using Verse;
 using UnityEngine;
 using System.Collections.Generic;
+using RimWorld.Planet;
 
 
 namespace VanillaMemesExpanded
 {
-    public class GameComponent_BestPsycasterAndTitleTracker : GameComponent
+    public class WorldComponent_BestPsycasterAndTitleTracker : WorldComponent
     {
 
        
        
-        public int tickCounter = 0;
-        public int tickInterval = 4000;
+        public int tickCounter = tickInterval;
+        public const int tickInterval = 6000;
+        public Pawn currentPsycasterLeaderPawn;
+        public Pawn currentTitleLeaderPawn;
+
+        public static WorldComponent_BestPsycasterAndTitleTracker Instance;
+
+        public WorldComponent_BestPsycasterAndTitleTracker(World world) : base(world) => Instance = this;
 
 
-        public GameComponent_BestPsycasterAndTitleTracker(Game game) : base()
+        public override void ExposeData()
         {
+            base.ExposeData();
+            Scribe_References.Look<Pawn>(ref this.currentPsycasterLeaderPawn, "currentPsycasterLeaderPawn");
+            Scribe_References.Look<Pawn>(ref this.currentTitleLeaderPawn, "currentTitleLeaderPawn");
 
         }
 
-        public override void FinalizeInit()
-        {
-
-            base.FinalizeInit();
-
-        }
-
-      
-
-        public override void GameComponentTick()
+        public override void WorldComponentTick()
         {
             if (Find.IdeoManager.classicMode) return;
 
@@ -56,9 +57,12 @@ namespace VanillaMemesExpanded
                         }
 
                         Precept_Role precept_role = mostSkilledPawn?.Ideo?.GetPrecept(PreceptDefOf.IdeoRole_Leader) as Precept_Role;
+                        Pawn currentPawn = precept_role?.ChosenPawnSingle();
 
-                        if (precept_role?.ChosenPawnSingle() != mostSkilledPawn)
+
+                        if (currentPawn != mostSkilledPawn || PawnUtility.GetPsylinkLevel(currentPawn) < highestSkillLevel)
                         {
+                            currentPsycasterLeaderPawn = mostSkilledPawn;
                             if (precept_role.RequirementsMet(mostSkilledPawn)) {
                                 precept_role.Unassign(precept_role.ChosenPawnSingle(), false);
                                 precept_role.Assign(mostSkilledPawn, true);
@@ -83,9 +87,12 @@ namespace VanillaMemesExpanded
                         }
 
                         Precept_Role precept_role = highestTitlePawn?.Ideo?.GetPrecept(PreceptDefOf.IdeoRole_Leader) as Precept_Role;
+                        Pawn currentPawn = precept_role?.ChosenPawnSingle();
 
-                        if (precept_role?.ChosenPawnSingle() != highestTitlePawn)
+
+                        if (currentPawn != highestTitlePawn || currentPawn.royalty?.MainTitle().seniority < highestTitle)
                         {
+                            currentTitleLeaderPawn = highestTitlePawn;
                             if (precept_role.RequirementsMet(highestTitlePawn))
                             {
                                 precept_role.Unassign(precept_role.ChosenPawnSingle(), false);
