@@ -18,23 +18,23 @@ namespace VanillaMemesExpanded
 		protected override ThoughtState ShouldHaveThought(Pawn p)
 		{
 
-			if (PawnCollectionClass.colonist_caravan_tracker.ContainsKey(p)) {
-				if (PawnCollectionClass.colonist_caravan_tracker[p] < firstPeriod)
+			if (StaticCollections.colonist_caravan_tracker.ContainsKey(p)) {
+				if (StaticCollections.colonist_caravan_tracker[p] < firstPeriod)
 				{
 					return ThoughtState.ActiveAtStage(0);
 
 				}
-				else if (PawnCollectionClass.colonist_caravan_tracker[p] < secondPeriod)
+				else if (StaticCollections.colonist_caravan_tracker[p] < secondPeriod)
 				{
 					return ThoughtState.ActiveAtStage(1);
 
 				}
-				else if (PawnCollectionClass.colonist_caravan_tracker[p] < thirdPeriod)
+				else if (StaticCollections.colonist_caravan_tracker[p] < thirdPeriod)
 				{
 					return ThoughtState.ActiveAtStage(2);
 
 				}
-				else if (PawnCollectionClass.colonist_caravan_tracker[p] < maxPeriod)
+				else if (StaticCollections.colonist_caravan_tracker[p] < maxPeriod)
 				{
 					return ThoughtState.ActiveAtStage(3);
 

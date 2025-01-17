@@ -15,9 +15,9 @@ namespace VanillaMemesExpanded
 		protected override ThoughtState ShouldHaveThought(Pawn p)
 		{
 
-			if (PawnCollectionClass.colonist_booze_tracker.ContainsKey(p))
+			if (WorldComponent_AlcoholScarsAndSlaveryTracker.Instance.colonist_booze_tracker.ContainsKey(p))
 			{
-				if (PawnCollectionClass.colonist_booze_tracker[p] < period)
+				if (WorldComponent_AlcoholScarsAndSlaveryTracker.Instance.colonist_booze_tracker[p] < period)
 				{
 					return ThoughtState.ActiveAtStage(0);
 

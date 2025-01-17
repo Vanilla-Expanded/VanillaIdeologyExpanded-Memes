@@ -15,34 +15,44 @@ namespace VanillaMemesExpanded
         public int tickCounter = tickInterval;
         public const int tickInterval = 15000;
         public int ticksWithoutADrink;
-        public Dictionary<Pawn, int> colonist_booze_tracker_backup = new Dictionary<Pawn, int>();
+        public Dictionary<Pawn, int> colonist_booze_tracker = new Dictionary<Pawn, int>();
         List<Pawn> list2;
         List<int> list3;
        
+        public static WorldComponent_AlcoholScarsAndSlaveryTracker Instance;
 
-        public WorldComponent_AlcoholScarsAndSlaveryTracker(World world) : base(world)
-        {
+        public WorldComponent_AlcoholScarsAndSlaveryTracker(World world) : base(world) => Instance = this;
 
-        }
-
-        public override void FinalizeInit()
-        {
-
-            PawnCollectionClass.colonist_booze_tracker = colonist_booze_tracker_backup;
-           
-
-
-            base.FinalizeInit();
-
-        }
-
+      
         public override void ExposeData()
         {
             base.ExposeData();
-
             Scribe_Values.Look<int>(ref this.tickCounter, "tickCounterBoozeAndScars", 0, true);
-            Scribe_Collections.Look(ref colonist_booze_tracker_backup, "colonist_booze_tracker_backup", LookMode.Reference, LookMode.Value, ref list2, ref list3);
+            Scribe_Collections.Look(ref colonist_booze_tracker, "colonist_booze_tracker", LookMode.Reference, LookMode.Value, ref list2, ref list3);
+        }
 
+        public void AddColonistToBoozeList(Pawn pawn, int ticks)
+        {
+            if (pawn != null && !colonist_booze_tracker.ContainsKey(pawn))
+            {
+                colonist_booze_tracker[pawn] = ticks;
+            }
+
+        }
+
+        public void IncreasePawnBoozeTicks(Pawn pawn, int ticks)
+        {
+            if (pawn != null)
+            {
+                colonist_booze_tracker[pawn] += ticks;
+            }
+        }
+        public void ResetPawnBoozeTicks(Pawn pawn)
+        {
+            if (pawn != null)
+            {
+                colonist_booze_tracker[pawn] = 0;
+            }
         }
 
 
@@ -54,17 +64,16 @@ namespace VanillaMemesExpanded
             if ((tickCounter > tickInterval))
             {
 
-                colonist_booze_tracker_backup = PawnCollectionClass.colonist_booze_tracker;
                 if (Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.VME_Alcohol_Demanded) != null||
                     Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.VME_Alcohol_MildAbstinence) != null)
                 {
                     foreach (Pawn p in PawnsFinder.AllMapsCaravansAndTravelingTransportPods_Alive_Colonists)
                     {
-                        PawnCollectionClass.AddColonistToBoozeList(p, 0);
+                        AddColonistToBoozeList(p, 0);
 
-                        if (PawnCollectionClass.colonist_booze_tracker[p] < int.MaxValue - tickInterval)
+                        if (colonist_booze_tracker[p] < int.MaxValue - tickInterval)
                         {
-                            PawnCollectionClass.IncreasePawnBoozeTicks(p, tickInterval);
+                            IncreasePawnBoozeTicks(p, tickInterval);
 
                         }
 
@@ -80,7 +89,7 @@ namespace VanillaMemesExpanded
 
                     foreach (Pawn pawn in PawnsFinder.AllMapsCaravansAndTravelingTransportPods_Alive_Colonists)
                     {
-                        PawnCollectionClass.AddColonistToScarList(pawn, 0);
+                        StaticCollections.AddColonistToScarList(pawn, 0);
                         int realNumberOfScars = 0;
                         foreach (Hediff hediff in pawn.health.hediffSet.hediffs)
                         {
@@ -89,7 +98,7 @@ namespace VanillaMemesExpanded
                                 realNumberOfScars++;
                             }
                         }
-                        PawnCollectionClass.SetPawnScars(pawn, realNumberOfScars);
+                        StaticCollections.SetPawnScars(pawn, realNumberOfScars);
                     }
 
                 }
@@ -101,7 +110,7 @@ namespace VanillaMemesExpanded
                     {
                         if (pawn.IsSlave)
                         {
-                            PawnCollectionClass.AddToEnslavedPawns(pawn);
+                            StaticCollections.AddToEnslavedPawns(pawn);
                         }
                     }
 

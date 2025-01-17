@@ -12,12 +12,12 @@ namespace VanillaMemesExpanded
 
 		protected override ThoughtState ShouldHaveThought(Pawn p)
 		{
-			if (PawnCollectionClass.averageColonyMood == 0)
+			if (WorldComponent_MoodTracker.Instance.averageColonyMood == 0)
 			{
 				return false;
 
 			}
-			if (PawnCollectionClass.averageColonyMood>0)
+			if (WorldComponent_MoodTracker.Instance.averageColonyMood>0)
 			{
 				return ThoughtState.ActiveAtStage(0);
 

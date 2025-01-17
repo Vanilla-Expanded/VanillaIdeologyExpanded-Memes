@@ -29,8 +29,8 @@ namespace VanillaMemesExpanded
         {
             if (map.IsPlayerHome)
             {
-                PawnCollectionClass.firesInTheMap = firesInTheMap_backup;
-                PawnCollectionClass.pensInTheMap = pensInTheMap_backup;
+                StaticCollections.firesInTheMap = firesInTheMap_backup;
+                StaticCollections.pensInTheMap = pensInTheMap_backup;
 
             }
 
@@ -82,7 +82,7 @@ namespace VanillaMemesExpanded
 
 
                        
-                        PawnCollectionClass.firesInTheMap = firesInTheMap_backup;
+                        StaticCollections.firesInTheMap = firesInTheMap_backup;
 
 
                     }
@@ -92,12 +92,12 @@ namespace VanillaMemesExpanded
                     {
 
                      
-                        pensInTheMap_backup = PawnCollectionClass.pensInTheMap;
+                        pensInTheMap_backup = StaticCollections.pensInTheMap;
                         int pens = map.listerThings.ThingsOfDef(DefDatabase<ThingDef>.GetNamedSilentFail("PenMarker")).Count;
                     
                         pensInTheMap_backup = pens;
                       
-                        PawnCollectionClass.pensInTheMap = pensInTheMap_backup;
+                        StaticCollections.pensInTheMap = pensInTheMap_backup;
 
 
                     }

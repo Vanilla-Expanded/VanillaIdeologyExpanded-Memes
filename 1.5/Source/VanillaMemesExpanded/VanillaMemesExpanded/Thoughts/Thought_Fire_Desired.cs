@@ -15,27 +15,27 @@ namespace VanillaMemesExpanded
             }
 
 
-            if (PawnCollectionClass.firesInTheMap == 0)
+            if (StaticCollections.firesInTheMap == 0)
             {
                 return ThoughtState.ActiveAtStage(0);
 
             }
-            else if(PawnCollectionClass.firesInTheMap <5)
+            else if(StaticCollections.firesInTheMap <5)
             {
                 return ThoughtState.ActiveAtStage(1);
 
             }
-            else if (PawnCollectionClass.firesInTheMap <30)
+            else if (StaticCollections.firesInTheMap <30)
             {
                 return ThoughtState.ActiveAtStage(2);
 
             }
-            else if (PawnCollectionClass.firesInTheMap <50)
+            else if (StaticCollections.firesInTheMap <50)
             {
                 return ThoughtState.ActiveAtStage(3);
 
             }
-            else if (PawnCollectionClass.firesInTheMap <150)
+            else if (StaticCollections.firesInTheMap <150)
             {
                 return ThoughtState.ActiveAtStage(4);
 

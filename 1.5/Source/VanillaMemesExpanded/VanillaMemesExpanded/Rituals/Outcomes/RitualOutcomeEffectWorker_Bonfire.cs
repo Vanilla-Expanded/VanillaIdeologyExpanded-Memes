@@ -35,7 +35,7 @@ namespace VanillaMemesExpanded
 			}
 			bool flag = false;
 
-			GameComponent_BonfireTracker comp = Current.Game.GetComponent<GameComponent_BonfireTracker>();
+			WorldComponent_BonfireTracker comp = WorldComponent_BonfireTracker.Instance;
 			foreach (Pawn pawn in totalPresence.Keys)
 			{
 				

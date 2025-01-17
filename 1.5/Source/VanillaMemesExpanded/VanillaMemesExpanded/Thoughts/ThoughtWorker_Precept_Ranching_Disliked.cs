@@ -14,17 +14,17 @@ namespace VanillaMemesExpanded
                 return false;
             }
 
-            if (PawnCollectionClass.pensInTheMap == 0)
+            if (StaticCollections.pensInTheMap == 0)
             {
                 return ThoughtState.ActiveAtStage(0);
 
             }
-            else if (PawnCollectionClass.pensInTheMap < 2)
+            else if (StaticCollections.pensInTheMap < 2)
             {
                 return ThoughtState.ActiveAtStage(1);
 
             }
-            else if (PawnCollectionClass.pensInTheMap < 4)
+            else if (StaticCollections.pensInTheMap < 4)
             {
                 return ThoughtState.ActiveAtStage(2);
 

@@ -391,7 +391,7 @@
     <Compile Include="MapComponents and GameComponents\WorldComponent_BestPsycasterAndTitleTracker.cs" />
     <Compile Include="MapComponents and GameComponents\WorldComponent_BestMeleeLeaderTracker.cs" />
     <Compile Include="MapComponents and GameComponents\WorldComponent_AlcoholScarsAndSlaveryTracker.cs" />
-    <Compile Include="MapComponents and GameComponents\GameComponent_BonfireTracker.cs" />
+    <Compile Include="MapComponents and GameComponents\WorldComponent_BonfireTracker.cs" />
     <Compile Include="MapComponents and GameComponents\GameComponent_TravellingAndTradingTracker.cs" />
     <Compile Include="MapComponents and GameComponents\MapComponent_FireAndPenTracker.cs" />
     <Compile Include="MapComponents and GameComponents\MapComponent_ObeliskTracker.cs" />
@@ -400,7 +400,7 @@
     <Compile Include="MapComponents and GameComponents\MapComponent_TradeCaravanDelay.cs" />
     <Compile Include="MapComponents and GameComponents\MapComponent_RoomsInMap.cs" />
     <Compile Include="MapComponents and GameComponents\MapComponent_JunkTracker.cs" />
-    <Compile Include="MapComponents and GameComponents\GameComponent_MoodTracker.cs" />
+    <Compile Include="MapComponents and GameComponents\WorldComponent_MoodTracker.cs" />
     <Compile Include="MapComponents and GameComponents\MapComponent_PawnsInMapDesiringRitualSuicide.cs" />
     <Compile Include="MapComponents and GameComponents\WorldComponent_BestCrafterTracker.cs" />
     <Compile Include="MapComponents and GameComponents\WorldComponent_AgeAndIllnessTracker.cs" />
@@ -411,7 +411,7 @@
     <Compile Include="Options\SettingsHelper.cs" />
     <Compile Include="Options\VanillaMemesExpanded_Settings.cs" />
     <Compile Include="Options\VanillaMemesExpanded_SettingsController.cs" />
-    <Compile Include="PawnCollectionClass\PawnCollectionClass.cs" />
+    <Compile Include="StaticCollections\StaticCollections.cs" />
     <Compile Include="PlaceWorkers\PlaceWorker_OnWater.cs" />
     <Compile Include="PlaceWorkers\PlaceWorker_ShowObeliskRadius.cs" />
     <Compile Include="PreceptComps\PreceptComp_AddDessertNeed.cs" />

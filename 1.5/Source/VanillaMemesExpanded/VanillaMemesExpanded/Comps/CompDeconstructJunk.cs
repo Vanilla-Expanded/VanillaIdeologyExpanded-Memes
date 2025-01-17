@@ -20,13 +20,13 @@ namespace VanillaMemesExpanded
 		private void SetObjectForDeconstruction()
 		{
 			this.itemNeedsDeconstruction = true;
-			PawnCollectionClass.AddDeconstructibleObjectToMap(this.parent);
+			StaticCollections.AddDeconstructibleObjectToMap(this.parent);
 		}
 
 		private void CancelObjectForDeconstruction()
 		{
 			this.itemNeedsDeconstruction = false;
-			PawnCollectionClass.RemoveDeconstructibleObjectFromMap(this.parent);
+			StaticCollections.RemoveDeconstructibleObjectFromMap(this.parent);
 
 		}
 
@@ -34,7 +34,7 @@ namespace VanillaMemesExpanded
 		{			
 			if (map != null)
 			{
-				PawnCollectionClass.RemoveDeconstructibleObjectFromMap(this.parent);
+				StaticCollections.RemoveDeconstructibleObjectFromMap(this.parent);
 			}
 		}
 
@@ -42,7 +42,7 @@ namespace VanillaMemesExpanded
 		{
 			if (previousMap != null)
 			{
-				PawnCollectionClass.RemoveDeconstructibleObjectFromMap(this.parent);
+				StaticCollections.RemoveDeconstructibleObjectFromMap(this.parent);
 			}
 		}
 

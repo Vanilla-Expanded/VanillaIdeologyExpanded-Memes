@@ -19,28 +19,28 @@ namespace VanillaMemesExpanded
 		protected override ThoughtState ShouldHaveThought(Pawn p)
 		{
 
-			if (PawnCollectionClass.colonist_booze_tracker.ContainsKey(p)) {
-				if (PawnCollectionClass.colonist_booze_tracker[p] < firstPeriod)
+			if (WorldComponent_AlcoholScarsAndSlaveryTracker.Instance.colonist_booze_tracker.ContainsKey(p)) {
+				if (WorldComponent_AlcoholScarsAndSlaveryTracker.Instance.colonist_booze_tracker[p] < firstPeriod)
 				{
 					return false;
 
 				}
-				else if (PawnCollectionClass.colonist_booze_tracker[p] < secondPeriod)
+				else if (WorldComponent_AlcoholScarsAndSlaveryTracker.Instance.colonist_booze_tracker[p] < secondPeriod)
 				{
 					return ThoughtState.ActiveAtStage(0);
 
 				}
-				else if (PawnCollectionClass.colonist_booze_tracker[p] < thirdPeriod)
+				else if (WorldComponent_AlcoholScarsAndSlaveryTracker.Instance.colonist_booze_tracker[p] < thirdPeriod)
 				{
 					return ThoughtState.ActiveAtStage(1);
 
 				}
-				else if (PawnCollectionClass.colonist_booze_tracker[p] < fourthPeriod)
+				else if (WorldComponent_AlcoholScarsAndSlaveryTracker.Instance.colonist_booze_tracker[p] < fourthPeriod)
 				{
 					return ThoughtState.ActiveAtStage(2);
 
 				}
-				else if (PawnCollectionClass.colonist_booze_tracker[p] < maxPeriod)
+				else if (WorldComponent_AlcoholScarsAndSlaveryTracker.Instance.colonist_booze_tracker[p] < maxPeriod)
 				{
 					return ThoughtState.ActiveAtStage(3);
 

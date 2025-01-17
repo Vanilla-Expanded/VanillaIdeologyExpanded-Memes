@@ -21,47 +21,47 @@ namespace VanillaMemesExpanded
 
 
 			
-			if (PawnCollectionClass.ticksWithoutAbandoning < gracePeriod)
+			if (StaticCollections.ticksWithoutAbandoning < gracePeriod)
             {
 				return false;
 
-			} else if (PawnCollectionClass.ticksWithoutAbandoning < firstPeriod)
+			} else if (StaticCollections.ticksWithoutAbandoning < firstPeriod)
 			{
 				return ThoughtState.ActiveAtStage(0);
 
 
 			}
-			else if (PawnCollectionClass.ticksWithoutAbandoning < secondPeriod)
+			else if (StaticCollections.ticksWithoutAbandoning < secondPeriod)
 			{
 				return ThoughtState.ActiveAtStage(1);
 
 
 			}
-			else if (PawnCollectionClass.ticksWithoutAbandoning < thirdPeriod)
+			else if (StaticCollections.ticksWithoutAbandoning < thirdPeriod)
 			{
 				return ThoughtState.ActiveAtStage(2);
 
 
 			}
-			else if (PawnCollectionClass.ticksWithoutAbandoning < twoquadrumsPeriod)
+			else if (StaticCollections.ticksWithoutAbandoning < twoquadrumsPeriod)
 			{
 				return ThoughtState.ActiveAtStage(3);
 
 
 			}
-			else if (PawnCollectionClass.ticksWithoutAbandoning < fortydaysPeriod)
+			else if (StaticCollections.ticksWithoutAbandoning < fortydaysPeriod)
 			{
 				return ThoughtState.ActiveAtStage(4);
 
 
 			}
-			else if (PawnCollectionClass.ticksWithoutAbandoning < fiftydaysPeriod)
+			else if (StaticCollections.ticksWithoutAbandoning < fiftydaysPeriod)
 			{
 				return ThoughtState.ActiveAtStage(5);
 
 
 			}
-			else if (PawnCollectionClass.ticksWithoutAbandoning < maxPeriod)
+			else if (StaticCollections.ticksWithoutAbandoning < maxPeriod)
 			{
 				return ThoughtState.ActiveAtStage(6);
 

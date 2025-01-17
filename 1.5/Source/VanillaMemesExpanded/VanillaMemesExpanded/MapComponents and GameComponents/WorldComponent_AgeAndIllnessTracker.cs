@@ -15,32 +15,48 @@ namespace VanillaMemesExpanded
        
         public int tickCounter = tickInterval;
         public const int tickInterval = 3000;
-        public Dictionary<Pawn, int> colonist_illness_tracker_backup = new Dictionary<Pawn, int>();
+        public Dictionary<Pawn, int> colonist_illness_tracker = new Dictionary<Pawn, int>();
         List<Pawn> list2;
         List<int> list3;
 
 
+        public static WorldComponent_AgeAndIllnessTracker Instance;
 
-        public WorldComponent_AgeAndIllnessTracker(World world) : base(world)
-        {
+        public WorldComponent_AgeAndIllnessTracker(World world) : base(world) => Instance = this;
+   
 
-        }
-
-        public override void FinalizeInit()
-        {
-            PawnCollectionClass.colonist_illness_tracker = colonist_illness_tracker_backup;            
-            base.FinalizeInit();
-
-        }
 
         public override void ExposeData()
        {
            base.ExposeData();
 
-           Scribe_Collections.Look(ref colonist_illness_tracker_backup, "colonist_illness_tracker_backup", LookMode.Reference, LookMode.Value, ref list2, ref list3);           
+           Scribe_Collections.Look(ref colonist_illness_tracker, "colonist_illness_tracker", LookMode.Reference, LookMode.Value, ref list2, ref list3);           
           
        }
 
+
+        public void AddColonistToIllnessList(Pawn pawn, int ticks)
+        {
+            if (pawn != null && !colonist_illness_tracker.ContainsKey(pawn))
+            {
+                colonist_illness_tracker[pawn] = ticks;
+            }
+        }
+
+        public  void IncreasePawnIllnessTicks(Pawn pawn, int ticks)
+        {
+            if (pawn != null)
+            {
+                colonist_illness_tracker[pawn] += ticks;
+            }
+        }
+        public  void ResetPawnIllnessTicks(Pawn pawn)
+        {
+            if (pawn != null)
+            {
+                colonist_illness_tracker[pawn] = 0;
+            }
+        }
 
 
         public override void WorldComponentTick()
@@ -52,22 +68,21 @@ namespace VanillaMemesExpanded
             {
                 if (Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.VME_Illness_Exalted) != null) 
                 {
-                    colonist_illness_tracker_backup = PawnCollectionClass.colonist_illness_tracker;
                     List<Pawn> listPawns = PawnsFinder.AllMapsCaravansAndTravelingTransportPods_Alive_Colonists;
                     foreach(Pawn p in listPawns)
                     {
                         if (p.ideo?.Ideo?.HasPrecept(InternalDefOf.VME_Illness_Exalted) ==true)
                         {
-                            PawnCollectionClass.AddColonistToIllnessList(p,0);
+                            AddColonistToIllnessList(p,0);
 
                             if (p.health.hediffSet.AnyHediffMakesSickThought)
                             {
-                                PawnCollectionClass.ResetPawnIllnessTicks(p);
+                                ResetPawnIllnessTicks(p);
                             }
                             else { 
-                                if(PawnCollectionClass.colonist_illness_tracker[p]<int.MaxValue- tickInterval)
+                                if(colonist_illness_tracker[p]<int.MaxValue- tickInterval)
                                 {
-                                    PawnCollectionClass.IncreasePawnIllnessTicks(p, tickInterval);
+                                    IncreasePawnIllnessTicks(p, tickInterval);
 
                                 }
                             }

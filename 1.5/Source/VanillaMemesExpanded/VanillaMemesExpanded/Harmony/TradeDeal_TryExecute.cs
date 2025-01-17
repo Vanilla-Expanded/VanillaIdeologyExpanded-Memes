@@ -24,7 +24,7 @@ namespace VanillaMemesExpanded
 
             if (__result && !TradeSession.giftMode)
             {
-                PawnCollectionClass.ticksWithoutTrading = 0;
+                StaticCollections.ticksWithoutTrading = 0;
             }
 
             Pawn pawn = TradeSession.playerNegotiator as Pawn;

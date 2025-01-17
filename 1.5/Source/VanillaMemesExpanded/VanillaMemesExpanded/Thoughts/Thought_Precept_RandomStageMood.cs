@@ -15,10 +15,10 @@ namespace VanillaMemesExpanded
 
 		protected override ThoughtState ShouldHaveThought(Pawn p)
 		{
-			if (PawnCollectionClass.colonist_and_random_mood.ContainsKey(p))
+			if (WorldComponent_MoodTracker.Instance.colonist_and_random_mood.ContainsKey(p))
 			{
 				
-                switch (PawnCollectionClass.colonist_and_random_mood[p])
+                switch (WorldComponent_MoodTracker.Instance.colonist_and_random_mood[p])
                 {
 
 					case 0:

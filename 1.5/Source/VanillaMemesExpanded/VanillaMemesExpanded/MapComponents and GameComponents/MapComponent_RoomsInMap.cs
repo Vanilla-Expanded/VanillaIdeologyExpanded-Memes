@@ -53,7 +53,7 @@ namespace VanillaMemesExpanded
                         }
                     }
                    
-                    PawnCollectionClass.SetRoomInMap(map, totalRooms);
+                    StaticCollections.SetRoomInMap(map, totalRooms);
                 }
 
                 if (map.IsPlayerHome && Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.VME_Hospital_Required) != null)
@@ -87,9 +87,9 @@ namespace VanillaMemesExpanded
 
                     }
 
-                    PawnCollectionClass.SetHospitalTilesInMap(map, totalHospitalTiles);
-                    PawnCollectionClass.SetHospitalCleanlinessInMap(map, hospitalDirty);
-                    PawnCollectionClass.SetHospitalImpressiveInMap(map, hospitalImpressive);
+                    StaticCollections.SetHospitalTilesInMap(map, totalHospitalTiles);
+                    StaticCollections.SetHospitalCleanlinessInMap(map, hospitalDirty);
+                    StaticCollections.SetHospitalImpressiveInMap(map, hospitalImpressive);
 
                 }
 

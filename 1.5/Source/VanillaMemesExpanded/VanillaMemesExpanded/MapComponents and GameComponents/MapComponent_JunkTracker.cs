@@ -26,7 +26,7 @@ namespace VanillaMemesExpanded
 
         public override void FinalizeInit()
         {
-             PawnCollectionClass.colonist_junk_tracker = colonist_junk_tracker_backup; 
+             StaticCollections.colonist_junk_tracker = colonist_junk_tracker_backup; 
                 
 
             base.FinalizeInit();
@@ -53,7 +53,7 @@ namespace VanillaMemesExpanded
                    
                 {
 
-                    colonist_junk_tracker_backup = PawnCollectionClass.colonist_junk_tracker;
+                    colonist_junk_tracker_backup = StaticCollections.colonist_junk_tracker;
 
                     foreach (Pawn pawn in map.mapPawns.FreeColonistsSpawned)
                     {
@@ -74,8 +74,8 @@ namespace VanillaMemesExpanded
                                 }
                             }
                         }
-                        PawnCollectionClass.AddColonistToJunkList(pawn, totalNumberOfJunk);
-                        PawnCollectionClass.SetPawnJunk(pawn, totalNumberOfJunk);
+                        StaticCollections.AddColonistToJunkList(pawn, totalNumberOfJunk);
+                        StaticCollections.SetPawnJunk(pawn, totalNumberOfJunk);
 
 
                     }

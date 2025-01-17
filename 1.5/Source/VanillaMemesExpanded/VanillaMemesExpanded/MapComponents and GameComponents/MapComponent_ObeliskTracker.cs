@@ -26,7 +26,7 @@ namespace VanillaMemesExpanded
 
         public override void FinalizeInit()
         {
-             PawnCollectionClass.colonist_obelisk_tracker = colonist_obelisk_tracker_backup; 
+             StaticCollections.colonist_obelisk_tracker = colonist_obelisk_tracker_backup; 
                 
 
             base.FinalizeInit();
@@ -53,7 +53,7 @@ namespace VanillaMemesExpanded
                    
                 {
                     if (map.IsPlayerHome) {
-                        colonist_obelisk_tracker_backup = PawnCollectionClass.colonist_obelisk_tracker;
+                        colonist_obelisk_tracker_backup = StaticCollections.colonist_obelisk_tracker;
 
                         foreach (Pawn pawn in map.mapPawns.SpawnedPawnsInFaction(Faction.OfPlayer))
                         {
@@ -75,7 +75,7 @@ namespace VanillaMemesExpanded
                                     }
                                 }
                             }
-                            PawnCollectionClass.AddColonistAndObelisk(pawn, obeliskFound);
+                            StaticCollections.AddColonistAndObelisk(pawn, obeliskFound);
                            
 
 

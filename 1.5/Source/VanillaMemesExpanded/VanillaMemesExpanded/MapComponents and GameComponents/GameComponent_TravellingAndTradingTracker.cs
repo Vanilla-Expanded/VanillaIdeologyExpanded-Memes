@@ -29,9 +29,9 @@ namespace VanillaMemesExpanded
 
         public override void FinalizeInit()
         {
-            PawnCollectionClass.ticksWithoutAbandoning = ticksWithoutAbandoningbackup;
-            PawnCollectionClass.colonist_caravan_tracker = colonist_caravan_tracker_backup;
-            PawnCollectionClass.ticksWithoutTrading = ticksWithoutTradingbackup;
+            StaticCollections.ticksWithoutAbandoning = ticksWithoutAbandoningbackup;
+            StaticCollections.colonist_caravan_tracker = colonist_caravan_tracker_backup;
+            StaticCollections.ticksWithoutTrading = ticksWithoutTradingbackup;
 
             base.FinalizeInit();
 
@@ -58,9 +58,9 @@ namespace VanillaMemesExpanded
             tickCounter++;
             if ((tickCounter > tickInterval))
             {
-                colonist_caravan_tracker_backup=PawnCollectionClass.colonist_caravan_tracker;
-                ticksWithoutAbandoningbackup = PawnCollectionClass.ticksWithoutAbandoning;
-                ticksWithoutTradingbackup = PawnCollectionClass.ticksWithoutTrading;
+                colonist_caravan_tracker_backup=StaticCollections.colonist_caravan_tracker;
+                ticksWithoutAbandoningbackup = StaticCollections.ticksWithoutAbandoning;
+                ticksWithoutTradingbackup = StaticCollections.ticksWithoutTrading;
 
                 if (Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.VME_PermanentBases_Despised) != null)
                 {
@@ -75,15 +75,15 @@ namespace VanillaMemesExpanded
                         }
                     }
                     if (num != 0) {
-                        if (PawnCollectionClass.ticksWithoutAbandoning < int.MaxValue - tickInterval)
+                        if (StaticCollections.ticksWithoutAbandoning < int.MaxValue - tickInterval)
                         {
-                            PawnCollectionClass.ticksWithoutAbandoning += tickInterval;
+                            StaticCollections.ticksWithoutAbandoning += tickInterval;
                         }
 
                     } else {
-                        if (PawnCollectionClass.ticksWithoutAbandoning - tickInterval > 0)
+                        if (StaticCollections.ticksWithoutAbandoning - tickInterval > 0)
                         {
-                            PawnCollectionClass.ticksWithoutAbandoning -= tickInterval;
+                            StaticCollections.ticksWithoutAbandoning -= tickInterval;
                         } 
                     }
 
@@ -101,11 +101,11 @@ namespace VanillaMemesExpanded
 
 
 
-                            if (PawnCollectionClass.colonist_caravan_tracker.ContainsKey(p) && p.GetCaravan()==null)
+                            if (StaticCollections.colonist_caravan_tracker.ContainsKey(p) && p.GetCaravan()==null)
                             {
-                                if (PawnCollectionClass.colonist_caravan_tracker[p] < int.MaxValue - tickInterval)
+                                if (StaticCollections.colonist_caravan_tracker[p] < int.MaxValue - tickInterval)
                                 {
-                                    PawnCollectionClass.IncreasePawnCaravanTicks(p, tickInterval);
+                                    StaticCollections.IncreasePawnCaravanTicks(p, tickInterval);
 
                                 }
                             }
@@ -120,9 +120,9 @@ namespace VanillaMemesExpanded
 
                 if (Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.VME_Trading_Required) != null)
                 {
-                    if (PawnCollectionClass.ticksWithoutTrading < int.MaxValue - tickInterval)
+                    if (StaticCollections.ticksWithoutTrading < int.MaxValue - tickInterval)
                     {
-                        PawnCollectionClass.ticksWithoutTrading += tickInterval;
+                        StaticCollections.ticksWithoutTrading += tickInterval;
                     }
 
 

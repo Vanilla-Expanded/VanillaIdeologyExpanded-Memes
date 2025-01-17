@@ -3,11 +3,12 @@ using RimWorld;
 using Verse;
 using UnityEngine;
 using System.Collections.Generic;
+using RimWorld.Planet;
 
 
 namespace VanillaMemesExpanded
 {
-    public class GameComponent_BonfireTracker : GameComponent
+    public class WorldComponent_BonfireTracker : WorldComponent
     {
 
        
@@ -18,19 +19,11 @@ namespace VanillaMemesExpanded
         List<Pawn> list2;
         List<int> list3;
 
+        public static WorldComponent_BonfireTracker Instance;
 
+        public WorldComponent_BonfireTracker(World world) : base(world) => Instance = this;
 
-        public GameComponent_BonfireTracker(Game game) : base()
-        {
-
-        }
-
-        public override void FinalizeInit()
-        {
-              
-            base.FinalizeInit();
-
-        }
+      
 
         public override void ExposeData()
        {
@@ -42,7 +35,7 @@ namespace VanillaMemesExpanded
 
 
 
-        public override void GameComponentTick()
+        public override void WorldComponentTick()
         {
             if (Find.IdeoManager.classicMode) return;
 

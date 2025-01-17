@@ -29,8 +29,8 @@ namespace VanillaMemesExpanded
 
             if (allDrinks.Contains(__instance.parent.def.defName))
             {
-                PawnCollectionClass.AddColonistToBoozeList(ingester, 0);
-                PawnCollectionClass.ResetPawnBoozeTicks(ingester);
+                WorldComponent_AlcoholScarsAndSlaveryTracker.Instance.AddColonistToBoozeList(ingester, 0);
+                WorldComponent_AlcoholScarsAndSlaveryTracker.Instance.ResetPawnBoozeTicks(ingester);
             }
 
 

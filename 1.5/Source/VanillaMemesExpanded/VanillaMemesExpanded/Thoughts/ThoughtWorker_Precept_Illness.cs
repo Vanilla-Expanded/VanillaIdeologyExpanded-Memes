@@ -16,7 +16,7 @@ namespace VanillaMemesExpanded
             {
                 return ThoughtState.ActiveAtStage(0);
             }
-            else if (PawnCollectionClass.colonist_illness_tracker.ContainsKey(p) && PawnCollectionClass.colonist_illness_tracker[p] > tickInterval)
+            else if (WorldComponent_AgeAndIllnessTracker.Instance.colonist_illness_tracker.ContainsKey(p) && WorldComponent_AgeAndIllnessTracker.Instance.colonist_illness_tracker[p] > tickInterval)
             {
                 return ThoughtState.ActiveAtStage(1); 
             }

@@ -21,7 +21,7 @@ namespace VanillaMemesExpanded
         static void SetAbandonedTimeToZero()
         {
             
-                    PawnCollectionClass.ticksWithoutAbandoning = 0;
+                    StaticCollections.ticksWithoutAbandoning = 0;
                 
 
 

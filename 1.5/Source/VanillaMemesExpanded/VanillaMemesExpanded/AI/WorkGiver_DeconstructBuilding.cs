@@ -10,7 +10,7 @@ namespace VanillaMemesExpanded
 	{
 		public override IEnumerable<Thing> PotentialWorkThingsGlobal(Pawn pawn)
 		{
-			return PawnCollectionClass.objectsToDeconstruct_InMap;
+			return StaticCollections.objectsToDeconstruct_InMap;
 		}
 
 		public override PathEndMode PathEndMode

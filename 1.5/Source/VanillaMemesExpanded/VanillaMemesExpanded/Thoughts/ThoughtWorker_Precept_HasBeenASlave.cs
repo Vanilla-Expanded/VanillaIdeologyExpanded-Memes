@@ -8,7 +8,7 @@ namespace VanillaMemesExpanded
 	{
 		protected override ThoughtState ShouldHaveThought(Pawn p, Pawn otherPawn)
 		{
-            if (PawnCollectionClass.enslavedPawns.Contains(otherPawn))
+            if (StaticCollections.enslavedPawns.Contains(otherPawn))
             {
 				return true;
             }

@@ -9,16 +9,16 @@ namespace VanillaMemesExpanded
 		protected override ThoughtState ShouldHaveThought(Pawn p, Pawn otherPawn)
 		{
 			
-			if (!PawnCollectionClass.colonist_scar_counter.ContainsKey(otherPawn))
+			if (!StaticCollections.colonist_scar_counter.ContainsKey(otherPawn))
             {
 				return false;
-            } else if (PawnCollectionClass.colonist_scar_counter[otherPawn]==0) {
+            } else if (StaticCollections.colonist_scar_counter[otherPawn]==0) {
 				return false;
 
 			}
             else
             {
-                switch (PawnCollectionClass.colonist_scar_counter[otherPawn])
+                switch (StaticCollections.colonist_scar_counter[otherPawn])
                 {
 					case 1:
 						return ThoughtState.ActiveAtStage(0);
