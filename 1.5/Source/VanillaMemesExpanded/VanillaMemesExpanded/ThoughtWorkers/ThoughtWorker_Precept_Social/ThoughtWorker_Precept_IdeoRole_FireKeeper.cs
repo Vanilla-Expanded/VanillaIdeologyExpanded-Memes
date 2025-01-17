@@ -4,7 +4,7 @@ using RimWorld;
 
 namespace VanillaMemesExpanded
 {
-	public class Thought_IdeoRole_FireKeeper : ThoughtWorker_Precept_Social
+	public class ThoughtWorker_Precept_IdeoRole_FireKeeper : ThoughtWorker_Precept_Social
 	{
 		protected override ThoughtState ShouldHaveThought(Pawn p, Pawn otherPawn)
 		{

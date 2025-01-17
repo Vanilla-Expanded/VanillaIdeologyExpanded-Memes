@@ -13,10 +13,7 @@ namespace VanillaMemesExpanded
     class Thought_DisableFirstDefeatThought : Thought_Memory
     {
 
-        public bool removedOnce = false;
-
-
-       
+        public bool removedOnce = false;      
 
         public override void ExposeData()
         {

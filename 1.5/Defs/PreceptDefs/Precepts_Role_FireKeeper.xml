@@ -60,7 +60,7 @@
 	<ThoughtDef>
 		<defName>VME_IdeoRole_FireKeeper</defName>
 		<thoughtClass>Thought_SituationalSocial</thoughtClass>
-		<workerClass>VanillaMemesExpanded.Thought_IdeoRole_FireKeeper</workerClass>
+		<workerClass>VanillaMemesExpanded.ThoughtWorker_Precept_IdeoRole_FireKeeper</workerClass>
 		<stages>
 			<li>
 				<label>keeper of sacred flame</label>

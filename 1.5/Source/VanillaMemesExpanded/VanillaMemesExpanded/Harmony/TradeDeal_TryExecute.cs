@@ -24,11 +24,11 @@ namespace VanillaMemesExpanded
 
             if (__result && !TradeSession.giftMode)
             {
-                StaticCollections.ticksWithoutTrading = 0;
+                WorldComponent_TravellingAndTradingTracker.Instance.ticksWithoutTrading = 0;
             }
 
             Pawn pawn = TradeSession.playerNegotiator as Pawn;
-           // Log.Message(pawn.Name.ToString());
+         
             if (pawn.Ideo?.HasPrecept(InternalDefOf.VME_Anonymity_Required) == true)
             {
                 if (pawn.needs != null)
@@ -36,7 +36,7 @@ namespace VanillaMemesExpanded
                     Need_Anonymity need = pawn.needs.TryGetNeed<Need_Anonymity>();
                     need.AnonymityTaken(-1);
                     need.CurLevel -= 1;
-                   // Log.Message(need.ToString()+" decreased");
+                  
                 }
             }
 

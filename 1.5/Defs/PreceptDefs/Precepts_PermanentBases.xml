@@ -20,7 +20,7 @@
 		<requiredMemes>
 			<li>VME_Nomad</li>
 		</requiredMemes>
-		<comps>			
+		<comps>
 			<li Class="PreceptComp_SituationalThought">
 				<thought>VME_PermanentBases_Despised</thought>
 				<thoughtStageDescriptions>
@@ -32,19 +32,14 @@
 					<li>Wanderlust (40 days)</li>
 					<li>Wanderlust (50 days)</li>
 					<li>Wanderlust (60 days)</li>
-					
 				</thoughtStageDescriptions>
 			</li>
 		</comps>
-		
 	</PreceptDef>
-	
-	
-	
 	<ThoughtDef>
 		<defName>VME_PermanentBases_Despised</defName>
 		<validWhileDespawned>true</validWhileDespawned>
-		<workerClass>VanillaMemesExpanded.Thought_StageByTime</workerClass>
+		<workerClass>VanillaMemesExpanded.ThoughtWorker_Precept_PermanentBases</workerClass>
 		<stages>
 			<li>
 				<label>wanderlust (initial - stayed 15 days)</label>
@@ -86,13 +81,8 @@
 				<description>Agh! I can't stand being here anymore!</description>
 				<baseMoodEffect>-50</baseMoodEffect>
 			</li>
-			
-			
-			
-			
 		</stages>
 	</ThoughtDef>
-	
 	<PreceptDef>
 		<defName>VME_PermanentBases_Desired</defName>
 		<issue>VME_PermanentBases</issue>
@@ -107,7 +97,7 @@
 		<conflictingMemes>
 			<li>VME_Nomad</li>
 		</conflictingMemes>
-		<comps>			
+		<comps>
 			<li Class="PreceptComp_SituationalThought">
 				<thought>VME_PermanentBases_Desired</thought>
 				<thoughtStageDescriptions>
@@ -116,20 +106,16 @@
 					<li>Many beautiful buildings (less than 15 buildings)</li>
 					<li>Burgeoning city (less than 10 buildings)</li>
 					<li>Not enough buildings (less than 5 buildings)</li>
-					
-					
 				</thoughtStageDescriptions>
 			</li>
 		</comps>
-		
 	</PreceptDef>
-	
 	<ThoughtDef>
 		<defName>VME_PermanentBases_Desired</defName>
 		<validWhileDespawned>true</validWhileDespawned>
-		<workerClass>VanillaMemesExpanded.Thought_MoodByRooms</workerClass>
+		<workerClass>VanillaMemesExpanded.ThoughtWorker_Precept_Rooms</workerClass>
 		<stages>
-		<li>
+			<li>
 				<label>magnificent city</label>
 				<description>Our city is magnificent, a fine example of what humanity can achieve.</description>
 				<baseMoodEffect>20</baseMoodEffect>
@@ -149,17 +135,11 @@
 				<description>Our city is growing!</description>
 				<baseMoodEffect>5</baseMoodEffect>
 			</li>
-			
 			<li>
 				<label>not enough buildings</label>
 				<description>There are not enough buildings nearby. I feel unprotected.</description>
 				<baseMoodEffect>-5</baseMoodEffect>
 			</li>
-			
-			
-			
-			
-			
 		</stages>
 	</ThoughtDef>
 </Defs>

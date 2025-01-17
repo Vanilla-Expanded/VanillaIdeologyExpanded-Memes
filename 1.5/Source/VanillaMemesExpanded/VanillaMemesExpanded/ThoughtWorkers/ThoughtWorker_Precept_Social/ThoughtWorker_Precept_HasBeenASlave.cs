@@ -8,7 +8,7 @@ namespace VanillaMemesExpanded
 	{
 		protected override ThoughtState ShouldHaveThought(Pawn p, Pawn otherPawn)
 		{
-            if (StaticCollections.enslavedPawns.Contains(otherPawn))
+            if (WorldComponent_AlcoholScarsAndSlaveryTracker.Instance.enslavedPawns.Contains(otherPawn))
             {
 				return true;
             }

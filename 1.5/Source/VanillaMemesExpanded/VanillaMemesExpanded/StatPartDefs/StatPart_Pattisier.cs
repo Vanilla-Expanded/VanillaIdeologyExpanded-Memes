@@ -36,9 +36,9 @@ namespace VanillaMemesExpanded
             if (Find.IdeoManager.classicMode) return false;
             Pawn pawn = th as Pawn;
 			Precept_Role precept_role;
-			if (pawn != null && pawn.Ideo?.HasPrecept(DefDatabase<PreceptDef>.GetNamedSilentFail("VME_IdeoRole_Patissier")) == true)
+			if (pawn != null && pawn.Ideo?.HasPrecept(InternalDefOf.VME_IdeoRole_Patissier) == true)
 			{
-				if ((precept_role = pawn.Ideo?.GetPrecept(DefDatabase<PreceptDef>.GetNamedSilentFail("VME_IdeoRole_Patissier")) as Precept_Role) != null && precept_role.ChosenPawnSingle()==pawn)
+				if ((precept_role = pawn.Ideo?.GetPrecept(InternalDefOf.VME_IdeoRole_Patissier) as Precept_Role) != null && precept_role.ChosenPawnSingle()==pawn)
                 {
 					return true;
                 }

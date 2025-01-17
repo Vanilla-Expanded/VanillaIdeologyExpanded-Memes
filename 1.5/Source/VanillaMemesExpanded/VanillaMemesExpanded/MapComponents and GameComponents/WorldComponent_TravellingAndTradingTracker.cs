@@ -7,60 +7,46 @@ using System.Collections.Generic;
 
 namespace VanillaMemesExpanded
 {
-    public class GameComponent_TravellingAndTradingTracker : GameComponent
+    public class WorldComponent_TravellingAndTradingTracker : WorldComponent
     {
 
        
        
-        public int tickCounter = 0;
-        public int tickInterval = 6000;
-        public int ticksWithoutAbandoningbackup;
-        public int ticksWithoutTradingbackup;
+        public int tickCounter = tickInterval;
+        public const int tickInterval = 6000;
+        public int ticksWithoutAbandoning;
+        public int ticksWithoutTrading;
 
-        public Dictionary<Pawn, int> colonist_caravan_tracker_backup = new Dictionary<Pawn, int>();
+        public Dictionary<Pawn, int> colonist_caravan_tracker = new Dictionary<Pawn, int>();
         List<Pawn> list2;
         List<int> list3;
 
+        public static WorldComponent_TravellingAndTradingTracker Instance;
 
-        public GameComponent_TravellingAndTradingTracker(Game game) : base()
-        {
+        public WorldComponent_TravellingAndTradingTracker(World world) : base(world) => Instance = this;
 
-        }
-
-        public override void FinalizeInit()
-        {
-            StaticCollections.ticksWithoutAbandoning = ticksWithoutAbandoningbackup;
-            StaticCollections.colonist_caravan_tracker = colonist_caravan_tracker_backup;
-            StaticCollections.ticksWithoutTrading = ticksWithoutTradingbackup;
-
-            base.FinalizeInit();
-
-        }
+        
 
         public override void ExposeData()
         {
             base.ExposeData();
 
             Scribe_Values.Look<int>(ref this.tickCounter, "tickCounterTravel", 0, true);
-            Scribe_Values.Look<int>(ref this.ticksWithoutAbandoningbackup, "ticksWithoutAbandoningbackup", 0, true);
-            Scribe_Collections.Look(ref colonist_caravan_tracker_backup, "colonist_caravan_tracker_backup", LookMode.Reference, LookMode.Value, ref list2, ref list3);
-            Scribe_Values.Look<int>(ref this.ticksWithoutTradingbackup, "ticksWithoutTradingbackup", 0, true);
-
-
+            Scribe_Values.Look<int>(ref this.ticksWithoutAbandoning, "ticksWithoutAbandoning", 0, true);
+            Scribe_Collections.Look(ref colonist_caravan_tracker, "colonist_caravan_tracker", LookMode.Reference, LookMode.Value, ref list2, ref list3);
+            Scribe_Values.Look<int>(ref this.ticksWithoutTrading, "ticksWithoutTrading", 0, true);
 
         }
 
 
-        public override void GameComponentTick()
+        public override void WorldComponentTick()
         {
             if (Find.IdeoManager.classicMode) return;
 
             tickCounter++;
             if ((tickCounter > tickInterval))
             {
-                colonist_caravan_tracker_backup=StaticCollections.colonist_caravan_tracker;
-                ticksWithoutAbandoningbackup = StaticCollections.ticksWithoutAbandoning;
-                ticksWithoutTradingbackup = StaticCollections.ticksWithoutTrading;
+               
 
                 if (Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.VME_PermanentBases_Despised) != null)
                 {
@@ -75,15 +61,15 @@ namespace VanillaMemesExpanded
                         }
                     }
                     if (num != 0) {
-                        if (StaticCollections.ticksWithoutAbandoning < int.MaxValue - tickInterval)
+                        if (ticksWithoutAbandoning < int.MaxValue - tickInterval)
                         {
-                            StaticCollections.ticksWithoutAbandoning += tickInterval;
+                            ticksWithoutAbandoning += tickInterval;
                         }
 
                     } else {
-                        if (StaticCollections.ticksWithoutAbandoning - tickInterval > 0)
+                        if (ticksWithoutAbandoning - tickInterval > 0)
                         {
-                            StaticCollections.ticksWithoutAbandoning -= tickInterval;
+                            ticksWithoutAbandoning -= tickInterval;
                         } 
                     }
 
@@ -99,33 +85,25 @@ namespace VanillaMemesExpanded
                         if (p.ideo?.Ideo?.HasPrecept(InternalDefOf.VME_Travel_Desired) ==true || p.ideo?.Ideo?.HasPrecept(InternalDefOf.VME_Travel_Despised) ==true)
                         {
 
-
-
-                            if (StaticCollections.colonist_caravan_tracker.ContainsKey(p) && p.GetCaravan()==null)
+                            if (colonist_caravan_tracker.ContainsKey(p) && p.GetCaravan()==null)
                             {
-                                if (StaticCollections.colonist_caravan_tracker[p] < int.MaxValue - tickInterval)
+                                if (colonist_caravan_tracker[p] < int.MaxValue - tickInterval)
                                 {
-                                    StaticCollections.IncreasePawnCaravanTicks(p, tickInterval);
+                                    IncreasePawnCaravanTicks(p, tickInterval);
 
                                 }
                             }
-                            
-
-
                         }
-
                     }
                 }
                 
 
                 if (Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.VME_Trading_Required) != null)
                 {
-                    if (StaticCollections.ticksWithoutTrading < int.MaxValue - tickInterval)
+                    if (ticksWithoutTrading < int.MaxValue - tickInterval)
                     {
-                        StaticCollections.ticksWithoutTrading += tickInterval;
+                        ticksWithoutTrading += tickInterval;
                     }
-
-
                 }
 
 
@@ -135,6 +113,31 @@ namespace VanillaMemesExpanded
 
 
 
+        }
+
+        public void IncreasePawnCaravanTicks(Pawn pawn, int ticks)
+        {
+            if (pawn != null)
+            {
+                colonist_caravan_tracker[pawn] += ticks;
+            }
+        }
+
+        public void AddColonistToCaravanList(Pawn pawn, int ticks)
+        {
+            if (pawn != null && !colonist_caravan_tracker.ContainsKey(pawn))
+            {
+                colonist_caravan_tracker[pawn] = ticks;
+            }
+        }
+
+
+        public void ResetPawnCaravanTicks(Pawn pawn)
+        {
+            if (pawn != null)
+            {
+                colonist_caravan_tracker[pawn] = 0;
+            }
         }
 
 

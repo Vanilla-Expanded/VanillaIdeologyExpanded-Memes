@@ -4,7 +4,7 @@ using RimWorld;
 
 namespace VanillaMemesExpanded
 {
-    public class Thought_Junk_Beautiful : ThoughtWorker_Precept
+    public class ThoughtWorker_Precept_Junk : ThoughtWorker_Precept
     {
         protected override ThoughtState ShouldHaveThought(Pawn p)
         {

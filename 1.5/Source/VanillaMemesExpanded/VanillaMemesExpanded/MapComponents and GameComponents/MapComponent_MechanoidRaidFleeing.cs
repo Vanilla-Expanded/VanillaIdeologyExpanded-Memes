@@ -12,19 +12,13 @@ namespace VanillaMemesExpanded
     public class MapComponent_MechanoidRaidFleeing : MapComponent
     {
 
-
-
-        public int tickCounter = 0;
-        public int tickInterval = 20000;
-
-
+        public int tickCounter = tickInterval;
+        public const int tickInterval = 20000;
 
         public MapComponent_MechanoidRaidFleeing(Map map) : base(map)
         {
 
         }
-
-
 
         public override void ExposeData()
         {
@@ -60,7 +54,6 @@ namespace VanillaMemesExpanded
                                 for (int i = 0; i < lord.ownedPawns.Count; i++)
                                 {
                                     
-
                                     Pawn pawn = lord.ownedPawns[i];
 
                                     if (!pawn.kindDef.isBoss)

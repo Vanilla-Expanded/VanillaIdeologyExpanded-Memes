@@ -4,7 +4,7 @@ using RimWorld;
 
 namespace VanillaMemesExpanded
 {
-	public class Thought_Power_Desired : ThoughtWorker_Precept
+	public class ThoughtWorker_Precept_Power_Desired : ThoughtWorker_Precept
 	{
 
 

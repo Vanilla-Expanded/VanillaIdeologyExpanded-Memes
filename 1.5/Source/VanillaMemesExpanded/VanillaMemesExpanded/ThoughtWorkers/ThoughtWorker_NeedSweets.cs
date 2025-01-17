@@ -13,7 +13,7 @@ namespace VanillaMemesExpanded
 				return ThoughtState.Inactive;
 			}
 
-			if (DefDatabase<MemeDef>.GetNamedSilentFail("VME_SweetTeeth") == null||p.Ideo?.HasMeme(DefDatabase<MemeDef>.GetNamedSilentFail("VME_SweetTeeth"))!=true)
+			if (InternalDefOf.VME_SweetTeeth == null||p.Ideo?.HasMeme(InternalDefOf.VME_SweetTeeth)!=true)
 			{
 				return ThoughtState.Inactive;
 			}

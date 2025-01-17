@@ -20,7 +20,6 @@
 				<thoughtStageDescriptions>
 					<li>Elder (more than 65 years)</li>
 					<li>Youth (less than 25 years)</li>
-					
 				</thoughtStageDescriptions>
 			</li>
 		</comps>
@@ -28,7 +27,7 @@
 	<ThoughtDef>
 		<defName>VME_Elders_Despised</defName>
 		<thoughtClass>Thought_SituationalSocial</thoughtClass>
-		<workerClass>VanillaMemesExpanded.Thought_Elders_Despised</workerClass>
+		<workerClass>VanillaMemesExpanded.ThoughtWorker_Precept_Elders_Despised</workerClass>
 		<stages>
 			<li>
 				<label>elder</label>
@@ -57,7 +56,6 @@
 				<thought>VME_Elders_Respected</thought>
 				<thoughtStageDescriptions>
 					<li>Elder (more than 65 years)</li>
-				
 				</thoughtStageDescriptions>
 			</li>
 		</comps>
@@ -65,7 +63,7 @@
 	<ThoughtDef>
 		<defName>VME_Elders_Respected</defName>
 		<thoughtClass>Thought_SituationalSocial</thoughtClass>
-		<workerClass>VanillaMemesExpanded.Thought_Elders_Respected</workerClass>
+		<workerClass>VanillaMemesExpanded.ThoughtWorker_Precept_Elders_Respected</workerClass>
 		<stages>
 			<li>
 				<label>elder</label>
@@ -93,7 +91,6 @@
 				<thought>VME_Elders_Holy</thought>
 				<thoughtStageDescriptions>
 					<li>Elder (more than 65 years)</li>
-				
 				</thoughtStageDescriptions>
 			</li>
 		</comps>

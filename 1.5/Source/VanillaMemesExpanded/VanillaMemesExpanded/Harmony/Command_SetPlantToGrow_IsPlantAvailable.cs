@@ -23,7 +23,7 @@ namespace VanillaMemesExpanded
             if (Find.IdeoManager.classicMode) return;
             if (plantDef.plant.sowTags.Contains("VCE_ChocolateBushSowableDetection"))
             {
-                if (Current.Game.World.factionManager.OfPlayer.ideos.HasAnyIdeoWithMeme(DefDatabase<MemeDef>.GetNamedSilentFail("VME_SweetTeeth"))) {
+                if (Current.Game.World.factionManager.OfPlayer.ideos.HasAnyIdeoWithMeme(InternalDefOf.VME_SweetTeeth)) {
 
                     __result = __result&&true;
                 } else __result = false;

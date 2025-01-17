@@ -30,7 +30,7 @@ namespace VanillaMemesExpanded
 		{
 
             if (Find.IdeoManager.classicMode) return false;
-            return Current.Game.World.factionManager.OfPlayer.ideos.PrimaryIdeo.GetPrecept(DefDatabase<PreceptDef>.GetNamedSilentFail("VME_Meditation_Exquisite")) != null;
+            return Current.Game.World.factionManager.OfPlayer.ideos.PrimaryIdeo.GetPrecept(InternalDefOf.VME_Meditation_Exquisite) != null;
 		}
 	}
 }

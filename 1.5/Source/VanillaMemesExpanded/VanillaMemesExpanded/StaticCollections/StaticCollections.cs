@@ -14,11 +14,6 @@ namespace VanillaMemesExpanded
 
         //This static class stores different lists as a cache
 
-
-        public static Dictionary<Pawn, int> colonist_caravan_tracker = new Dictionary<Pawn, int>();
-
-        public static Dictionary<Pawn, int> colonist_scar_counter = new Dictionary<Pawn, int>();
-
         public static Dictionary<Pawn, int> colonist_junk_tracker = new Dictionary<Pawn, int>();
 
         public static Dictionary<Pawn, bool> colonist_obelisk_tracker = new Dictionary<Pawn, bool>();
@@ -33,57 +28,12 @@ namespace VanillaMemesExpanded
 
         public static HashSet<Thing> objectsToDeconstruct_InMap = new HashSet<Thing>();
 
-        public static List<Pawn> enslavedPawns = new List<Pawn>();
+        public static Dictionary<Map, int> firesInTheMap = new Dictionary<Map, int>();
 
-        public static int ticksWithoutTrading = 0;
-
-        public static int ticksWithoutAbandoning = 0;
-
-        public static int firesInTheMap = 0;
-
-        public static int pensInTheMap = 0;
+        public static Dictionary<Map, int> pensInTheMap = new Dictionary<Map, int>();
 
 
-        
-
-        public static void AddColonistToCaravanList(Pawn pawn, int ticks)
-        {
-            if (pawn != null && !colonist_caravan_tracker.ContainsKey(pawn))
-            {
-                colonist_caravan_tracker[pawn] = ticks;
-            }
-        }
-
-        public static void IncreasePawnCaravanTicks(Pawn pawn, int ticks)
-        {
-            if (pawn != null)
-            {
-                colonist_caravan_tracker[pawn] += ticks;
-            }
-        }
-        public static void ResetPawnCaravanTicks(Pawn pawn)
-        {
-            if (pawn != null)
-            {
-                colonist_caravan_tracker[pawn] = 0;
-            }
-        }
-
-        public static void AddColonistToScarList(Pawn pawn, int scars)
-        {
-            if (pawn != null)
-            {
-                colonist_scar_counter[pawn] = scars;
-            }
-        }
-
-        public static void SetPawnScars(Pawn pawn, int scars)
-        {
-            if (pawn != null)
-            {
-                colonist_scar_counter[pawn] = scars;
-            }
-        }
+   
 
         public static void AddColonistToJunkList(Pawn pawn, int numOfJunk)
         {
@@ -129,14 +79,7 @@ namespace VanillaMemesExpanded
             
         }
 
-        public static void AddToEnslavedPawns(Pawn pawn)
-        {
-            if (!enslavedPawns.Contains(pawn))
-            {
-                enslavedPawns.Add(pawn);
-            }
-            
-        }
+        
 
         public static void SetHospitalTilesInMap(Map map, int tiles)
         {
@@ -153,6 +96,14 @@ namespace VanillaMemesExpanded
         public static void SetRoomInMap(Map map, int rooms)
         {
             roomsInMap[map] = rooms;
+        }
+        public static void SetFireInMap(Map map, int fires)
+        {
+            firesInTheMap[map] = fires;
+        }
+        public static void SetPensInMap(Map map, int pens)
+        {
+            pensInTheMap[map] = pens;
         }
     }
 }

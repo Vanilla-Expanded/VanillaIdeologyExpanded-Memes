@@ -12,8 +12,8 @@ namespace VanillaMemesExpanded
 
 
 
-        public int tickCounter = 0;
-        public int tickInterval = 12000;
+        public int tickCounter = tickInterval;
+        public const int tickInterval = 12000;
         public Dictionary<Pawn, int> colonist_junk_tracker_backup = new Dictionary<Pawn, int>();
         List<Pawn> list2;
         List<int> list3;

@@ -61,11 +61,11 @@ namespace VanillaMemesExpanded
 
                 }
 
-                if (worker?.Ideo?.HasPrecept(DefDatabase<PreceptDef>.GetNamedSilentFail("VME_BookWriting_Exalted")) == true)
+                if (worker?.Ideo?.HasPrecept(InternalDefOf.VME_BookWriting_Exalted) == true)
                 {
-                    if (product?.HasThingCategory(DefDatabase<ThingCategoryDef>.GetNamedSilentFail("Books")) == true && worker != null)
+                    if (product?.HasThingCategory(InternalDefOf.Books) == true && worker != null)
                     {
-                        Find.HistoryEventsManager.RecordEvent(new HistoryEvent(DefDatabase<HistoryEventDef>.GetNamedSilentFail("VME_WroteBook"), worker.Named(HistoryEventArgsNames.Doer)), true);
+                        Find.HistoryEventsManager.RecordEvent(new HistoryEvent(InternalDefOf.VME_WroteBook, worker.Named(HistoryEventArgsNames.Doer)), true);
 
                     }
                 }

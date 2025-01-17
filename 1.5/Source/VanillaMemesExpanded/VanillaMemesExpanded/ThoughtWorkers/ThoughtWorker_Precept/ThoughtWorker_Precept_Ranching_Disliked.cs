@@ -4,7 +4,7 @@ using RimWorld;
 
 namespace VanillaMemesExpanded
 {
-    public class Thought_Fire_Desired : ThoughtWorker_Precept
+    public class ThoughtWorker_Precept_Ranching_Disliked : ThoughtWorker_Precept
     {
         protected override ThoughtState ShouldHaveThought(Pawn p)
         {
@@ -14,46 +14,36 @@ namespace VanillaMemesExpanded
                 return false;
             }
 
-
-            if (StaticCollections.firesInTheMap == 0)
+            if (StaticCollections.pensInTheMap[p.Map] == 0)
             {
                 return ThoughtState.ActiveAtStage(0);
 
             }
-            else if(StaticCollections.firesInTheMap <5)
+            else if (StaticCollections.pensInTheMap[p.Map] < 2)
             {
                 return ThoughtState.ActiveAtStage(1);
 
             }
-            else if (StaticCollections.firesInTheMap <30)
+            else if (StaticCollections.pensInTheMap[p.Map] < 4)
             {
                 return ThoughtState.ActiveAtStage(2);
 
             }
-            else if (StaticCollections.firesInTheMap <50)
+            else 
             {
                 return ThoughtState.ActiveAtStage(3);
 
             }
-            else if (StaticCollections.firesInTheMap <150)
-            {
-                return ThoughtState.ActiveAtStage(4);
-
-            }
-            else 
-            {
-                return ThoughtState.ActiveAtStage(5);
-
-            }
-            
-              
+           
 
 
 
 
 
 
-            
+
+
+
 
 
 

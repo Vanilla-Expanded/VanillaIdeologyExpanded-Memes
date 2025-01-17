@@ -42,7 +42,7 @@
 	<ThoughtDef>
 		<defName>VME_Junk_Beautiful</defName>
 		<minExpectation>VeryLow</minExpectation>
-		<workerClass>VanillaMemesExpanded.Thought_Junk_Beautiful</workerClass>
+		<workerClass>VanillaMemesExpanded.ThoughtWorker_Precept_Junk</workerClass>
 		<stages>
 			<li>
 				<label>no junk</label>
@@ -135,7 +135,7 @@
 	<ThoughtDef>
 		<defName>VME_Junk_Preferred</defName>
 		<minExpectation>VeryLow</minExpectation>
-		<workerClass>VanillaMemesExpanded.Thought_Junk_Beautiful</workerClass>
+		<workerClass>VanillaMemesExpanded.ThoughtWorker_Precept_Junk</workerClass>
 		<stages>
 			<li>
 				<label>no junk</label>

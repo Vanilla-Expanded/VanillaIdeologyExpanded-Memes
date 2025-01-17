@@ -12,7 +12,7 @@ namespace VanillaMemesExpanded
 
 		protected override ThoughtState ShouldHaveThought(Pawn p)
 		{
-			if (StaticCollections.ticksWithoutTrading> maxTimeWithoutTrading)
+			if (WorldComponent_TravellingAndTradingTracker.Instance.ticksWithoutTrading> maxTimeWithoutTrading)
             {
 				return ThoughtState.ActiveAtStage(1);
 

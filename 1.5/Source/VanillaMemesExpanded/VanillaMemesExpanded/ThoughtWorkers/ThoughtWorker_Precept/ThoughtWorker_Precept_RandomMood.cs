@@ -10,7 +10,7 @@ namespace VanillaMemesExpanded
 {
 
 
-    public class Thought_Precept_RandomStageMood : ThoughtWorker_Precept
+    public class ThoughtWorker_Precept_RandomMood : ThoughtWorker_Precept
     {
 
 		protected override ThoughtState ShouldHaveThought(Pawn p)

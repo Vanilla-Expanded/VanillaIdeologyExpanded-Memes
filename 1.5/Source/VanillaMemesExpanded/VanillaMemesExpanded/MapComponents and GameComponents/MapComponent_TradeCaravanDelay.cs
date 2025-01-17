@@ -10,20 +10,14 @@ namespace VanillaMemesExpanded
     public class MapComponent_TradeCaravanDelay : MapComponent
     {
 
-
-
         public int tickCounter = 0;
-        public int tickInterval = 60000;
+        public const int tickInterval = 60000;
         public bool signaledCaravanArriving = false;
-     
-
 
         public MapComponent_TradeCaravanDelay(Map map) : base(map)
         {
 
         }
-
-      
 
         public override void ExposeData()
         {
@@ -53,18 +47,9 @@ namespace VanillaMemesExpanded
 
             }
 
-
-            
-
-
-
         }
-       
-
-
 
     }
-
 
 }
 

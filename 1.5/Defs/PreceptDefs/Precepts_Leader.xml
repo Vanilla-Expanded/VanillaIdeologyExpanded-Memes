@@ -39,7 +39,7 @@
 	<ThoughtDef>
 		<defName>VME_Leader_Godlike</defName>
 		<thoughtClass>Thought_SituationalSocial</thoughtClass>
-		<workerClass>VanillaMemesExpanded.Thought_StageByWill</workerClass>
+		<workerClass>VanillaMemesExpanded.ThoughtWorker_Precept_Leader_Godlike</workerClass>
 		<stages>
 			<li>
 				<label>supreme god emperor</label>

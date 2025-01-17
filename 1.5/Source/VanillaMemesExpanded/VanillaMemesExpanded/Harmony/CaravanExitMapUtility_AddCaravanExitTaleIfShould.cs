@@ -23,15 +23,15 @@ namespace VanillaMemesExpanded
 
             if (pawn.Spawned && pawn.IsFreeColonist)
             {
-                StaticCollections.AddColonistToCaravanList(pawn, 0);
-                StaticCollections.ResetPawnCaravanTicks(pawn);
+                WorldComponent_TravellingAndTradingTracker.Instance.AddColonistToCaravanList(pawn, 0);
+                WorldComponent_TravellingAndTradingTracker.Instance.ResetPawnCaravanTicks(pawn);
                 
             }
 
             foreach (Pawn p in ___tmpPawns)
             {
-                StaticCollections.AddColonistToCaravanList(p, 0);
-                StaticCollections.ResetPawnCaravanTicks(p);
+                WorldComponent_TravellingAndTradingTracker.Instance.AddColonistToCaravanList(p, 0);
+                WorldComponent_TravellingAndTradingTracker.Instance.ResetPawnCaravanTicks(p);
 
             }
 

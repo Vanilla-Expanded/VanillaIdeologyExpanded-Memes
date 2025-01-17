@@ -42,7 +42,7 @@ namespace VanillaMemesExpanded
                 if (ModsConfig.RoyaltyActive)
                 {
                     Ideo ideo = Current.Game.World.factionManager.OfPlayer.ideos.PrimaryIdeo;
-                    if (ideo?.HasPrecept(DefDatabase<PreceptDef>.GetNamedSilentFail("VME_Leader_BestPsycaster"))==true)
+                    if (ideo?.HasPrecept(InternalDefOf.VME_Leader_BestPsycaster)==true)
                     {
                         Pawn mostSkilledPawn = null;
                         int highestSkillLevel = 0;

@@ -4,7 +4,7 @@ using RimWorld;
 
 namespace VanillaMemesExpanded
 {
-	public class Thought_StageByTime : ThoughtWorker_Precept
+	public class ThoughtWorker_Precept_PermanentBases : ThoughtWorker_Precept
 	{
 
 		public int gracePeriod = 900000; //15 days
@@ -21,47 +21,47 @@ namespace VanillaMemesExpanded
 
 
 			
-			if (StaticCollections.ticksWithoutAbandoning < gracePeriod)
+			if (WorldComponent_TravellingAndTradingTracker.Instance.ticksWithoutAbandoning < gracePeriod)
             {
 				return false;
 
-			} else if (StaticCollections.ticksWithoutAbandoning < firstPeriod)
+			} else if (WorldComponent_TravellingAndTradingTracker.Instance.ticksWithoutAbandoning < firstPeriod)
 			{
 				return ThoughtState.ActiveAtStage(0);
 
 
 			}
-			else if (StaticCollections.ticksWithoutAbandoning < secondPeriod)
+			else if (WorldComponent_TravellingAndTradingTracker.Instance.ticksWithoutAbandoning < secondPeriod)
 			{
 				return ThoughtState.ActiveAtStage(1);
 
 
 			}
-			else if (StaticCollections.ticksWithoutAbandoning < thirdPeriod)
+			else if (WorldComponent_TravellingAndTradingTracker.Instance.ticksWithoutAbandoning < thirdPeriod)
 			{
 				return ThoughtState.ActiveAtStage(2);
 
 
 			}
-			else if (StaticCollections.ticksWithoutAbandoning < twoquadrumsPeriod)
+			else if (WorldComponent_TravellingAndTradingTracker.Instance.ticksWithoutAbandoning < twoquadrumsPeriod)
 			{
 				return ThoughtState.ActiveAtStage(3);
 
 
 			}
-			else if (StaticCollections.ticksWithoutAbandoning < fortydaysPeriod)
+			else if (WorldComponent_TravellingAndTradingTracker.Instance.ticksWithoutAbandoning < fortydaysPeriod)
 			{
 				return ThoughtState.ActiveAtStage(4);
 
 
 			}
-			else if (StaticCollections.ticksWithoutAbandoning < fiftydaysPeriod)
+			else if (WorldComponent_TravellingAndTradingTracker.Instance.ticksWithoutAbandoning < fiftydaysPeriod)
 			{
 				return ThoughtState.ActiveAtStage(5);
 
 
 			}
-			else if (StaticCollections.ticksWithoutAbandoning < maxPeriod)
+			else if (WorldComponent_TravellingAndTradingTracker.Instance.ticksWithoutAbandoning < maxPeriod)
 			{
 				return ThoughtState.ActiveAtStage(6);
 

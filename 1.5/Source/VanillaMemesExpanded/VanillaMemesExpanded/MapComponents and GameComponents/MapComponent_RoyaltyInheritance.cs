@@ -12,8 +12,8 @@ namespace VanillaMemesExpanded
 
 
 
-        public int tickCounter = 0;
-        public int tickInterval = 6000;
+        public int tickCounter = tickInterval;
+        public const int tickInterval = 6000;
 
 
         public MapComponent_RoyaltyInheritance(Map map) : base(map)
@@ -74,7 +74,7 @@ namespace VanillaMemesExpanded
                             if (pawn.Ideo?.GetPrecept(InternalDefOf.VME_TitleInheritance_Inherited) != null)
                             {
                                 Pawn heir = CheckFirstBorn(pawn);
-                                //Log.Message(heir.ToStringSafe());
+                            
                                 if(heir != null)
                                 {
                                     foreach (RoyalTitle title in pawn.royalty.AllTitlesForReading)
@@ -86,13 +86,10 @@ namespace VanillaMemesExpanded
 
                                         }
 
-
                                     }
 
                                 }
-
-
-                               
+                       
 
                             }
 

@@ -5,7 +5,6 @@
 		<label>power</label>
 		<iconPath>UI/Issues/Power</iconPath>
 	</IssueDef>
-	
 	<!-- Precepts -->
 	<PreceptDef>
 		<defName>VME_Power_Exalted</defName>
@@ -23,30 +22,25 @@
 		</requiredMemes>
 		<comps>
 			<li Class="PreceptComp_SituationalThought">
-				
 				<thought>VME_Power_Exalted</thought>
 				<thoughtStageDescriptions>
-					<li>Leader</li>			
+					<li>Leader</li>
 				</thoughtStageDescriptions>
 			</li>
 		</comps>
 	</PreceptDef>
 	<ThoughtDef>
 		<defName>VME_Power_Exalted</defName>
-		 <thoughtClass>Thought_Situational</thoughtClass>
-		<workerClass>VanillaMemesExpanded.Thought_Power_Exalted</workerClass>
-		
+		<thoughtClass>Thought_Situational</thoughtClass>
+		<workerClass>VanillaMemesExpanded.ThoughtWorker_Precept_Power_Exalted</workerClass>
 		<stages>
 			<li>
 				<label>divine rule</label>
 				<description>My rule is supreme, for I am godlike.</description>
 				<baseMoodEffect>30</baseMoodEffect>
 			</li>
-			
 		</stages>
 	</ThoughtDef>
-	
-	
 	<PreceptDef>
 		<defName>VME_Power_Desired</defName>
 		<issue>VME_Power</issue>
@@ -58,33 +52,27 @@
 		<associatedMemes>
 			<li>VME_Aristocratic</li>
 		</associatedMemes>
-	
 		<comps>
 			<li Class="PreceptComp_SituationalThought">
-				
 				<thought>VME_Power_Desired</thought>
 				<thoughtStageDescriptions>
-					<li>Leader and moralist</li>			
+					<li>Leader and moralist</li>
 				</thoughtStageDescriptions>
 			</li>
 		</comps>
 	</PreceptDef>
-	
 	<ThoughtDef>
 		<defName>VME_Power_Desired</defName>
-		 <thoughtClass>Thought_Situational</thoughtClass>
-		<workerClass>VanillaMemesExpanded.Thought_Power_Desired</workerClass>
-		
+		<thoughtClass>Thought_Situational</thoughtClass>
+		<workerClass>VanillaMemesExpanded.ThoughtWorker_Precept_Power_Desired</workerClass>
 		<stages>
 			<li>
 				<label>in a position of power</label>
 				<description>I feel important and everyone looks up to me.</description>
 				<baseMoodEffect>10</baseMoodEffect>
 			</li>
-			
 		</stages>
 	</ThoughtDef>
-	
 	<PreceptDef>
 		<defName>VME_Power_Preferred</defName>
 		<issue>VME_Power</issue>
@@ -96,30 +84,25 @@
 		<associatedMemes>
 			<li>VME_Aristocratic</li>
 		</associatedMemes>
-	
 		<comps>
 			<li Class="PreceptComp_SituationalThought">
-				
 				<thought>VME_Power_Preferred</thought>
 				<thoughtStageDescriptions>
-					<li>Any ideo role</li>			
+					<li>Any ideo role</li>
 				</thoughtStageDescriptions>
 			</li>
 		</comps>
 	</PreceptDef>
-	
 	<ThoughtDef>
 		<defName>VME_Power_Preferred</defName>
-		 <thoughtClass>Thought_Situational</thoughtClass>
-		<workerClass>VanillaMemesExpanded.Thought_Power_Preferred</workerClass>
-		
+		<thoughtClass>Thought_Situational</thoughtClass>
+		<workerClass>VanillaMemesExpanded.ThoughtWorker_Precept_Power_Preferred</workerClass>
 		<stages>
 			<li>
 				<label>i am important</label>
 				<description>I hold a reasonable position of power and I like that feeling</description>
 				<baseMoodEffect>4</baseMoodEffect>
 			</li>
-			
 		</stages>
 	</ThoughtDef>
 </Defs>

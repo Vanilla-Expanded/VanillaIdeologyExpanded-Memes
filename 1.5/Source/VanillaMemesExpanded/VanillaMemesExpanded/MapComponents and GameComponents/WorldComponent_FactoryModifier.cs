@@ -2,33 +2,29 @@
 using RimWorld;
 using Verse;
 using UnityEngine;
-
+using RimWorld.Planet;
 
 namespace VanillaMemesExpanded
 {
-    public class GameComponent_FactoryModifier : GameComponent
+    public class WorldComponent_FactoryModifier : WorldComponent
     {
 
-        public int tickCounter = 0;
-        public int tickInterval = 20000;
+        public int tickCounter = tickInterval;
+        public const int tickInterval = 20000;
 
         public override void ExposeData()
         {
             base.ExposeData();
-
-            Scribe_Values.Look<int>(ref this.tickCounter, "tickCounterFactories", 0, true);
-         
+            Scribe_Values.Look<int>(ref this.tickCounter, "tickCounterFactories", 0, true);       
         }
 
 
-        public GameComponent_FactoryModifier(Game game) : base()
+        public WorldComponent_FactoryModifier(World world) : base(world)
         {
 
         }
 
-       
-
-        public override void GameComponentTick()
+        public override void WorldComponentTick()
         {
 
             if (Find.IdeoManager.classicMode) return;
@@ -43,23 +39,11 @@ namespace VanillaMemesExpanded
                 {
                     ItemProcessor.FactoryMultiplierClass.FactoryPreceptMultiplier = 1.5f;
                 }
-
-
-
-
-
                 tickCounter = 0;
             }
 
-
-
         }
 
-
-
-
-
     }
-
 
 }

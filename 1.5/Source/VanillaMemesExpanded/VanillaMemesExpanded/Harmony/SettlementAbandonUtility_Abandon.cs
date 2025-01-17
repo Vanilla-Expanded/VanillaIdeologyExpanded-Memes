@@ -20,8 +20,8 @@ namespace VanillaMemesExpanded
         [HarmonyPostfix]
         static void SetAbandonedTimeToZero()
         {
-            
-                    StaticCollections.ticksWithoutAbandoning = 0;
+
+            WorldComponent_TravellingAndTradingTracker.Instance.ticksWithoutAbandoning = 0;
                 
 
 

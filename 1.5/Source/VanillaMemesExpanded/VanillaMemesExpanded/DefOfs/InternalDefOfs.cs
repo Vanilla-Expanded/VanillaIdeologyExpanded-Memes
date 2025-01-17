@@ -79,6 +79,12 @@ namespace VanillaMemesExpanded
         public static PreceptDef VME_Leader_HighestTitle;
         [MayRequireRoyalty]
         public static PreceptDef VME_Leader_BestPsycaster;
+        [MayRequireRoyalty]
+        public static PreceptDef VME_Meditation_Exquisite;
+        [MayRequire("VanillaExpanded.VBooksE")]
+        public static PreceptDef VME_BookWriting_Exalted;
+        [MayRequire("VanillaExpanded.VCookE")]
+        public static PreceptDef VME_IdeoRole_Patissier;
 
         [MayRequireRoyalty]
         public static MemeDef VME_Royal;
@@ -89,8 +95,10 @@ namespace VanillaMemesExpanded
 		public static MemeDef VME_Structure_ChthonianCult;
 		public static MemeDef VME_MechanoidSupremacy;
 		public static MemeDef VME_ExaltedPriesthood;
+        [MayRequire("VanillaExpanded.VCookE")]
+        public static MemeDef VME_SweetTeeth;
 
-		public static HistoryEventDef VME_Firefighting;
+        public static HistoryEventDef VME_Firefighting;
 		public static HistoryEventDef VME_KillingWithFire;
 		public static HistoryEventDef VME_DumbLabor;
 		public static HistoryEventDef VME_InstalledNonNaturalProsthetic;
@@ -104,15 +112,17 @@ namespace VanillaMemesExpanded
 		public static HistoryEventDef VME_AttackedAnimal;
 		public static HistoryEventDef VME_BoughtSlave;
 		public static HistoryEventDef VME_ConvertAPrisoner;
+		[MayRequire("VanillaExpanded.VBooksE")]
+		public static HistoryEventDef VME_WroteBook;
 
-		public static ThingDef VME_InsectNest;
+        public static ThingDef VME_InsectNest;
 		public static ThingDef VME_Obelisk;
 		public static ThingDef VME_MechanoidEffigy;
 		public static ThingDef VME_BonfireAfterRitual;
-		public static TraitDef VME_Elder;
 		public static ThingDef VME_AncientSpaceJunk;
+		public static ThingDef PenMarker;
 
-		public static ThoughtDef VME_Defeat_Dishonorable;
+        public static ThoughtDef VME_Defeat_Dishonorable;
 		public static ThoughtDef VME_GotSomeLovin;
 		public static ThoughtDef VME_CheapTradingFair;
 		public static ThoughtDef VME_AttendedParty;
@@ -134,8 +144,11 @@ namespace VanillaMemesExpanded
         public static HediffDef VME_WorkCommandBuff;
 
 		public static ThingCategoryDef FoodMeals;
+        public static ThingCategoryDef Books;
 
         public static ExpectationDef SkyHigh;
+
+        public static TraitDef VME_Elder;
 
 
 

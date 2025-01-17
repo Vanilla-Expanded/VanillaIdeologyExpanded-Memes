@@ -13,10 +13,9 @@ namespace VanillaMemesExpanded
 
 
 
-        public int tickCounter = 0;
-        public int tickInterval = 2000;
-        public int firesInTheMap_backup = 0; 
-        public int pensInTheMap_backup = 0;
+        public int tickCounter = tickInterval;
+        public const int tickInterval = 2000;
+   
         HashSet<string> allFireSources = new HashSet<string>();
 
 
@@ -27,33 +26,17 @@ namespace VanillaMemesExpanded
 
         public override void FinalizeInit()
         {
-            if (map.IsPlayerHome)
-            {
-                StaticCollections.firesInTheMap = firesInTheMap_backup;
-                StaticCollections.pensInTheMap = pensInTheMap_backup;
-
-            }
-
+           
             
             HashSet<FireSourcesForPreceptDefs> allLists = DefDatabase<FireSourcesForPreceptDefs>.AllDefsListForReading.ToHashSet();
             foreach (FireSourcesForPreceptDefs individualList in allLists)
             {
                 allFireSources.AddRange(individualList.supportedFireSourcesForPrecept);
             }
-
             base.FinalizeInit();
 
         }
-
-        public override void ExposeData()
-        {
-            base.ExposeData();
-            Scribe_Values.Look<int>(ref this.firesInTheMap_backup, "firesInTheMap_backup", 0, true);
-            Scribe_Values.Look<int>(ref this.pensInTheMap_backup, "pensInTheMap_backup", 0, true);
-
-            Scribe_Values.Look<int>(ref this.tickCounter, "tickCounterFire", 0, true);
-
-        }
+     
         public override void MapComponentTick()
         {
             if (Find.IdeoManager.classicMode) return;
@@ -61,66 +44,40 @@ namespace VanillaMemesExpanded
             tickCounter++;
             if ((tickCounter > tickInterval))
             {
-
-
                 if (map.IsPlayerHome)
                 {
                     if ((Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.VME_Fire_Desired) != null) || (Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.VME_Fire_Despised) != null))
-
                     {
-
-                        firesInTheMap_backup = 0;
-
+                        int firesInTheMap = 0;
                         foreach (string fireSource in allFireSources)
                         {
                             if (DefDatabase<ThingDef>.GetNamedSilentFail(fireSource) != null)
                             {
-                                firesInTheMap_backup += map.listerThings.ThingsOfDef(DefDatabase<ThingDef>.GetNamedSilentFail(fireSource)).Count;
+                                firesInTheMap += map.listerThings.ThingsOfDef(DefDatabase<ThingDef>.GetNamedSilentFail(fireSource)).Count;
                             }
-
                         }
-
-
-                       
-                        StaticCollections.firesInTheMap = firesInTheMap_backup;
-
-
+             
+                        StaticCollections.SetFireInMap(map, firesInTheMap);
                     }
 
                     if (Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.VME_Ranching_Disliked) != null)
 
-                    {
+                    {                 
+                       
+                        int pens = map.listerThings.ThingsOfDef(InternalDefOf.PenMarker).Count;
 
-                     
-                        pensInTheMap_backup = StaticCollections.pensInTheMap;
-                        int pens = map.listerThings.ThingsOfDef(DefDatabase<ThingDef>.GetNamedSilentFail("PenMarker")).Count;
-                    
-                        pensInTheMap_backup = pens;
-                      
-                        StaticCollections.pensInTheMap = pensInTheMap_backup;
-
+                        StaticCollections.SetPensInMap(map, pens);
 
                     }
 
-
-                   
                 }
-
-                
-
 
                 tickCounter = 0;
             }
 
-
-
         }
-       
-
-
 
     }
-
 
 }
 

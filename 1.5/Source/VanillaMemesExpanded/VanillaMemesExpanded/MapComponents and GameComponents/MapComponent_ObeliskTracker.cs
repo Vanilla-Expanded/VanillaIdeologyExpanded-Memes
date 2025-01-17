@@ -12,8 +12,8 @@ namespace VanillaMemesExpanded
 
 
 
-        public int tickCounter = 0;
-        public int tickInterval = 3000;
+        public int tickCounter = tickInterval;
+        public const int tickInterval = 3000;
         public Dictionary<Pawn, bool> colonist_obelisk_tracker_backup = new Dictionary<Pawn, bool>();
         List<Pawn> list2;
         List<bool> list3;

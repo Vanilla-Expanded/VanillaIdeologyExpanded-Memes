@@ -5,7 +5,6 @@
 		<label>mood</label>
 		<iconPath>UI/Issues/Mood</iconPath>
 	</IssueDef>
-	
 	<!-- Precepts -->
 	<PreceptDef>
 		<defName>VME_Mood_DictatedByStars</defName>
@@ -23,7 +22,6 @@
 		</requiredMemes>
 		<comps>
 			<li Class="PreceptComp_SituationalThought">
-				
 				<thought>VME_Mood_DictatedByStars</thought>
 				<thoughtStageDescriptions>
 					<li>Stars are aligned</li>
@@ -35,14 +33,13 @@
 					<li>Stars are not on my side</li>
 					<li>Stars are a bad omen</li>
 					<li>Stars are aligned… against me</li>
-					
 				</thoughtStageDescriptions>
 			</li>
 		</comps>
 	</PreceptDef>
 	<ThoughtDef>
 		<defName>VME_Mood_DictatedByStars</defName>
-		<workerClass>VanillaMemesExpanded.Thought_Precept_RandomStageMood</workerClass>
+		<workerClass>VanillaMemesExpanded.ThoughtWorker_Precept_RandomMood</workerClass>
 		<validWhileDespawned>true</validWhileDespawned>
 		<stages>
 			<li>
@@ -98,7 +95,6 @@
 		<label>shared</label>
 		<description>Empathy is a quality we must all strive to possess. We bear each other's burdens as well as each other's jubilations.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - If the average colony mood is happy, colonists receive a positive thought, and vice versa.</description>
 		<impact>High</impact>
-		
 		<displayOrderInIssue>40</displayOrderInIssue>
 		<displayOrderInImpact>100</displayOrderInImpact>
 		<associatedMemes>
@@ -108,21 +104,15 @@
 			<li>VME_Gestalt</li>
 		</requiredMemes>
 		<comps>
-			
 			<li Class="PreceptComp_SituationalThought">
 				<thought>VME_Mood_Shared</thought>
 				<thoughtStageDescriptions>
 					<li>Average colony mood is positive</li>
 					<li>Average colony mood is negative</li>
-					
-					
 				</thoughtStageDescriptions>
 			</li>
-			
 		</comps>
-		
 	</PreceptDef>
-	
 	<ThoughtDef>
 		<defName>VME_Mood_Shared</defName>
 		<validWhileDespawned>true</validWhileDespawned>
@@ -139,9 +129,7 @@
 				<baseMoodEffect>-5</baseMoodEffect>
 			</li>
 		</stages>
-
 	</ThoughtDef>
-	
 	<PreceptDef>
 		<defName>VME_Mood_LowExpectations</defName>
 		<issue>VME_Mood</issue>
@@ -149,32 +137,24 @@
 		<description>We are stranded on a lost, forgotten planet on the Rim. Things can hardly get worse.</description>
 		<impact>Low</impact>
 		<displayOrderInIssue>30</displayOrderInIssue>
-		
 		<comps>
-			
 			<li Class="PreceptComp_SituationalThought">
 				<thought>VME_Mood_LowExpectations</thought>
 			</li>
-			
 		</comps>
-		
 	</PreceptDef>
-	
 	<ThoughtDef>
 		<defName>VME_Mood_LowExpectations</defName>
 		<validWhileDespawned>true</validWhileDespawned>
-		<workerClass>VanillaMemesExpanded.ThoughtWorker_AlwaysOn</workerClass>
+		<workerClass>VanillaMemesExpanded.ThoughtWorker_Precept_AlwaysOn</workerClass>
 		<stages>
-			
 			<li>
 				<label>bad mood</label>
 				<description>I'm just generally having a bad mood. The Rim is a hostile place.</description>
 				<baseMoodEffect>-5</baseMoodEffect>
 			</li>
 		</stages>
-
 	</ThoughtDef>
-	
 	<PreceptDef>
 		<defName>VME_Mood_Normal</defName>
 		<issue>VME_Mood</issue>
@@ -184,7 +164,6 @@
 		<displayOrderInIssue>20</displayOrderInIssue>
 		<defaultSelectionWeight>1</defaultSelectionWeight>
 	</PreceptDef>
-	
 	<PreceptDef>
 		<defName>VME_Mood_HighExpectations</defName>
 		<issue>VME_Mood</issue>
@@ -192,29 +171,22 @@
 		<description>The whole world is ours to explore and enjoy.</description>
 		<impact>Low</impact>
 		<displayOrderInIssue>10</displayOrderInIssue>
-		
 		<comps>
-			
 			<li Class="PreceptComp_SituationalThought">
 				<thought>VME_Mood_HighExpectations</thought>
 			</li>
-			
 		</comps>
-		
 	</PreceptDef>
-	
 	<ThoughtDef>
 		<defName>VME_Mood_HighExpectations</defName>
 		<validWhileDespawned>true</validWhileDespawned>
-		<workerClass>VanillaMemesExpanded.ThoughtWorker_AlwaysOn</workerClass>
+		<workerClass>VanillaMemesExpanded.ThoughtWorker_Precept_AlwaysOn</workerClass>
 		<stages>
-			
 			<li>
 				<label>good mood</label>
 				<description>I'm just generally having a good mood. The Rim is an amazing place.</description>
 				<baseMoodEffect>5</baseMoodEffect>
 			</li>
 		</stages>
-
 	</ThoughtDef>
 </Defs>
