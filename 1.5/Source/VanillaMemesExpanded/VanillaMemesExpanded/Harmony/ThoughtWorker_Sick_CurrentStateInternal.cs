@@ -7,12 +7,8 @@ using System.Collections.Generic;
 using System.Linq;
 using Verse.AI;
 
-
-
 namespace VanillaMemesExpanded
 {
-
-
     [HarmonyPatch(typeof(ThoughtWorker_Sick))]
     [HarmonyPatch("CurrentStateInternal")]
     public static class VanillaMemesExpanded_ThoughtWorker_Sick_CurrentStateInternal_Patch
@@ -24,19 +20,6 @@ namespace VanillaMemesExpanded
             {
                 __result = false;
             }
-
-
-
-
-
         }
     }
-
-
-
-
-
-
-
-
 }

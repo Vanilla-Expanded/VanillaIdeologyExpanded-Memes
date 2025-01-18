@@ -7,11 +7,8 @@ using System.Collections.Generic;
 using System.Linq;
 using Verse.AI;
 
-
-
 namespace VanillaMemesExpanded
 {
-
 
     [HarmonyPatch(typeof(MentalBreakWorker))]
     [HarmonyPatch("BreakCanOccur")]
@@ -20,30 +17,13 @@ namespace VanillaMemesExpanded
         [HarmonyPostfix]
         static void DisableMostMentalBreaksIfPacifist(ref bool __result, Pawn pawn, MentalBreakWorker __instance)
         {
-
             if (pawn.Ideo?.HasPrecept(InternalDefOf.VME_Violence_Abhorrent)==true)
             {
-
                 if (__instance.def.defName!= "Wander_Psychotic")
                 {
-
                     __result = false;
                 }
-
             }
-
-
-
-
-
         }
     }
-
-
-
-
-
-
-
-
 }

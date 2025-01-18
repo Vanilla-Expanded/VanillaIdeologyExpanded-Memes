@@ -16,26 +16,13 @@ namespace VanillaMemesExpanded
         public int tickCounter = tickInterval;
         public const int tickInterval = 2000;
    
-        HashSet<string> allFireSources = new HashSet<string>();
-
-
+      
         public MapComponent_FireAndPenTracker(Map map) : base(map)
         {
 
         }
 
-        public override void FinalizeInit()
-        {
-           
-            
-            HashSet<FireSourcesForPreceptDefs> allLists = DefDatabase<FireSourcesForPreceptDefs>.AllDefsListForReading.ToHashSet();
-            foreach (FireSourcesForPreceptDefs individualList in allLists)
-            {
-                allFireSources.AddRange(individualList.supportedFireSourcesForPrecept);
-            }
-            base.FinalizeInit();
-
-        }
+       
      
         public override void MapComponentTick()
         {
@@ -49,7 +36,7 @@ namespace VanillaMemesExpanded
                     if ((Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.VME_Fire_Desired) != null) || (Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.VME_Fire_Despised) != null))
                     {
                         int firesInTheMap = 0;
-                        foreach (string fireSource in allFireSources)
+                        foreach (string fireSource in StaticCollections.fireSourcesForFirePrecepts)
                         {
                             if (DefDatabase<ThingDef>.GetNamedSilentFail(fireSource) != null)
                             {

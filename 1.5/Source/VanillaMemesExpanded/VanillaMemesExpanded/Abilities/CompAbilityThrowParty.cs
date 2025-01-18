@@ -20,7 +20,8 @@ namespace VanillaMemesExpanded
 			if (!parent.pawn.Map.lordsStarter.TryStartRandomGathering(true))
 			{
 				Messages.Message("VME_NoValidPartySpot".Translate(), MessageTypeDefOf.RejectInput, false);
-			}
+                this.parent.StartCooldown(30);
+            }
 			base.Apply(target, dest);
 
 		}

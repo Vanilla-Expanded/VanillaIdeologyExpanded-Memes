@@ -10,7 +10,7 @@
 		<defName>VME_PermanentBases_Despised</defName>
 		<issue>VME_PermanentBases</issue>
 		<label>despised</label>
-		<description>Our colony is only temporary, should we stay it will only be a matter of time before we are unable to defend it, it is better to never gain such comfort.\n\n&lt;color=#E5E54C&gt;Stats:&lt;/color&gt;\n - Farming yield: -10%.\n - Gathering yield: +40%.</description>
+		<description>Our colony is only temporary, should we stay it will only be a matter of time before we are unable to defend it, it is better to never gain such comfort.\n\n&lt;color=#E5E54C&gt;Stats:&lt;/color&gt;\n - Farming yield: -10%.\n - Gathering yield: +40%.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - This precept will only work when using vanilla game world system. Vehicles for example won't interact with it.</description>
 		<impact>High</impact>
 		<displayOrderInImpact>80</displayOrderInImpact>
 		<associatedMemes>

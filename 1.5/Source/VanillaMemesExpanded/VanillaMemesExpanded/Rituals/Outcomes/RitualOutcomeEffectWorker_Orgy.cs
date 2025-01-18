@@ -52,10 +52,6 @@ namespace VanillaMemesExpanded
 
 			}
 
-			
-
-
-
 			string text2 = outcome.description.Formatted(jobRitual.Ritual.Label).CapitalizeFirst() + "\n\n" + this.OutcomeQualityBreakdownDesc(quality, progress, jobRitual);
 			string text3 = this.def.OutcomeMoodBreakdown(outcome);
 			if (!text3.NullOrEmpty())

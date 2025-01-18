@@ -7,11 +7,8 @@ using System.Collections.Generic;
 using System.Linq;
 using Verse.AI;
 
-
 namespace VanillaMemesExpanded
 {
-
-
     [HarmonyPatch(typeof(PawnRenderNodeWorker_Apparel_Head), "HeadgearVisible")]
     public static class VanillaMemesExpanded_PawnRenderNodeWorker_Apparel_Head_HeadgearVisible_Patch
     {
@@ -23,14 +20,6 @@ namespace VanillaMemesExpanded
             }
         }
     }
-
-
-
-
-
-
-
-
 }
 
 

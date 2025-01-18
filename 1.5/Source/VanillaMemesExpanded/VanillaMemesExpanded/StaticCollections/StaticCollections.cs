@@ -14,6 +14,10 @@ namespace VanillaMemesExpanded
 
         //This static class stores different lists as a cache
 
+
+
+
+
         public static Dictionary<Pawn, int> colonist_junk_tracker = new Dictionary<Pawn, int>();
 
         public static Dictionary<Pawn, bool> colonist_obelisk_tracker = new Dictionary<Pawn, bool>();
@@ -32,8 +36,53 @@ namespace VanillaMemesExpanded
 
         public static Dictionary<Map, int> pensInTheMap = new Dictionary<Map, int>();
 
+        public static HashSet<string> drinksForAlcoholPrecepts = new HashSet<string>();
 
-   
+        public static HashSet<string> fireSourcesForFirePrecepts = new HashSet<string>();
+
+        public static HashSet<string> untameableInsectsForInsectoidPrecepts = new HashSet<string>();
+
+        public static HashSet<string> naturalImplants = new HashSet<string>();
+
+
+
+        static StaticCollections()
+        {
+
+            HashSet<SupportedDrinksForPreceptDefs> allAlcoholLists = DefDatabase<SupportedDrinksForPreceptDefs>.AllDefsListForReading.ToHashSet();
+            foreach (SupportedDrinksForPreceptDefs individualList in allAlcoholLists)
+            {
+                drinksForAlcoholPrecepts.AddRange(individualList.supportedDrinksForPrecept);
+            }
+            HashSet<FireSourcesForPreceptDefs> allFireLists = DefDatabase<FireSourcesForPreceptDefs>.AllDefsListForReading.ToHashSet();
+            foreach (FireSourcesForPreceptDefs individualList in allFireLists)
+            {
+                fireSourcesForFirePrecepts.AddRange(individualList.supportedFireSourcesForPrecept);
+            }
+            HashSet<UntameableInsectDefs> allInsectLists = DefDatabase<UntameableInsectDefs>.AllDefsListForReading.ToHashSet();
+            foreach (UntameableInsectDefs individualList in allInsectLists)
+            {
+                untameableInsectsForInsectoidPrecepts.AddRange(individualList.supportedUntameableInsectsForPrecept);
+            }
+            HashSet<NaturalImplantCategoryDefs> allImplantsLists = DefDatabase<NaturalImplantCategoryDefs>.AllDefsListForReading.ToHashSet();
+            foreach (NaturalImplantCategoryDefs individualList in allImplantsLists)
+            {
+                naturalImplants.AddRange(individualList.supportedNaturalImplantThingDefs);
+                foreach (string category in individualList.supportedNaturalImplantCategories)
+                {
+                    ThingCategoryDef categoryDef = DefDatabase<ThingCategoryDef>.GetNamedSilentFail(category);
+                    if (categoryDef != null)
+                    {
+                        List<ThingDef> thingsInCategory = categoryDef.childThingDefs;
+                        naturalImplants.AddRange(thingsInCategory.Select(x => x.defName));
+                    }
+
+                }
+
+            }
+
+
+        }
 
         public static void AddColonistToJunkList(Pawn pawn, int numOfJunk)
         {
@@ -51,7 +100,7 @@ namespace VanillaMemesExpanded
             }
         }
 
-       
+
         public static void AddDeconstructibleObjectToMap(Thing thing)
         {
             bool flag = !objectsToDeconstruct_InMap.Contains(thing);
@@ -72,14 +121,15 @@ namespace VanillaMemesExpanded
 
         public static void AddColonistAndObelisk(Pawn pawn, bool obeliskPresent)
         {
-            if (pawn != null) {
+            if (pawn != null)
+            {
 
-                colonist_obelisk_tracker[pawn] = obeliskPresent; 
+                colonist_obelisk_tracker[pawn] = obeliskPresent;
             }
-            
+
         }
 
-        
+
 
         public static void SetHospitalTilesInMap(Map map, int tiles)
         {

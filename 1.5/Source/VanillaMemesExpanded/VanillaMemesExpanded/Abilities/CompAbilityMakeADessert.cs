@@ -36,38 +36,25 @@ namespace VanillaMemesExpanded
 					Messages.Message("VME_AbilityAlreadyADessert".Translate(), MessageTypeDefOf.RejectInput, true);
 					this.parent.StartCooldown(30);
 				}
-				else
-
-
-
-				if (meal.HasThingCategory(InternalDefOf.FoodMeals))
+				else if (meal.HasThingCategory(InternalDefOf.FoodMeals))
 				{
 					FoodPreferability preferability;
-
-
-
-
 
 					if (meal.def.ingestible != null)
 					{
 						preferability = meal.def.ingestible.preferability;
-
 					}
 					else
 					{
 						preferability = FoodPreferability.Undefined;
-
 					}
 
 					if ((preferability == FoodPreferability.MealAwful) || (preferability == FoodPreferability.Undefined) || (preferability == FoodPreferability.MealSimple) || meal.def.defName.Contains("Simple"))
 					{
-
 						meal.Destroy();
 						ThingDef newThing = Props.simpleDessertDef;
 						Thing dessert = GenSpawn.Spawn(newThing, position, map, WipeMode.Vanish);
 						dessert.stackCount = count;
-
-
 					}
 					else if ((preferability == FoodPreferability.MealFine) || meal.def.defName.Contains("Fine"))
 					{
@@ -93,17 +80,12 @@ namespace VanillaMemesExpanded
 							dessert.stackCount = count;
 						}
 					}
-
-
 				}
 				else
 				{
 					Messages.Message("VME_AbilityNeedsMeal".Translate(), MessageTypeDefOf.RejectInput, true);
 					this.parent.StartCooldown(30);
-
 				}
-
-
 			}
 
 

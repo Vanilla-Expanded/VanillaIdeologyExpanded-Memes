@@ -19,7 +19,6 @@ namespace VanillaMemesExpanded
 
 			Pawn pawn = this.parent.pawn;
 			pawn.health.AddHediff(InternalDefOf.VME_MedicalEmergencyHediff);
-
 			base.Apply(target, dest);
 
 		}

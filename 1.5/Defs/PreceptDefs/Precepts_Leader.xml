@@ -5,11 +5,23 @@
 		<label>leader</label>
 		<iconPath>UI/Issues/Leader</iconPath>
 	</IssueDef>
+	
+	<IssueDef>
+		<defName>VME_LeaderDivinity</defName>
+		<label>leader divinity</label>
+		<iconPath>UI/Issues/VME_LeaderDivinity</iconPath>
+	</IssueDef>
+	
+	<IssueDef>
+		<defName>VME_LeaderAbilities</defName>
+		<label>leader abilities</label>
+		<iconPath>UI/Issues/VME_LeaderAbilities</iconPath>
+	</IssueDef>
 
 	<!-- Precepts -->
 	<PreceptDef>
 		<defName>VME_Leader_Godlike</defName>
-		<issue>VME_Leader</issue>
+		<issue>VME_LeaderDivinity</issue>
 		<label>godlike</label>
 		<description>Our leader should be exalted as a god, to treat them as any less assures our demise.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Opinion of the leader depends on a person's certainty in its ideoligion.</description>
 		<impact>High</impact>
@@ -116,7 +128,7 @@
 	
 	<PreceptDef>
 		<defName>VME_Leader_Moralist</defName>
-		<issue>VME_Leader</issue>
+		<issue>VME_LeaderAbilities</issue>
 		<label>moralist</label>
 		<description>Our leader is a morale bastion, and through them and their divinity we shall flourish.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - The colony's leader can use moralist abilities too.</description>
 		<impact>Medium</impact>

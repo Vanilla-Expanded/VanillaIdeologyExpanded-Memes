@@ -209,7 +209,7 @@
 		<iconPath>UI/Memes/GodEmperor</iconPath>
 		<exclusionTags>
 			<li>VME_GodEmperor</li>
-			<li>VME_LeaderPrecepts</li>
+			
 		</exclusionTags>
 		<impact>1</impact>
 		<generalRules>
@@ -1022,7 +1022,7 @@
 		<iconPath>UI/Memes/ExaltedPriesthood</iconPath>
 		<groupDef>Misc</groupDef>
 		<exclusionTags>
-			<li>VME_LeaderPrecepts</li>
+			
 		</exclusionTags>
 		<impact>1</impact>
 		<generalRules>

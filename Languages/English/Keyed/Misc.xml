@@ -27,6 +27,7 @@
 	<VME_AbilityAlreadyADessert>Meal is already a dessert. This ability needs to target a meal that isn't a dessert.</VME_AbilityAlreadyADessert>
 	<VME_AbilityNeedsAColonist>This ability needs to target a free colonist.</VME_AbilityNeedsAColonist>
 	<VME_AbilityNeedsCorpse>This ability needs to target a fresh humanoid corpse.</VME_AbilityNeedsCorpse>
+	<VME_AbilityNeedsOrganPostMortemPrecept>{0}'s ideo lacks the Organ use: post mortem precept. Ability can't be used without it</VME_AbilityNeedsOrganPostMortemPrecept>
 
 	<VME_DeconstructBuildingLabel>Uninstall building</VME_DeconstructBuildingLabel>
 	<VME_DeconstructBuildingDesc>Uninstall junk building to be able to move and reintall it. These can be caravaned out of a map, making "junk expeditions" possible</VME_DeconstructBuildingDesc>
@@ -45,7 +46,7 @@
 	<VME_PawnMustBeAnAdult>Only adults can participate in this ritual</VME_PawnMustBeAnAdult>
 	<VME_Maintenance>Insect nest maintenance: {0}%</VME_Maintenance>
 	<VME_MaintenanceNeeded>Maintenance needed. If it reaches 0% the nest will be destroyed.</VME_MaintenanceNeeded>
-	<VME_NotTheQueen>The gigantic insectoid snorts at you: "No, I don't think I will"</VME_NotTheQueen>
+	<VME_NotTheQueen>This gigantic insectoid is immune to this ability</VME_NotTheQueen>
 	<VME_NoValidPartySpot>Could not find any valid party spot or organizer was unavailable.</VME_NoValidPartySpot>
 	<VME_CantStartRitualNoConvertee>You need a reasonably healthy prisoner to start the ritual</VME_CantStartRitualNoConvertee>
 	<VME_ViolentOutcome>Unfortunately, {0} refused to see our reasonable ways and was sacrificed.</VME_ViolentOutcome>

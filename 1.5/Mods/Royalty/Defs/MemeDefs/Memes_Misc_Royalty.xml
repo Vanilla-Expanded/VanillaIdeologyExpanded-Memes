@@ -109,7 +109,11 @@
 		<iconPath>UI/Memes/Royal</iconPath>
 		<groupDef>Misc</groupDef>
 		<impact>2</impact>
+		<exclusionTags>
+			
+			<li>VME_LeaderPrecepts</li>
 		
+		</exclusionTags>
 		<generalRules>
 			<rulesStrings>
 				<li>memeAdjective->kingly</li>

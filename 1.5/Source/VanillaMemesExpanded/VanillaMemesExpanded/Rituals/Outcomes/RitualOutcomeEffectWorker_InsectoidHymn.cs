@@ -69,10 +69,13 @@ namespace VanillaMemesExpanded
 						for (int i = 0; i < lord.ownedPawns.Count; i++)
 						{
 							Pawn pawn = lord.ownedPawns[i];
+							if (!StaticCollections.untameableInsectsForInsectoidPrecepts.Contains(pawn.def.defName))
+							{
+                                pawn.mindState.duty = new PawnDuty(DutyDefOf.ExitMapRandom);
 
-							pawn.mindState.duty = new PawnDuty(DutyDefOf.ExitMapRandom);
+                            }
 
-						}
+                        }
 					}
 				}
 

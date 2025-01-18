@@ -7,11 +7,8 @@ using System.Collections.Generic;
 using System.Linq;
 using Verse.AI;
 
-
-
 namespace VanillaMemesExpanded
 {
-
 
     [HarmonyPatch(typeof(RoyalTitlePermitDef))]
     [HarmonyPatch("CooldownTicks", MethodType.Getter)]
@@ -33,20 +30,8 @@ namespace VanillaMemesExpanded
                     __result =(int) (0.7 * __result);
 
                 }
-
             }
-                
-
-
-
         }
     }
-
-
-
-
-
-
-
 
 }

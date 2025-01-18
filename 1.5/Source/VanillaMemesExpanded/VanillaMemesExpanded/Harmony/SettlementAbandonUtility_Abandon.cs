@@ -7,11 +7,8 @@ using System.Collections.Generic;
 using System.Linq;
 using Verse.AI;
 
-
-
 namespace VanillaMemesExpanded
 {
-
 
     [HarmonyPatch(typeof(SettlementAbandonUtility))]
     [HarmonyPatch("Abandon")]
@@ -20,20 +17,8 @@ namespace VanillaMemesExpanded
         [HarmonyPostfix]
         static void SetAbandonedTimeToZero()
         {
-
             WorldComponent_TravellingAndTradingTracker.Instance.ticksWithoutAbandoning = 0;
-                
-
-
-
         }
     }
-
-
-
-
-
-
-
 
 }

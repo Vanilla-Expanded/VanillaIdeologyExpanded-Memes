@@ -7,12 +7,8 @@ using System.Collections.Generic;
 using System.Linq;
 using Verse.AI;
 
-
-
 namespace VanillaMemesExpanded
 {
-
-
     [HarmonyPatch(typeof(LordJob_Joinable_Party))]
     [HarmonyPatch("AttendeeThought", MethodType.Getter)]
     public static class VanillaMemesExpanded_LordJob_Joinable_Party_AttendeeThought_Patch
@@ -23,14 +19,8 @@ namespace VanillaMemesExpanded
 
             if (___organizer.Ideo?.GetPrecept(InternalDefOf.VME_Recreation_Loved) != null)
             {
-
                 __result = InternalDefOf.VME_AttendedParty;
             }
-
-
-
-
-
         }
     }
 
@@ -41,25 +31,10 @@ namespace VanillaMemesExpanded
         [HarmonyPostfix]
         static void ChangeThoughtForPartyOrganizer(Pawn ___organizer, ref ThoughtDef __result)
         {
-
             if (___organizer.ideo?.Ideo?.GetPrecept(InternalDefOf.VME_Recreation_Loved) != null)
             {
-
                 __result = InternalDefOf.VME_AttendedParty;
             }
-
-
-
-
-
         }
     }
-
-
-
-
-
-
-
-
 }

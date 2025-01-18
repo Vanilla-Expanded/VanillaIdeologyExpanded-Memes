@@ -7,12 +7,8 @@ using System.Collections.Generic;
 using System.Linq;
 using Verse.AI;
 
-
-
 namespace VanillaMemesExpanded
 {
-   
-
     [HarmonyPatch(typeof(Plant))]
     [HarmonyPatch("YieldNow")]
     public static class VanillaMemesExpanded_Plant_YieldNow_Patch
@@ -26,7 +22,6 @@ namespace VanillaMemesExpanded
                 (__instance?.IsCrop ==true && Current.Game.World.factionManager.OfPlayer.ideos?.GetPrecept(InternalDefOf.VME_FarmingYield_High) != null))
             {
                 __result = GenMath.RoundRandom(__result* 1.1f);
-
             }
 
             if (Current.Game.World.factionManager.OfPlayer.ideos?.GetPrecept(InternalDefOf.VME_PermanentBases_Despised) != null) 
@@ -39,20 +34,7 @@ namespace VanillaMemesExpanded
                 {
                     __result = GenMath.RoundRandom(__result * 1.4f);
                 }
-
-
             }
-
-
-
         }
     }
-
-
-
-
-
-
-
-
 }

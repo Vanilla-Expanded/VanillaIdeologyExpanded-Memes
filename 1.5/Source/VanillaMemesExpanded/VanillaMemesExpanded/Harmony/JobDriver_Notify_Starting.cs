@@ -7,12 +7,8 @@ using System.Collections.Generic;
 using System.Linq;
 using Verse.AI;
 
-
-
 namespace VanillaMemesExpanded
 {
-
-
     [HarmonyPatch(typeof(JobDriver))]
     [HarmonyPatch("Notify_Starting")]
     public static class VanillaMemesExpanded_JobDriver_Notify_Starting_Patch
@@ -20,24 +16,15 @@ namespace VanillaMemesExpanded
         [HarmonyPostfix]
         static void ModifyOnWork(JobDriver __instance)
         {
-
             if ((__instance?.pawn?.Ideo?.HasMeme(InternalDefOf.VME_Royal) == true) && ((Precept_RoleSingle)__instance?.pawn?.Ideo?.GetPrecept(InternalDefOf.VME_IdeoRole_Majordomo))?.ChosenPawnSingle() == __instance?.pawn &&
                 __instance?.job?.workGiverDef?.workType?.workTags.HasFlag(WorkTags.AllWork) == true)
             {
                 __instance?.pawn?.needs?.joy?.GainJoy(0.1f, JoyKindDefOf.Meditative);
-
             }
-
-
 
             if (__instance.job?.workGiverDef?.workType?.workTags.HasFlag(WorkTags.ManualDumb) == true)
             {
-
                 Find.HistoryEventsManager.RecordEvent(new HistoryEvent(InternalDefOf.VME_DumbLabor, new SignalArgs(__instance.pawn.Named(HistoryEventArgsNames.Doer))), true);
-
-               
-
-
             }
 
             if (__instance.job?.workGiverDef?.workType?.workTags.HasFlag(WorkTags.Firefighting) == true)
@@ -45,28 +32,8 @@ namespace VanillaMemesExpanded
                 if ((__instance.pawn?.Ideo?.HasMeme(InternalDefOf.VME_FireWorship) == true)&& ((Precept_RoleSingle)__instance.pawn?.Ideo?.GetPrecept(InternalDefOf.VME_IdeoRole_FireKeeper))?.ChosenPawnSingle()!= __instance.pawn) {
                     
                     Find.HistoryEventsManager.RecordEvent(new HistoryEvent(InternalDefOf.VME_Firefighting, new SignalArgs(__instance.pawn.Named(HistoryEventArgsNames.Doer))), true);
-
                 }
-               
-
-
-
             }
-
-
-
-
-
-
-
         }
     }
-
-
-
-
-
-
-
-
 }

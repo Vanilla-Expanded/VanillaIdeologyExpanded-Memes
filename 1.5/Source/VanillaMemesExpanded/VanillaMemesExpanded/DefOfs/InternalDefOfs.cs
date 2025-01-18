@@ -121,6 +121,7 @@ namespace VanillaMemesExpanded
 		public static ThingDef VME_BonfireAfterRitual;
 		public static ThingDef VME_AncientSpaceJunk;
 		public static ThingDef PenMarker;
+        public static ThingDef VME_WickerMan;
 
         public static ThoughtDef VME_Defeat_Dishonorable;
 		public static ThoughtDef VME_GotSomeLovin;
@@ -149,6 +150,8 @@ namespace VanillaMemesExpanded
         public static ExpectationDef SkyHigh;
 
         public static TraitDef VME_Elder;
+
+		public static ResearchProjectDef MicroelectronicsBasics;
 
 
 

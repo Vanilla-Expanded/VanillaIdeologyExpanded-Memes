@@ -23,59 +23,72 @@ namespace VanillaMemesExpanded
 								 where (x.GetType()==typeof(Corpse))
 								 select x).RandomElement();
 
-			
-
-			if (corpse == null)
+			if (!this.parent.pawn.Ideo.HasPrecept(InternalDefOf.VME_OrganUse_PostMortem))
 			{
-				Log.Message("corpse is null");
-				Messages.Message("VME_AbilityNeedsCorpse".Translate(), MessageTypeDefOf.RejectInput, true);
-				this.parent.StartCooldown(30);
-			}
+                Messages.Message("VME_AbilityNeedsOrganPostMortemPrecept".Translate(parent.pawn.NameShortColored), MessageTypeDefOf.RejectInput, true);
+                this.parent.StartCooldown(30);
+
+            }
 			else
 			{
-                if (corpse.InnerPawn.RaceProps.Humanlike && !corpse.IsNotFresh())
+                if (corpse == null)
                 {
-					ThingDef newThing = Props.bodyParts.RandomElement();
-					GenSpawn.Spawn(newThing, cell, this.parent.pawn.Map, WipeMode.Vanish);
-					System.Random random = new System.Random();
-					double randomChance = random.NextDouble();
-					ThingDef secondaryOrgan = null;
-					if (randomChance < 0.3)
-                    {
-						secondaryOrgan = (from x in Props.bodyParts
-												   where x != newThing
-												   select x).RandomElement();
-						GenSpawn.Spawn(secondaryOrgan, cell, this.parent.pawn.Map, WipeMode.Vanish);
-					}
-					if (randomChance < 0.1)
-					{
-						ThingDef tertiaryOrgan = (from x in Props.bodyParts
-												   where x != newThing && x != secondaryOrgan
-												  select x).RandomElement();
-						GenSpawn.Spawn(tertiaryOrgan, cell, this.parent.pawn.Map, WipeMode.Vanish);
-					}
-					for (int i = 0; i < 20; i++)
-					{
-						IntVec3 c;
-						CellFinder.TryFindRandomReachableCellNearPosition(cell,cell, this.parent.pawn.Map, 2, TraverseParms.For(TraverseMode.NoPassClosedDoors, Danger.Deadly, false), null, null, out c);
-						FilthMaker.TryMakeFilth(c, this.parent.pawn.Map, ThingDefOf.Filth_Blood);
 
-					}
-                    InternalDefOf.Hive_Spawn.PlayOneShot(new TargetInfo(cell, this.parent.pawn.Map, false));
-					ThingDef newThingMeat = ThingDefOf.Meat_Human;
-					Thing humanMeat = GenSpawn.Spawn(newThingMeat, cell, this.parent.pawn.Map, WipeMode.Vanish);
-					humanMeat.stackCount = 60;
-					corpse.Destroy();
-				}
+                    Messages.Message("VME_AbilityNeedsCorpse".Translate(), MessageTypeDefOf.RejectInput, true);
+                    this.parent.StartCooldown(30);
+                }
                 else
                 {
-					Log.Message("corpse is not fresh");
-					Messages.Message("VME_AbilityNeedsCorpse".Translate(), MessageTypeDefOf.RejectInput, true);
-					this.parent.StartCooldown(30);
-				}
+                    if (corpse.InnerPawn.RaceProps.Humanlike && !corpse.IsNotFresh())
+                    {
+                        ThingDef newThing = Props.bodyParts.RandomElement();
+                        GenSpawn.Spawn(newThing, cell, this.parent.pawn.Map, WipeMode.Vanish);
+                        System.Random random = new System.Random();
+                        double randomChance = random.NextDouble();
+                        ThingDef secondaryOrgan = null;
+                        if (randomChance < 0.3)
+                        {
+                            secondaryOrgan = (from x in Props.bodyParts
+                                              where x != newThing
+                                              select x).RandomElement();
+                            GenSpawn.Spawn(secondaryOrgan, cell, this.parent.pawn.Map, WipeMode.Vanish);
+                        }
+                        if (randomChance < 0.1)
+                        {
+                            ThingDef tertiaryOrgan = (from x in Props.bodyParts
+                                                      where x != newThing && x != secondaryOrgan
+                                                      select x).RandomElement();
+                            GenSpawn.Spawn(tertiaryOrgan, cell, this.parent.pawn.Map, WipeMode.Vanish);
+                        }
+                        for (int i = 0; i < 20; i++)
+                        {
+                            IntVec3 c;
+                            CellFinder.TryFindRandomReachableCellNearPosition(cell, cell, this.parent.pawn.Map, 2, TraverseParms.For(TraverseMode.NoPassClosedDoors, Danger.Deadly, false), null, null, out c);
+                            FilthMaker.TryMakeFilth(c, this.parent.pawn.Map, ThingDefOf.Filth_Blood);
+
+                        }
+                        InternalDefOf.Hive_Spawn.PlayOneShot(new TargetInfo(cell, this.parent.pawn.Map, false));
+                        ThingDef newThingMeat = ThingDefOf.Meat_Human;
+                        Thing humanMeat = GenSpawn.Spawn(newThingMeat, cell, this.parent.pawn.Map, WipeMode.Vanish);
+                        humanMeat.stackCount = 60;
+                        corpse.Destroy();
+                    }
+                    else
+                    {
+
+                        Messages.Message("VME_AbilityNeedsCorpse".Translate(), MessageTypeDefOf.RejectInput, true);
+                        this.parent.StartCooldown(30);
+                    }
 
 
-			}
+                }
+
+            }
+
+
+
+
+			
 
 
 

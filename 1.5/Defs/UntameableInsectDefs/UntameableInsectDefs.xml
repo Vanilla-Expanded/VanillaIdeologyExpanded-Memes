@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+
+	<VanillaMemesExpanded.UntameableInsectDefs>
+		<defName>VME_UntameableInsectDef</defName>
+		<supportedUntameableInsectsForPrecept>							
+			<li>VFEI2_Queen</li>	
+			<li>VFEI2_Empress</li>			
+			<li>VFEI2_Silverfish</li>	
+			<li>VFEI2_Teramantis</li>	
+			<li>VFEI2_Titantick</li>	
+			<li>VFEI2_Gigamite</li>	
+			<li>VFEI2_BlackEmpress</li>	
+			<li>VFEI2_Patriarch</li>
+			<li>SW_Emperorisopod</li>
+			
+		
+		</supportedUntameableInsectsForPrecept>							
+	</VanillaMemesExpanded.UntameableInsectDefs>
+
+
+
+
+
+
+</Defs>

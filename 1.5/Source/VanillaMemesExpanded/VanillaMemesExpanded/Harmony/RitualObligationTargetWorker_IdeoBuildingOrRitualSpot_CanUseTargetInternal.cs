@@ -22,24 +22,12 @@ namespace VanillaMemesExpanded
         {
 
             Building building = target.Thing as Building;
-            if (building != null && building.def?.defName=="VME_WickerMan")
+
+            if ( building?.def==InternalDefOf.VME_WickerMan)
             {
                 __result= false;
             }
-           
-
-
-
-
-
         }
     }
-
-
-
-
-
-
-
 
 }

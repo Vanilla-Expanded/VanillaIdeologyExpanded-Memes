@@ -69,11 +69,11 @@ namespace VanillaMemesExpanded
 
 			}
 			Pawn recruiter = jobRitual.PawnWithRole("leader");
-			Random random = new Random();
+			
 			foreach (Pawn pawn in slaves)
 			{
 				GenGuest.SlaveRelease(pawn);
-				if (random.NextDouble()< percentage)
+				if (Rand.Chance(percentage))
                 {
 					InteractionWorker_RecruitAttempt.DoRecruit(recruiter, pawn);
 
@@ -83,11 +83,7 @@ namespace VanillaMemesExpanded
 			}
 
 
-
-
-
-
-				string text2 = outcome.description.Formatted(jobRitual.Ritual.Label).CapitalizeFirst() + "\n\n" + this.OutcomeQualityBreakdownDesc(quality, progress, jobRitual);
+			string text2 = outcome.description.Formatted(jobRitual.Ritual.Label).CapitalizeFirst() + "\n\n" + this.OutcomeQualityBreakdownDesc(quality, progress, jobRitual);
 			string text3 = this.def.OutcomeMoodBreakdown(outcome);
 			if (!text3.NullOrEmpty())
 			{

@@ -6,12 +6,8 @@ using System.Linq;
 using System;
 using System.Reflection.Emit;
 
-
-
 namespace VanillaMemesExpanded
 {
-
-
     [HarmonyPatch(typeof(IdeoUIUtility))]
     [HarmonyPatch("DoPrecepts")]
     public static class VanillaMemesExpanded_IdeoUIUtility_DoPrecepts_Patch

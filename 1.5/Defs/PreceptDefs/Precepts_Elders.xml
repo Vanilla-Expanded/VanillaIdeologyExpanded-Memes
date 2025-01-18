@@ -98,7 +98,7 @@
 	<ThoughtDef>
 		<defName>VME_Elders_Holy</defName>
 		<thoughtClass>Thought_SituationalSocial</thoughtClass>
-		<workerClass>VanillaMemesExpanded.Thought_Elders_Respected</workerClass>
+		<workerClass>VanillaMemesExpanded.ThoughtWorker_Precept_Elders_Respected</workerClass>
 		<stages>
 			<li>
 				<label>elder</label>

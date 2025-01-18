@@ -64,7 +64,7 @@
       </thingDefs>
     </fixedIngredientFilter>
     <appliedOnFixedBodyParts>
-      <li>Arm</li>
+        <li>Shoulder</li>
     </appliedOnFixedBodyParts>
 	<addsHediff>VME_FleshcraftedArmHediff</addsHediff>
 	

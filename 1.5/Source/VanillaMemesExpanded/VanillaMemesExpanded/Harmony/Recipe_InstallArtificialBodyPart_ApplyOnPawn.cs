@@ -7,11 +7,8 @@ using System.Collections.Generic;
 using System.Linq;
 using Verse.AI;
 
-
-
 namespace VanillaMemesExpanded
 {
-
 
     [HarmonyPatch(typeof(Recipe_InstallArtificialBodyPart))]
     [HarmonyPatch("ApplyOnPawn")]
@@ -20,45 +17,14 @@ namespace VanillaMemesExpanded
         [HarmonyPostfix]
         static void InstalledNonNaturalBodyPart(Pawn pawn, Recipe_InstallArtificialBodyPart __instance, Pawn billDoer)
         {
-
             if (billDoer != null)
             {
-
-
-               if( __instance.recipe?.addsHediff?.spawnThingOnRemoved?.thingCategories?.Contains(ThingCategoryDef.Named("BodyPartsNatural")) == false &&
-
-                        __instance.recipe?.addsHediff?.spawnThingOnRemoved?.thingCategories?.Contains(DefDatabase<ThingCategoryDef>.GetNamedSilentFail("AA_ImplantCategory")) == false &&
-                        __instance.recipe?.addsHediff?.spawnThingOnRemoved?.thingCategories?.Contains(DefDatabase<ThingCategoryDef>.GetNamedSilentFail("VFEI_BodyPartsInsect")) == false &&
-                        __instance.recipe?.addsHediff?.spawnThingOnRemoved?.thingCategories?.Contains(DefDatabase<ThingCategoryDef>.GetNamedSilentFail("GR_ImplantCategory")) == false)
+                ThingDef implant = __instance.recipe?.addsHediff?.spawnThingOnRemoved;
+                if (implant!=null && !StaticCollections.naturalImplants.Contains(implant.defName))
                 {
-
                     Find.HistoryEventsManager.RecordEvent(new HistoryEvent(InternalDefOf.VME_InstalledNonNaturalProsthetic, billDoer.Named(HistoryEventArgsNames.Doer)), true);
-                }
-
-
+                }             
             }
-
-
-            
-
-
-
-
-
-
-
-
-
-
-
         }
     }
-
-
-
-
-
-
-
-
 }

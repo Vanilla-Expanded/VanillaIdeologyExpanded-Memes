@@ -7,11 +7,8 @@ using System.Collections.Generic;
 using System.Linq;
 using Verse.AI;
 
-
-
 namespace VanillaMemesExpanded
 {
-
 
     [HarmonyPatch(typeof(Thing))]
     [HarmonyPatch("Ingested")]
@@ -24,42 +21,21 @@ namespace VanillaMemesExpanded
             bool flagIngredientsAreProduct = false;
             if (compIngredients != null)
             {
-                
+
                 for (int i = 0; i < compIngredients.ingredients.Count; i++)
                 {
                     if (compIngredients.ingredients[i].IsAnimalProduct)
                     {
                         flagIngredientsAreProduct = true;
-                    }                   
+                    }
                 }
             }
             bool flagFoodItselfIsProduct = __instance.def.IsAnimalProduct;
 
-
-
-
-
             if (flagIngredientsAreProduct || flagFoodItselfIsProduct)
             {
-               
-                 Find.HistoryEventsManager.RecordEvent(new HistoryEvent(InternalDefOf.VME_AteAnimalProducts, ingester.Named(HistoryEventArgsNames.Doer)), false);
-              
+                Find.HistoryEventsManager.RecordEvent(new HistoryEvent(InternalDefOf.VME_AteAnimalProducts, ingester.Named(HistoryEventArgsNames.Doer)), false);
             }
-
-
-
-
-
-
-
-            }
+        }
     }
-
-
-
-
-
-
-
-
 }

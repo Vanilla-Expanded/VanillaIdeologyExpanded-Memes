@@ -7,11 +7,8 @@ using System.Collections.Generic;
 using System.Linq;
 using Verse.AI;
 
-
-
 namespace VanillaMemesExpanded
 {
-
 
     [HarmonyPatch(typeof(TradeDeal))]
     [HarmonyPatch("TryExecute")]
@@ -20,8 +17,6 @@ namespace VanillaMemesExpanded
         [HarmonyPostfix]
         static void NotifySuccessfulTrade(bool __result)
         {
-
-
             if (__result && !TradeSession.giftMode)
             {
                 WorldComponent_TravellingAndTradingTracker.Instance.ticksWithoutTrading = 0;
@@ -39,21 +34,6 @@ namespace VanillaMemesExpanded
                   
                 }
             }
-
-
-
-
-
-
-
         }
     }
-
-
-
-
-
-
-
-
 }

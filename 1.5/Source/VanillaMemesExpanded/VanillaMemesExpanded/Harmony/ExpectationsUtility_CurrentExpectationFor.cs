@@ -7,12 +7,8 @@ using System.Collections.Generic;
 using System;
 using Verse.AI;
 
-
-
 namespace VanillaMemesExpanded
 {
-
-
     [HarmonyPatch(typeof(ExpectationsUtility))]
     [HarmonyPatch("CurrentExpectationFor")]
     [HarmonyPatch(new Type[] { typeof(Pawn) })]
@@ -22,13 +18,10 @@ namespace VanillaMemesExpanded
         static void LowerOrDecreaseExpectation(Pawn p, ref ExpectationDef __result)
         {
 
-
             if (p?.Ideo?.HasPrecept(InternalDefOf.VME_Expectations_High) == true)
             {
                 ExpectationDef finalResult = __result;
-
-                
-
+             
                 if (__result == ExpectationDefOf.ExtremelyLow)
                 {
                    finalResult = ExpectationDefOf.VeryLow;                     
@@ -83,26 +76,7 @@ namespace VanillaMemesExpanded
                     finalResult = ExpectationDefOf.High;
                 }
                 __result = finalResult;
-
-                
-
-
             }
-
-
-
-
-
-
-
         }
     }
-
-
-
-
-
-
-
-
 }

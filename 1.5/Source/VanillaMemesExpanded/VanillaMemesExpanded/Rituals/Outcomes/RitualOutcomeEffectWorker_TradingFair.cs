@@ -48,25 +48,28 @@ namespace VanillaMemesExpanded
                 base.GiveMemoryToPawn(pawn, outcome.memory, jobRitual);
 
             }
-
             TargetInfo selectedTarget = jobRitual.selectedTarget;
-            if (AmountSendableSilver(selectedTarget.Map) < 200)
-            {
-                foreach (Pawn pawn in totalPresence.Keys)
+            if (InternalDefOf.MicroelectronicsBasics.IsFinished) {
+               
+                if (AmountSendableSilver(selectedTarget.Map) < 200)
                 {
-                    ThoughtDef cheapTradeMemory = InternalDefOf.VME_CheapTradingFair;
+                    foreach (Pawn pawn in totalPresence.Keys)
+                    {
+                        ThoughtDef cheapTradeMemory = InternalDefOf.VME_CheapTradingFair;
 
-                    pawn.needs.mood.thoughts.memories.TryGainMemory(cheapTradeMemory, null, jobRitual.Ritual);
+                        pawn.needs.mood.thoughts.memories.TryGainMemory(cheapTradeMemory, null, jobRitual.Ritual);
 
-                    Messages.Message("VME_CheapTradingFair".Translate(), MessageTypeDefOf.NegativeEvent, true);
+                        Messages.Message("VME_CheapTradingFair".Translate(), MessageTypeDefOf.NegativeEvent, true);
 
-
+                    }
+                }
+                else
+                {
+                    TradeUtility.LaunchThingsOfType(ThingDefOf.Silver, 200, selectedTarget.Map, null);
                 }
             }
-            else
-            {
-                TradeUtility.LaunchThingsOfType(ThingDefOf.Silver, 200, selectedTarget.Map, null);
-            }
+
+            
 
             int numberOfCaravans = 0;
             switch (outcome.positivityIndex)
@@ -90,15 +93,6 @@ namespace VanillaMemesExpanded
                 incidentDef.Worker.TryExecute(parms);
 
             }
-
-
-
-
-
-
-
-
-
 
             string text2 = outcome.description.Formatted(jobRitual.Ritual.Label).CapitalizeFirst() + "\n\n" + this.OutcomeQualityBreakdownDesc(quality, progress, jobRitual);
             string text3 = this.def.OutcomeMoodBreakdown(outcome);

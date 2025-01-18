@@ -7,7 +7,6 @@ namespace VanillaMemesExpanded
 {
     public class CompAbilityTameInsectoid : CompAbilityEffect
     {
-        public static List<string> untameableInsects = new List<string>() { "VFEI2_Queen", "VFEI2_Empress", "VFEI2_Silverfish", "VFEI2_Teramantis", "VFEI2_Titantick", "VFEI2_Gigamite", "VFEI2_BlackEmpress", "VFEI2_Patriarch" };
 
         public new CompProperties_AbilityTameInsectoid Props
         {
@@ -24,7 +23,7 @@ namespace VanillaMemesExpanded
 
             if (pawnInsect != null && pawnInsect.RaceProps.Insect && pawnInsect.Faction != Faction.OfPlayer)
             {
-                if (untameableInsects.Contains(pawnInsect.def.defName)) {
+                if (StaticCollections.untameableInsectsForInsectoidPrecepts.Contains(pawnInsect.def.defName)) {
 
                     Messages.Message("VME_NotTheQueen".Translate(), MessageTypeDefOf.RejectInput, true);
                     this.parent.StartCooldown(30);

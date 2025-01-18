@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<VanillaMemesExpanded.NaturalImplantCategoryDefs>
+		<defName>VME_NaturalImplantCategoryDef</defName>
+		<supportedNaturalImplantCategories>
+			<li>BodyPartsNatural</li>
+			<li>AA_ImplantCategory</li>
+			<li>GR_ImplantCategory</li>
+		</supportedNaturalImplantCategories>
+		<supportedNaturalImplantThingDefs>
+			<li>FleshmassStomach</li>
+			<li>FleshmassLung</li>
+			<li>Tentacle</li>
+			<li>FleshWhip</li>
+		</supportedNaturalImplantThingDefs>
+	</VanillaMemesExpanded.NaturalImplantCategoryDefs>
+</Defs>

@@ -10,8 +10,6 @@ using System;
 using Verse.AI;
 using RimWorld.Planet;
 
-
-
 namespace VanillaMemesExpanded
 {
     //Setting the Harmony instance
@@ -23,8 +21,5 @@ namespace VanillaMemesExpanded
             var harmony = new Harmony("com.vanillamemesexpanded");
             harmony.PatchAll(Assembly.GetExecutingAssembly());
         }
-
-
     }
-
 }

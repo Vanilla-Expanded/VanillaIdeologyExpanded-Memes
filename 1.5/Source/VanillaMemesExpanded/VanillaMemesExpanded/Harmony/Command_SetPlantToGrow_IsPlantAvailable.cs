@@ -7,11 +7,8 @@ using System.Collections.Generic;
 using System.Linq;
 using Verse.AI;
 
-
-
 namespace VanillaMemesExpanded
 {
-
 
     [HarmonyPatch(typeof(Command_SetPlantToGrow))]
     [HarmonyPatch("IsPlantAvailable")]
@@ -28,21 +25,6 @@ namespace VanillaMemesExpanded
                     __result = __result&&true;
                 } else __result = false;
             }
-
-
-
-
-
-
-
         }
     }
-
-
-
-
-
-
-
-
 }

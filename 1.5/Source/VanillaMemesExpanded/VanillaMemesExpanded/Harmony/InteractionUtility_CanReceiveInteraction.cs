@@ -7,12 +7,8 @@ using System.Collections.Generic;
 using System.Linq;
 using Verse.AI;
 
-
-
 namespace VanillaMemesExpanded
 {
-
-
     [HarmonyPatch(typeof(InteractionUtility))]
     [HarmonyPatch("CanReceiveInteraction")]
     public static class VanillaMemesExpanded_InteractionUtility_CanReceiveInteraction_Patch
@@ -24,15 +20,6 @@ namespace VanillaMemesExpanded
             {
                 __result = false;
             }
-
         }
     }
-
-
-
-
-
-
-
-
 }

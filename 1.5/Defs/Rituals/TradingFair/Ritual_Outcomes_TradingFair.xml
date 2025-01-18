@@ -5,7 +5,7 @@
  
  <RitualOutcomeEffectDef>
     <defName>VME_TradingFairRitualOutcome</defName>
-    <description>Depending on ritual quality and as long as it is positive, between 1 and 6 trade caravans arrive from friendly factions. Also, depending on ritual quality, participants will get between {MINMOOD} and {MAXMOOD} mood for {MOODDAYS} days.\n\nYou will need to have at least 200 silver near a valid trading beacon for the fair to work properly, or else participants will receive a "cheap trading fair" mood penalty.</description>
+    <description>Depending on ritual quality and as long as it is positive, between 1 and 6 trade caravans arrive from friendly factions. Also, depending on ritual quality, participants will get between {MINMOOD} and {MAXMOOD} mood for {MOODDAYS} days.\n\nIf Microelectronics has been researched, you will need to have at least 200 silver near a valid trading beacon for the fair to work properly, or else participants will receive a "cheap trading fair" mood penalty.</description>
     <workerClass>VanillaMemesExpanded.RitualOutcomeEffectWorker_TradingFair</workerClass>
     
     <comps>

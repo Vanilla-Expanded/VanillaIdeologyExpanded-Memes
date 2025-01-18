@@ -11,7 +11,7 @@
     <minIntelligence>Humanlike</minIntelligence>
     <colonistAndPrisonersOnly>true</colonistAndPrisonersOnly>
     <seekerRisePerHour>0.60</seekerRisePerHour>
-    <seekerFallPerHour>0.02</seekerFallPerHour>
+  
     <listPriority>90</listPriority>
    
   </NeedDef>

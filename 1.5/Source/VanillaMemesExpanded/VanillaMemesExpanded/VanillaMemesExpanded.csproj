@@ -336,7 +336,9 @@
     <Compile Include="Comps\CompTimedFireOverlay.cs" />
     <Compile Include="DefOfs\InternalDefOfs.cs" />
     <Compile Include="Defs\FireSourcesForPreceptDefs.cs" />
+    <Compile Include="Defs\NaturalImplantCategoryDefs.cs" />
     <Compile Include="Defs\SupportedDrinksForPreceptDefs.cs" />
+    <Compile Include="Defs\UntameableInsectDefs.cs" />
     <Compile Include="Enums\CorruptionNeedCategory.cs" />
     <Compile Include="Enums\AnonymityNeedCategory.cs" />
     <Compile Include="Enums\DessertNeedCategory.cs" />
@@ -384,7 +386,6 @@
     <Compile Include="Harmony\Thing_Ingested.cs" />
     <Compile Include="Harmony\Tradeable_Pawn_ResolveTrade.cs" />
     <Compile Include="Harmony\TradeDeal_TryExecute.cs" />
-    <Compile Include="Harmony\WorkGiver_Warden_Convert_JobOnThing.cs" />
     <Compile Include="Hediffs\HediffCompProperties_Infections.cs" />
     <Compile Include="Hediffs\HediffComp_Infections.cs" />
     <Compile Include="Incidents\IncidentWorker_JunkChunkDrop.cs" />
@@ -428,8 +429,8 @@
     <Compile Include="Rituals\Outcomes\RitualOutcomeEffectWorker_SlaveEmancipation.cs" />
     <Compile Include="Rituals\Outcomes\RitualOutcomeEffectWorker_TradingFair.cs" />
     <Compile Include="RitualObligationTargetWorkers\RitualObligationTargetWorker_DivineStars.cs" />
-    <Compile Include="RitualObligationTriggers\RitualObligationTriggerProperties_StrongerLeader.cs" />
-    <Compile Include="RitualObligationTriggers\RitualObligationTriggerProperties_SecondDefeat.cs" />
+    <Compile Include="RitualObligationTriggers\Properties\RitualObligationTriggerProperties_StrongerLeader.cs" />
+    <Compile Include="RitualObligationTriggers\Properties\RitualObligationTriggerProperties_SecondDefeat.cs" />
     <Compile Include="RitualObligationTriggers\RitualObligationTrigger_SecondDefeat.cs" />
     <Compile Include="RitualObligationTriggers\RitualObligationTrigger_StrongerLeader.cs" />
     <Compile Include="RitualRoles\RitualRole_BestMelee.cs" />
@@ -497,9 +498,7 @@
     <Compile Include="ThoughtWorkers\ThoughtWorker_Precept\ThoughtWorker_Precept_PermanentBases.cs" />
     <Compile Include="ThoughtWorkers\ThoughtWorker_Precept_Social\ThoughtWorker_Precept_Leader_Godlike.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="RitualTargets\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <PackageReference Include="Lib.Harmony">
       <Version>2.3.1.1</Version>

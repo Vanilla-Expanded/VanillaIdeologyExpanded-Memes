@@ -7,11 +7,8 @@ using System.Collections.Generic;
 using System.Linq;
 using Verse.AI;
 
-
-
 namespace VanillaMemesExpanded
 {
-
 
     [HarmonyPatch(typeof(CompDrug))]
     [HarmonyPatch("PostIngested")]
@@ -19,29 +16,12 @@ namespace VanillaMemesExpanded
     {
         [HarmonyPostfix]
         static void DetectDrinkConsumed(Pawn ingester, CompDrug __instance)
-        {
-            HashSet<string> allDrinks = new HashSet<string>();
-            HashSet<SupportedDrinksForPreceptDefs> allLists = DefDatabase<SupportedDrinksForPreceptDefs>.AllDefsListForReading.ToHashSet();
-            foreach (SupportedDrinksForPreceptDefs individualList in allLists)
-            {
-                allDrinks.AddRange(individualList.supportedDrinksForPrecept);
-            }
-
-            if (allDrinks.Contains(__instance.parent.def.defName))
+        {           
+            if (StaticCollections.drinksForAlcoholPrecepts.Contains(__instance.parent.def.defName) || __instance.Props.chemical == ChemicalDefOf.Alcohol)
             {
                 WorldComponent_AlcoholScarsAndSlaveryTracker.Instance.AddColonistToBoozeList(ingester, 0);
                 WorldComponent_AlcoholScarsAndSlaveryTracker.Instance.ResetPawnBoozeTicks(ingester);
             }
-
-
         }
     }
-
-
-
-
-
-
-
-
 }

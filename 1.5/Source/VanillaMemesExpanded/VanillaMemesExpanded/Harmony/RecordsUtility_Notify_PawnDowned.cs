@@ -7,11 +7,8 @@ using System.Collections.Generic;
 using System.Linq;
 using Verse.AI;
 
-
-
 namespace VanillaMemesExpanded
 {
-
 
     [HarmonyPatch(typeof(RecordsUtility))]
     [HarmonyPatch("Notify_PawnDowned")]
@@ -26,22 +23,8 @@ namespace VanillaMemesExpanded
                 {
                     Find.HistoryEventsManager.RecordEvent(new HistoryEvent(InternalDefOf.VME_SecondDefeat, downed.Named(HistoryEventArgsNames.Doer)), true);
                 } else Find.HistoryEventsManager.RecordEvent(new HistoryEvent(InternalDefOf.VME_Defeat, downed.Named(HistoryEventArgsNames.Doer)), true);
-
-
-
-
             }
-
-
-
         }
     }
-
-
-
-
-
-
-
 
 }

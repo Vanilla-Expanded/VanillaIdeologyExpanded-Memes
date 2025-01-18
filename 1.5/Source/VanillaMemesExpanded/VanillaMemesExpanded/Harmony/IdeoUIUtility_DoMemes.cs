@@ -6,12 +6,8 @@ using System.Linq;
 using System;
 using System.Reflection.Emit;
 
-
-
 namespace VanillaMemesExpanded
 {
-
-
     [HarmonyPatch(typeof(IdeoUIUtility))]
     [HarmonyPatch("DoMemes")]
     public static class VanillaMemesExpanded_IdeoUIUtility_DoMemes_Patch
@@ -19,8 +15,7 @@ namespace VanillaMemesExpanded
         [HarmonyPrefix]
         static void MakeBoxSmaller(ref Vector2 ___MemeBoxSize,Ideo ideo)
         {
-            if (ideo.memes.Count > 6) { ___MemeBoxSize =  new Vector2(80f, 120f); }
-            
+            if (ideo.memes.Count > 6) { ___MemeBoxSize =  new Vector2(80f, 120f); }           
         }
 
         [HarmonyPostfix]
