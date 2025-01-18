@@ -75,12 +75,13 @@ namespace VanillaMemesExpanded
                             if (cleanStageIndex < 3)
                             {
                                 hospitalDirty = true;
-                            }else hospitalDirty = false;
+                            }
 
                             if (scoreStageIndex >= 3) { 
-                                totalHospitalTiles += room.CellCount;
+                                
                                 hospitalImpressive = true;
                             }
+                            totalHospitalTiles += room.CellCount;
                         }
 
 
@@ -113,13 +114,14 @@ namespace VanillaMemesExpanded
                             {
                                 libraryDirty = true;
                             }
-                            else libraryDirty = false;
+                  
 
                             if (scoreStageIndex >= 3)
                             {
-                                totalLibraryTiles += room.CellCount;
+                                
                                 libraryImpressive = true;
                             }
+                            totalLibraryTiles += room.CellCount;
                         }
 
 
