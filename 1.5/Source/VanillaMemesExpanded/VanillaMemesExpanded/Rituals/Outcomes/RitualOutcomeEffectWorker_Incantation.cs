@@ -50,8 +50,8 @@ namespace VanillaMemesExpanded
 					if (pawn.needs != null)
 					{
 						Need_Corruption need = pawn.needs.TryGetNeed<Need_Corruption>();
-						need.CorruptionTaken(0.1f);
-						need.CurLevel += 0.1f;
+						need.CorruptionTaken(0.2f);
+						need.CurLevel += 0.2f;
                         if (need.CurLevel > 0.99f)
                         {
 							MentalBreakDef mentalBreak = (from x in DefDatabase<MentalBreakDef>.AllDefsListForReading

@@ -9,7 +9,7 @@ namespace VanillaMemesExpanded
         protected override ThoughtState ShouldHaveThought(Pawn p)
         {
 
-            if (p.Map?.IsPlayerHome != true)
+            if (p.Map?.IsPlayerHome != true || !StaticCollections.pensInTheMap.ContainsKey(p.Map))
             {
                 return false;
             }

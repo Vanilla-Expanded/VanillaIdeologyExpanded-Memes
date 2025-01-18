@@ -14,7 +14,7 @@ namespace VanillaMemesExpanded
 
         public int tickCounter = tickInterval;
         public const int tickInterval = 2000;
-        public bool hospitalDirty = false;
+      
 
 
         public MapComponent_RoomsInMap(Map map) : base(map)
@@ -90,6 +90,45 @@ namespace VanillaMemesExpanded
                     StaticCollections.SetHospitalTilesInMap(map, totalHospitalTiles);
                     StaticCollections.SetHospitalCleanlinessInMap(map, hospitalDirty);
                     StaticCollections.SetHospitalImpressiveInMap(map, hospitalImpressive);
+
+                }
+
+                if (map.IsPlayerHome && Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.VME_Library_Required) != null)
+                {
+                    bool libraryDirty = false;
+
+                    bool libraryImpressive = false;
+
+                    int totalLibraryTiles = 0;
+
+                    foreach (Room room in map.regionGrid.allRooms)
+                    {
+
+                        if (room.Role == InternalDefOf.VBE_Library)
+                        {
+                            int cleanStageIndex = RoomStatDefOf.Cleanliness.GetScoreStageIndex(room.GetStat(RoomStatDefOf.Cleanliness));
+                            int scoreStageIndex = RoomStatDefOf.Impressiveness.GetScoreStageIndex(room.GetStat(RoomStatDefOf.Impressiveness));
+
+                            if (cleanStageIndex < 3)
+                            {
+                                libraryDirty = true;
+                            }
+                            else libraryDirty = false;
+
+                            if (scoreStageIndex >= 3)
+                            {
+                                totalLibraryTiles += room.CellCount;
+                                libraryImpressive = true;
+                            }
+                        }
+
+
+
+                    }
+
+                    StaticCollections.SetLibraryTilesInMap(map, totalLibraryTiles);
+                    StaticCollections.SetLibraryCleanlinessInMap(map, libraryDirty);
+                    StaticCollections.SetLibraryImpressiveInMap(map, libraryImpressive);
 
                 }
 

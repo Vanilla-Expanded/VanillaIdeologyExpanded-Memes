@@ -14,16 +14,17 @@ namespace VanillaMemesExpanded
 			{
 				return false;
 			}
+            if (StaticCollections.hospitalTilesInMap[p.Map] == 0)
+            {
+                return ThoughtState.ActiveAtStage(0);
+
+            }else
             if (!StaticCollections.hospitalImpressive[p.Map])
             {
                 return ThoughtState.ActiveAtStage(1);
             }
-            else
-            if (StaticCollections.hospitalTilesInMap[p.Map] == 0)
-			{
-				return ThoughtState.ActiveAtStage(0);
-
-			}else if (StaticCollections.hospitalDirty[p.Map])
+            
+            else if (StaticCollections.hospitalDirty[p.Map])
 			{
 				return ThoughtState.ActiveAtStage(2);
 			}

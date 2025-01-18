@@ -84,5 +84,7 @@
 	<VME_RelicsAmountTooltip>Max number of ideo relics allowed</VME_RelicsAmountTooltip>
 	<VME_BuildingsAmount>Max number of ideo buildings allowed (default is 2)</VME_BuildingsAmount>
 	<VME_BuildingsAmountTooltip>Max number of ideo buildings allowed. This includes altars, pictograms and such, but not buildings added through memes.</VME_BuildingsAmountTooltip>
+	<VME_AllowHighImpactMemesForFluidIdeos>Allow high impact memes for fluid ideos</VME_AllowHighImpactMemesForFluidIdeos>
+	<VME_AllowHighImpactMemesForFluidIdeos_Tooltip>By default, fluid ideos only let you choose one meme with impact 1 or 2, blocking impact 3 memes from being chosen. With this option toggle you can make it so impact 3 memes are available too.</VME_AllowHighImpactMemesForFluidIdeos_Tooltip>
 
 </LanguageData>

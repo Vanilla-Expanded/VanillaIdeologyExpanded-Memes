@@ -5,7 +5,7 @@
 
 	<RitualOutcomeEffectDef>
     <defName>VME_IncantationOutcome</defName>
-    <description>If the incantation ritual goes well (positive outcome) it will increase the corruption need of all participants by 10%, as well as provide a mood bonus.</description>
+    <description>If the incantation ritual goes well (positive outcome) it will increase the corruption need of all participants by 20%, as well as provide a mood bonus.</description>
     <workerClass>VanillaMemesExpanded.RitualOutcomeEffectWorker_Incantation</workerClass>
     <comps>
       <li Class="RitualOutcomeComp_RoomStat">

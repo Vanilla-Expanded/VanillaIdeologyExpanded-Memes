@@ -3,6 +3,7 @@ using RimWorld;
 using Verse;
 using UnityEngine;
 using System.Collections.Generic;
+using System.Linq;
 
 
 namespace VanillaMemesExpanded
@@ -81,6 +82,24 @@ namespace VanillaMemesExpanded
                     }
 
 
+                }
+                if (Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.VME_BookQuality_Desired) != null)
+                {
+                    int legendaryBooksInTheMap = 0;
+
+                    List<Thing> booksInMap = map.listerThings.AllThings.Where(x => x.def.thingCategories?.Contains(InternalDefOf.Books) == true).ToList();
+                    foreach (Thing book in booksInMap)
+                    {
+                        CompQuality quality = book.TryGetComp<CompQuality>();
+                        if(quality?.Quality == QualityCategory.Legendary)
+                        {
+                            legendaryBooksInTheMap++;
+                        }
+
+                    }
+
+
+                    StaticCollections.SetLegendaryBooksInMap(map, legendaryBooksInTheMap);
                 }
 
                 tickCounter = 0;

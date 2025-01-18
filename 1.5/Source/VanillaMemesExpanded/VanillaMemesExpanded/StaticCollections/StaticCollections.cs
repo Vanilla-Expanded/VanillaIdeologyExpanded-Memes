@@ -28,6 +28,12 @@ namespace VanillaMemesExpanded
 
         public static Dictionary<Map, bool> hospitalImpressive = new Dictionary<Map, bool>();
 
+        public static Dictionary<Map, int> libraryTilesInMap = new Dictionary<Map, int>();
+
+        public static Dictionary<Map, bool> libraryDirty = new Dictionary<Map, bool>();
+
+        public static Dictionary<Map, bool> libraryImpressive = new Dictionary<Map, bool>();
+
         public static Dictionary<Map, int> roomsInMap = new Dictionary<Map, int>();
 
         public static HashSet<Thing> objectsToDeconstruct_InMap = new HashSet<Thing>();
@@ -35,6 +41,8 @@ namespace VanillaMemesExpanded
         public static Dictionary<Map, int> firesInTheMap = new Dictionary<Map, int>();
 
         public static Dictionary<Map, int> pensInTheMap = new Dictionary<Map, int>();
+
+        public static Dictionary<Map, int> legendaryBooksInTheMap = new Dictionary<Map, int>();
 
         public static HashSet<string> drinksForAlcoholPrecepts = new HashSet<string>();
 
@@ -143,6 +151,18 @@ namespace VanillaMemesExpanded
         {
             hospitalImpressive[map] = impressive;
         }
+        public static void SetLibraryTilesInMap(Map map, int tiles)
+        {
+            libraryTilesInMap[map] = tiles;
+        }
+        public static void SetLibraryCleanlinessInMap(Map map, bool clean)
+        {
+            libraryDirty[map] = clean;
+        }
+        public static void SetLibraryImpressiveInMap(Map map, bool impressive)
+        {
+            libraryImpressive[map] = impressive;
+        }
         public static void SetRoomInMap(Map map, int rooms)
         {
             roomsInMap[map] = rooms;
@@ -154,6 +174,11 @@ namespace VanillaMemesExpanded
         public static void SetPensInMap(Map map, int pens)
         {
             pensInTheMap[map] = pens;
+        }
+
+        public static void SetLegendaryBooksInMap(Map map, int books)
+        {
+            legendaryBooksInTheMap[map] = books;
         }
     }
 }

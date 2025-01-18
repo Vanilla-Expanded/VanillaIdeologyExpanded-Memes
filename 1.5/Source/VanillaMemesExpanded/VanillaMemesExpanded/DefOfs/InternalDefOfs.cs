@@ -19,7 +19,8 @@ namespace VanillaMemesExpanded
 		public static PreceptDef VME_Power_Preferred;
 		public static PreceptDef VME_DumbLabor_Horrible;
 		public static PreceptDef VME_WoodcuttingYield_High;
-		public static PreceptDef VME_FarmingYield_High;
+		public static PreceptDef VME_LeatherApparel_Abhorrent;
+        public static PreceptDef VME_FarmingYield_High;
 		public static PreceptDef VME_Illness_Exalted;
 		public static PreceptDef VME_Illness_Preferred;
 		public static PreceptDef VME_CraftingQuality_Increased;
@@ -85,6 +86,10 @@ namespace VanillaMemesExpanded
         public static PreceptDef VME_BookWriting_Exalted;
         [MayRequire("VanillaExpanded.VCookE")]
         public static PreceptDef VME_IdeoRole_Patissier;
+        [MayRequire("VanillaExpanded.VBooksE")]
+        public static PreceptDef VME_Library_Required;
+        [MayRequire("VanillaExpanded.VBooksE")]
+        public static PreceptDef VME_BookQuality_Desired;
 
         [MayRequireRoyalty]
         public static MemeDef VME_Royal;
@@ -97,6 +102,7 @@ namespace VanillaMemesExpanded
 		public static MemeDef VME_ExaltedPriesthood;
         [MayRequire("VanillaExpanded.VCookE")]
         public static MemeDef VME_SweetTeeth;
+        
 
         public static HistoryEventDef VME_Firefighting;
 		public static HistoryEventDef VME_KillingWithFire;
@@ -152,6 +158,9 @@ namespace VanillaMemesExpanded
         public static TraitDef VME_Elder;
 
 		public static ResearchProjectDef MicroelectronicsBasics;
+
+        [MayRequire("VanillaExpanded.VBooksE")]
+        public static RoomRoleDef VBE_Library;
 
 
 

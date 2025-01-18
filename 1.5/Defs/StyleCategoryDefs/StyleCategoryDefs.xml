@@ -792,7 +792,7 @@
 	<StyleCategoryDef>
 		<defName>VME_Eschatological</defName>
 		<label>eschatological</label>
-		<iconPath>UI/StyleCategories/VME_ThingStyle_Eschatology</iconPath>
+		<iconPath>UI/Structures/Structure_Eschatologism</iconPath>
 		<soundOngoingRitual>VME_RitualSustainer_Eschatological</soundOngoingRitual>
 		<ritualVisualEffectDef>VME_EschatologicalVisuals</ritualVisualEffectDef>
 		<thingDefStyles>

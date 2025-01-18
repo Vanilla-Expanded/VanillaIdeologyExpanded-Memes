@@ -39,7 +39,7 @@
 		<defName>VME_Sweets_Craved</defName>
 		<issue>VME_Sweets</issue>
 		<label>craved</label>
-		<description>Desserts and treats shouldn’t be withheld, sugary confections should be eaten at least every couple days.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Bear in mind this precept has a minimum expectation required. Moderate expectations or higher are needed for the "Desserts" need to show up.\n\n - Desserts that increase the need: Chocolate (10%), Simple dessert (15%), Fine dessert (25%), Lavish dessert (35%), Gourmet dessert (50%)</description>
+		<description>Desserts and treats shouldn’t be withheld, sugary confections should be eaten at least every couple days.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Bear in mind this precept has a minimum expectation required. Moderate expectations or higher are needed for the "Desserts" need to show up.\n\n - Desserts that increase the need: Chocolate (15%), Simple dessert (30%), Fine dessert (40%), Lavish dessert (50%), Gourmet dessert (75%)</description>
 		<impact>Medium</impact>
 		<associatedMemes>
 			<li>VME_SweetTeeth</li>
@@ -51,7 +51,7 @@
 			</li>
 			<li Class="VanillaMemesExpanded.PreceptComp_AddDessertNeed">
 				<eventDef>VME_AteSimpleDessert</eventDef>
-				<needGain>0.15</needGain>
+				<needGain>0.3</needGain>
 			</li>
 			<li Class="PreceptComp_SelfTookMemoryThought">
 				<eventDef>VME_AteFineDessert</eventDef>
@@ -59,7 +59,7 @@
 			</li>
 			<li Class="VanillaMemesExpanded.PreceptComp_AddDessertNeed">
 				<eventDef>VME_AteFineDessert</eventDef>
-				<needGain>0.25</needGain>
+				<needGain>0.4</needGain>
 			</li>
 			<li Class="PreceptComp_SelfTookMemoryThought">
 				<eventDef>VME_AteLavishDessert</eventDef>
@@ -67,7 +67,7 @@
 			</li>
 			<li Class="VanillaMemesExpanded.PreceptComp_AddDessertNeed">
 				<eventDef>VME_AteLavishDessert</eventDef>
-				<needGain>0.35</needGain>
+				<needGain>0.5</needGain>
 			</li>
 			<li Class="PreceptComp_SelfTookMemoryThought">
 				<eventDef>VME_AteGourmetDessert</eventDef>
@@ -75,7 +75,7 @@
 			</li>
 			<li Class="VanillaMemesExpanded.PreceptComp_AddDessertNeed">
 				<eventDef>VME_AteGourmetDessert</eventDef>
-				<needGain>0.5</needGain>
+				<needGain>0.75</needGain>
 			</li>
 			<li Class="PreceptComp_SelfTookMemoryThought">
 				<eventDef>VME_AteChocolateSweetTeeth</eventDef>
@@ -83,7 +83,7 @@
 			</li>
 			<li Class="VanillaMemesExpanded.PreceptComp_AddDessertNeed">
 				<eventDef>VME_AteChocolateSweetTeeth</eventDef>
-				<needGain>0.1</needGain>
+				<needGain>0.15</needGain>
 			</li>
 
 		</comps>

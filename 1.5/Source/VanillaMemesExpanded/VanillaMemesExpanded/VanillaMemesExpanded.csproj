@@ -353,8 +353,10 @@
     <Compile Include="Harmony\IdeoUIUtility_DoPrecepts.cs" />
     <Compile Include="Harmony\IdeoUIUtility_DoStyles.cs" />
     <Compile Include="Harmony\IdeoUIUtility_DoPreceptsInt.cs" />
+    <Compile Include="Harmony\IdeoUtility_IsMemeAllowedForInitialFluidIdeo.cs" />
     <Compile Include="Harmony\InteractionWorker_RecruitAttempt_Interacted.cs" />
     <Compile Include="Harmony\JobDriver_ConvertPrisoner_MakeNewToils.cs" />
+    <Compile Include="Harmony\JobGiver_OptimizeApparel_ApparelScoreGain.cs" />
     <Compile Include="Harmony\JoyUtility_JoyTickCheckEnd.cs" />
     <Compile Include="Harmony\InteractionUtility_CanReceiveInteraction.cs" />
     <Compile Include="Harmony\LordJob_Joinable_Party_AttendeeThought.cs" />
@@ -465,7 +467,9 @@
     <Compile Include="ThoughtWorkers\ThoughtWorker_NeedSweets.cs" />
     <Compile Include="ThoughtWorkers\ThoughtWorker_Precept\ThoughtWorker_Precept_Alcohol_MildAbstinence.cs" />
     <Compile Include="ThoughtWorkers\ThoughtWorker_Precept\ThoughtWorker_Precept_Aurora.cs" />
+    <Compile Include="ThoughtWorkers\ThoughtWorker_Precept\ThoughtWorker_Precept_BookQuality.cs" />
     <Compile Include="ThoughtWorkers\ThoughtWorker_Precept\ThoughtWorker_Precept_HasNonNaturalProsthetic.cs" />
+    <Compile Include="ThoughtWorkers\ThoughtWorker_Precept\ThoughtWorker_Precept_Library.cs" />
     <Compile Include="ThoughtWorkers\ThoughtWorker_Precept_Social\ThoughtWorker_Precept_HasNonNaturalProsthetic_Social.cs" />
     <Compile Include="ThoughtWorkers\ThoughtWorker_Precept\ThoughtWorker_Precept_Hospital.cs" />
     <Compile Include="ThoughtWorkers\ThoughtWorker_Precept\ThoughtWorker_Precept_Leather_Abhorrent.cs" />

@@ -14,6 +14,12 @@
 		<defName>VME_WroteBook</defName>
 		<label>wrote book</label>
 	</HistoryEventDef>
+	
+		<IssueDef>
+		<defName>VME_BookWritingSpeed</defName>
+		<label>writing speed</label>
+		<iconPath>UI/Issues/VME_WritingSpeed</iconPath>
+	</IssueDef>
 
 
 	<!-- Precepts -->
@@ -24,7 +30,7 @@
 		<defName>VME_BookWriting_Exalted</defName>
 		<issue>VME_BookWriting</issue>
 		<label>exalted</label>
-		<description>Passing on one's knowledge is a purely respectful act. The authors of this world and their heirs shall be the ones to inherit it and all of it’s fruits.</description>
+		<description>Passing on one's knowledge is a purely respectful act. The authors of this world and their heirs shall be the ones to inherit it and all of its fruits.</description>
 		<impact>Low</impact>
 		<associatedMemes>
 			<li>VME_Cultured</li>
@@ -119,7 +125,30 @@
 	</ThoughtDef>
 
 
-
+	<PreceptDef>
+		<defName>VME_BookWritingSpeed_Increased</defName>
+		<issue>VME_BookWritingSpeed</issue>
+		<label>increased</label>
+		<description>Writing comes naturally to us, and we do it fast and efficiently.</description>
+		<impact>Low</impact>
+		<displayOrderInIssue>0</displayOrderInIssue>
+		<statOffsets>
+			<VBE_WritingSpeed>0.2</VBE_WritingSpeed>
+	  
+		</statOffsets>
+	</PreceptDef>
+	<PreceptDef>
+		<defName>VME_BookWritingSpeed_Decreased</defName>
+		<issue>VME_BookWritingSpeed</issue>
+		<label>decreased</label>
+		<description>Writing is a chore, something that wastes time and requires a huge effort.</description>
+		<impact>Low</impact>
+		<displayOrderInIssue>10</displayOrderInIssue>
+		<statOffsets>
+			<VBE_WritingSpeed>-0.2</VBE_WritingSpeed>
+	  
+		</statOffsets>
+	</PreceptDef>
 
 
 

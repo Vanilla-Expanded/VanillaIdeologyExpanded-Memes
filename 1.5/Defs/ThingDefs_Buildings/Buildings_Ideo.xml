@@ -118,7 +118,7 @@
 	<ThingDef ParentName="BuildingBase">
 		<defName>VME_MechanoidEffigy</defName>
 		<label>mechanoid effigy</label>
-		<description>A structure assembled from scrapped mechanoid parts. Emits an IFF programming signal capable of confusing ancient mechanoid receptors. Should two exist per colonist enough signal noise will soft reset ancient mechanoid programming, causing an immediate retreat.</description>
+		<description>A structure assembled from scrapped mechanoid parts. Emits an IFF programming signal capable of confusing ancient mechanoid receptors. Should two exist per colonist enough signal noise will soft reset ancient mechanoid programming, causing an immediate retreat. This will only work on raiding mechanoids, clusters and "boss" mechanoids won't be affected.</description>
 		<castEdgeShadows>false</castEdgeShadows>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>

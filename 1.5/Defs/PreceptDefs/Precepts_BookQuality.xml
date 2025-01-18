@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Issues -->
+	<IssueDef>
+		<defName>VME_BookQuality</defName>
+		<label>book quality</label>
+		<iconPath>UI/Issues/VME_BookQuality</iconPath>
+	</IssueDef>
+	<!-- Precepts -->
+	<PreceptDef>
+		<defName>VME_BookQuality_Desired</defName>
+		<issue>VME_BookQuality</issue>
+		<label>desired</label>
+		<description>There is nothing that would make us happier than acquiring exquisite tomes of knowledge for our colony.</description>
+		<impact>Low</impact>
+		<displayOrderInIssue>0</displayOrderInIssue>
+		
+		<comps>			
+			<li Class="PreceptComp_SituationalThought">
+				<thought>VME_BookQuality_Desired</thought>
+				<thoughtStageDescriptions>
+					<li>A single legendary book</li>
+					<li>Two legendary books</li>
+					<li>Three legendary books</li>
+					<li>Four legendary books</li>
+					<li>Five or more legendary books</li>
+					
+					
+				</thoughtStageDescriptions>
+			</li>
+		</comps>
+		
+		
+	</PreceptDef>
+	
+	<ThoughtDef>
+		<defName>VME_BookQuality_Desired</defName>
+		<validWhileDespawned>true</validWhileDespawned>
+		<minExpectation>Moderate</minExpectation>
+		<workerClass>VanillaMemesExpanded.ThoughtWorker_Precept_BookQuality</workerClass>
+		<stages>
+			<li>
+				<label>legendary book in colony</label>
+				<description>Our colony has acquired a legendary book, how exciting.</description>
+				<baseMoodEffect>1</baseMoodEffect>
+			</li>
+			<li>
+				<label>some legendary books in colony</label>
+				<description>Our colony has acquired two legendary books, how exciting.</description>
+				<baseMoodEffect>2</baseMoodEffect>
+			</li>
+			<li>
+				<label>a few legendary books in colony</label>
+				<description>Our colony has acquired a few legendary books, we are building an amazing collection.</description>
+				<baseMoodEffect>3</baseMoodEffect>
+			</li>
+			<li>
+				<label>several legendary books in colony</label>
+				<description>Our colony has acquired several legendary books, we are on our way to building an incredible library.</description>
+				<baseMoodEffect>4</baseMoodEffect>
+			</li>
+			<li>
+				<label>many legendary books in colony</label>
+				<description>We have amassed quite a lot of legendary literature!</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+			
+			
+			
+			
+			
+			
+			
+		</stages>
+	</ThoughtDef>
+	
+	
+</Defs>

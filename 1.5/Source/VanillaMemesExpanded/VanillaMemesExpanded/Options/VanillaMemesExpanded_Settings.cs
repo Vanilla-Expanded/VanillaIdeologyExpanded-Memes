@@ -12,8 +12,8 @@ namespace VanillaMemesExpanded
 
     {
 
+        public static bool allowHighImpactMemesForFluidIdeos = false;
 
-     
         public static float memeAmount = baseGameMemeAmount;
         public const float baseGameMemeAmount = 4;
         public const float maxMemeAmount = 8;
@@ -46,6 +46,7 @@ namespace VanillaMemesExpanded
             Scribe_Values.Look(ref stylesAmount, "stylesAmount", maxStylesAmount, true);
             Scribe_Values.Look(ref relicsAmount, "relicsAmount", baseGameRelicsAmount, true);
             Scribe_Values.Look(ref buildingsAmount, "buildingsAmount", baseGameBuildingsAmount, true);
+            Scribe_Values.Look(ref allowHighImpactMemesForFluidIdeos, "allowHighImpactMemesForFluidIdeos", false, true);
 
 
 
@@ -57,6 +58,9 @@ namespace VanillaMemesExpanded
 
 
             ls2.Begin(inRect);
+
+            ls2.CheckboxLabeled("VME_AllowHighImpactMemesForFluidIdeos".Translate(), ref allowHighImpactMemesForFluidIdeos, "VME_AllowHighImpactMemesForFluidIdeos_Tooltip".Translate());
+
 
             var memesLabel = ls2.LabelPlusButton("VME_MemeAmount".Translate() + ": " + memeAmount, "VME_MemeAmountTooltip".Translate());
             memeAmount = (float)Math.Round(ls2.Slider(memeAmount, baseGameMemeAmount, maxMemeAmount), 0);

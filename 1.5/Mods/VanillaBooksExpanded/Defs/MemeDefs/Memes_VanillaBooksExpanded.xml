@@ -83,6 +83,17 @@
 			<li>
 				<li>VME_BookWriting_Exalted</li>
 			</li>
+			<li>
+				<li>VME_BookReadingSpeed_Decreased</li>
+			</li>
+			<li>
+				<li>VME_Library_Required</li>
+			</li>
+			<li>
+				<li>VME_BookQuality_Desired</li>
+			</li>
+			
+			
 			
 		</requireOne>
 		
