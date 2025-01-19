@@ -90,7 +90,7 @@ namespace VanillaMemesExpanded
                         Pawn currentPawn = precept_role?.ChosenPawnSingle();
 
 
-                        if (currentPawn != highestTitlePawn || currentPawn.royalty?.MainTitle().seniority < highestTitle)
+                        if (currentPawn != highestTitlePawn || currentPawn?.royalty?.MainTitle()?.seniority < highestTitle)
                         {
                             currentTitleLeaderPawn = highestTitlePawn;
                             if (precept_role.RequirementsMet(highestTitlePawn))

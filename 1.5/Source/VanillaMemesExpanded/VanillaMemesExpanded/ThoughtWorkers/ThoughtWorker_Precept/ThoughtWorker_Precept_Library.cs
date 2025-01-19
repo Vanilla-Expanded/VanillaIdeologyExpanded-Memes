@@ -29,16 +29,16 @@ namespace VanillaMemesExpanded
             {
                 return ThoughtState.ActiveAtStage(2);
             }
-            else if (StaticCollections.libraryTilesInMap[p.Map] < 25)
+            else if (StaticCollections.libraryTilesInMap[p.Map] < 50)
             {
                 return ThoughtState.ActiveAtStage(3);
             }
-            else if (StaticCollections.libraryTilesInMap[p.Map] < 50)
+            else if (StaticCollections.libraryTilesInMap[p.Map] < 100)
             {
                 return ThoughtState.ActiveAtStage(4);
             }
 
-            else
+            else 
             {
                 return ThoughtState.ActiveAtStage(5);
             }

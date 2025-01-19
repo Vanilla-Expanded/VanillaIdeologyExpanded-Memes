@@ -11,7 +11,7 @@
 		<issue>VME_Library</issue>
 		<label>required</label>
 		<description>A place of learning is essential for our community. A nice collection of marvelous tomes and filled shelves will fill our hearts with joy.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Colonists gets mood penalties / bonuses depending on size of library rooms found in the map. Only library rooms with an impressiveness of "decent" or higher will count for this calculation. Libraries will need to be clean or colonists will complain too!</description>
-		<impact>Medium</impact>
+		<impact>Low</impact>
 		<displayOrderInImpact>81</displayOrderInImpact>
 		<associatedMemes>
 			<li>VME_Cultured</li>
@@ -24,9 +24,9 @@
 					<li>Need library</li>
 					<li>Unimpressive library (less than decent impressiveness)</li>
 					<li>Dirty library</li>
-					<li>Small library (less than 25 tiles)</li>
-					<li>Spacious library (less than 50 tiles)</li>
-					<li>Huge library (more than 50 tiles)</li>
+					<li>Small library (less than 50 tiles)</li>
+					<li>Spacious library (less than 100 tiles)</li>
+					<li>Huge library (more than 100 tiles)</li>
 				</thoughtStageDescriptions>
 			</li>
 		</comps>
@@ -40,12 +40,12 @@
 			<li>
 				<label>need library</label>
 				<description>We lack a place of knowledge.</description>
-				<baseMoodEffect>-10</baseMoodEffect>
+				<baseMoodEffect>-5</baseMoodEffect>
 			</li>
 			<li>
 				<label>lame library</label>
 				<description>We have a library, but it needs to be "decent" at least!</description>
-				<baseMoodEffect>-10</baseMoodEffect>
+				<baseMoodEffect>-5</baseMoodEffect>
 			</li>
 			<li>
 				<label>dirty library</label>
@@ -55,17 +55,17 @@
 			<li>
 				<label>small library</label>
 				<description>We have a small library.</description>
-				<baseMoodEffect>3</baseMoodEffect>
+				<baseMoodEffect>1</baseMoodEffect>
 			</li>
 			<li>
 				<label>spacious library</label>
 				<description>We have a very spacious library.</description>
-				<baseMoodEffect>6</baseMoodEffect>
+				<baseMoodEffect>3</baseMoodEffect>
 			</li>
 			<li>
 				<label>huge library</label>
 				<description>We have a huge, professional library!</description>
-				<baseMoodEffect>10</baseMoodEffect>
+				<baseMoodEffect>5</baseMoodEffect>
 			</li>
 		</stages>
 	</ThoughtDef>

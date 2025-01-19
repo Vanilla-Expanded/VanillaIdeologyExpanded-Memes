@@ -168,6 +168,7 @@
 		<requiredMemes>
 			<li>VME_Republic</li>
 		</requiredMemes>
+		<activationBelieverCount>4</activationBelieverCount>
 	</PreceptDef>
 	<PreceptDef ParentName="PreceptRoleSingleBase">
 		<defName>VME_IdeoRole_LeaderThird</defName>
@@ -337,5 +338,6 @@
 		<requiredMemes>
 			<li>VME_Republic</li>
 		</requiredMemes>
+		<activationBelieverCount>4</activationBelieverCount>
 	</PreceptDef>
 </Defs>

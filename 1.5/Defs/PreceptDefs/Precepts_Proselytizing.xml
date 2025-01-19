@@ -40,12 +40,7 @@
 			<SocialIdeoSpreadFrequencyFactor>0</SocialIdeoSpreadFrequencyFactor>
 		</statFactors>
 		<proselytizes>false</proselytizes>
-		<!--<comps>
-			<li Class="PreceptComp_UnwillingToDo">
-				<eventDef>VME_ConvertAPrisoner</eventDef>
-				<description>Converting a prisoner</description>
-			</li>
-		</comps>-->
+		
 	</PreceptDef>
 
 </Defs>

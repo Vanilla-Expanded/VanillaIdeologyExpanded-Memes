@@ -12,7 +12,7 @@
 		<defName>VME_BodyMod_OnlyBiological</defName>
 		<issue>BodyModification</issue>
 		<label>only biological</label>
-		<description>Flesh only should be replaced by flesh, to replace a body with a machine is forbidden.</description>
+		<description>Flesh only should be replaced by flesh, to replace a body with a machine is forbidden.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - This covers fleshcrafted limbs, natural limbs, mutant limbs from Anomaly, Vanilla Genetics Expanded implants and Alpha Animals "ocular" implants.</description>
 		<impact>Medium</impact>
 		<displayOrderInIssue>20</displayOrderInIssue>
 		<displayOrderInImpact>100</displayOrderInImpact>

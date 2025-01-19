@@ -14,9 +14,9 @@ namespace VanillaMemesExpanded
     public static class VanillaMemesExpanded_InteractionWorker_RecruitAttempt_Interacted_Patch
     {
         [HarmonyPostfix]
-        static void DecreaseAnonymity(Pawn initiator)
+        static void DecreaseAnonymity(Pawn initiator, Pawn recipient)
         {
-            if (initiator.Ideo?.HasPrecept(InternalDefOf.VME_Anonymity_Required) == true)
+            if (initiator.Ideo?.HasPrecept(InternalDefOf.VME_Anonymity_Required) == true && !recipient.NonHumanlikeOrWildMan())
             {
                 if (initiator.needs != null)
                 {

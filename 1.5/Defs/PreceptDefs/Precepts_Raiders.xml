@@ -68,7 +68,7 @@
     <defName>VME_Raiding_Abhorrent</defName>
     <issue>Raiding</issue>
     <label>abhorrent</label>
-    <description>We worked hard for what we have, we cannot take from the weak as we too were once weak. Doing so is a tremendous shame.</description>
+    <description>We worked hard for what we have, we cannot take from the weak as we too were once weak. Doing so is a tremendous shame.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Any raid will trigger this precept. Even those with a defensive focus such as problem causers. Yes, it's tough.</description>
     <impact>High</impact>
     <displayOrderInIssue>40</displayOrderInIssue>
     <displayOrderInImpact>1000</displayOrderInImpact>

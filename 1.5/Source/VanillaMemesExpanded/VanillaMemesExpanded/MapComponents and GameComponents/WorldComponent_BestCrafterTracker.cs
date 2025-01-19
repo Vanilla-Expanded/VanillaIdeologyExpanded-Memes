@@ -62,7 +62,7 @@ namespace VanillaMemesExpanded
                     Precept_Role precept_role = mostSkilledPawn?.Ideo?.GetPrecept(PreceptDefOf.IdeoRole_Leader) as Precept_Role;
                     Pawn currentPawn = precept_role?.ChosenPawnSingle();
                 
-                    if (currentPawn != mostSkilledPawn || currentPawn.skills.GetSkill(SkillDefOf.Crafting).Level< highestSkillLevel)
+                    if (currentPawn != mostSkilledPawn || currentPawn?.skills.GetSkill(SkillDefOf.Crafting).Level< highestSkillLevel)
                     {
                       
                         currentBestLeaderPawn = mostSkilledPawn;
