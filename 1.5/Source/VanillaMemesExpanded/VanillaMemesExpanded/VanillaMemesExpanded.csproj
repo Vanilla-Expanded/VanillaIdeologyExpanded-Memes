@@ -332,7 +332,9 @@
     <Compile Include="Comps\CompProperties\CompProperties_DeconstructJunk.cs" />
     <Compile Include="Comps\CompProperties\CompProperties_DisableAbilityIfMemeFound.cs" />
     <Compile Include="Comps\CompProperties\CompProperties_PermanentFireOverlay.cs" />
+    <Compile Include="Comps\CompProperties\CompProperties_Obelisk.cs" />
     <Compile Include="Comps\CompProperties\CompProperties_TimedFireOverlay.cs" />
+    <Compile Include="Comps\CompObelisk.cs" />
     <Compile Include="Comps\CompTimedFireOverlay.cs" />
     <Compile Include="DefOfs\InternalDefOfs.cs" />
     <Compile Include="Defs\FireSourcesForPreceptDefs.cs" />

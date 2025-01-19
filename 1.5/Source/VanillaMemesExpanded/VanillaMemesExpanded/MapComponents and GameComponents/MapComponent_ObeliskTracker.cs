@@ -15,6 +15,7 @@ namespace VanillaMemesExpanded
         public int tickCounter = tickInterval;
         public const int tickInterval = 3000;
         public Dictionary<Pawn, bool> colonist_obelisk_tracker_backup = new Dictionary<Pawn, bool>();
+        public HashSet<Thing> obelisks_InMap = new HashSet<Thing>();
         List<Pawn> list2;
         List<bool> list3;
 
@@ -26,8 +27,8 @@ namespace VanillaMemesExpanded
 
         public override void FinalizeInit()
         {
-             StaticCollections.colonist_obelisk_tracker = colonist_obelisk_tracker_backup; 
-                
+            StaticCollections.colonist_obelisk_tracker = colonist_obelisk_tracker_backup;
+
 
             base.FinalizeInit();
 
@@ -38,6 +39,7 @@ namespace VanillaMemesExpanded
             base.ExposeData();
 
             Scribe_Collections.Look(ref colonist_obelisk_tracker_backup, "colonist_obelisk_tracker_backup", LookMode.Reference, LookMode.Value, ref list2, ref list3);
+            Scribe_Collections.Look(ref obelisks_InMap, "obelisks_InMap", LookMode.Reference);
             Scribe_Values.Look<int>(ref this.tickCounter, "tickCounterObelisks", 0, true);
 
         }
@@ -50,39 +52,37 @@ namespace VanillaMemesExpanded
             {
 
                 if (Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.VME_Corruption_Essential) != null)
-                   
+
                 {
-                    if (map.IsPlayerHome) {
+                    if (map.IsPlayerHome)
+                    {
                         colonist_obelisk_tracker_backup = StaticCollections.colonist_obelisk_tracker;
+
 
                         foreach (Pawn pawn in map.mapPawns.SpawnedPawnsInFaction(Faction.OfPlayer))
                         {
                             bool obeliskFound = false;
-                            int num = GenRadial.NumCellsInRadius(5.9f);
-                            for (int i = 0; i < num; i++)
+
+                            if (obelisks_InMap.Count > 0)
                             {
-                                IntVec3 intVec = pawn.Position + GenRadial.RadialPattern[i];
-                                if (intVec.InBounds(map) && !intVec.Fogged(map))
+                                foreach (Thing obelisk in obelisks_InMap)
                                 {
-                                    foreach (Thing thing in intVec.GetThingList(map))
+                                    if (pawn.Position.DistanceTo(obelisk.Position) < 10)
                                     {
-                                        Building building;
-                                        if ((building = (thing as Building)) != null && building.def.defName=="VME_Obelisk")
-                                        {
-                                            obeliskFound = true;
-                                            break;
-                                        }
+                                        obeliskFound = true;
+                                        break;
                                     }
+
                                 }
                             }
+
                             StaticCollections.AddColonistAndObelisk(pawn, obeliskFound);
-                           
 
 
                         }
 
                     }
-                    
+
 
 
                 }
@@ -93,8 +93,23 @@ namespace VanillaMemesExpanded
 
 
         }
-       
 
+        public void AddObeliskToMap(Thing thing)
+        {
+            if (!obelisks_InMap.Contains(thing))
+            {
+                obelisks_InMap.Add(thing);
+            }
+        }
+
+        public void RemoveObeliskFromMap(Thing thing)
+        {
+            if (obelisks_InMap.Contains(thing))
+            {
+                obelisks_InMap.Remove(thing);
+            }
+
+        }
 
 
     }

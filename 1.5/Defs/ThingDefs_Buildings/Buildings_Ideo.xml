@@ -193,6 +193,11 @@
 		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 		<costStuffCount>100</costStuffCount>
 		<placeWorkers><li>VanillaMemesExpanded.PlaceWorker_ShowObeliskRadius</li></placeWorkers>
+		<comps>
+			<li Class="VanillaMemesExpanded.CompProperties_Test">
+				
+			</li>
+		</comps>
 	</ThingDef>
 	<ThingDef ParentName="BuildingNaturalBase">
 		<defName>VME_InsectNest</defName>
