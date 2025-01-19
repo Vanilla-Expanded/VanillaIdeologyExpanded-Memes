@@ -194,7 +194,7 @@
 		<costStuffCount>100</costStuffCount>
 		<placeWorkers><li>VanillaMemesExpanded.PlaceWorker_ShowObeliskRadius</li></placeWorkers>
 		<comps>
-			<li Class="VanillaMemesExpanded.CompProperties_Test">
+			<li Class="VanillaMemesExpanded.CompProperties_Obelisk">
 				
 			</li>
 		</comps>
