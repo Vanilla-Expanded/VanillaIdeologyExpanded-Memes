@@ -49,9 +49,9 @@ namespace VanillaMemesExpanded
 
                         foreach (Pawn pawn in PawnsFinder.AllMapsCaravansAndTravelingTransportPods_Alive_Colonists)
                         {
-                            if (!pawn.IsGhoul&&PawnUtility.GetPsylinkLevel(pawn) > highestSkillLevel && pawn.ideo?.Ideo == ideo && !pawn.IsSlave)
+                            if (pawn?.IsGhoul==false && pawn.GetPsylinkLevel() > highestSkillLevel && pawn.ideo?.Ideo == ideo && !pawn.IsSlave)
                             {
-                                highestSkillLevel = PawnUtility.GetPsylinkLevel(pawn);
+                                highestSkillLevel = pawn.GetPsylinkLevel();
                                 mostSkilledPawn = pawn;
                             }
                         }
@@ -60,7 +60,7 @@ namespace VanillaMemesExpanded
                         Pawn currentPawn = precept_role?.ChosenPawnSingle();
 
 
-                        if (currentPawn != mostSkilledPawn || PawnUtility.GetPsylinkLevel(currentPawn) < highestSkillLevel)
+                        if (currentPawn != mostSkilledPawn || currentPawn?.GetPsylinkLevel() < highestSkillLevel)
                         {
                             currentPsycasterLeaderPawn = mostSkilledPawn;
                             if (precept_role.RequirementsMet(mostSkilledPawn)) {
