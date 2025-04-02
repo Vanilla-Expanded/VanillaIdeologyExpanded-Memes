@@ -15,11 +15,26 @@ namespace VanillaMemesExpanded
 			}
 		}
 
+        public override void CompTick()
+        {
+            base.CompTick();
+
+            if (this.parent.IsHashIntervalTick(500))
+            {
+                MapComponent_ObeliskTracker mapComp = this.parent.Map?.GetComponent<MapComponent_ObeliskTracker>();
+                if (mapComp != null)
+                {
+                    mapComp.AddObeliskToMap(this.parent);
+                }
+            }
+        }
+
 
         public override void Initialize(CompProperties props)
         {
             base.Initialize(props);
-            MapComponent_ObeliskTracker mapComp = this.parent.Map.GetComponent<MapComponent_ObeliskTracker>();
+
+            MapComponent_ObeliskTracker mapComp = this.parent.Map?.GetComponent<MapComponent_ObeliskTracker>();
             if (mapComp != null)
             {
                 mapComp.AddObeliskToMap(this.parent);
@@ -29,7 +44,7 @@ namespace VanillaMemesExpanded
         public override void PostSpawnSetup(bool respawningAfterLoad)
         {
             base.PostSpawnSetup(respawningAfterLoad);
-            MapComponent_ObeliskTracker mapComp = this.parent.Map.GetComponent<MapComponent_ObeliskTracker>();
+            MapComponent_ObeliskTracker mapComp = this.parent.Map?.GetComponent<MapComponent_ObeliskTracker>();
             if (mapComp != null)
             {
                 mapComp.AddObeliskToMap(this.parent);
@@ -37,7 +52,7 @@ namespace VanillaMemesExpanded
         }
         public override void PostDeSpawn(Map map)
         {
-            MapComponent_ObeliskTracker mapComp = this.parent.Map.GetComponent<MapComponent_ObeliskTracker>();
+            MapComponent_ObeliskTracker mapComp = this.parent.Map?.GetComponent<MapComponent_ObeliskTracker>();
             if (mapComp != null)
             {
                 mapComp.RemoveObeliskFromMap(this.parent);
@@ -47,7 +62,7 @@ namespace VanillaMemesExpanded
         public override void PostDestroy(DestroyMode mode, Map previousMap)
         {
 
-            MapComponent_ObeliskTracker mapComp = this.parent.Map.GetComponent<MapComponent_ObeliskTracker>();
+            MapComponent_ObeliskTracker mapComp = this.parent.Map?.GetComponent<MapComponent_ObeliskTracker>();
             if (mapComp != null)
             {
                 mapComp.RemoveObeliskFromMap(this.parent);
