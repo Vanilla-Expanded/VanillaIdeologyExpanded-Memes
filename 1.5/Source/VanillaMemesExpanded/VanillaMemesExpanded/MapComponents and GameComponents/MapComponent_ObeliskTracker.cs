@@ -27,7 +27,16 @@ namespace VanillaMemesExpanded
 
         public override void FinalizeInit()
         {
-            StaticCollections.colonist_obelisk_tracker = colonist_obelisk_tracker_backup;
+            // sometimes log spams NullReferenceException, this prevents loading corrupt obelisk entries
+            try
+            {
+                StaticCollections.colonist_obelisk_tracker = colonist_obelisk_tracker_backup;
+            }
+            catch (NullReferenceException)
+            {
+                Log.Warning("Vanilla Memes Expanded - Cleared corrupt colonist_obelisk_tracker");
+                StaticCollections.colonist_obelisk_tracker = new Dictionary<Pawn, bool>();
+            }
 
 
             base.FinalizeInit();
@@ -52,7 +61,6 @@ namespace VanillaMemesExpanded
             {
 
                 if (Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.VME_Corruption_Essential) != null)
-
                 {
                     if (map.IsPlayerHome)
                     {
@@ -67,10 +75,22 @@ namespace VanillaMemesExpanded
                             {
                                 foreach (Thing obelisk in obelisks_InMap)
                                 {
-                                    if (pawn.Position.DistanceTo(obelisk.Position) < 10)
+                                    try
                                     {
-                                        obeliskFound = true;
-                                        break;
+                                        if (pawn.Position.DistanceTo(obelisk.Position) < 10)
+                                        {
+                                            obeliskFound = true;
+                                            break;
+                                        }
+                                    }
+                                    catch (NullReferenceException)
+                                    {
+                                        // we still think there's a valid obelisk that was improperly
+                                        // deleted by another mod or corrupted during save/load
+                                        // so remove it from the list
+                                        RemoveObeliskFromMap(obelisk);
+                                        
+                                        Log.Warning("Vanilla Memes Expanded - Removed corrupt obelisk from colonist_obelisk_tracker");
                                     }
 
                                 }
