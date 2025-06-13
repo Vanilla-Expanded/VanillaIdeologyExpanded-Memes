@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Issues -->
+	<IssueDef>
+		<defName>VME_TitleInheritance</defName>
+		<label>titles</label>
+		<iconPath>UI/Issues/TitlesPrecept</iconPath>
+	</IssueDef>
+	<!-- Precepts -->
+	<PreceptDef>
+		<defName>VME_TitleInheritance_Inherited</defName>
+		<issue>VME_TitleInheritance</issue>
+		<label>inherited</label>
+		<description>Nobility flows through blood, as titles pass from the fallen to their kin. A parent's demise elevates the firstborn, inheriting the mantle of leadership.</description>
+		<impact>Low</impact>
+		<associatedMemes>
+			<li>VME_Royal</li>
+		</associatedMemes>
+		<displayOrderInIssue>50</displayOrderInIssue>
+		
+	</PreceptDef>
+	
+	
+</Defs>

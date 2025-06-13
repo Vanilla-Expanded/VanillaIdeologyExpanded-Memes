@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Weapons Expanded</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+
+				<li Class="PatchOperationConditional">
+					<success>Always</success>
+					<xpath>/Defs/StyleCategoryDef[defName = "VME_Authoritarian"]/thingDefStyles</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/StyleCategoryDef[defName = "VME_Authoritarian"]/thingDefStyles</xpath>
+						<value>
+							
+							<li>
+								<thingDef>VWE_Gun_ChargePistol</thingDef>
+								<styleDef>VME_Authoritarian_ChargePistol</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_ChargeShotgun</thingDef>
+								<styleDef>VME_Authoritarian_ChargeShotgun</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_ChargeSMG</thingDef>
+								<styleDef>VME_Authoritarian_ChargeSMG</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_ChargeLMG</thingDef>
+								<styleDef>VME_Authoritarian_ChargeLMG</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_ChargeSniperRifle</thingDef>
+								<styleDef>VME_Authoritarian_ChargeSniperRifle</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_ChargeMinigun</thingDef>
+								<styleDef>VME_Authoritarian_ChargeMinigun</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_AntiMaterialRifle</thingDef>
+								<styleDef>VME_Authoritarian_AntiMaterialRifle</styleDef>
+							</li>
+							
+							<li>
+								<thingDef>VWE_Gun_HandCannon</thingDef>
+								<styleDef>VME_Authoritarian_HandCannon</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_CombatHandgun</thingDef>
+								<styleDef>VME_Authoritarian_CombatHandgun</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_Flamethrower</thingDef>
+								<styleDef>VME_Authoritarian_Flamethrower</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_BattleRifle</thingDef>
+								<styleDef>VME_Authoritarian_BattleRifle</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_Carbine</thingDef>
+								<styleDef>VME_Authoritarian_Carbine</styleDef>
+							</li>
+						
+							<li>
+								<thingDef>VWE_Gun_Flintlock</thingDef>
+								<styleDef>VME_Authoritarian_Flintlock</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_HMG</thingDef>
+								<styleDef>VME_Authoritarian_HMG</styleDef>
+							</li>
+							
+							<li>
+								<thingDef>VWE_SawedOffShotgun</thingDef>
+								<styleDef>VME_Authoritarian_SawedOffShotgun</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_SemiAutomaticRifle</thingDef>
+								<styleDef>VME_Authoritarian_SemiAutomaticRifle</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_LeverActionRifle</thingDef>
+								<styleDef>VME_Authoritarian_LeverActionRifle</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_LightSMG</thingDef>
+								<styleDef>VME_Authoritarian_LightSMG</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_SMG</thingDef>
+								<styleDef>VME_Authoritarian_SMG</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_ServiceRifle</thingDef>
+								<styleDef>VME_Authoritarian_ServiceRifle</styleDef>
+							</li>
+							<li>
+								<thingDef>VWE_Gun_MarksmanRifle</thingDef>
+								<styleDef>VME_Authoritarian_MarksmanRifle</styleDef>
+							</li>
+							
+							
+
+						</value>
+					</match>
+				</li>
+
+
+			</operations>
+		</match>
+	</Operation>
+	
+	
+
+
+
+
+
+</Patch>

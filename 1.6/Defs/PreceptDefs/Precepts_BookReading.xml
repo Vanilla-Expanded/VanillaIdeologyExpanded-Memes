@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Issues -->
+	<IssueDef>
+		<defName>VME_BookReadingSpeed</defName>
+		<label>reading speed</label>
+		<iconPath>UI/Issues/VME_ReadingSpeed</iconPath>
+	</IssueDef>
+	<!-- Precepts -->
+	<PreceptDef>
+		<defName>VME_BookReadingSpeed_Increased</defName>
+		<issue>VME_BookReadingSpeed</issue>
+		<label>increased</label>
+		<description>Books are an open window to a world filled with wonders. We love reading and will quickly devour any text we come across.</description>
+		<impact>Low</impact>
+		<displayOrderInIssue>0</displayOrderInIssue>
+		<statOffsets>
+			<ReadingSpeed>0.2</ReadingSpeed>
+	  
+		</statOffsets>
+	</PreceptDef>
+	<PreceptDef>
+		<defName>VME_BookReadingSpeed_Decreased</defName>
+		<issue>VME_BookReadingSpeed</issue>
+		<label>decreased</label>
+		<description>Reading is not something that can be rushed. It is important to spend a lot of time on each page, absorbing all the little details.</description>
+		<impact>Low</impact>
+		<displayOrderInIssue>10</displayOrderInIssue>
+		<statOffsets>
+			<ReadingSpeed>-0.2</ReadingSpeed>
+	  
+		</statOffsets>
+	</PreceptDef>
+	
+</Defs>
