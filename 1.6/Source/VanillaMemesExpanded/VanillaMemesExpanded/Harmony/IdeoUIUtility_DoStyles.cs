@@ -21,13 +21,18 @@ namespace VanillaMemesExpanded
                 var code = codes[i];
                 if (i > 0 && codes[i - 1].opcode == OpCodes.Ldloc_1 && codes[i].opcode == OpCodes.Ldc_I4_3)
                 {
-                    yield return new CodeInstruction(OpCodes.Ldc_I4, (int)VanillaMemesExpanded_Settings.stylesAmount);
-                }              
+                    yield return new CodeInstruction(OpCodes.Call, AccessTools.Method(typeof(VanillaMemesExpanded_IdeoUIUtility_DoStyles_Patch), nameof(ChangeMaxStyles)));
+                }
                 else
                 {
                     yield return code;
                 }
             }
+        }
+
+        public static int ChangeMaxStyles()
+        {
+            return (int)VanillaMemesExpanded_Settings.stylesAmount;
         }
     }
 }
