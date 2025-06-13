@@ -358,7 +358,7 @@
     <Compile Include="Harmony\IdeoUIUtility_DoMemes.cs" />
     <Compile Include="Harmony\IdeoUIUtility_DoPrecepts.cs" />
     <Compile Include="Harmony\IdeoUIUtility_DoStyles.cs" />
-    <Compile Include="Harmony\IdeoUIUtility_DoPreceptsInt.cs" />
+    <Compile Include="Harmony\IdeoUIUtility_AddPrecept.cs" />
     <Compile Include="Harmony\IdeoUtility_IsMemeAllowedForInitialFluidIdeo.cs" />
     <Compile Include="Harmony\InteractionWorker_RecruitAttempt_Interacted.cs" />
     <Compile Include="Harmony\JobDriver_ConvertPrisoner_MakeNewToils.cs" />
