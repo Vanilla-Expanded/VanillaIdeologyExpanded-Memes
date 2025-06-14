@@ -238,10 +238,12 @@
 		<description>An ancient toilet. Smashed long ago, it is completely useless now.\n\nHow it got here is hard to say.</description>
 		<graphicData>
 			<texPath>Things/Building/Ruins/AncientToilet</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
 			<shadowData>
 				<volume>(0.5, 0.35, 0.5)</volume>
 			</shadowData>
 		</graphicData>
+		<rotatable>true</rotatable>
 		<tradeability>None</tradeability>
 		<minifiedDef>MinifiedThing</minifiedDef>
 		<thingCategories>

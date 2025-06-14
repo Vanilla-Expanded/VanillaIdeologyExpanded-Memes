@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <InteractionDef>
+        <defName>VFEA_InterrogatePrisoner</defName>
+        <label>attempt interrogation</label>
+        <symbol>UI/SocialInteractions/Interrogation</symbol>
+        <initiatorXpGainSkill>Social</initiatorXpGainSkill>
+        <initiatorXpGainAmount>60</initiatorXpGainAmount>
+        <workerClass>VanillaMemesExpanded.InteractionWorker_Interrogate</workerClass>
+        <!-- TODO: Better writing -->
+        <logRulesInitiator>
+          <rulesStrings>
+    
+            <li>r_logentry->[INITIATOR_nameDef] demanded [information] from [RECIPIENT_nameDef].</li>
+    
+            <li>information->information</li>
+            <li>information->knowledge</li>
+            <li>information->intelligence</li>
+          </rulesStrings>
+        </logRulesInitiator>
+      </InteractionDef>
+
+      <RulePackDef>
+        <defName>VFEA_InterrogationRefused</defName>
+        <rulePack>
+          <rulesStrings>
+            <li>sent->[RECIPIENT_nameDef] refused.</li>
+          </rulesStrings>
+        </rulePack>
+      </RulePackDef>
+      <RulePackDef>
+        <defName>VFEA_InterrogationSuccess</defName>
+        <rulePack>
+          <rulesStrings>
+            <li>sent->[RECIPIENT_nameDef] relented.</li>
+          </rulesStrings>
+        </rulePack>
+      </RulePackDef>
+</Defs>

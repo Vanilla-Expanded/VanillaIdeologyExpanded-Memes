@@ -209,7 +209,6 @@
 		<iconPath>UI/Memes/GodEmperor</iconPath>
 		<exclusionTags>
 			<li>VME_GodEmperor</li>
-			
 		</exclusionTags>
 		<impact>1</impact>
 		<generalRules>
@@ -381,7 +380,6 @@
 		<consumableBuildings>
 			<li>SacrificialFlag</li>
 		</consumableBuildings>
-
 		<exclusionTags>
 			<li>Individualism</li>
 			<li>VME_AstrologyVsGestalt</li>
@@ -856,7 +854,6 @@
 		<impact>1</impact>
 		<exclusionTags>
 			<li>VME_Work</li>
-
 		</exclusionTags>
 		<generalRules>
 			<rulesStrings>
@@ -1156,7 +1153,6 @@
 					<li>introMemo(tag=meme_Scrapper)->In this week's recommended reading I'd like to point you to: "Reassess, reduce, reuse, recycle – how to be a sustainable modern business". Please read it at your leisure and we will discuss the finer points in tomorrow's meeting.</li>
 					<!-- alienist -->
 					<li>alienistProphecy(tag=meme_Scrapper)->Perhaps all these wayward human creations can be repurposed somehow, as they are nothing but living pieces of ancient technology.</li>
-
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
@@ -1254,7 +1250,6 @@
 					<li>introMemo(tag=meme_Trader)->Regarding employee incentives, please remember that this is not a charity. As the saying goes: "it is wealth that moves the world, and profit that rules it".</li>
 					<!-- alienist -->
 					<li>alienistProphecy(tag=meme_Trader)->These wayward creations, born of human creativity, represent a boundless potential wealth that we'd do well to exploit.</li>
-
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
@@ -1357,7 +1352,6 @@
 					<li>introMemo(tag=meme_Elders)->Hear me out on this: it is time to retire retirement. Retirement only causes a severe shortage of talented workers, people who have been bringing expertise and wisdom to our company for decades. Why are we just letting them go? It's absurd!</li>
 					<!-- alienist -->
 					<li>alienistProphecy(tag=meme_Elders)->These wayward creations, born of human creativity, hold a treasure trove of ancient wisdom, a window to the forgotten techniques of our ancestors.</li>
-
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
@@ -1437,7 +1431,6 @@
 					<li>introMemo(tag=meme_Vegan)->Starting from now, we will only offer vegan alternatives in our cattering services. Simply put, meat is too expensive, and we need to streamline our expenses to keep being competitive.</li>
 					<!-- alienist -->
 					<li>alienistProphecy(tag=meme_Vegan)->These wayward creatures are poor, innocent beings. It would be a grave mistake to mistreat them in any way.</li>
-
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
@@ -1540,7 +1533,6 @@
 					<li>introMemo(tag=meme_Egalitarian)->This coming week we are instating the new multifaith policies to ensure all our employees are free to express their own beliefs in peace. The Human Resources department will handle reservations and timetables for the scheduled multifaith masses.</li>
 					<!-- alienist -->
 					<li>alienistProphecy(tag=meme_Egalitarian)->These wayward creatures are a point of contention among many people. Are they to be protected, or destroyed? We'd do well to listen to all points of view before deciding.</li>
-
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
@@ -1636,7 +1628,6 @@
 					<li>introMemo(tag=meme_Pacifist)->We are writing to inform you that the two employees (who shall remain unnamed per the company's privacy clauses) who caused a violent altercation yesterday have had their contracts terminated, and are no longer part of our staff. Such violence in the workplace is abhorrent and we will NOT let it go unpunished.</li>
 					<!-- alienist -->
 					<li>alienistProphecy(tag=meme_Pacifist)->These wayward creatures are innocent beings. We are not killers, and perhaps we'd better leave them alone.</li>
-
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
@@ -1728,7 +1719,6 @@
 					<li>introMemo(tag=meme_FireWorship)->Let me remind you all that this week's fire evacuation drill has been scheduled one hour earlier than usual. We take safety measures very seriously here: fire may be sacred, but a burned employee harms profits.</li>
 					<!-- alienist -->
 					<li>alienistProphecy(tag=meme_FireWorship)->All these wayward creatures, forgotten creations of humanity, will serve as kindling for the flames.</li>
-
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
@@ -1823,7 +1813,6 @@
 					<li>introMemo(tag=meme_Bushido)->Remember our motto! "Only a life lived with honour, courage and skill is worth living". We encourage printing this on stickers to decorate your offices.</li>
 					<!-- alienist -->
 					<li>alienistProphecy(tag=meme_Bushido)->These wayward creatures, forgotten and discarded creations of humanity's hubris, remind us that only a life lived with honour, courage and skill is worth living.</li>
-
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
@@ -1918,7 +1907,6 @@
 					<li>introMemo(tag=meme_Light)->As scheduled, the new blue-coloured neon light fixtures will be installed on all our offices beginning next Tuesday. These are energy-efficient lights, so good for the environment!</li>
 					<!-- alienist -->
 					<li>alienistProphecy(tag=meme_Light)->These wayward creatures have veered too far from the light, and wander into darkness.</li>
-
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
@@ -2006,7 +1994,6 @@
 					<li>introMemo(tag=meme_Nomad)->In the interest of dedication, flexibility, and resolve, we have decided to implement a new policy of "mobile offices" that will greatly increase our productivity. Thank you for trusting in our ability to find new ways to continue to provide the best goods and services for our customers, all the while caring for our employees.</li>
 					<!-- alienist -->
 					<li>alienistProphecy(tag=meme_Nomad)->These wayward creatures can be our companions on the road, forever looking for a place where they can fit in.</li>
-
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
@@ -2092,7 +2079,6 @@
 					<li>introMemo(tag=meme_BloodCourt)->Are you interested in a promotion? I'm glad to inform you all that from now on we are scheduling company-approved gladiator fights around the coffee machine. Tired of your boss? Prove it!</li>
 					<!-- alienist -->
 					<li>alienistProphecy(tag=meme_BloodCourt)->These wayward creatures can show us what strength looks like, and by overpowering them we might prove to ourselves that we are deserving of it.</li>
-
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
@@ -2185,7 +2171,6 @@
 					<li>introMemo(tag=meme_CityBuilders)->I'm happy to announce that we are opening seven new branches of the company. If you'd like to request a transference to any of them, please let me know ASAP.</li>
 					<!-- alienist -->
 					<li>alienistProphecy(tag=meme_CityBuilders)->These wayward creatures can be useful when building our glorious cities.</li>
-
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
@@ -2272,7 +2257,6 @@
 					<li>introMemo(tag=meme_MechanoidSupremacy)->Starting next quarter, we will provide a helpful mechanoid companion to each of our employees. They will come pre-configured with a brand new productivity suite that I think most of you will find super useful to increase your proactivity and ROI.</li>
 					<!-- alienist -->
 					<li>alienistProphecy(tag=meme_MechanoidSupremacy)->These wayward creatures are faulty, mere biological machines that pale in comparison to any mechanoid, but they are a step in the right direction.</li>
-
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
@@ -2305,7 +2289,6 @@
 		<groupDef>Misc</groupDef>
 		<exclusionTags>
 			<li>VME_InsectoidVsDefilers</li>
-			
 		</exclusionTags>
 		<impact>2</impact>
 		<generalRules>
@@ -2358,7 +2341,6 @@
 					<li>introMemo(tag=meme_InsectoidSupremacy)->Concerning the constant reports about cockroaches in the cafeteria, need I remind you that cockroaches are living creatures, as worthy of respect as you and I? I will not allow a single more furtive call to a pest control company!</li>
 					<!-- alienist -->
 					<li>alienistProphecy(tag=meme_InsectoidSupremacy)->Among these genetically modified animals lies the insectoid geneline that was developed at Sorne, and that brought us the perfect lifeform.</li>
-
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
@@ -2399,7 +2381,6 @@
 		<exclusionTags>
 			<li>VME_PartyVsPrivacy</li>
 			<li>VME_AsceticVsPartyLife</li>
-			
 		</exclusionTags>
 		<generalRules>
 			<rulesStrings>
@@ -2448,11 +2429,9 @@
 					<!-- eschatologism -->
 					<li>eschatologismFact(tag=meme_PartyLife)->The world will burn, and this is something that is better not to face sober.</li>
 					<!-- corporate -->
-					<li>introMemo(tag=meme_PartyLife)->It's our favourite time of the year already! The company's mandatory team-building exercise will be scheduled for this next Tuesday. Remember to bring your tennis paddles!</li>					
+					<li>introMemo(tag=meme_PartyLife)->It's our favourite time of the year already! The company's mandatory team-building exercise will be scheduled for this next Tuesday. Remember to bring your tennis paddles!</li>
 					<!-- alienist -->
 					<li>alienistProphecy(tag=meme_PartyLife)->I have heard there is even some weird lizard that turns plants into alcohol. Ohhh, man, I could hug that lizard right now.</li>
-
-
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
@@ -2465,7 +2444,6 @@
 				<li>VME_Alcohol_Desired</li>
 			</li>
 		</requireOne>
-
 		<symbolPacks>
 			<li>
 				<ideoName>Party Life</ideoName>
@@ -2535,7 +2513,6 @@
 					<li>introMemo(tag=meme_Anonymity)->Lately we have had multiple instances of people using "Reply All" on company e-mails. Let me remind you that this is unnecessary and leads to confusion.</li>
 					<!-- alienist -->
 					<li>alienistProphecy(tag=meme_Anonymity)->Animals do not care about human. We can be ourselves with them, as they are not as prone to judgement as humans are.</li>
-
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
@@ -2628,7 +2605,6 @@
 					<li>introMemo(tag=meme_Emancipation)->We all know some other corporations in the Rim engage in "pseudo-illicit exploitment of human capital", so it is company policy to free these "forced employees" as soon as we can, and offer them an internship with us.</li>
 					<!-- alienist -->
 					<li>alienistProphecy(tag=meme_Emancipation)->These wayward creatures embody the concept of freedom that we espouse, and we'd do well to learn from them.</li>
-
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
@@ -2639,7 +2615,6 @@
 			<li>
 				<li>VME_SlaveTrading_OnlyBuying</li>
 			</li>
-
 		</requireOne>
 		<requiredRituals>
 			<li>
@@ -2731,7 +2706,6 @@
 					<li>introMemo(tag=meme_Nationalist)->As a reminder, multiple employment is expressly forbidden by the contract you signed. If you think any of your co-workers is engaging in such activities please report it as soon as possible so the proper disciplinary measures can be enacted.</li>
 					<!-- alienist -->
 					<li>alienistProphecy(tag=meme_Nationalist)->These wayward creatures are ours to do as we please.</li>
-
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
@@ -2746,7 +2720,6 @@
 				<li>Execution_Required</li>
 				<li>Execution_RespectedIfGuilty</li>
 			</li>
-
 		</requireOne>
 		<symbolPacks>
 			<li>
@@ -2819,24 +2792,19 @@
 					<li>introMemo(tag=meme_Healthcare)->Let me remind you that the company offers some comprehensive healthcare benefits as part of your employment contract. Feel free to peruse the details on the company's intranet and direct any enquiries to the human resources department.</li>
 					<!-- alienist -->
 					<li>alienistProphecy(tag=meme_Healthcare)->These wayward creatures are poor, innocent beings. We should take care of them and show compassion and empathy.</li>
-
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
 		<requireOne>
-
 			<li>
 				<li>Charity_Essential</li>
 				<li>Charity_Important</li>
-
 			</li>
 			<li>
 				<li>VME_TendQuality_Increased</li>
-
 			</li>
 			<li>
 				<li>VME_Hospital_Required</li>
-
 			</li>
 		</requireOne>
 		<symbolPacks>
@@ -2846,7 +2814,99 @@
 				<adjective>medical</adjective>
 				<member>medic</member>
 			</li>
-
+		</symbolPacks>
+	</MemeDef>
+	<MemeDef>
+		<defName>VFEA_Isolationist</defName>
+		<label>isolationist</label>
+		<description>Trust is a resource in low supply, as everyone we meet is the enemy.</description>
+		<iconPath>UI/Memes/Isolationist</iconPath>
+		<groupDef>GroupRelation</groupDef>
+		<impact>3</impact>
+		<consumableBuildings>
+			<li>SacrificialFlag</li>
+		</consumableBuildings>
+		<exclusionTags>
+			<li>SupremacistIndividualist</li>
+			<li>IsolationistProselytizer</li>
+		</exclusionTags>
+		<requireOne>
+			<li>
+				<li>VFEA_Recruiting_Forbidden</li>
+			</li>
+			<li>
+				<li>VFEA_BeingRecruited_Forbidden</li>
+			</li>
+		</requireOne>
+		<generalRules>
+			<rulesStrings>
+				<li>memeAdjective->isolated</li>
+				<li>memeAdjective->hidden</li>
+				<li>memeAdjective->lone</li>
+				<li>memeAdjective->secluded</li>
+				<li>memeAdjective->exceptional</li>
+				<li>memeAdjective->superior</li>
+				<li>memeAdjective->detached</li>
+				<li>memeCreed->army</li>
+				<li>memeCreed->nation</li>
+				<li>memeHyphenPrefix->hidden</li>
+				<li>memeConcept->war</li>
+				<li>memeConcept->isolation</li>
+				<li>memeConcept->loneliness</li>
+				<li>memeLeaderNoun->general</li>
+				<li>memeLeaderNoun->commander</li>
+				<li>memeLeaderNoun->marshal</li>
+				<li>memeLeaderNoun->captain</li>
+				<li>memeLeaderNoun->sergeant</li>
+				<li>memeLeaderNoun->dictator</li>
+				<li>memeLeaderNoun->president</li>
+				<li>memeLeaderNoun->leader</li>
+			</rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+			<rules>
+				<rulesStrings>
+					<!-- theist myth -->
+					<li>creation(tag=meme_Isolationist)        ->The people of the [place_summary] [place_name] squabbled endlessly among themselves, and [deity0_name] became tired of discord and anointed [memberNamePlural] as the only rightful rulers of every living being.</li>
+					<li>episode(uses=1,tag=meme_Isolationist)  ->The faithful fought the unbelievers, and [deity0_name] said, "Fight them, everywhere, for they are your enemy, and peace with them was never an option"</li>
+					<!-- theist founder -->
+					<li>intro(tag=meme_Isolationist)           ->The people of the [place_summary] [place_name] worshipped [deity0_name]. [deity0_pronoun] saw that they were suited for [memeConcept], and ordained that they shall be the only faction worthy of ascension.</li>
+					<li>conflict(tag=meme_Isolationist)        ->A [foeLeader] passed a law forbidding [memberNamePlural] from rising to the ruling classes of [place_name]. As such, [memberNamePlural] began to conspire and create hidden, secret alliances.</li>
+					<li>founderJoin(tag=meme_Isolationist)     ->A warrior named [founderName] used [place_massWeapon] to destroy a [place_community]. [deity0_name] saw [founderName]'s ruthlessness told [founder_objective] to lead a life of isolation and secrecy.</li>
+					<li>victory(tag=meme_Isolationist)         ->[founderName] destroyed the capital of [place_name] with [place_massWeapon], killing the [foeLeader]. [founder_pronoun] did not take [founder_possessive] place as ruler of [place_name] - instead, [founderName] went into hiding.</li>
+					<!-- ideological founder -->
+					<li>setup(tag=meme_Isolationist)           ->[founderName] built an army that spread [founder_possessive] power and glory across the land, placing those who refused to follow rightly at the end of [founder_possessive] knife.</li>
+					<li>story(uses=1,tag=meme_Isolationist)    ->[founderName] instructed all outsiders to fight to the death, as peace was never an option. When the first city refused and begged to join [founder_objective], [founder_pronoun] used [place_massWeapon] to kill everyone inside.</li>
+					<!-- ideological lesson -->
+					<li>lessonIntro(tag=meme_Isolationist)         ->I looked at this [foeLeader], with [foeLeader_possessive] pitiful [foeSoldiers], all that power left fallow. I tried to convince [foeLeader_objective] that</li>
+					<li>lesson(tag=meme_Isolationist)              ->we've long since proven that we have the strength to strike from the shadows, isolated but not weakened</li>
+					<li>lessonReinforcement(tag=meme_Isolationist) ->That's why we're proud to express the strength of our hearts using the edges of our blades and the heads of our hammers.</li>
+					<!-- archist -->
+					<li>archistBasis(tag=meme_Isolationist)    ->It took the most superior humans to create the archotechs. With being as powerful as them, it's only proper that we hide in the shadows.</li>
+					<li>archistFact(tag=meme_Isolationist)     ->The archotechs can wipe us out without hesitation - just as we should wipe out our enemies.</li>
+					<li>archistProphecy(tag=meme_Isolationist) ->The archotechs will never take us to join them - and we should never give this opportunity to our enemies.</li>
+					<!-- animist -->
+					<li>animistFact(tag=meme_Isolationist)     ->Powerful spirits of [spiritElement] decide who is fit to rule, and lend power to their chosen when they slay others.</li>
+					<li>animistProphecy(tag=meme_Isolationist) ->[itIsSaid] that a new order will be created when one supreme ruler emerges from the shadows on a planet filled to the brim with blood and viscera.</li>
+				</rulesStrings>
+			</rules>
+		</descriptionMaker>
+		<symbolPacks>
+			<li>
+				<theme>isolation</theme>
+				<adjective>isolated</adjective>
+				<member>isolator</member>
+			</li>
+			<li>
+				<theme>seclusion</theme>
+				<adjective>secluded</adjective>
+				<member>secludist</member>
+			</li>
+			<li>
+				<theme>secret</theme>
+				<adjective>secret</adjective>
+				<member>secret</member>
+			</li>
 		</symbolPacks>
 	</MemeDef>
 </Defs>

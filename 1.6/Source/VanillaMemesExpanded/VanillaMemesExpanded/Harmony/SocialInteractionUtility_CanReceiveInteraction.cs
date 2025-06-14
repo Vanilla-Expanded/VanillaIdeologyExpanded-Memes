@@ -9,9 +9,9 @@ using Verse.AI;
 
 namespace VanillaMemesExpanded
 {
-    [HarmonyPatch(typeof(InteractionUtility))]
+    [HarmonyPatch(typeof(SocialInteractionUtility))]
     [HarmonyPatch("CanReceiveInteraction")]
-    public static class VanillaMemesExpanded_InteractionUtility_CanReceiveInteraction_Patch
+    public static class VanillaMemesExpanded_SocialInteractionUtility_CanReceiveInteraction_Patch
     {
         [HarmonyPostfix]
         static void DontInteract(Pawn pawn, ref bool __result)

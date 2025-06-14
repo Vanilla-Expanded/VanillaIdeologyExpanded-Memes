@@ -162,7 +162,13 @@ namespace VanillaMemesExpanded
         [MayRequire("VanillaExpanded.VBooksE")]
         public static RoomRoleDef VBE_Library;
 
-
-
+        [MayRequireRoyalty]
+        public static IncidentDef WandererJoinAbasia;
+        public static JobDef VFEA_PrisonerInterrogate;
+        public static PrisonerInteractionModeDef VFEA_Interrogate;
+        public static InteractionDef VFEA_Intimidate;
+        public static InteractionDef VFEA_InterrogatePrisoner;
+        public static RulePackDef VFEA_InterrogationRefused;
+        public static RulePackDef VFEA_InterrogationSuccess;
     }
 }

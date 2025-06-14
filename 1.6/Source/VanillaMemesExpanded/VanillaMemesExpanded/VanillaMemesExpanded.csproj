@@ -11,6 +11,7 @@
     <AssemblyName>VanillaMemesExpanded</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <LangVersion>preview</LangVersion>
     <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -319,12 +320,14 @@
     <Compile Include="Abilities\Properties\CompProperties_AbilityStrengthenFlame.cs" />
     <Compile Include="Abilities\Properties\CompProperties_AbilityThrowParty.cs" />
     <Compile Include="AI\JobDriver_DanceWithLove.cs" />
+    <Compile Include="AI\JobDriver_InterrogatePrisoner.cs" />
     <Compile Include="AI\JobDriver_MaintainInsectNest.cs" />
     <Compile Include="AI\JobDriver_DeconstructBuilding.cs" />
     <Compile Include="AI\JobGiver_DanceWithLove.cs" />
     <Compile Include="AI\JobGiver_GetNaked.cs" />
     <Compile Include="AI\WorkGiver_DeconstructBuilding.cs" />
     <Compile Include="AI\WorkGiver_MaintainInsectNest.cs" />
+    <Compile Include="AI\WorkGiver_Warden_Interrogate.cs" />
     <Compile Include="Alerts\Alert_Corruption_Low.cs" />
     <Compile Include="Alerts\Alert_Corruption_High.cs" />
     <Compile Include="Buildings\Building_Bonfire.cs" />
@@ -360,11 +363,13 @@
     <Compile Include="Harmony\IdeoUIUtility_DoStyles.cs" />
     <Compile Include="Harmony\IdeoUIUtility_AddPrecept.cs" />
     <Compile Include="Harmony\IdeoUtility_IsMemeAllowedForInitialFluidIdeo.cs" />
+    <Compile Include="Harmony\IncidentWorker_CanFireNow.cs" />
     <Compile Include="Harmony\InteractionWorker_RecruitAttempt_Interacted.cs" />
     <Compile Include="Harmony\JobDriver_ConvertPrisoner_MakeNewToils.cs" />
     <Compile Include="Harmony\JobGiver_OptimizeApparel_ApparelScoreGain.cs" />
     <Compile Include="Harmony\JoyUtility_JoyTickCheckEnd.cs" />
-    <Compile Include="Harmony\InteractionUtility_CanReceiveInteraction.cs" />
+    <Compile Include="Harmony\VFEAncientPatches\PreceptPatches.cs" />
+    <Compile Include="Harmony\SocialInteractionUtility_CanReceiveInteraction.cs" />
     <Compile Include="Harmony\LordJob_Joinable_Party_AttendeeThought.cs" />
     <Compile Include="Harmony\LordToil_PanicFlee_Init.cs" />
     <Compile Include="Harmony\Command_SetPlantToGrow_IsPlantAvailable.cs" />
@@ -397,6 +402,7 @@
     <Compile Include="Hediffs\HediffCompProperties_Infections.cs" />
     <Compile Include="Hediffs\HediffComp_Infections.cs" />
     <Compile Include="Incidents\IncidentWorker_JunkChunkDrop.cs" />
+    <Compile Include="InteractionWorkers\InteractionWorker_Interrogate.cs" />
     <Compile Include="MapComponents and GameComponents\WorldComponent_BestPsycasterAndTitleTracker.cs" />
     <Compile Include="MapComponents and GameComponents\WorldComponent_BestMeleeLeaderTracker.cs" />
     <Compile Include="MapComponents and GameComponents\WorldComponent_AlcoholScarsAndSlaveryTracker.cs" />
@@ -419,6 +425,9 @@
     <Compile Include="Options\SettingsHelper.cs" />
     <Compile Include="Options\VanillaMemesExpanded_Settings.cs" />
     <Compile Include="Options\VanillaMemesExpanded_SettingsController.cs" />
+    <Compile Include="PreceptComps\PreceptComp_DisableIncident.cs" />
+    <Compile Include="PreceptComps\PreceptComp_UnwillingToBeDone.cs" />
+    <Compile Include="ReflectionCache\ReflectionCache.cs" />
     <Compile Include="StaticCollections\StaticCollections.cs" />
     <Compile Include="PlaceWorkers\PlaceWorker_OnWater.cs" />
     <Compile Include="PlaceWorkers\PlaceWorker_ShowObeliskRadius.cs" />
@@ -506,6 +515,7 @@
     <Compile Include="ThoughtWorkers\ThoughtWorker_Precept_Social\ThoughtWorker_Precept_Scars.cs" />
     <Compile Include="ThoughtWorkers\ThoughtWorker_Precept\ThoughtWorker_Precept_PermanentBases.cs" />
     <Compile Include="ThoughtWorkers\ThoughtWorker_Precept_Social\ThoughtWorker_Precept_Leader_Godlike.cs" />
+    <Compile Include="Utilities\Utils.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
