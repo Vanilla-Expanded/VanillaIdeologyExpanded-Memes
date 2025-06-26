@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Odyssey</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="VME_TackleBox"]</xpath>
+					<value>
+						<equippedStatOffsets>
+							<FishingSpeed>0.20</FishingSpeed>
+						</equippedStatOffsets>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/MemeDef[defName="VME_Angler"]/requireOne</xpath>
+					<value>
+						<li>
+							<li>Fishing_Sacred</li>
+						</li>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/IssueDef[defName="VME_FishingYield"]/label</xpath>
+					<value>
+						<label>fishing skill</label>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/PreceptDef[defName="VME_Fishing_Adept"]/description</xpath>
+					<value>
+						<description>Our adoration for the water and all life within has led us to employ new and subtle techniques for catching as many fish as possible.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Adept fishermen will be able to catch additional fish from fishing zones. These "adept fish" will be caught 20% of the time in a stack of 10, increasing the overall yield of fishing.</description>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+						<ThingDef ParentName="FishBase">
+							<defName>VCEF_Crayfish</defName>
+							<label>crayfish (adept catch)</label>
+							<description>Raw crayfish. Crayfish are freshwater crustaceans resembling small lobsters (to which they are related). Some species are found in brooks and streams, where fresh water is running, while others thrive in swamps, ditches, and paddy fields.\n\nThis is an adept catch that is caught in addition to other fish.</description>
+							<graphicData>
+								<texPath>Things/Item/Resource/VCEF_CrayfishItem</texPath>
+							</graphicData>
+						</ThingDef>
+						<ThingDef ParentName="FishBase">
+							<defName>VCEF_ButterFish</defName>
+							<label>butterfish (adept catch)</label>
+							<description>Raw Atlantic butterfish. The Atlantic butterfish is distinguished by its very thin, deep body, resembling a flounder on edge. It earned its buttery name from its high oil content.\n\nThis is an adept catch that is caught in addition to other fish.</description>
+							<graphicData>
+								<texPath>Things/Item/Resource/VCEF_ButterFishItem</texPath>
+							</graphicData>
+						</ThingDef>
+						<ThingDef ParentName="FishBase">
+							<defName>VCEF_FreshwaterStingray</defName>
+							<label>freshwater stingray (adept catch)</label>
+							<description>Raw freshwater stingray. Freshwater stingrays are one of the only rays inhabiting freshwater rather than saltwater. Though docile animals, they were responsiblein old Earth for more injuries to humans each year than any other Amazonian species.\n\nThis is an adept catch that is caught in addition to other fish.</description>
+							<graphicData>
+								<texPath>Things/Item/Resource/VCEF_FreshwaterStingrayItem</texPath>
+							</graphicData>
+						</ThingDef>
+						<ThingDef ParentName="FishBase">
+							<defName>VCEF_FlyingFish</defName>
+							<label>flying fish (adept catch)</label>
+							<description>Raw flying fish. While they cannot fly in the same way a bird does, flying fish can make powerful, self-propelled leaps out of the water where their long wing-like fins enable gliding for considerable distances above the water's surface.\n\nThis is an adept catch that is caught in addition to other fish.</description>
+							<graphicData>
+								<texPath>Things/Item/Resource/VCEF_FlyingFishItem</texPath>
+							</graphicData>
+						</ThingDef>
+						<ThingDef ParentName="FishBase">
+							<defName>VCEF_Arapaima</defName>
+							<label>arapaima (adept catch)</label>
+							<description>Raw arapaima. On old Earth, it was among the world's largest freshwater fish, reaching as much as 3 m in length. It was an important food fish.\n\nThis is an adept catch that is caught in addition to other fish.</description>
+							<graphicData>
+								<texPath>Things/Item/Resource/VCEF_ArapaimaItem</texPath>
+							</graphicData>
+						</ThingDef>
+						<ThingDef ParentName="FishBase">
+							<defName>VCEF_ShortfinMakoShark</defName>
+							<label>shortfin mako shark (adept catch)</label>
+							<description>Raw shortfin mako shark. A large, predatory shark that lives in the open ocean and is often considered the fastest shark. It is known for its incredible leaping ability and can be observed jumping to extreme heights (out of the water) when hunting.\n\nThis is an adept catch that is caught in addition to other fish.</description>
+							<graphicData>
+								<texPath>Things/Item/Resource/VCEF_ShortfinMakoSharkItem</texPath>
+							</graphicData>
+						</ThingDef>
+					</value>
+				</li>
+			</operations>
+		</match>
+		<nomatch Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+						<VCE_Fishing.FishDef>
+							<defName>VCEF_Crayfish</defName>
+							<thingDef>VCEF_CrayfishItem</thingDef>
+							<fishSizeCategory>Small</fishSizeCategory>
+							<canBeFreshwater>true</canBeFreshwater>
+							<canBeSaltwater>false</canBeSaltwater>
+							<allowedBiomes>
+								<li>Warm</li>
+								<li>Cold</li>
+								<li>Hot</li>
+								<li>AlienCold</li>
+								<li>AlienJungly</li>
+								<li>AlienHot</li>
+							</allowedBiomes>
+							<baseFishingYield>20</baseFishingYield>
+							<preceptsRequired>
+								<li>VME_Fishing_Adept</li>
+							</preceptsRequired>
+						</VCE_Fishing.FishDef>
+						<VCE_Fishing.FishDef>
+							<defName>VCEF_ButterFish</defName>
+							<thingDef>VCEF_ButterFishItem</thingDef>
+							<fishSizeCategory>Small</fishSizeCategory>
+							<canBeFreshwater>false</canBeFreshwater>
+							<canBeSaltwater>true</canBeSaltwater>
+							<allowedBiomes>
+								<li>Warm</li>
+								<li>Cold</li>
+								<li>Hot</li>
+								<li>AlienCold</li>
+								<li>AlienJungly</li>
+								<li>AlienHot</li>
+							</allowedBiomes>
+							<baseFishingYield>20</baseFishingYield>
+							<preceptsRequired>
+								<li>VME_Fishing_Adept</li>
+							</preceptsRequired>
+						</VCE_Fishing.FishDef>
+						<VCE_Fishing.FishDef>
+							<defName>VCEF_FreshwaterStingray</defName>
+							<thingDef>VCEF_FreshwaterStingrayItem</thingDef>
+							<fishSizeCategory>Medium</fishSizeCategory>
+							<canBeFreshwater>true</canBeFreshwater>
+							<canBeSaltwater>false</canBeSaltwater>
+							<allowedBiomes>
+								<li>Warm</li>
+								<li>Cold</li>
+								<li>Hot</li>
+								<li>AlienCold</li>
+								<li>AlienJungly</li>
+								<li>AlienHot</li>
+							</allowedBiomes>
+							<baseFishingYield>16</baseFishingYield>
+							<preceptsRequired>
+								<li>VME_Fishing_Adept</li>
+							</preceptsRequired>
+						</VCE_Fishing.FishDef>
+						<VCE_Fishing.FishDef>
+							<defName>VCEF_FlyingFish</defName>
+							<thingDef>VCEF_FlyingFishItem</thingDef>
+							<fishSizeCategory>Medium</fishSizeCategory>
+							<canBeFreshwater>false</canBeFreshwater>
+							<canBeSaltwater>true</canBeSaltwater>
+							<allowedBiomes>
+								<li>Warm</li>
+								<li>Cold</li>
+								<li>Hot</li>
+								<li>AlienCold</li>
+								<li>AlienJungly</li>
+								<li>AlienHot</li>
+							</allowedBiomes>
+							<baseFishingYield>16</baseFishingYield>
+							<preceptsRequired>
+								<li>VME_Fishing_Adept</li>
+							</preceptsRequired>
+						</VCE_Fishing.FishDef>
+						<VCE_Fishing.FishDef>
+							<defName>VCEF_Arapaima</defName>
+							<thingDef>VCEF_ArapaimaItem</thingDef>
+							<fishSizeCategory>Large</fishSizeCategory>
+							<canBeFreshwater>true</canBeFreshwater>
+							<canBeSaltwater>false</canBeSaltwater>
+							<allowedBiomes>
+								<li>Warm</li>
+								<li>Cold</li>
+								<li>Hot</li>
+								<li>AlienCold</li>
+								<li>AlienJungly</li>
+								<li>AlienHot</li>
+							</allowedBiomes>
+							<baseFishingYield>8</baseFishingYield>
+							<preceptsRequired>
+								<li>VME_Fishing_Adept</li>
+							</preceptsRequired>
+						</VCE_Fishing.FishDef>
+						<VCE_Fishing.FishDef>
+							<defName>VCEF_ShortfinMakoShark</defName>
+							<thingDef>VCEF_ShortfinMakoSharkItem</thingDef>
+							<fishSizeCategory>Large</fishSizeCategory>
+							<canBeFreshwater>false</canBeFreshwater>
+							<canBeSaltwater>true</canBeSaltwater>
+							<allowedBiomes>
+								<li>Warm</li>
+								<li>Cold</li>
+								<li>Hot</li>
+								<li>AlienCold</li>
+								<li>AlienJungly</li>
+								<li>AlienHot</li>
+							</allowedBiomes>
+							<baseFishingYield>8</baseFishingYield>
+							<preceptsRequired>
+								<li>VME_Fishing_Adept</li>
+							</preceptsRequired>
+						</VCE_Fishing.FishDef>
+						<ThingDef ParentName="VCEF_RawFishBase">
+							<defName>VCEF_CrayfishItem</defName>
+							<label>crayfish (adept catch)</label>
+							<description>Raw crayfish. Crayfish are freshwater crustaceans resembling small lobsters (to which they are related). Some species are found in brooks and streams, where fresh water is running, while others thrive in swamps, ditches, and paddy fields.\n\nThis is an adept catch and provides double nutrition than other fish in their size category.</description>
+							<graphicData>
+								<texPath>Things/Item/Resource/VCEF_CrayfishItem</texPath>
+								<graphicClass>Graphic_StackCount</graphicClass>
+							</graphicData>
+							<tradeability>Sellable</tradeability>
+							<statBases>
+								<Mass>0.01</Mass>
+								<Nutrition>0.02</Nutrition>
+								<MarketValue>0.4</MarketValue>
+							</statBases>
+							<ingestible>
+								<specialThoughtDirect>AteRawFood</specialThoughtDirect>
+							</ingestible>
+							<uiIconForStackCount>1</uiIconForStackCount>
+						</ThingDef>
+						<ThingDef ParentName="VCEF_RawFishBase">
+							<defName>VCEF_ButterFishItem</defName>
+							<label>butterfish (adept catch)</label>
+							<description>Raw Atlantic butterfish. The Atlantic butterfish is distinguished by its very thin, deep body, resembling a flounder on edge. It earned its buttery name from its high oil content.\n\nThis is an adept catch and provides double nutrition than other fish in their size category.</description>
+							<graphicData>
+								<texPath>Things/Item/Resource/VCEF_ButterFishItem</texPath>
+								<graphicClass>Graphic_StackCount</graphicClass>
+							</graphicData>
+							<tradeability>Sellable</tradeability>
+							<statBases>
+								<Mass>0.01</Mass>
+								<Nutrition>0.02</Nutrition>
+								<MarketValue>0.4</MarketValue>
+							</statBases>
+							<ingestible>
+								<specialThoughtDirect>AteRawFood</specialThoughtDirect>
+							</ingestible>
+							<uiIconForStackCount>1</uiIconForStackCount>
+						</ThingDef>
+						<ThingDef ParentName="VCEF_RawFishBase">
+							<defName>VCEF_FreshwaterStingrayItem</defName>
+							<label>freshwater stingray (adept catch)</label>
+							<description>Raw freshwater stingray. Freshwater stingrays are one of the only rays inhabiting freshwater rather than saltwater. Though docile animals, they were responsiblein old Earth for more injuries to humans each year than any other Amazonian species.\n\nThis is an adept catch and provides double nutrition than other fish in their size category.</description>
+							<graphicData>
+								<texPath>Things/Item/Resource/VCEF_FreshwaterStingrayItem</texPath>
+								<graphicClass>Graphic_StackCount</graphicClass>
+							</graphicData>
+							<tradeability>Sellable</tradeability>
+							<statBases>
+								<Mass>0.03</Mass>
+								<Nutrition>0.1</Nutrition>
+								<MarketValue>2.2</MarketValue>
+							</statBases>
+							<ingestible>
+								<specialThoughtDirect>AteRawFood</specialThoughtDirect>
+							</ingestible>
+							<uiIconForStackCount>1</uiIconForStackCount>
+						</ThingDef>
+						<ThingDef ParentName="VCEF_RawFishBase">
+							<defName>VCEF_FlyingFishItem</defName>
+							<label>flying fish (adept catch)</label>
+							<description>Raw flying fish. While they cannot fly in the same way a bird does, flying fish can make powerful, self-propelled leaps out of the water where their long wing-like fins enable gliding for considerable distances above the water's surface.\n\nThis is an adept catch and provides double nutrition than other fish in their size category.</description>
+							<graphicData>
+								<texPath>Things/Item/Resource/VCEF_FlyingFishItem</texPath>
+								<graphicClass>Graphic_StackCount</graphicClass>
+							</graphicData>
+							<tradeability>Sellable</tradeability>
+							<statBases>
+								<Mass>0.03</Mass>
+								<Nutrition>0.1</Nutrition>
+								<MarketValue>2.2</MarketValue>
+							</statBases>
+							<ingestible>
+								<specialThoughtDirect>AteRawFood</specialThoughtDirect>
+							</ingestible>
+							<uiIconForStackCount>1</uiIconForStackCount>
+						</ThingDef>
+						<ThingDef ParentName="VCEF_RawFishBase">
+							<defName>VCEF_ArapaimaItem</defName>
+							<label>arapaima (adept catch)</label>
+							<description>Raw arapaima. On old Earth, it was among the world's largest freshwater fish, reaching as much as 3 m in length. It was an important food fish.\n\nThis is an adept catch and provides double nutrition than other fish in their size category.</description>
+							<graphicData>
+								<texPath>Things/Item/Resource/VCEF_ArapaimaItem</texPath>
+								<graphicClass>Graphic_StackCount</graphicClass>
+							</graphicData>
+							<tradeability>Sellable</tradeability>
+							<statBases>
+								<Mass>0.25</Mass>
+								<Nutrition>0.4</Nutrition>
+								<MarketValue>4.4</MarketValue>
+							</statBases>
+							<ingestible>
+								<specialThoughtDirect>AteRawFood</specialThoughtDirect>
+							</ingestible>
+							<uiIconForStackCount>1</uiIconForStackCount>
+						</ThingDef>
+						<ThingDef ParentName="VCEF_RawFishBase">
+							<defName>VCEF_ShortfinMakoSharkItem</defName>
+							<label>shortfin mako shark (adept catch)</label>
+							<description>Raw shortfin mako shark. A large, predatory shark that lives in the open ocean and is often considered the fastest shark. It is known for its incredible leaping ability and can be observed jumping to extreme heights (out of the water) when hunting.\n\nThis is an adept catch and provides double nutrition than other fish in their size category.</description>
+							<graphicData>
+								<texPath>Things/Item/Resource/VCEF_ShortfinMakoSharkItem</texPath>
+								<graphicClass>Graphic_StackCount</graphicClass>
+							</graphicData>
+							<tradeability>Sellable</tradeability>
+							<statBases>
+								<Mass>0.25</Mass>
+								<Nutrition>0.4</Nutrition>
+								<MarketValue>4.4</MarketValue>
+							</statBases>
+							<ingestible>
+								<specialThoughtDirect>AteRawFood</specialThoughtDirect>
+							</ingestible>
+							<uiIconForStackCount>1</uiIconForStackCount>
+						</ThingDef>
+						<PreceptDef>
+							<defName>VME_Fishing_Forbidden</defName>
+							<issue>VME_FishingYield</issue>
+							<label>forbidden</label>
+							<description>Fish are animals, and as such fishing should be a banned activity.</description>
+							<impact>Medium</impact>
+							<associatedMemes>
+								<li>VME_Vegan</li>
+							</associatedMemes>
+							<comps>
+								<li Class="PreceptComp_UnwillingToDo">
+									<eventDef>VME_Fishing</eventDef>
+								</li>
+							</comps>
+							<opposedWorkTypes>
+								<li>VCEF_Fishing</li>
+							</opposedWorkTypes>
+						</PreceptDef>
+						<ThingDef Name="VME_WaterBuildingBase" Abstract="True">
+							<category>Building</category>
+							<thingClass>Building</thingClass>
+							<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+							<selectable>true</selectable>
+							<drawerType>MapMeshAndRealTime</drawerType>
+							<repairEffect>Repair</repairEffect>
+							<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+							<filthLeaving>Filth_RubbleBuilding</filthLeaving>
+							<statBases>
+								<SellPriceFactor>0.70</SellPriceFactor>
+							</statBases>
+						</ThingDef>
+						<ThingDef ParentName="VME_WaterBuildingBase">
+							<defName>VME_SmallFishingTrap</defName>
+							<label>small fishing trap</label>
+							<description>A primitive, though quite ingenious barricade made of wooden stick and netting meant to entrap incoming fish and leave them with no way out. Fish traps are eventually destroyed by the currents and struggling fish, and will need replacing.\n\nThis is a small trap that will only catch small sized fish.</description>
+							<castEdgeShadows>false</castEdgeShadows>
+							<altitudeLayer>Building</altitudeLayer>
+							<passability>PassThroughOnly</passability>
+							<pathCost>50</pathCost>
+							<tickerType>Rare</tickerType>
+							<useHitPoints>true</useHitPoints>
+							<minifiedDef>MinifiedThing</minifiedDef>
+							<designationCategory>Production</designationCategory>
+							<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+							<uiIconScale>0.65</uiIconScale>
+							<thingCategories>
+								<li>BuildingsProduction</li>
+							</thingCategories>
+							<graphicData>
+								<graphicClass>Graphic_Single</graphicClass>
+								<texPath>Things/Building/Misc/FishTraps/FishTrap1x1</texPath>
+								<drawSize>(1,1)</drawSize>
+							</graphicData>
+							<fillPercent>0.5</fillPercent>
+							<rotatable>false</rotatable>
+							<statBases>
+								<MaxHitPoints>100</MaxHitPoints>
+								<Mass>7</Mass>
+								<Beauty>-5</Beauty>
+								<WorkToMake>1000</WorkToMake>
+								<StyleDominance>10</StyleDominance>
+								<Flammability>1.0</Flammability>
+							</statBases>
+							<costList>
+								<Cloth>10</Cloth>
+								<WoodLog>50</WoodLog>
+							</costList>
+							<placeWorkers>
+								<li>VanillaMemesExpanded.PlaceWorker_OnWater</li>
+							</placeWorkers>
+							<comps>
+								<li Class="VCE_Fishing.CompProperties_FishTrap">
+									<spawnIntervalRange>5000~6000</spawnIntervalRange>
+									<fishTrapDescriptionInspect>VME_SmallFishTrapDescriptionInspect</fishTrapDescriptionInspect>
+									<fishSpawnedIn>VME_SmallFishCaughtIn</fishSpawnedIn>
+									<fishSize>Small</fishSize>
+								</li>
+							</comps>
+						</ThingDef>
+						<ThingDef ParentName="VME_WaterBuildingBase">
+							<defName>VME_MediumFishingTrap</defName>
+							<label>medium fishing trap</label>
+							<description>A primitive, though quite ingenious barricade made of wooden stick and netting meant to entrap incoming fish and leave them with no way out. Fish traps are eventually destroyed by the currents and struggling fish, and will need replacing.\n\nThis is a medium trap that will only catch medium sized fish.</description>
+							<castEdgeShadows>false</castEdgeShadows>
+							<altitudeLayer>Building</altitudeLayer>
+							<passability>PassThroughOnly</passability>
+							<pathCost>50</pathCost>
+							<tickerType>Rare</tickerType>
+							<useHitPoints>true</useHitPoints>
+							<minifiedDef>MinifiedThing</minifiedDef>
+							<designationCategory>Production</designationCategory>
+							<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+							<uiIconScale>0.65</uiIconScale>
+							<size>(3,3)</size>
+							<thingCategories>
+								<li>BuildingsProduction</li>
+							</thingCategories>
+							<graphicData>
+								<graphicClass>Graphic_Single</graphicClass>
+								<texPath>Things/Building/Misc/FishTraps/FishTrap3x3</texPath>
+								<drawSize>(3,3)</drawSize>
+							</graphicData>
+							<fillPercent>0.5</fillPercent>
+							<rotatable>false</rotatable>
+							<statBases>
+								<MaxHitPoints>100</MaxHitPoints>
+								<Mass>7</Mass>
+								<Beauty>-5</Beauty>
+								<WorkToMake>1000</WorkToMake>
+								<StyleDominance>10</StyleDominance>
+								<Flammability>1.0</Flammability>
+							</statBases>
+							<costList>
+								<Cloth>20</Cloth>
+								<WoodLog>75</WoodLog>
+							</costList>
+							<placeWorkers>
+								<li>VanillaMemesExpanded.PlaceWorker_OnWater</li>
+							</placeWorkers>
+							<comps>
+								<li Class="VCE_Fishing.CompProperties_FishTrap">
+									<spawnIntervalRange>10000~11000</spawnIntervalRange>
+									<fishTrapDescriptionInspect>VME_MediumFishTrapDescriptionInspect</fishTrapDescriptionInspect>
+									<fishSpawnedIn>VME_MediumFishCaughtIn</fishSpawnedIn>
+									<fishSize>Medium</fishSize>
+								</li>
+							</comps>
+						</ThingDef>
+						<ThingDef ParentName="VME_WaterBuildingBase">
+							<defName>VME_LargeFishingTrap</defName>
+							<label>large fishing trap</label>
+							<description>A primitive, though quite ingenious barricade made of wooden stick and netting meant to entrap incoming fish and leave them with no way out. Fish traps are eventually destroyed by the currents and struggling fish, and will need replacing.\n\nThis is a large trap that will only catch large sized fish.</description>
+							<castEdgeShadows>false</castEdgeShadows>
+							<altitudeLayer>Building</altitudeLayer>
+							<passability>PassThroughOnly</passability>
+							<pathCost>50</pathCost>
+							<tickerType>Rare</tickerType>
+							<useHitPoints>true</useHitPoints>
+							<minifiedDef>MinifiedThing</minifiedDef>
+							<designationCategory>Production</designationCategory>
+							<canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+							<uiIconScale>0.65</uiIconScale>
+							<size>(5,2)</size>
+							<thingCategories>
+								<li>BuildingsProduction</li>
+							</thingCategories>
+							<graphicData>
+								<graphicClass>Graphic_Multi</graphicClass>
+								<texPath>Things/Building/Misc/FishTraps/FishTrap5x2</texPath>
+								<drawSize>(5,2)</drawSize>
+							</graphicData>
+							<fillPercent>0.5</fillPercent>
+							<rotatable>true</rotatable>
+							<statBases>
+								<MaxHitPoints>100</MaxHitPoints>
+								<Mass>7</Mass>
+								<Beauty>-5</Beauty>
+								<WorkToMake>1000</WorkToMake>
+								<StyleDominance>10</StyleDominance>
+								<Flammability>1.0</Flammability>
+							</statBases>
+							<costList>
+								<Cloth>30</Cloth>
+								<WoodLog>100</WoodLog>
+							</costList>
+							<placeWorkers>
+								<li>VanillaMemesExpanded.PlaceWorker_OnWater</li>
+							</placeWorkers>
+							<comps>
+								<li Class="VCE_Fishing.CompProperties_FishTrap">
+									<spawnIntervalRange>16000~17000</spawnIntervalRange>
+									<fishTrapDescriptionInspect>VME_LargeFishTrapDescriptionInspect</fishTrapDescriptionInspect>
+									<fishSpawnedIn>VME_LargeFishCaughtIn</fishSpawnedIn>
+									<fishSize>Large</fishSize>
+								</li>
+							</comps>
+						</ThingDef>
+					</value>
+				</li>
+				<li Class="PatchOperationConditional">
+					<success>Always</success>
+					<xpath>/Defs/MemeDef[defName = "VME_Vegan"]/requireOne</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/MemeDef[defName = "VME_Vegan"]</xpath>
+						<value>
+							<requireOne>
+								<li>
+									<li>VME_Fishing_Forbidden</li>
+								</li>
+							</requireOne>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/MemeDef[defName = "VME_Vegan"]/requireOne</xpath>
+						<value>
+							<li>
+								<li>VME_Fishing_Forbidden</li>
+							</li>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<success>Always</success>
+					<xpath>/Defs/MemeDef[defName = "AnimalPersonhood"]/requireOne</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/MemeDef[defName = "AnimalPersonhood"]</xpath>
+						<value>
+							<requireOne>
+								<li>
+									<li>VME_Fishing_Forbidden</li>
+								</li>
+							</requireOne>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/MemeDef[defName = "AnimalPersonhood"]/requireOne</xpath>
+						<value>
+							<li>
+								<li>VME_Fishing_Forbidden</li>
+							</li>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<success>Always</success>
+					<xpath>/Defs/MemeDef[defName = "NaturePrimacy"]/requireOne</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/MemeDef[defName = "NaturePrimacy"]</xpath>
+						<value>
+							<requireOne>
+								<li>
+									<li>VME_Fishing_Forbidden</li>
+								</li>
+							</requireOne>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/MemeDef[defName = "NaturePrimacy"]/requireOne</xpath>
+						<value>
+							<li>
+								<li>VME_Fishing_Forbidden</li>
+							</li>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/MemeDef[defname="VME_Angler"]</xpath>
+					<value>
+						<addDesignators>
+							<li>VME_SmallFishingTrap</li>
+							<li>VME_MediumFishingTrap</li>
+							<li>VME_LargeFishingTrap</li>
+						</addDesignators>
+					</value>
+				</li>
+			</operations>
+		</nomatch>
+	</Operation>
+</Patch>

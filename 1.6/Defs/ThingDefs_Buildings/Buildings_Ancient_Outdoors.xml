@@ -112,6 +112,7 @@
 		<description>An ancient stove. Smashed and rusted, it is completely useless now.\n\nHow it got here is hard to say.</description>
 		<graphicData>
 			<texPath>Things/Building/Ruins/Stove</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
 			<shadowData>
 				<volume>(0.99, 0.35, 0.99)</volume>
 			</shadowData>
@@ -133,6 +134,7 @@
 		<description>An ancient oven. Smashed and rusted, it is completely useless now.\n\nHow it got here is hard to say.</description>
 		<graphicData>
 			<texPath>Things/Building/Ruins/AncientOven</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
 			<shadowData>
 				<volume>(0.99, 0.35, 0.99)</volume>
 			</shadowData>
