@@ -20,6 +20,7 @@ namespace VanillaMemesExpanded
         {
             var harmony = new Harmony("com.vanillamemesexpanded");
             harmony.PatchAll(Assembly.GetExecutingAssembly());
+            PreceptPatches.Do(harmony);
         }
     }
 }

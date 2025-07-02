@@ -42,7 +42,7 @@ public static class PreceptPatches
     {
         var threat = pawn?.mindState?.meleeThreat;
         if (__result != null && threat != null && pawn.IsPrisoner && pawn.HostFaction == threat.Faction &&
-            ReflectionCache.interactionMode(pawn.guest) == InternalDefOf.VFEA_Interrogate &&
+            pawn.guest.ExclusiveInteractionMode == InternalDefOf.VFEA_Interrogate &&
             threat.CurJobDef == InternalDefOf.VFEA_PrisonerInterrogate && RestraintsUtility.InRestraints(pawn) &&
             pawn.GetRoom() is { IsPrisonCell: true } room)
             __result = JobMaker.MakeJob(JobDefOf.FleeAndCower, room.Cells?.RandomElement() ?? pawn.Position, threat);
@@ -52,17 +52,17 @@ public static class PreceptPatches
     {
         if (__result)    {
             Pawn pawn = prisoner as Pawn;
-            if (pawn != null && pawn.guest != null && ReflectionCache.interactionMode(pawn.guest) != null && warden.Ideo != null) {
-                if (PrisonerHistory.ContainsKey(ReflectionCache.interactionMode(pawn.guest)))
+            if (pawn != null && pawn.guest != null && pawn.guest.ExclusiveInteractionMode != null && warden.Ideo != null) {
+                if (PrisonerHistory.ContainsKey(pawn.guest.ExclusiveInteractionMode))
                 {
-                    var eventDef = PrisonerHistory[ReflectionCache.interactionMode(pawn.guest)];
+                    var eventDef = PrisonerHistory[pawn.guest.ExclusiveInteractionMode];
                     var ev = new HistoryEvent(eventDef, warden.Named(HistoryEventArgsNames.Doer), pawn.Named(HistoryEventArgsNames.Victim),
                         pawn.Faction.Named(HistoryEventArgsNames.AffectedFaction));
                     if (!ev.DoerWillingToDo()) __result = false;
                     if (!ev.VictimWillingToDo()) __result = false;
                 }
 
-                if (ReflectionCache.interactionMode(pawn.guest).GetModExtension<RequirePrecept>() is { precept: var precept })
+                if (pawn.guest.ExclusiveInteractionMode.GetModExtension<RequirePrecept>() is { precept: var precept })
                     if (!warden.Ideo.HasPrecept(precept))
                         __result = false;
 

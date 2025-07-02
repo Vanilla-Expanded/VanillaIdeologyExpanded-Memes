@@ -20,7 +20,7 @@ namespace VanillaMemesExpanded
             this.FailOnNotAwake(TargetIndex.A);
             this.FailOn(() => !Interrogatee.IsPrisonerOfColony || !Interrogatee.guest.PrisonerIsSecure);
             yield return Toils_General.Do(() => job.count = CountRange.RandomInRange);
-            var gotoPrisoner = Toils_Interpersonal.GotoPrisoner(pawn, Interrogatee, ReflectionCache.interactionMode(Interrogatee.guest));
+            var gotoPrisoner = Toils_Interpersonal.GotoPrisoner(pawn, Interrogatee, Interrogatee.guest.ExclusiveInteractionMode);
             yield return gotoPrisoner;
             yield return Toils_Interpersonal.WaitToBeAbleToInteract(pawn);
             yield return Toils_Interpersonal.GotoInteractablePosition(TargetIndex.A);
@@ -33,7 +33,7 @@ namespace VanillaMemesExpanded
             });
             yield return Toils_General.Do(() => job.count--);
             yield return Toils_Jump.JumpIf(gotoPrisoner, () => job.count > 0);
-            yield return Toils_Interpersonal.GotoPrisoner(pawn, Interrogatee, ReflectionCache.interactionMode(Interrogatee.guest));
+            yield return Toils_Interpersonal.GotoPrisoner(pawn, Interrogatee, Interrogatee.guest.ExclusiveInteractionMode);
             yield return Toils_Interpersonal.GotoInteractablePosition(TargetIndex.A);
             yield return Toils_Interpersonal.SetLastInteractTime(TargetIndex.A);
             yield return new Toil

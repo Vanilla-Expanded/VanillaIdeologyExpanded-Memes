@@ -87,4 +87,10 @@
 	<VME_AllowHighImpactMemesForFluidIdeos>Allow high impact memes for fluid ideos</VME_AllowHighImpactMemesForFluidIdeos>
 	<VME_AllowHighImpactMemesForFluidIdeos_Tooltip>By default, fluid ideos only let you choose one meme with impact 1 or 2, blocking impact 3 memes from being chosen. With this option toggle you can make it so impact 3 memes are available too.</VME_AllowHighImpactMemesForFluidIdeos_Tooltip>
 
+
+    <VFEAncients.MessageNoWardenCapableOfRecruitment>No warden is capable of this recruitment.</VFEAncients.MessageNoWardenCapableOfRecruitment>
+    <VFEAncients.InterrogationSuccess>Interrogation Success</VFEAncients.InterrogationSuccess>
+    <VFEAncients.InterrogationSuccessDetail>{0} has successfully interrogated {1}, who has revealed the location of {2}.</VFEAncients.InterrogationSuccessDetail>
+    <VFEAncients.InterrogationFailure>Interrogation failed!</VFEAncients.InterrogationFailure>
+
 </LanguageData>
