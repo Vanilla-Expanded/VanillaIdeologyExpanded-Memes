@@ -20,13 +20,7 @@
 			<li>VBE_Vodka</li>
 			<li>VBE_Whiskey</li>
 			<li>VBE_DoubleWhiskey</li>
-			<li>VBE_AmbrandyAwful</li>
-			<li>VBE_AmbrandyPoor</li>
-			<li>VBE_AmbrandyNormal</li>
-			<li>VBE_AmbrandyGood</li>
-			<li>VBE_AmbrandyExcellent</li>
-			<li>VBE_AmbrandyMasterwork</li>
-			<li>VBE_AmbrandyLegendary</li>
+			<li>VBE_Ambrandy</li>
 			<li>VBE_SimpleCocktail</li>
 			<li>VBE_FineCocktail</li>
 			<li>VBE_LavishCocktail</li>
