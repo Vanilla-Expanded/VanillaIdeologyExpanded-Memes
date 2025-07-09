@@ -568,7 +568,7 @@
 					</match>
 				</li>
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/MemeDef[defname="VME_Angler"]</xpath>
+					<xpath>Defs/MemeDef[defName="VME_Angler"]</xpath>
 					<value>
 						<addDesignators>
 							<li>VME_SmallFishingTrap</li>
