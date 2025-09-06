@@ -5,7 +5,7 @@
 		<defName>VME_SweetTeeth</defName>
 		<label>sweet teeth</label>
 
-		<description>Decadent, velvety, rich--When these words grace our ears, first thoughts are of bars of sweet, sweet chocolate. Tangy yogurts, flaky pastries, and moist cakes aren’t just welcomed--They’re indisputably deserved.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Unlocks a "Desserts Need" that will make colonists happier if they consume desserts and chocolate regularly (needs expectation to be moderate or higher)\n - Unlocks sowing the cocoa bush, a cocoa producing plant that is more efficient than the tree and can be grown indoors and on hydroponics\n - Colony receives 15 Chocolate to start</description>
+		<description>Every meal should include a dessert, it's important to indulge.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Unlocks a "Desserts Need" that will make colonists happier if they consume desserts and chocolate regularly (needs expectation to be moderate or higher)\n - Unlocks sowing the cocoa bush, a cocoa producing plant that is more efficient than the tree and can be grown indoors and on hydroponics\n - Colony receives 15 Chocolate to start</description>
 		<iconPath>UI/Memes/SweetTeeth</iconPath>
 		<groupDef>Misc</groupDef>
 		<impact>2</impact>

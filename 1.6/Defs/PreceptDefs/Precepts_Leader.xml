@@ -23,7 +23,7 @@
 		<defName>VME_Leader_Godlike</defName>
 		<issue>VME_LeaderDivinity</issue>
 		<label>godlike</label>
-		<description>Our leader should be exalted as a god, to treat them as any less assures our demise.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Opinion of the leader depends on a person's certainty in its ideoligion.</description>
+		<description>Our leader should be exalted as a god.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Opinion of the leader depends on a person's certainty in its ideoligion.</description>
 		<impact>High</impact>
 		<displayOrderInIssue>50</displayOrderInIssue>
 		<displayOrderInImpact>100</displayOrderInImpact>
@@ -79,7 +79,7 @@
 		<defName>VME_Leader_BestCrafter</defName>
 		<issue>VME_Leader</issue>
 		<label>best crafter</label>
-		<description>Our most skilled artisan is our leader, through their keen eye and delicate touch our workshops will sing the song of creation.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - The leader role will periodically be forced upon the highest level crafter in the colony (this will only work if the ideology is the primary one).</description>
+		<description>Our most skilled artisan is our leader.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - The leader role will periodically be forced upon the highest level crafter in the colony (this will only work if the ideology is the primary one).</description>
 		<impact>Medium</impact>
 		<displayOrderInIssue>40</displayOrderInIssue>
 		<displayOrderInImpact>100</displayOrderInImpact>
@@ -96,7 +96,7 @@
 		<defName>VME_Leader_BestFighter</defName>
 		<issue>VME_Leader</issue>
 		<label>best fighter</label>
-		<description>Martial expertise, be it with a blade or spear is a show of strength and courage. Our most talented fighter will be our leader, no questions asked (this will only work if the ideology is the primary one).</description>
+		<description>Our most talented fighter will be our leader.</description>
 		<impact>High</impact>
 		<displayOrderInIssue>35</displayOrderInIssue>
 		<displayOrderInImpact>100</displayOrderInImpact>
@@ -113,7 +113,7 @@
 		<defName>VME_Leader_Three</defName>
 		<issue>VME_Leader</issue>
 		<label>three</label>
-		<description>It’s vital that we put our trust in the hands of few rather than the hand of one.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Up to three people can be designated as leader.</description>
+		<description>We should put our trust in the hands of few rather than the hand of one.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Up to three people can be designated as leader.</description>
 		<impact>High</impact>
 		<displayOrderInIssue>30</displayOrderInIssue>
 		<displayOrderInImpact>100</displayOrderInImpact>
@@ -130,7 +130,7 @@
 		<defName>VME_Leader_Moralist</defName>
 		<issue>VME_LeaderAbilities</issue>
 		<label>moralist</label>
-		<description>Our leader is a morale bastion, and through them and their divinity we shall flourish.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - The colony's leader can use moralist abilities too.</description>
+		<description>Our leader is also a morale guide.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - The colony's leader can use moralist abilities too.</description>
 		<impact>Medium</impact>
 		<displayOrderInIssue>25</displayOrderInIssue>
 		<displayOrderInImpact>100</displayOrderInImpact>

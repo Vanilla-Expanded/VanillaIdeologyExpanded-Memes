@@ -10,7 +10,7 @@
 		<defName>VME_Mood_DictatedByStars</defName>
 		<issue>VME_Mood</issue>
 		<label>dictated by stars</label>
-		<description>The endless sea of stars in our skies will dictate my future, be it benevolent or otherwise.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - After every Divine the Stars ritual, a solar eclipse or an aurora, mood will randomly change between -30 and +30.</description>
+		<description>The stars will guide us.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - After every Divine the Stars ritual, a solar eclipse or an aurora, mood will randomly change between -30 and +30.</description>
 		<impact>High</impact>
 		<displayOrderInIssue>50</displayOrderInIssue>
 		<displayOrderInImpact>100</displayOrderInImpact>
@@ -44,47 +44,47 @@
 		<stages>
 			<li>
 				<label>stars are aligned</label>
-				<description>The astral architects smile upon me, their benevolence is unmatched.</description>
+				<description>The stars smile upon me.</description>
 				<baseMoodEffect>30</baseMoodEffect>
 			</li>
 			<li>
 				<label>stars are perfect</label>
-				<description>The stellar bodies above tell a story of imminent fortunes and success.</description>
+				<description>The stars tell a story of success.</description>
 				<baseMoodEffect>20</baseMoodEffect>
 			</li>
 			<li>
 				<label>stars are excellent</label>
-				<description>The stars whisper to me, and they tell me to breathe easy. My fate is comfortably in their hands.</description>
+				<description>The stars tell me that my fate is comfortably in their hands.</description>
 				<baseMoodEffect>10</baseMoodEffect>
 			</li>
 			<li>
 				<label>stars are good</label>
-				<description>Though small, the constellations tell me all is well for the time being.</description>
+				<description>The stars tell me all is fine.</description>
 				<baseMoodEffect>5</baseMoodEffect>
 			</li>
 			<li>
 				<label>stars are indifferent</label>
-				<description>The stars whisper nonsense and contradictions, our destiny is increasingly unclear.</description>
+				<description>The stars have told me nothing.</description>
 				<baseMoodEffect>0</baseMoodEffect>
 			</li>
 			<li>
 				<label>stars are bad</label>
-				<description>The skies do not bode well, an ill omen is on the horizon.</description>
+				<description>The stars tell me to be worried.</description>
 				<baseMoodEffect>-5</baseMoodEffect>
 			</li>
 			<li>
 				<label>stars are not on my side</label>
-				<description>The sea of stars is ever cloudy, they shroud themselves from me and refuse to tell me of my fate.</description>
+				<description>The stars are cold and distant.</description>
 				<baseMoodEffect>-10</baseMoodEffect>
 			</li>
 			<li>
 				<label>stars are a bad omen</label>
-				<description>The stellar bodies far above have made themselves clear, I am no longer in their favor.</description>
+				<description>The stars tell me to be afraid.</description>
 				<baseMoodEffect>-20</baseMoodEffect>
 			</li>
 			<li>
 				<label>stars are aligned… against me</label>
-				<description>The planets have aligned, a syzygy has made clear my approaching demise is inescapable. I will shortly be reduced to mere dust.</description>
+				<description>The stars have aligned against me, they threaten my very life.</description>
 				<baseMoodEffect>-30</baseMoodEffect>
 			</li>
 		</stages>

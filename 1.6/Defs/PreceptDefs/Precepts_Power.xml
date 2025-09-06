@@ -10,7 +10,7 @@
 		<defName>VME_Power_Exalted</defName>
 		<issue>VME_Power</issue>
 		<label>exalted</label>
-		<description>I am righteousness! I am no mere king—I have ascended to godhood! Bow before me, or atone with your life.</description>
+		<description>Power should always be sought after.</description>
 		<impact>Medium</impact>
 		<displayOrderInIssue>50</displayOrderInIssue>
 		<displayOrderInImpact>100</displayOrderInImpact>
@@ -36,7 +36,7 @@
 		<stages>
 			<li>
 				<label>divine rule</label>
-				<description>My rule is supreme, for I am godlike.</description>
+				<description>My rule is supreme, akin to a god.</description>
 				<baseMoodEffect>30</baseMoodEffect>
 			</li>
 		</stages>
@@ -45,7 +45,7 @@
 		<defName>VME_Power_Desired</defName>
 		<issue>VME_Power</issue>
 		<label>desired</label>
-		<description>Craving to be one of the powerful elite is a very understandable desire and should not be looked down upon.</description>
+		<description>Seeking power is an understandable desire.</description>
 		<impact>Medium</impact>
 		<displayOrderInIssue>40</displayOrderInIssue>
 		<displayOrderInImpact>100</displayOrderInImpact>
@@ -77,7 +77,7 @@
 		<defName>VME_Power_Preferred</defName>
 		<issue>VME_Power</issue>
 		<label>preferred</label>
-		<description>It’s unthinkable to be considered a commoner. I want people to take my word seriously and put forth great effort not to disappoint me.</description>
+		<description>It's preferable to be in a position of power.</description>
 		<impact>Medium</impact>
 		<displayOrderInIssue>30</displayOrderInIssue>
 		<displayOrderInImpact>100</displayOrderInImpact>
@@ -100,7 +100,7 @@
 		<stages>
 			<li>
 				<label>i am important</label>
-				<description>I hold a reasonable position of power and I like that feeling</description>
+				<description>I feel reasonably important.</description>
 				<baseMoodEffect>4</baseMoodEffect>
 			</li>
 		</stages>

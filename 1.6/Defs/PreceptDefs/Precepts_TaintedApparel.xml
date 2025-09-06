@@ -10,7 +10,7 @@
 		<defName>VME_TaintedApparel_DontCare</defName>
 		<issue>VME_TaintedApparel</issue>
 		<label>don't care</label>
-		<description>Clothing soaked in blood or bits shouldn’t dissuade one from covering themselves and making use of what would otherwise be worn away by time.</description>
+		<description>There is nothing wrong about wearing tainted clothing.</description>
 		<impact>Medium</impact>
 		<displayOrderInIssue>50</displayOrderInIssue>
 		<displayOrderInImpact>100</displayOrderInImpact>
@@ -22,7 +22,7 @@
 		<defName>VME_TaintedApparel_Disapproved</defName>
 		<issue>VME_TaintedApparel</issue>
 		<label>disapproved</label>
-		<description>Wearing a dead person's apparel is quite disgusting.</description>
+		<description>Wearing tainted clothing is disgusting.</description>
 		<impact>Low</impact>
 		<defaultSelectionWeight>1</defaultSelectionWeight>
 		<displayOrderInIssue>40</displayOrderInIssue>		
@@ -31,7 +31,7 @@
 		<defName>VME_TaintedApparel_Abhorrent</defName>
 		<issue>VME_TaintedApparel</issue>
 		<label>abhorrent</label>
-		<description>There can be nothing more disgusting in this world than wearing the clothing used by a dead person.</description>
+		<description>Wearing tainted clothing is a horrible practice.</description>
 		<impact>Medium</impact>
 		<displayOrderInIssue>30</displayOrderInIssue>	
 		<comps>
@@ -49,7 +49,7 @@
 			
 			<li>
 				<label>wearing dead person's clothing</label>
-				<description>I'm wearing clothing used by a dead person, I can't imagine anything more disgusting! Someone died wearing these!</description>
+				<description>I'm wearing clothing used by a dead person. I can't imagine anything more disgusting.</description>
 				<baseMoodEffect>-10</baseMoodEffect>
 			</li>
 		</stages>

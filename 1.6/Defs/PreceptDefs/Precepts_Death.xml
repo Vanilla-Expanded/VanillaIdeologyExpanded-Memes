@@ -11,7 +11,7 @@
 		<defName>VME_Death_DontCare</defName>
 		<issue>VME_Death</issue>
 		<label>don't care</label>
-		<description>Death is inevitable, should we lose an ally or slay an enemy it is not to be thought about.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Colonists won't get any mood effects for losing other colonists.</description>
+		<description>Death is inevitable, it is best not to mourn losses of life.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Colonists won't get any mood effects for losing other colonists.</description>
 		<impact>Medium</impact>
 		<displayOrderInIssue>50</displayOrderInIssue>
 		<displayOrderInImpact>100</displayOrderInImpact>
@@ -53,7 +53,7 @@
 		<stages>
 			<li>
 				<label>death is troubling</label>
-				<description>I know death is a part of life, but I just HATE being reminded of it.</description>
+				<description>I know death is a part of life, but I hate being reminded of it.</description>
 				<baseMoodEffect>-5</baseMoodEffect>
 			</li>
 		</stages>

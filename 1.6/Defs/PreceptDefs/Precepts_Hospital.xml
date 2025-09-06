@@ -10,7 +10,7 @@
 		<defName>VME_Hospital_Required</defName>
 		<issue>VME_Hospital</issue>
 		<label>required</label>
-		<description>A place of refuge and healing is essential for the long-term health of our community. It’s important to make sure we have open beds and plenty of medicine should the worst come to worst.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Colonists gets mood penalties / bonuses depending on size of hospital rooms found in the map. Only hospital rooms with an impressiveness of "decent" or higher will count for this calculation. Hospitals will need to be clean or colonists will complain too!</description>
+		<description>A clean hospital is essential for the long-term health of any community.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Colonists gets mood penalties / bonuses depending on size of hospital rooms found in the map. Only hospital rooms with an impressiveness of "decent" or higher will count for this calculation. Hospitals will need to be clean or colonists will complain too!</description>
 		<impact>Medium</impact>
 		<displayOrderInImpact>80</displayOrderInImpact>
 		<associatedMemes>

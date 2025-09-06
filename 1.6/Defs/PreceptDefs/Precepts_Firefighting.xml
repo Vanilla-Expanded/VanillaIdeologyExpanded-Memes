@@ -15,7 +15,7 @@
 		<defName>VME_Firefighting_Abhorrent</defName>
 		<issue>VME_Firefighting</issue>
 		<label>abhorrent</label>
-		<description>To quash a sacred flame is to commit an unspeakable sin.</description>
+		<description>To snuff an open flame is a disgusting act.</description>
 		<impact>High</impact>
 		<displayOrderInIssue>50</displayOrderInIssue>
 		<displayOrderInImpact>100</displayOrderInImpact>
@@ -43,7 +43,7 @@
 			
 			<li>
 				<label>extinguished fire</label>
-				<description>I had to extinguish fire. What a violation of the spirits.</description>
+				<description>I had to extinguish fire, I hated it.</description>
 				<baseMoodEffect>-20</baseMoodEffect>
 			</li>
 		</stages>
@@ -76,7 +76,7 @@
 			
 			<li>
 				<label>extinguished fire</label>
-				<description>I extinguished a fire. What an exhilarating experience!</description>
+				<description>I extinguished a fire, I'm proud of myself.</description>
 				<baseMoodEffect>4</baseMoodEffect>
 			</li>
 		</stages>

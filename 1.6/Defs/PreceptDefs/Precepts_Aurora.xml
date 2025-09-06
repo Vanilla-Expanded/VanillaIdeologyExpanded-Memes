@@ -10,7 +10,7 @@
 		<defName>VME_Aurora_Amazing</defName>
 		<issue>VME_Aurora</issue>
 		<label>amazing</label>
-		<description>Auroras are a beautiful respite from the absolute darkness.</description>
+		<description>Auroras are a beautiful and divine phenomenon.</description>
 		<impact>Low</impact>
 		<requiredMemes>
 			<li>VME_Light</li>
@@ -35,7 +35,7 @@
 		<stages>
 			<li>
 				<label>amazing aurora</label>
-				<description>I have a moment's respite from the darkness of the night.</description>
+				<description>That aurora had such incredible colors.</description>
 				<baseMoodEffect>5</baseMoodEffect>
 			</li>
 		</stages>
@@ -44,7 +44,7 @@
 		<defName>VME_Aurora_Despised</defName>
 		<issue>VME_Aurora</issue>
 		<label>despised</label>
-		<description>The blinding lights in the heavens give us a nasty headache.</description>
+		<description>Those blinding lights in the night sky give us nasty headaches.</description>
 		<impact>Low</impact>
 		<requiredMemes>
 			<li>Darkness</li>

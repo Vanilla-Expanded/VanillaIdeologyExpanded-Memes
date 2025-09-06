@@ -5,7 +5,7 @@
 		<defName>VME_PsychicFocus</defName>
 		<label>psychic focus</label>
 		
-		<description>Mastering the power of the mind is essential to securing one’s place in the universe. Strength of mind can be achieved only through inner peace, and inner peace can only be achieved through meditation.</description>
+		<description>Mastering the power of the mind is essential to securing one’s place in the universe.</description>
 		<iconPath>UI/Memes/PsychicFocus</iconPath>
 		<exclusionTags>
 			
@@ -105,7 +105,7 @@
 	<MemeDef>
 		<defName>VME_Royal</defName>
 		<label>royal</label>
-		<description>We embody the essence of royalty, ensuring our titles and their inherent authority are passed down through generations, forever respected and entwined with our bloodline.</description>
+		<description>People should follow royalty, and treat them with great respect.</description>
 		<iconPath>UI/Memes/Royal</iconPath>
 		<groupDef>Misc</groupDef>
 		<impact>2</impact>

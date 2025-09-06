@@ -10,7 +10,7 @@
 		<defName>VME_PermanentBases_Despised</defName>
 		<issue>VME_PermanentBases</issue>
 		<label>despised</label>
-		<description>Our colony is only temporary, should we stay it will only be a matter of time before we are unable to defend it, it is better to never gain such comfort.\n\n&lt;color=#E5E54C&gt;Stats:&lt;/color&gt;\n - Farming yield: -10%.\n - Gathering yield: +40%.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - This precept will only work when using the vanilla game world system. Vehicles for example won't interact with it. Using other mods such as Caravan Adventure to leave the map won't work either. You need to use vanilla systems.</description>
+		<description>Our home is only temporary, it's important to keep moving.\n\n&lt;color=#E5E54C&gt;Stats:&lt;/color&gt;\n - Farming yield: -10%.\n - Gathering yield: +40%.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - This precept will only work when using the vanilla game world system. Vehicles for example won't interact with it. Using other mods such as Caravan Adventure to leave the map won't work either. You need to use vanilla systems.</description>
 		<impact>High</impact>
 		<displayOrderInImpact>80</displayOrderInImpact>
 		<associatedMemes>
@@ -87,7 +87,7 @@
 		<defName>VME_PermanentBases_Desired</defName>
 		<issue>VME_PermanentBases</issue>
 		<label>desired</label>
-		<description>Our colony should become our forever home, the more buildings, paths, and lights we can erect the better off we’ll all be.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Colonists gets mood penalties / bonuses depending on amount of buildings on the map. "Building" is a completely enclosed structure with at least 25 tiles size.</description>
+		<description>Our home should have many rooms and facilities, and we should never abandon it.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Colonists gets mood penalties / bonuses depending on amount of buildings on the map. "Building" is a completely enclosed structure with at least 25 tiles size.</description>
 		<impact>Medium</impact>
 		<displayOrderInImpact>70</displayOrderInImpact>
 		<enabledForNPCFactions>false</enabledForNPCFactions>

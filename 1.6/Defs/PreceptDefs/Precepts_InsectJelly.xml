@@ -15,7 +15,7 @@
 		<defName>VME_InsectJellyEaten_Despised</defName>
 		<issue>VME_InsectJelly</issue>
 		<label>despised</label>
-		<description>Insect jelly is a disgusting concept.</description>
+		<description>Insect jelly is disgusting.</description>
 		<impact>Low</impact>
 	
 		<displayOrderInIssue>-10</displayOrderInIssue>
@@ -31,7 +31,7 @@
 		<defName>VME_InsectJellyEaten_Neutral_Classic</defName>
 		<issue>VME_InsectJelly</issue>
 		<label>neutral</label>
-		<description>Insect jelly is smooth, rich and nourishing, even though it has some... questionable origins.</description>
+		<description>Insect jelly is smooth, rich and nourishing.</description>
 		<impact>Low</impact>
 		<classic>true</classic>
 		<displayOrderInIssue>0</displayOrderInIssue>

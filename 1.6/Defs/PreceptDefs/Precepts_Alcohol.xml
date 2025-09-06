@@ -11,7 +11,7 @@
 		<defName>VME_Alcohol_Demanded</defName>
 		<issue>VME_Alcohol</issue>
 		<label>demanded</label>
-		<description>Spirits, booze, sauce, whatever you call it, we desire it. At least an occasional drink should be encouraged and we shouldn’t even think of sobriety.</description>
+		<description>Inebriation is central to a good life.</description>
 		<impact>Medium</impact>
 		<displayOrderInIssue>0</displayOrderInIssue>
 		<selectionWeight>1</selectionWeight>
@@ -43,27 +43,27 @@
 		<stages>
 			<li>
 				<label>missing alcohol</label>
-				<description>I could use a drink. Something stronger please.</description>
+				<description>I could use a drink.</description>
 				<baseMoodEffect>-3</baseMoodEffect>
 			</li>
 			<li>
 				<label>no alcohol</label>
-				<description>I wish I could have a drink of something stronger.</description>
+				<description>I really want a drink right now.</description>
 				<baseMoodEffect>-6</baseMoodEffect>
 			</li>
 			<li>
 				<label>needs alcohol</label>
-				<description>I need a drink of something stronger.</description>
+				<description>I need a drink, something strong.</description>
 				<baseMoodEffect>-12</baseMoodEffect>
 			</li>
 			<li>
 				<label>craves alcohol</label>
-				<description>I’d kill for a drop of something stronger.</description>
+				<description>I’d kill for a drop of alcohol.</description>
 				<baseMoodEffect>-24</baseMoodEffect>
 			</li>
 			<li>
 				<label>demands alcohol</label>
-				<description>Booze or I riot.</description>
+				<description>I'm losing my mind without alcohol.</description>
 				<baseMoodEffect>-48</baseMoodEffect>
 			</li>
 		</stages>

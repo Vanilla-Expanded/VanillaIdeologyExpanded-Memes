@@ -9,7 +9,7 @@
     <defName>VME_Apostasy_Accepted</defName>
     <issue>Apostasy</issue>
     <label>accepted</label>
-    <description>We feel bound by authority alone to follow our current ideology, and will not think twice if an opportunity presents itself to change our ways.</description>
+    <description>We should not feel bound to our current ideology.</description>
     <impact>Medium</impact>
     <displayOrderInIssue>-10</displayOrderInIssue>
     
@@ -27,7 +27,7 @@
     <defName>Apostasy_Despicable</defName>
     <issue>Apostasy</issue>
     <label>despicable</label>
-    <description>Being coerced or otherwise manipulated into following a different belief is a despicable act. If somebody seeks knowledge of another's faith, then let them ask for it naturally.</description>
+    <description>Being coerced or otherwise manipulated into following a different belief is a despicable act.</description>
     <impact>Low</impact>
     <displayOrderInIssue>19</displayOrderInIssue>
     <conflictingMemes>

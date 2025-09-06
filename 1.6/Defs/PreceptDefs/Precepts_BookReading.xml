@@ -11,7 +11,7 @@
 		<defName>VME_BookReadingSpeed_Increased</defName>
 		<issue>VME_BookReadingSpeed</issue>
 		<label>increased</label>
-		<description>Books are an open window to a world filled with wonders. We love reading and will quickly devour any text we come across.</description>
+		<description>Books are an open window to a world filled with wonders, we will quickly read any texts we come across.</description>
 		<impact>Low</impact>
 		<displayOrderInIssue>0</displayOrderInIssue>
 		<statOffsets>

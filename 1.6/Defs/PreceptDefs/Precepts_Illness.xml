@@ -11,7 +11,7 @@
 		<defName>VME_Illness_Exalted</defName>
 		<issue>VME_Illness</issue>
 		<label>exalted</label>
-		<description>To be infected is to be blessed, and to go long without blessing is regrettable.</description>
+		<description>To be sick is to be blessed.</description>
 		<impact>Medium</impact>
 		<displayOrderInIssue>50</displayOrderInIssue>
 		<displayOrderInImpact>100</displayOrderInImpact>
@@ -34,12 +34,12 @@
 		<stages>
 			<li>
 				<label>sick</label>
-				<description>The holy virus and the godlike bacteria shall breed in my veins.</description>
+				<description>I've been blessed, bacteria shall breed in my veins.</description>
 				<baseMoodEffect>20</baseMoodEffect>
 			</li>
 			<li>
 				<label>wants to be sick</label>
-				<description>What I would give for the illness to bind me in pain once more.</description>
+				<description>I hope I get sick again soon.</description>
 				<baseMoodEffect>-2</baseMoodEffect>
 			</li>
 		</stages>
@@ -48,7 +48,7 @@
 		<defName>VME_Illness_Preferred</defName>
 		<issue>VME_Illness</issue>
 		<label>preferred</label>
-		<description>Being sick gives you an excuse to lie down and work less. It's worth it!</description>
+		<description>Being sick gives you an excuse to lie down and work less.</description>
 		<impact>Low</impact>
 		<displayOrderInIssue>40</displayOrderInIssue>
 		<displayOrderInImpact>100</displayOrderInImpact>
@@ -65,7 +65,7 @@
 		<stages>
 			<li>
 				<label>sick</label>
-				<description>I am sick. A perfect excuse to lie down.</description>
+				<description>I am sick. A perfect excuse to take it easy.</description>
 				<baseMoodEffect>4</baseMoodEffect>
 			</li>
 		</stages>

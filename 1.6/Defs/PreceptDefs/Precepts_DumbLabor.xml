@@ -14,7 +14,7 @@
 		<defName>VME_DumbLabor_Exalted</defName>
 		<issue>VME_DumbLabor</issue>
 		<label>exalted</label>
-		<description>An aching body is to be revered. Nearly nothing is found more rewarding than a day of hard work.</description>
+		<description>A day of hard work cleaning or hauling is to be respected.</description>
 		<impact>High</impact>
 		<displayOrderInIssue>10</displayOrderInIssue>
 		<displayOrderInImpact>100</displayOrderInImpact>
@@ -98,7 +98,7 @@
 		<stages>
 			<li>
 				<label>did dumb labor</label>
-				<description>I had to do dumb labor. So exhausting!</description>
+				<description>I had to do dumb labor. So exhausting.</description>
 				<baseMoodEffect>-2</baseMoodEffect>
 			</li>
 		</stages>
@@ -107,7 +107,7 @@
 		<defName>VME_DumbLabor_Horrible</defName>
 		<issue>VME_DumbLabor</issue>
 		<label>horrible</label>
-		<description>We should not suffer the laborious degradation of our bodies, nor the degradation of sweat forming on our brow.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Leader and Moralist roles will be incapable of Dumb Labor.</description>
+		<description>We should not suffer the the dishonor of dumb labor.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Leader and Moralist roles will be incapable of Dumb Labor.</description>
 		<impact>High</impact>
 		<displayOrderInIssue>50</displayOrderInIssue>
 		<displayOrderInImpact>100</displayOrderInImpact>

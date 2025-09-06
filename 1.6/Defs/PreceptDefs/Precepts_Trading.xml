@@ -18,7 +18,7 @@
 		<defName>VME_Trading_Required</defName>
 		<issue>VME_Trading</issue>
 		<label>required</label>
-		<description>Our colony, like it or not, is a business. Going too long without a sale is stressful, but making a hefty profit is veritably euphoric.</description>
+		<description>It's important to trade and obtain wealth.</description>
 		<impact>Medium</impact>
 		<associatedMemes>
 			<li>VME_Trader</li>
@@ -40,12 +40,12 @@
 		<stages>
 			<li>
 				<label>recently traded</label>
-				<description>As usual, our products are flying off the shelves.</description>
+				<description>We traded recently, that's good.</description>
 				<baseMoodEffect>5</baseMoodEffect>
 			</li>
 			<li>
 				<label>no recent trades</label>
-				<description>No one wants to buy our product. I hope these quiet times will pass.</description>
+				<description>We haven't traded in a while.</description>
 				<baseMoodEffect>-5</baseMoodEffect>
 			</li>
 		</stages>

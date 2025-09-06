@@ -27,65 +27,12 @@
 						<li>FullHead</li>
 					</bodyPartGroupsMatchAny>
 					<requiredDefs>
-						<li>Apparel_Headwrap</li>
+						<li>Apparel_AuthorityCap</li>
 					</requiredDefs>
 				</requirement>
 			</li>
-			<li>
-				<requirement>
-					<bodyPartGroupsMatchAny>
-						<li>UpperHead</li>
-						<li>FullHead</li>
-					</bodyPartGroupsMatchAny>
-					<requiredDefs>
-						<li>Apparel_Broadwrap</li>
-					</requiredDefs>
-				</requirement>
-			</li>
-			<li>
-				<requirement>
-					<bodyPartGroupsMatchAny>
-						<li>Torso</li>
-						<li>Neck</li>
-						<li>Shoulders</li>
-						<li>Arms</li>
-						<li>Legs</li>
-					</bodyPartGroupsMatchAny>
-					<requiredDefs>
-						<li>Apparel_Robe</li>
-					</requiredDefs>
-				</requirement>
-			</li>
-			<li>
-				<requirement>
-					<bodyPartGroupsMatchAny>
-						<li>UpperHead</li>
-					</bodyPartGroupsMatchAny>
-					<requiredDefs>
-						<li>Apparel_HatHood</li>
-					</requiredDefs>
-				</requirement>
-			</li>
-			<li>
-				<requirement>
-					<bodyPartGroupsMatchAny>
-						<li>UpperHead</li>
-					</bodyPartGroupsMatchAny>
-					<requiredDefs>
-						<li>Apparel_BowlerHat</li>
-					</requiredDefs>
-				</requirement>
-			</li>
-			<li MayRequire="Ludeon.RimWorld.Royalty">
-				<requirement>
-					<bodyPartGroupsMatchAny>
-						<li>Torso</li>
-					</bodyPartGroupsMatchAny>
-					<requiredTags>
-						<li>Cape</li>
-					</requiredTags>
-				</requirement>
-			</li>
+		
+			
 		</roleApparelRequirements>
 		<roleApparelRequirementCountCurve>
 			<points>

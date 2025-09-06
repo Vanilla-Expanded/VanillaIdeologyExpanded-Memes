@@ -10,7 +10,7 @@
 		<defName>VME_Fire_Desired</defName>
 		<issue>VME_Fire</issue>
 		<label>desired</label>
-		<description>The warmth of ash, the light of embers, scintillating flame is an awesome sight to behold.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Colonists get moods bonuses depending on the number of active fires on the map. Campfires, torches, other vanilla fire sources and Stone Campfires from Vanilla Furniture Expanded - Core also count.</description>
+		<description>Flame is an awesome sight to behold.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Colonists get moods bonuses depending on the number of active fires on the map. Campfires, torches, other vanilla fire sources and Stone Campfires from Vanilla Furniture Expanded - Core also count.</description>
 		<impact>High</impact>
 		<displayOrderInIssue>50</displayOrderInIssue>
 		<displayOrderInImpact>100</displayOrderInImpact>
@@ -74,7 +74,7 @@
 		<defName>VME_Fire_Despised</defName>
 		<issue>VME_Fire</issue>
 		<label>despised</label>
-		<description>There is nothing as disgusting as an out of control fire. The flames shall be avoided by any means necessary, for their destructive power is unmatched.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Colonists get negative moods depending on the number of active fires on the map. Campfires, torches, other vanilla fire sources and Stone Campfires from Vanilla Furniture Expanded - Core also count.</description>
+		<description>There is nothing as dangerous as an out of control fire. Fires should be prevented by any means necessary.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Colonists get negative moods depending on the number of active fires on the map. Campfires, torches, other vanilla fire sources and Stone Campfires from Vanilla Furniture Expanded - Core also count.</description>
 		<impact>High</impact>
 		<displayOrderInIssue>40</displayOrderInIssue>
 		<displayOrderInImpact>100</displayOrderInImpact>

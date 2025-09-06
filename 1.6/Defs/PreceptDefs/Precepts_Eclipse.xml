@@ -4,7 +4,7 @@
 		<defName>VME_Eclipse_Despised</defName>
 		<issue>Eclipse</issue>
 		<label>despised</label>
-		<description>Eclipses are scary, a preternatural darkness bloating the light of the sun.</description>
+		<description>Eclipses are scary, surely a sign of worse things to come.</description>
 		<impact>Low</impact>
 		<requiredMemes>
 			<li>VME_Light</li>
@@ -29,7 +29,7 @@
 		<stages>
 			<li>
 				<label>disgusting eclipse</label>
-				<description>Eclipses are so scary! Where did the light go?</description>
+				<description>Eclipses are so scary. Where did the light go?</description>
 				<baseMoodEffect>-5</baseMoodEffect>
 			</li>
 		</stages>

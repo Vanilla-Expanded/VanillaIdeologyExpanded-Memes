@@ -7,7 +7,7 @@
     <defName>VME_InsectMeatEating_Sacrilegious</defName>
     <issue>InsectMeat</issue>
     <label>abhorrent</label>
-    <description>Eating the flesh of divine insects is vile and disgusting, even the idea of putting it near your mouth should be met with embarrassment.</description>
+    <description>Eating the flesh of insects is vile and disgusting.</description>
     <impact>Medium</impact>
     <displayOrderInIssue>50</displayOrderInIssue>
     <displayOrderInImpact>100</displayOrderInImpact>
@@ -35,7 +35,7 @@
     <defName>VME_InsectMeatEating_DontCare</defName>
     <issue>InsectMeat</issue>
     <label>don't care</label>
-    <description>Insect meat is just another type of meat. There are innumerable cultures in human history with a rich entomophagy tradition.</description>
+    <description>Insect meat is just another type of meat.</description>
     <impact>Medium</impact>
    
     <displayOrderInIssue>0</displayOrderInIssue>
@@ -53,7 +53,7 @@
     <stages>
       <li>
         <label>ate insect meat</label>
-        <description>I ate some insect meat. This is an act of sacrilege, how could I do this?</description>
+        <description>I ate some insect meat. Why did I do that?</description>
         <baseMoodEffect>-30</baseMoodEffect>
       </li>
     </stages>
@@ -67,7 +67,7 @@
     <stages>
       <li>
         <label>ate cooked insect meat</label>
-        <description>I ate a meal that contained insect meat. This is an act of sacrilege, how could I do this?</description>
+        <description>I ate a meal that contained insect meat. Why did I do that?</description>
         <baseMoodEffect>-30</baseMoodEffect>
       </li>
     </stages>

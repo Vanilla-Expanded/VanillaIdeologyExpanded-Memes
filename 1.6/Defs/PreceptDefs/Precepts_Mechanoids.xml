@@ -16,7 +16,7 @@
 		<defName>VME_Mechanoids_Exalted</defName>
 		<issue>VME_Mechanoids</issue>
 		<label>exalted</label>
-		<description>To destroy a child of machination is a short-sighted and foolish act.</description>
+		<description>To destroy a mechanoid is a short-sighted and foolish act.</description>
 		<impact>High</impact>
 		<displayOrderInIssue>50</displayOrderInIssue>
 		<displayOrderInImpact>100</displayOrderInImpact>
@@ -81,7 +81,7 @@
 			
 			<li>
 				<label>mechanoid destroyed</label>
-				<description>I have destroyed a mechanoid being, this is a victory!</description>
+				<description>I have destroyed a mechanoid. Good.</description>
 				<baseMoodEffect>4</baseMoodEffect>
 			</li>
 		</stages>

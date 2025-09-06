@@ -10,7 +10,7 @@
 		<defName>VME_TendQuality_Increased</defName>
 		<issue>VME_TendQuality</issue>
 		<label>increased</label>
-		<description>Our people are heavily encouraged to be diligent about healing and caring for each other. If we can’t take care of each other, how could we hope to survive this harsh world?</description>
+		<description>Tending wounds should be taken seriously.</description>
 		<impact>Medium</impact>
 		<associatedMemes>
 			<li>VME_Healthcare</li>

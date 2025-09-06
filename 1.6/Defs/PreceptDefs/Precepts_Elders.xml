@@ -10,7 +10,7 @@
 		<defName>VME_Elders_Despised</defName>
 		<issue>VME_Elders</issue>
 		<label>despised</label>
-		<description>What is this, a retirement home? Get out of my way, fossil!</description>
+		<description>What is this, a retirement home?</description>
 		<impact>Medium</impact>
 		<displayOrderInIssue>30</displayOrderInIssue>
 		<displayOrderInImpact>100</displayOrderInImpact>
@@ -43,7 +43,7 @@
 		<defName>VME_Elders_Respected</defName>
 		<issue>VME_Elders</issue>
 		<label>respected</label>
-		<description>True wisdom comes only with age, and those who have seen many seasons are to be venerated.</description>
+		<description>Our elders are to be respected.</description>
 		<impact>Medium</impact>
 		<displayOrderInIssue>40</displayOrderInIssue>
 		<displayOrderInImpact>100</displayOrderInImpact>

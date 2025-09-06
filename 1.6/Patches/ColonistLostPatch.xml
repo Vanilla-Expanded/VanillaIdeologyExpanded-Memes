@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-
-<Operation Class="PatchOperationConditional">
+	<Operation Class="PatchOperationConditional">
 		<success>Always</success>
 		<xpath>/Defs/ThoughtDef[@Name = "LostMemory"]/nullifyingPrecepts</xpath>
 		<nomatch Class="PatchOperationAdd">
@@ -13,13 +12,12 @@
 			</value>
 		</nomatch>
 		<match Class="PatchOperationAdd">
-		<xpath>/Defs/ThoughtDef[@Name = "LostMemory"]/nullifyingPrecepts</xpath>
+			<xpath>/Defs/ThoughtDef[@Name = "LostMemory"]/nullifyingPrecepts</xpath>
 			<value>
 				<li>VME_Death_DontCare</li>
 			</value>
 		</match>
 	</Operation>
-	
 	<Operation Class="PatchOperationConditional">
 		<success>Always</success>
 		<xpath>/Defs/ThoughtDef[@Name = "DeathMemory"]/nullifyingPrecepts</xpath>
@@ -32,13 +30,12 @@
 			</value>
 		</nomatch>
 		<match Class="PatchOperationAdd">
-		<xpath>/Defs/ThoughtDef[@Name = "DeathMemory"]/nullifyingPrecepts</xpath>
+			<xpath>/Defs/ThoughtDef[@Name = "DeathMemory"]/nullifyingPrecepts</xpath>
 			<value>
 				<li>VME_Death_DontCare</li>
 			</value>
 		</match>
 	</Operation>
-	
 	<Operation Class="PatchOperationConditional">
 		<success>Always</success>
 		<xpath>/Defs/ThoughtDef[defName = "WitnessedDeathAlly"]/nullifyingPrecepts</xpath>
@@ -57,7 +54,6 @@
 			</value>
 		</match>
 	</Operation>
-	
 	<Operation Class="PatchOperationConditional">
 		<success>Always</success>
 		<xpath>/Defs/ThoughtDef[defName = "WitnessedDeathNonAlly"]/nullifyingPrecepts</xpath>
@@ -76,7 +72,6 @@
 			</value>
 		</match>
 	</Operation>
-	
 	<Operation Class="PatchOperationConditional">
 		<success>Always</success>
 		<xpath>/Defs/ThoughtDef[defName = "WitnessedDeathFamily"]/nullifyingPrecepts</xpath>
@@ -95,7 +90,6 @@
 			</value>
 		</match>
 	</Operation>
-	
 	<Operation Class="PatchOperationConditional">
 		<success>Always</success>
 		<xpath>/Defs/ThoughtDef[defName = "WitnessedDeathBloodlust"]/nullifyingPrecepts</xpath>
@@ -114,7 +108,6 @@
 			</value>
 		</match>
 	</Operation>
-	
 	<Operation Class="PatchOperationConditional">
 		<success>Always</success>
 		<xpath>/Defs/ThoughtDef[defName = "KilledHumanlikeBloodlust"]/nullifyingPrecepts</xpath>
@@ -133,8 +126,4 @@
 			</value>
 		</match>
 	</Operation>
-	
-	
-
-
 </Patch>

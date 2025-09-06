@@ -15,7 +15,7 @@
 		<defName>VME_KillingWithFire_Preferred</defName>
 		<issue>VME_KillingWithFire</issue>
 		<label>preferred</label>
-		<description>To watch my enemies be burnt in sacred fire elates our kind like nothing else can.</description>
+		<description>Enemies should be burnt to death.</description>
 		<impact>Low</impact>
 		<displayOrderInIssue>50</displayOrderInIssue>
 		<displayOrderInImpact>100</displayOrderInImpact>
@@ -43,7 +43,7 @@
 			
 			<li>
 				<label>enemies burnt</label>
-				<description>Our enemies burnt in the holy flames.</description>
+				<description>Our enemies be engulfed by flame.</description>
 				<baseMoodEffect>5</baseMoodEffect>
 			</li>
 		</stages>
@@ -53,7 +53,7 @@
 		<defName>VME_KillingWithFire_Abhorrent</defName>
 		<issue>VME_KillingWithFire</issue>
 		<label>abhorrent</label>
-		<description>Watching a person burn to dead without trying to help is horrible, and should be avoided at all costs.</description>
+		<description>Watching a person burn to death is horrible.</description>
 		<impact>Low</impact>
 		<displayOrderInIssue>40</displayOrderInIssue>
 		<displayOrderInImpact>100</displayOrderInImpact>
@@ -76,7 +76,7 @@
 			
 			<li>
 				<label>enemies burnt</label>
-				<description>Our enemies burnt to death and we were unable to avoid their gruesome deaths.</description>
+				<description>I watched a person get burnt to death, they didn't deserve that.</description>
 				<baseMoodEffect>-5</baseMoodEffect>
 			</li>
 		</stages>

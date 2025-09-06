@@ -8,7 +8,7 @@
     <defName>VME_Raiding_Honorable</defName>
     <issue>Raiding</issue>
     <label>honorable</label>
-    <description>We display our strength and perseverance through conquest, and in doing so we bring honor to our colony.</description>
+    <description>Strength and honor can be achieved by raiding other settlements.</description>
     <impact>Low</impact>
     <displayOrderInIssue>20</displayOrderInIssue>
     <displayOrderInImpact>1000</displayOrderInImpact>
@@ -58,7 +58,7 @@
       </li>
       <li>
         <label>no recent conquest</label>
-        <description>It's been far too long since we raided anyone. Through conquest, we bring honor to our colony.</description>
+        <description>It's been far too long since we raided anyone, we should attack a settlement soon.</description>
         <baseMoodEffect>-4</baseMoodEffect>
       </li>
     </stages>
@@ -68,7 +68,7 @@
     <defName>VME_Raiding_Abhorrent</defName>
     <issue>Raiding</issue>
     <label>abhorrent</label>
-    <description>We worked hard for what we have, we cannot take from the weak as we too were once weak. Doing so is a tremendous shame.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Any raid will trigger this precept. Even those with a defensive focus such as problem causers. Yes, it's tough.</description>
+    <description>It is shameful to attack or take from those weaker than you.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Any raid will trigger this precept. Even those with a defensive focus such as problem causers. Yes, it's tough.</description>
     <impact>High</impact>
     <displayOrderInIssue>40</displayOrderInIssue>
     <displayOrderInImpact>1000</displayOrderInImpact>
@@ -99,7 +99,7 @@
     <stages>
       <li>
         <label>participated in raid</label>
-        <description>I participated in a raid. How could we do that? It's horribly shameful!</description>
+        <description>I participated in a raid. How could I do that? I'm ashamed.</description>
         <baseMoodEffect>-30</baseMoodEffect>
       </li>
     </stages>
@@ -117,7 +117,7 @@
       </li>
       <li>
         <label>no recent conquest</label>
-        <description>It's been a long since we raided anyone. This is as it should be, we are not bullies.</description>
+        <description>It's been a long time since we raided anyone. This is as it should be, we are not bullies.</description>
         <baseMoodEffect>6</baseMoodEffect>
       </li>
     </stages>

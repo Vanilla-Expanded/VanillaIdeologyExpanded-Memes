@@ -15,7 +15,7 @@
 		<defName>VME_Violence_Honorable</defName>
 		<issue>VME_Violence</issue>
 		<label>honorable</label>
-		<description>Harming innocents is an honorable necessity on the Rim, it proves our strength and our resolve.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Colonists will receive a positive mood if they are forced to attack non-hostile humanoid targets.</description>
+		<description>Committing acts of violence is honorable.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Colonists will receive a positive mood if they are forced to attack non-hostile humanoid targets.</description>
 		<impact>Medium</impact>
 		<displayOrderInIssue>20</displayOrderInIssue>
 		<displayOrderInImpact>100</displayOrderInImpact>
@@ -35,7 +35,7 @@
 		<stages>
 			<li>
 				<label>attacked person</label>
-				<description>I have used deadly force on an adversary. This proves our strength and our resolve.</description>
+				<description>I used deadly force on an adversary.</description>
 				<baseMoodEffect>5</baseMoodEffect>
 			</li>
 		</stages>
@@ -54,7 +54,7 @@
 		<defName>VME_Violence_Disapproved</defName>
 		<issue>VME_Violence</issue>
 		<label>disapproved</label>
-		<description>We should avoid harming innocents if possible. Attacking a harmless person is immoral. \n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Colonists will receive a negative mood if they are forced to attack non-hostile humanoid targets.</description>
+		<description>Attacking a harmless person is immoral. \n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Colonists will receive a negative mood if they are forced to attack non-hostile humanoid targets.</description>
 		<impact>Medium</impact>
 		<displayOrderInIssue>40</displayOrderInIssue>
 		<displayOrderInImpact>100</displayOrderInImpact>
@@ -74,7 +74,7 @@
 		<stages>
 			<li>
 				<label>attacked person</label>
-				<description>I have used deadly force on an adversary. This is wrong.</description>
+				<description>I used deadly force on an adversary.</description>
 				<baseMoodEffect>-5</baseMoodEffect>
 			</li>
 		</stages>
@@ -84,7 +84,7 @@
 		<defName>VME_Violence_Abhorrent</defName>
 		<issue>VME_Violence</issue>
 		<label>abhorrent</label>
-		<description>To shed blood or break bone is barbaric and disgusting. \n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Colonists will receive a substantial negative mood if they are forced to attack non-hostile humanoid targets.\n - The only mental break allowed is psychotic wander.\n - All drafted colonists will undraft if an attacking enemy starts fleeing.</description>
+		<description>To resort to deadly forcee is barbaric and disgusting, it should never be allowed. \n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Colonists will receive a substantial negative mood if they are forced to attack non-hostile humanoid targets.\n - The only mental break allowed is psychotic wander.\n - All drafted colonists will undraft if an attacking enemy starts fleeing.</description>
 		<impact>High</impact>
 		<displayOrderInIssue>50</displayOrderInIssue>
 		<displayOrderInImpact>100</displayOrderInImpact>
@@ -106,7 +106,7 @@
 		<stages>
 			<li>
 				<label>attacked person</label>
-				<description>I have used deadly force on an adversary. It brings great shame.</description>
+				<description>I used deadly force on an adversary. I'm so ashamed.</description>
 				<baseMoodEffect>-30</baseMoodEffect>
 			</li>
 		</stages>

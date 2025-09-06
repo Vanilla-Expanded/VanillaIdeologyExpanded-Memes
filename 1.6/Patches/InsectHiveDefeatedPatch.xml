@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThoughtDef[@Name = "DefeatedInsectHive"]/nullifyingPrecepts</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThoughtDef[@Name = "DefeatedInsectHive"]</xpath>
+			<value>
+				<nullifyingPrecepts>
+					<li>VME_Insectoids_Exalted</li>
+				</nullifyingPrecepts>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThoughtDef[@Name = "DefeatedInsectHive"]/nullifyingPrecepts</xpath>
+			<value>
+				<li>VME_Insectoids_Exalted</li>
+			</value>
+		</match>
+	</Operation>
+</Patch>

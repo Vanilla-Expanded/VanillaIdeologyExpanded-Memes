@@ -368,6 +368,7 @@
     <Compile Include="Harmony\JobDriver_ConvertPrisoner_MakeNewToils.cs" />
     <Compile Include="Harmony\JobGiver_OptimizeApparel_ApparelScoreGain.cs" />
     <Compile Include="Harmony\JoyUtility_JoyTickCheckEnd.cs" />
+    <Compile Include="Harmony\Thing_PreSwapMap.cs" />
     <Compile Include="Harmony\VFEAncientPatches\PreceptPatches.cs" />
     <Compile Include="Harmony\SocialInteractionUtility_CanReceiveInteraction.cs" />
     <Compile Include="Harmony\LordJob_Joinable_Party_AttendeeThought.cs" />

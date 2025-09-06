@@ -9,7 +9,7 @@
 		<defName>VME_Slavery_Forbidden</defName>
 		<issue>Slavery</issue>
 		<label>forbidden</label>
-		<description>Participating in slave trade is an absolutely vile idea. The only reason to purchase a slave is with intent to immediately free them. Moreso, those who struggled through enslavement deserve our compassion and respect.</description>
+		<description>Slavery is a forbidden practice, and slaves deserve our respect. The only reason to purchase a slave is with intent to immediately free them.</description>
 		<impact>High</impact>
 		<displayOrderInIssue>50</displayOrderInIssue>
 		<displayOrderInImpact>1000</displayOrderInImpact>   

@@ -11,7 +11,7 @@
 		<defName>VME_Corruption_Essential</defName>
 		<issue>VME_Corruption</issue>
 		<label>essential</label>
-		<description>It is by the hand of an omniscient and all-powerful ancient god that we are threatened. Let us partake in an ever-obscuring, ritualistic way of life, that it may shield us from such baneful judgements.</description>
+		<description>It is important to embrace the gifts of our dark god.</description>
 		<impact>High</impact>
 		<displayOrderInIssue>50</displayOrderInIssue>
 		<displayOrderInImpact>100</displayOrderInImpact>

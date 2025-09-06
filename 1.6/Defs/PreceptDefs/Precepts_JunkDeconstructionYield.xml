@@ -11,7 +11,7 @@
 		<defName>VME_JunkDeconstructionYield_High</defName>
 		<issue>VME_JunkDeconstructionYield</issue>
 		<label>high</label>
-		<description>To throw away that which could be reused is utterly wasteful, every last shred of leather or fragment of steel can be repurposed.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Deconstructing a building returns 100% of its original materials. This also applies to destroying a building (as long as the building produces resources when destroyed), and when failing to construct it.</description>
+		<description>To throw away that which could be reused is utterly wasteful, everything can be repurposed.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Deconstructing a building returns 100% of its original materials. This also applies to destroying a building (as long as the building produces resources when destroyed), and when failing to construct it.</description>
 		<impact>Medium</impact>
 		<displayOrderInIssue>50</displayOrderInIssue>
 		<displayOrderInImpact>100</displayOrderInImpact>

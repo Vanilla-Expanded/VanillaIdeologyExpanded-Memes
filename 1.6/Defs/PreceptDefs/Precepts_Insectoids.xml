@@ -16,7 +16,7 @@
 		<defName>VME_Insectoids_Exalted</defName>
 		<issue>VME_Insectoids</issue>
 		<label>exalted</label>
-		<description>Insects are not our enemies, only misunderstood and they certainly don’t deserve our aggression.</description>
+		<description>Insects are not our enemies, only misunderstood.</description>
 		<impact>High</impact>
 		<displayOrderInIssue>50</displayOrderInIssue>
 		<displayOrderInImpact>100</displayOrderInImpact>
@@ -46,7 +46,7 @@
 			
 			<li>
 				<label>insectoid slain</label>
-				<description>I have killed an insectoid being, this is a stain on my soul.</description>
+				<description>I have killed an insectoid being, I feel bad.</description>
 				<baseMoodEffect>-10</baseMoodEffect>
 			</li>
 		</stages>
@@ -81,7 +81,7 @@
 			
 			<li>
 				<label>insectoid slain</label>
-				<description>I have killed an insectoid being, this is a victory!</description>
+				<description>I killed an insectoid being. Good.</description>
 				<baseMoodEffect>4</baseMoodEffect>
 			</li>
 		</stages>

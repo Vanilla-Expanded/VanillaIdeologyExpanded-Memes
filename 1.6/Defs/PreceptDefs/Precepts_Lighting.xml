@@ -5,7 +5,7 @@
 		<defName>VME_Darklight_NormalPreferred</defName>
 		<issue>Lighting</issue>
 		<label>normal preferred</label>
-		<description>Darklight is an unnatural and cheap imitation of the miracle that is light, and should be avoided.</description>
+		<description>Darklight is an unnatural and cheap imitation of true light, and should be avoided.</description>
 		<impact>Low</impact>
 		<displayOrderInIssue>-10</displayOrderInIssue>
 		<associatedMemes>
@@ -29,7 +29,7 @@
 		<defName>VME_DarknessCombat_Despised</defName>
 		<issue>DarknessCombat</issue>
 		<label>despised</label>
-		<description>Beyond being difficult to fight in, bloodshed should never take place in darkness, lest the enemy be spared peering into your eyes before you end their lives.</description>
+		<description>Beyond being difficult to fight in, bloodshed should never take place in darkness.</description>
 		<impact>High</impact>
 		<displayOrderInIssue>10</displayOrderInIssue>
 		<displayOrderInImpact>100</displayOrderInImpact>

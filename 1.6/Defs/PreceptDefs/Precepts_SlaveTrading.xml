@@ -17,7 +17,7 @@
 		<defName>VME_SlaveTrading_OnlyBuying</defName>
 		<issue>VME_SlaveTrading</issue>
 		<label>only buying</label>
-		<description>Only buying slaves is justifiable, after which we should provide them amicable amounts of lodging and consideration within our colony. By selling a slave one leaves their fate up to the good faith of their buyer, a very unwise decision.</description>
+		<description>Slaves should only be bought, not sold.</description>
 		<impact>Medium</impact>
 		<displayOrderInIssue>50</displayOrderInIssue>
 		<displayOrderInImpact>1000</displayOrderInImpact>   
@@ -80,7 +80,7 @@
 		<doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
 		<stages>
 			<li>
-				<label>we sold a slave!</label>
+				<label>we sold a slave</label>
 				<description>We took part in the horrible act of slave trading. What a disgrace.</description>
 				<baseMoodEffect>-20</baseMoodEffect>
 			</li>
@@ -94,8 +94,8 @@
 
 		<stages>
 			<li>
-				<label>bought a slave!</label>
-				<description>We have bought a slave from evil slave traders!</description>
+				<label>bought a slave</label>
+				<description>We have bought a slave from wicked slave traders.</description>
 				<baseMoodEffect>5</baseMoodEffect>
 			</li>
 		</stages>

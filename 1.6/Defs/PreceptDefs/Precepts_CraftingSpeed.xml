@@ -36,7 +36,7 @@
     <defName>VME_CraftingSpeed_SlowerForManual</defName>
     <issue>VME_CraftingSpeed</issue>
     <label>slower for manual</label>
-    <description>Manual processes are unefficient. We can't waste our precious lives toiling away in mindless manual labour.\n\n&lt;color=#E5E54C&gt;Stats:&lt;/color&gt;\n - Non-electric work table speed: -25%.</description>
+    <description>We should not waste our precious lives toiling away in mindless manual labour.\n\n&lt;color=#E5E54C&gt;Stats:&lt;/color&gt;\n - Non-electric work table speed: -25%.</description>
     <impact>Medium</impact>
     <associatedMemes>
      

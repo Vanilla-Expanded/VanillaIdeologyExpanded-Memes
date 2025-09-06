@@ -10,7 +10,7 @@
 		<defName>VME_TatteredApparel_DontCare</defName>
 		<issue>VME_TatteredApparel</issue>
 		<label>don't care</label>
-		<description>We have bigger concerns to address than holes in our clothes, let's not waste our valuable time fretting or lamenting about such trivialities.</description>
+		<description>There is nothing wrong about wearing tattered clothing.</description>
 		<impact>Medium</impact>
 		<displayOrderInIssue>50</displayOrderInIssue>
 		<displayOrderInImpact>100</displayOrderInImpact>
@@ -22,7 +22,7 @@
 		<defName>VME_TatteredApparel_Disapproved</defName>
 		<issue>VME_TatteredApparel</issue>
 		<label>disapproved</label>
-		<description>Wearing ratty clothes is uncomfortable and should be avoided.</description>
+		<description>Wearing tattered clothing is a trashy practice.</description>
 		<impact>Low</impact>
 		<defaultSelectionWeight>1</defaultSelectionWeight>
 		<displayOrderInIssue>40</displayOrderInIssue>		
@@ -31,7 +31,7 @@
 		<defName>VME_TatteredApparel_Abhorrent</defName>
 		<issue>VME_TatteredApparel</issue>
 		<label>abhorrent</label>
-		<description>Ratty clothes are disgusting and should be discarded as soon as possible.</description>
+		<description>Wearing tattered clothing is an incredibly trashy practice.</description>
 		<impact>Medium</impact>
 		<displayOrderInIssue>30</displayOrderInIssue>	
 		<comps>

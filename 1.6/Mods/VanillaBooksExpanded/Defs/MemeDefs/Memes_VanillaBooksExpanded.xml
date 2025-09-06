@@ -5,7 +5,7 @@
 		<defName>VME_Cultured</defName>
 		<label>cultured</label>
 		
-		<description>Reading and passing one's knowledge on is a most scholarly mission, and should be most enthused over.</description>
+		<description>Reading and passing on knowledge is a most scholarly mission.</description>
 		<iconPath>UI/Memes/Cultured</iconPath>
 		<groupDef>Misc</groupDef>
 		<impact>1</impact>

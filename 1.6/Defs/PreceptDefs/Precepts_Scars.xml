@@ -11,7 +11,7 @@
 		<defName>VME_Scars_Honorable</defName>
 		<issue>VME_Scars</issue>
 		<label>honorable</label>
-		<description>Scars are marks of honor and strength, to be scarred and continue on is nothing short of an incredible act.</description>
+		<description>To be scarred and continue on is nothing short of an incredible act.</description>
 		<impact>Low</impact>
 		<displayOrderInIssue>50</displayOrderInIssue>
 		<displayOrderInImpact>100</displayOrderInImpact>

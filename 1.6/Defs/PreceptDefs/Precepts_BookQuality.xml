@@ -11,7 +11,7 @@
 		<defName>VME_BookQuality_Desired</defName>
 		<issue>VME_BookQuality</issue>
 		<label>desired</label>
-		<description>There is nothing that would make us happier than acquiring exquisite tomes of knowledge for our colony.</description>
+		<description>There is nothing that would make us happier than acquiring legendary books for our colony.</description>
 		<impact>Low</impact>
 		<displayOrderInIssue>0</displayOrderInIssue>
 		
@@ -61,7 +61,7 @@
 			</li>
 			<li>
 				<label>many legendary books in colony</label>
-				<description>We have amassed quite a lot of legendary literature!</description>
+				<description>We have amassed quite a lot of legendary literature.</description>
 				<baseMoodEffect>5</baseMoodEffect>
 			</li>
 			

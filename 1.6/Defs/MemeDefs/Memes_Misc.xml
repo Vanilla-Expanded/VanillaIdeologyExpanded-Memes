@@ -15,7 +15,7 @@
 			<li>VME_IndustrialismVsViolent</li>
 			<li>VME_EmancipationVsViolentConversion</li>
 		</exclusionTags>
-		<description>Infidels can choose to adopt our beliefs, or die.</description>
+		<description>It is our duty to spread our beliefs, even by force.</description>
 		<iconPath>UI/Memes/ViolentConversion</iconPath>
 		<groupDef>VME_Proselytism</groupDef>
 		<impact>2</impact>
@@ -111,7 +111,7 @@
 	<MemeDef>
 		<defName>VME_Astrology</defName>
 		<label>astrology</label>
-		<description>A careful examination of the stars will unlock mystical powers far beyond our wildest imagination.</description>
+		<description>We are guided by the stars.</description>
 		<iconPath>UI/Memes/Astrology</iconPath>
 		<groupDef>Misc</groupDef>
 		<impact>1</impact>
@@ -205,7 +205,7 @@
 		<defName>VME_GodEmperor</defName>
 		<label>god emperor</label>
 		<groupDef>Misc</groupDef>
-		<description>Our leader must be worshipped as a living God, a physical manifestation of our ideals and precepts.</description>
+		<description>Our leader must be worshipped as a living God.</description>
 		<iconPath>UI/Memes/GodEmperor</iconPath>
 		<exclusionTags>
 			<li>VME_GodEmperor</li>
@@ -281,7 +281,7 @@
 		<defName>VME_HardcoreIndustrialism</defName>
 		<label>industrialism</label>
 		<groupDef>Misc</groupDef>
-		<description>Work gives a man dignity. Only through hard work and being productive can a person really grow.</description>
+		<description>Work gives a man dignity, being productive is our duty.</description>
 		<iconPath>UI/Memes/HardcoreIndustrialism</iconPath>
 		<impact>2</impact>
 		<exclusionTags>
@@ -372,7 +372,7 @@
 	<MemeDef>
 		<defName>VME_Gestalt</defName>
 		<label>gestalt</label>
-		<description>There shouldn't even be such a thing as individualism. By acting in perfect synchrony, our society will be more than the sum of its parts.</description>
+		<description>Each person should be in perfect synchronicity. People should achieve consensus and come to agreement.</description>
 		<iconPath>UI/Memes/Gestalt</iconPath>
 		<allowDuringTutorial>true</allowDuringTutorial>
 		<groupDef>Individualism</groupDef>
@@ -455,7 +455,7 @@
 	<MemeDef>
 		<defName>VME_Fleshcrafters</defName>
 		<label>fleshcrafting</label>
-		<description>Technology should be shunned, unless it serves the flesh. Only through extreme biological experimentation may we unlock our hidden potential.</description>
+		<description>Only through extreme biological experimentation may we unlock our hidden potential.</description>
 		<iconPath>UI/Memes/Fleshcrafting</iconPath>
 		<groupDef>Misc</groupDef>
 		<impact>3</impact>
@@ -572,7 +572,7 @@
 	<MemeDef>
 		<defName>VME_HolyDiseases</defName>
 		<label>holy diseases</label>
-		<description>To be touched by pestilence is a boon to be coveted. As diseases spread, so too shall our influence.</description>
+		<description>Sickness is a blesting, and should be considered a gift.</description>
 		<iconPath>UI/Memes/HolyDiseases</iconPath>
 		<groupDef>Misc</groupDef>
 		<exclusionTags>
@@ -671,7 +671,7 @@
 	<MemeDef>
 		<defName>VME_CraftCulture</defName>
 		<label>craft culture</label>
-		<description>One should aspire to feel the ache in their fingers after a long day of craft. A talented blacksmith or tailor is to be dignified.</description>
+		<description>Crafting is an essential part of our culture, and we treat it with great respect.</description>
 		<iconPath>UI/Memes/CraftCulture</iconPath>
 		<groupDef>Misc</groupDef>
 		<impact>2</impact>
@@ -776,7 +776,7 @@
 	<MemeDef>
 		<defName>VME_Progressive</defName>
 		<label>progressive</label>
-		<description>Machines, factories, drones, a goal to any successful community should be optimizing these devices and shunning the idea of sentient beings performing tasks normally meant for them.</description>
+		<description>We should use automation to do our work, people should not do work normally meant for machines.</description>
 		<iconPath>UI/Memes/Progressive</iconPath>
 		<groupDef>Misc</groupDef>
 		<impact>1</impact>
@@ -936,7 +936,7 @@
 	<MemeDef>
 		<defName>VME_Republic</defName>
 		<label>republic</label>
-		<description>Power must be balanced between a select few, lest any settlement or empire fall to inevitable corruption.</description>
+		<description>No one person should lead, leadership must be balanced between a select few.</description>
 		<iconPath>UI/Memes/Republic</iconPath>
 		<groupDef>Misc</groupDef>
 		<impact>1</impact>
@@ -1015,7 +1015,7 @@
 	<MemeDef>
 		<defName>VME_ExaltedPriesthood</defName>
 		<label>exalted priesthood</label>
-		<description>Our leader must also be our prophet, and it’s important that we heed their advice.</description>
+		<description>Our leader must also be our prophet, and it’s important that we honor them.</description>
 		<iconPath>UI/Memes/ExaltedPriesthood</iconPath>
 		<groupDef>Misc</groupDef>
 		<exclusionTags>
@@ -1096,7 +1096,7 @@
 	<MemeDef>
 		<defName>VME_Scrapper</defName>
 		<label>scrapper</label>
-		<description>Nothing should ever be wasted, not even bloodied or torn clothes. Discarded remains of old civilizations should be kept as treasures and reminders.</description>
+		<description>Materials should not be wasted, it's important to scrap and scavenge carefully.</description>
 		<iconPath>UI/Memes/Scrapper</iconPath>
 		<groupDef>Misc</groupDef>
 		<impact>3</impact>
@@ -1195,7 +1195,7 @@
 	<MemeDef>
 		<defName>VME_Trader</defName>
 		<label>trader</label>
-		<description>With wealth comes power, going too long without profit means going too long without securing one’s position of power.</description>
+		<description>With wealth comes power, generating profit is an important part of life.</description>
 		<iconPath>UI/Memes/Trader</iconPath>
 		<groupDef>Misc</groupDef>
 		<impact>2</impact>
@@ -1294,7 +1294,7 @@
 	<MemeDef>
 		<defName>VME_Elders</defName>
 		<label>elders</label>
-		<description>Age and wisdom often come in tandem, our wise and elderly should be respected on that premise alone and should not be expected to toil.</description>
+		<description>The elderly should be respected and we should consider their wisdom.</description>
 		<iconPath>UI/Memes/Elders</iconPath>
 		<groupDef>Misc</groupDef>
 		<impact>1</impact>
@@ -1373,7 +1373,7 @@
 	<MemeDef>
 		<defName>VME_Vegan</defName>
 		<label>vegan</label>
-		<description>Eating meat is barbaric and uncouth, better eaten are the fruits of hard labor and ever-giving soil.</description>
+		<description>Eating plants is the right way; raising animals to eat is not.</description>
 		<iconPath>UI/Memes/Vegan</iconPath>
 		<groupDef>Misc</groupDef>
 		<impact>3</impact>
@@ -1472,7 +1472,7 @@
 	<MemeDef>
 		<defName>VME_Egalitarian</defName>
 		<label>egalitarian</label>
-		<description>Bigotry is absolutely to never be tolerated, helping those in need and respecting their beliefs are rewards in and of themselves.</description>
+		<description>Our people and others deserve equality and respect.</description>
 		<iconPath>UI/Memes/Egalitarian</iconPath>
 		<groupDef>GroupRelation</groupDef>
 		<impact>1</impact>
@@ -1566,7 +1566,7 @@
 	<MemeDef>
 		<defName>VME_Pacifist</defName>
 		<label>pacifist</label>
-		<description>While defending oneself is acceptable, we have come too far and evolved too much to ever endorse the premise of warfare or slavery. Even tantrums should only manifest in forms that do not harm others or property.</description>
+		<description>Violence should be discouraged, pacifism is the right way.</description>
 		<iconPath>UI/Memes/Pacifist</iconPath>
 		<groupDef>Misc</groupDef>
 		<exclusionTags>
@@ -1657,7 +1657,7 @@
 	<MemeDef>
 		<defName>VME_FireWorship</defName>
 		<label>fire worship</label>
-		<description>Holy flame breathes life into this planet and many others like it, may it guide us to salvation and may it reduce our enemies to ash.</description>
+		<description>Flame should be revered.</description>
 		<iconPath>UI/Memes/FireWorship</iconPath>
 		<groupDef>Misc</groupDef>
 		<impact>3</impact>
@@ -1757,7 +1757,7 @@
 	<MemeDef>
 		<defName>VME_Bushido</defName>
 		<label>bushido</label>
-		<description>A warrior's code of honor means striking down one’s foes unto death itself. Should one’s spirit falter and cowardice prevail, forgiveness can only be found in the afterlife.</description>
+		<description>Honor can be found in combat, and displays of courage.</description>
 		<iconPath>UI/Memes/Bushido</iconPath>
 		<groupDef>Misc</groupDef>
 		<impact>2</impact>
@@ -1849,7 +1849,7 @@
 	<MemeDef>
 		<defName>VME_Light</defName>
 		<label>light</label>
-		<description>Darkness obscures one’s vision as well as one’s mind, darklight is a wicked occurrence and is not to be condoned.</description>
+		<description>We should be guided by the light, darklight is a wicked thing.</description>
 		<iconPath>UI/Memes/Light</iconPath>
 		<groupDef>Misc</groupDef>
 		<impact>2</impact>
@@ -1936,7 +1936,7 @@
 	<MemeDef>
 		<defName>VME_Nomad</defName>
 		<label>nomad</label>
-		<description>Stagnation is death and as with all things in this world, homes are only temporary. Traveling this world and walking roads unwalked always leads to greater things.</description>
+		<description>Travel is important to our kind, it is unwise to remain stationary.</description>
 		<iconPath>UI/Memes/Nomad</iconPath>
 		<groupDef>Misc</groupDef>
 		<exclusionTags>
@@ -2023,7 +2023,7 @@
 	<MemeDef>
 		<defName>VME_BloodCourt</defName>
 		<label>blood court</label>
-		<description>Our leader should be a talented melee fighter and brutal warrior, only usurped by one greater. Bloodshed, corpses, scars are a part of life and a show of strength on this planet.</description>
+		<description>Combat is an honorable and brutal practice.</description>
 		<iconPath>UI/Memes/BloodCourt</iconPath>
 		<groupDef>Misc</groupDef>
 		<impact>3</impact>
@@ -2117,7 +2117,7 @@
 	<MemeDef>
 		<defName>VME_CityBuilders</defName>
 		<label>city builders</label>
-		<description>Our home should feature all the accommodations of a great city, homes, workshops, and places of leisure should all be present and accessible by all.</description>
+		<description>Building is important to our kind, it is unwise to travel. We should build our home like a city.</description>
 		<iconPath>UI/Memes/CityBuilders</iconPath>
 		<groupDef>Misc</groupDef>
 		<exclusionTags>
@@ -2194,7 +2194,7 @@
 	<MemeDef>
 		<defName>VME_MechanoidSupremacy</defName>
 		<label>mechanoid supremacy</label>
-		<description>Never tire, never wither, never need for sustenance. Mechanoids are humanity perfected and should be revered as our superiors.</description>
+		<description>Mechanoids are better than humanity in all ways, and should be considered as our superiors.</description>
 		<iconPath>UI/Memes/MechanoidSupremacy</iconPath>
 		<groupDef>Misc</groupDef>
 		<impact>2</impact>
@@ -2284,7 +2284,7 @@
 	<MemeDef>
 		<defName>VME_InsectoidSupremacy</defName>
 		<label>insectoid supremacy</label>
-		<description>The labyrinthine tunnels of the underdark ungulate with a seemingly limitless hive of relentless and brutal insects, we should not fear them, we should revere them.</description>
+		<description>Insectoids are better than humanity in all ways, and should be considered as our superiors.</description>
 		<iconPath>UI/Memes/InsectoidSupremacy</iconPath>
 		<groupDef>Misc</groupDef>
 		<exclusionTags>
@@ -2374,7 +2374,7 @@
 	<MemeDef>
 		<defName>VME_PartyLife</defName>
 		<label>party life</label>
-		<description>Let us toast to the acts of dance, drink and debauchery. Any free time is a good time, but party time is the best time.</description>
+		<description>Life is too short not to enjoy every celebration.</description>
 		<iconPath>UI/Memes/PartyLife</iconPath>
 		<groupDef>Misc</groupDef>
 		<impact>2</impact>
@@ -2456,7 +2456,7 @@
 	<MemeDef>
 		<defName>VME_Anonymity</defName>
 		<label>anonymity</label>
-		<description>Knowing the names, faces, and backgrounds of your fellow colonists can be both a blessing and a curse.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Anonymity severely affects both prisoner and slave interactions: wardens with the anonymity meme will get angry when they have to interact with prisoners. Slaves with the anonymity meme can't be suppressed by wardens, as they will ignore the social interaction. Long story short, don't use an ideo with this meme if you are planning on having lots of prisoners or slaves!</description>
+		<description>It is better not to know your own kind and remain distant.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Anonymity severely affects both prisoner and slave interactions: wardens with the anonymity meme will get angry when they have to interact with prisoners. Slaves with the anonymity meme can't be suppressed by wardens, as they will ignore the social interaction. Long story short, don't use an ideo with this meme if you are planning on having lots of prisoners or slaves!</description>
 		<iconPath>UI/Memes/Anonymity</iconPath>
 		<groupDef>Misc</groupDef>
 		<impact>2</impact>
@@ -2545,7 +2545,7 @@
 	<MemeDef>
 		<defName>VME_Emancipation</defName>
 		<label>emancipation</label>
-		<description>It’s not enough to simply not participate in slavery, we should actively work to fight against those who dare to enslave others and free those who have suffered such inhumanities.</description>
+		<description>People should never be enslaved, and all slaves should be freed.</description>
 		<iconPath>UI/Memes/InwardPerfection</iconPath>
 		<groupDef>GroupRelation</groupDef>
 		<impact>1</impact>
@@ -2634,7 +2634,7 @@
 	<MemeDef>
 		<defName>VME_Nationalist</defName>
 		<label>nationalist</label>
-		<description>Insubordination and dissent should be quenched to make space for a strong sense of nationalistic pride.</description>
+		<description>Our people have a strong sense of patriotism, we have a duty to correct dissenters and deliver justice.</description>
 		<iconPath>UI/Memes/Nationalist</iconPath>
 		<groupDef>GroupRelation</groupDef>
 		<impact>1</impact>
@@ -2733,7 +2733,7 @@
 	<MemeDef>
 		<defName>VME_Healthcare</defName>
 		<label>healthcare</label>
-		<description>The wellbeing of our bodies and minds is something our people take very seriously. It’s important that we look out for each other and tend to the wounds of our friends and family alike.</description>
+		<description>The wellbeing of our bodies and minds is something our people take very seriously.</description>
 		<iconPath>UI/Memes/Healthcare</iconPath>
 		<groupDef>Misc</groupDef>
 		<impact>2</impact>
@@ -2819,7 +2819,7 @@
 	<MemeDef>
 		<defName>VFEA_Isolationist</defName>
 		<label>isolationist</label>
-		<description>Trust is a resource in low supply, as everyone we meet is the enemy.</description>
+		<description>Trust is a resource in low supply, everyone our people meet is an enemy.</description>
 		<iconPath>UI/Memes/Isolationist</iconPath>
 		<groupDef>GroupRelation</groupDef>
 		<impact>3</impact>
