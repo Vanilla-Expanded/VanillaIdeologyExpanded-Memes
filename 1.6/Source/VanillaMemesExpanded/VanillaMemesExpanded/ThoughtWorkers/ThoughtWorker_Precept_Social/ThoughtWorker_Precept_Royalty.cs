@@ -9,7 +9,7 @@ namespace VanillaMemesExpanded
         protected override ThoughtState ShouldHaveThought(Pawn p, Pawn otherPawn)
         {
 
-            if (Faction.OfEmpire is null ||  otherPawn.royalty.AllTitlesForReading.Count == 0)
+            if (Faction.OfEmpire is null ||  otherPawn is null || otherPawn.royalty.AllTitlesForReading.Count == 0)
             {
                 return false;
             }
