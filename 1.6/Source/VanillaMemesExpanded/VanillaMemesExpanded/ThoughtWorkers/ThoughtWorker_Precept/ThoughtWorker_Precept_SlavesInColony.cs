@@ -8,7 +8,7 @@ namespace VanillaMemesExpanded
 	{
 		protected override ThoughtState ShouldHaveThought(Pawn p)
 		{
-			
+			if (p.Faction is null) { return false; }
 			return FactionUtility.GetSlavesInFactionCount(p.Faction) > 0;
 		}
 	}
