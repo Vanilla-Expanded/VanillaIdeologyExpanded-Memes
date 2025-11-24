@@ -36,7 +36,7 @@
     <defName>VME_CraftingSpeed_SlowerForManual</defName>
     <issue>VME_CraftingSpeed</issue>
     <label>slower for manual</label>
-    <description>We should not waste our precious lives toiling away in mindless manual labour.\n\n&lt;color=#E5E54C&gt;Stats:&lt;/color&gt;\n - Non-electric work table speed: -25%.</description>
+    <description>We should not waste our precious lives toiling away in mindless manual labour.\n\n&lt;color=#E5E54C&gt;Stats:&lt;/color&gt;\n - Non-electric work table speed: x75%.</description>
     <impact>Medium</impact>
     <associatedMemes>
      
@@ -47,6 +47,15 @@
    
   </PreceptDef>
 
+   <PreceptDef>
+    <defName>VME_CraftingSpeed_FasterForManual</defName>
+    <issue>VME_CraftingSpeed</issue>
+    <label>faster for manual</label>
+    <description>Manual labour is our expertise and we enjoy engaging in it.\n\n&lt;color=#E5E54C&gt;Stats:&lt;/color&gt;\n - Non-electric work table speed: x125%.</description>
+    <impact>Medium</impact>
+    
  
+   
+  </PreceptDef>
 
 </Defs>

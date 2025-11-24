@@ -474,6 +474,7 @@
     <Compile Include="StatPartDefs\StatPart_ExtraJoyGain.cs" />
     <Compile Include="StatPartDefs\StatPart_WorkTableAutomation.cs" />
     <Compile Include="StatPartDefs\StatPart_WorkTableAutomationDecreased.cs" />
+    <Compile Include="StatPartDefs\StatPart_WorkTableManualEfficient.cs" />
     <Compile Include="StatPartDefs\StatPart_WorkTableManualUnefficient.cs" />
     <Compile Include="ThingSetMakers\ThingSetMaker_StartingItemsEldritchCult.cs" />
     <Compile Include="ThingSetMakers\ThingSetMaker_StartingItemsSweetTeeth.cs" />

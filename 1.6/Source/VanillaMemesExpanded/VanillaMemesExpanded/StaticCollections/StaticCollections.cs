@@ -4,6 +4,7 @@ using System;
 using RimWorld;
 using System.Collections.Generic;
 using System.Linq;
+using PipeSystem;
 
 
 namespace VanillaMemesExpanded
@@ -13,10 +14,6 @@ namespace VanillaMemesExpanded
     {
 
         //This static class stores different lists as a cache
-
-
-
-
 
         public static Dictionary<Pawn, int> colonist_junk_tracker = new Dictionary<Pawn, int>();
 
@@ -51,6 +48,9 @@ namespace VanillaMemesExpanded
         public static HashSet<string> untameableInsectsForInsectoidPrecepts = new HashSet<string>();
 
         public static HashSet<string> naturalImplants = new HashSet<string>();
+
+        public static HashSet<ThingDef> automaticWorkbenches = new HashSet<ThingDef>();
+        public static HashSet<ThingDef> manualWorkbenches = new HashSet<ThingDef>();
 
 
 
@@ -88,7 +88,11 @@ namespace VanillaMemesExpanded
                 }
 
             }
+            automaticWorkbenches = DefDatabase<ThingDef>.AllDefsListForReading.Where(x => x.HasComp<CompPowerTrader>() || 
+            x.GetCompProperties<CompProperties_ResourceTrader>()?.pipeNet== InternalDefOf.VHGE_HelixienNet ||
+            x.defName.Contains("VGE_Compact")).ToHashSet();
 
+            manualWorkbenches = DefDatabase<ThingDef>.AllDefsListForReading.Where(x => !automaticWorkbenches.Contains(x)).ToHashSet();
 
         }
 

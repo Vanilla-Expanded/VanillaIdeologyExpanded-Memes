@@ -11,13 +11,13 @@ using Verse.AI;
 
 namespace VanillaMemesExpanded
 {
-	public class StatPart_WorkTableManualUnefficient : StatPart
+	public class StatPart_WorkTableManualEfficient : StatPart
 	{
 		public override void TransformValue(StatRequest req, ref float val)
 		{
 			if (req.HasThing && Applies(req.Thing))
 			{
-				val *= 0.75f;
+				val *= 1.25f;
 			}
 		}
 
@@ -25,8 +25,8 @@ namespace VanillaMemesExpanded
 		{
 			if (req.HasThing && Applies(req.Thing))
 			{
-				float nonAutomatedWorkTableWorkSpeedFactor = 0.75f;
-				return "VME_AutomationManual".Translate() + ": x" + nonAutomatedWorkTableWorkSpeedFactor.ToStringPercent();
+				float nonAutomatedWorkTableWorkSpeedFactor = 1.25f;
+				return "VME_AutomationManualFaster".Translate() + ": x" + nonAutomatedWorkTableWorkSpeedFactor.ToStringPercent();
 			}
 			return null;
 		}
@@ -35,7 +35,7 @@ namespace VanillaMemesExpanded
 		{
             if (Find.IdeoManager.classicMode) return false;
            
-			return StaticCollections.manualWorkbenches.Contains(th.def) && Current.Game.World.factionManager.OfPlayer.ideos.PrimaryIdeo.GetPrecept(InternalDefOf.VME_CraftingSpeed_SlowerForManual)!=null;
+			return StaticCollections.manualWorkbenches.Contains(th.def) && Current.Game.World.factionManager.OfPlayer.ideos.PrimaryIdeo.GetPrecept(InternalDefOf.VME_CraftingSpeed_FasterForManual) !=null;
 		}
 	}
 }

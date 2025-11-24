@@ -1,4 +1,5 @@
 ﻿using System;
+using PipeSystem;
 using RimWorld;
 using Verse;
 
@@ -28,7 +29,8 @@ namespace VanillaMemesExpanded
 		public static PreceptDef VME_AutomationEfficiency_Increased;
 		public static PreceptDef VME_AutomationEfficiency_Decreased;
 		public static PreceptDef VME_CraftingSpeed_SlowerForManual;
-		public static PreceptDef VME_IdeoRole_LeaderSecond;
+		public static PreceptDef VME_CraftingSpeed_FasterForManual;
+        public static PreceptDef VME_IdeoRole_LeaderSecond;
 		public static PreceptDef VME_IdeoRole_LeaderThird;
 		public static PreceptDef VME_Trading_Required;
 		public static PreceptDef VME_Elders_Holy;
@@ -170,5 +172,9 @@ namespace VanillaMemesExpanded
         public static InteractionDef VFEA_InterrogatePrisoner;
         public static RulePackDef VFEA_InterrogationRefused;
         public static RulePackDef VFEA_InterrogationSuccess;
+
+
+        [MayRequire("VanillaExpanded.HelixienGas")]
+        public static PipeNetDef VHGE_HelixienNet;
     }
 }
