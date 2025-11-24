@@ -56,7 +56,7 @@ namespace VanillaMemesExpanded
 		{
 			Pawn inquisitor = ritual.PawnWithRole("inquisitor");
 			Pawn prisoner = ritual.PawnWithRole("prisoner");
-			if (prisoner.IsPrisonerOfColony)
+			if (prisoner?.IsPrisonerOfColony ==true)
 			{
 				Job job = WorkGiver_Warden_TakeToBed.TryMakeJob(inquisitor, prisoner, true);
 				if (job != null)
