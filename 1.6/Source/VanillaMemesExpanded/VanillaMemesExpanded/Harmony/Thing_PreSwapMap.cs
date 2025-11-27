@@ -21,6 +21,7 @@ namespace VanillaMemesExpanded
             {
                 WorldComponent_TravellingAndTradingTracker.Instance.AddColonistToCaravanList(pawn, 0);
                 WorldComponent_TravellingAndTradingTracker.Instance.ResetPawnCaravanTicks(pawn);
+                WorldComponent_TravellingAndTradingTracker.Instance.ticksWithoutAbandoning = 0;
             }
 
         }
