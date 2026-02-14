@@ -34,10 +34,6 @@
 								<styleDef>VME_Authoritarian_ChargeLMG</styleDef>
 							</li>
 							<li>
-								<thingDef>VWE_Gun_ChargeSniperRifle</thingDef>
-								<styleDef>VME_Authoritarian_ChargeSniperRifle</styleDef>
-							</li>
-							<li>
 								<thingDef>VWE_Gun_ChargeMinigun</thingDef>
 								<styleDef>VME_Authoritarian_ChargeMinigun</styleDef>
 							</li>
@@ -67,10 +63,6 @@
 								<styleDef>VME_Authoritarian_Carbine</styleDef>
 							</li>
 						
-							<li>
-								<thingDef>VWE_Gun_Flintlock</thingDef>
-								<styleDef>VME_Authoritarian_Flintlock</styleDef>
-							</li>
 							<li>
 								<thingDef>VWE_Gun_HMG</thingDef>
 								<styleDef>VME_Authoritarian_HMG</styleDef>
@@ -115,11 +107,24 @@
 			</operations>
 		</match>
 	</Operation>
-	
-	
 
-
-
-
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Vanilla Factions Expanded - Medieval 2</li>
+    </mods>
+    <match Class="PatchOperationConditional">
+      <success>Always</success>
+      <xpath>/Defs/StyleCategoryDef[defName = "VME_Authoritarian"]/thingDefStyles</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs/StyleCategoryDef[defName = "VME_Authoritarian"]/thingDefStyles</xpath>
+        <value>
+          <li>
+            <thingDef>VFEM2_Gun_Flintlock</thingDef>
+            <styleDef>VME_Authoritarian_Flintlock</styleDef>
+          </li>
+        </value>
+      </match>
+    </match>
+  </Operation>
 
 </Patch>
