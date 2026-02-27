@@ -34,6 +34,10 @@
 								<styleDef>VME_Authoritarian_ChargeLMG</styleDef>
 							</li>
 							<li>
+								<thingDef>VWE_Gun_ChargeSniperRifle</thingDef>
+								<styleDef>VME_Authoritarian_ChargeSniperRifle</styleDef>
+							</li>
+							<li>
 								<thingDef>VWE_Gun_ChargeMinigun</thingDef>
 								<styleDef>VME_Authoritarian_ChargeMinigun</styleDef>
 							</li>
