@@ -1,8 +1,9 @@
-﻿using System;
-using RimWorld;
-using Verse;
-using RimWorld.Planet;
+using System;
 using System.Collections.Generic;
+using System.Linq;
+using RimWorld;
+using RimWorld.Planet;
+using Verse;
 
 
 namespace VanillaMemesExpanded
@@ -36,6 +37,10 @@ namespace VanillaMemesExpanded
             Scribe_Collections.Look(ref colonist_caravan_tracker, "colonist_caravan_tracker", LookMode.Reference, LookMode.Value, ref list2, ref list3);
             Scribe_Values.Look<int>(ref this.ticksWithoutTrading, "ticksWithoutTrading", 0, true);
 
+            if (Scribe.mode == LoadSaveMode.PostLoadInit)
+            {
+                colonist_caravan_tracker?.RemoveAll(kvp => kvp.Key == null || kvp.Key.Destroyed);
+            }
         }
 
 
@@ -97,6 +102,8 @@ namespace VanillaMemesExpanded
                     }
                 }
                 
+                // Clean up dead or destroyed pawns from the tracker
+                colonist_caravan_tracker.RemoveAll(kvp => kvp.Key == null || kvp.Key.Destroyed);
 
                 if (Current.Game.World.factionManager.OfPlayer.ideos.GetPrecept(InternalDefOf.VME_Trading_Required) != null)
                 {
