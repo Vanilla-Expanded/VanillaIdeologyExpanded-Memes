@@ -1,7 +1,6 @@
 ﻿using HarmonyLib;
 using RimWorld;
 using Verse;
-using System.Collections.Generic;
 
 namespace VanillaMemesExpanded
 {
@@ -9,23 +8,16 @@ namespace VanillaMemesExpanded
     [HarmonyPatch("TryRemoveFavor")]
     public static class VanillaMemesExpanded_Pawn_RoyaltyTracker_TryRemoveFavor_Patch
     {
-        [HarmonyPostfix]
-        static void AddExtraFavor(Dictionary<Faction, int> ___favor, Pawn_RoyaltyTracker __instance, Faction faction, int amount)
+        [HarmonyPrefix]
+        static void AdjustFavorCost(Pawn_RoyaltyTracker __instance, Faction faction, ref int amount)
         {
-            int num = __instance.GetFavor(faction);
-
-
             if (__instance.pawn.Ideo?.HasPrecept(InternalDefOf.VME_PermitHonorCost_Doubled) == true)
             {
-                __instance.SetFavor(faction, num - amount);
+                amount *= 2;
             }
-
-            if (__instance.pawn.Ideo?.HasPrecept(InternalDefOf.VME_PermitHonorCost_Halved) == true)
+            else if (__instance.pawn.Ideo?.HasPrecept(InternalDefOf.VME_PermitHonorCost_Halved) == true)
             {
-                if(__instance.GetFavor(faction)> num)
-                {
-                    __instance.SetFavor(faction, num + (amount / 2));
-                }                
+                amount /= 2;
             }
         }
     }
