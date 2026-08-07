@@ -35,7 +35,7 @@ namespace VanillaMemesExpanded
 		{
             if (Find.IdeoManager.classicMode) return false;
            
-			return StaticCollections.manualWorkbenches.Contains(th.def) && Current.Game.World.factionManager.OfPlayer.ideos.PrimaryIdeo.GetPrecept(InternalDefOf.VME_CraftingSpeed_FasterForManual) !=null;
+			return !StaticCollections.automaticWorkbenches.Contains(th.def) && Current.Game.World.factionManager.OfPlayer.ideos.PrimaryIdeo.GetPrecept(InternalDefOf.VME_CraftingSpeed_FasterForManual) !=null;
 		}
 	}
 }
