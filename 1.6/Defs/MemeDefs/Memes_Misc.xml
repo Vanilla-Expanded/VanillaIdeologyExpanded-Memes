@@ -2666,6 +2666,7 @@
 				<li>memeMoralist->propagandist</li>
 				<li>memeMoralist->regime advocate</li>
 				<li>memeMoralist->campaigner</li>
+				<li>memeConcept->nationalism</li>
 			</rulesStrings>
 		</generalRules>
 		<descriptionMaker>
