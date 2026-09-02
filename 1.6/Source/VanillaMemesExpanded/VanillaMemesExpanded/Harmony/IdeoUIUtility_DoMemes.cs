@@ -9,6 +9,7 @@ using Verse;
 
 namespace VanillaMemesExpanded
 {
+    [StaticConstructorOnStartup]
     [HarmonyPatch(typeof(IdeoUIUtility))]
     [HarmonyPatch("DoMemes")]
     public static class VanillaMemesExpanded_IdeoUIUtility_DoMemes_Patch

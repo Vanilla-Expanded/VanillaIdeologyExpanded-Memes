@@ -3,21 +3,16 @@ using UnityEngine;
 using Verse;
 using System;
 
-
 namespace VanillaMemesExpanded
 {
 
-
     public class VanillaMemesExpanded_Settings : ModSettings
-
     {
-
         public static bool allowHighImpactMemesForFluidIdeos = false;
 
         public static float memeAmount = baseGameMemeAmount;
         public const float baseGameMemeAmount = 4;
         public const float maxMemeAmount = 100;
-
 
         public static float ritualsAmount = baseGameRitualsAmount;
         public const float baseGameRitualsAmount = 6;
@@ -31,12 +26,9 @@ namespace VanillaMemesExpanded
         public const float baseGameRelicsAmount = 3;
         public const float maxRelicsAmount = 15;
 
-
         public static float buildingsAmount = baseGameBuildingsAmount;
         public const float baseGameBuildingsAmount = 2;
         public const float maxBuildingsAmount = 10;
-
-
 
         public override void ExposeData()
         {
@@ -47,20 +39,15 @@ namespace VanillaMemesExpanded
             Scribe_Values.Look(ref relicsAmount, "relicsAmount", baseGameRelicsAmount, true);
             Scribe_Values.Look(ref buildingsAmount, "buildingsAmount", baseGameBuildingsAmount, true);
             Scribe_Values.Look(ref allowHighImpactMemesForFluidIdeos, "allowHighImpactMemesForFluidIdeos", false, true);
-
-
-
         }
 
         public static void DoWindowContents(Rect inRect)
         {
             Listing_Standard ls2 = new Listing_Standard();
 
-
             ls2.Begin(inRect);
 
             ls2.CheckboxLabeled("VME_AllowHighImpactMemesForFluidIdeos".Translate(), ref allowHighImpactMemesForFluidIdeos, "VME_AllowHighImpactMemesForFluidIdeos_Tooltip".Translate());
-
 
             var memesLabel = ls2.LabelPlusButton("VME_MemeAmount".Translate() + ": " + memeAmount, "VME_MemeAmountTooltip".Translate());
             memeAmount = (float)Math.Round(ls2.Slider(memeAmount, baseGameMemeAmount, maxMemeAmount), 0);
@@ -103,18 +90,5 @@ namespace VanillaMemesExpanded
 
             ls2.End();
         }
-
-
-
     }
-
-
-
-
-
-
-
-
-
-
 }
