@@ -13,7 +13,7 @@ namespace VanillaMemesExpanded
 
 
         public int tickCounter = tickInterval;
-        public const int tickInterval = 2000;
+        public const int tickInterval = 6000;
       
 
 

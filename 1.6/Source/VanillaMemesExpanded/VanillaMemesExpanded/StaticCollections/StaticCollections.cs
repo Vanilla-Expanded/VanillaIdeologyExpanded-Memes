@@ -91,7 +91,7 @@ namespace VanillaMemesExpanded
             (InternalDefOf.VHGE_HelixienNet != null && x.GetCompProperties<CompProperties_ResourceTrader>()?.pipeNet == InternalDefOf.VHGE_HelixienNet) ||
             x.defName.Contains("VGE_Compact")).ToHashSet();
 
-            Log.Message(automaticWorkbenches.ToStringSafeEnumerable());
+            //Log.Message(automaticWorkbenches.ToStringSafeEnumerable());
 
 
         }
