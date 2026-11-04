@@ -30,6 +30,14 @@ namespace VanillaMemesExpanded
         {
             base.ExposeData();
             Scribe_Values.Look<int>(ref this.tickCounter, "tickCounterBoozeAndScars", 0, true);
+
+            if (Scribe.mode == LoadSaveMode.Saving)
+            {
+                // Destroyed pawns would be saved as null references and log "Null key" on load
+                colonist_booze_tracker?.RemoveAll(kv => kv.Key.Destroyed);
+                colonist_scar_counter?.RemoveAll(kv => kv.Key.Destroyed);
+            }
+            
             Scribe_Collections.Look(ref colonist_booze_tracker, "colonist_booze_tracker", LookMode.Reference, LookMode.Value, ref list2, ref list3);
             Scribe_Collections.Look(ref colonist_scar_counter, "colonist_scar_counter", LookMode.Reference, LookMode.Value, ref list4, ref list5);
             Scribe_Collections.Look(ref enslavedPawns, "enslavedPawns", LookMode.Reference);
