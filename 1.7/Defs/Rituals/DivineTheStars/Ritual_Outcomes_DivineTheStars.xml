@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RitualOutcomeEffectDef>
+    <defName>VME_DivineStarsRitualOutcome</defName>
+    <description>Participants will get completely random results, with no regard for ritual quality.</description>
+    <workerClass>VanillaMemesExpanded.RitualOutcomeEffectWorker_DivineStars</workerClass>
+    <comps>
+      <li Class="RitualOutcomeComp_PawnStatScaled">
+        <label>{PAWN_labelShort}'s social impact</label>
+        <labelAbstract>speaker's social impact</labelAbstract>
+        <roleId>moralist</roleId>
+        <statDef>SocialImpact</statDef>
+        <curve>
+          <points>
+            <li>(0.2, 0.0)</li>
+            <li>(0.6, 0.2)</li>
+            <li>(1.0, 0.3)</li>
+            <li>(1.5, 0.4)</li>
+          </points>
+        </curve>
+      </li>
+      <li Class="RitualOutcomeComp_ParticipantCount">
+        <label>participant count</label>
+        <curve>
+          <points>
+            <li>(1,  0.07)</li>
+            <li>(4,  0.22)</li>
+            <li>(7,  0.33)</li>
+            <li>(10, 0.4)</li>
+          </points>
+        </curve>
+      </li>
+    
+    </comps>
+    <outcomeChances>
+      
+      <li>
+        <label>Inscrutable</label>
+        <chance>0.5</chance>
+       
+        <description>Our destiny has been revealed by the stars.</description>
+        <positivityIndex>-1</positivityIndex>
+      </li>
+	  <li>
+        <label>Inscrutable</label>
+        <chance>0.5</chance>
+       
+        <description>Our destiny has been revealed by the stars.</description>
+        <positivityIndex>1</positivityIndex>
+      </li>
+    </outcomeChances>
+  </RitualOutcomeEffectDef>
+  
+  
+  
+</Defs>

@@ -25,15 +25,15 @@
 	</v1.6>
 	<v1.7>
 		<li>/</li>
-		<li>1.6</li>
-		<li IfModActive="Ludeon.RimWorld.Royalty">1.6/Mods/Royalty</li>
-		<li IfModActive="Sarg.AlphaMemes">1.6/Mods/AlphaMemes</li>
-		<li IfModActive="VanillaExpanded.VCookE">1.6/Mods/VanillaCookingExpanded</li>
-		<li IfModActive="VanillaExpanded.VCookE_copy">1.6/Mods/VanillaCookingExpanded</li>
-		<li IfModActive="VanillaExpanded.VCEF">1.6/Mods/VanillaFishingExpanded</li>
-		<li IfModActive="VanillaExpanded.VCEF_copy">1.6/Mods/VanillaFishingExpanded</li>
-		<li IfModActive="VanillaExpanded.VBooksE">1.6/Mods/VanillaBooksExpanded</li>
-		<li IfModActive="VanillaExpanded.VBooksE_copy">1.6/Mods/VanillaBooksExpanded</li>
+		<li>1.7</li>
+		<li IfModActive="Ludeon.RimWorld.Royalty">1.7/Mods/Royalty</li>
+		<li IfModActive="Sarg.AlphaMemes">1.7/Mods/AlphaMemes</li>
+		<li IfModActive="VanillaExpanded.VCookE">1.7/Mods/VanillaCookingExpanded</li>
+		<li IfModActive="VanillaExpanded.VCookE_copy">1.7/Mods/VanillaCookingExpanded</li>
+		<li IfModActive="VanillaExpanded.VCEF">1.7/Mods/VanillaFishingExpanded</li>
+		<li IfModActive="VanillaExpanded.VCEF_copy">1.7/Mods/VanillaFishingExpanded</li>
+		<li IfModActive="VanillaExpanded.VBooksE">1.7/Mods/VanillaBooksExpanded</li>
+		<li IfModActive="VanillaExpanded.VBooksE_copy">1.7/Mods/VanillaBooksExpanded</li>
 	</v1.7>
 </loadFolders>
 

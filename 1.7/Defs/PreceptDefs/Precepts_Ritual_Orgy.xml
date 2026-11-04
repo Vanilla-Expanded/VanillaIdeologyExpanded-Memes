@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Precepts -->
+
+
+
+	<PreceptDef>
+		<defName>VME_OrgyPrecept</defName>
+		<label>orgy</label>
+		<description>An orgy. Participants will ignore any sexual preferences during the event's duration.</description>
+		<issue>Ritual</issue>
+		<preceptClass>Precept_Ritual</preceptClass>
+		<visible>true</visible>
+		<countsTowardsPreceptLimit>false</countsTowardsPreceptLimit>
+		<selectionWeight>1.0</selectionWeight>
+		<ritualPatternBase>VME_OrgyRitual</ritualPatternBase>
+		<iconPath>UI/Rituals/CelebrationOrgy</iconPath>
+		<ignoreNameUniqueness>false</ignoreNameUniqueness>
+		<requiredMemes>
+			
+			<li>VME_Structure_Bacchanalianism</li>
+		</requiredMemes>
+	</PreceptDef>
+
+
+
+
+
+</Defs>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<TraitDef>
+		<defName>VME_Elder</defName>
+		<commonality>0</commonality>
+		<degreeDatas>
+			<li>
+				<label>elder</label>
+				<description>Either the body or mind of {PAWN_nameDef} is one of insight and experience. While some find them old fashioned, others will respect their guidance.</description>
+			</li>
+		</degreeDatas>
+		<disabledWorkTags>
+			<li>ManualDumb</li>
+		</disabledWorkTags>
+	</TraitDef>
+	
+</Defs>

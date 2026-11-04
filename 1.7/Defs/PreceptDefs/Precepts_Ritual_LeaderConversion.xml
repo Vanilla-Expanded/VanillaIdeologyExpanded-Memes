@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Precepts -->
+
+
+
+	<PreceptDef>
+    <defName>VME_LeaderConversion</defName>
+    <label>conversion ritual (leader)</label>
+    <description>The leader tries to persuade someone into joining your ideoligion.</description>
+    <issue>Ritual</issue>
+    <preceptClass>Precept_Ritual</preceptClass>
+    <visible>false</visible>
+    <countsTowardsPreceptLimit>false</countsTowardsPreceptLimit>
+    <selectionWeight>1.0</selectionWeight>
+    <ritualPatternBase>VME_LeaderConversionPattern</ritualPatternBase>
+    <iconPath>UI/Abilities/ConversionRitual</iconPath>
+    <useCooldownFromAbilityGroupDef>VME_ExaltedLeader</useCooldownFromAbilityGroupDef>
+    <sourcePawnRoleDef>IdeoRole_Leader</sourcePawnRoleDef>
+    <sourceAbilityDef>VME_LeaderConversionRitual</sourceAbilityDef>
+    <classicExtra>true</classicExtra>
+	<requiredMemes>
+			<li>VME_ExaltedPriesthood</li>
+		</requiredMemes>
+  </PreceptDef>
+
+
+
+
+
+</Defs>

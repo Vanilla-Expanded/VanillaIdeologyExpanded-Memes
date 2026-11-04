@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+	<RitualOutcomeEffectDef>
+    <defName>VME_LeaderConversionOutcome</defName>
+    <description>If it goes well, target's ideoligion certainty will be reduced or they will convert. If it goes badly, they will gain certainty in their old beliefs.</description>
+    <workerClass>VanillaMemesExpanded.RitualOutcomeEffectWorker_LeaderConversion</workerClass>
+    <comps>
+      <li Class="RitualOutcomeComp_RoomStat">
+        <label>room impressiveness</label>
+        <statDef>Impressiveness</statDef>
+        <curve>
+          <points>
+            <li>0,  0</li>
+            <li>50,  0.1</li>
+            <li>120, 0.2</li>
+          </points>
+        </curve>
+      </li>
+      <li Class="RitualOutcomeComp_ParticipantCount">
+        <label>participant count</label>
+        <curve>
+          <points>
+            <li>(1,  0.0)</li>
+            <li>(5,  0.3)</li>
+            <li>(10, 0.4)</li>
+          </points>
+        </curve>
+      </li>
+      <li Class="RitualOutcomeComp_PawnStatScaled">
+        <label>{PAWN_labelShort}'s social impact</label>
+        <labelAbstract>speaker's social impact</labelAbstract>
+        <roleId>leader</roleId>
+        <statDef>SocialImpact</statDef>
+        <curve>
+          <points>
+            <li>(0.2,  0.0)</li>
+            <li>(0.6,  0.18)</li>
+            <li>(1.0, 0.25)</li>
+            <li>(1.5, 0.3)</li>
+          </points>
+        </curve>
+      </li>
+      <li Class="RitualOutcomeComp_PawnExpectations">
+        <roleId>convertee</roleId>
+        <label>{PAWN_labelShort}'s expectations</label>
+        <labelAbstract>convertee's expectations</labelAbstract>
+        <offsetPerExpectation>
+          <ExtremelyLow>0.1</ExtremelyLow>
+          <VeryLow>0.05</VeryLow>
+          <Low>0</Low>
+          <Moderate>-0.1</Moderate>
+          <High>-0.2</High>
+          <SkyHigh>-0.3</SkyHigh>
+          <Noble>-0.3</Noble>
+          <Royal>-0.3</Royal>
+          <RoleElite>-0.3</RoleElite>
+          <RoleSupreme>-0.3</RoleSupreme>
+        </offsetPerExpectation>
+      </li>
+    </comps>
+    <outcomeChances>
+      <li>
+        <label>Terrible</label>
+        <chance>0.05</chance>
+        <ideoCertaintyOffset>0.2</ideoCertaintyOffset>
+        <description>The {0} was terrible! From the first word, it was a fruitless back-and-forth argument. It dragged on for a cringe-inducingly long time.</description>
+        <positivityIndex>-2</positivityIndex>
+      </li>
+      <li>
+        <label>Ineffective</label>
+        <chance>0.15</chance>
+        <ideoCertaintyOffset>0.12</ideoCertaintyOffset>
+        <description>The {0} was ineffective. Most of the arguments were unclear, and the convertee countered those that made sense.</description>
+        <positivityIndex>-1</positivityIndex>
+      </li>
+      <li>
+        <label>Effective</label>
+        <chance>0.6</chance>
+        <ideoCertaintyOffset>-0.3</ideoCertaintyOffset>
+        <memory>EffectiveConversion</memory>
+        <description>The {0} was effective. The speech not only delivered solid arguments and visibly swayed the convertee's thoughts, but kept the crowd entertained as well.</description>
+        <positivityIndex>1</positivityIndex>
+      </li>
+      <li>
+        <label>Masterful</label>
+        <chance>0.2</chance>
+        <ideoCertaintyOffset>-1</ideoCertaintyOffset>
+        <memory>MasterfulConversion</memory>
+        <description>The {0} was masterful! Old beliefs seemed to dissolve effortlessly and inevitably, and our true knowledge was accepted.</description>
+        <positivityIndex>2</positivityIndex>
+      </li>
+    </outcomeChances>
+  </RitualOutcomeEffectDef>
+
+</Defs>

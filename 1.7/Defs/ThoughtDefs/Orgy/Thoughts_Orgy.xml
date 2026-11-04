@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+
+  <ThoughtDef>
+    <defName>VME_GrotesqueOrgy</defName>
+    <thoughtClass>Thought_AttendedRitual</thoughtClass>
+    <durationDays>6</durationDays>
+    <stackLimit>3</stackLimit>
+    <stages>
+      <li>
+        <label>grotesque orgy</label>
+        <description>When you think of an orgy, you tend to imagine attractive people. This was... the entire opposite. The mental images will take a while to go away.</description>
+        <baseMoodEffect>-18</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>VME_AwkwardOrgy</defName>
+    <thoughtClass>Thought_AttendedRitual</thoughtClass>
+    <durationDays>6</durationDays>
+    <stackLimit>3</stackLimit>
+    <stages>
+      <li>
+        <label>awkward orgy</label>
+        <description>Everyone sat around not knowing exactly what to do, naked bodies laying everywhere. Quite disappointing.</description>
+        <baseMoodEffect>-12</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>VME_SexyOrgy</defName>
+    <thoughtClass>Thought_AttendedRitual</thoughtClass>
+    <durationDays>6</durationDays>
+    <stackLimit>3</stackLimit>
+    <stages>
+      <li>
+        <label>sexy orgy</label>
+        <description>We gave ourselves to each other in a communal expression of our deepest passions.</description>
+        <baseMoodEffect>4</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>VME_ExhilaratingOrgy</defName>
+    <thoughtClass>Thought_AttendedRitual</thoughtClass>
+    <durationDays>6</durationDays>
+    <stackLimit>3</stackLimit>
+    <stages>
+      <li>
+        <label>exhilarating orgy</label>
+        <description>We all donned our high-society masquerade masks and got naked. A barrage of orgasmic sexual ecstasy unlike no other made our bodies tremble with barely concealed excitement.</description>
+        <baseMoodEffect>6</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+   <ThoughtDef>
+    <defName>VME_GotSomeLovin</defName>
+   
+    <durationDays>3</durationDays>
+    <stackLimit>1</stackLimit>
+   
+    <stages>
+      <li>
+        <label>got some lovin'</label>
+        <description>There's nothing like a tumble between the sheets to lift the mood.</description>
+        <baseMoodEffect>8</baseMoodEffect>
+      
+      </li>
+    </stages>
+  </ThoughtDef>
+
+ 
+
+</Defs>

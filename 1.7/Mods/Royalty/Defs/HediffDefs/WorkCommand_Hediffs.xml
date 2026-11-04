@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+ 
+<Defs>
+	<ThingDef ParentName="MoteBase">
+		<defName>VME_Mote_WorkCommand</defName>
+		<thingClass>MoteAttached</thingClass>
+		<altitudeLayer>LightingOverlay</altitudeLayer>
+		<drawOffscreen>true</drawOffscreen>
+		<mote>
+			<solidTime>9999999</solidTime>
+			<needsMaintenance>true</needsMaintenance>
+		</mote>
+		<graphicData>
+			<graphicClass>Graphic_Mote</graphicClass>
+			<texPath>Things/Mote/CombatCommandMask</texPath>
+			<shaderType>MoteGlow</shaderType>
+			<color>(35, 35, 35)</color>
+			<drawSize>20</drawSize>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="MoteBase">
+		<defName>VME_Mote_WorkCommandLinkLine</defName>
+		<thingClass>MoteDualAttached</thingClass>
+		<altitudeLayer>MoteLow</altitudeLayer>
+		<mote>
+			<fadeInTime>0.1</fadeInTime>
+			<fadeOutTime>0.1</fadeOutTime>
+			<solidTime>999999</solidTime>
+			<needsMaintenance>True</needsMaintenance>
+			<rotateTowardsTarget>True</rotateTowardsTarget>
+			<scaleToConnectTargets>True</scaleToConnectTargets>
+		</mote>
+		<graphicData>
+			<shaderType>MoteGlow</shaderType>
+			<texPath>Things/Mote/VME_CombatCommandLinkLine</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<HediffDef ParentName="RoleStatBuff">
+		<defName>VME_WorkCommand</defName>
+		<label>work command</label>
+		<description>Instruct everyone around to work harder and be more diligent, boosting global work speed and the cost of depleting recreation. The effect remains attached to the caster for 24 hours.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>True</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+			<li Class="HediffCompProperties_GiveHediffsInRange">
+				<range>9.9</range>
+				<mote>VME_Mote_WorkCommand</mote>
+				<hideMoteWhenNotDrafted>true</hideMoteWhenNotDrafted>
+				<targetingParameters>
+					<canTargetBuildings>false</canTargetBuildings>
+					<canTargetAnimals>false</canTargetAnimals>
+					<canTargetMechs>false</canTargetMechs>
+					<onlyTargetColonists>true</onlyTargetColonists>
+				</targetingParameters>
+				<hediff>VME_WorkCommandBuff</hediff>
+			</li>
+		</comps>
+		<isBad>false</isBad>
+	</HediffDef>
+	<HediffDef ParentName="RoleStatBuff">
+		<defName>VME_WorkCommandBuff</defName>
+		<label>work command</label>
+		<description>This person's work speed is boosted thanks to being near someone who is using the work command ability.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>false</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+			<li Class="HediffCompProperties_Link">
+				<requireLinkOnOtherPawn>false</requireLinkOnOtherPawn>
+				<maxDistance>10</maxDistance>
+				<customMote>VME_Mote_WorkCommandLinkLine</customMote>
+			</li>
+		</comps>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<statFactors>
+					<WorkSpeedGlobal>1.5</WorkSpeedGlobal>
+					
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+</Defs>

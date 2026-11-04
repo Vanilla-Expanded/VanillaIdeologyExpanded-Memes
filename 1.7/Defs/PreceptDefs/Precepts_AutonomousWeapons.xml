@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ 
+
+  <!-- Precepts -->
+
+  <PreceptDef>
+    <defName>VME_AutonomousWeapons_Accepted</defName>
+    <issue>AutonomousWeapons</issue>
+    <label>accepted</label>
+    <description>Automated defenses are a good way to defend our colony.</description>
+    <impact>Medium</impact>
+    <displayOrderInIssue>-10</displayOrderInIssue>
+    <displayOrderInImpact>100</displayOrderInImpact>
+   
+    <comps>
+      <li Class="PreceptComp_SituationalThought">
+        <thought>VME_AutonomousWeapons_Accepted</thought>
+        <description>Automated turret in colony</description>
+      </li>
+    </comps>
+  </PreceptDef>
+
+  <PreceptDef>
+    <defName>VME_AutonomousWeapons_Exalted</defName>
+    <issue>AutonomousWeapons</issue>
+    <label>exalted</label>
+    <description>Automated defenses are key to a proper defense of what is ours.</description>
+    <impact>Medium</impact>
+    <displayOrderInIssue>-20</displayOrderInIssue>
+    <displayOrderInImpact>100</displayOrderInImpact>
+   
+    <comps>
+      <li Class="PreceptComp_SituationalThought">
+        <thought>VME_AutonomousWeapons_Exalted</thought>
+        <description>Automated turret in colony</description>
+      </li>
+    </comps>
+  </PreceptDef>
+
+  <!-- Related: Has automated turrets -->
+
+  <ThoughtDef>
+    <defName>VME_AutonomousWeapons_Accepted</defName>
+    <workerClass>ThoughtWorker_Precept_HasAutomatedTurrets</workerClass>
+    <doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
+    <stages>
+      <li>
+        <label>automated turrets</label>
+        <description>We use automated turrets. They are an incredible boon to our defenses.</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>VME_AutonomousWeapons_Exalted</defName>
+    <workerClass>ThoughtWorker_Precept_HasAutomatedTurrets</workerClass>
+    <doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
+    <stages>
+      <li>
+        <label>automated turrets</label>
+        <description>We use automated turrets. Automated defenses are key to a proper defense of what is ours.</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  
+
+</Defs>

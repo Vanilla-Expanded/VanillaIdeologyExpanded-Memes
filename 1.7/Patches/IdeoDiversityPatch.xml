@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<Operation Class="PatchOperationAdd"> 
+	<success>Always</success>
+		<xpath>/Defs/PreceptDef[defName="IdeoDiversity_Respected"]/associatedMemes</xpath>
+		<value>
+			<li>VME_Egalitarian</li>
+			
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd"> 
+	<success>Always</success>
+		<xpath>/Defs/PreceptDef[defName="IdeoDiversity_Respected"]/requiredMemes</xpath>
+		<value>
+			<li>VME_Egalitarian</li>
+			
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd"> 
+	<success>Always</success>
+		<xpath>/Defs/PreceptDef[defName="IdeoDiversity_Exalted"]/associatedMemes</xpath>
+		<value>
+			<li>VME_Egalitarian</li>
+			
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd"> 
+	<success>Always</success>
+		<xpath>/Defs/PreceptDef[defName="IdeoDiversity_Exalted"]/requiredMemes</xpath>
+		<value>
+			<li>VME_Egalitarian</li>
+			
+		</value>
+	</Operation>
+
+
+
+</Patch>

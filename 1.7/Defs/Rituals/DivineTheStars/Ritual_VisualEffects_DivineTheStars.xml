@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  
+  <RitualVisualEffectDef>
+    <defName>VME_DivineStarsVisual</defName>
+    <tintColor>(26, 20, 25)</tintColor>
+    <comps>
+      <li>
+        <compClass>CompRitualEffect_ConstantCenter</compClass>
+        <moteDef>Mote_RitualSmoke</moteDef>
+        <scaleWithRoom>true</scaleWithRoom>
+      </li>
+      <li Class="CompProperties_RitualEffectIntervalSpawnCircle">
+        <fleckDef>VME_DivineStarsFleck</fleckDef>
+        <area>(27, 28)</area>
+        <radius>6</radius>
+        <concentration>3</concentration>
+        <spawnIntervalTicks>30</spawnIntervalTicks>
+        <spawnCount>1</spawnCount>
+        <rotation>-15~15</rotation>
+        <scalePositionWithRoom>true</scalePositionWithRoom>
+        <onlySpawnInSameRoom>true</onlySpawnInSameRoom>
+      </li>
+	  <li Class="CompProperties_RitualEffectIntervalSpawnCircle">
+        <fleckDef>VME_DivineStarsFleckTwo</fleckDef>
+        <area>(27, 28)</area>
+        <radius>6</radius>
+        <concentration>3</concentration>
+        <spawnIntervalTicks>30</spawnIntervalTicks>
+        <spawnCount>1</spawnCount>
+        <rotation>-15~15</rotation>
+        <scalePositionWithRoom>true</scalePositionWithRoom>
+        <onlySpawnInSameRoom>true</onlySpawnInSameRoom>
+      </li>
+	  <li Class="CompProperties_RitualEffectIntervalSpawnCircle">
+        <fleckDef>VME_DivineStarsFleckThree</fleckDef>
+        <area>(27, 28)</area>
+        <radius>6</radius>
+        <concentration>3</concentration>
+        <spawnIntervalTicks>30</spawnIntervalTicks>
+        <spawnCount>1</spawnCount>
+        <rotation>-15~15</rotation>
+        <scalePositionWithRoom>true</scalePositionWithRoom>
+        <onlySpawnInSameRoom>true</onlySpawnInSameRoom>
+      </li>
+    </comps>
+  </RitualVisualEffectDef>
+  
+  <FleckDef ParentName="FleckBase">
+    <defName>VME_DivineStarsFleck</defName>
+    <fleckSystemClass>FleckSystemThrown</fleckSystemClass>
+    <graphicData>
+      <graphicClass>Graphic_Fleck</graphicClass>
+      <shaderType>Mote</shaderType>
+      <texPath>Motes/Fleck_StarDivinationA</texPath>
+      <drawSize>(1, 1)</drawSize>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <solidTime>4</solidTime>
+    <fadeInTime>1</fadeInTime>
+    <fadeOutTime>4</fadeOutTime>
+  </FleckDef>
+  <FleckDef ParentName="FleckBase">
+    <defName>VME_DivineStarsFleckTwo</defName>
+    <fleckSystemClass>FleckSystemThrown</fleckSystemClass>
+    <graphicData>
+      <graphicClass>Graphic_Fleck</graphicClass>
+      <shaderType>Mote</shaderType>
+      <texPath>Motes/Fleck_StarDivinationB</texPath>
+      <drawSize>(1, 1)</drawSize>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <solidTime>4</solidTime>
+    <fadeInTime>1</fadeInTime>
+    <fadeOutTime>4</fadeOutTime>
+  </FleckDef>
+  <FleckDef ParentName="FleckBase">
+    <defName>VME_DivineStarsFleckThree</defName>
+    <fleckSystemClass>FleckSystemThrown</fleckSystemClass>
+    <graphicData>
+      <graphicClass>Graphic_Fleck</graphicClass>
+      <shaderType>Mote</shaderType>
+      <texPath>Motes/Fleck_StarDivinationC</texPath>
+      <drawSize>(1, 1)</drawSize>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <solidTime>4</solidTime>
+    <fadeInTime>1</fadeInTime>
+    <fadeOutTime>4</fadeOutTime>
+  </FleckDef>
+
+
+ 
+</Defs>

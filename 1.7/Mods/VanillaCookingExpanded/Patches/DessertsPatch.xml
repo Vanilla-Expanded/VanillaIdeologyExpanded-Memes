@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+	<Operation Class="PatchOperationReplace"> 
+		<xpath>/Defs/ThingDef[defName="VCE_SimpleDessert"]/ingestible/tasteThought</xpath>
+		<value>
+			<ateEvent>VME_AteSimpleDessert</ateEvent>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace"> 
+		<xpath>/Defs/ThingDef[defName="VCE_FineDessert"]/ingestible/tasteThought</xpath>
+		<value>
+			<ateEvent>VME_AteFineDessert</ateEvent>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace"> 
+		<xpath>/Defs/ThingDef[defName="VCE_LavishDessert"]/ingestible/tasteThought</xpath>
+		<value>
+			<ateEvent>VME_AteLavishDessert</ateEvent>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace"> 
+		<xpath>/Defs/ThingDef[defName="VCE_GourmetDessert"]/ingestible/tasteThought</xpath>
+		<value>
+			<ateEvent>VME_AteGourmetDessert</ateEvent>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "Chocolate"]/ingestible/ateEvent</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "Chocolate"]/ingestible</xpath>
+			<value>
+				<ateEvent>VME_AteChocolateSweetTeeth</ateEvent>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>/Defs/ThingDef[defName = "Chocolate"]/ingestible/ateEvent</xpath>
+			<value>
+				<ateEvent>VME_AteChocolateSweetTeeth</ateEvent>
+			</value>
+		</match>
+	</Operation>
+
+
+
+
+</Patch>

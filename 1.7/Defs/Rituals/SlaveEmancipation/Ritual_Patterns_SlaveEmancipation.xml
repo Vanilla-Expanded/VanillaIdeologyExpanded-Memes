@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ 
+  
+  <RitualPatternDef>
+    <defName>VME_SlaveEmancipationPattern</defName>
+    <ritualBehavior>VME_SlaveEmancipationBehavior</ritualBehavior>
+    <ritualTargetFilter>AltarOrRitualSpot</ritualTargetFilter>
+    <ritualObligationTargetFilter>RitualSpotOrAltar</ritualObligationTargetFilter>
+    <ritualExplanation>Ritual will emancipate all participating slaves. Depending on outcome, a growing percentage of slaves will decide to join the colony, or leave.</ritualExplanation>
+    <ritualOutcomeEffect>VME_SlaveEmancipationOutcome</ritualOutcomeEffect>
+    <alwaysStartAnytime>true</alwaysStartAnytime>
+  </RitualPatternDef>
+  
+
+
+
+ 
+
+</Defs>

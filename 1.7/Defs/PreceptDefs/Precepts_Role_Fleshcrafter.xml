@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<PreceptDef ParentName="PreceptRoleSingleBase">
+		<defName>VME_IdeoRole_Fleshcrafter</defName>
+		<label>fleshcrafter</label>
+		<description>A veritable anatomical expert capable of excising organs from recently deceased cadavers. Because of organ damage and decay only between one and three organs will be harvested at random and the rest of the corpse will be reduced to meat.</description>
+		<iconPath>UI/Roles/Fleshcrafter</iconPath>
+		<nameMaker>VME_Fleshcrafter</nameMaker>
+		
+		<roleTags>
+			<li>Fleshcrafter</li>
+		</roleTags>
+		<requiredMemes>
+			<li>VME_Fleshcrafters</li>
+		</requiredMemes>
+		
+		
+		<displayOrderInImpact>2</displayOrderInImpact>
+		
+		<grantedAbilities>
+			<li>VME_HarvestBodyParts</li>
+		</grantedAbilities>
+		<roleApparelRequirements>
+      <li>
+        <requirement>
+          <bodyPartGroupsMatchAny>
+            <li>UpperHead</li>
+            <li>FullHead</li>
+          </bodyPartGroupsMatchAny>
+          <requiredDefs>
+            <li>Apparel_Headwrap</li>
+          </requiredDefs>
+        </requirement>
+      </li>
+      <li>
+        <requirement>
+          <bodyPartGroupsMatchAny>
+            <li>UpperHead</li>
+            <li>FullHead</li>
+          </bodyPartGroupsMatchAny>
+          <requiredDefs>
+            <li>Apparel_Broadwrap</li>
+          </requiredDefs>
+        </requirement>
+      </li>
+      <li>
+        <requirement>
+          <bodyPartGroupsMatchAny>
+            <li>Torso</li>
+            <li>Neck</li>
+            <li>Shoulders</li>
+            <li>Arms</li>
+            <li>Legs</li>
+          </bodyPartGroupsMatchAny>
+          <requiredDefs>
+            <li>Apparel_Robe</li>
+          </requiredDefs>
+        </requirement>
+      </li>
+      <li>
+        <requirement>
+          <bodyPartGroupsMatchAny>
+            <li>UpperHead</li>
+          </bodyPartGroupsMatchAny>
+          <requiredDefs>
+            <li>Apparel_HatHood</li>
+          </requiredDefs>
+        </requirement>
+      </li>
+      <li>
+        <requirement>
+          <bodyPartGroupsMatchAny>
+            <li>UpperHead</li>
+          </bodyPartGroupsMatchAny>
+          <requiredDefs>
+            <li>Apparel_BowlerHat</li>
+          </requiredDefs>
+        </requirement>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Royalty">
+        <requirement>
+          <bodyPartGroupsMatchAny>
+            <li>Torso</li>
+          </bodyPartGroupsMatchAny>
+          <requiredTags>
+            <li>Cape</li>
+          </requiredTags>
+        </requirement>
+      </li>
+    </roleApparelRequirements>
+    <roleApparelRequirementCountCurve>
+      <points>
+        <li>(0, 1)</li>
+        <li>(1, 1)</li>
+      </points>
+    </roleApparelRequirementCountCurve>
+	</PreceptDef>
+	
+</Defs>

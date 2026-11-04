@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ 
+  
+  <RitualPatternDef>
+    <defName>VME_LeadershipChallengeRitual</defName>
+    <ritualBehavior>VME_LeadershipChallengeRitualBehaviour</ritualBehavior>
+    <ritualObligationTargetFilter>AnyRitualSpot</ritualObligationTargetFilter>
+    <nameMaker>NamerRitualGladiatorDuel</nameMaker>
+	  <canStartAnytime>true</canStartAnytime>
+    <alwaysStartAnytime>true</alwaysStartAnytime>
+	<ritualOutcomeEffect>VME_LeadershipChallengeRitualOutcome</ritualOutcomeEffect>
+	
+	 <tags Inherit="False" />
+	 <ritualExpectedDesc>A {IDEO} member has better melee skill than the current leader, other {MEMBERS} expect {RITUAL_labelDef} to take place so only the strongest leader can rule them.</ritualExpectedDesc>
+   
+    <ritualObligationTriggers>
+      <li Class="VanillaMemesExpanded.RitualObligationTriggerProperties_StrongerLeader">
+        
+      </li>
+    </ritualObligationTriggers>
+  </RitualPatternDef>
+
+
+
+ 
+
+</Defs>

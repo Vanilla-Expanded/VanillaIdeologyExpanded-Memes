@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<HistoryEventDef>
+		<defName>VME_ConvertAPrisoner</defName>
+		<label>converting a prisoner</label>
+	</HistoryEventDef>
+
+	<PreceptDef>
+		<defName>VME_Proselytizing_Forceful</defName>
+		<issue>Proselytizing</issue>
+		<label>forceful</label>
+		<description>People should be forced to follow our beliefs.</description>
+		<impact>Medium</impact>
+		<displayOrderInIssue>-10</displayOrderInIssue>
+		<requiredMemes>
+			<li>VME_ViolentConversion</li>
+		</requiredMemes>
+		<associatedMemes>
+			<li>VME_ViolentConversion</li>
+		</associatedMemes>
+		<statFactors>
+			<SocialIdeoSpreadFrequencyFactor>8</SocialIdeoSpreadFrequencyFactor>
+		</statFactors>
+		<proselytizes>true</proselytizes>
+	</PreceptDef>
+
+	<PreceptDef>
+		<defName>VME_Proselytizing_Never</defName>
+		<issue>Proselytizing</issue>
+		<label>never</label>
+		<description>We should never attempt to convert others.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Disables conversion rituals and the convert ability of the moralist role.</description>
+		<impact>Medium</impact>
+		<displayOrderInIssue>30</displayOrderInIssue>
+
+		<associatedMemes>
+			<li>VME_Egalitarian</li>
+		</associatedMemes>
+		<statFactors>
+			<SocialIdeoSpreadFrequencyFactor>0</SocialIdeoSpreadFrequencyFactor>
+		</statFactors>
+		<proselytizes>false</proselytizes>
+		
+	</PreceptDef>
+
+</Defs>

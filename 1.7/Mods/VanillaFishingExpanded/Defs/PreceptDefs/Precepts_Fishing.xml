@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Issues -->
+	<IssueDef>
+		<defName>VME_FishingYield</defName>
+		<label>fishing</label>
+		<iconPath>UI/Issues/FishingYield</iconPath>
+	</IssueDef>
+	<HistoryEventDef>
+		<defName>VME_Fishing</defName>
+		<label>fishing</label>
+	</HistoryEventDef>
+	<!-- Precepts -->
+	<PreceptDef>
+		<defName>VME_Fishing_Adept</defName>
+		<issue>VME_FishingYield</issue>
+		<label>adept</label>
+		<description>Fishing is the right way; ranching and farming is not.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - Adept fishermen will be able to catch additional fish from fishing zones. These fish are considered "adept catches" and provide double nutrition from other fish in the same size category.</description>
+		<impact>Medium</impact>
+		<associatedMemes>
+			<li>VME_Angler</li>
+		</associatedMemes>
+	</PreceptDef>
+	
+</Defs>

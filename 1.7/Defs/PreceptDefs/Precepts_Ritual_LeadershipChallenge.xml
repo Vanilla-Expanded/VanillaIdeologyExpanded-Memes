@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <!-- Precepts -->
+
+ 
+
+ 
+  
+  <PreceptDef>
+    <defName>VME_LeadershipChallengePrecept</defName>
+    <label>leadership challenge</label>
+    <description>A leadership challenge.</description>
+	<issue>Ritual</issue>
+	 <preceptClass>Precept_Ritual</preceptClass>
+    <visible>true</visible>
+    <countsTowardsPreceptLimit>false</countsTowardsPreceptLimit>
+    <selectionWeight>1.0</selectionWeight>
+    <ritualPatternBase>VME_LeadershipChallengeRitual</ritualPatternBase>
+    <iconPath>UI/Rituals/CelebrationLeadershipChallenge</iconPath>
+    <ignoreNameUniqueness>false</ignoreNameUniqueness>
+	<skipOpportunityLettersBeforeDay>0</skipOpportunityLettersBeforeDay>
+	<requiredMemes>
+      <li>VME_BloodCourt</li>
+    </requiredMemes>
+	
+  </PreceptDef>
+  
+  
+
+ 
+  
+</Defs>

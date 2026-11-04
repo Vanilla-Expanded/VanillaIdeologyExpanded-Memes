@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Issues -->
+
+
+	<IssueDef>
+		<defName>VME_PsyfocusGain</defName>
+		<label>psyfocus gain</label>
+		<iconPath>UI/Issues/PsyfocusGain</iconPath>
+	</IssueDef>
+
+	<!-- Precepts -->
+
+
+
+	<PreceptDef>
+		<defName>VME_PsyfocusGain_Doubled</defName>
+		<issue>VME_PsyfocusGain</issue>
+		<label>doubled</label>
+		<description>By inducing trance on oneself and reaching erudition you cast away the shackles of the physical and find the ability to manipulate the world just as trivial as breathing.</description>
+		<impact>Medium</impact>
+		<associatedMemes>
+			<li>VME_PsychicFocus</li>
+		</associatedMemes>
+		<statOffsets>
+			<MeditationFocusGain>1</MeditationFocusGain>
+			
+		</statOffsets>
+	</PreceptDef>
+	
+
+
+</Defs>

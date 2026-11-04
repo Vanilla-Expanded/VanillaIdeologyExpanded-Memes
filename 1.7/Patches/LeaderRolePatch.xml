@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/PreceptDef[defName = "IdeoRole_Leader"]/roleRequirements</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/PreceptDef[defName = "IdeoRole_Leader"]</xpath>
+			<value>
+				<roleRequirements>
+					<li Class="VanillaMemesExpanded.RoleRequirement_BestCrafter">
+						
+					</li>
+				</roleRequirements>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/PreceptDef[defName = "IdeoRole_Leader"]/roleRequirements</xpath>
+			<value>
+				<li Class="VanillaMemesExpanded.RoleRequirement_BestCrafter">
+						
+				</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/PreceptDef[defName = "IdeoRole_Leader"]/roleRequirements</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/PreceptDef[defName = "IdeoRole_Leader"]</xpath>
+			<value>
+				<roleRequirements>
+					<li Class="VanillaMemesExpanded.RoleRequirement_BestFighter">
+						
+					</li>
+				</roleRequirements>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/PreceptDef[defName = "IdeoRole_Leader"]/roleRequirements</xpath>
+			<value>
+				<li Class="VanillaMemesExpanded.RoleRequirement_BestFighter">
+						
+				</li>
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd"> 
+	<success>Always</success>
+		<xpath>/Defs/PreceptDef[defName = "IdeoRole_Leader"]/grantedAbilities</xpath>
+		<value>
+			<li>VME_LeaderConversionRitual</li>
+			<li>VME_LeaderConvert</li>
+			<li>VME_LeaderPreachHealth</li>
+			<li>VME_LeaderReassure</li>
+			<li>VME_LeaderCounsel</li>
+			
+		</value>
+	</Operation>
+</Patch>

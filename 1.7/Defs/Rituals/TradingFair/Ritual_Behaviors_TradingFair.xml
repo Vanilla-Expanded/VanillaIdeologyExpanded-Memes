@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  
+
+  <RitualBehaviorDef>
+    <defName>VME_TradingFairRitualBehaviour</defName>
+	
+    <durationTicks>7500</durationTicks>
+    <roles>
+      <li Class="RitualRoleTag">
+        <label>trading fair organizer</label>
+        <tag>Merchant</tag>
+        <id>merchant</id>
+        <precept>VME_IdeoRole_Merchant</precept>
+        <required>True</required>
+        <substitutable>false</substitutable>
+        <maxCount>1</maxCount>
+        <countsAsParticipant>true</countsAsParticipant>
+      </li>
+    </roles>
+    <spectatorsLabel>Participants</spectatorsLabel>
+    <spectatorGerund>participate</spectatorGerund>
+    <stages>
+      <li>
+        <defaultDuty>Spectate</defaultDuty>
+		<essential>True</essential>
+        <spectateDistanceOverride>2</spectateDistanceOverride>
+        <spectatorsRequired>true</spectatorsRequired>
+        <endTriggers>
+          <li Class="StageEndTrigger_DurationPercentage">
+            <percentage>0.1</percentage>
+          </li>
+        </endTriggers>
+        <roleBehaviors>
+          <li>
+            <roleId>merchant</roleId>
+            <dutyDef>SpeakOnCell_Leader</dutyDef>
+            <speakerInteraction>Speech_Leader</speakerInteraction>
+            <customPositions>
+              <li Class="RitualPosition_BesideThing" />
+            </customPositions>
+          </li>
+        </roleBehaviors>
+		
+      </li>
+	  <li>
+	    <visualEffectDef>VME_TradingFairVisuals</visualEffectDef>
+        <defaultDuty>VME_Wander</defaultDuty>
+		<essential>True</essential>
+       
+        <endTriggers>
+          <li Class="StageEndTrigger_DurationPercentage">
+            <percentage>0.9</percentage>
+          </li>
+        </endTriggers>
+		<roleBehaviors>
+          <li>
+            <roleId>merchant</roleId>
+            <dutyDef>VME_Wander</dutyDef>
+            
+          </li>
+        </roleBehaviors>
+      </li>
+    </stages>
+  </RitualBehaviorDef>
+  
+  
+  
+ 
+
+</Defs>

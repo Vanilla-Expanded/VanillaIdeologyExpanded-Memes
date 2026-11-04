@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ 
+  
+  <RitualPatternDef>
+    <defName>VME_ViolentConversionRitual</defName>
+    <ritualBehavior>VME_ViolentConversionRitualBehaviour</ritualBehavior>
+    <ritualObligationTargetFilter>AnyIdeoBuildingOrRitualSpot</ritualObligationTargetFilter>
+    <ritualTargetFilter>IdeoBuildingOrRitualSpot</ritualTargetFilter>
+    <alwaysStartAnytime>true</alwaysStartAnytime>
+	<ritualOutcomeEffect>VME_ViolentConversionRitualOutcome</ritualOutcomeEffect>
+  </RitualPatternDef>
+
+
+
+ 
+
+</Defs>

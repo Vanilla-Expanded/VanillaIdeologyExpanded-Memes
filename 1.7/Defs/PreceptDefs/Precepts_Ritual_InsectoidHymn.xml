@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Precepts -->
+
+
+
+	<PreceptDef>
+		<defName>VME_InsectoidHymnPrecept</defName>
+		<label>insectoid hymn</label>
+		<description>An insectoid hymn. The ritual will refresh the cooldown of the insectoid herder's "Construct a Nest" ability. If the ritual gets the best possible result it will make any insectoids currently assaulting the colony flee. Except the Black HIve, those want your blood.</description>
+		<issue>Ritual</issue>
+		<preceptClass>Precept_Ritual</preceptClass>
+		<visible>true</visible>
+		<countsTowardsPreceptLimit>false</countsTowardsPreceptLimit>
+		<selectionWeight>1.0</selectionWeight>
+		<ritualPatternBase>VME_InsectoidHymnRitual</ritualPatternBase>
+		<iconPath>UI/Rituals/CelebrationInsectoidHymn</iconPath>
+		<ignoreNameUniqueness>false</ignoreNameUniqueness>
+		<requiredMemes>
+			<li>VME_InsectoidSupremacy</li>
+		</requiredMemes>
+	</PreceptDef>
+
+
+
+
+
+</Defs>

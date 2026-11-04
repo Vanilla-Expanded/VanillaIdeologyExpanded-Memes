@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Precepts and Memes</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+
+
+				<li Class="PatchOperationReplace"> 
+					<xpath>/Defs/PreceptDef[defName="VME_Death_DontCare"]/issue</xpath>
+					<value>
+						<issue>Death</issue>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace"> 
+					<xpath>/Defs/PreceptDef[defName="VME_Death_DontCare"]/label</xpath>
+					<value>
+						<label>extremely irrelevant</label>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace"> 
+					<xpath>/Defs/PreceptDef[defName="VME_Death_Normal"]/issue</xpath>
+					<value>
+						<issue>Death</issue>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace"> 
+					<xpath>/Defs/PreceptDef[defName="VME_Death_Troubling"]/issue</xpath>
+					<value>
+						<issue>Death</issue>
+					</value>
+				</li>
+
+				
+
+
+
+
+
+
+
+
+
+			</operations>
+		</match>
+	</Operation>
+
+
+</Patch>
+

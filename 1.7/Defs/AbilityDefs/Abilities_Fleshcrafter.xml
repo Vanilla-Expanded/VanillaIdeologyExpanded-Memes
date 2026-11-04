@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<AbilityGroupDef>
+		<defName>VME_Fleshcrafter</defName>
+		<cooldownTicks>60000</cooldownTicks>
+	</AbilityGroupDef>
+
+
+	<AbilityDef>
+		<defName>VME_HarvestBodyParts</defName>
+		<label>harvest body parts</label>
+		<jobDef>CastAbilityOnThing</jobDef>
+		<groupDef>VME_Fleshcrafter</groupDef>
+		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+		<description>Harvests a fleshcrafted body part from a corpse.</description>
+		<targetRequired>True</targetRequired>
+		<gizmoClass>Command_Ability</gizmoClass>
+		<iconPath>UI/Abilities/ExtractBodyPart</iconPath>
+		<uiOrder>1</uiOrder>
+		
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<warmupTime>1</warmupTime>
+			<range>3</range>
+			<targetParams>
+				<canTargetLocations>True</canTargetLocations>
+
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class = "VanillaMemesExpanded.CompProperties_AbilityHarvestBodyParts">
+				<bodyParts>
+					<li>VME_FleshcraftedArm</li>
+					<li>VME_FleshcraftedHand</li>
+					<li>VME_FleshcraftedLeg</li>
+					<li>VME_FleshcraftedHeart</li>
+					<li>VME_FleshcraftedLung</li>
+					<li>VME_FleshcraftedKidney</li>
+					<li>VME_FleshcraftedLiver</li>
+					<li>VME_FleshcraftedEye</li>
+					<li>VME_FleshcraftedEar</li>
+					<li>VME_FleshcraftedNose</li>
+					<li>VME_FleshcraftedJaw</li>
+					<li>VME_FleshcraftedStomach</li>
+					<li>VME_FleshcraftedTongue</li>
+					<li>VME_FleshcraftedSpine</li>
+					<li>VME_FleshcraftedFinger</li>
+					<li>VME_FleshcraftedToe</li>
+					<li>VME_FleshcraftedFoot</li>
+				</bodyParts>
+			</li>
+
+		</comps>
+		<requiredMemes>
+			<li>VME_Fleshcrafters</li>
+		</requiredMemes>
+	</AbilityDef>
+
+
+
+
+
+</Defs>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<PreceptDef ParentName="PreceptRoleSingleBase">
+		<defName>VME_IdeoRole_InsectoidHerder</defName>
+		<label>insectoid herder</label>
+		<description>A talented tamer of insectoids. Through study or natural talent these leaders are capable of immediately understanding and controlling insectoid creatures, however, as a sacred bond they are not allowed to partake in any other kinds of work. Insectoid herders can erect insectoid hives as part of a short ritual.</description>
+		<iconPath>UI/Roles/InsectoidHerder</iconPath>
+		<nameMaker>VME_InsectoidHerder</nameMaker>
+		<roleRequiredWorkTagAny>
+			<li>Animals</li>
+		
+		</roleRequiredWorkTagAny>
+		<roleTags>
+			<li>InsectoidHerder</li>
+		</roleTags>
+		<requiredMemes>
+			<li>VME_InsectoidSupremacy</li>
+		</requiredMemes>
+		<roleApparelRequirements>
+			<li>
+				<requirement>
+					<bodyPartGroupsMatchAny>
+						<li>UpperHead</li>
+						<li>FullHead</li>
+					</bodyPartGroupsMatchAny>
+					<requiredDefs>
+						<li>Apparel_Headwrap</li>
+					</requiredDefs>
+				</requirement>
+			</li>
+		</roleApparelRequirements>
+		<roleApparelRequirementCountCurve>
+			<points>
+				<li>(0, 1)</li>
+				<li>(1, 1)</li>
+			</points>
+		</roleApparelRequirementCountCurve>
+		<displayOrderInImpact>2</displayOrderInImpact>
+		<roleDisabledWorkTags>
+			<li>ManualDumb</li>
+			<li>Cooking</li>
+			<li>PlantWork</li>
+			<li>Mining</li>
+			<li>Crafting</li>
+			<li>Constructing</li>
+			<li>Hunting</li>
+			<li>Artistic</li>
+			<li>Intellectual</li>
+			<li>Firefighting</li>
+		</roleDisabledWorkTags>
+		<grantedAbilities>
+			<li>VME_TameInsectoid</li>
+			<li>VME_ConstructANest</li>
+		</grantedAbilities>
+		
+	</PreceptDef>
+	
+</Defs>

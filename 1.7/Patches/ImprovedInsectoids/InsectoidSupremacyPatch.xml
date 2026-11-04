@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Improved Insectoids</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+
+
+
+				<li Class="PatchOperationReplace"> 
+					<xpath>/Defs/MemeDef[defName="VME_InsectoidSupremacy"]/iconPath</xpath>
+					<value>
+						<iconPath>UI/Memes/VME_InsectoidMastery</iconPath>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace"> 
+					<xpath>/Defs/MemeDef[defName="VME_InsectoidSupremacy"]/label</xpath>
+					<value>
+						<label>insectoid mastery</label>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAddModExtension"> 
+					<xpath>/Defs/MemeDef[defName="VME_InsectoidSupremacy"]</xpath>
+					<value>
+						<li Class="VanillaMemesExpanded.ExtendedMemeProperties">
+							<requiredMemes>
+								<li>InsectoidPrimacy</li>								
+							</requiredMemes>
+						</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationRemove"> 
+					<xpath>/Defs/MemeDef[defName="VME_InsectoidSupremacy"]/requireOne/li[@Name="insectoidsexalted"]</xpath>
+
+				</li>
+
+				<li Class="PatchOperationRemove"> 
+					<xpath>/Defs/PreceptDef[defName="VME_Insectoids_Exalted"]/associatedMemes</xpath>
+
+				</li>
+
+				<li Class="PatchOperationRemove"> 
+					<xpath>/Defs/PreceptDef[defName="VME_Insectoids_Exalted"]/requiredMemes</xpath>
+
+				</li>
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/PreceptDef[defName="VME_Insectoids_Exalted"]</xpath>
+					<value>
+						<visible>false</visible>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/PreceptDef[defName="VME_Insectoids_Despised"]</xpath>
+					<value>
+						<visible>false</visible>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace"> 
+					<xpath>/Defs/PreceptDef[defName="VME_InsectMeatEating_Sacrilegious"]/label</xpath>
+					<value>
+						<label>sacrilegious</label>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace"> 
+					<xpath>/Defs/MemeDef[defName="VME_InsectoidSupremacy"]/requireOne/li[@Name="insectjellyloved"]</xpath>
+					<value>
+						<li Name="insectjellyloved">
+							<li>InsectJellyEating_Loved</li>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace"> 
+					<xpath>/Defs/MemeDef[defName="VME_Structure_Serketist"]/requireOne/li[@Name="insectjellyloved"]</xpath>
+					<value>
+						<li Name="insectjellyloved">
+							<li>InsectJellyEating_Loved</li>
+						</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace"> 
+					<xpath>/Defs/PreceptDef[defName="VME_InsectJellyEaten_Neutral_Classic"]/issue</xpath>
+					<value>
+						<issue>InsectJellyEating</issue>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/PreceptDef[defName="VME_InsectJellyEaten_Loved_Classic"]</xpath>
+					<value>
+						<visible>false</visible>
+					</value>
+				</li>
+				<li Class="PatchOperationRemove"> 
+					<xpath>/Defs/PreceptDef[defName="VME_InsectJellyEaten_Loved_Classic"]/associatedMemes</xpath>
+
+				</li>
+
+
+
+			</operations>
+		</match>
+	</Operation>
+
+
+</Patch>
+

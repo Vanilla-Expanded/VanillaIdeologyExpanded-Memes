@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ 
+  
+  <RitualPatternDef>
+    <defName>VME_BonfireRitual</defName>
+    <ritualBehavior>VME_BonfireBehaviour</ritualBehavior>
+   
+    <ritualObligationTargetFilter>VME_Bonfire</ritualObligationTargetFilter>
+    <alwaysStartAnytime>true</alwaysStartAnytime>
+   
+	<ritualOutcomeEffect>VME_BonfireOutcome</ritualOutcomeEffect>
+	
+  </RitualPatternDef>
+
+
+ 
+ 
+
+</Defs>

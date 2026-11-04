@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Alpha Animals</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="AA_BlackInsectJelly"]/ingestible</xpath>
+					<value>
+						<ateEvent>VME_AteInsectJelly</ateEvent>
+					</value>
+				</li>
+
+				
+				
+			
+
+
+
+
+
+
+
+			</operations>
+		</match>
+	</Operation>
+
+
+</Patch>
+

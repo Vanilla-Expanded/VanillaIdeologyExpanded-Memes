@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Ideology Expanded - Hats and Rags</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PreceptDef[defName="VME_IdeoRole_Commissar"]/roleApparelRequirements</xpath>
+					<value>
+						<li>
+							<requirement>
+								<bodyPartGroupsMatchAny>
+									<li>UpperHead</li>
+									<li>FullHead</li>
+								</bodyPartGroupsMatchAny>
+								<requiredDefs>
+									<li>VIEHAR_Apparel_CommisarHat</li>
+								</requiredDefs>
+							</requirement>
+						</li>
+						<li>
+							<requirement>
+								<bodyPartGroupsMatchAny>
+									<li>UpperHead</li>
+									<li>FullHead</li>
+								</bodyPartGroupsMatchAny>
+								<requiredDefs>
+									<li>VIEHAR_Apparel_MilitaryCap</li>
+								</requiredDefs>
+							</requirement>
+						</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PreceptDef[defName="VME_IdeoRole_PartyHost"]/roleApparelRequirements</xpath>
+					<value>
+						<li>
+							<requirement>
+								<bodyPartGroupsMatchAny>
+									<li>UpperHead</li>
+									<li>FullHead</li>
+								</bodyPartGroupsMatchAny>
+								<requiredDefs>
+									<li>VIEHAR_Apparel_HorseMask</li>
+								</requiredDefs>
+							</requirement>
+						</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PreceptDef[defName="VME_IdeoRole_Nurse"]/roleApparelRequirements</xpath>
+					<value>
+						<li>
+							<requirement>
+								<bodyPartGroupsMatchAny>
+									<li>UpperHead</li>
+									<li>FullHead</li>
+								</bodyPartGroupsMatchAny>
+								<requiredDefs>
+									<li>VIEHAR_Apparel_BrimlessHat</li>
+								</requiredDefs>
+							</requirement>
+						</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PreceptDef[defName="VME_IdeoRole_Merchant"]/roleApparelRequirements</xpath>
+					<value>
+						<li>
+							<requirement>
+								<bodyPartGroupsMatchAny>
+									<li>UpperHead</li>
+									<li>FullHead</li>
+								</bodyPartGroupsMatchAny>
+								<requiredDefs>
+									<li>VIEHAR_Apparel_Headscarf</li>
+								</requiredDefs>
+							</requirement>
+						</li>
+						<li>
+							<requirement>
+								<bodyPartGroupsMatchAny>
+									<li>UpperHead</li>
+									<li>FullHead</li>
+								</bodyPartGroupsMatchAny>
+								<requiredDefs>
+									<li>VIEHAR_Apparel_Fez</li>
+								</requiredDefs>
+							</requirement>
+						</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
+

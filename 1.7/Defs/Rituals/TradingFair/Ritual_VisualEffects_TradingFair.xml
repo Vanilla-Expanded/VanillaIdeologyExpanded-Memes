@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+ <RitualVisualEffectDef>
+    <defName>VME_TradingFairVisuals</defName>
+   
+    <comps>
+      
+      <li Class="CompProperties_RitualEffectConstantCircle">
+        <radius>7.0</radius>
+        <numCopies>5</numCopies>
+        <moteDef>VME_Mote_TradingStandard</moteDef>
+        <colorOverride>(255, 255, 255, 255)</colorOverride>
+        <offset>(0, 0, -1)</offset>
+        <scalePositionWithRoom>true</scalePositionWithRoom>
+        <onlySpawnInSameRoom>true</onlySpawnInSameRoom>
+      </li>
+      <li Class="CompProperties_RitualEffectIntervalSpawnDividedCircle">
+        <radius>7.0</radius>
+        <numCopies>5</numCopies>
+        <offset>(0, 0, -0.2)</offset>
+        <roomCheckOffset>(0, 0, -1)</roomCheckOffset>
+        <effecterDef>VME_TradingConfetti</effecterDef>
+        <scalePositionWithRoom>true</scalePositionWithRoom>
+        <onlySpawnInSameRoom>true</onlySpawnInSameRoom>
+      </li>
+    </comps>
+  </RitualVisualEffectDef>
+  
+  <ThingDef ParentName="MoteBase">
+    <defName>VME_Mote_TradingStandard</defName>
+    <thingClass>MoteThrown</thingClass>
+    <altitudeLayer>BuildingOnTop</altitudeLayer>
+    <mote>
+      <solidTime>99999</solidTime>
+      <fadeInTime>0.2</fadeInTime>
+      <fadeOutTime>1</fadeOutTime>
+      <needsMaintenance>True</needsMaintenance>
+      <fadeOutUnmaintained>True</fadeOutUnmaintained>
+    </mote>
+    <graphicData>
+      <graphicClass>Graphic_Mote</graphicClass>
+      <texPath>Things/Building/Misc/FairPole/VIE_FairPole</texPath>
+      <drawSize>(1.2, 2.4)</drawSize>
+    </graphicData>
+  </ThingDef>
+  
+    <EffecterDef>
+    <defName>VME_TradingConfetti</defName>
+    <children>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+        <fleckDef>VME_TradingConfettiFleck</fleckDef>
+        <chancePerTick>0.05</chancePerTick>
+        <scale>0.9~1.3</scale>
+        <rotationRate>-30~30</rotationRate>
+        <speed>0.6~1.8</speed>
+      </li>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+        <fleckDef>VME_TradingConfettiFleckSecondary</fleckDef>
+        <chancePerTick>0.1</chancePerTick>
+        <scale>2.5~3.5</scale>
+      </li>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+        <moteDef>Mote_SparkThrownFastBright</moteDef>
+        <chancePerTick>0.7</chancePerTick>
+        <scale>0.24~0.34</scale>
+        <airTime>0.08~0.16</airTime>
+        <rotationRate>-240~240</rotationRate>
+        <speed>7.2~12</speed>
+        <angle>-30~30</angle>
+        <positionRadius>0.01</positionRadius>
+      </li>
+    </children>
+  </EffecterDef>
+  
+  <FleckDef ParentName="FleckBase_Thrown">
+    <defName>VME_TradingConfettiFleck</defName>
+    <graphicData>
+      <texPath>Things/Building/Misc/FairPole/VIE_FairConfetti/VIE_FairConfettiA</texPath>
+	  
+      <renderInstanced>true</renderInstanced>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <fadeInTime>0.3</fadeInTime>
+    <solidTime>1</solidTime>
+    <fadeOutTime>1.0</fadeOutTime>
+    <growthRate>1.2</growthRate>
+  </FleckDef>
+  <FleckDef ParentName="FleckBase_Thrown">
+    <defName>VME_TradingConfettiFleckSecondary</defName>
+    <graphicData>
+      <texPath>Things/Building/Misc/FairPole/VIE_FairConfetti/VIE_FairConfettiB</texPath>
+	   
+      <renderInstanced>true</renderInstanced>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <fadeInTime>0.3</fadeInTime>
+    <solidTime>1</solidTime>
+    <fadeOutTime>1.0</fadeOutTime>
+    <growthRate>1.2</growthRate>
+  </FleckDef>
+
+
+
+ 
+</Defs>

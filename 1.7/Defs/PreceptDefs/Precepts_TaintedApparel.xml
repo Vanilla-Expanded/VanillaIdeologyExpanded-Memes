@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<IssueDef>
+		<defName>VME_TaintedApparel</defName>
+		<label>tainted apparel</label>
+		<iconPath>UI/Issues/TaintedApparel</iconPath>
+	</IssueDef>
+	<!-- Precepts -->
+	<PreceptDef>
+		<defName>VME_TaintedApparel_DontCare</defName>
+		<issue>VME_TaintedApparel</issue>
+		<label>don't care</label>
+		<description>There is nothing wrong about wearing tainted clothing.</description>
+		<impact>Medium</impact>
+		<displayOrderInIssue>50</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<associatedMemes>
+			<li>VME_Scrapper</li>
+		</associatedMemes>
+	</PreceptDef>
+	<PreceptDef>
+		<defName>VME_TaintedApparel_Disapproved</defName>
+		<issue>VME_TaintedApparel</issue>
+		<label>disapproved</label>
+		<description>Wearing tainted clothing is disgusting.</description>
+		<impact>Low</impact>
+		<defaultSelectionWeight>1</defaultSelectionWeight>
+		<displayOrderInIssue>40</displayOrderInIssue>		
+	</PreceptDef>
+	<PreceptDef>
+		<defName>VME_TaintedApparel_Abhorrent</defName>
+		<issue>VME_TaintedApparel</issue>
+		<label>abhorrent</label>
+		<description>Wearing tainted clothing is a horrible practice.</description>
+		<impact>Medium</impact>
+		<displayOrderInIssue>30</displayOrderInIssue>	
+		<comps>
+			
+			<li Class="PreceptComp_SituationalThought">
+				<thought>VME_TaintedApparel_Abhorrent</thought>
+			</li>
+			
+		</comps>		
+	</PreceptDef>
+	<ThoughtDef>
+		<defName>VME_TaintedApparel_Abhorrent</defName>
+		<workerClass>VanillaMemesExpanded.ThoughtWorker_Precept_TaintedApparel_Abhorrent</workerClass>
+		<stages>
+			
+			<li>
+				<label>wearing dead person's clothing</label>
+				<description>I'm wearing clothing used by a dead person. I can't imagine anything more disgusting.</description>
+				<baseMoodEffect>-10</baseMoodEffect>
+			</li>
+		</stages>
+
+	</ThoughtDef>
+</Defs>

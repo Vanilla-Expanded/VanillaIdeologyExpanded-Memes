@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>More Precepts</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+
+
+				<li Class="PatchOperationReplace"> 
+					<xpath>/Defs/IssueDef[defName="Alcohol"]/label</xpath>
+					<value>
+						<label>alcohol scheduling</label>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/MemeDef[defName="VME_PartyLife"]/requireOne</xpath>
+					<value>
+						<li>
+							<li>Alcohol_Essential</li>
+						</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationConditional">
+					<success>Always</success>
+					<xpath>/Defs/PreceptDef[defName = "VME_Alcohol_Demanded"]/exclusionTags</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/PreceptDef[defName = "VME_Alcohol_Demanded"]</xpath>
+						<value>
+							<exclusionTags>
+								<li>VME_WantAlcohol</li>
+								
+							</exclusionTags>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/PreceptDef[defName = "VME_Alcohol_Demanded"]/exclusionTags</xpath>
+						<value>
+							<li>VME_WantAlcohol</li>
+							
+						</value>
+					</match>
+				</li>
+				
+				<li Class="PatchOperationConditional">
+					<success>Always</success>
+					<xpath>/Defs/PreceptDef[defName = "Alcohol_Disapproved"]/exclusionTags</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/PreceptDef[defName = "Alcohol_Disapproved"]</xpath>
+						<value>
+							<exclusionTags>
+								<li>VME_WantAlcohol</li>
+								
+							</exclusionTags>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/PreceptDef[defName = "Alcohol_Disapproved"]/exclusionTags</xpath>
+						<value>
+							<li>VME_WantAlcohol</li>
+							
+						</value>
+					</match>
+				</li>
+				
+				<li Class="PatchOperationConditional">
+					<success>Always</success>
+					<xpath>/Defs/PreceptDef[defName = "Alcohol_Prohibited"]/exclusionTags</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/PreceptDef[defName = "Alcohol_Prohibited"]</xpath>
+						<value>
+							<exclusionTags>
+								<li>VME_WantAlcohol</li>
+								
+							</exclusionTags>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/PreceptDef[defName = "Alcohol_Prohibited"]/exclusionTags</xpath>
+						<value>
+							<li>VME_WantAlcohol</li>
+							
+						</value>
+					</match>
+				</li>
+				
+				<li Class="PatchOperationConditional">
+					<success>Always</success>
+					<xpath>/Defs/PreceptDef[defName = "VME_Alcohol_Desired"]/exclusionTags</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/PreceptDef[defName = "VME_Alcohol_Desired"]</xpath>
+						<value>
+							<exclusionTags>
+								<li>VME_WantAlcohol</li>
+								
+							</exclusionTags>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/PreceptDef[defName = "VME_Alcohol_Desired"]/exclusionTags</xpath>
+						<value>
+							<li>VME_WantAlcohol</li>
+							
+						</value>
+					</match>
+				</li>
+				
+				<li Class="PatchOperationConditional">
+					<success>Always</success>
+					<xpath>/Defs/PreceptDef[defName = "VME_Alcohol_MildAbstinence"]/exclusionTags</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/PreceptDef[defName = "VME_Alcohol_MildAbstinence"]</xpath>
+						<value>
+							<exclusionTags>
+								<li>VME_DontWantAlcohol</li>
+								
+							</exclusionTags>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/PreceptDef[defName = "VME_Alcohol_MildAbstinence"]/exclusionTags</xpath>
+						<value>
+							<li>VME_DontWantAlcohol</li>
+							
+						</value>
+					</match>
+				</li>
+				
+				
+				<li Class="PatchOperationConditional">
+					<success>Always</success>
+					<xpath>/Defs/PreceptDef[defName = "Alcohol_Wanted"]/exclusionTags</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/PreceptDef[defName = "Alcohol_Wanted"]</xpath>
+						<value>
+							<exclusionTags>
+								<li>VME_DontWantAlcohol</li>
+								
+							</exclusionTags>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/PreceptDef[defName = "Alcohol_Wanted"]/exclusionTags</xpath>
+						<value>
+							<li>VME_DontWantAlcohol</li>
+							
+						</value>
+					</match>
+				</li>
+				
+				<li Class="PatchOperationConditional">
+					<success>Always</success>
+					<xpath>/Defs/PreceptDef[defName = "Alcohol_Essential"]/exclusionTags</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/PreceptDef[defName = "Alcohol_Essential"]</xpath>
+						<value>
+							<exclusionTags>
+								<li>VME_DontWantAlcohol</li>
+								
+							</exclusionTags>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/PreceptDef[defName = "Alcohol_Essential"]/exclusionTags</xpath>
+						<value>
+							<li>VME_DontWantAlcohol</li>
+							
+						</value>
+					</match>
+				</li>
+
+
+
+
+
+
+
+
+			</operations>
+		</match>
+	</Operation>
+
+
+</Patch>
+

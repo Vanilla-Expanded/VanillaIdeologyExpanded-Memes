@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RitualPatternDef>
+    <defName>VME_CeremonialSuicideRitual</defName>
+    <ritualBehavior>VME_CeremonialSuicideRitualBehaviour</ritualBehavior>
+	<ritualOutcomeEffect>VME_CeremonialSuicideRitualOutcome</ritualOutcomeEffect>
+	<ritualExpectedDesc>Once a {IDEO} member is defeated twice in honorable combat with a hostile enemy, other {MEMBERS} expect {RITUAL_labelDef} to take place to cleanse the dishonor upon the colony.</ritualExpectedDesc>
+    
+    <ritualObligationTriggers>
+      <li Class="VanillaMemesExpanded.RitualObligationTriggerProperties_SecondDefeat">
+        <mustBePlayerIdeo>true</mustBePlayerIdeo>
+      </li>
+    </ritualObligationTriggers>
+	<ritualObligationTargetFilter>RitualSpotIdeogramOrAltar</ritualObligationTargetFilter>
+	
+  </RitualPatternDef>
+  
+
+
+ 
+
+</Defs>

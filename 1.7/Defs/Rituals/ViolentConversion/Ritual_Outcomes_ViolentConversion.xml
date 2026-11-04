@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ 
+  
+   <RitualOutcomeEffectDef>
+    <defName>VME_ViolentConversionRitualOutcome</defName>
+    <description>Violent conversion has a 50% chance of either completely converting the participant to your ideoligion or just being executed. Depending on ritual quality, participants will get between {MINMOOD} and {MAXMOOD} mood for {MOODDAYS} days.</description>
+    <workerClass>VanillaMemesExpanded.RitualOutcomeEffectWorker_ViolentConversion</workerClass>
+    <comps>
+      <li Class="RitualOutcomeComp_ParticipantCount">
+        <label>participant count</label>
+        <curve>
+          <points>
+            <li>(1, 0.18)</li>
+            <li>(4, 0.4)</li>
+            <li>(7, 0.65)</li>
+            <li>(10, 0.8)</li>
+          </points>
+        </curve>
+      </li>
+	   <li Class="RitualOutcomeComp_PawnStatScaled">
+        <label>{PAWN_labelShort}'s social impact</label>
+        <labelAbstract>speaker's social impact</labelAbstract>
+        <roleId>inquisitor</roleId>
+        <statDef>SocialImpact</statDef>
+        <curve>
+          <points>
+            <li>(0.2,  0.0)</li>
+            <li>(0.6,  0.18)</li>
+            <li>(1.0, 0.25)</li>
+            <li>(1.5, 0.3)</li>
+          </points>
+        </curve>
+      </li>
+      <li Class="RitualOutcomeComp_RitualTargetDefs">
+        <defs>
+          <li>Ideogram</li>
+        </defs>
+        <allowAltars>true</allowAltars>
+        <label>started at altar or ideogram</label>
+        <qualityOffset>0.2</qualityOffset>
+        <expectedThingLabelTip>an altar or an ideogram</expectedThingLabelTip>
+      </li>
+    </comps>
+    <outcomeChances>
+      <li>
+        <label>Awkward</label>
+        <chance>0.15</chance>
+        <memory>VME_AwkwardViolentConversion</memory>
+        <positivityIndex>-1</positivityIndex>
+        <description>The {0} was awkward. The speech dragged on and it was a fruitless back-and-forth argument. The words were vague and unconvincing.</description>
+      </li>
+      <li>
+        <label>Satisfying</label>
+        <chance>0.65</chance>
+        <memory>VME_SatisfyingViolentConversion</memory>
+        <description>The {0} was satisfying. The speech was stirring and enjoyable to listen to.</description>
+        <positivityIndex>1</positivityIndex>
+      </li>
+      <li>
+        <label>Spectacular</label>
+        <chance>0.2</chance>
+        <memory>VME_SpectacularViolentConversion</memory>
+        <description>The {0} was spectacular! Surely our beliefs will prevail over any others!</description>
+        <positivityIndex>2</positivityIndex>
+      </li>
+    </outcomeChances>
+  </RitualOutcomeEffectDef>
+  
+</Defs>

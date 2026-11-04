@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Issues -->
+	<IssueDef>
+		<defName>VME_PermitCooldown</defName>
+		<label>permit cooldown</label>
+		<iconPath>UI/Issues/PermitCooldown</iconPath>
+	</IssueDef>
+	<!-- Precepts -->
+	<PreceptDef>
+		<defName>VME_PermitCooldown_Lowered</defName>
+		<issue>VME_PermitCooldown</issue>
+		<label>lowered</label>
+		<description>Royalty demands swift action; thus, the cooldown of permits is lessened, allowing for a more rapid response to the ever-changing whims of noble desire.</description>
+		<impact>Medium</impact>
+		<associatedMemes>
+			<li>VME_Royal</li>
+		</associatedMemes>
+		<displayOrderInIssue>50</displayOrderInIssue>
+		
+	</PreceptDef>
+	<PreceptDef>
+		<defName>VME_PermitCooldown_Increased</defName>
+		<issue>VME_PermitCooldown</issue>
+		<label>increased</label>
+		<description>Patience is a virtue, and now a necessity, as the cooldown of permits is doubled. Time crawls as the court awaits the next invocation of royal privilege.</description>
+		<impact>Medium</impact>
+		<displayOrderInIssue>40</displayOrderInIssue>
+		
+		
+	</PreceptDef>
+	
+</Defs>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ 
+  
+   <RitualOutcomeEffectDef>
+    <defName>VME_WickerManBurningOutcome</defName>
+    <description>A prisoner of the colony will be locked in a cage, and set fire, killing the prisoner in the process. Depending on ritual quality, participants will get between {MINMOOD} and {MAXMOOD} mood for {MOODDAYS} days.</description>
+    <workerClass>VanillaMemesExpanded.RitualOutcomeEffectWorker_WickerManBurning</workerClass>
+    <comps>
+      <li Class="RitualOutcomeComp_ParticipantCount">
+        <label>participant count</label>
+        <curve>
+          <points>
+            <li>(1, 0.18)</li>
+            <li>(4, 0.4)</li>
+            <li>(7, 0.65)</li>
+            <li>(10, 0.8)</li>
+          </points>
+        </curve>
+      </li>
+	   <li Class="RitualOutcomeComp_PawnStatScaled">
+        <label>{PAWN_labelShort}'s social impact</label>
+        <labelAbstract>speaker's social impact</labelAbstract>
+        <roleId>inquisitor</roleId>
+        <statDef>SocialImpact</statDef>
+        <curve>
+          <points>
+            <li>(0.2, 0.0)</li>
+            <li>(0.6, 0.2)</li>
+            <li>(1.0, 0.3)</li>
+            <li>(1.5, 0.4)</li>
+          </points>
+        </curve>
+      </li>
+      
+    </comps>
+    <outcomeChances>
+      <li>
+        <label>Terrible</label>
+        <chance>0.05</chance>
+        <memory>VME_TerribleWickerManBurning</memory>
+        <description>The {0} was terrible! The prisoner rattled the cage all the time and it smelled like rotten bacon.</description>
+        <positivityIndex>-2</positivityIndex>
+      </li>
+      <li>
+        <label>Lackluster</label>
+        <chance>0.15</chance>
+        <memory>VME_LacklusterWickerManBurning</memory>
+        <description>The {0} was lackluster. The prisoner just burned to death too fast, and the fire didn't even lift our spirits much.</description>
+        <positivityIndex>-1</positivityIndex>
+      </li>
+      <li>
+        <label>Good</label>
+        <chance>0.6</chance>
+        <memory>VME_GoodWickerManBurning</memory>
+        <description>The {0} was good. The anguished cries of the prisoner will resonate with us for a long time, another soul consumed by the flames.</description>
+        <positivityIndex>1</positivityIndex>
+      </li>
+      <li>
+        <label>Glorious</label>
+        <chance>0.2</chance>
+        <memory>VME_GloriousWickerManBurning</memory>
+        <description>The {0} was glorious! We will forever remember the thrashing of the prisoner, the frightened crescendo of screams as another soul was consumed by the holy flames.</description>
+        <positivityIndex>2</positivityIndex>
+      </li>
+    </outcomeChances>
+  </RitualOutcomeEffectDef>
+  
+</Defs>

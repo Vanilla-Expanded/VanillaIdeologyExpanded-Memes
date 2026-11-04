@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<PrisonerInteractionModeDef>
+		<defName>VFEA_Interrogate</defName>
+		<label>interrogate</label>
+		<listOrder>35</listOrder>
+		<description>Wardens will use various methods to extract information about nearby locations of interest from the prisoner.</description>
+	</PrisonerInteractionModeDef>
+</Defs>

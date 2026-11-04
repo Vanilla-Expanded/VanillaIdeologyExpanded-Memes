@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Issues -->
+	<IssueDef>
+		<defName>VME_AutomationEfficiency</defName>
+		<label>automation efficiency</label>
+		<iconPath>UI/Issues/AutomationEfficiency</iconPath>
+	</IssueDef>
+	<!-- Precepts -->
+	<PreceptDef>
+		<defName>VME_AutomationEfficiency_Increased</defName>
+		<issue>VME_AutomationEfficiency</issue>
+		<label>increased</label>
+		<description>We should embrace automation, working by hand is primitive.\n\n&lt;color=#E5E54C&gt;Stats:&lt;/color&gt;\n - Electric work table speed: x150%.</description>
+		<impact>Medium</impact>
+		<associatedMemes>
+			<li>VME_Progressive</li>
+		</associatedMemes>
+	</PreceptDef>
+	<PreceptDef>
+		<defName>VME_AutomationEfficiency_Decreased</defName>
+		<issue>VME_AutomationEfficiency</issue>
+		<label>decreased</label>
+		<description>Automation is despicable. Working by hand is true craftsmanship.\n\n&lt;color=#E5E54C&gt;Stats:&lt;/color&gt;\n - Electric work table speed: x50%.</description>
+		<impact>Medium</impact>
+	</PreceptDef>
+</Defs>

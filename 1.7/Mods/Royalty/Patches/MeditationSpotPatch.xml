@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+	
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/StatDef[defName = "MeditationFocusStrength"]/parts</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/StatDef[defName = "MeditationFocusStrength"]</xpath>
+			<value>
+				<parts>
+					<li Class="VanillaMemesExpanded.StatPart_MeditationSpot" />
+				</parts>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+		<xpath>/Defs/StatDef[defName = "MeditationFocusStrength"]/parts</xpath>
+			<value>
+				<li Class="VanillaMemesExpanded.StatPart_MeditationSpot" />
+			</value>
+		</match>
+	</Operation>
+
+
+
+
+</Patch>

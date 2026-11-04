@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<PreceptDef ParentName="PreceptRoleSingleBase">
+		<defName>VME_IdeoRole_PartyHost</defName>
+		<label>party host</label>
+		<description>A most jovial hooligan incapable of understanding that not all times can be party time. A party leader is able to throw an amazing party at any time. However, they will find themselves needing about twice the recreation time as the normal person to be happy on a day-to-day basis.</description>
+		<iconPath>UI/Roles/PartyHost</iconPath>
+		<nameMaker>VME_PartyHost</nameMaker>
+		
+		<roleTags>
+			<li>PartyHost</li>
+		</roleTags>
+		<requiredMemes>
+			<li>VME_PartyLife</li>
+		</requiredMemes>
+		
+		
+		<displayOrderInImpact>2</displayOrderInImpact>
+		
+		<grantedAbilities>
+			<li>VME_ThrowParty</li>
+		</grantedAbilities>
+		<roleApparelRequirements>
+      <li>
+        <requirement>
+          <bodyPartGroupsMatchAny>
+            <li>UpperHead</li>
+            <li>FullHead</li>
+          </bodyPartGroupsMatchAny>
+          <requiredDefs>
+            <li>Apparel_Headwrap</li>
+          </requiredDefs>
+        </requirement>
+      </li>
+      <li>
+        <requirement>
+          <bodyPartGroupsMatchAny>
+            <li>UpperHead</li>
+            <li>FullHead</li>
+          </bodyPartGroupsMatchAny>
+          <requiredDefs>
+            <li>Apparel_Broadwrap</li>
+          </requiredDefs>
+        </requirement>
+      </li>
+      <li>
+        <requirement>
+          <bodyPartGroupsMatchAny>
+            <li>Torso</li>
+            <li>Neck</li>
+            <li>Shoulders</li>
+            <li>Arms</li>
+            <li>Legs</li>
+          </bodyPartGroupsMatchAny>
+          <requiredDefs>
+            <li>Apparel_Robe</li>
+          </requiredDefs>
+        </requirement>
+      </li>
+      <li>
+        <requirement>
+          <bodyPartGroupsMatchAny>
+            <li>UpperHead</li>
+          </bodyPartGroupsMatchAny>
+          <requiredDefs>
+            <li>Apparel_HatHood</li>
+          </requiredDefs>
+        </requirement>
+      </li>
+      <li>
+        <requirement>
+          <bodyPartGroupsMatchAny>
+            <li>UpperHead</li>
+          </bodyPartGroupsMatchAny>
+          <requiredDefs>
+            <li>Apparel_BowlerHat</li>
+          </requiredDefs>
+        </requirement>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Royalty">
+        <requirement>
+          <bodyPartGroupsMatchAny>
+            <li>Torso</li>
+          </bodyPartGroupsMatchAny>
+          <requiredTags>
+            <li>Cape</li>
+          </requiredTags>
+        </requirement>
+      </li>
+    </roleApparelRequirements>
+    <roleApparelRequirementCountCurve>
+      <points>
+        <li>(0, 1)</li>
+        <li>(1, 1)</li>
+      </points>
+    </roleApparelRequirementCountCurve>
+	</PreceptDef>
+	
+</Defs>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RitualOutcomeEffectDef>
+    <defName>VME_CeremonialSuicideRitualOutcome</defName>
+    <description>Depending on ritual quality, participants will get between {MINMOOD} and {MAXMOOD} mood for {MOODDAYS} days. All participants must be healthy to attend.</description>
+   
+	<workerClass>VanillaMemesExpanded.RitualOutcomeEffectWorker_CeremonialSuicide</workerClass>
+    <comps>
+      <li Class="RitualOutcomeComp_PawnStatScaled">
+        <label>{PAWN_labelShort}'s social impact</label>
+        <labelAbstract>speaker's social impact</labelAbstract>
+        <roleId>suicide</roleId>
+        <statDef>SocialImpact</statDef>
+        <curve>
+          <points>
+            <li>(0.2, 0.0)</li>
+            <li>(0.6, 0.2)</li>
+            <li>(1.0, 0.3)</li>
+            <li>(1.5, 0.4)</li>
+          </points>
+        </curve>
+      </li>
+	  <li Class="RitualOutcomeComp_RoomStat">
+        <label>room impressiveness</label>
+        <statDef>Impressiveness</statDef>
+        <curve>
+          <points>
+            <li>0,  0</li>
+            <li>50,  0.1</li>
+            <li>120, 0.2</li>
+          </points>
+        </curve>
+      </li>
+      <li Class="RitualOutcomeComp_ParticipantCount">
+        <label>participant count</label>
+        <curve>
+          <points>
+            <li>(1,  0.07)</li>
+            <li>(4,  0.22)</li>
+            <li>(7,  0.33)</li>
+            <li>(10, 0.4)</li>
+          </points>
+        </curve>
+      </li>
+    
+    </comps>
+    <outcomeChances>
+      <li>
+        <label>Terrible</label>
+        <chance>0.05</chance>
+        <memory>VME_TerribleCeremonialSuicide</memory>
+        <description>The {0} was terrible! The blade was thrust laterally and there was blood and entrails everywhere. Disgusting!</description>
+        <positivityIndex>-2</positivityIndex>
+      </li>
+      <li>
+        <label>Boring</label>
+        <chance>0.15</chance>
+        <memory>VME_BoringCeremonialSuicide</memory>
+        <description>The {0} was boring. The speech seemed forced. At the very least we have restored the honor of our colony.</description>
+        <positivityIndex>-1</positivityIndex>
+      </li>
+      <li>
+        <label>Honorable</label>
+        <chance>0.6</chance>
+        <memory>VME_HonorableCeremonialSuicide</memory>
+        <description>The {0} has restored the honor of our colony. The shadow of defeat no longer clouds our minds.</description>
+        <positivityIndex>1</positivityIndex>
+      </li>
+      <li>
+        <label>Unforgettable</label>
+        <chance>0.2</chance>
+        <memory>VME_UnforgettableCeremonialSuicide</memory>
+        <description>The {0} was unforgettable! Everyone will remember the courage, self-control, and strong resolve. The honor of our colony is now spotless.</description>
+        <positivityIndex>2</positivityIndex>
+      </li>
+    </outcomeChances>
+  </RitualOutcomeEffectDef>
+  
+  
+  
+</Defs>

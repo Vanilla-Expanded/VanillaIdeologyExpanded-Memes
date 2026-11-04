@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<IssueDef>
+		<defName>VME_Defeat</defName>
+		<label>defeat</label>
+		<iconPath>UI/Issues/Defeat</iconPath>
+	</IssueDef>
+	<HistoryEventDef>
+		<defName>VME_Defeat</defName>
+		<label>defeat</label>
+	</HistoryEventDef>
+	<HistoryEventDef>
+		<defName>VME_SecondDefeat</defName>
+		<label>defeat</label>
+	</HistoryEventDef>
+	<!-- Precepts -->
+	<PreceptDef>
+		<defName>VME_Defeat_Dishonorable</defName>
+		<issue>VME_Defeat</issue>
+		<label>dishonorable</label>
+		<description>Suffering a setback on the battlefield is an insult to body, mind, and spirit.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - A colonist that is downed in combat by a humanlike enemy twice in less than 30 days will start requiring a ceremonial suicide ritual to cleanse his dishonor. Mechanoids and animals don't count for this.</description>
+		<impact>High</impact>
+		<displayOrderInIssue>50</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<associatedMemes>
+			<li>VME_Bushido</li>
+		</associatedMemes>
+		
+		<comps>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<eventDef>VME_Defeat</eventDef>
+				<thought>VME_Defeat_Dishonorable</thought>
+			</li>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<eventDef>VME_SecondDefeat</eventDef>
+				<thought>VME_SecondDefeat_Dishonorable</thought>
+			</li>
+		</comps>
+	</PreceptDef>
+	<ThoughtDef>
+		<defName>VME_Defeat_Dishonorable</defName>
+		
+		<durationDays>60</durationDays>
+		<stackLimit>1</stackLimit>
+		<stages>
+			
+			<li>
+				<label>defeated in combat</label>
+				<description>I was defeated in combat, this brings me great dishonor.</description>
+				<baseMoodEffect>-30</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>VME_SecondDefeat_Dishonorable</defName>
+		<thoughtClass>VanillaMemesExpanded.Thought_DisableFirstDefeatThought</thoughtClass>
+		<durationDays>60</durationDays>
+		<stackLimit>1</stackLimit>
+		<stages>
+			
+			<li>
+				<label>defeated in combat twice</label>
+				<description>I was defeated in combat again, my dishonor is immeasurable.</description>
+				<baseMoodEffect>-30</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+</Defs>

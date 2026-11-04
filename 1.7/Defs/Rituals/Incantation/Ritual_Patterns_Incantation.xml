@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ 
+  
+  <RitualPatternDef>
+    <defName>VME_IncantationPattern</defName>
+    <ritualBehavior>VME_IncantationBehavior</ritualBehavior>
+    <ritualTargetFilter>AltarOrRitualSpot</ritualTargetFilter>
+    <ritualObligationTargetFilter>RitualSpotOrAltar</ritualObligationTargetFilter>
+    <ritualExplanation>Ritual will increase the participants' corruption need by 10%. If the need gets over 100%, they risk going mad from the eldritch incantations.</ritualExplanation>
+    <ritualOutcomeEffect>VME_IncantationOutcome</ritualOutcomeEffect>
+    <alwaysStartAnytime>true</alwaysStartAnytime>
+  </RitualPatternDef>
+  
+
+
+
+ 
+
+</Defs>
