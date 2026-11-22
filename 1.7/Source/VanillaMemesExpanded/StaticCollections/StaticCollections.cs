@@ -89,10 +89,10 @@ namespace VanillaMemesExpanded
             }
             automaticWorkbenches = DefDatabase<ThingDef>.AllDefsListForReading.Where(x => x.GetCompProperties<CompProperties_Power>()!=null || 
             (InternalDefOf.VHGE_HelixienNet != null && x.GetCompProperties<CompProperties_ResourceTrader>()?.pipeNet == InternalDefOf.VHGE_HelixienNet) ||
+            (InternalDefOf.VFEU_UltraWattNet != null && x.GetCompProperties<CompProperties_ResourceTrader>()?.pipeNet == InternalDefOf.VFEU_UltraWattNet) ||
             x.defName.Contains("VGE_Compact")).ToHashSet();
 
-            //Log.Message(automaticWorkbenches.ToStringSafeEnumerable());
-
+           
 
         }
 

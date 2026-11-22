@@ -173,8 +173,10 @@ namespace VanillaMemesExpanded
         public static RulePackDef VFEA_InterrogationRefused;
         public static RulePackDef VFEA_InterrogationSuccess;
 
-
         [MayRequire("VanillaExpanded.HelixienGas")]
         public static PipeNetDef VHGE_HelixienNet;
+
+        [MayRequire("OskarPotocki.VFE.Ultratech")]
+        public static PipeNetDef VFEU_UltraWattNet;
     }
 }
